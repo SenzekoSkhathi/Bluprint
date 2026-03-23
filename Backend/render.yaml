@@ -1,0 +1,26 @@
+services:
+  - type: web
+    name: bluprint-backend
+    runtime: python
+    region: oregon
+    plan: free
+    rootDir: Backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: AWS_ACCESS_KEY_ID
+        sync: false
+      - key: AWS_SECRET_ACCESS_KEY
+        sync: false
+      - key: AWS_REGION
+        value: af-south-1
+      - key: AWS_BUCKET_NAME
+        value: bluprint-storage
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: SECRET_KEY
+        sync: false
+      - key: AUTH_SHARED_PASSWORD
+        sync: false
+      - key: PYTHON_VERSION
+        value: "3.11"
