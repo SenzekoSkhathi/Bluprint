@@ -1,0 +1,23 @@
+{
+  "profile": {
+    "student_number": "SNGNIK002",
+    "name": "Nikhar Singh",
+    "degree": "BSc Biology and Genetics",
+    "year": 2,
+    "majors": [
+      "Biology",
+      "Genetics"
+    ],
+    "updated_at_iso": "2026-03-19T11:17:56.569888+00:00"
+  },
+  "plan": {
+    "planned_courses": [],
+    "selected_majors": [],
+    "updated_at_iso": "2026-03-19T11:17:56.573182+00:00"
+  },
+  "schedule": {
+    "sessions": [],
+    "todos": [],
+    "updated_at_iso": "2026-03-19T11:17:56.573267+00:00"
+  }
+}

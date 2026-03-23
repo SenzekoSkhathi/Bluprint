@@ -1,0 +1,404 @@
+{
+  "run_id": "science-717588d718a3",
+  "handbook_title": "2026 Science-Handbook-UCT",
+  "generated_at": "2026-03-18T04:36:36.582024+00:00",
+  "rule_count": 25,
+  "rules": [
+    {
+      "id": "rule-1",
+      "title": "Handbook rule 1",
+      "description": "18 7 Major in Applied Statistics [STA01] Students who major in Applied Statistics and wish to progress to Statistics Honours must complete one semester of Computer Science 1 First Year Core Courses Code Course NQF Credits NQF Level MAM1000W Mathematics 1000 or equivalent",
+      "category": "load",
+      "severity": "blocker"
+    },
+    {
+      "id": "rule-2",
+      "title": "Handbook rule 2",
+      "description": "36 7 Major in Mathematical Statistics [STA02] Students who major in Mathematical Statistics and wish to progress to Statistics Honours must complete one semester of Computer Science 1 First Year Core Courses Code Course NQF Credits NQF Level Either",
+      "category": "load",
+      "severity": "blocker"
+    },
+    {
+      "id": "rule-3",
+      "title": "Handbook rule 3",
+      "description": "36 7 24 DEGREES OFFERED IN THE FACULTY Major in Biology [BIO12] Students who major in Biology and wish to progress to Biological Sciences or Marine Biology Honours must complete STA2007 First Year Core Courses Code Course NQF Credits NQF Level BIO1000F Cell Biology",
+      "category": "load",
+      "severity": "blocker"
+    },
+    {
+      "id": "rule-4",
+      "title": "Handbook rule 4",
+      "description": "36 7 Major in Business Computing [CSC02] Must be taken concurrently with a Computer Science major First Year Core Courses Code Course NQF Credits NQF Level CSC1015F/S Computer Science 1015",
+      "category": "load",
+      "severity": "blocker"
+    },
+    {
+      "id": "rule-5",
+      "title": "Handbook rule 5",
+      "description": "18 5 Second Year Core Courses Code Course NQF Credits NQF Level CEM2005W Intermediate Chemistry",
+      "category": "load",
+      "severity": "info"
+    },
+    {
+      "id": "rule-6",
+      "title": "Handbook rule 6",
+      "description": "36 7 30 DEGREES OFFERED IN THE FACULTY Major in Marine Biology [BIO05] Students who major in Marine Biology and wish to progress to Biology or Marine Biology Honours must complete STA2007S First Year Core Courses Code Course NQF Credits NQF Level BIO1000F Cell Biology",
+      "category": "load",
+      "severity": "blocker"
+    },
+    {
+      "id": "rule-7",
+      "title": "Handbook rule 7",
+      "description": "30 7 Note: STA3047S and STA3048S must be taken together Major in Mathematics [MAM02] Students who major in Mathematics and wish to progress to Mathematics Honours are strongly recommended to complete the project course MAM3006Z: Project in Mathematics First Year Core Courses Code Course NQF Credits NQF Level Either",
+      "category": "load",
+      "severity": "blocker"
+    },
+    {
+      "id": "rule-8",
+      "title": "Handbook rule 8",
+      "description": "AGE1005L TOWARDS A DECOLONISED SCIENCE IN SOUTH AFRICA (offered during winter term; may not be offered every year) 18 NQF credits at NQF level 5 Convener: Professor R Ackermann Course outline: This course addresses some key topics relevant to the decolonization of science in South Africa",
+      "category": "load",
+      "severity": "info"
+    },
+    {
+      "id": "rule-9",
+      "title": "Handbook rule 9",
+      "description": "Third-Year Courses BIO3002F MARINE ECOSYSTEMS Includes a compulsory three-day field camp during first semester 36 NQF credits at NQF level 7 Convener: Dr N Karenyi Course entry requirements: A pass or permission to write a SUPP exam in BIO2014F, SEA2004F (or concurrent registration for SEA2004F)",
+      "category": "load",
+      "severity": "info"
+    },
+    {
+      "id": "rule-10",
+      "title": "Handbook rule 10",
+      "description": "CEM2005W INTERMEDIATE CHEMISTRY 48 NQF credits at NQF level 6 Convener: Dr G A Venter Course entry requirements: For Science students: CEM1000W (or equivalent), 1000 -level full course in Physics, 1000 -level full or semester course in Mathematics",
+      "category": "load",
+      "severity": "info"
+    },
+    {
+      "id": "rule-11",
+      "title": "Handbook rule 11",
+      "description": "First-Year Courses EGS1007S HUMAN & PHYSICAL SYSTEMS 18 NQF credits at NQF level 5 Convener: Professor F l Science are required to take part in fieldwork arranged during the year",
+      "category": "load",
+      "severity": "blocker"
+    },
+    {
+      "id": "rule-12",
+      "title": "Handbook rule 12",
+      "description": "EGS5009W ENVIRONMENT, SOCIETY & SUSTAINABILITY MINOR DISSERTATION 90 NQF credits at NQF level 9 Convener: Dr M Norton Course entry requirements: EGS5008H Course outline: Students will be required to register for this course in the first semester of the second year and complete a suitable research proposal in consultation with an appropriate supervisor",
+      "category": "load",
+      "severity": "blocker"
+    },
+    {
+      "id": "rule-13",
+      "title": "Handbook rule 13",
+      "description": "14 DEGREES OFFERED IN THE FACULTY Restriction on registration and examination FB3 A student shall not register for more than: (a) 72 NQF credits in each semester in the first academic year of study; (b) 72 NQF credits in each semester in any other year of study",
+      "category": "load",
+      "severity": "info"
+    },
+    {
+      "id": "rule-14",
+      "title": "Handbook rule 14",
+      "description": "(d) Where a student is awarded supplementary examinations in more than 120 credits, or more than 72 third year credits, the student must choose which supplementary examinations to write in terms of the restriction detailed in FB4.2 above",
+      "category": "load",
+      "severity": "blocker"
+    },
+    {
+      "id": "rule-15",
+      "title": "Handbook rule 15",
+      "description": "Major in Applied Mathematics [MAM01] Students who major in Applied Mathematics and wish to progress to Applied Mathematics Honours are strongly recommended to complete the project course MAM3055Z: Project in Applied Mathematics First Year Core Courses Code Course NQF Credits NQF Level Either",
+      "category": "load",
+      "severity": "warning"
+    },
+    {
+      "id": "rule-16",
+      "title": "Handbook rule 16",
+      "description": "18 5 Second Year Core Courses Code Course NQF Credits NQF Level MAM2010F Advanced Calculus (2AC)",
+      "category": "load",
+      "severity": "info"
+    },
+    {
+      "id": "rule-17",
+      "title": "Handbook rule 17",
+      "description": "12 6 Third Year Core Courses Code Course NQF Credits NQF Level MAM3043S Methods of Mathematical Physics (3MP)",
+      "category": "load",
+      "severity": "info"
+    },
+    {
+      "id": "rule-18",
+      "title": "Handbook rule 18",
+      "description": "18 5 Second Year Core Courses Code Course NQF Credits NQF Level STA2007F/S/H Study Design & Data Analysis for Scientists",
+      "category": "load",
+      "severity": "info"
+    },
+    {
+      "id": "rule-19",
+      "title": "Handbook rule 19",
+      "description": "24 6 Third Year Core Courses Code Course NQF Credits NQF Level STA3030F Statistical Inference & Modelling",
+      "category": "load",
+      "severity": "info"
+    },
+    {
+      "id": "rule-20",
+      "title": "Handbook rule 20",
+      "description": "36 7 Major in Archaeology [AGE01] First Year Core Courses Code Course NQF Credits NQF Level GEO1009F Intro to Earth and Environmental Sciences",
+      "category": "load",
+      "severity": "info"
+    },
+    {
+      "id": "rule-21",
+      "title": "Handbook rule 21",
+      "description": "18 5 Note: *MAM1004F/S can be replaced by MAM1031F Second Year Core Courses Code Course NQF Credits NQF Level AGE2011S Human Evolution",
+      "category": "load",
+      "severity": "info"
+    },
+    {
+      "id": "rule-22",
+      "title": "Handbook rule 22",
+      "description": "24 6 22 DEGREES OFFERED IN THE FACULTY Third Year Core Courses Code Course NQF Credits NQF Level AGE3013H Archaeology in Practice",
+      "category": "load",
+      "severity": "info"
+    },
+    {
+      "id": "rule-23",
+      "title": "Handbook rule 23",
+      "description": "36 7 AGE3012S Archaeologies of Dominance and Resistance in the Last-500 Years36 7 Major in Artificial Intelligence [CSC08] First Year Core Courses Code Course NQF Credits NQF Level CSC1015F/S Computer Science 1015",
+      "category": "load",
+      "severity": "info"
+    },
+    {
+      "id": "rule-24",
+      "title": "Handbook rule 24",
+      "description": "18 5 Second Year Core Courses Code Course NQF Credits NQF Level CSC2001F Computer Science 2001",
+      "category": "load",
+      "severity": "info"
+    },
+    {
+      "id": "rule-25",
+      "title": "Handbook rule 25",
+      "description": "12 6 Third Year Core Courses Code Course NQF Credits NQF Level CSC3041F Automated Planning and Control",
+      "category": "load",
+      "severity": "info"
+    }
+  ],
+  "planner_policy": {
+    "min_term_credits": 30,
+    "max_term_credits": 72,
+    "min_year_credits": null,
+    "disallow_postgrad_before_year": 4,
+    "enforce_unique_courses": true,
+    "enforce_prerequisite_sequence": true,
+    "bsc_curriculum_min_total_credits": 360,
+    "bsc_curriculum_min_science_credits": 180,
+    "bsc_curriculum_min_level7_credits": 120
+  },
+  "focused_policy_rules": {
+    "handbook_title": "2026 Science-Handbook-UCT",
+    "readmission_from_2023": {
+      "sb001": {
+        "rule_code": "FB5.1",
+        "text": "Bachelor of Science degree (SB001) FB5.1 Except by permission of Senate, a student who has registered for the Bachelor of Science degree (SB001), shall not be permitted to reregister in the Faculty unless the student has completed at least 72 credits in the preceding year of study, and the following number of credits overall: (a) by the end of the first year of registration, 72 SCIENCE credits; (b) By the end of the second year of registration, 144 credits, including all the first-year courses required for the majors; (c) by the end of the third year of registration, 228 credits, including all the courses required to be able to complete the degree in one further year; (d) by the end of the fourth year of registration, students are expected to complete all the requirements of the degree.",
+        "requirements": {
+          "preceding_year_min_credits": 72,
+          "milestones": [
+            {
+              "year": 1,
+              "min_credits": 72,
+              "requirement": "72 SCIENCE credits"
+            },
+            {
+              "year": 2,
+              "min_credits": 144,
+              "requirement": "144 credits, including all the first-year courses required for the majors"
+            },
+            {
+              "year": 3,
+              "min_credits": 228,
+              "requirement": "228 credits, including all the courses required to be able to complete the degree in one further year"
+            },
+            {
+              "year": 4,
+              "min_credits": null,
+              "requirement": "students are expected to complete all the requirements of the degree"
+            }
+          ]
+        }
+      },
+      "sb016": {
+        "rule_code": "FB5.2",
+        "text": "Extended Degree Programme (EDP) (SB016) Extended Degree Programme (EDP) FB5.2 Except by permission of Senate, a student who is registered on the EDP (SB016) shall not be permitted to reregister in the Faculty unless the student has completed 72 credits in the preceding year of study (unless that was the first year of registration), and the following number of credits overall: 16 DEGREES OFFERED IN THE FACULTY (a) by the end of the first year of registration, 54 SCIENCE credits; (b) by the end of the second year of registration, 108 credits, including all the first-year courses required for one SCIENCE major; (c) by the end of the third year of registration, 180 credits, of which at least 48 credits shall be at senior level; (d) by the end of the fourth year of registration, 252 credits, including all the courses required t o be able to complete the degree in one further year; (e) by the end of the fifth year of registration, students are expected to complete all the requirements of the degree.",
+        "requirements": {
+          "preceding_year_min_credits": 72,
+          "milestones": [
+            {
+              "year": 1,
+              "min_credits": 54,
+              "requirement": "54 SCIENCE credits"
+            },
+            {
+              "year": 2,
+              "min_credits": 108,
+              "requirement": "108 credits, including all the first-year courses required for one SCIENCE major"
+            },
+            {
+              "year": 3,
+              "min_credits": 180,
+              "requirement": "180 credits, of which at least 48 credits shall be at senior level"
+            },
+            {
+              "year": 4,
+              "min_credits": 252,
+              "requirement": "252 credits, including all the courses required t o be able to complete the degree in one further year"
+            },
+            {
+              "year": 5,
+              "min_credits": null,
+              "requirement": "students are expected to complete all the requirements of the degree"
+            }
+          ]
+        }
+      },
+      "related_matters": [
+        {
+          "rule_code": "FB5.3",
+          "text": "FB5.3 In addition to the readmission requirements listed in FB5.1 and FB5.2 above, the fulfilment of other specific requirements may be required by individual majors. These requirements will be communicated to students. General"
+        },
+        {
+          "rule_code": "FB5.4",
+          "text": "FB5.4 Except by permission of Senate, where the academic circumstances of a student do not permit the application of Rules FB5.1 -FB5.3, a student shall be required to complete the equivalent of 72 credits per year of study."
+        },
+        {
+          "rule_code": "FB5.5",
+          "text": "FB5.5 In special cases, or in the case of undergraduates transferring from other faculties or other universities, the Senate may impose probationary academic requirements which must be fulfilled before the student shall be permitted to renew registration in the Faculty in the following year."
+        },
+        {
+          "rule_code": "FB5.6",
+          "text": "FB5.6 A student who fails to complete the University examination in a course after two years of study may, at the discretion of Senate, be excluded from further attendance of such a course."
+        },
+        {
+          "rule_code": "FB5.7",
+          "text": "FB5.7 Except by permission of Senate, a student who has been refused permission to reregister in another faculty may not register in the Faculty of Science."
+        },
+        {
+          "rule_code": "FB5.8",
+          "text": "FB5.8 Re-registration in the Faculty does not imply a right to register for senior courses in subjects for which the student has completed prerequisite courses."
+        }
+      ]
+    },
+    "transfer_into_science": {
+      "rule_code": "FB6",
+      "text": "FB6 Except by permission of Senate, a student who, after a year or more in another faculty, wishes to register in the Faculty of Science, shall, as a minimum: (a) satisfy the normal school-leaving subject entry requirements for admission to the BSc degree, and (b) have complied with the provisions of Rule FB5.1-FB5.3 as appropriate (have not been academically excluded). Refer to the Faculty of Science website (https://science.uct.ac.za/internal-transfers- science) for detailed criteria and procedures.",
+      "minimum_requirements": [
+        "satisfy the normal school-leaving subject entry requirements for admission to the BSc degree",
+        "have complied with the provisions of Rule FB5.1-FB5.3 as appropriate (have not been academically excluded)"
+      ]
+    },
+    "bsc_curricula_rules": {
+      "section_title": "Curricula rules for the Bachelor of Science (BSc) degree",
+      "rules": [
+        {
+          "rule_code": "FB7.1",
+          "text": "FB7.1 The curriculum shall include the equivalent of at least 360 NQF credits of which at least 180 must be Science credits. Number of senior courses"
+        },
+        {
+          "rule_code": "FB7.2",
+          "text": "FB7.2 The curriculum shall include the equivalent of at least 120 credits at level 7. This applies even where the curriculum includes only one major. Mathematics"
+        },
+        {
+          "rule_code": "FB7.3",
+          "text": "FB7.3 The curriculum shall include at least a Science Mathematics course of 18 NQF credits (level 5), plus a Science Statistics course of 18 NQF credits (level 5), or Science Mathematics courses totalling 36 NQF credits (level 5). Elective courses"
+        },
+        {
+          "rule_code": "FB7.4",
+          "text": "FB7.4 Any course in the Faculty of Science may be taken as an elective. Courses from other Faculties may also be taken as electives, but subject to the following constraints and approval by a Student Advisor or Deputy Dean: \u2022 If Science courses are replaced by courses from another faculty, any courses not specifically excluded by Science Faculty rules can be chosen (Refer to \u201cNon-Science electives in the Bachelor of Science (BSc) degree\u201d at the back of this book). \u2022 If more than 72 Science credits are replaced with electives from another faculty, then the further electives must form part of a hierarchical sequence linked to those already completed. \u2022 Courses taught by the Faculty of Science for other faculties are not available for students registered in Science. However, students transferring into Science from other faculties may be able to count suc h courses towards their Science curriculum, with the credit weighting, equivalence and conditions established by the Departments concerned (Refer to \u201cNon-Science electives in the Bachelor of Science (BSc) degree\u201d at the back of this book). Major(s)"
+        },
+        {
+          "rule_code": "FB7.5",
+          "text": "FB7.5 The curriculum shall include at least one major from the following list: Applied Mathematics Applied Statistics** Archaeology Artificial Intelligence Astrophysics Biochemistry Biology Business Computing* Chemistry Computer Science Computer Engineering* Environmental & Geographical Science Genetics Geology Human Anatomy & Physiology DEGREES OFFERED IN THE FACULTY 19 Marine Biology Mathematical Statistics** Mathematics Ocean & Atmosphere Science Physics Quantitative Biology Statistics & Data Science** * These majors may only be taken in conjunction with a major in Computer Science. **These majors may not be taken together NOTE: Acceptance into the Science Faculty does not guarantee acceptance into your chosen major. Formal acceptance for specific majors onl y takes place at the start of the second year on registration for the second -year level courses. A number of majors (currently Biochemistry, Genetics, and Human Anatomy & Physiology) have limits on the number of students accepted into second year level courses. Selection criteria, based on academic performance in first year courses, are outlined to students during the firs t year of study. Students will be advised in their first year to take courses which could lead to several majors. Students are encouraged to consult timeously with the relevant Department or Student Advisor regarding possible restrictions."
+        },
+        {
+          "rule_code": "FB7.6",
+          "text": "FB7.6 Compulsory courses to be completed for each Science major: NOTE 1: The compulsory courses listed below are the minimum which a student must complete for the major, in addition to those listed in FB7.3. Courses deemed by the Faculty as equivalent can be substituted as appropriate. The list below includes the most common Science equivalent courses: BIO1000H is equivalent to BIO1000F; (CEM1009H+CE M1010H) is equivalent to CEM1000W; CSC1010H is equivalent to CSC1015F/S; CSC1011H is equivalent to CSC1016S; MAM1004F/S passed at 65% is equivalent to MAM1031F; MAM1005H is equivalent to MAM1031/3F; MAM1006H is equivalent to MAM1032/4S; PHY1023H is equivalent to PHY1031F. NOTE 2: All courses taught in other Faculties that are required/compulsory for a major in the Science Faculty will be counted as Science courses for the purpose of rule FB7.1. For example, the specific EEE courses listed as compulsory for the major in Computer Engineering, the specific HUB courses listed as compulsory for the major in Human Anatomy & Physiology, the specific INF courses listed as compulsory for the major in Business Computing. NOTE 3: Associated with compulsory courses are course pre -requisites, which are courses required to be completed before taking other courses. Pre-requisites include courses from a previous year which must be passed before progressing to the next year/level. It also applies to course/s in the first semester which are required before continuing with the second semester course/s. These pre -requisite conditions include achieving a pass or a specific result, which may be the award of a supplementary or a pass at a specific mark. Where a student fails to meet the pre- requisite conditions of a second semester course, they will not be allowed to continue with the second semester course which will be removed from their curriculum."
+        },
+        {
+          "rule_code": "FB7.7",
+          "text": "FB7.7 The curriculum must contain at least 72 credits of distinct third-year (level 7) courses recognised by the Faculty for each major. However, with the approval of the Deputy Dean, 36 credits may be counted towards more than one major in certain cases. However, the number of credits required by rules FB7.1 -3 must still be met. If a student has 180 credits of third-year (level 7) courses recognised by the Faculty, these 20 DEGREES OFFERED IN THE FACULTY can be counted towards three majors in certain cases, with the approval of the Deputy Dean. Major in Applied Mathematics [M AM01] Students who major in Applied Mathematics and wish to progress to Applied Mathematics Honours are strongly recommended to complete the project course MAM3055Z: Project in Applied Mathematics First Year Core Courses Code Course NQF Credits NQF Level Either ....................................................................................................... MAM1000W Mathematics 1000 ........................................................................ 36 5 Or both ....................................................................................................... MAM1031F Mathematics 1031 ........................................................................ 18 5 and ....................................................................................................... MAM1032S Mathematics 1032 ........................................................................ 18 5 MAM1043H Modelling & Applied Computing ................................................. 18 5 MAM1044H Dynamics........... ........................................................................... 18 5 Second Year Core Courses Code Course NQF Credits NQF Level MAM2010F Advanced Calculus (2AC) ........................................................... 12 6 MAM2011F Linear Algebra (2LA) .................................................................. 12 6 And two of ......................................................................................................... MAM2012S Differential Equations (2DE) ....................................................... 12 6 MAM2013S Introductory Algebra (2IA) .......................................................... 12 6 MAM2014S Real Analysis (2RA) \u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026. 12 6 and ....................................................................................................... MAM2040F Ordinary Differential Equations (2OD) ........................................ 12 6 MAM2041F Numerical Analysis (2NA) .......................................................... 12 6 MAM2042S Non -linear Dynamics (2ND) ........................................................ 12 6 MAM2043S Boundary-Value Problems (2BP) ................................................. 12 6 Third Year Core Courses Code Course NQF Credits NQF Level MAM3043S Methods of Mathematical Physics (3MP) .................................... 18 7 Any three of ....................................................................................................... MAM3012F Discrete Mathematics (3DM) ....................................................... 18 7 MAM3042F Advanced Numerical Methods (3AN).......................................... 18 7 MAM3044F Functions of a Complex Variable (3CV) ...................................... 18 7 MAM3045S Introduction to General Relativity (3GR) ..................................... 18 7 MAM3046S Fluid Dynamics (3FD) ................................................................. 18 7 Major in Applied Statistics [STA01] Students who major in Applied Statistics and wish to progress to Stati stics Honours must complete one semester of Computer Science 1 First Year Core Courses Code Course NQF Credits NQF Level MAM1000W Mathematics 1000 or equivalent .................................................. 36 5 DEGREES OFFERED IN THE FACULTY 21 Code Course NQF Credits NQF Level or both ....................................................................................................... MAM1031F Mathematics 1031 ........................................................................ 18 5 and ....................................................................................................... MAM1032S Mathematics 1032 ........................................................................ 18 5 STA1007S Introductory Statistics for Scientists ............................................. 18 5 or ....................................................................................................... STA1000F/S/P/L Introductory Statistics .............................................................. .... 18 5 Second Year Core Courses Code Course NQF Credits NQF Level STA2007F/S/H Study Design & Data Analysis for Scientists ............................... 24 6 or ....................................................................................................... STA2020F/S Applied Statistics ......................................................................... 24 6 STA2030S Statistical Theory ......................................................................... 24 6 Third Year Core Courses Code Course NQF Credits NQF Level STA3030F Statistical Inference & Modelling ................................................ 36 7 STA3022F Applied Multivariate Data Analysis ............................................. 36 7 or ....................................................................................................... STA3036S Operational Research Techniques ................................................ 36 7 Major in Archaeology [AGE01] First Year Core Courses Code Course NQF Credits NQF L evel GEO1009F Intro to Earth and Environmental Sciences ................................... 18 5 AGE1002S The Human Planet: Prehistory to Present ..................................... 18 5 Either ....................................................................................................... MAM1000W Mathematics 1000 ........................................................................ 36 5 or both ......................................................................................................... MAM1031F Mathematics 1031 ........................................................................ 18 5 and ......................................................................................................... MAM1032S Mathematics 1032 ........................................................................ 18 5 or ....................................................................................................... *MAM1004F Mathematics 1004 .................................................. ...................... 18 5 and one of: ....................................................................................................... STA1000F/S Introductory Statistics .................................................................. 18 5 or ......................................................................................................... STA1007S Introductory Statistics for Scientists ............................................. 18 5 Note: *MAM1004F/S can be replaced by MAM1031F Second Year Core Courses Code Course NQF Credits NQF Level AGE2011S Human Evolution ......................................................................... 24 6 AGE2012F The First People ........................................................................... 24 6 22 DEGREES OFFERED IN THE FACULTY Third Year Core Courses Code Course NQF Credits NQF Level AGE3013H Archaeology in Practice ............................................................... 36 7 One of: ........................................... ............................................................ AGE3011F The Roots of Recent African Identities ........................................ 36 7 AGE3012S Archaeologies of Dominance and Resistance in the Last-500 Years36 7 Major in Artificial Intelligence [CSC08] First Year Core Courses Code Course NQF Credits NQF Level CSC1015F/S Computer Science 1015 ............................................................... 18 5 CSC1016S Computer Science 1016 ............................................................... 18 5 MAM1031F Mathematics 1031 (or equivalent) ................................................ 18 5 MAM1032S Mathematics 1032 (or equivalent) ................................................ 18 5 MAM1019H Fundamentals of Mathematics...................................................... 18 5 or ....................................................................................................... STA100xF/S Any 1000-level Science STA course ............................................ 18 5 Second Year Core Courses Code Course NQF Credits NQF Level CSC2001F Computer Science 2001 ............................................................... 24 6 CSC2041F AI 1: Knowledge Representation ................................................. 24 6 CSC2042S AI 2: Machine Learning ............................................................... 24 6 MAM2010F Advanced Calculus (2AC) ........................................................... 12 6 MAM2011F Linear Algebra (2LA) .................................................................. 12 6 Third Year Core Courses Code Course NQF Credits NQF Level CSC3041F Automated Planning and Control ................................................. 18 7 CSC3042F Deep Learning .............................................................................. 18 7 CSC3043S Reasoning in AI ........................................................................... 18 7 CSC3044S AI Systems ............................................................................ ....... 18 7 Major in Astrophysics [AST02] First Year Core Courses Code Course NQF Credits NQF Level Either ........................................................................................................ MAM1000W Mathematics 1000 ......................................................................... 36 5 or both ........................................................................................................ MAM1031F Mathematics 1031 ......................................................................... 18 5 and ........................................................................................................ MAM1032S Mathematics 1032 ......................................................................... 18 5 PHY1004W Matter & Interactions .................................................................... 36 5 CSC1015F/S Computer Science 1015 ................................................................ 18 5 Recommended: ................................................. ....................................................... AST1000S Introduction to Astronomy ............................................................ 18 5 DEGREES OFFERED IN THE FACULTY 23 Second Year Core Courses Code Course NQF Credits NQF Level AST2002H Astrophysics ................................................................................. 24 6 AST2003H Astronomical Techniques ............................................................. 24 6 MAM2010F Advanced Calculus (2AC) ........................................................... 12 6 MAM2011F Linear Algebra (2LA) .................................................................. 12 6 PHY2004W Intermediate Physics .................................................................... 48 6 Highly recommended: ....................................................................................................... MAM2040F Ordinary Differential Equations (2OD) ........................................ 12 6 and .................................... ................................................................... MAM2043S Boundary-Value Problems (2BP) ................................................. 12 6 Third Year Core Courses Code Course NQF Credits NQF Level AST3002F Stellar Astrophysics ..................................................................... 36 7 AST3003S Galactic & Extragalactic Astrophysics ......................................... 36 7 Major in Biochemistry [MCB01] This major has limits on the number of students accepted into second year level courses First Year Core Courses Code Course NQF Credits NQF Level BIO1000F Cell Biology .................................................................................. 18 5 CEM1000W Chemistry 1000 ............................................................................. 36 5 MAM1004F Mathematics 1004 ......................................................................... 18 5 or .................................................................................................... .... MAM1031F Mathematics 1031 ......................................................................... 18 5 STA1007S Introductory Statistics for Scientists ............................................. 18 5 or ........................................................................................................ STA1000F/S Introductory Statistics ................................................................... 18 5 Recommended: ........................................................................................................ BIO1004S Biological Diversity ...................................................................... 18 5 Second Year Core Courses Code Course NQF Credits NQF Level MCB2020F Biological Information Transfer ................................................... 24 6 MCB2021F Molecular Bioscience ................................................................... 24 6 MCB2022S Metabolism and Bioengineering .................................................. 24 6 Third Year Core Courses Code Course NQF Credits NQF Level MCB3012Z Research Project in Molecular and Cell Biology ............................ 0 7 MCB3024S Defence & Disease ....................................................................... 36 7 MCB3025F Structural and Chemical Biology ................................................. 36 7 24 DEGREES OFFERED IN THE FACULTY Major in Biology [BIO12] Students who major in Biology and wish to progress to Biological Sciences or Marine Biology Honours must complete STA2007 First Year Core Courses Code Course NQF Credits NQF Level BIO1000F Cell Biology ................................................................................. 18 5 BIO1004S Biological Diversity...................................................................... 18 5 CEM1000W Chemistry 1000 ............................................................................ 36 5 Either ....................................................................................................... MAM1004F Mathematic s 1004 ........................................................................ 18 5 or ......................................................................................................... MAM1031F Mathematics 1031 ........................................................................ 18 5 STA1007S Introductory Statistics for Scientists ............................................. 18 5 Second Year Core Courses Code Course NQF Credits NQF Level BIO2014F Principles of Ecology & Evolution ............................................... 24 6 Two of: ........................................................................................................ BIO2015F Vertebrate Diversity & Functional Biology .................................. 24 6 BIO2016S Invertebrate Diversity & Functional Biology ................................ 24 6 BIO2017S Plant Diversity & Functional Biology ........................................... 24 6 Recommended: ................................................................. ....................................... STA2007F/H/S Study Design & Data Analysis for Scientists ............................... 24 6 Third Year Core Courses Code Course NQF Credits NQF Level Two of: ....................................................................................................... BIO3013F Global Change Ecology ............................................................... 36 7 BIO3014S Conservation: Genes, Populations & Biodiversity ....................... 36 7 BIO3018F Ecology & Evolution in the Field ................................................. 36 7 BIO3019S Quantitative Biology .................................................................... 36 7 BIO3022S People & the Sea ......................................................................... 36 7 Major in Business Computing [CSC02] Must be taken concurrently with a Computer Science major First Year Core Courses Code Course NQF Credits NQF Level CSC1015F/S Computer Science 1015 ........................................ ........................ 18 5 CSC1016S Computer Science 1016 ................................................................ 18 5 MAM1008S Introduction to Discrete Mathematics ........................................... 18 5 or .......................................................................................................... MAM1019H Fundamentals of Mathematics ...................................................... 18 5 or .......................................................................................................... STA100xF/S Any 1000-level Science STA course ............................................ 18 5 MAM1004F/S Mathematics 1004 ......................................................................... 18 5 or ........................................................................................................ MAM1000W Mathematics 1000 ......................................................................... 36 5 DEGREES OFFERED IN THE FACULTY 25 Code Course NQF Credits NQF Level or .......................................................................................................... MAM1031F Mathematics 1031 (or equivalent) ................................................ 18 5 ACC1021F Accounting for Business I ............................................................. 15 5 or ........................................................................................................ FTX1005F/S Managerial Finance ...................................................................... 18 5 Second Year Core Courses Code Course NQF Credits NQF Level INF2009F Systems Analysis ......................................................................... 18 6 INF2006F Business Intelligence Analysis ....................................................... 6 6 INF2011S System Design and Development ................................................. 18 7 Third Year Core Courses Code Course NQF Credits NQF Level INF3011F I.T. Project Management ........................................... ................... 18 7 INF3012S BPM and Enterprise Systems ....................................................... 18 7 INF3014F Electronic Commerce ................................................................... 18 7 Major in Chemistry [CEM01] First Year Core Courses Code Course NQF Credits NQF Level CEM1000W Chemistry 1000 ............................................................................ 36 5 Either ......................................................................................................... MAM1000W Mathematics 1000 ........................................................................ 36 5 or both ......................................................................................................... MAM1031F Mathematics 1031 ........................................................................ 18 5 and ......................................................................................................... MAM1032S Mathematics 1032 .................................. ...................................... 18 5 Either ....................................................................................................... PHY1004W Matter and Interactions ................................................................. 36 5 or both ....................................................................................................... PHY1031F General Physics A ........................................................................ 18 5 and ....................................................................................................... PHY1032S General Physics B ........................................................................ 18 5 Second Year Core Courses Code Course NQF Credits NQF Level CEM2005W Intermediate Chemistry ................................................................ 48 6 Third Year Core Courses Code Course NQF Credits NQF Level CEM3005W Chemistry 3005 ............................................................................ 72 7 Major in Computer Engineering [CSC03] Must be taken concurrently with a Computer Science major. First Year Core Courses Code Course NQF Credits NQF Level CSC1015F/S Computer Science 1015 ................................................................ 18 5 CSC1016S Computer Science 1016 ................................................................ 18 5 26 DEGREES OFFERED IN THE FACULTY Code Course NQF Credits NQF Level Either ......................................................................................................... MAM1000W Mathematics ................................................................................. 36 5 or both ......................................................................................................... MAM1031F Mathematics 1031 ........................................................................ 18 5 and ....................................................................................................... MAM1032S Mathematics 1032 ........................... ............................................. 18 5 Either ....................................................................................................... *PHY1004W Matter and Interactions ................................................................. 36 5 or both ....................................................................................................... *PHY1031F General Physics A ........................................................................ 18 5 and ....................................................................................................... *PHY1032S General Physics B ........................................................................ 18 5 Note: *PHY and MAM courses are not requirements of the major but pre-requisites of EEE2041F Second Year Core Courses Code Course NQF Credits NQF Level CSC2042S AI 2: Machine Learning ............................................................... 24 6 EEE2041F Introduction to Electrical Engineering & Power Utilisation . ........ 16 6 EEE2042S Introduction to Analogue & Digital Electronics ............................. 8 6 Third Year Core Courses Code Course NQF Credits NQF Level EEE2050F Embedded Systems 1 for Science Students .................................. 18 6 EEE3095S Embedded Systems II for Science Students ................................. 18 7 CSC3024S C++ Programming\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026 18 7 CSC3041F Automated Planning and Control ................................................. 18 7 or ......................................................................................................... CSC3042F Deep Learning .............................................................................. 18 7 Major in Computer Science [CSC05] First Year Core Courses Code Course NQF Credits NQF Level CSC1015F/S Computer Science 1015 ................................................................ 18 5 CSC1016S Computer Science 1016 ................................................................ 18 5 MAM1008S Introduction to Discrete Mathematics ........................................... 18 5 or .......................................................................................................... MAM1019H Fundamentals of Mathematics ...................................................... 18 5 or .......................................................................................................... STA100xF/S Any 1000-level Science STA course ............................................ 18 5 MAM1004F/S Mathematics 1004 ......................................................................... 18 5 or ........................................................................................................ MAM1000W Mathematics 1000 ......................................................................... 36 5 or .......................................................................................................... MAM1031F Mathematics 1031 (or equivalent) ................................................ 18 5 Second Year Core Courses Code Course NQF Credits NQF Level CSC2001F Computer Science 2001 ............................................................... 24 6 CSC2002S Computer Science 2002 ............................................................... 24 6 DEGREES OFFERED IN THE FACULTY 27 Code Course NQF Credits NQF Level CSC2004Z Programming Assessment .............................................................. 0 6 INF2009F Systems Analysis ......................................................................... 18 6 or ......................................................................................................... CSC2042S AI 2: Machine Learning ............................................................... 24 6 Third Year Core Courses Code Course NQF Credits NQF Level CSC3002F Networks and Operating Systems ................................................ 36 7 CSC3003S Advanced programming and algorithms ...................................... 36 7 Major in Environmental & Geographical Science [EGS 02] First Year Core Courses Code Course NQF Credits NQF Level EGS1007S Human & Physical Systems.......................................................... 18 5 GEO1009F Intro to Earth and Environmental Sciences ................................... 18 5 Either ....................................................................................................... MAM1000W Mathematics 1000 ........................................................................ 36 5 or both ......................................................................................................... MAM1031F Mathematics 1031 ........................................................................ 18 5 and ......................................................................................................... MAM1032S Mathematics 1032 ........................................................................ 18 5 or ....................................................................................................... *MAM1004F Mathe matics 1004 ........................................................................ 18 5 and one of: ....................................................................................................... STA1000F/S Introductory Statistics ................................................................... 18 5 or ......................................................................................................... STA1007S Introductory Statistics for Scientists ............................................. 18 5 Note: *MAM1004F/S can be replaced by MAM1031F Second Year Core Courses Code Course NQF Credits NQF Level EGS2016F Geographies across Space ............................................................ 24 6 EGS2017S Geographies across Time ............................................................. 24 6 Third Year Core Courses Code Course NQF Credits NQF Level Two of: ......................................................................................................... EGS3012S Atmospheric Sciences .................................................................. 36 7 EGS3021F Sustainability & Environment ...................................................... 36 7 EGS3022S Geographic Thought .................................................................... 36 7 EGS3023F Anthropocene Environments In Perspective ................................. 36 7 28 DEGREES OFFERED IN THE FACULTY Major in Genetics [MCB04] This major has limits on the number of students accepted into second year level courses First Year Core Courses Code Course NQF Credits NQF Level BIO1000F Cell Biology .................................................................................. 18 5 CEM1000W Chemistry 1000 ............................................................................. 36 5 MAM1004F Mathematics 1004 ......................................................................... 18 5 or .......................................................................................................... MAM1031F Mat hematics 1031 ......................................................................... 18 5 STA1007S Introductory Statistics for Scientists ............................................. 18 5 or ........................................................................................................ STA1000F/S Introductory Statistics ................................................................... 18 5 Recommended: .......................................................................................................... BIO1004S Biological Diversity ...................................................................... 18 5 Second Year Core Courses Code Course NQF Credits NQF Level MCB2020F Biological Information transfer .................................................... 24 6 MCB2021F Molecular Bioscience ................................................................... 24 6 MCB2023S Functional Genetics...................................................................... 24 6 Third Year Core Cours es Code Course NQF Credits NQF Level MCB3012Z Research Project in Molecular & Cell Biology .............................. 0 7 MCB3023S Molecular Evolutionary Genetics & Development ....................... 36 7 MCB3026F Molecular Genetics & Genomics ................................................. 36 7 Major in Geology [GEO02] This major has limits on the number of students accepted into second year level courses First Year Core Courses Code Course NQF Credits NQF Level GEO1009F Intro to Earth and Environmental Sciences ................................... 18 5 GEO1006S Intro to Minerals, Rocks & Structure ............................................ 18 5 CEM1000W Chemistry 1000 ............................................................................ 36 5 Either ....................................................................................................... MAM1000W Mathematics 1000 ........................................................................ 36 5 or both ............................ ............................................................................. MAM1031F Mathematics 1031 ........................................................................ 18 5 and ......................................................................................................... MAM1032S Mathematics 1032 ........................................................................ 18 5 or ....................................................................................................... *MAM1004F Mathematics 1004 ........................................................................ 18 5 and one of: the STA courses .............................................................................. STA1000F/S Introductory Statistics / ................................................................ 18 5 or ......................................................................................................... STA1007S Introductory Statistics for Scientists ......................................... .... 18 5 PHY1031F General Physics A ........................................................................ 18 5 Note: *MAM1004F/S can be replaced by MAM1031F DEGREES OFFERED IN THE FACULTY 29 Second Year Core Courses Code Course NQF Credits NQF Level GEO2001F Mineral, Crystall & Petrography ................................................... 24 6 GEO2004S Physical Geology .......................................................................... 24 6 GEO2005X* Field Geology and Geological Mapping ....................................... 24 6 Third Year Core Courses Code Course NQF Credits NQF Level GEO3005F Petrology & Structural Geology ................................................... 36 7 GEO3001S Stratigraphy & Economic Geology ............................................... 36 7 GEO2005X* Field Geology and Geological Mapping ....................................... 24 6 * fieldwork half-course to be taken over second and third years of study Major in Human Anatomy & Physiology [HUB17] This major h as limits on the number of students accepted into second year level courses First Year Core Courses Code Course NQF Credits NQF Level BIO1000F Cell Biology .................................................................................. 18 5 BIO1004S Biological Diversity ...................................................................... 18 5 CEM1000W Chemistry 1000 ............................................................................. 36 5 Either ........................................................................................................ MAM1000W Mathematics 1000 ......................................................................... 36 5 or both .......................................................................................................... MAM1031F Mathematics 1031 ......................................................................... 18 5 and .......................................................................................................... MAM1032S Mathem atics 1032 ......................................................................... 18 5 or .......................................................................................................... *MAM1004F Mathematics 1004 ......................................................................... 18 5 and ........................................................................................................ STA1007S Introductory Statistics for Scientists ............................................. 18 5 Recommended: 1000-level Physics ........................................................................... Note: *MAM1004F/S can be replaced by MAM1031F Second Year Core Courses Code Course NQF Credits NQF Level HUB2019F Integrated Anat & Physio Sciences A .......................................... 24 6 HUB2021S Integrated Anat & Physio Sciences B........................................... 24 6 Third Year Core Courses Code Course NQF Credits NQF Level HUB3006F Applied Human Biology .................. ............................................ 36 7 HUB3007S Human Neurosciences .................................................................. 36 7 30 DEGREES OFFERED IN THE FACULTY Major in Marine Biology [BIO05] Students who major in Marine Biology and wish to progress to Biology or Marine Biology Honours must complete STA2007S First Year Core Courses Code Course NQF Credits NQF Level BIO1000F Cell Biology ................................................................................. 18 5 BIO1004S Biological Diversity...................................................................... 18 5 CEM1000W Chemistry 1000 ............................................................................ 36 5 Either ....................................................................................................... MAM1004F Mathematics 1004 ........................................................................ 18 5 or ......................................................................................... .............. MAM1031F Mathematics 1031 ........................................................................ 18 5 STA1007S Introductory Statistics for Scientists ............................................. 18 5 Second Year Core Courses Code Course NQF Credits NQF Level BIO2014F Principles of Ecology & Evolution ............................................... 24 6 SEA2004F Principles of Oceanography .......................................................... 24 6 One of: ........................................................................................................ BIO2015F Vertebrate Diversity & Functional Biology .................................. 24 6 BIO2016S Invertebrate Diversity & Functional Biology ................................ 24 6 BIO2017S Plant Diversity & Functional Biology ........................................... 24 6 Recommended: ........................................................................................................ STA2007F/H/S Study Design & Data Analys is for Scientists ................................ 24 6 Third Year Core Courses Code Course NQF Credits NQF Level BIO3002F Marine Ecosystems ...................................................................... 36 7 BIO3022S People & the Sea ......................................................................... 36 7 Major in Mathematical Statistics [STA02] Students who major in Mathematical Statistics and wish to progress to Statistics Honours must complete one semester of Computer Science 1 First Year Core Courses Code Course NQF Credits NQF Level Either ......................................................................................................... MAM1000W Mathematics 1000 ........................................................................ 36 5 or both ......................................................................................................... MAM1031F Mathematics 1031 ....................................................................... 18 5 and ....................... .................................................................................. MAM1032S Mathematics 1032 ........................................................................ 18 5 STA1006S Mathematical Statistics I .............................................................. 18 5 Second Year Core Courses Code Course NQF Credits NQF Level STA2004F Statistical Theory & Inference ..................................................... 24 6 STA2005S Linear Models .............................................................................. 24 6 DEGREES OFFERED IN THE FACULTY 31 Third Year Core Courses Code Course NQF Credits NQF Level STA3041F Markov Processes & Time Series ................................................. 36 7 STA3047S Introduction to Machine Learning .................................................. 6 7 and ......................................................................................................... STA3048S Statistical Modelling and Bayesian Analysis .................. .............. 30 7 Note: STA3047S and STA3048S must be taken together Major in Mathematics [MAM02] Students who major in Mathematics and wish to progress to Mathematics Honours are strongly recommended to complete the project course MAM3006Z: Project in Mathematics First Year Core Courses Code Course NQF Credits NQF Level Either ......................................................................................................... MAM1000W Mathematics 1000 ........................................................................ 36 5 Or both ......................................................................................................... MAM1031F Mathematics 1031 ........................................................................ 18 5 and ......................................................................................................... MAM1032S Mathematics 1032 ........................................................................ 18 5 MAM1019H Fundamentals of Mathematics ......... ............................................. 18 5 Second Year Core Courses Code Course NQF Credits NQF Level MAM2010F Advanced Calculus (2AC) ........................................................... 12 6 MAM2011F Linear Algebra (2LA) .................................................................. 12 6 MAM2013S Introductory Algebra (2IA) .......................................................... 12 6 MAM2014S Real Analysis (2RA) .................................................................... 12 6 Third Year Core Courses Any four of the courses below, including one or both of MAM3010F and MAM3011F Code Course NQF Credits NQF Level MAM3010F Metric Spaces (3MS) ................................................................... 18 7 MAM3011F Modern Abstract Algebra (3AL) .................................................. 18 7 MAM3012F Discrete Mathematics (3DM) ....................................................... 18 7 MAM3013S Topics in Algebra (3TA) ............................................ .................. 18 7 MAM3014S Topics in Analysis (3TN) ............................................................. 18 7 MAM3015S Complex Analysis (3CA) ............................................................. 18 7 Major in Ocean & Atmosphere Science [SEA03] Students who major in Ocean & Atmosphere Science and wish to progress to Ocean & Atmosphere Science Honours are strongly recommended to complete both STA2007F/S/H and CSC1015F/S First Year Core Courses Code Course NQF Credits NQF Level GEO1009F Intro to Earth & Environmental Sciences ..................................... 18 5 CEM1000W Chemistry 1000 ............................................................................ 36 5 Either ....................................................................................................... 32 DEGREES OFFERED IN THE FACULTY Code Course NQF Credits NQF Level MAM1000W Mathematics 1000 ........................................................................ 36 5 or both ........................... ............................................................................ MAM1031F Mathematics 1031 ........................................................................ 18 5 and ....................................................................................................... MAM1032S Mathematics 1032 ........................................................................ 18 5 or ....................................................................................................... *MAM1004F Mathematics 1004 ........................................................................ 18 5 and one of: ....................................................................................................... STA1000F/S Introductory Statistics ................................................................... 18 5 or ....................................................................................................... STA1007S Introductory Statistics for Scientists .................................... ......... 18 5 PHY1031F General Physics A (or equivalent) ................................................ 18 5 Note: *MAM1004F/S can be replaced by MAM1031F Second Year Core Courses Code Course NQF Credits NQF Level SEA2004F Principles of Oceanography ......................................................... 24 6 SEA2005S Marine Systems ............................................................................ 24 6 Third Year Core Courses Code Course NQF Credits NQF Level SEA3004F Ocean & Atmosphere Dynamics .................................................. 36 7 EGS3012S Atmospheric Science .................................................................... 36 7 Major in Physics [PHY01] First Year Core Courses Code Course NQF Credits NQF Level Either ........................................................................................................ MAM1000W Mathematics 1000 ......................................................................... 36 5 or both .................................... .................................................................... MAM1031F Mathematics 1031 ......................................................................... 18 5 and ........................................................................................................ MAM1032S Mathematics 1032 ......................................................................... 18 5 PHY1004W Matter and Interactions ................................................................. 36 5 CSC1015F/S Computer Science 1015 ................................................................ 18 5 Recommended: ........................................................................................................ MAM1043H Modelling & Applied Computing ................................................. 18 5 and ........................................................................................................ MAM1044H Dynamics ...................................................................................... 18 5 Second Year Core Courses Code Course NQF Credits NQF Level MAM2010F Advanced Calculus (2AC) ........................................................... 12 6 MAM2011F Linear Algebra (2LA) .................................................................. 12 6 PHY2004W Intermediate Physics .................................................................... 48 6 Highly recommended: ....................................................................................................... MAM2040F Ordinary Differential Equations (2OD) ........................................ 12 6 and ....................................................................................................... DEGREES OFFERED IN THE FACULTY 33 Code Course NQF Credits NQF Level MAM2043S Boundary-Value Problems (2BP) ................................................. 12 6 Third Year Core Courses Code Course NQF Credits NQF Level PHY3004W Advanced Physics ........................................................................ 72 7 Ma jor in Quantitative Biology [BIO13] First Year Core Courses Code Course NQF Credits NQF Level BIO1000F Cell Biology ................................................................................. 18 5 BIO1004S Biological Diversity ..................................................................... 18 5 STA100xF/S Any 1000-level Science STA course ............................................ 18 5 Either ....................................................................................................... *MAM1004F Mathematics 1004 ........................................................................ 18 5 and ....................................................................................................... MAM1008S Introduction to Discrete Mathematics ........................................... 18 5 or ....................................................................................................... MAM1000W Mathematics 1000 ................................................................. ....... 36 5 or both ......................................................................................................... MAM1031F Mathematics 1031 ........................................................................ 18 5 and ......................................................................................................... MAM1032S Mathematics 1032 ........................................................................ 18 5 Note: *MAM1004F/S can be replaced by MAM1031F Second Year Core Courses Code Course NQF Credits NQF Level BIO2014F Principles of Ecology & Evolution ...............................................24 6 One of: ....................................................................................................... BIO2015F Vertebrate Diversity & Functional Biology ..................................24 6 BIO2016S Invertebrate Diversity & Functional Biology ................................24 6 BIO2017S Plant Diversity & Functional Biology ..................................... ......24 6 Either ....................................................................................................... *MAM2040F Ordinary Differential Equations (2OD).........................................12 6 *MAM2041F Numerical Analysis (2NA) ...........................................................12 6 *MAM2042S Non-linear Dynamics (2ND) .........................................................12 6 and ....................................................................................................... *MAM2043S Boundary-Value Problems (2BP)..................................................12 6 or ....................................................................................................... *STA20xxF/S/H Any 2000-level Science STA course.............................................24 6 Third Year Core Courses Code Course NQF Credits NQF Level BIO3019S Quantitative Biology .................................................................... 36 7 Either ................................. ...................................................................... *MAM304xF/S Any two 3000-level Applied MAM courses ................................. 36 7 or ....................................................................................................... *STA30xxF/S Any 3000-level Science STA course ............................................ 36 7 34 DEGREES OFFERED IN THE FACULTY * Note: Registration for these courses is conditional on pre -requisites having been met, and this should be checked. Major in Statistics & Data Science [STA13] Students will need to choose between the Mathematical and Applied Statistics streams. Only one of the STA01, STA02, STA13 majors can be taken towards the BSc degree. First Year Core Courses Code Course NQF Credits NQF Level CSC1015F/S Computer Science 1015 ............................................................... 18 5 CSC1016S Computer Science 1016 ............................................................... 18 5 MAM1031F Mathematics 1031 (or equiv alent) ................................................ 18 5 MAM1032S Mathematics 1032 (or equivalent) ................................................ 18 5 STA100xF/S Any 1000-level Science STA course ............................................ 18 5 Second Year Core Courses Code Course NQF Credits NQF Level CSC2001F Computer Science 2001................................................................ 24 6 CSC2002S Computer Science 2002................................................................ 24 6 or ......................................................................................................... CSC2042S Introduction to AI 2: Machine Learning ....................................... 24 6 MAM2010F Advanced Calculus (2AC)* .......................................................... 12 6 MAM2011F Linear Algebra (2LA)* ................................................................. 12 6 STA2004F Statistical Theory & Inference ...................................................... 24 6 or .... ................................................................................................... STA2030S Statistical Theory ......................................................................... 24 6 One of: ....................................................................................................... STA2005S Linear Models .............................................................................. 24 6 STA2007F/S Study Design & Data Analysis for Scientists ............................... 24 6 STA2020F/S Applied Statistics ......................................................................... 24 6 * MAM2012S/MAM2013S/MAM2014S highly recommended Third Year Core Courses Code Course NQF Credits NQF Level STA3030F Statistical Inference & Modelling ................................................ 36 7 or ....................................................................................................... STA3041F Markov Processes & Time Series ........................................... ...... 36 7 One of: ....................................................................................................... STA3022F Applied Multivariate Data Analysis ............................................. 36 7 STA3036S Operational Research Techniques ................................................ 36 7 STA3047S Introduction to Machine Learning .................................................. 6 7 and ......................................................................................................... STA3048S Statistical Modelling and Bayesian Analysis ................................ 30 7 Note: STA3047S and STA3048S must be taken together DEGREES OFFERED IN THE FACULTY 35"
+        }
+      ],
+      "minimum_requirements": {
+        "min_total_nqf_credits": 360,
+        "min_science_credits": 180,
+        "min_level7_credits": 120
+      }
+    },
+    "operational_constraints": {
+      "readmission": {
+        "sb001": {
+          "preceding_year_min_credits": 72,
+          "year_end_milestones": [
+            {
+              "year": 1,
+              "min_credits": 72,
+              "requirement": "72 SCIENCE credits"
+            },
+            {
+              "year": 2,
+              "min_credits": 144,
+              "requirement": "144 credits, including all the first-year courses required for the majors"
+            },
+            {
+              "year": 3,
+              "min_credits": 228,
+              "requirement": "228 credits, including all the courses required to be able to complete the degree in one further year"
+            },
+            {
+              "year": 4,
+              "min_credits": null,
+              "requirement": "students are expected to complete all the requirements of the degree"
+            }
+          ]
+        },
+        "sb016": {
+          "preceding_year_min_credits": 72,
+          "year_end_milestones": [
+            {
+              "year": 1,
+              "min_credits": 54,
+              "requirement": "54 SCIENCE credits"
+            },
+            {
+              "year": 2,
+              "min_credits": 108,
+              "requirement": "108 credits, including all the first-year courses required for one SCIENCE major"
+            },
+            {
+              "year": 3,
+              "min_credits": 180,
+              "requirement": "180 credits, of which at least 48 credits shall be at senior level"
+            },
+            {
+              "year": 4,
+              "min_credits": 252,
+              "requirement": "252 credits, including all the courses required t o be able to complete the degree in one further year"
+            },
+            {
+              "year": 5,
+              "min_credits": null,
+              "requirement": "students are expected to complete all the requirements of the degree"
+            }
+          ]
+        }
+      },
+      "transfer_into_science": {
+        "minimum_requirements": [
+          "satisfy the normal school-leaving subject entry requirements for admission to the BSc degree",
+          "have complied with the provisions of Rule FB5.1-FB5.3 as appropriate (have not been academically excluded)"
+        ]
+      },
+      "bsc_curriculum": {
+        "min_total_nqf_credits": 360,
+        "min_science_credits": 180,
+        "min_level7_credits": 120
+      }
+    }
+  }
+}

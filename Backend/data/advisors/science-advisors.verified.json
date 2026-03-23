@@ -1,0 +1,154 @@
+{
+  "faculty": "Faculty of Science",
+  "university": "University of Cape Town",
+  "year": 2026,
+  "senior_student_advisors": [
+    {
+      "name": "Associate Professor P Marais",
+      "area": "Computer Science",
+      "room": "Rm 309 Computer Science Building",
+      "email": "patrick@cs.uct.ac.za"
+    },
+    {
+      "name": "Mr A Safla",
+      "area": "Computer Science",
+      "room": "Rm 307 Computer Science Building",
+      "email": "aslam.safla@uct.ac.za"
+    },
+    {
+      "name": "Associate Professor A Sloan",
+      "area": "Biology, Earth & Environmental Sciences",
+      "room": "Rm 301 Geological Science Building",
+      "email": "alastair.sloan@uct.ac.za"
+    },
+    {
+      "name": "Dr P Meyers",
+      "area": "Chemical, Molecular & Cellular Sciences",
+      "room": "Rm 202 Molecular Biology Building",
+      "email": "paul.meyers@uct.ac.za"
+    },
+    {
+      "name": "Dr S Wheaton",
+      "area": "Mathematics, Physics & Astronomy",
+      "room": "Rm 4T4 RW James Building",
+      "email": "spencer.wheaton@uct.ac.za"
+    },
+    {
+      "name": "Dr B Erni",
+      "area": "Statistics",
+      "room": "Rm 6.64 PD Hahn Building",
+      "email": "birgit.erni@uct.ac.za"
+    },
+    {
+      "name": "Dr C Edmonds-Smith",
+      "area": "Extended Degree Programme (EDP)",
+      "room": "Rm 6.08 PD Hahn Building",
+      "email": "c.edmonds-smith@uct.ac.za"
+    }
+  ],
+  "student_advisors": [
+    {
+      "name": "Associate Professor M Densmore",
+      "area": "Computer Science & Statistics",
+      "room": "Rm 316 Computer Science Building",
+      "email": "mdensmore@cs.uct.ac.za"
+    },
+    {
+      "name": "Dr J Chavula",
+      "area": "Computer Science & Statistics",
+      "room": "Rm 305 Computer Science Building",
+      "email": "josiah.chavula@uct.ac.za"
+    },
+    {
+      "name": "Dr Z Mahlaza",
+      "area": "Computer Science & Statistics",
+      "room": "Rm 306.2 Computer Science Building",
+      "email": "zmahlaza@cs.uct.ac.za"
+    },
+    {
+      "name": "Mr F Meyer",
+      "area": "Computer Science & Statistics",
+      "room": "Rm 316 Computer Science Building",
+      "email": "fmeyer@cs.uct.ac.za"
+    },
+    {
+      "name": "Associate Professor J Battersby",
+      "area": "Biology, Earth & Environmental Sciences",
+      "room": "Rm 6.01 Environmental & Geographical Sciences Building",
+      "email": "jane.battersby@uct.ac.za"
+    },
+    {
+      "name": "Associate Professor J Bishop",
+      "area": "Biology, Earth & Environmental Sciences",
+      "room": "Rm 3.22 HW Pearson Building",
+      "email": "jacqueline.bishop@uct.ac.za"
+    },
+    {
+      "name": "Associate Professor R Thomson",
+      "area": "Biology, Earth & Environmental Sciences",
+      "room": "Rm 2.06 John Day Building",
+      "email": "robert.thomson@uct.ac.za"
+    },
+    {
+      "name": "Dr F Dube",
+      "area": "Chemical, Molecular & Cellular Sciences",
+      "room": "Rm 227B Molecular Biology Building",
+      "email": "felix.dube@uct.ac.za"
+    },
+    {
+      "name": "Dr R Hurdayal",
+      "area": "Chemical, Molecular & Cellular Sciences",
+      "room": "Rm 402 Molecular Biology Building",
+      "email": "ramona.hurdayal@uct.ac.za"
+    },
+    {
+      "name": "Dr S Ngubane",
+      "area": "Chemical, Molecular & Cellular Sciences",
+      "room": "Rm 6.13 PD Hahn Building",
+      "email": "siyabonga.ngubane@uct.ac.za"
+    },
+    {
+      "name": "Professor G Smith",
+      "area": "Chemical, Molecular & Cellular Sciences",
+      "room": "Rm 7.08 PD Hahn Building",
+      "email": "gregory.smith@uct.ac.za"
+    },
+    {
+      "name": "Dr E Fredericks",
+      "area": "Mathematics, Physics & Astronomy",
+      "room": "Rm M3.10.1 Mathematics Building",
+      "email": "ebrahim.fredericks@uct.ac.za"
+    },
+    {
+      "name": "Dr T Salagaram",
+      "area": "Mathematics, Physics & Astronomy",
+      "room": "Rm 5.11 RW James Building",
+      "email": "trisha.salagaram@uct.ac.za"
+    },
+    {
+      "name": "Mr T van Heerden",
+      "area": "Mathematics, Physics & Astronomy",
+      "room": "Rm M1.01.6 Mathematics Building",
+      "email": "thomas.vanheerden@uct.ac.za"
+    },
+    {
+      "name": "Dr S Er",
+      "area": "Statistics",
+      "room": "Rm 5.55 PD Hahn Building",
+      "email": "sebnem.er@uct.ac.za"
+    },
+    {
+      "name": "Mr S Salau",
+      "area": "Statistics",
+      "room": "Rm 5.54 PD Hahn Building",
+      "email": "sulaiman.salau@uct.ac.za"
+    },
+    {
+      "name": "Mr D Katshunga",
+      "area": "Statistics",
+      "room": "Rm 5.49 PD Hahn Building",
+      "email": "dominique.katshunga@uct.ac.za",
+      "note": "Commerce students only"
+    }
+  ]
+}

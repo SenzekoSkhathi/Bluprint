@@ -1,0 +1,421 @@
+{
+  "document": "UCT Faculty of Science 2026 Handbook — Academic Rules for Students",
+  "university": "University of Cape Town",
+  "faculty": "Faculty of Science",
+  "year": 2026,
+  "note": "These rules must be read in conjunction with the General University Rules in Handbook 3 (General Rules and Policies). Students are expected to acquaint themselves with rules in BOTH handbooks and to check annually whether rules or curriculum requirements have changed.",
+
+  "course_code_system": {
+    "description": "The BSc curriculum is based on a semester system where a semester course equals a half-year of academic study.",
+    "codes": {
+      "F": "First-semester course",
+      "S": "Second-semester course",
+      "H": "Course taught over the whole year, generally with the credit value of a single semester course",
+      "W": "Course taught over the whole year (full credit)",
+      "Z": "Special allocation or any other combination",
+      "P": "Summer term course (November–December)",
+      "L": "Winter term course (June–July)"
+    },
+    "year_level_note": "Second-year and third-year courses are usually regarded as 'senior courses' in terms of meeting curriculum requirements for the BSc."
+  },
+
+  "essential_terminology": {
+    "prerequisite": "A course required to be COMPLETED AND PASSED before registering for another course. Pre-requisite rules are applied consistently. Where prerequisite courses are failed or not completed, the follow-on course MUST be deregistered/removed from the student's curriculum.",
+    "co_requisite": "A course that must be registered for at the SAME TIME as another course. Both courses must be studied simultaneously because they integrate closely.",
+    "dp_duly_performed_certificate": "Earning the right to sit the final examination by meeting coursework requirements (attendance, tests, practicals, sub-minimum marks). If refused (DPR), the student cannot sit the examination.",
+    "dpr_duly_performed_refused": "Issued when a student has not attended lectures, practicals and tutorials; missed a test without being excused; or did not achieve the sub-minimum mark for coursework. A DPR means the student is NOT eligible to sit the examination.",
+    "sub_minimum": "A minimum mark that must be achieved in coursework and/or the final examination. Failing to achieve the sub-minimum in coursework results in a DPR; failing it in the examination results in a Fail regardless of the overall mark. Check each course's sub-minimum rules carefully.",
+    "nqf_credits": "National Qualifications Framework credits. A semester course is typically 18–24 credits; a full-year course typically 36–72 credits.",
+    "senior_courses": "Second-year and third-year courses (NQF level 6 and 7 respectively).",
+    "first_class_pass": "A mark of 75% or above.",
+    "upper_second_class_pass": "A mark of 70%–74%.",
+    "ordinary_examination": "The scheduled June or November examinations. Supplementary examinations are separate and sit on top of these."
+  },
+
+  "progression_status_codes": {
+    "description": "After each November examination period, the Faculty Examinations Committee (FEC) assigns every student a progression status visible on the academic transcript.",
+    "statuses": [
+      "Academically eligible to continue — may return the next year",
+      "Concession (FEC) to continue — may return the next year, but with specific conditions",
+      "Concession (FEC) to change field/specialisation/degree within Faculty — may return in a different field of study",
+      "Status pending FEC decision — status dependent on further information and final decision",
+      "Academically not eligible to continue — may NOT return the next year",
+      "Status pending: continue if SUPP/DE exams passed — return conditional on passing SUPP/DE",
+      "Qualifies for award of degree/diploma — all requirements for degree award have been met",
+      "Qualification depends on SUPP/DE results — award of degree conditional on passing SUPP/DE"
+    ]
+  },
+
+  "bsc_degree_rules": {
+    "duration": {
+      "FB2_1": "The BSc degree curriculum shall extend over NOT LESS THAN THREE academic years of study.",
+      "FB2_2": "The Extended Degree Programme (EDP) curriculum will usually extend over FOUR academic years of study.",
+      "FB2_3": "Continuation on the three-year BSc or placement on the EDP is based on performance in tests at the end of the first quarter, together with NBT and NSC results, and one-on-one consultations with Student Academic Advisors.",
+      "part_time_note": "At the discretion of the Dean, students unable to study full-time may complete the degree over an extended period by taking a reduced number of courses each year. All enquiries to the Faculty Manager (Academic)."
+    },
+
+    "registration_limits": {
+      "FB3": "A student shall NOT register for more than 72 NQF credits in each semester in ANY year of study (first year or subsequent years). This restriction also applies to the number of courses for which a student may be EXAMINED.",
+      "waiver_conditions": {
+        "note": "Permission of Senate to waive this restriction will ONLY be considered under these circumstances:",
+        "condition_a": "A student registering for the FIRST TIME for the first year who has achieved OUTSTANDING results in ALL NSC subjects.",
+        "condition_b": "A student registered for the BSc for at least one semester who has obtained an AVERAGE OF 60% OR MORE in all courses written in the most recent ordinary examinations (June or November).",
+        "important": "Waivers depend on assessment by a Student Advisor or Deputy Dean on the merits of each individual case."
+      }
+    },
+
+    "supplementary_examinations": {
+      "first_year_students": {
+        "FB4_1": "Senate may permit a first-year student who has FAILED the ordinary examination in one or more courses to write supplementary examinations in a MAXIMUM OF 108 CREDITS.",
+        "policy": {
+          "rule_a": "A supplementary examination MAY (not will) be awarded to a student who obtained marks from 45%–49% in a first-year course in any Science Faculty department.",
+          "rule_b": "A supplementary examination MAY be awarded to a student who obtained 40%–49% in first-year Mathematics courses (except MAM1031F, MAM1032S, MAM1033F, MAM1034S, MAM1019H, MAM1043H, MAM1044H, and all MAM courses offered to other faculties, where rule (a) applies).",
+          "rule_c": "A department (other than Mathematics) MAY recommend a supplementary examination for a student who obtained 40%–44% in a first-year course, PROVIDED the Head of Department submits a written recommendation and motivation to the Dean before the Faculty Examinations Committee meeting.",
+          "rule_d": "Where a student is awarded supplementary examinations in MORE THAN THREE full-year courses or the equivalent, the student must CHOOSE which supplementary examinations to write within the 108-credit limit."
+        }
+      },
+      "non_first_year_students": {
+        "FB4_2": "Senate may permit a student (other than a first-year student) to write supplementary examinations in a MAXIMUM OF 120 CREDITS, of which ONLY 72 MAY BE AT THIRD-YEAR LEVEL.",
+        "policy": {
+          "rule_a": "Departments follow the same 45%–49% and 40%–44% guidelines as for first-year courses.",
+          "rule_b": "A supplementary examination in a SENIOR COURSE may be awarded if the mark obtained is AT LEAST 45% AND the department recommends it.",
+          "rule_c": "A FINALIST who obtained 40%–44% in any course may be awarded a supplementary examination if the department recommends it.",
+          "rule_d": "Where a student is awarded supplementary examinations in more than 120 credits, or more than 72 third-year credits, the student must CHOOSE which supplementary examinations to write within the prescribed limits."
+        }
+      },
+      "FB4_3": "The decision on whether or not to award a supplementary examination is taken by Senate on the recommendation of the Head of Department based on academic performance in the course concerned. Senate may also decide to award or refuse a supplementary examination taking into account the student's OVERALL academic record.",
+      "critical_note": "Supplementary examinations are NOT awarded to candidates for a Master's degree (FM8.3)."
+    },
+
+    "readmission_rules_from_2023": {
+      "note": "These rules apply to students FIRST REGISTERED FROM 2023.",
+      "bsc_standard_SB001": {
+        "FB5_1": "A student shall NOT be permitted to re-register unless they have completed at least 72 credits in the preceding year of study, AND the following cumulative totals:",
+        "by_end_of_year_1": "72 SCIENCE credits",
+        "by_end_of_year_2": "144 credits, including ALL the first-year courses required for the majors",
+        "by_end_of_year_3": "228 credits, including all courses required to be able to complete the degree in ONE FURTHER YEAR",
+        "by_end_of_year_4": "Students are expected to complete ALL requirements of the degree."
+      },
+      "edp_SB016": {
+        "FB5_2": "A student on the EDP shall NOT be permitted to re-register unless they have completed 72 credits in the preceding year (unless that was the first year of registration), AND the following cumulative totals:",
+        "by_end_of_year_1": "54 SCIENCE credits",
+        "by_end_of_year_2": "108 credits, including all the first-year courses required for ONE SCIENCE major",
+        "by_end_of_year_3": "180 credits, of which at least 48 credits shall be at SENIOR LEVEL",
+        "by_end_of_year_4": "252 credits, including all courses required to be able to complete the degree in ONE FURTHER YEAR",
+        "by_end_of_year_5": "Students are expected to complete ALL requirements of the degree."
+      }
+    },
+
+    "readmission_rules_before_2023": {
+      "note": "These rules apply to students FIRST REGISTERED BEFORE 2023.",
+      "bsc_standard": {
+        "by_end_of_year_1": "At least one and a half courses or equivalent, specific to a major",
+        "by_end_of_year_2": "At least three and a half courses or equivalent, including all required first-year courses",
+        "by_end_of_year_3": "At least five and a half courses or equivalent, including one and a half senior courses",
+        "by_end_of_year_4": "At least seven and a half courses, including the equivalent of three full-year senior courses",
+        "by_end_of_year_5": "Students are expected to complete ALL requirements of the degree."
+      },
+      "edp": {
+        "by_end_of_year_1": "At least one full-year course or equivalent in half courses",
+        "by_end_of_year_2": "At least three full-year courses or equivalent, including two and a half courses specific to the majors",
+        "by_end_of_year_3": "At least five full-year courses or equivalent, of which at least ONE shall be a senior course",
+        "by_end_of_year_4": "At least seven full-year courses, of which at least two and a half shall be senior courses",
+        "by_end_of_year_5": "Students are expected to complete ALL requirements of the degree."
+      }
+    },
+
+    "general_readmission_rules": {
+      "FB5_3": "Individual majors may impose ADDITIONAL specific readmission requirements beyond FB5.1 and FB5.2. These requirements will be communicated to students.",
+      "FB5_4": "Where academic circumstances do not permit application of FB5.1–FB5.3, a student shall be required to complete the equivalent of 72 CREDITS PER YEAR of study.",
+      "FB5_5": "In special cases, or for undergraduates transferring from other faculties or universities, Senate may impose PROBATIONARY academic requirements that must be fulfilled before re-registration is permitted.",
+      "FB5_6": "A student who FAILS TO COMPLETE the University examination in a course after TWO YEARS of study may, at the discretion of Senate, be EXCLUDED from further attendance of that course.",
+      "FB5_7": "A student who has been REFUSED PERMISSION TO RE-REGISTER in another faculty may NOT register in the Faculty of Science, except by permission of Senate.",
+      "FB5_8": "Re-registration in the Faculty does NOT imply a right to register for senior courses in subjects for which the student has completed prerequisite courses."
+    },
+
+    "transfer_from_other_faculties": {
+      "FB6": "A student who, after a year or more in another faculty, wishes to register in the Faculty of Science must, as a minimum: (a) satisfy the normal school-leaving subject entry requirements for admission to the BSc degree, AND (b) have complied with the provisions of Rule FB5.1–FB5.3 (i.e. not been academically excluded).",
+      "reference": "Refer to https://science.uct.ac.za/internal-transfers-science for detailed criteria and procedures."
+    },
+
+    "curriculum_rules": {
+      "total_credits": {
+        "FB7_1": "The curriculum shall include the equivalent of at LEAST 360 NQF CREDITS, of which at least 180 must be SCIENCE credits."
+      },
+
+      "senior_courses_requirement": {
+        "FB7_2": "The curriculum shall include the equivalent of AT LEAST 120 CREDITS AT LEVEL 7 (third-year/senior level). This applies even where the curriculum includes only ONE major."
+      },
+
+      "mathematics_requirement": {
+        "FB7_3": "The curriculum shall include EITHER: at least a Science Mathematics course of 18 NQF credits (level 5) PLUS a Science Statistics course of 18 NQF credits (level 5); OR Science Mathematics courses totalling 36 NQF credits (level 5)."
+      },
+
+      "elective_courses": {
+        "FB7_4": "Any course in the Faculty of Science may be taken as an elective. Courses from other Faculties may also be taken as electives, subject to the following constraints and APPROVAL by a Student Advisor or Deputy Dean:",
+        "constraint_1": "If Science courses are replaced by courses from another faculty, any courses not specifically excluded by Science Faculty rules can be chosen.",
+        "constraint_2": "If MORE THAN 72 SCIENCE CREDITS are replaced with electives from another faculty, then the further electives must form part of a HIERARCHICAL SEQUENCE linked to those already completed.",
+        "constraint_3": "Courses TAUGHT BY the Faculty of Science FOR OTHER FACULTIES are NOT available for students registered in Science. However, students TRANSFERRING INTO Science from other faculties may be able to count such courses towards their Science curriculum, with the credit weighting, equivalence and conditions established by the Departments concerned.",
+        "reference": "Refer to 'Non-Science electives in the Bachelor of Science (BSc) degree' at the back of the handbook."
+      },
+
+      "majors": {
+        "FB7_5": "The curriculum shall include AT LEAST ONE MAJOR from the approved list.",
+        "available_majors": [
+          "Applied Mathematics",
+          "Applied Statistics",
+          "Archaeology",
+          "Artificial Intelligence",
+          "Astrophysics",
+          "Biochemistry",
+          "Biology",
+          "Business Computing",
+          "Chemistry",
+          "Computer Science",
+          "Computer Engineering",
+          "Environmental & Geographical Science",
+          "Genetics",
+          "Geology",
+          "Human Anatomy & Physiology",
+          "Marine Biology",
+          "Mathematical Statistics",
+          "Mathematics",
+          "Ocean & Atmosphere Science",
+          "Physics",
+          "Quantitative Biology",
+          "Statistics & Data Science"
+        ],
+        "special_constraints": {
+          "Business_Computing": "May ONLY be taken in conjunction with a major in Computer Science.",
+          "Computer_Engineering": "May ONLY be taken in conjunction with a major in Computer Science.",
+          "Statistics_majors": "Applied Statistics, Mathematical Statistics and Statistics & Data Science may NOT be taken together — only ONE of these three may count towards the BSc degree."
+        },
+        "important_acceptance_warning": "Acceptance into the Science Faculty does NOT guarantee acceptance into your chosen major. Formal acceptance for specific majors only takes place at the START OF THE SECOND YEAR on registration for second-year level courses. A number of majors (currently Biochemistry, Genetics, and Human Anatomy & Physiology) have LIMITS on the number of students accepted into second year. Selection criteria are based on academic performance in first year. Students are encouraged to consult TIMEOUSLY with the relevant Department or Student Advisor regarding possible restrictions."
+      },
+
+      "compulsory_courses_note_1": "The compulsory courses listed for each major are the MINIMUM which a student must complete for the major, in addition to those listed in FB7.3 (Mathematics/Statistics requirement).",
+
+      "equivalences": {
+        "description": "The following courses are deemed equivalent by the Faculty:",
+        "BIO1000H": "equivalent to BIO1000F",
+        "CEM1009H_plus_CEM1010H": "equivalent to CEM1000W",
+        "CSC1010H": "equivalent to CSC1015F/S",
+        "CSC1011H": "equivalent to CSC1016S",
+        "MAM1004F_S_at_65_percent": "equivalent to MAM1031F",
+        "MAM1005H": "equivalent to MAM1031F or MAM1033F",
+        "MAM1006H": "equivalent to MAM1032S or MAM1034S",
+        "PHY1023H": "equivalent to PHY1031F"
+      },
+
+      "prerequisites_critical_note": {
+        "FB7_6_note3": "Pre-requisites include courses from a previous year which MUST BE PASSED before progressing to the next level. This also applies to first-semester courses required before continuing with second-semester courses. Where a student FAILS TO MEET the prerequisite conditions of a second-semester course, they will NOT be allowed to continue with the second-semester course — it will be REMOVED from their curriculum."
+      },
+
+      "third_year_credits_per_major": {
+        "FB7_7": "The curriculum must contain at least 72 credits of DISTINCT THIRD-YEAR (level 7) courses recognised by the Faculty for EACH MAJOR.",
+        "double_counting_allowance": "With the approval of the Deputy Dean, 36 credits may be counted towards MORE THAN ONE major in certain cases. However, the minimum total credit requirements (FB7.1–FB7.3) must still be met.",
+        "triple_major_note": "If a student has 180 credits of third-year (level 7) courses recognised by the Faculty, these can be counted towards THREE MAJORS in certain cases, with approval of the Deputy Dean."
+      }
+    },
+
+    "distinction_rules": {
+      "distinction_in_major": {
+        "FB8_1a": "To obtain a distinction in a major, a student is required to obtain FIRST CLASS PASSES (75%+) in the specific courses listed for each major (see handbook for full list per major).",
+        "FB8_1b": "If a student obtains a FIRST (75%+) AND an UPPER SECOND (70%–74%) in two 24-credit courses at second-year level, the marks shall be AVERAGED. If this average is 75% or more, the student is regarded as having obtained first class passes in BOTH courses. The same applies at third-year level with two 36-credit courses.",
+        "FB8_1b_12_credit": "Similarly, if a student obtains firsts and upper seconds in four 12-credit courses at second-year level, the marks shall be averaged. If this average is 75% or more, the student is regarded as having obtained first class passes in all four courses.",
+        "FB8_1c": "In special cases, the Board of the Faculty may replace a first class in one listed course with a first class pass in a COGNATE COURSE (which has not been used for distinction in that cognate subject)."
+      },
+      "distinction_in_degree": {
+        "FB8_2": "To obtain a distinction in the DEGREE AS A WHOLE, a student must: (a) obtain a distinction in AT LEAST ONE MAJOR (rule FB8.1); AND (b) obtain first class passes in at least 264 credits, including at least 192 SENIOR CREDITS; OR obtain an aggregate of at least 75% for each of six 18-credit courses, six 24-credit courses and four 36-credit courses obtained in a minimum period (usually three years)."
+      },
+      "first_attempt_only": "In applying distinction rules, ONLY passes at the FIRST ATTEMPT are taken into account — ordinary examinations in June or December and/or deferred examinations count, but SUPPLEMENTARY EXAMINATIONS DO NOT count towards distinction."
+    }
+  },
+
+  "bsc_honours_rules": {
+    "admission": {
+      "FH1": "A person shall not be admitted as a candidate unless they: (a) are a graduate of the Science Faculty who has been awarded a BSc in the discipline in which they propose to proceed to Honours; OR (b) are a graduate of any other faculty who has completed equivalent courses accepted by Senate; OR (c) are a graduate of any other recognised university who has completed equivalent courses."
+    },
+    "duration": {
+      "FH2_1": "The BSc Hons is offered over a period of NOT LESS THAN ONE ACADEMIC YEAR. Candidates are normally required to complete the programme within ONE ACADEMIC YEAR.",
+      "FH2_2": "In exceptional circumstances where an applicant has an inadequate undergraduate background, they may register as an OCCASIONAL STUDENT to complete preparatory courses. After satisfactory completion they may enrol for Honours. NOTE: Such students MUST APPLY for admission to the Honours programme for the FOLLOWING YEAR.",
+      "FH2_3": "In exceptional circumstances, Senate may admit a suitably qualified student as a PART-TIME candidate, who shall be required to complete the programme within TWO ACADEMIC YEARS."
+    },
+    "credits_and_level": "The BSc Hons has a total of 160 NQF CREDITS at HEQSF level 8.",
+    "restriction_on_registration": {
+      "FH4": "A student may NOT take any course(s) OTHER THAN those PRESCRIBED by the Honours programme for which they are registered."
+    },
+    "award_of_degree": {
+      "FH5": "The BSc Hons degree may be conferred after: (a) successful completion of a programme of formal training and supervised research, with a MINIMUM OF 30 NQF CREDITS out of 160 being the supervised research component; AND (b) BOTH the research project AND the balance of coursework/examination being passed SEPARATELY with a minimum of 50%."
+    },
+    "course_level_note": "For the coursework component of an Honours degree, where the same course is offered at both Honours (level 8, 4000-level) AND Master's (level 9, 5000-level), students must register for the course appropriate to their current qualification level. Students who have completed the 4000-level version are EXCLUDED from enrolling in the 5000-level version of the same course, and vice versa."
+  },
+
+  "masters_degree_rules": {
+    "admission_MSc": {
+      "FM2": "A person shall not be admitted as a candidate unless they are: (a) an Honours graduate in the Faculty of Science, or a graduate of another faculty or university who holds a degree recognised by Senate as equivalent to an Honours degree in Science; OR (b) a graduate who has shown by examination, publication or appropriate training that they have reached a level equivalent to an Honours degree in Science."
+    },
+    "admission_MPhil": {
+      "FM1": "A person shall not be admitted unless they: (a) hold an Honours degree or four-year equivalent from this or any other recognised university; OR (b) have shown by examination, publication or appropriate training that they have reached a level equivalent to an Honours degree; OR (c) have in any other manner attained a level of competence adequate for admission, in the opinion of Senate."
+    },
+    "structures": {
+      "SM001_SM002": "MSc/MPhil by FULL RESEARCH DISSERTATION — 180 NQF credit dissertation",
+      "SM004_SM005": "MSc/MPhil by COURSEWORK AND MINOR DISSERTATION — 90 NQF credit coursework + 90 NQF credit dissertation",
+      "SM007_SM008_SM009": "MSc/MPhil by COURSEWORK AND MINOR DISSERTATION — 120 NQF credit coursework + 60 NQF credit dissertation"
+    },
+    "registration_and_candidacy": {
+      "FM4": "A candidate shall register for NOT LESS THAN ONE ACADEMIC YEAR. Except by permission of Senate, FULL-TIME students are required to complete the degree within TWO YEARS."
+    },
+    "part_time_studies": {
+      "FM5": "On recommendation of the Head of Department, Senate may permit part-time study over a period of AT LEAST TWO YEARS or more. NOTE: No reduction in fees is made for part-time Master's degree students."
+    },
+    "course_level_exclusion": "Where the SAME COURSE is offered for both Honours (4000-level) AND Master's (5000-level), students must register for the level appropriate to their current qualification. Students who have completed the 4000-level version are EXCLUDED from the 5000-level version, and vice versa.",
+    "memorandum_of_understanding": {
+      "MoU_requirement": "Prior to registration, the candidate must complete a Memorandum of Understanding (MoU) with their supervisor(s), clarifying roles, responsibilities, frequency of access to supervisor, sabbatical leave, annual leave timing, expected working hours, timeframes, funding and intellectual property. The MoU is subject to approval by the Head of Department and Dean.",
+      "PPA_requirement": "Before the start of EACH SUBSEQUENT YEAR of registration, a Progress & Planned Activity (PPA) form must be completed and agreed by both candidate and supervisor(s). This represents an annual review of progress.",
+      "progress_reporting": "In October of each year, supervisors are required to provide the Faculty Examinations Committee (FEC) with a statement as to the progress (satisfactory or unsatisfactory) of their Master's and PhD students."
+    },
+    "progress_and_exclusion": {
+      "unsatisfactory_progress": "Where progress is unsatisfactory and not overturned on appeal, the student will be coded 'academically ineligible to continue' and may not re-register.",
+      "appeal_process": "Appeals against exclusion can be submitted to the Vice Chancellor's nominee via the Director for Academic Administration (research students), or to the Faculty Readmission Appeals Committee (coursework Master's students).",
+      "upgrade_to_phd": "In appropriate cases, a supervisor and Head may propose converting a student's registration to a PhD. This should take place at the END OF THE FIRST YEAR / BEGINNING OF THE SECOND YEAR of MSc/MPhil registration."
+    },
+    "dissertation_requirements": {
+      "FM7_1": "The dissertation shall demonstrate successful completion of research methods training, thorough understanding of scientific principles, and acquaintance with the relevant literature. It shall be clearly presented and conform to Faculty standards.",
+      "FM7_2a": "The dissertation shall be accompanied by a written undertaking empowering the University to reproduce the whole or any part for research purposes.",
+      "FM7_2b": "A publication may NOT, without prior permission of Senate, state that the published material was or is to be submitted in fulfilment of a Master's degree.",
+      "FM7_3_submission": "A candidate must: (a) inform the Head of Department and Faculty Office of their intention to submit 6–8 WEEKS BEFORE the intended submission date; (b) submit a DIGITAL COPY in the specified format — it is RECOMMENDED the dissertation be submitted for examination FIVE MONTHS BEFORE the graduation ceremony; (c) submit a final corrected digital copy for the Library.",
+      "length_full_dissertation": "A Master's dissertation should NOT EXCEED 30,000 WORDS (appendices excluded). Requests to deviate must be forwarded to the Dean for approval.",
+      "length_minor_dissertation": "Minor dissertations (coursework and minor dissertation degrees) should be SHORTER — on the order of 50 pages or 17,000–25,000 words.",
+      "published_papers": "A candidate who intends to include published papers in their dissertation must refer to the Guidelines for inclusion of publications in the PhD thesis (available from the Faculty Office) and note this in their MoU."
+    },
+    "award_of_degree": {
+      "FM8_1a": "The MSc/MPhil by dissertation may be conferred after acceptance by the Faculty of a dissertation on a research project performed under an approved supervisor. The dissertation must be presented for formal examination.",
+      "FM8_1b": "The MSc/MPhil by coursework and minor dissertation may be conferred after advanced formal training and supervised research. The COURSEWORK and MINOR DISSERTATION must each be PASSED SEPARATELY for the award of the degree.",
+      "FM8_2_distinction": "The degree may be awarded with distinction. For a coursework and minor dissertation degree, a distinction must be obtained in BOTH COMPONENTS for the degree with distinction overall. Unless otherwise specified: 75%+ in the credit-weighted average of coursework marks; 75%+ in at least 75% of the coursework credits; and 75%+ in the dissertation.",
+      "FM8_3": "SUPPLEMENTARY EXAMINATIONS ARE NOT AWARDED to candidates for the degree of Master."
+    }
+  },
+
+  "phd_rules": {
+    "admission": "The entrance requirement is a MASTER'S DEGREE or equivalent. Prospective candidates should discuss with a prospective supervisor and Head of Department BEFORE applying formally.",
+    "upgrade_from_masters": "It is sometimes possible to upgrade to a PhD after completing the first year of Master's research.",
+    "thesis_submission": "Where a candidate intends to submit their thesis, they must inform the Doctoral Degrees Board (DDB) Office in writing 6–8 WEEKS PRIOR to the intended submission date. It is recommended the thesis be submitted FIVE MONTHS BEFORE the graduation ceremony.",
+    "thesis_length": "A PhD thesis should NOT EXCEED 80,000 WORDS (excluding appendices and illustrations). Requests to deviate must go via the Dean to the DDB for approval.",
+    "published_papers": "Approval to include published papers in a PhD thesis is NOT AUTOMATIC. Candidates and supervisors are advised to seek advice from the Faculty's Higher Degrees Committee at an EARLY STAGE. The candidate must note this in their MoU with their supervisor each year."
+  },
+
+  "credit_exclusion_rules": {
+    "description": "The following course credit exclusions are enforced — students CANNOT obtain credit for more than one course in each group:",
+    "group_1_first_year_statistics": "A student cannot obtain credits for more than ONE of: STA1000F/S/P/L, STA1007S, STA1006S, STA1008F/S, STA1100S, STA1106H",
+    "group_2_second_year_statistics": "A student cannot obtain credits for more than ONE of: STA2020F/S, STA2007F/H/S, STA2005S",
+    "group_3_statistical_theory": "A student cannot obtain credits for BOTH STA2004F and STA2030S",
+    "group_4_third_year_statistics": "A student cannot obtain credits for BOTH STA3030F and STA3041F",
+    "group_5_ml_modelling": "A student cannot obtain credits for BOTH STA3043S and (STA3047S + STA3048S)",
+    "group_6_statistics_majors": "A student cannot obtain credits for more than ONE of: STA01 (Applied Statistics), STA02 (Mathematical Statistics), STA13 (Statistics & Data Science)",
+    "group_7_csc_first_year": "Credit will NOT be given for BOTH (CSC1015F/S and CSC1016S) AND (CSC1010H and CSC1011H)",
+    "group_8_physics_first_year": "Credit will NOT be given for BOTH PHY1023H and PHY1031F (though credit CAN be given for both PHY1023H and PHY1004W)"
+  },
+
+  "specific_major_warnings": {
+    "Biology_to_Honours": "Students who major in Biology and wish to progress to Biological Sciences or Marine Biology Honours MUST complete STA2007.",
+    "Marine_Biology_to_Honours": "Students who major in Marine Biology and wish to progress to Biology or Marine Biology Honours MUST complete STA2007S.",
+    "Applied_Mathematics_to_Honours": "Students who major in Applied Mathematics and wish to progress to Applied Mathematics Honours are STRONGLY RECOMMENDED to complete the project course MAM3055Z.",
+    "Mathematics_to_Honours": "Students who major in Mathematics and wish to progress to Mathematics Honours are STRONGLY RECOMMENDED to complete the project course MAM3006Z.",
+    "Applied_Statistics_to_Honours": "Students who major in Applied Statistics and wish to progress to Statistics Honours MUST complete ONE SEMESTER of Computer Science 1.",
+    "Mathematical_Statistics_to_Honours": "Students who major in Mathematical Statistics and wish to progress to Statistics Honours MUST complete ONE SEMESTER of Computer Science 1.",
+    "Ocean_Atmosphere_Science_to_Honours": "Students who major in Ocean & Atmosphere Science and wish to progress to Ocean & Atmosphere Science Honours are STRONGLY RECOMMENDED to complete both STA2007F/S/H and CSC1015F/S.",
+    "Business_Computing_constraint": "The major in Business Computing may ONLY be taken in conjunction with a major in Computer Science.",
+    "Computer_Engineering_constraint": "The major in Computer Engineering may ONLY be taken in conjunction with a major in Computer Science.",
+    "Mathematics_STA3047S_STA3048S": "STA3047S and STA3048S MUST be taken together. These courses have a co-requisite relationship.",
+    "STA3045F_concurrent_restriction": "A student may NOT register concurrently for STA3045F and CSC2001F.",
+    "STA2030S_concurrent_restriction": "A student may NOT register concurrently for STA2030S and MAM1006H.",
+    "Geology_fieldwork": "GEO2005X (Field Geology and Geological Mapping) is a fieldwork half-course to be taken ACROSS BOTH second and third years of study.",
+    "limited_enrolment_majors": "Biochemistry, Genetics, and Human Anatomy & Physiology currently have LIMITS on the number of students accepted into second-year courses. Selection is based on first-year academic performance.",
+    "Geology_limited_enrolment": "The Geology major also has limits on the number of students accepted into second-year courses.",
+    "CSC_programming_assessment": "CSC2004Z (Programming Assessment) is a REQUIRED course for ALL students majoring in Computer Science and/or wishing to continue to ANY third-year Computer Science course. It must be taken in the second year and carries 0 NQF credits.",
+    "Computer_Engineering_note": "PHY and MAM courses in Computer Engineering are not requirements of the major itself, but are pre-requisites of EEE2041F."
+  },
+
+  "honours_specific_rules": {
+    "registration_restriction": "FH4: A student may NOT take any course(s) other than those PRESCRIBED by the Honours programme for which they are registered.",
+    "entry_requirements_by_department": {
+      "Computer_Science": "Average of at least 60% in BOTH CSC3002F and CSC3003S, or permission from Head of Department. Limited places — acceptance is competitive.",
+      "Chemistry": "60% or higher in CEM3005W as normal minimum. Entrance is competitive. Limited to 18 students.",
+      "Biological_Sciences": "BSc degree in Biology, pass in STA2007 F/S/H or equivalent statistics course. Limited to 20 students.",
+      "Marine_Biology": "BSc degree in Marine Biology, pass in STA2007 F/S/H or equivalent. Limited to 12 students.",
+      "Physics": "Pass of 60% in PHY3004W AND 60% in MAM2000W or MAM2046W, plus possible favourable referee reports. Limited to 15 students.",
+      "Statistics_and_Data_Science": "Mathematical Statistics stream: average of 65%+ for third-year courses at first attempt, plus 60%+ minimum in each prerequisite. Applied Statistics stream: average of 70%+ for third-year courses at first attempt. Students not meeting thresholds may be considered case-by-case."
+    },
+    "laptop_requirement": "CSC Honours students are required to have a laptop meeting minimum specifications (available at https://internal.cs.uct.ac.za/teaching/laptop_requirement.html). A tablet is NOT suitable."
+  },
+
+  "examination_and_assessment_rules": {
+    "dp_critical_warning": "CHECK DP REQUIREMENTS CAREFULLY for each course. Non-compliance means you will NOT be eligible to sit the examination.",
+    "sub_minimum_critical_warning": "CHECK sub-minimum requirements for each course. Failing the sub-minimum in the EXAM results in a Fail even if your overall mark would otherwise pass.",
+    "supplementary_vs_deferred": {
+      "supplementary": "Awarded at the discretion of Senate for borderline failures. NOT automatic. Refer to FB4.1–FB4.3 and General Rules G22.",
+      "deferred": "For students who could not write the examination due to illness or other compelling circumstance. Refer to General Rules G27 and G28.",
+      "note": "Supplementary examinations ARE NOT awarded for Master's degrees."
+    },
+    "further_testing": "For ALL undergraduate Chemistry courses, borderline candidates may NOT necessarily be awarded a supplementary examination. The Department reserves the right to apply rule G21 — a further test (oral or written) may take place BEFORE the Faculty Examinations Committee meeting. Students may be expected to make themselves available for such further testing.",
+    "classification_of_results": "Refer to General Rules G26 for the official classification of results.",
+    "leave_of_absence": "Refer to General Rules G16.3–G16.9 (including Notes 1–5)."
+  },
+
+  "course_registration_warnings": {
+    "prerequisite_enforcement": "Pre-requisite rules are applied CONSISTENTLY. Where a prerequisite course is failed or not completed, the follow-on course MUST be deregistered/removed from the curriculum.",
+    "semester_progression": "If a student fails to meet the prerequisite conditions of a second-semester course, they will NOT be allowed to continue with that second-semester course — it will be REMOVED from their curriculum.",
+    "second_year_failure_limit": "A student who fails to complete the University examination in a course after TWO YEARS of study may be EXCLUDED from further attendance of that course (FB5.6).",
+    "72_credit_limit": "Never register for more than 72 NQF credits per semester unless a waiver has been explicitly granted by a Student Advisor or Deputy Dean.",
+    "non_science_electives": "Taking courses from other faculties as electives requires approval by a Student Advisor or Deputy Dean. More than 72 replacement credits from another faculty require a hierarchical sequence.",
+    "annual_rule_check": "Students are expected to check ANNUALLY whether rules or curriculum requirements have changed since the last edition of the handbook."
+  },
+
+  "postgraduate_master_coursework_progression_rules": {
+    "biostatistics_and_statistics_data_science_common": {
+      "pass_modules_for_coursework_component": "Students must pass modules adding up to 90 credits to qualify for the coursework component of the degree.",
+      "all_core_courses_must_be_passed": true,
+      "max_repeats": "Students are allowed to repeat a failed module ONCE only.",
+      "year_1_minimum": "Pass at least 3 modules in first year to be allowed to continue.",
+      "elective_unlock_condition": "Students may NOT progress to elective modules unless they have passed at least 3 CORE modules.",
+      "year_2_minimum": "Pass at least 4 modules by end of second year to be allowed to continue.",
+      "maximum_time_for_coursework": "Students may take a MAXIMUM OF THREE YEARS to complete their coursework requirement.",
+      "dissertation_registration_rule": "Students may register for the dissertation component if they have passed 3 modules. However, they may NOT SUBMIT their dissertations for examination before they have passed ALL required modules.",
+      "distinction_rule": "75%+ in the credit-weighted average of coursework marks; 75%+ in at least 4 modules taken in Statistical Sciences; AND 75%+ in the dissertation."
+    },
+    "data_science_programme": {
+      "pass_courses_for_coursework_component": "Students must pass courses adding up to 90/120 credits to qualify for the coursework component.",
+      "all_core_courses_must_be_passed": true,
+      "max_repeats": "Students are allowed to repeat a failed course ONCE only.",
+      "year_1_minimum": "Pass at least 3 courses in first year to be allowed to continue.",
+      "elective_unlock_condition": "Students may NOT progress to elective courses unless they have passed at least 3 CORE courses.",
+      "year_2_minimum": "Pass at least 4 courses by end of second year to be allowed to continue.",
+      "maximum_time_for_coursework": "Students may take a MAXIMUM OF THREE YEARS to complete their coursework requirement.",
+      "dissertation_registration_rule": "Students may register for the dissertation component if they have passed 3 courses. However, they may NOT SUBMIT their dissertations for examination before they have passed ALL required courses.",
+      "distinction_rule": "75%+ in the credit-weighted average of coursework marks; 75%+ in at least 4 modules in Statistical Sciences or Computer Science; AND 75%+ in the dissertation."
+    }
+  },
+
+  "important_notes_and_warnings": [
+    "Always read this handbook IN CONJUNCTION with Handbook 3 (General Rules and Policies).",
+    "Check ANNUALLY whether rules or curriculum requirements have changed.",
+    "Acceptance into the Science Faculty does NOT guarantee acceptance into your chosen major. Some majors have strictly limited enrolments (Biochemistry, Genetics, Human Anatomy & Physiology, Geology).",
+    "A first-year fail does NOT automatically result in a supplementary examination — the department must recommend it and the mark must be in the qualifying range.",
+    "Supplementary examinations are NEVER awarded for Master's degrees.",
+    "Distinctions only count passes at the FIRST ATTEMPT — supplementary examination passes do NOT contribute to distinction calculations.",
+    "Courses taught by the Science Faculty FOR OTHER FACULTIES are NOT available to Science students.",
+    "Business Computing and Computer Engineering majors MUST be taken together with a Computer Science major.",
+    "Applied Statistics, Mathematical Statistics, and Statistics & Data Science are MUTUALLY EXCLUSIVE — only one may be completed for the BSc.",
+    "Where the same course exists at both 4000-level (Honours) and 5000-level (Master's), completing one version EXCLUDES you from taking the other.",
+    "The 72-credit-per-semester limit is hard — exceeding it requires explicit Senate permission via a Student Advisor or Deputy Dean.",
+    "For any postgraduate degree, a Memorandum of Understanding (MoU) with your supervisor MUST be completed prior to or during registration and is subject to Dean approval.",
+    "Master's and PhD students: annual Progress & Planned Activity (PPA) forms are COMPULSORY before re-registration each year.",
+    "Progress reports from supervisors are submitted to the FEC each October — unsatisfactory progress can result in exclusion from further study.",
+    "Dissertations must be submitted for examination FIVE MONTHS BEFORE the intended graduation ceremony to allow the examination process to run.",
+    "A Master's dissertation must NOT exceed 30,000 words; a minor dissertation should be approximately 17,000–25,000 words; a PhD thesis must NOT exceed 80,000 words.",
+    "Including published papers in a Master's dissertation or PhD thesis requires following specific faculty guidelines and noting this in the MoU. For PhD, approval is NOT automatic.",
+    "Part-time study at Master's level does NOT reduce fees.",
+    "For Chemistry undergraduate courses, a supplementary examination is NOT guaranteed — borderline candidates may face a further oral or written test before the FEC instead."
+  ]
+}
