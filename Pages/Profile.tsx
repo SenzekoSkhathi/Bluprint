@@ -40,6 +40,7 @@ export interface LoggedInUserProfile {
   year: number;
   majors?: string[];
   creditsCompleted?: number;
+  gpa?: number;
 }
 
 interface ProfileProps {
@@ -61,7 +62,7 @@ const defaultStudentProfile: StudentProfile = {
   faculty: "Faculty of Science",
   year: "Year 2",
   status: "Full-time",
-  gpa: 3.65,
+  gpa: 0,
   creditsCompleted: 90,
   creditsRequired: 360,
   expectedGraduation: "November 2026",
@@ -90,6 +91,7 @@ function buildProfileFromLoggedInUser(
     year: `Year ${loggedInUser.year}`,
     creditsCompleted:
       loggedInUser.creditsCompleted ?? defaultStudentProfile.creditsCompleted,
+    gpa: loggedInUser.gpa ?? defaultStudentProfile.gpa,
   };
 }
 
@@ -342,8 +344,8 @@ export default function Profile({ onLogout, loggedInUser }: ProfileProps) {
       {/* ── Quick stats ── */}
       <View style={styles.statGrid}>
         <View style={styles.statCard}>
-          <Text style={styles.statValue}>{profile.gpa.toFixed(2)}</Text>
-          <Text style={styles.statLabel}>GPA</Text>
+          <Text style={styles.statValue}>{profile.gpa.toFixed(1)}</Text>
+          <Text style={styles.statLabel}>GPA / 100</Text>
         </View>
         <View style={styles.statCard}>
           <Text style={styles.statValue}>

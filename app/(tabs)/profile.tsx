@@ -13,11 +13,20 @@ export default function ProfileScreen() {
     router.replace("/login");
   };
 
+  const gpa = (() => {
+    const graded = (mockUser?.completedCourses.passed ?? []).filter(
+      (c) => c.grade != null,
+    );
+    if (graded.length === 0) return 0;
+    return graded.reduce((sum, c) => sum + (c.grade ?? 0), 0) / graded.length;
+  })();
+
   const profileUser =
     session && loggedInUser
       ? {
           ...loggedInUser,
           creditsCompleted: mockUser?.academicProgress.creditsEarned,
+          gpa,
         }
       : undefined;
 
