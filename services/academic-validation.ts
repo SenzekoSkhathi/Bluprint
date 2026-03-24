@@ -4,6 +4,7 @@ import type {
     CourseCatalogEntry,
     DegreeRequirements,
     InProgressCourseRecord,
+    MajorCombination,
     PlannedCourse,
     ScheduleItem,
     ValidationIssue,
@@ -16,6 +17,8 @@ interface AcademicValidationInput {
   completedCourses: CompletedCourseRecord[];
   inProgressCourses: InProgressCourseRecord[];
   scheduleItems?: ScheduleItem[];
+  majorCombinations?: MajorCombination[];
+  studentCombinationIds?: string[];
 }
 
 const MIN_TERM_CREDITS = 30;
@@ -99,6 +102,8 @@ export function validateAcademicPlan({
   completedCourses,
   inProgressCourses,
   scheduleItems = [],
+  majorCombinations,
+  studentCombinationIds,
 }: AcademicValidationInput): AcademicValidationReport {
   const issues: ValidationIssue[] = [];
   const catalogByCode = new Map(catalog.map((course) => [course.code, course]));
@@ -489,6 +494,42 @@ export function validateAcademicPlan({
       }),
     );
   });
+
+  // ── Major combination validation ─────────────────────────────────────────
+  // For each combination the student is enrolled in, check that all required
+  // courses are covered by completed, in-progress, or planned courses.
+  if (majorCombinations && studentCombinationIds && studentCombinationIds.length > 0) {
+    studentCombinationIds.forEach((combId) => {
+      const combination = majorCombinations.find((c) => c.id === combId);
+      if (!combination) {
+        issues.push(
+          buildIssue(nextId(), {
+            severity: "info",
+            category: "major-combination",
+            title: `Unknown combination: ${combId}`,
+            message: `Combination ${combId} is not in the registry. Verify your enrolled stream with the faculty.`,
+          }),
+        );
+        return;
+      }
+
+      const missingRequired = combination.requiredCourseCodes.filter(
+        (code) => !allKnownCodes.has(code),
+      );
+
+      missingRequired.forEach((missingCode) => {
+        issues.push(
+          buildIssue(nextId(), {
+            severity: "warning",
+            category: "major-combination",
+            title: `Missing required course for ${combination.major} (Year ${combination.year})`,
+            message: `${missingCode} is required for your ${combination.major} Year ${combination.year} stream (${combId}) but is not in your completed, in-progress, or planned courses.`,
+            relatedCourseCode: missingCode,
+          }),
+        );
+      });
+    });
+  }
 
   const blockers = issues.filter(
     (issue) => issue.severity === "blocker",

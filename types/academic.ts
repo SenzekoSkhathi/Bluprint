@@ -107,7 +107,8 @@ export type ValidationCategory =
   | "credits"
   | "core-requirement"
   | "schedule"
-  | "load";
+  | "load"
+  | "major-combination";
 
 export interface ValidationIssue {
   id: string;
@@ -134,6 +135,30 @@ export interface AcademicValidationReport {
   projectedCredits: number;
   creditShortfall: number;
   isProjectedGraduationEligible: boolean;
+}
+
+export interface MajorCombination {
+  id: string;                        // e.g. "CSC05-Y1-A"
+  major: string;                     // e.g. "Computer Science"
+  year: number;                      // 1, 2, 3, or 4
+  requiredCourseCodes: string[];     // must complete all of these
+  suggestedElectiveCodes: string[];  // optional courses recommended for this stream
+}
+
+export interface ElectiveSuggestion {
+  code: string;
+  title: string;
+  credits: number;
+  reason: string;
+  semester: string;
+}
+
+export interface YearPlan {
+  year: number;
+  yearLabel: string;
+  terms: AutoPlannedTerm[];
+  totalCredits: number;
+  electiveSuggestions: ElectiveSuggestion[];
 }
 
 export type PlanningObjective = "fastest" | "balanced" | "light";
@@ -163,4 +188,5 @@ export interface AutoGraduationPlan {
   projectedTotalCredits: number;
   rationale: string[];
   terms: AutoPlannedTerm[];
+  yearlyBreakdown?: YearPlan[];
 }

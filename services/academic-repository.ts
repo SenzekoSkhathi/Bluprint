@@ -2,6 +2,7 @@ import {
     courseCatalog,
     courseGroups,
     defaultDegreeRequirements,
+    majorCombinations,
     plannerCourseOptions,
     plannerInitialCourses,
     plannerSemesters,
@@ -25,6 +26,7 @@ import type {
     CourseGroup,
     DegreeRequirements,
     InProgressCourseRecord,
+    MajorCombination,
     PlannedCourse,
     PlannerCourseOption,
     ProgressFeedback,
@@ -156,11 +158,16 @@ export const academicRepository = {
     return buildInitialTodos(now.toISOString()).map((item) => ({ ...item }));
   },
 
+  getMajorCombinations(): MajorCombination[] {
+    return majorCombinations;
+  },
+
   getAcademicValidationReport(options?: {
     plannedCourses?: PlannedCourse[];
     completedCourses?: CompletedCourseRecord[];
     inProgressCourses?: InProgressCourseRecord[];
     scheduleItems?: ScheduleItem[];
+    studentCombinationIds?: string[];
   }): AcademicValidationReport {
     const report = validateAcademicPlan({
       catalog: this.getCourseCatalog(),
@@ -171,6 +178,8 @@ export const academicRepository = {
       inProgressCourses:
         options?.inProgressCourses ?? this.getInProgressCourses(),
       scheduleItems: options?.scheduleItems ?? this.getInitialScheduleItems(),
+      majorCombinations: this.getMajorCombinations(),
+      studentCombinationIds: options?.studentCombinationIds,
     });
     return report;
   },
@@ -179,6 +188,7 @@ export const academicRepository = {
     plannedCourses?: PlannedCourse[];
     completedCourses?: CompletedCourseRecord[];
     inProgressCourses?: InProgressCourseRecord[];
+    studentCombinationIds?: string[];
   }): AutoGraduationPlan[] {
     const plans = generateAutoGraduationPlans({
       catalog: this.getCourseCatalog(),
@@ -188,6 +198,8 @@ export const academicRepository = {
       completedCourses: options?.completedCourses ?? this.getCompletedCourses(),
       inProgressCourses:
         options?.inProgressCourses ?? this.getInProgressCourses(),
+      majorCombinations: this.getMajorCombinations(),
+      studentCombinationIds: options?.studentCombinationIds,
     });
     return plans;
   },

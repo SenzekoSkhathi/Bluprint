@@ -731,16 +731,17 @@ const amaraFailed: Course[] = [];
 const amaraInProgress: Course[] = [
   // Year 4 — 2025 | S1: 24, S2: 12 — within FB3
   // NQF7 in-progress = 36 → forecast total = 360 (graduation eligible!) ✓
+  // 300-level courses only (400+ = postgrad, not allowed in undergrad)
   {
-    code: "STA4050F",
-    title: "Advanced Statistical Computing",
+    code: "STA3030F",
+    title: "Statistical Inference and Modelling 3030F",
     credits: 24,
     nqfLevel: 7,
     semester: "S1 2025",
   },
   {
-    code: "STA4051S",
-    title: "Biostatistics and Clinical Trials",
+    code: "STA3051S",
+    title: "Experimental Design and Analysis 3051S",
     credits: 12,
     nqfLevel: 7,
     semester: "S2 2025",

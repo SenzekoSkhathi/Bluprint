@@ -4,6 +4,7 @@ import type {
     CourseGroup,
     DegreeRequirements,
     InProgressCourseRecord,
+    MajorCombination,
     PlannedCourse,
     PlannerCourseOption,
     ProgressFeedback,
@@ -359,5 +360,198 @@ export const scheduleInitialItems: ScheduleItem[] = [
     startTime: "11:00",
     endTime: "12:30",
     location: "Room C110",
+  },
+];
+
+export const majorCombinations: MajorCombination[] = [
+  // ── Computer Science ──────────────────────────────────────
+  {
+    id: "CSC05-Y1-A", major: "Computer Science", year: 1,
+    requiredCourseCodes: ["CSC1015F", "MAM1000W", "CSC1016S"],
+    suggestedElectiveCodes: ["MAM1019H", "STA1007S"],
+  },
+  {
+    id: "CSC05-Y1-B", major: "Computer Science", year: 1,
+    requiredCourseCodes: ["CSC1015F", "MAM1000W"],
+    suggestedElectiveCodes: ["MAM1004F", "INF1002F"],
+  },
+  {
+    id: "CSC05-Y1-C", major: "Computer Science", year: 1,
+    requiredCourseCodes: ["CSC1015F", "MAM1031F", "MAM1032S"],
+    suggestedElectiveCodes: ["STA1007S", "CSC1016S"],
+  },
+  {
+    id: "CSC05-Y2-A", major: "Computer Science", year: 2,
+    requiredCourseCodes: ["CSC2001F", "CSC2002S", "MAM2010F", "MAM2011F"],
+    suggestedElectiveCodes: ["INF2009F", "MAM2040F"],
+  },
+  {
+    id: "CSC05-Y2-B", major: "Computer Science", year: 2,
+    requiredCourseCodes: ["CSC2001F", "CSC2002S"],
+    suggestedElectiveCodes: ["MAM2010F", "INF2009F", "STA2004F"],
+  },
+  {
+    id: "CSC05-Y3-A", major: "Computer Science", year: 3,
+    requiredCourseCodes: ["CSC3002F", "CSC3003S"],
+    suggestedElectiveCodes: ["CSC3041F", "CSC3042F", "CSC3043S"],
+  },
+  // ── Artificial Intelligence ───────────────────────────────
+  {
+    id: "CSC08-Y1-A", major: "Artificial Intelligence", year: 1,
+    requiredCourseCodes: ["CSC1015F", "MAM1031F"],
+    suggestedElectiveCodes: ["MAM1032S", "STA1007S"],
+  },
+  {
+    id: "CSC08-Y1-B", major: "Artificial Intelligence", year: 1,
+    requiredCourseCodes: ["CSC1015F", "MAM1031F", "MAM1032S"],
+    suggestedElectiveCodes: ["STA1007S", "CSC1016S"],
+  },
+  {
+    id: "CSC08-Y2-A", major: "Artificial Intelligence", year: 2,
+    requiredCourseCodes: ["CSC2041F", "CSC2042S"],
+    suggestedElectiveCodes: ["CSC2001F", "MAM2013S", "CSC2002S"],
+  },
+  {
+    id: "CSC08-Y3-A", major: "Artificial Intelligence", year: 3,
+    requiredCourseCodes: ["CSC3041F", "CSC3043S"],
+    suggestedElectiveCodes: ["CSC3042F", "CSC3044S", "CSC3002F"],
+  },
+  // ── Mathematics ───────────────────────────────────────────
+  {
+    id: "MAM02-Y1-B", major: "Mathematics", year: 1,
+    requiredCourseCodes: ["MAM1031F", "MAM1032S"],
+    suggestedElectiveCodes: ["MAM1019H", "STA1000F"],
+  },
+  {
+    id: "MAM02-Y2-A", major: "Mathematics", year: 2,
+    requiredCourseCodes: ["MAM2010F", "MAM2011F", "MAM2013S", "MAM2014S"],
+    suggestedElectiveCodes: ["MAM2040F", "MAM2043S"],
+  },
+  {
+    id: "MAM02-Y3-A", major: "Mathematics", year: 3,
+    requiredCourseCodes: ["MAM3010F", "MAM3011F"],
+    suggestedElectiveCodes: ["MAM3012S", "CSC3002F"],
+  },
+  // ── Physics ───────────────────────────────────────────────
+  {
+    id: "PHY01-Y1-A", major: "Physics", year: 1,
+    requiredCourseCodes: ["MAM1000W", "PHY1004W"],
+    suggestedElectiveCodes: ["CSC1015F", "AST1000S"],
+  },
+  {
+    id: "PHY01-Y1-B", major: "Physics", year: 1,
+    requiredCourseCodes: ["MAM1031F", "MAM1032S", "PHY1004W"],
+    suggestedElectiveCodes: ["CSC1015F", "AST1000S"],
+  },
+  {
+    id: "PHY01-Y2-A", major: "Physics", year: 2,
+    requiredCourseCodes: ["PHY2004W", "MAM2010F", "MAM2040F"],
+    suggestedElectiveCodes: ["AST2002H", "MAM2043S"],
+  },
+  {
+    id: "PHY01-Y3-A", major: "Physics", year: 3,
+    requiredCourseCodes: ["PHY3004W"],
+    suggestedElectiveCodes: ["AST3002F", "AST3003S", "MAM3010F"],
+  },
+  // ── Astrophysics ──────────────────────────────────────────
+  {
+    id: "AST02-Y1-A", major: "Astrophysics", year: 1,
+    requiredCourseCodes: ["PHY1004W", "MAM1000W"],
+    suggestedElectiveCodes: ["AST1000S", "CSC1015F"],
+  },
+  {
+    id: "AST02-Y1-B", major: "Astrophysics", year: 1,
+    requiredCourseCodes: ["PHY1004W", "MAM1031F"],
+    suggestedElectiveCodes: ["AST1000S", "MAM1032S"],
+  },
+  {
+    id: "AST02-Y2-A", major: "Astrophysics", year: 2,
+    requiredCourseCodes: ["AST2002H"],
+    suggestedElectiveCodes: ["AST2003H", "MAM2043S", "PHY2004W"],
+  },
+  {
+    id: "AST02-Y3-A", major: "Astrophysics", year: 3,
+    requiredCourseCodes: ["AST3002F", "AST3003S"],
+    suggestedElectiveCodes: ["PHY3004W", "MAM3010F"],
+  },
+  // ── Applied Statistics ────────────────────────────────────
+  {
+    id: "STA01-Y1-A", major: "Applied Statistics", year: 1,
+    requiredCourseCodes: ["MAM1000W", "STA1000F", "STA1007S"],
+    suggestedElectiveCodes: ["CSC1015F"],
+  },
+  {
+    id: "STA01-Y1-B", major: "Applied Statistics", year: 1,
+    requiredCourseCodes: ["MAM1031F", "STA1000F", "STA1007S", "MAM1032S"],
+    suggestedElectiveCodes: ["CSC1015F"],
+  },
+  {
+    id: "STA01-Y2-B", major: "Applied Statistics", year: 2,
+    requiredCourseCodes: ["STA2020F", "MAM2010F", "STA2030S"],
+    suggestedElectiveCodes: ["MAM2011F", "STA2004F"],
+  },
+  // ── Mathematical Statistics ───────────────────────────────
+  {
+    id: "STA02-Y1-B", major: "Mathematical Statistics", year: 1,
+    requiredCourseCodes: ["MAM1031F", "STA1000F", "STA1006S", "MAM1032S"],
+    suggestedElectiveCodes: ["CSC1015F"],
+  },
+  {
+    id: "STA02-Y2-A", major: "Mathematical Statistics", year: 2,
+    requiredCourseCodes: ["STA2004F", "STA2005S", "MAM2010F", "MAM2011F"],
+    suggestedElectiveCodes: ["CSC2001F", "MAM2013S"],
+  },
+  {
+    id: "STA02-Y3-A", major: "Mathematical Statistics", year: 3,
+    requiredCourseCodes: ["STA3041F", "STA3048S"],
+    suggestedElectiveCodes: ["STA3047S", "MAM3010F", "STA3022F"],
+  },
+  {
+    id: "STA02-Y4-A", major: "Mathematical Statistics", year: 4,
+    requiredCourseCodes: ["STA3030F", "STA3051S"],
+    suggestedElectiveCodes: ["STA3022F"],
+  },
+  // ── Statistics & Data Science ─────────────────────────────
+  {
+    id: "STA13-Y1-A", major: "Statistics & Data Science", year: 1,
+    requiredCourseCodes: ["CSC1015F", "MAM1031F", "STA1000F"],
+    suggestedElectiveCodes: ["CSC1016S", "MAM1032S"],
+  },
+  {
+    id: "STA13-Y2-A", major: "Statistics & Data Science", year: 2,
+    requiredCourseCodes: ["CSC2001F", "STA2004F", "MAM2010F", "CSC2002S", "STA2005S"],
+    suggestedElectiveCodes: ["MAM2011F"],
+  },
+  {
+    id: "STA13-Y2-D", major: "Statistics & Data Science", year: 2,
+    requiredCourseCodes: ["CSC2001F", "STA2004F", "MAM2010F"],
+    suggestedElectiveCodes: ["CSC2002S", "STA2005S", "STA2030S"],
+  },
+  {
+    id: "STA13-Y3-D", major: "Statistics & Data Science", year: 3,
+    requiredCourseCodes: ["STA3030F", "STA3022F"],
+    suggestedElectiveCodes: ["CSC3002F", "STA3041F"],
+  },
+  // ── Biology ───────────────────────────────────────────────
+  {
+    id: "BIO12-Y1-A", major: "Biology", year: 1,
+    requiredCourseCodes: ["BIO1000F", "CEM1000W", "BIO1004S"],
+    suggestedElectiveCodes: ["STA1007S", "MAM1004F"],
+  },
+  {
+    id: "BIO12-Y2-B", major: "Biology", year: 2,
+    requiredCourseCodes: ["BIO2014F", "BIO2016S"],
+    suggestedElectiveCodes: ["MCB2020F", "BIO2015F"],
+  },
+  // ── Molecular Cell Biology ────────────────────────────────
+  {
+    id: "MCB04-Y1-A", major: "Molecular Cell Biology", year: 1,
+    requiredCourseCodes: ["BIO1000F", "CEM1000W"],
+    suggestedElectiveCodes: ["MAM1004F", "STA1007S"],
+  },
+  {
+    id: "MCB04-Y2-A", major: "Molecular Cell Biology", year: 2,
+    requiredCourseCodes: ["MCB2020F"],
+    suggestedElectiveCodes: ["BIO2014F", "MCB2021S"],
   },
 ];

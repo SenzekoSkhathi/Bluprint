@@ -5,9 +5,12 @@ import type {
     CompletedCourseRecord,
     CourseCatalogEntry,
     DegreeRequirements,
+    ElectiveSuggestion,
     InProgressCourseRecord,
+    MajorCombination,
     PlannedCourse,
     PlanningObjective,
+    YearPlan,
 } from "@/types/academic";
 
 interface AutoPlannerInput {
@@ -16,6 +19,8 @@ interface AutoPlannerInput {
   completedCourses: CompletedCourseRecord[];
   inProgressCourses: InProgressCourseRecord[];
   plannedCourses: PlannedCourse[];
+  majorCombinations?: MajorCombination[];
+  studentCombinationIds?: string[];
 }
 
 interface ObjectiveProfile {
@@ -290,6 +295,55 @@ export function generateAutoGraduationPlans(
       electiveShortfall -= creditsToAllocate;
     }
 
+    // ── Year-by-year breakdown with elective suggestions ──────────────────
+    const yearlyBreakdown: YearPlan[] = [];
+    const termsByYear = new Map<number, AutoPlannedTerm[]>();
+    termPlans.forEach((term) => {
+      const yr = Math.ceil(term.termIndex / 2);
+      if (!termsByYear.has(yr)) termsByYear.set(yr, []);
+      termsByYear.get(yr)!.push(term);
+    });
+
+    termsByYear.forEach((yearTerms, yr) => {
+      const totalCredits = yearTerms.reduce((s, t) => s + t.totalCredits, 0);
+
+      // Collect elective suggestions for this year from the student's combinations
+      const seenElectives = new Set<string>();
+      const electiveSuggestions: ElectiveSuggestion[] = [];
+
+      if (input.studentCombinationIds && input.majorCombinations) {
+        input.studentCombinationIds.forEach((combId) => {
+          const comb = input.majorCombinations!.find(
+            (c) => c.id === combId && c.year === yr,
+          );
+          if (!comb) return;
+
+          comb.suggestedElectiveCodes.forEach((code) => {
+            if (satisfiedCodes.has(code)) return;
+            if (seenElectives.has(code)) return;
+            const entry = catalogByCode.get(code);
+            if (!entry) return;
+            seenElectives.add(code);
+            electiveSuggestions.push({
+              code,
+              title: entry.title,
+              credits: entry.credits,
+              reason: `Recommended elective for ${comb.major} Year ${yr}`,
+              semester: entry.semester,
+            });
+          });
+        });
+      }
+
+      yearlyBreakdown.push({
+        year: yr,
+        yearLabel: `Year ${yr}`,
+        terms: yearTerms,
+        totalCredits,
+        electiveSuggestions,
+      });
+    });
+
     const unresolvedCoreCount = remainingCoreCodes.size;
     const projectedCompletionTerm =
       termPlans.length > 0
@@ -319,6 +373,7 @@ export function generateAutoGraduationPlans(
       projectedTotalCredits,
       rationale,
       terms: termPlans,
+      yearlyBreakdown,
     } satisfies AutoGraduationPlan;
   });
 
