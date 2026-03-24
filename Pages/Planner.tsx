@@ -8,6 +8,7 @@ import type {
   PlannerCourseStatus as CourseStatus,
   InProgressCourseRecord,
   PlannedCourse,
+  ScheduleItem,
 } from "@/types/academic";
 import { generateAutoGraduationPlans } from "@/services/academic-path-planner";
 import { validateAcademicPlan } from "@/services/academic-validation";
@@ -31,6 +32,7 @@ import {
   getScienceCourses,
   getScienceMajors,
   getStudentPlan,
+  getStudentSchedule,
   type HandbookPlannerPolicy,
   type HandbookRuleValidationIssue,
   type HandbookRuleValidationResponse,
@@ -311,6 +313,7 @@ export default function Planner({
     ScienceMajorEntry[]
   >([]);
   const [majorRulesError, setMajorRulesError] = useState<string | null>(null);
+  const [scheduleItems, setScheduleItems] = useState<ScheduleItem[]>([]);
 
   useEffect(() => {
     let isMounted = true;
@@ -471,6 +474,37 @@ export default function Planner({
       isMounted = false;
     };
   }, [registeredMajors]);
+
+  // Fetch student schedule for clash detection in the current term.
+  useEffect(() => {
+    if (!studentNumber) return;
+    let isMounted = true;
+
+    getStudentSchedule({ student_number: studentNumber })
+      .then((response) => {
+        if (!isMounted) return;
+        const items: ScheduleItem[] = (response.sessions ?? [])
+          .filter((s) => s.course_code && s.day && s.start_time && s.end_time)
+          .map((s) => ({
+            id: s.id,
+            courseCode: (s.course_code ?? "").toUpperCase(),
+            courseName: s.title,
+            type: "Class" as const,
+            day: s.day,
+            startTime: s.start_time,
+            endTime: s.end_time,
+            location: s.location ?? "",
+          }));
+        setScheduleItems(items);
+      })
+      .catch(() => {
+        // Schedule is optional — clash detection just won't fire without it.
+      });
+
+    return () => {
+      isMounted = false;
+    };
+  }, [studentNumber]);
 
   const completedCourseRecords = useMemo<CompletedCourseRecord[]>(
     () =>
@@ -688,7 +722,7 @@ export default function Planner({
 
     const progressionYear = Math.min(
       Math.max(Math.trunc(currentYearNumber ?? 1), 1),
-      3,
+      4,
     );
 
     const knownCodes = new Set<string>([
@@ -851,8 +885,10 @@ export default function Planner({
   ]);
 
   function getCurrentSemesterNumberFromDate() {
+    // UCT: Semester 1 = Feb–Jun (months 2–6), Semester 2 = Jul–Nov (months 7–11).
+    // Jan and Dec are treated as Semester 1 (pre-academic year / registration).
     const month = new Date().getMonth() + 1;
-    return month >= 9 ? 1 : 2;
+    return month >= 7 && month <= 11 ? 2 : 1;
   }
 
   function isPastTerm(year: string, semester: string): boolean {
@@ -880,9 +916,10 @@ export default function Planner({
             plannedCourses: courses,
             completedCourses: completedCourseRecords,
             inProgressCourses: inProgressCourseRecords,
+            scheduleItems,
           })
         : null,
-    [catalog, courses, completedCourseRecords, inProgressCourseRecords],
+    [catalog, courses, completedCourseRecords, inProgressCourseRecords, scheduleItems],
   );
 
   // Codes of courses the student is actively planning — excludes anything

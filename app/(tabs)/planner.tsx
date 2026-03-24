@@ -12,8 +12,9 @@ import React from "react";
  */
 function toDegreeSemester(calSemester: string, studentYear: number): string {
   const calYearMatch = calSemester.match(/\d{4}/);
-  const calYear = calYearMatch ? parseInt(calYearMatch[0], 10) : 2025;
-  const degreeYear = Math.min(Math.max(calYear - 2025 + studentYear, 1), 4);
+  const currentYear = new Date().getFullYear();
+  const calYear = calYearMatch ? parseInt(calYearMatch[0], 10) : currentYear;
+  const degreeYear = Math.min(Math.max(calYear - currentYear + studentYear, 1), 4);
   const sem = calSemester.startsWith("S2") ? 2 : 1;
   return `Year ${degreeYear} - Sem ${sem}`;
 }

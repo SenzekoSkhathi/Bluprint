@@ -25,9 +25,52 @@ const MIN_TERM_CREDITS = 30;
 const MAX_TERM_CREDITS = 72;
 const MAX_DAILY_SCHEDULE_HOURS = 6;
 
-function parseCourseCodes(text: string): string[] {
-  const matches = text.match(/[A-Z]{3,4}\d{4}(?:[A-Z](?:\/[A-Z]){0,3})?/g);
-  return matches ? Array.from(new Set(matches)) : [];
+/**
+ * Parse prerequisite text into OR-groups that are AND-connected.
+ * Returns string[][] where each inner array is an OR group:
+ *   - A planned course satisfies the requirement if, for EVERY group,
+ *     at least ONE code in that group is in the student's known courses.
+ *
+ * Examples:
+ *   "CSC1015F and CSC1016S"       → [["CSC1015F"], ["CSC1016S"]]   (both required)
+ *   "STA1006S or STA1007S"        → [["STA1006S", "STA1007S"]]     (either satisfies)
+ *   "CSC1015F/CSC1016S"           → [["CSC1015F", "CSC1016S"]]     (slash = or)
+ *   "CSC1015F, CSC1016S, MAM1000W"→ [["CSC1015F"],["CSC1016S"],["MAM1000W"]]
+ */
+function parsePrerequisiteGroups(text: string): string[][] {
+  if (!text || /^none$/i.test(text.trim())) return [];
+
+  // Add spaces around slashes that sit between two course codes so they
+  // become OR separators rather than being glued to the preceding code.
+  const normalized = text.replace(
+    /([A-Z]{3,4}\d{4}[A-Z]?)\s*\/\s*([A-Z]{3,4})/g,
+    "$1 / $2",
+  );
+
+  // Split on "and" and "," to get the AND-connected segments.
+  const andSegments = normalized
+    .split(/\s*,\s*|\s+and\s+/i)
+    .map((s) => s.trim())
+    .filter(Boolean);
+
+  const groups: string[][] = [];
+
+  andSegments.forEach((segment) => {
+    // Within each AND-segment, split on "or" and "/" for OR alternatives.
+    const orParts = segment.split(/\s+or\s+|\s*\/\s*/i);
+    const orCodes: string[] = [];
+
+    orParts.forEach((part) => {
+      const matches = part.match(/[A-Z]{3,4}\d{4}[A-Z]?/g) ?? [];
+      orCodes.push(...matches);
+    });
+
+    if (orCodes.length > 0) {
+      groups.push(orCodes);
+    }
+  });
+
+  return groups;
 }
 
 function parseYearNumber(year: string): number {
@@ -176,35 +219,46 @@ export function validateAcademicPlan({
       return;
     }
 
-    const prerequisiteCodes = parseCourseCodes(catalogEntry.prerequisites);
+    const prerequisiteGroups = parsePrerequisiteGroups(catalogEntry.prerequisites);
     const targetTerm = getPlannedTermIndex(plannedCourse);
 
-    prerequisiteCodes.forEach((prereqCode) => {
-      const completedTerm = completedTermByCode.get(prereqCode);
-      const inProgressTerm = inProgressTermByCode.get(prereqCode);
-      const prereqPlannedTerm = plannedTermByCode.get(prereqCode);
+    // Each group is an OR-group: the requirement is met if ANY code in
+    // the group is already completed, in progress, or planned earlier.
+    prerequisiteGroups.forEach((orGroup) => {
+      // ── Satisfied check ──────────────────────────────────────────────
+      const isSatisfied = orGroup.some((prereqCode) => {
+        const completedTerm = completedTermByCode.get(prereqCode);
+        const inProgressTerm = inProgressTermByCode.get(prereqCode);
+        const prereqPlannedTerm = plannedTermByCode.get(prereqCode);
+        return (
+          completedCodes.has(prereqCode) ||
+          inProgressCodes.has(prereqCode) ||
+          (completedTerm !== undefined && completedTerm < targetTerm) ||
+          (inProgressTerm !== undefined && inProgressTerm < targetTerm) ||
+          (prereqPlannedTerm !== undefined && prereqPlannedTerm < targetTerm)
+        );
+      });
 
-      // In-progress and completed prerequisites take precedence over planned-only entries.
-      const isSatisfiedInEarlierTerm =
-        (completedTerm !== undefined && completedTerm < targetTerm) ||
-        (inProgressTerm !== undefined && inProgressTerm < targetTerm) ||
-        (prereqPlannedTerm !== undefined && prereqPlannedTerm < targetTerm);
+      if (isSatisfied) return;
 
-      if (isSatisfiedInEarlierTerm) {
-        return;
-      }
+      // ── Same-term violation ──────────────────────────────────────────
+      // Any OR alternative being taken in the same term as the target.
+      const sameTermCode = orGroup.find((prereqCode) => {
+        const inProgressTerm = inProgressTermByCode.get(prereqCode);
+        const prereqPlannedTerm = plannedTermByCode.get(prereqCode);
+        return (
+          (inProgressTerm !== undefined && inProgressTerm === targetTerm) ||
+          (prereqPlannedTerm !== undefined && prereqPlannedTerm === targetTerm)
+        );
+      });
 
-      const isSameTermViolation =
-        (inProgressTerm !== undefined && inProgressTerm === targetTerm) ||
-        (prereqPlannedTerm !== undefined && prereqPlannedTerm === targetTerm);
-
-      if (isSameTermViolation) {
+      if (sameTermCode) {
         issues.push(
           buildIssue(nextId(), {
             severity: "blocker",
             category: "prerequisite",
-            title: `Same-term prerequisite violation for ${plannedCourse.code}`,
-            message: `${plannedCourse.code} depends on ${prereqCode}, but both are in the same term. Move ${prereqCode} earlier.`,
+            title: `Same-term prerequisite for ${plannedCourse.code}`,
+            message: `${plannedCourse.code} depends on ${sameTermCode}, but both are in the same term. Move ${sameTermCode} to an earlier term.`,
             relatedCourseCode: plannedCourse.code,
             relatedTerm: termFromPlannedCourse(plannedCourse),
           }),
@@ -212,17 +266,23 @@ export function validateAcademicPlan({
         return;
       }
 
-      const isLatePrereqPlacement =
-        (inProgressTerm !== undefined && inProgressTerm > targetTerm) ||
-        (prereqPlannedTerm !== undefined && prereqPlannedTerm > targetTerm);
+      // ── Late-placed prerequisite ─────────────────────────────────────
+      const lateCode = orGroup.find((prereqCode) => {
+        const inProgressTerm = inProgressTermByCode.get(prereqCode);
+        const prereqPlannedTerm = plannedTermByCode.get(prereqCode);
+        return (
+          (inProgressTerm !== undefined && inProgressTerm > targetTerm) ||
+          (prereqPlannedTerm !== undefined && prereqPlannedTerm > targetTerm)
+        );
+      });
 
-      if (isLatePrereqPlacement) {
+      if (lateCode) {
         issues.push(
           buildIssue(nextId(), {
             severity: "blocker",
             category: "prerequisite",
-            title: `Prerequisite planned too late for ${plannedCourse.code}`,
-            message: `${plannedCourse.code} requires ${prereqCode} in an earlier term, but ${prereqCode} is currently scheduled later.`,
+            title: `Prerequisite placed too late for ${plannedCourse.code}`,
+            message: `${plannedCourse.code} requires ${lateCode} before this term, but ${lateCode} is currently scheduled later.`,
             relatedCourseCode: plannedCourse.code,
             relatedTerm: termFromPlannedCourse(plannedCourse),
           }),
@@ -230,43 +290,21 @@ export function validateAcademicPlan({
         return;
       }
 
-      if (completedTerm !== undefined && completedTerm < targetTerm) {
-        return;
-      }
-
-      if (completedCodes.has(prereqCode)) {
-        return;
-      }
-
-      if (inProgressCodes.has(prereqCode)) {
-        return;
-      }
-
+      // ── Truly missing ────────────────────────────────────────────────
+      const displayPrereq =
+        orGroup.length === 1
+          ? orGroup[0]
+          : `one of (${orGroup.join(", ")})`;
       issues.push(
         buildIssue(nextId(), {
           severity: "blocker",
           category: "prerequisite",
           title: `Missing prerequisite for ${plannedCourse.code}`,
-          message: `${plannedCourse.code} requires ${prereqCode} before this term.`,
+          message: `${plannedCourse.code} requires ${displayPrereq} in an earlier term.`,
           relatedCourseCode: plannedCourse.code,
           relatedTerm: termFromPlannedCourse(plannedCourse),
         }),
       );
-    });
-
-    prerequisiteCodes.forEach((prereqCode) => {
-      const prereqPlannedTerm = plannedTermByCode.get(prereqCode);
-      if (prereqPlannedTerm !== undefined && prereqPlannedTerm >= targetTerm) {
-        issues.push(
-          buildIssue(nextId(), {
-            severity: "warning",
-            category: "sequencing",
-            title: `Invalid sequencing for ${plannedCourse.code}`,
-            message: `${prereqCode} is planned in the same or later term than ${plannedCourse.code}.`,
-            relatedCourseCode: plannedCourse.code,
-          }),
-        );
-      }
     });
   });
 
