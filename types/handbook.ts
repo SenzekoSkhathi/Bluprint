@@ -21,6 +21,15 @@ export interface HandbookCategory {
   handbooks: HandbookDocument[];
 }
 
+export interface FacultyHandbookFile {
+  filename: string;
+  key: string;
+  size_bytes: number;
+  last_modified: string;
+  view_url: string;
+  download_url: string;
+}
+
 export type IngestionSourceType = "pdf-url" | "raw-text";
 
 export interface HandbookIngestionRequest {

@@ -2,6 +2,8 @@ from fastapi import FastAPI, File, Form, HTTPException, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 from io import BytesIO
+import boto3
+import botocore.exceptions
 import hashlib
 import hmac
 from pathlib import Path
@@ -822,3 +824,76 @@ def validate_plan_against_science_rules(request: PlanRulesValidationRequest) -> 
         raise HTTPException(status_code=404, detail=str(exc)) from exc
     except Exception as exc:
         raise HTTPException(status_code=500, detail=str(exc)) from exc
+
+
+# ── Faculty Handbook Files ────────────────────────────────────────────────────
+
+_FACULTY_FOLDERS: dict[str, str] = {
+    "commerce": "Commerce",
+    "science": "Science",
+    "humanities": "Humanities",
+    "health-sciences": "Health Sciences",
+    "engineering": "Engineering and Built Environment",
+    "law": "Law",
+}
+
+PRESIGNED_URL_EXPIRY = 3600  # 1 hour
+
+
+@app.get("/handbooks/faculty/{faculty_slug}/files")
+def list_faculty_handbook_files(faculty_slug: str) -> dict:
+    """List PDF files in the S3 folder for a given faculty and return presigned
+    view + download URLs (valid for 1 hour)."""
+    folder = _FACULTY_FOLDERS.get(faculty_slug)
+    if not folder:
+        raise HTTPException(
+            status_code=404,
+            detail=f"Unknown faculty slug: {faculty_slug}. Valid slugs: {list(_FACULTY_FOLDERS)}",
+        )
+
+    s3 = boto3.client(
+        "s3",
+        region_name=settings.aws_region,
+        aws_access_key_id=settings.aws_access_key_id,
+        aws_secret_access_key=settings.aws_secret_access_key,
+    )
+
+    prefix_parts = [p for p in [settings.aws_s3_handbook_prefix.strip("/"), folder] if p]
+    prefix = "/".join(prefix_parts) + "/"
+
+    try:
+        paginator = s3.get_paginator("list_objects_v2")
+        files: list[dict] = []
+        for page in paginator.paginate(Bucket=settings.aws_s3_handbook_bucket, Prefix=prefix):
+            for obj in page.get("Contents", []):
+                key: str = obj["Key"]
+                filename = key.split("/")[-1]
+                if not filename or not filename.lower().endswith(".pdf"):
+                    continue
+                view_url = s3.generate_presigned_url(
+                    "get_object",
+                    Params={"Bucket": settings.aws_s3_handbook_bucket, "Key": key},
+                    ExpiresIn=PRESIGNED_URL_EXPIRY,
+                )
+                download_url = s3.generate_presigned_url(
+                    "get_object",
+                    Params={
+                        "Bucket": settings.aws_s3_handbook_bucket,
+                        "Key": key,
+                        "ResponseContentDisposition": f'attachment; filename="{filename}"',
+                    },
+                    ExpiresIn=PRESIGNED_URL_EXPIRY,
+                )
+                files.append({
+                    "filename": filename,
+                    "key": key,
+                    "size_bytes": obj.get("Size", 0),
+                    "last_modified": obj["LastModified"].isoformat(),
+                    "view_url": view_url,
+                    "download_url": download_url,
+                })
+
+        return {"faculty": folder, "slug": faculty_slug, "files": files}
+
+    except botocore.exceptions.ClientError as exc:
+        raise HTTPException(status_code=500, detail=f"S3 error: {exc}") from exc

@@ -1442,3 +1442,25 @@ export function validateSciencePlanAgainstRules(payload: {
     },
   );
 }
+
+export interface FacultyHandbookFileResponse {
+  filename: string;
+  key: string;
+  size_bytes: number;
+  last_modified: string;
+  view_url: string;
+  download_url: string;
+}
+
+export interface FacultyHandbookFilesResponse {
+  faculty: string;
+  slug: string;
+  files: FacultyHandbookFileResponse[];
+}
+
+export function listFacultyHandbookFiles(facultySlug: string) {
+  return requestJson<FacultyHandbookFilesResponse>(
+    `/handbooks/faculty/${encodeURIComponent(facultySlug)}/files`,
+    { method: "GET" },
+  );
+}

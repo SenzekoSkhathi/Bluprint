@@ -5,17 +5,28 @@ import {
     getBackendBaseUrl,
     getBackendHealth,
     getBackendSetupHint,
+    listFacultyHandbookFiles,
     runSciencePipeline,
     type BackendHealthResponse,
+    type FacultyHandbookFileResponse,
     type SciencePipelineResponse,
 } from "@/services/backend-api";
 import type { HandbookCategory } from "@/types/handbook";
 import { Feather } from "@expo/vector-icons";
 import React, { useEffect, useMemo, useState } from "react";
-import { Linking, Pressable, StyleSheet, Text, View } from "react-native";
+import { ActivityIndicator, Linking, Pressable, StyleSheet, Text, View } from "react-native";
 
 const handbookCategories: HandbookCategory[] =
   academicRepository.listHandbookCategories();
+
+const FACULTY_FOLDERS = [
+  { slug: "commerce",       label: "Commerce" },
+  { slug: "science",        label: "Science" },
+  { slug: "humanities",     label: "Humanities" },
+  { slug: "health-sciences",label: "Health Sciences" },
+  { slug: "engineering",    label: "Engineering and Built Environment" },
+  { slug: "law",            label: "Law" },
+] as const;
 
 function getCategoryBackgroundColor(
   token: HandbookCategory["backgroundColorToken"],
@@ -32,10 +43,22 @@ function getCategoryBackgroundColor(
   return theme.colors.deepBlue;
 }
 
+function formatFileSize(bytes: number): string {
+  if (bytes === 0) return "—";
+  if (bytes < 1024 * 1024) return `${(bytes / 1024).toFixed(0)} KB`;
+  return `${(bytes / (1024 * 1024)).toFixed(1)} MB`;
+}
+
 export default function Handbooks() {
   const [expandedCategory, setExpandedCategory] = useState<string | null>(
     "general",
   );
+  const [expandedFaculty, setExpandedFaculty] = useState<string | null>(null);
+  const [facultyFiles, setFacultyFiles] = useState<
+    Record<string, FacultyHandbookFileResponse[]>
+  >({});
+  const [facultyLoading, setFacultyLoading] = useState<Record<string, boolean>>({});
+  const [facultyError, setFacultyError] = useState<Record<string, string>>({});
   const [backendHealth, setBackendHealth] =
     useState<BackendHealthResponse | null>(null);
   const [backendError, setBackendError] = useState<string | null>(null);
@@ -47,6 +70,28 @@ export default function Handbooks() {
 
   const toggleCategory = (categoryId: string) => {
     setExpandedCategory(expandedCategory === categoryId ? null : categoryId);
+  };
+
+  const toggleFaculty = async (slug: string) => {
+    if (expandedFaculty === slug) {
+      setExpandedFaculty(null);
+      return;
+    }
+    setExpandedFaculty(slug);
+    if (facultyFiles[slug] !== undefined || facultyLoading[slug]) return;
+    setFacultyLoading((prev) => ({ ...prev, [slug]: true }));
+    setFacultyError((prev) => { const n = { ...prev }; delete n[slug]; return n; });
+    try {
+      const result = await listFacultyHandbookFiles(slug);
+      setFacultyFiles((prev) => ({ ...prev, [slug]: result.files }));
+    } catch (err) {
+      setFacultyError((prev) => ({
+        ...prev,
+        [slug]: err instanceof Error ? err.message : "Failed to load files.",
+      }));
+    } finally {
+      setFacultyLoading((prev) => ({ ...prev, [slug]: false }));
+    }
   };
 
   const openPDF = async (url: string) => {
@@ -197,39 +242,24 @@ export default function Handbooks() {
 
         {handbookCategories.map((category) => {
           const isExpanded = expandedCategory === category.id;
+          const bgColor = getCategoryBackgroundColor(category.backgroundColorToken);
 
           return (
             <View key={category.id} style={styles.categoryWrapper}>
               <Pressable
-                style={[
-                  styles.categoryHeader,
-                  {
-                    backgroundColor: getCategoryBackgroundColor(
-                      category.backgroundColorToken,
-                    ),
-                  },
-                ]}
+                style={[styles.categoryHeader, { backgroundColor: bgColor }]}
                 onPress={() => toggleCategory(category.id)}
               >
                 <View style={styles.categoryHeaderContent}>
-                  <View
-                    style={[
-                      styles.categoryIcon,
-                      { backgroundColor: theme.colors.white },
-                    ]}
-                  >
-                    <Feather
-                      name={category.icon as any}
-                      size={20}
-                      color={getCategoryBackgroundColor(
-                        category.backgroundColorToken,
-                      )}
-                    />
+                  <View style={[styles.categoryIcon, { backgroundColor: theme.colors.white }]}>
+                    <Feather name={category.icon as any} size={20} color={bgColor} />
                   </View>
                   <View style={styles.categoryInfo}>
                     <Text style={styles.categoryTitle}>{category.title}</Text>
                     <Text style={styles.categoryCount}>
-                      {category.handbooks.length} handbooks
+                      {category.id === "faculty"
+                        ? `${FACULTY_FOLDERS.length} faculties`
+                        : `${category.handbooks.length} handbooks`}
                     </Text>
                   </View>
                 </View>
@@ -240,53 +270,128 @@ export default function Handbooks() {
                 />
               </Pressable>
 
-              {isExpanded && (
+              {isExpanded && category.id === "faculty" && (
+                <View style={styles.categoryContent}>
+                  {FACULTY_FOLDERS.map((fac, index) => {
+                    const isFacExpanded = expandedFaculty === fac.slug;
+                    const files = facultyFiles[fac.slug];
+                    const loading = facultyLoading[fac.slug];
+                    const error = facultyError[fac.slug];
+                    const isLast = index === FACULTY_FOLDERS.length - 1;
+
+                    return (
+                      <View
+                        key={fac.slug}
+                        style={[styles.facultyFolder, isLast && styles.lastFacultyFolder]}
+                      >
+                        <Pressable
+                          style={styles.facultyFolderHeader}
+                          onPress={() => void toggleFaculty(fac.slug)}
+                        >
+                          <Feather
+                            name="folder"
+                            size={20}
+                            color={theme.colors.blue}
+                            style={styles.folderIcon}
+                          />
+                          <Text style={styles.facultyFolderLabel}>{fac.label}</Text>
+                          <Feather
+                            name={isFacExpanded ? "chevron-up" : "chevron-down"}
+                            size={18}
+                            color={theme.colors.textSecondary}
+                          />
+                        </Pressable>
+
+                        {isFacExpanded && (
+                          <View style={styles.facultyFileList}>
+                            {loading && (
+                              <View style={styles.facultyState}>
+                                <ActivityIndicator size="small" color={theme.colors.blue} />
+                                <Text style={styles.facultyStateText}>Loading…</Text>
+                              </View>
+                            )}
+                            {error && !loading && (
+                              <View style={styles.facultyState}>
+                                <Feather name="alert-circle" size={16} color={theme.colors.deepBlue} />
+                                <Text style={[styles.facultyStateText, { color: theme.colors.deepBlue }]}>
+                                  {error}
+                                </Text>
+                              </View>
+                            )}
+                            {!loading && !error && files?.length === 0 && (
+                              <View style={styles.facultyState}>
+                                <Text style={styles.facultyStateText}>No files found in this folder.</Text>
+                              </View>
+                            )}
+                            {!loading && files?.map((file, fi) => (
+                              <View
+                                key={file.key}
+                                style={[
+                                  styles.fileRow,
+                                  fi === files.length - 1 && styles.lastFileRow,
+                                ]}
+                              >
+                                <Feather
+                                  name="file-text"
+                                  size={18}
+                                  color={theme.colors.deepBlue}
+                                  style={styles.fileIcon}
+                                />
+                                <Text style={styles.fileName} numberOfLines={2}>
+                                  {file.filename.replace(/\.pdf$/i, "")}
+                                </Text>
+                                <Text style={styles.fileSize}>
+                                  {formatFileSize(file.size_bytes)}
+                                </Text>
+                                <Pressable
+                                  style={styles.fileActionBtn}
+                                  onPress={() => void openPDF(file.view_url)}
+                                >
+                                  <Feather name="eye" size={15} color={theme.colors.white} />
+                                </Pressable>
+                                <Pressable
+                                  style={[styles.fileActionBtn, styles.fileDownloadBtn]}
+                                  onPress={() => void openPDF(file.download_url)}
+                                >
+                                  <Feather name="download" size={15} color={theme.colors.white} />
+                                </Pressable>
+                              </View>
+                            ))}
+                          </View>
+                        )}
+                      </View>
+                    );
+                  })}
+                </View>
+              )}
+
+              {isExpanded && category.id !== "faculty" && (
                 <View style={styles.categoryContent}>
                   {category.handbooks.map((handbook, index) => (
                     <Pressable
                       key={handbook.id}
                       style={[
                         styles.handbookItem,
-                        index === category.handbooks.length - 1 &&
-                          styles.lastHandbookItem,
+                        index === category.handbooks.length - 1 && styles.lastHandbookItem,
                       ]}
-                      onPress={() => openPDF(handbook.pdfUrl)}
+                      onPress={() => void openPDF(handbook.pdfUrl)}
                     >
                       <View style={styles.handbookIconContainer}>
-                        <Feather
-                          name="file-text"
-                          size={24}
-                          color={theme.colors.deepBlue}
-                        />
+                        <Feather name="file-text" size={24} color={theme.colors.deepBlue} />
                       </View>
-
                       <View style={styles.handbookDetails}>
-                        <Text style={styles.handbookTitle}>
-                          {handbook.title}
-                        </Text>
-                        <Text
-                          style={styles.handbookDescription}
-                          numberOfLines={2}
-                        >
+                        <Text style={styles.handbookTitle}>{handbook.title}</Text>
+                        <Text style={styles.handbookDescription} numberOfLines={2}>
                           {handbook.description}
                         </Text>
                         <View style={styles.handbookMeta}>
-                          <Text style={styles.publishDate}>
-                            {handbook.publishDate}
-                          </Text>
+                          <Text style={styles.publishDate}>{handbook.publishDate}</Text>
                           <View style={styles.metaDot} />
-                          <Text style={styles.fileSize}>
-                            {handbook.fileSize}
-                          </Text>
+                          <Text style={styles.fileSize}>{handbook.fileSize}</Text>
                         </View>
                       </View>
-
                       <View style={styles.downloadButton}>
-                        <Feather
-                          name="download"
-                          size={18}
-                          color={theme.colors.white}
-                        />
+                        <Feather name="download" size={18} color={theme.colors.white} />
                       </View>
                     </Pressable>
                   ))}
@@ -500,6 +605,73 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     marginLeft: theme.spacing.sm,
+  },
+  facultyFolder: {
+    borderBottomWidth: 1,
+    borderBottomColor: theme.colors.gray,
+  },
+  lastFacultyFolder: {
+    borderBottomWidth: 0,
+  },
+  facultyFolderHeader: {
+    flexDirection: "row",
+    alignItems: "center",
+    paddingHorizontal: theme.spacing.md,
+    paddingVertical: theme.spacing.md,
+  },
+  folderIcon: {
+    marginRight: theme.spacing.sm,
+  },
+  facultyFolderLabel: {
+    flex: 1,
+    fontSize: theme.fontSize.md,
+    fontWeight: "600",
+    color: theme.colors.textPrimary,
+  },
+  facultyFileList: {
+    paddingHorizontal: theme.spacing.md,
+    paddingBottom: theme.spacing.sm,
+  },
+  facultyState: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: theme.spacing.sm,
+    paddingVertical: theme.spacing.sm,
+  },
+  facultyStateText: {
+    fontSize: theme.fontSize.sm,
+    color: theme.colors.textSecondary,
+  },
+  fileRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    paddingVertical: theme.spacing.sm,
+    borderBottomWidth: 1,
+    borderBottomColor: theme.colors.gray,
+    gap: theme.spacing.xs,
+  },
+  lastFileRow: {
+    borderBottomWidth: 0,
+  },
+  fileIcon: {
+    marginRight: theme.spacing.xs,
+  },
+  fileName: {
+    flex: 1,
+    fontSize: theme.fontSize.sm,
+    color: theme.colors.textPrimary,
+  },
+  fileActionBtn: {
+    width: 32,
+    height: 32,
+    borderRadius: theme.borderRadius.sm,
+    backgroundColor: theme.colors.blue,
+    justifyContent: "center",
+    alignItems: "center",
+    marginLeft: theme.spacing.xs,
+  },
+  fileDownloadBtn: {
+    backgroundColor: theme.colors.deepBlue,
   },
   footerNote: {
     flexDirection: "row",
