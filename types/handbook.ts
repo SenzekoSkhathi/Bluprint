@@ -1,8 +1,7 @@
 export type HandbookCategoryId =
   | "general"
-  | "academic"
-  | "financial"
-  | "resources";
+  | "faculty"
+  | "fees-funding";
 
 export interface HandbookDocument {
   id: string;
