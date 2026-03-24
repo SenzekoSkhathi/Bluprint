@@ -33,16 +33,20 @@ function getYearMilestoneTarget(yearNumber: number | undefined): number {
 }
 
 /**
- * Convert a mock course's NQF level and calendar semester string into the
- * "Year X - Sem Y" format expected by the validation engine's term ordering.
+ * Convert a calendar semester string (e.g. "S1 2025", "S2 2024") into the
+ * "Year X - Sem Y" degree-year format by combining the calendar year with the
+ * student's current enrollment year.
  *
- * NQF5 = Year 1, NQF6 = Year 2, NQF7 = Year 3.
+ * Formula: degreeYear = calendarYear - 2025 + studentYear
+ * e.g. a Year 4 student in "S1 2025" → Year 4, in "S2 2024" → Year 3.
  * "S2 XXXX" → Sem 2, everything else (S1, FY) → Sem 1.
  */
-function mockCourseToDegreeSemester(nqfLevel: 5 | 6 | 7, calSemester: string): string {
-  const year = nqfLevel === 5 ? 1 : nqfLevel === 6 ? 2 : 3;
+function mockCourseToDegreeSemester(calSemester: string, studentYear: number): string {
+  const calYearMatch = calSemester.match(/\d{4}/);
+  const calYear = calYearMatch ? parseInt(calYearMatch[0], 10) : 2025;
+  const degreeYear = Math.min(Math.max(calYear - 2025 + studentYear, 1), 4);
   const sem = calSemester.startsWith("S2") ? 2 : 1;
-  return `Year ${year} - Sem ${sem}`;
+  return `Year ${degreeYear} - Sem ${sem}`;
 }
 
 /**
@@ -278,7 +282,7 @@ export default function Progress() {
         credits: course.credits,
         grade: course.grade != null ? `${course.grade}%` : "N/A",
         gpa: gradeToGpa(course.grade),
-        semester: mockCourseToDegreeSemester(course.nqfLevel, course.semester),
+        semester: mockCourseToDegreeSemester(course.semester, mockUser.year),
       }));
     }
     // Fallback for unauthenticated/demo state
@@ -296,7 +300,7 @@ export default function Progress() {
         credits: course.credits,
         currentGrade: "-",
         status: 50,
-        semester: mockCourseToDegreeSemester(course.nqfLevel, course.semester),
+        semester: mockCourseToDegreeSemester(course.semester, mockUser.year),
       }));
     }
     if (!loggedInUser && !savedPlan) return academicRepository.getInProgressCourses();
@@ -337,8 +341,9 @@ export default function Progress() {
         plannedCourses,
         completedCourses,
         inProgressCourses,
+        studentCombinationIds: mockUser?.combinationIds ?? [],
       }),
-    [plannedCourses, completedCourses, inProgressCourses],
+    [plannedCourses, completedCourses, inProgressCourses, mockUser],
   );
 
   const priorityFixes = useMemo(

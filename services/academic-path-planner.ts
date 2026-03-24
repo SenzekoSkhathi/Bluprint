@@ -187,7 +187,7 @@ export function generateAutoGraduationPlans(
     const remainingCoreCodes = new Set(unresolvedCoreCodes);
     let loopTermIndex = startTermIndex;
 
-    while (remainingCoreCodes.size > 0 && termPlans.length < 12) {
+    while (remainingCoreCodes.size > 0 && termPlans.length < 12 && loopTermIndex <= 24) {
       const semesterName = semesterNameFromTermIndex(loopTermIndex);
       const termLabel = toTermLabel(loopTermIndex);
 

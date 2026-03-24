@@ -106,6 +106,7 @@ interface PlannerProps {
     credits: number;
     semester: string;
     nqfLevel: 5 | 6 | 7;
+    year?: string;
   }>;
 }
 
@@ -268,7 +269,7 @@ export default function Planner({
         code: course.code,
         name: course.title,
         credits: course.credits,
-        year: `Year ${Math.min(Math.max(course.nqfLevel - 4, 1), 4)}`,
+        year: course.year ?? `Year ${Math.min(Math.max(course.nqfLevel - 4, 1), 4)}`,
         semester:
           course.semester.toUpperCase().includes("S2") ||
           course.semester.toUpperCase().includes("SEM 2")
@@ -511,13 +512,9 @@ export default function Planner({
         ? "Semester 2"
         : "Semester 1";
 
-    const yearFromCode = (code: string): string => {
-      const m = code.match(/\d{4}/);
-      if (m) {
-        const d = parseInt(m[0][0], 10);
-        return `Year ${Math.min(Math.max(d, 1), 4)}`;
-      }
-      return "Year 1";
+    const yearFromSemester = (sem: string): string => {
+      const m = sem.match(/Year\s*(\d+)/i);
+      return m ? `Year ${m[1]}` : "Year 1";
     };
 
     const completed = completedCourseRecords.map((r) => ({
@@ -525,7 +522,7 @@ export default function Planner({
       code: r.code,
       name: r.title,
       credits: r.credits,
-      year: yearFromCode(r.code),
+      year: yearFromSemester(r.semester),
       semester: normSem(r.semester),
       status: "Completed" as CourseStatus,
     }));
@@ -535,7 +532,7 @@ export default function Planner({
       code: r.code,
       name: r.title,
       credits: r.credits,
-      year: yearFromCode(r.code),
+      year: yearFromSemester(r.semester),
       semester: normSem(r.semester),
       status: "In Progress" as CourseStatus,
     }));
@@ -1676,6 +1673,10 @@ export default function Planner({
   // ─── Auto-plan generator ─────────────────────────────────────────────────
 
   function handleGeneratePlan() {
+    if (catalog.length === 0) {
+      setAddError("Course catalog is still loading — please try again in a moment.");
+      return;
+    }
     setIsGeneratingPlan(true);
     const plans = generateAutoGraduationPlans({
       catalog,
@@ -1683,6 +1684,8 @@ export default function Planner({
       completedCourses: completedCourseRecords,
       inProgressCourses: inProgressCourseRecords,
       plannedCourses: courses,
+      majorCombinations: academicRepository.getMajorCombinations(),
+      studentCombinationIds: registeredMajors,
     });
     setAutoPlans(plans);
     setIsGeneratingPlan(false);

@@ -3,22 +3,24 @@ import Planner from "@/Pages/Planner";
 import React from "react";
 
 /**
- * Convert a mock course's NQF level and calendar semester string into the
- * "Year X - Sem Y" format that the local validation engine uses for term
- * ordering (prerequisite sequence checking, credit load per term, etc.).
+ * Convert a calendar semester string (e.g. "S1 2025", "S2 2024") into the
+ * "Year X - Sem Y" degree-year format by combining the calendar year with the
+ * student's current enrollment year.
  *
- * NQF5 = Year 1 | NQF6 = Year 2 | NQF7 = Year 3
- * "S2 XXXX" → Sem 2, everything else (S1, FY) → Sem 1
+ * Formula: degreeYear = calendarYear - 2025 + studentYear
+ * "S2 XXXX" → Sem 2, everything else (S1, FY) → Sem 1.
  */
-function toDegreeSemester(nqfLevel: 5 | 6 | 7, calSemester: string): string {
-  const year = nqfLevel === 5 ? 1 : nqfLevel === 6 ? 2 : 3;
+function toDegreeSemester(calSemester: string, studentYear: number): string {
+  const calYearMatch = calSemester.match(/\d{4}/);
+  const calYear = calYearMatch ? parseInt(calYearMatch[0], 10) : 2025;
+  const degreeYear = Math.min(Math.max(calYear - 2025 + studentYear, 1), 4);
   const sem = calSemester.startsWith("S2") ? 2 : 1;
-  return `Year ${year} - Sem ${sem}`;
+  return `Year ${degreeYear} - Sem ${sem}`;
 }
 
 export default function PlannerScreen() {
   const { loggedInUser, mockUser, savedPlan } = useLoggedInUser();
-  const currentYearNumber = loggedInUser?.year ?? 1;
+  const currentYearNumber = mockUser?.year ?? loggedInUser?.year ?? 1;
   const registeredMajors = loggedInUser?.majors ?? [];
 
   const completedCourses = (mockUser?.completedCourses.passed ?? []).map(
@@ -28,7 +30,7 @@ export default function PlannerScreen() {
       credits: course.credits,
       // Convert to "Year X - Sem Y" format so the validation engine can
       // correctly determine which term each course was completed in.
-      semester: toDegreeSemester(course.nqfLevel, course.semester),
+      semester: toDegreeSemester(course.semester, currentYearNumber),
       passed: true,
       grade: course.grade,
     }),
@@ -39,7 +41,7 @@ export default function PlannerScreen() {
       code: course.code,
       title: course.title,
       credits: course.credits,
-      semester: toDegreeSemester(course.nqfLevel, course.semester),
+      semester: toDegreeSemester(course.semester, currentYearNumber),
     }),
   );
 
@@ -53,6 +55,7 @@ export default function PlannerScreen() {
       credits: course.credits,
       semester: course.semester,
       nqfLevel: Math.min(Math.max(yearNumber + 4, 5), 7) as 5 | 6 | 7,
+      year: course.year,
     };
   });
 
