@@ -337,18 +337,17 @@ export default function Handbooks() {
                                   color={theme.colors.deepBlue}
                                   style={styles.fileIcon}
                                 />
-                                <Text style={styles.fileName} numberOfLines={2}>
-                                  {file.filename.replace(/\.pdf$/i, "")}
-                                </Text>
+                                <Pressable
+                                  style={styles.fileNameLink}
+                                  onPress={() => void openPDF(file.view_url)}
+                                >
+                                  <Text style={styles.fileName} numberOfLines={2}>
+                                    {file.filename.replace(/\.pdf$/i, "")}
+                                  </Text>
+                                </Pressable>
                                 <Text style={styles.fileSize}>
                                   {formatFileSize(file.size_bytes)}
                                 </Text>
-                                <Pressable
-                                  style={styles.fileActionBtn}
-                                  onPress={() => void openPDF(file.view_url)}
-                                >
-                                  <Feather name="eye" size={15} color={theme.colors.white} />
-                                </Pressable>
                                 <Pressable
                                   style={[styles.fileActionBtn, styles.fileDownloadBtn]}
                                   onPress={() => void openPDF(file.download_url)}
@@ -656,10 +655,13 @@ const styles = StyleSheet.create({
   fileIcon: {
     marginRight: theme.spacing.xs,
   },
-  fileName: {
+  fileNameLink: {
     flex: 1,
+  },
+  fileName: {
     fontSize: theme.fontSize.sm,
-    color: theme.colors.textPrimary,
+    color: theme.colors.blue,
+    textDecorationLine: "underline",
   },
   fileActionBtn: {
     width: 32,

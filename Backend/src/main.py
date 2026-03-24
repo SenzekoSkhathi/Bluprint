@@ -854,6 +854,7 @@ def list_faculty_handbook_files(faculty_slug: str) -> dict:
     s3 = boto3.client(
         "s3",
         region_name=settings.aws_region,
+        endpoint_url=f"https://s3.{settings.aws_region}.amazonaws.com",
         aws_access_key_id=settings.aws_access_key_id,
         aws_secret_access_key=settings.aws_secret_access_key,
     )
