@@ -15,7 +15,6 @@ import {
     scheduleWeekDays,
 } from "@/data/academic-data";
 import { generateAutoGraduationPlans } from "@/services/academic-path-planner";
-import { academicTelemetry } from "@/services/academic-telemetry";
 import { validateAcademicPlan } from "@/services/academic-validation";
 import { handbookIngestionService } from "@/services/handbook-ingestion";
 import type {
@@ -173,7 +172,6 @@ export const academicRepository = {
         options?.inProgressCourses ?? this.getInProgressCourses(),
       scheduleItems: options?.scheduleItems ?? this.getInitialScheduleItems(),
     });
-    academicTelemetry.logValidationReport(report);
     return report;
   },
 
@@ -191,7 +189,6 @@ export const academicRepository = {
       inProgressCourses:
         options?.inProgressCourses ?? this.getInProgressCourses(),
     });
-    academicTelemetry.logAutoPlans(plans);
     return plans;
   },
 
@@ -200,15 +197,7 @@ export const academicRepository = {
   },
 
   submitHandbookIngestion(request: HandbookIngestionRequest) {
-    const job = handbookIngestionService.submitIngestion(request);
-    if (job) {
-      academicTelemetry.logHandbookIngestionSubmitted(
-        request.programId,
-        request.handbookId,
-        job.status,
-      );
-    }
-    return job;
+    return handbookIngestionService.submitIngestion(request);
   },
 
   seedDemoHandbookIngestion() {
@@ -228,15 +217,7 @@ export const academicRepository = {
   },
 
   reviewHandbookIngestion(decision: HandbookReviewDecision) {
-    const reviewedJob = handbookIngestionService.reviewIngestion(decision);
-    if (reviewedJob) {
-      academicTelemetry.logHandbookReview(
-        reviewedJob.request.programId,
-        decision.jobId,
-        decision.decision,
-      );
-    }
-    return reviewedJob;
+    return handbookIngestionService.reviewIngestion(decision);
   },
 
   listRequirementVersions(programId?: string) {
@@ -273,13 +254,6 @@ export const academicRepository = {
     );
   },
 
-  listTelemetryEvents(limit?: number) {
-    return academicTelemetry.listEvents(limit);
-  },
-
-  clearTelemetryEvents() {
-    academicTelemetry.clearEvents();
-  },
 };
 
 export type { CourseCatalogEntry, CourseGroup } from "@/types/academic";
