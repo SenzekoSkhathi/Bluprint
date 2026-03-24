@@ -11,7 +11,7 @@ from typing import Literal
 
 from src.advisor import ScienceAdvisor
 from src.academic_rules import ScienceHandbookRulesService
-from src.auth_storage import AuthSessionStore
+from src.auth_storage import AuthSessionStore, StudentCredentialStore
 from src.course_catalog import ScienceCourseCatalog
 from src.advisor_catalog import ScienceAdvisorCatalog
 from src.major_catalog import ScienceMajorCatalog
@@ -32,6 +32,7 @@ settings = get_settings()
 app = FastAPI(title=settings.app_name, version="0.1.0")
 student_store = StudentStore(settings.resolved_data_dir)
 auth_session_store = AuthSessionStore(settings.resolved_data_dir)
+student_credential_store = StudentCredentialStore(settings.resolved_data_dir)
 science_advisor = ScienceAdvisor(settings)
 
 allow_all_origins = settings.frontend_allowed_origins == ["*"]
@@ -95,6 +96,12 @@ class PlanRulesValidationRequest(BaseModel):
 class StudentLoginRequest(BaseModel):
     student_number: str = Field(min_length=9, max_length=9)
     password: str = Field(min_length=1)
+
+
+class SetPasswordRequest(BaseModel):
+    student_number: str = Field(min_length=9, max_length=9)
+    password: str = Field(min_length=6)
+    admin_key: str = Field(min_length=1)
 
 
 class StudentProfileRequest(BaseModel):
@@ -324,17 +331,22 @@ def login_student(request: StudentLoginRequest) -> dict:
             detail="Student number must match format XYZABC123",
         )
 
-    if not settings.auth_shared_password and not settings.auth_password_hash_sha256:
-        raise HTTPException(
-            status_code=503,
-            detail=(
-                "Backend auth is not configured. "
-                "Set AUTH_PASSWORD_HASH_SHA256 or AUTH_SHARED_PASSWORD."
-            ),
-        )
-
-    if not _verify_password(request.password):
-        raise HTTPException(status_code=401, detail="Invalid student number or password")
+    # Per-student credential check (takes priority over shared password)
+    if student_credential_store.has_credential(normalized_student_number):
+        if not student_credential_store.verify_password(normalized_student_number, request.password):
+            raise HTTPException(status_code=401, detail="Invalid student number or password")
+    else:
+        # Fall back to global shared password
+        if not settings.auth_shared_password and not settings.auth_password_hash_sha256:
+            raise HTTPException(
+                status_code=503,
+                detail=(
+                    "Backend auth is not configured. "
+                    "Set AUTH_PASSWORD_HASH_SHA256 or AUTH_SHARED_PASSWORD."
+                ),
+            )
+        if not _verify_password(request.password):
+            raise HTTPException(status_code=401, detail="Invalid student number or password")
 
     session_record = auth_session_store.create_session(
         student_number=normalized_student_number,
@@ -348,6 +360,20 @@ def login_student(request: StudentLoginRequest) -> dict:
         "token_type": "bearer",
         "expires_at_iso": session_record.expires_at_iso,
     }
+
+
+@app.post("/auth/set-password")
+def set_student_password(request: SetPasswordRequest) -> dict:
+    """Set or update a per-student password. Requires the admin key (AUTH_SHARED_PASSWORD)."""
+    if not hmac.compare_digest(request.admin_key, settings.auth_shared_password or ""):
+        raise HTTPException(status_code=403, detail="Invalid admin key")
+
+    normalized = request.student_number.strip().upper()
+    if not STUDENT_NUMBER_PATTERN.fullmatch(normalized):
+        raise HTTPException(status_code=400, detail="Student number must match format XYZABC123")
+
+    student_credential_store.set_password(normalized, request.password)
+    return {"student_number": normalized, "password_set": True}
 
 
 @app.post("/auth/session")

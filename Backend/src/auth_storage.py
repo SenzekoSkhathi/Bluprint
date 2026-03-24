@@ -1,3 +1,5 @@
+import hashlib
+import hmac
 import json
 import secrets
 from dataclasses import asdict, dataclass
@@ -110,3 +112,52 @@ class AuthSessionStore:
             self._atomic_write_sessions(sessions)
 
         return existed
+
+
+class StudentCredentialStore:
+    """Stores per-student hashed passwords. Falls back to the global shared
+    password when no per-student record exists (backward compatible)."""
+
+    _SALT_BYTES = 16
+
+    def __init__(self, base_dir: Path) -> None:
+        self.base_dir = base_dir
+        self._creds_path = base_dir / "auth" / "credentials.json"
+        self._creds_path.parent.mkdir(parents=True, exist_ok=True)
+
+    def _load(self) -> dict[str, dict]:
+        if not self._creds_path.exists():
+            return {}
+        try:
+            return json.loads(self._creds_path.read_text(encoding="utf-8"))
+        except Exception:
+            return {}
+
+    def _save(self, data: dict[str, dict]) -> None:
+        tmp = self._creds_path.with_suffix(".json.tmp")
+        tmp.write_text(json.dumps(data, ensure_ascii=True, indent=2), encoding="utf-8")
+        tmp.replace(self._creds_path)
+
+    @staticmethod
+    def _hash(password: str, salt: str) -> str:
+        return hashlib.sha256(f"{salt}{password}".encode("utf-8")).hexdigest()
+
+    def set_password(self, student_number: str, password: str) -> None:
+        data = self._load()
+        salt = secrets.token_hex(self._SALT_BYTES)
+        data[student_number.strip().upper()] = {
+            "salt": salt,
+            "hash": self._hash(password, salt),
+        }
+        self._save(data)
+
+    def verify_password(self, student_number: str, password: str) -> bool:
+        data = self._load()
+        record = data.get(student_number.strip().upper())
+        if not record:
+            return False
+        expected = self._hash(password, record["salt"])
+        return hmac.compare_digest(expected, record["hash"])
+
+    def has_credential(self, student_number: str) -> bool:
+        return student_number.strip().upper() in self._load()

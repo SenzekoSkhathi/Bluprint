@@ -1164,7 +1164,7 @@ export const mockUsers: MockUser[] = [
   {
     name: "Bandile Gumede",
     studentNumber: "GMDBAN001",
-    password: "Student",
+    password: "Bandile@UCT1",
     degree: "BSc Computer Science",
     year: 2,
     majors: ["Computer Science"],
@@ -1181,7 +1181,7 @@ export const mockUsers: MockUser[] = [
   {
     name: "Nikhar Singh",
     studentNumber: "SNGNIK002",
-    password: "Student",
+    password: "Nikhar@UCT2",
     degree: "BSc Biology and Genetics",
     year: 2,
     majors: ["Biology", "Genetics"],
@@ -1198,7 +1198,7 @@ export const mockUsers: MockUser[] = [
   {
     name: "Jordan Masencamp",
     studentNumber: "MSNJOR003",
-    password: "Student",
+    password: "Jordan@UCT3",
     degree: "BSc Computer Science, Artificial Intelligence, and Mathematics",
     year: 3,
     majors: ["Computer Science", "Artificial Intelligence", "Mathematics"],
@@ -1225,7 +1225,7 @@ export const mockUsers: MockUser[] = [
   {
     name: "Thandolwenkosi Khoza",
     studentNumber: "KHZTHA004",
-    password: "Student",
+    password: "Thando@UCT4",
     degree: "BSc Physics and Astrophysics",
     year: 3,
     majors: ["Physics", "Astrophysics"],
@@ -1249,7 +1249,7 @@ export const mockUsers: MockUser[] = [
   {
     name: "Nosihle Sishi",
     studentNumber: "SSHNOS005",
-    password: "Student",
+    password: "Nosihle@UCT5",
     degree: "BSc Applied Statistics and Finance",
     year: 1,
     majors: ["Applied Statistics"],
@@ -1266,7 +1266,7 @@ export const mockUsers: MockUser[] = [
   {
     name: "Amara Dube",
     studentNumber: "DBXAMA006",
-    password: "Student",
+    password: "Amara@UCT6",
     degree: "BSc Mathematical Statistics",
     year: 3,
     majors: ["Mathematical Statistics"],
@@ -1283,7 +1283,7 @@ export const mockUsers: MockUser[] = [
   {
     name: "Keanu Hendricks",
     studentNumber: "HNDKEA007",
-    password: "Student",
+    password: "Keanu@UCT7",
     degree: "BSc Statistics and Data Science",
     year: 2,
     majors: ["Statistics & Data Science"],
@@ -1300,7 +1300,7 @@ export const mockUsers: MockUser[] = [
   {
     name: "Priya Naidoo",
     studentNumber: "NDXPRI008",
-    password: "Student",
+    password: "Priya@UCT8",
     degree: "BSc Computer Science and Artificial Intelligence",
     year: 1,
     majors: ["Computer Science", "Artificial Intelligence"],
@@ -1318,7 +1318,7 @@ export const mockUsers: MockUser[] = [
   {
     name: "Sipho Mokoena",
     studentNumber: "MKNSIP009",
-    password: "Student",
+    password: "Sipho@UCT9",
     degree: "BSc Computer Science",
     year: 2,
     majors: ["Computer Science"],
@@ -1335,7 +1335,7 @@ export const mockUsers: MockUser[] = [
   {
     name: "Lerato Molefe",
     studentNumber: "MLFLER010",
-    password: "Student",
+    password: "Lerato@UCT10",
     degree: "BSc Applied Statistics",
     year: 2,
     majors: ["Applied Statistics"],
@@ -1352,7 +1352,7 @@ export const mockUsers: MockUser[] = [
   {
     name: "Fatima Hassan",
     studentNumber: "HSSFAT011",
-    password: "Student",
+    password: "Fatima@UCT11",
     degree: "BSc Physics and Astrophysics",
     year: 2,
     majors: ["Physics", "Astrophysics"],
@@ -1369,7 +1369,7 @@ export const mockUsers: MockUser[] = [
   {
     name: "Luyanda Mthethwa",
     studentNumber: "MTHLUY012",
-    password: "Student",
+    password: "Luyanda@UCT12",
     degree: "BSc Statistics and Data Science",
     year: 3,
     majors: ["Statistics & Data Science"],
