@@ -50,18 +50,11 @@ function mockCourseToDegreeSemester(calSemester: string, studentYear: number): s
 }
 
 /**
- * Convert a percentage grade to a 4-point GPA scale.
- * Uses UCT-style thresholds: 75+ = 4.0 down to < 50 = 0.0.
+ * UCT GPA = the raw percentage grade (0–100).
+ * The overall GPA is the simple average of all passed course grades.
  */
 function gradeToGpa(grade?: number): number {
-  if (grade == null) return 0;
-  if (grade >= 75) return 4.0;
-  if (grade >= 70) return 3.7;
-  if (grade >= 65) return 3.3;
-  if (grade >= 60) return 3.0;
-  if (grade >= 55) return 2.7;
-  if (grade >= 50) return 2.0;
-  return 0.0;
+  return grade ?? 0;
 }
 
 function formatLastSyncedAt(value: string | null): string | null {
@@ -407,22 +400,11 @@ export default function Progress() {
   const milestoneShortfall = Math.max(milestoneTarget - cumulativeCredits, 0);
 
   const cumulativeGPA = useMemo(() => {
-    if (mockUser) {
-      const gradedTaken = completedCourses.filter(
-        (c) => c.gpa > 0,
-      );
-      if (gradedTaken.length === 0) return "0";
-      const avgFourPoint =
-        gradedTaken.reduce((sum, c) => sum + c.gpa, 0) /
-        gradedTaken.length;
-      return (avgFourPoint * 25).toFixed(0);
-    }
-    if (completedCourses.length === 0) return "0";
-    const avgFourPoint =
-      completedCourses.reduce((sum, c) => sum + c.gpa, 0) /
-      completedCourses.length;
-    return (avgFourPoint * 25).toFixed(0);
-  }, [mockUser, completedCourses]);
+    const graded = completedCourses.filter((c) => c.gpa > 0);
+    if (graded.length === 0) return "0.0";
+    const avg = graded.reduce((sum, c) => sum + c.gpa, 0) / graded.length;
+    return avg.toFixed(1);
+  }, [completedCourses]);
 
   // NQF7 credits — level-7 (third-year) courses
   // Use the pre-computed value from mock progress data if available (most accurate),
@@ -727,19 +709,11 @@ export default function Progress() {
           <Text style={styles.courseMeta}>
             {course.credits} cr · {course.semester}
           </Text>
-          {isExpanded ? (
-            <View style={styles.courseExpanded}>
-              <Text style={styles.expandDetail}>
-                Grade: {course.grade} · GPA: {course.gpa}
-              </Text>
-            </View>
-          ) : null}
         </View>
         <View style={styles.courseRight}>
           <View style={styles.gradeBox}>
             <Text style={styles.gradeText}>{course.grade}</Text>
           </View>
-          <Text style={styles.gradeSub}>GPA {course.gpa}</Text>
         </View>
       </Pressable>
     );
@@ -1007,7 +981,7 @@ export default function Progress() {
           {
             label: "Avg grade",
             value: cumulativeGPA,
-            sub: `GPA ${Math.min(4, Math.round((parseFloat(cumulativeGPA) / 25) * 10) / 10).toFixed(1)}`,
+            sub: "avg % (GPA)",
           },
           {
             label: "Completed",

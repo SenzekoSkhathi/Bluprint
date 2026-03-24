@@ -481,10 +481,7 @@ export default function Planner({
           title: course.title,
           credits: course.credits,
           grade: typeof course.grade === "number" ? `${course.grade}%` : "Pass",
-          gpa:
-            typeof course.grade === "number"
-              ? Math.min(Math.max((course.grade / 100) * 4, 0), 4)
-              : 2,
+          gpa: typeof course.grade === "number" ? course.grade : 0,
           semester: course.semester,
         })),
     [completedCoursesProp],
