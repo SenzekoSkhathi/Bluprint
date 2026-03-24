@@ -215,18 +215,14 @@ export const plannerInitialCourses: PlannedCourse[] = [
 ];
 
 export const defaultDegreeRequirements: DegreeRequirements = {
-  id: "bsc-computing",
-  name: "BSc Computing",
+  id: "bsc-science",
+  name: "BSc Science",
   targetCredits: 360,
   minimumYearlyCredits: 90,
-  coreCourseCodes: [
-    "COMP1001",
-    "MATH1102",
-    "COMP2001",
-    "COMP2004",
-    "COMP3002",
-    "COMP3010",
-  ],
+  // Core courses are validated per-combination via majorCombinations.
+  // Listing degree-specific codes here would fire incorrectly for students
+  // in other degrees — keep this empty and rely on combination validation.
+  coreCourseCodes: [],
 };
 
 export const progressCompletedCourses: CompletedCourseRecord[] = [
