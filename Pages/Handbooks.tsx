@@ -2,18 +2,12 @@ import MainLayout from "@/components/main-layout";
 import { theme } from "@/constants/theme";
 import { academicRepository } from "@/services/academic-repository";
 import {
-    getBackendBaseUrl,
-    getBackendHealth,
-    getBackendSetupHint,
     listFacultyHandbookFiles,
-    runSciencePipeline,
-    type BackendHealthResponse,
     type FacultyHandbookFileResponse,
-    type SciencePipelineResponse,
 } from "@/services/backend-api";
 import type { HandbookCategory } from "@/types/handbook";
 import { Feather } from "@expo/vector-icons";
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useState } from "react";
 import { ActivityIndicator, Linking, Pressable, StyleSheet, Text, View } from "react-native";
 
 const handbookCategories: HandbookCategory[] =
@@ -59,15 +53,6 @@ export default function Handbooks() {
   >({});
   const [facultyLoading, setFacultyLoading] = useState<Record<string, boolean>>({});
   const [facultyError, setFacultyError] = useState<Record<string, string>>({});
-  const [backendHealth, setBackendHealth] =
-    useState<BackendHealthResponse | null>(null);
-  const [backendError, setBackendError] = useState<string | null>(null);
-  const [lastPipelineRun, setLastPipelineRun] =
-    useState<SciencePipelineResponse | null>(null);
-  const [isRefreshingBackend, setIsRefreshingBackend] =
-    useState<boolean>(false);
-  const [isRunningPipeline, setIsRunningPipeline] = useState<boolean>(false);
-
   const toggleCategory = (categoryId: string) => {
     setExpandedCategory(expandedCategory === categoryId ? null : categoryId);
   };
@@ -105,57 +90,6 @@ export default function Handbooks() {
     }
   };
 
-  const ingestionSnapshot = useMemo(() => {
-    const jobs = academicRepository.listHandbookIngestionJobs();
-    const versions =
-      academicRepository.listRequirementVersions("bsc-computing");
-
-    return {
-      pending: jobs.filter((job) => job.status === "pending-review").length,
-      approved: jobs.filter((job) => job.status === "approved").length,
-      failed: jobs.filter((job) => job.status === "failed").length,
-      activeVersion: versions.find((version) => version.status === "active"),
-    };
-  }, []);
-
-  useEffect(() => {
-    void refreshBackendStatus();
-  }, []);
-
-  const refreshBackendStatus = async () => {
-    setIsRefreshingBackend(true);
-
-    try {
-      const health = await getBackendHealth();
-      setBackendHealth(health);
-      setBackendError(null);
-    } catch (error) {
-      setBackendHealth(null);
-      setBackendError(
-        error instanceof Error ? error.message : "Unable to reach backend.",
-      );
-    } finally {
-      setIsRefreshingBackend(false);
-    }
-  };
-
-  const handleRunSciencePipeline = async () => {
-    setIsRunningPipeline(true);
-
-    try {
-      const result = await runSciencePipeline();
-      setLastPipelineRun(result);
-      setBackendError(null);
-      await refreshBackendStatus();
-    } catch (error) {
-      setBackendError(
-        error instanceof Error ? error.message : "Pipeline run failed.",
-      );
-    } finally {
-      setIsRunningPipeline(false);
-    }
-  };
-
   return (
     <MainLayout>
       <View style={styles.container}>
@@ -164,80 +98,6 @@ export default function Handbooks() {
           <Text style={styles.subtitle}>
             Access institutional handbooks and guides
           </Text>
-        </View>
-
-        <View style={styles.pipelineCard}>
-          <Text style={styles.pipelineTitle}>Science Pipeline</Text>
-          <Text style={styles.pipelineMeta}>
-            Backend Endpoint: {getBackendBaseUrl()}
-          </Text>
-          <Text style={styles.pipelineMeta}>
-            Backend Status: {backendHealth ? "Connected" : "Unavailable"}
-          </Text>
-          {backendHealth && (
-            <>
-              <Text style={styles.pipelineMeta}>
-                Service: {backendHealth.app} ({backendHealth.env})
-              </Text>
-              <Text style={styles.pipelineMeta}>
-                Target Domain: {backendHealth.target_domain}
-              </Text>
-            </>
-          )}
-          <Text style={styles.pipelineMeta}>
-            Local Review Queue: Pending {ingestionSnapshot.pending} • Approved{" "}
-            {ingestionSnapshot.approved} • Failed {ingestionSnapshot.failed}
-          </Text>
-          <Text style={styles.pipelineMeta}>
-            Active Local Rule Version:{" "}
-            {ingestionSnapshot.activeVersion?.versionNumber ?? "None"}
-          </Text>
-          {lastPipelineRun ? (
-            <View style={styles.pipelineSummary}>
-              <Text style={styles.pipelineMeta}>
-                Last Run: {lastPipelineRun.run_id}
-              </Text>
-              <Text style={styles.pipelineMeta}>
-                Documents: {lastPipelineRun.document_count} • Chunks{" "}
-                {String(lastPipelineRun.artifacts.chunk_count ?? 0)} • Index{" "}
-                {String(lastPipelineRun.artifacts.index_count ?? 0)}
-              </Text>
-            </View>
-          ) : (
-            <Text style={styles.pipelineMeta}>
-              No backend pipeline run has been triggered from this app session
-              yet.
-            </Text>
-          )}
-          {backendError && (
-            <Text style={styles.pipelineWarning}>
-              {backendError}. {getBackendSetupHint()}
-            </Text>
-          )}
-          <View style={styles.pipelineActions}>
-            <Pressable
-              style={[styles.pipelineButton, styles.pipelineSecondaryButton]}
-              onPress={() => {
-                void refreshBackendStatus();
-              }}
-              disabled={isRefreshingBackend || isRunningPipeline}
-            >
-              <Text style={styles.pipelineSecondaryButtonText}>
-                {isRefreshingBackend ? "Refreshing..." : "Refresh Status"}
-              </Text>
-            </Pressable>
-            <Pressable
-              style={[styles.pipelineButton, styles.pipelinePrimaryButton]}
-              onPress={() => {
-                void handleRunSciencePipeline();
-              }}
-              disabled={isRunningPipeline || isRefreshingBackend}
-            >
-              <Text style={styles.pipelinePrimaryButtonText}>
-                {isRunningPipeline ? "Running..." : "Run Science Pipeline"}
-              </Text>
-            </Pressable>
-          </View>
         </View>
 
         {handbookCategories.map((category) => {
@@ -441,64 +301,6 @@ const styles = StyleSheet.create({
     marginHorizontal: theme.spacing.md,
     borderRadius: theme.borderRadius.lg,
     overflow: "hidden",
-  },
-  pipelineCard: {
-    backgroundColor: theme.colors.card,
-    borderWidth: 1,
-    borderColor: theme.colors.glassBorder,
-    borderRadius: theme.borderRadius.lg,
-    padding: theme.spacing.md,
-    marginHorizontal: theme.spacing.md,
-    marginBottom: theme.spacing.md,
-    gap: 4,
-  },
-  pipelineTitle: {
-    fontSize: theme.fontSize.md,
-    fontWeight: "700",
-    color: theme.colors.textPrimary,
-  },
-  pipelineMeta: {
-    fontSize: theme.fontSize.sm,
-    color: theme.colors.textLight,
-  },
-  pipelineSummary: {
-    marginTop: theme.spacing.xs,
-    gap: 4,
-  },
-  pipelineWarning: {
-    fontSize: theme.fontSize.sm,
-    color: theme.colors.deepBlue,
-    lineHeight: 18,
-    marginTop: theme.spacing.xs,
-  },
-  pipelineActions: {
-    flexDirection: "row",
-    flexWrap: "wrap",
-    gap: theme.spacing.sm,
-    marginTop: theme.spacing.sm,
-  },
-  pipelineButton: {
-    borderRadius: theme.borderRadius.md,
-    paddingHorizontal: theme.spacing.md,
-    paddingVertical: 10,
-  },
-  pipelinePrimaryButton: {
-    backgroundColor: theme.colors.deepBlue,
-  },
-  pipelineSecondaryButton: {
-    backgroundColor: theme.colors.grayLight,
-    borderWidth: 1,
-    borderColor: theme.colors.gray,
-  },
-  pipelinePrimaryButtonText: {
-    color: theme.colors.white,
-    fontSize: theme.fontSize.sm,
-    fontWeight: "700",
-  },
-  pipelineSecondaryButtonText: {
-    color: theme.colors.textPrimary,
-    fontSize: theme.fontSize.sm,
-    fontWeight: "700",
   },
   categoryHeader: {
     flexDirection: "row",
