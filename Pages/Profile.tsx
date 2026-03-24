@@ -81,17 +81,22 @@ function buildProfileFromLoggedInUser(
     .replace(/[^a-z0-9.]/g, "");
 
   return {
-    ...defaultStudentProfile,
     id: loggedInUser.studentNumber,
     firstName,
     lastName,
     studentId: loggedInUser.studentNumber,
     email: `${emailLocal}@myuct.ac.za`,
+    phone: "",
+    dateOfBirth: "",
+    enrollmentDate: "",
     program: loggedInUser.degree,
+    faculty: "Faculty of Science",
     year: `Year ${loggedInUser.year}`,
-    creditsCompleted:
-      loggedInUser.creditsCompleted ?? defaultStudentProfile.creditsCompleted,
-    gpa: loggedInUser.gpa ?? defaultStudentProfile.gpa,
+    status: "Full-time",
+    gpa: loggedInUser.gpa ?? 0,
+    creditsCompleted: loggedInUser.creditsCompleted ?? 0,
+    creditsRequired: 360,
+    expectedGraduation: "",
   };
 }
 

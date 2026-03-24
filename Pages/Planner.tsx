@@ -10,6 +10,7 @@ import type {
   PlannedCourse,
 } from "@/types/academic";
 import { generateAutoGraduationPlans } from "@/services/academic-path-planner";
+import { validateAcademicPlan } from "@/services/academic-validation";
 import React, { useEffect, useMemo, useState } from "react";
 import {
   Platform,
@@ -870,13 +871,18 @@ export default function Planner({
       hasPlannerCourses ||
       completedCourseRecords.length > 0 ||
       inProgressCourseRecords.length > 0
-        ? academicRepository.getAcademicValidationReport({
+        ? validateAcademicPlan({
+            catalog:
+              catalog.length > 0
+                ? catalog
+                : academicRepository.getCourseCatalog(),
+            requirements: academicRepository.getDegreeRequirements(),
             plannedCourses: courses,
             completedCourses: completedCourseRecords,
             inProgressCourses: inProgressCourseRecords,
           })
         : null,
-    [courses, completedCourseRecords, inProgressCourseRecords],
+    [catalog, courses, completedCourseRecords, inProgressCourseRecords],
   );
 
   // Codes of courses the student is actively planning — excludes anything
