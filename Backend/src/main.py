@@ -828,13 +828,17 @@ def validate_plan_against_science_rules(request: PlanRulesValidationRequest) -> 
 
 # ── Faculty Handbook Files ────────────────────────────────────────────────────
 
-_FACULTY_FOLDERS: dict[str, str] = {
-    "commerce": "Commerce",
-    "science": "Science",
-    "humanities": "Humanities",
-    "health-sciences": "Health Sciences",
-    "engineering": "Engineering and Built Environment",
-    "law": "Law",
+# Each entry is (s3_folder_prefix, filename_keyword_filter).
+# folder_prefix: the S3 prefix to list under (exact match, including trailing slash).
+# keyword: if non-empty, only include root-level files whose name contains this keyword
+#          (used when the PDFs live at the bucket root instead of a dedicated folder).
+_FACULTY_FOLDERS: dict[str, tuple[str, str]] = {
+    "commerce":        ("Commerce/",                          ""),
+    "science":         ("",                                   "science"),   # root-level file
+    "humanities":      ("Humanities/",                        ""),
+    "health-sciences": ("Health Sciences/",                   ""),
+    "engineering":     ("Engineering and Built Enviroment/",  ""),          # S3 folder has typo
+    "law":             ("",                                   "law"),       # root-level file
 }
 
 PRESIGNED_URL_EXPIRY = 3600  # 1 hour
@@ -844,12 +848,13 @@ PRESIGNED_URL_EXPIRY = 3600  # 1 hour
 def list_faculty_handbook_files(faculty_slug: str) -> dict:
     """List PDF files in the S3 folder for a given faculty and return presigned
     view + download URLs (valid for 1 hour)."""
-    folder = _FACULTY_FOLDERS.get(faculty_slug)
-    if not folder:
+    entry = _FACULTY_FOLDERS.get(faculty_slug)
+    if entry is None:
         raise HTTPException(
             status_code=404,
             detail=f"Unknown faculty slug: {faculty_slug}. Valid slugs: {list(_FACULTY_FOLDERS)}",
         )
+    folder_prefix, keyword = entry
 
     s3 = boto3.client(
         "s3",
@@ -859,8 +864,13 @@ def list_faculty_handbook_files(faculty_slug: str) -> dict:
         aws_secret_access_key=settings.aws_secret_access_key,
     )
 
-    prefix_parts = [p for p in [settings.aws_s3_handbook_prefix.strip("/"), folder] if p]
-    prefix = "/".join(prefix_parts) + "/"
+    base_prefix = settings.aws_s3_handbook_prefix.strip("/")
+    if base_prefix and folder_prefix:
+        prefix = f"{base_prefix}/{folder_prefix}"
+    elif base_prefix:
+        prefix = f"{base_prefix}/"
+    else:
+        prefix = folder_prefix  # may be "" (root) or "FolderName/"
 
     try:
         paginator = s3.get_paginator("list_objects_v2")
@@ -870,6 +880,9 @@ def list_faculty_handbook_files(faculty_slug: str) -> dict:
                 key: str = obj["Key"]
                 filename = key.split("/")[-1]
                 if not filename or not filename.lower().endswith(".pdf"):
+                    continue
+                # For root-level files (no dedicated folder), filter by keyword
+                if keyword and keyword.lower() not in filename.lower():
                     continue
                 view_url = s3.generate_presigned_url(
                     "get_object",
@@ -894,7 +907,7 @@ def list_faculty_handbook_files(faculty_slug: str) -> dict:
                     "download_url": download_url,
                 })
 
-        return {"faculty": folder, "slug": faculty_slug, "files": files}
+        return {"faculty": folder_prefix, "slug": faculty_slug, "files": files}
 
     except botocore.exceptions.ClientError as exc:
         raise HTTPException(status_code=500, detail=f"S3 error: {exc}") from exc
