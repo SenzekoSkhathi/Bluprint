@@ -7,6 +7,7 @@ from typing import Any
 
 from src.agents.handbook_rules_agent import HandbookRulesAgent
 from src.config import Settings
+from src.storage import ChunkStore
 
 
 def _parse_year_number(value: str) -> int:
@@ -265,6 +266,7 @@ class ScienceHandbookRulesService:
         self.settings = settings
         self.base_dir = settings.resolved_data_dir
         self.rules_agent = HandbookRulesAgent()
+        self.chunk_store = ChunkStore(settings.resolved_data_dir, settings=settings)
 
     @property
     def _rules_dir(self) -> Path:
@@ -276,19 +278,10 @@ class ScienceHandbookRulesService:
         if run_id:
             return run_id
 
-        chunks_dir = self.base_dir / "chunks"
-        if not chunks_dir.exists():
+        latest = self.chunk_store.latest_run_id()
+        if not latest:
             raise FileNotFoundError("No chunk artifacts found. Run /pipelines/science/run first.")
-
-        manifests = sorted(
-            chunks_dir.glob("*.manifest.json"),
-            key=lambda path: path.stat().st_mtime,
-            reverse=True,
-        )
-        if not manifests:
-            raise FileNotFoundError("No chunk manifests available. Run /pipelines/science/run first.")
-
-        return manifests[0].name.replace(".manifest.json", "")
+        return latest
 
     def _rules_cache_path(self, run_id: str, handbook_title: str | None) -> Path:
         suffix = "all"
@@ -297,20 +290,7 @@ class ScienceHandbookRulesService:
         return self._rules_dir / f"{run_id}.{suffix}.rules.json"
 
     def _load_chunks(self, run_id: str) -> list[dict[str, Any]]:
-        chunks_path = self.base_dir / "chunks" / f"{run_id}.jsonl"
-        if not chunks_path.exists():
-            raise FileNotFoundError(
-                f"Chunk file not found for run_id={run_id}. Run /pipelines/science/run first."
-            )
-
-        rows: list[dict[str, Any]] = []
-        with chunks_path.open("r", encoding="utf-8") as handle:
-            for line in handle:
-                line = line.strip()
-                if not line:
-                    continue
-                rows.append(json.loads(line))
-        return rows
+        return self.chunk_store.ensure_local_and_load(run_id)
 
     def extract_rules(
         self,

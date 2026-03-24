@@ -26,6 +26,7 @@ class Settings(BaseSettings):
         validation_alias=AliasChoices("AWS_S3_HANDBOOK_BUCKET", "AWS_BUCKET_NAME")
     )
     aws_s3_handbook_prefix: str = Field(default="", alias="AWS_S3_HANDBOOK_PREFIX")
+    aws_s3_artifacts_prefix: str = Field(default="pipeline-artifacts", alias="AWS_S3_ARTIFACTS_PREFIX")
     max_handbook_bytes: int = Field(default=25_000_000, alias="MAX_HANDBOOK_BYTES")
 
     gemini_api_key: str = Field(alias="GEMINI_API_KEY")

@@ -12,7 +12,7 @@ class HandbookParsingAgent:
 
     def __init__(self, settings: Settings):
         self.settings = settings
-        self.chunk_store = ChunkStore(settings.resolved_data_dir)
+        self.chunk_store = ChunkStore(settings.resolved_data_dir, settings=settings)
 
     def _extract_text(self, path: Path, content_type: str) -> str:
         if content_type == "application/pdf":

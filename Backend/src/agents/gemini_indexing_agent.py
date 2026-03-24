@@ -13,7 +13,7 @@ class GeminiIndexingAgent:
     def __init__(self, settings: Settings):
         self.settings = settings
         self.client = genai.Client(api_key=settings.gemini_api_key)
-        self.index_store = IndexStore(settings.resolved_data_dir)
+        self.index_store = IndexStore(settings.resolved_data_dir, settings=settings)
 
     def _coerce_embedding_vectors(self, response: object) -> list[list[float]]:
         embeddings = getattr(response, "embeddings", None)
