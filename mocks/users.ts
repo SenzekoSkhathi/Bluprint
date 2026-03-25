@@ -1238,9 +1238,9 @@ const luyandaInProgress: Course[] = [
 // ─────────────────────────────────────────────────────────────
 export const mockUsers: MockUser[] = [
   {
-    name: "Bandile Gumede",
-    studentNumber: "GMDBAN001",
-    password: "Bandile@UCT1",
+    name: "Skhathi Nduli",
+    studentNumber: "NDLSEN014",
+    password: "Skhathi@UCT1",
     degree: "BSc Computer Science",
     year: 2,
     majors: ["Computer Science"],
