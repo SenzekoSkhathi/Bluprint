@@ -283,6 +283,22 @@ export default function Progress() {
     return [];
   }, [mockUser, loggedInUser, savedPlan, courseTitleByCode]);
 
+  const failedCourses = useMemo<CompletedCourseRecord[]>(() => {
+    if (mockUser) {
+      return mockUser.completedCourses.failed.map((course, index) => ({
+        id: `failed-${index}-${course.code}`,
+        code: course.code,
+        title: courseTitleByCode.get(course.code.trim().toUpperCase()) ?? course.title,
+        credits: course.credits,
+        grade: course.grade != null ? `${course.grade}%` : "N/A",
+        gpa: gradeToGpa(course.grade),
+        semester: mockCourseToDegreeSemester(course.semester, mockUser.year),
+        failed: true,
+      }));
+    }
+    return [];
+  }, [mockUser, courseTitleByCode]);
+
   const inProgressCourses = useMemo<InProgressCourseRecord[]>(() => {
     // Real student data — all courses registered for in the current academic year.
     if (mockUser) {
@@ -610,7 +626,7 @@ export default function Progress() {
 
   // ─── Tab counts ───────────────────────────────────────────────────────────
   const tabCounts: Record<CourseTab, number> = {
-    completed: completedCourses.length,
+    completed: completedCourses.length + failedCourses.length,
     inprogress: inProgressCourses.length,
     planned: forecastCourses.length,
   };
@@ -695,14 +711,15 @@ export default function Progress() {
 
   const renderCompletedCourse = (course: CompletedCourseRecord) => {
     const isExpanded = expandedCourse === course.id;
+    const isFailed = course.failed === true;
     return (
       <Pressable
         key={course.id}
         onPress={() => setExpandedCourse(isExpanded ? null : course.id)}
-        style={styles.courseRow}
+        style={[styles.courseRow, isFailed && styles.courseRowFailed]}
       >
         <View style={styles.courseLeft}>
-          <Text style={styles.courseCode}>{course.code}</Text>
+          <Text style={[styles.courseCode, isFailed && styles.courseCodeFailed]}>{course.code}</Text>
           <Text style={styles.courseName} numberOfLines={isExpanded ? 0 : 1}>
             {course.title}
           </Text>
@@ -711,9 +728,10 @@ export default function Progress() {
           </Text>
         </View>
         <View style={styles.courseRight}>
-          <View style={styles.gradeBox}>
-            <Text style={styles.gradeText}>{course.grade}</Text>
+          <View style={[styles.gradeBox, isFailed && styles.gradeBoxFailed]}>
+            <Text style={[styles.gradeText, isFailed && styles.gradeTextFailed]}>{course.grade}</Text>
           </View>
+          {isFailed && <Text style={styles.gradeSubFailed}>Failed</Text>}
         </View>
       </Pressable>
     );
@@ -1140,14 +1158,24 @@ export default function Progress() {
       {/* Course list */}
       <View style={styles.courseList}>
         {activeTab === "completed" &&
-          (completedCourses.length === 0 ? (
+          (completedCourses.length === 0 && failedCourses.length === 0 ? (
             <Text style={styles.emptyText}>
               {isProjectionOnly
                 ? "Completed transcript history is not synced yet."
                 : "No completed courses yet."}
             </Text>
           ) : (
-            completedCourses.map(renderCompletedCourse)
+            <>
+              {completedCourses.map(renderCompletedCourse)}
+              {failedCourses.length > 0 && (
+                <>
+                  <Text style={[styles.sectionLabel, styles.sectionLabelFailed]}>
+                    Failed ({failedCourses.length})
+                  </Text>
+                  {failedCourses.map(renderCompletedCourse)}
+                </>
+              )}
+            </>
           ))}
 
         {activeTab === "inprogress" &&
@@ -1681,6 +1709,28 @@ const styles = StyleSheet.create({
   gradeSub: {
     fontSize: 10,
     color: theme.colors.textLight,
+  },
+  courseRowFailed: {
+    borderColor: "#F7C1C1",
+    backgroundColor: "#FCEBEB",
+  },
+  courseCodeFailed: {
+    color: "#B3261E",
+  },
+  gradeBoxFailed: {
+    backgroundColor: "#F7C1C1",
+  },
+  gradeTextFailed: {
+    color: "#B3261E",
+  },
+  gradeSubFailed: {
+    fontSize: 10,
+    color: "#B3261E",
+    fontWeight: "600",
+  },
+  sectionLabelFailed: {
+    color: "#B3261E",
+    marginTop: 8,
   },
 
   emptyText: {

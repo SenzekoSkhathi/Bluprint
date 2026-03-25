@@ -47,6 +47,7 @@ export interface CompletedCourseRecord {
   grade: string;
   gpa: number;
   semester: string;
+  failed?: boolean;
 }
 
 export interface InProgressCourseRecord {
