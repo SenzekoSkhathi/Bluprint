@@ -137,10 +137,10 @@ function computeProgress(
 }
 
 // ─────────────────────────────────────────────────────────────
-// USER 1 — Bandile Gumede
+// USER 1 — Skhathi Nduli
 // BSc Computer Science | Year 2 | CSC05-Y1-A + CSC05-Y2-A
-// SCENARIO: Happy path — on track, all prereqs met, forecast = Y2 milestone
-// Y1 earned 72 ✓ | Y2 forecast 144 = milestone ✓ | S1 load 36, S2 load 36 ✓
+// SCENARIO: Happy path — on track, all prereqs met
+// Y1 earned 141 ✓ | Y2 forecast 249 > 144 ✓
 // ─────────────────────────────────────────────────────────────
 const bandilePassed: Course[] = [
   // Year 1 — 2024
@@ -154,12 +154,30 @@ const bandilePassed: Course[] = [
     passed: true,
   },
   {
-    code: "MAM1000W",
-    title: "Mathematics 1000W",
-    credits: 36,
+    code: "MAM1031F",
+    title: "Mathematics 1031F",
+    credits: 18,
     nqfLevel: 5,
-    semester: "FY 2024",
+    semester: "S1 2024",
     grade: 65,
+    passed: true,
+  },
+  {
+    code: "ACC1021F",
+    title: "Accounting for Business I",
+    credits: 15,
+    nqfLevel: 5,
+    semester: "S1 2024",
+    grade: 60,
+    passed: true,
+  },
+  {
+    code: "FTX1005F",
+    title: "Managerial Finance",
+    credits: 18,
+    nqfLevel: 5,
+    semester: "S1 2024",
+    grade: 58,
     passed: true,
   },
   {
@@ -171,11 +189,38 @@ const bandilePassed: Course[] = [
     grade: 68,
     passed: true,
   },
+  {
+    code: "MAM1032S",
+    title: "Mathematics 1032S",
+    credits: 18,
+    nqfLevel: 5,
+    semester: "S2 2024",
+    grade: 63,
+    passed: true,
+  },
+  {
+    code: "MAM1008S",
+    title: "Introduction to Discrete Mathematics",
+    credits: 18,
+    nqfLevel: 5,
+    semester: "S2 2024",
+    grade: 61,
+    passed: true,
+  },
+  {
+    code: "STA1000S",
+    title: "Introductory Statistics",
+    credits: 18,
+    nqfLevel: 5,
+    semester: "S2 2024",
+    grade: 55,
+    passed: true,
+  },
 ];
-// earned = 72 ✓ (Y1 milestone)
+// earned = 141 ✓ (Y1 milestone)
 const bandileFailed: Course[] = [];
 const bandileInProgress: Course[] = [
-  // Year 2 — 2025 | S1: 36 credits, S2: 36 credits — both within FB3
+  // Year 2 — 2025
   {
     code: "CSC2001F",
     title: "Computer Science 2001F",
@@ -204,8 +249,29 @@ const bandileInProgress: Course[] = [
     nqfLevel: 6,
     semester: "S2 2025",
   },
+  {
+    code: "CSC2004Z",
+    title: "Programming Assessment",
+    credits: 0,
+    nqfLevel: 6,
+    semester: "S1 2025",
+  },
+  {
+    code: "CSC2042S",
+    title: "Introduction to AI 2: Machine Learning",
+    credits: 24,
+    nqfLevel: 6,
+    semester: "S2 2025",
+  },
+  {
+    code: "STA2007S",
+    title: "Study Design & Data Analysis for Scientists",
+    credits: 24,
+    nqfLevel: 6,
+    semester: "S2 2025",
+  },
 ];
-// in-progress = 72 | forecast = 144 = Y2 milestone ✓
+// in-progress = 120 | forecast = 261 > Y2 milestone ✓
 
 // ─────────────────────────────────────────────────────────────
 // USER 2 — Nikhar Singh
@@ -1467,7 +1533,7 @@ export const mockUsers: MockUser[] = [
 //
 // User       | Yr | Alerts triggered                                    | Test purpose
 // ───────────┼────┼─────────────────────────────────────────────────────┼──────────────────────────────────────
-// Bandile    |  2 | None                                                | Happy path — baseline, all green
+// Skhathi    |  2 | None                                                | Happy path — baseline, all green
 // Nikhar     |  2 | Y1 milestone fail + prereq violation (MCB2020F)    | Broken prereq chain + credit deficit
 // Jordan     |  3 | None (high achiever, NQF7 ✓)                       | Triple major, complex load validation
 // Thando     |  3 | NQF7 shortfall (forecast 84 < 120)                 | FB7.2 NQF-level requirement check
@@ -1481,7 +1547,7 @@ export const mockUsers: MockUser[] = [
 // Luyanda    |  3 | NQF7 shortfall (forecast 48 < 120) + needs Y4      | NQF7 deficit + graduation delay
 //
 // Credit math verification:
-//   Bandile  | earned  72 | in-progress  72 | forecast 144 | NQF7 forecast   0
+//   Skhathi  | earned 141 | in-progress 120 | forecast 261 | NQF7 forecast   0
 //   Nikhar   | earned  54 | in-progress  72 | forecast 126 | NQF7 forecast   0
 //   Jordan   | earned 204 | in-progress 126 | forecast 330 | NQF7 forecast 126
 //   Thando   | earned 168 | in-progress  84 | forecast 252 | NQF7 forecast  84
