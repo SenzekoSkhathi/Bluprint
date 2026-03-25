@@ -138,6 +138,28 @@ function parsePrerequisiteCodes(text: string): string[] {
     : [];
 }
 
+/**
+ * Returns true if the given course code (which may contain a multi-semester
+ * suffix like "CSC1015F/S") is satisfied by any entry in the known-codes set.
+ *
+ * Examples:
+ *   "CSC1015F/S" → checks "CSC1015F/S", "CSC1015F", "CSC1015S"
+ *   "STA100XF/S" → checks "STA100XF/S", "STA100XF", "STA100XS"
+ *   "CSC2001F"   → checks "CSC2001F" only
+ */
+function isCodeSatisfied(code: string, known: Set<string>): boolean {
+  if (known.has(code)) return true;
+  if (!code.includes("/")) return false;
+  // Find where the compound suffix begins: the first uppercase letter that is
+  // followed immediately by "/LETTER" at the tail of the string.
+  // e.g. "CSC1015F/S" → compoundStart = 7 ("F/S"), base = "CSC1015"
+  const compoundStart = code.search(/[A-Z](?:\/[A-Z])+$/);
+  if (compoundStart === -1) return false;
+  const base = code.slice(0, compoundStart);
+  const suffixes = code.slice(compoundStart).split("/");
+  return suffixes.some((s) => known.has(`${base}${s}`));
+}
+
 function getCombinationRequiredCodes(
   combination: ScienceMajorCombination,
 ): string[] {
@@ -807,10 +829,10 @@ export default function Planner({
           const aRequired = getCombinationRequiredCodes(a);
           const bRequired = getCombinationRequiredCodes(b);
           const aMatched = aRequired.filter((code) =>
-            knownCodes.has(code),
+            isCodeSatisfied(code, knownCodes),
           ).length;
           const bMatched = bRequired.filter((code) =>
-            knownCodes.has(code),
+            isCodeSatisfied(code, knownCodes),
           ).length;
           if (aMatched !== bMatched) {
             return bMatched - aMatched;
@@ -821,7 +843,7 @@ export default function Planner({
         const requiredCodes = getCombinationRequiredCodes(bestCombination);
 
         requiredCodes.forEach((requiredCode) => {
-          if (knownCodes.has(requiredCode)) {
+          if (isCodeSatisfied(requiredCode, knownCodes)) {
             return;
           }
 
@@ -830,7 +852,7 @@ export default function Planner({
             ? parsePrerequisiteCodes(catalogCourse.prerequisites)
             : [];
           const missingPrereqCodes = prereqs.filter(
-            (prereqCode) => !knownCodes.has(prereqCode),
+            (prereqCode) => !isCodeSatisfied(prereqCode, knownCodes),
           );
 
           let recommendedYear: string | undefined;
