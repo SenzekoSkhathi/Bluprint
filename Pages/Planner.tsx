@@ -146,20 +146,36 @@ function parsePrerequisiteCodes(text: string): string[] {
 }
 
 /**
- * Returns true if the given course code (which may contain a multi-semester
- * suffix like "CSC1015F/S") is satisfied by any entry in the known-codes set.
+ * Returns true if the given course code is satisfied by any entry in the
+ * known-codes set. Handles three forms:
  *
- * Examples:
- *   "CSC1015F/S" → checks "CSC1015F/S", "CSC1015F", "CSC1015S"
- *   "STA100XF/S" → checks "STA100XF/S", "STA100XF", "STA100XS"
- *   "CSC2001F"   → checks "CSC2001F" only
+ *   Slash-notation:  "CSC1015F/S"    → checks "CSC1015F/S", "CSC1015F", "CSC1015S"
+ *                    "STA1000F/S/P/L" → checks each suffix variant
+ *   X-pattern:       "STA100XF/S"    → matches any known code like "STA1000F",
+ *                                      "STA1007S" (X = any digit, same as backend)
+ *   Exact:           "CSC2001F"      → checks "CSC2001F" only
  */
 function isCodeSatisfied(code: string, known: Set<string>): boolean {
   if (known.has(code)) return true;
+
+  // X-pattern: 'X' in the 4-digit numeric section is a wildcard digit.
+  // e.g. "STA100XF/S", "STA20XXF/S/H", "MAM304XF/S"
+  if (code.includes("X")) {
+    const xm = code.match(/^([A-Z]{3,4})([0-9X]{4})([A-Z](?:\/[A-Z])*)$/);
+    if (xm && xm[2].includes("X")) {
+      const digitPattern = xm[2].replace(/X/g, "[0-9]");
+      const suffixes = xm[3].split("/");
+      const re = new RegExp(
+        `^${xm[1]}${digitPattern}(${suffixes.join("|")})$`,
+      );
+      for (const k of known) {
+        if (re.test(k)) return true;
+      }
+    }
+  }
+
   if (!code.includes("/")) return false;
-  // Find where the compound suffix begins: the first uppercase letter that is
-  // followed immediately by "/LETTER" at the tail of the string.
-  // e.g. "CSC1015F/S" → compoundStart = 7 ("F/S"), base = "CSC1015"
+  // Slash-notation: e.g. "CSC1015F/S" → base "CSC1015", suffixes ["F","S"]
   const compoundStart = code.search(/[A-Z](?:\/[A-Z])+$/);
   if (compoundStart === -1) return false;
   const base = code.slice(0, compoundStart);
