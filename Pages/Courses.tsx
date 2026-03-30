@@ -1,5 +1,10 @@
 import MainLayout from "@/components/main-layout";
-import { getPrimaryFacultySlug } from "@/constants/faculty";
+import {
+    FACULTY_LABELS,
+    type FacultySlug,
+    getAllFacultySlugs,
+    getPrimaryFacultySlug,
+} from "@/constants/faculty";
 import { theme } from "@/constants/theme";
 import {
     academicRepository,
@@ -32,20 +37,6 @@ interface LoadCompleteness {
 }
 
 const courseGroups = academicRepository.getCourseGroups();
-const TARGET_DEPARTMENTS = [
-  "Archaeology",
-  "Astronomy",
-  "Biological Sciences",
-  "Chemistry",
-  "Computer Science",
-  "Environmental and Geographical Science",
-  "Geological Sciences",
-  "Mathematics and Applied Mathematics",
-  "Molecular and Cell Biology",
-  "Oceanography",
-  "Physics",
-  "Statistical Sciences",
-] as const;
 const VALID_CODE_RE = /^[A-Z]{3,4}\d{4}(?:[A-Z](?:\/[A-Z]){0,3})?$/;
 
 const GENERIC_TITLE_RE =
@@ -230,10 +221,11 @@ function repairCourseTitles(
 }
 
 export default function Courses({ onCourseSelect }: CoursesProps) {
-  const activeFacultySlug = getPrimaryFacultySlug();
+  const [selectedFaculty, setSelectedFaculty] = useState<FacultySlug>(
+    getPrimaryFacultySlug(),
+  );
   const [catalog, setCatalog] = useState<Course[]>([]);
   const [activeGroup, setActiveGroup] = useState<CourseGroup>("Year 1");
-  const [catalogRunId, setCatalogRunId] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [loadError, setLoadError] = useState<string | null>(null);
   const [loadCompleteness, setLoadCompleteness] =
@@ -264,7 +256,7 @@ export default function Courses({ onCourseSelect }: CoursesProps) {
     const loadCoursesWithRetry = async () => {
       try {
         return await withTimeout(
-          getHandbookCourses({ faculty_slug: activeFacultySlug }),
+          getHandbookCourses({ faculty_slug: selectedFaculty }),
           COURSE_LOAD_TIMEOUT_MS,
         );
       } catch (firstError) {
@@ -272,11 +264,11 @@ export default function Courses({ onCourseSelect }: CoursesProps) {
         await sleep(COURSE_LOAD_RETRY_DELAY_MS);
         try {
           return await withTimeout(
-            getHandbookCourses({ faculty_slug: activeFacultySlug }),
+            getHandbookCourses({ faculty_slug: selectedFaculty }),
             COURSE_LOAD_TIMEOUT_MS,
           );
         } catch {
-          if (activeFacultySlug === "science") {
+          if (selectedFaculty === "science") {
             return await withTimeout(
               getScienceCourses(),
               COURSE_LOAD_TIMEOUT_MS,
@@ -337,7 +329,6 @@ export default function Courses({ onCourseSelect }: CoursesProps) {
         setLoadError(null);
 
         const baselineResponse = await loadCoursesWithRetry();
-        const finalRunId = baselineResponse.run_id;
         let finalCourses = dedupeByCode(baselineResponse.courses);
         const bestTitleByCode = buildBestTitleMap(finalCourses);
         finalCourses = repairCourseTitles(finalCourses, bestTitleByCode);
@@ -348,7 +339,6 @@ export default function Courses({ onCourseSelect }: CoursesProps) {
 
         const normalized = normalizeCourses(finalCourses);
         setCatalog(normalized);
-        setCatalogRunId(finalRunId);
         setLoadCompleteness({
           totalCourses: normalized.length,
           postgradCourses: normalized.filter(
@@ -377,7 +367,6 @@ export default function Courses({ onCourseSelect }: CoursesProps) {
         );
         if (catalog.length === 0) {
           setCatalog([]);
-          setCatalogRunId(null);
           setLoadCompleteness(null);
         }
       } finally {
@@ -392,7 +381,7 @@ export default function Courses({ onCourseSelect }: CoursesProps) {
     return () => {
       isMounted = false;
     };
-  }, [activeFacultySlug]);
+  }, [selectedFaculty]);
 
   const visibleCourses = useMemo(
     () =>
@@ -407,28 +396,50 @@ export default function Courses({ onCourseSelect }: CoursesProps) {
       <View style={styles.header}>
         <Text style={styles.title}>Courses</Text>
         <Text style={styles.subtitle}>
-          Browse handbook-derived course offerings from:{" "}
-          {TARGET_DEPARTMENTS.join(", ")}.
-        </Text>
-        <Text style={styles.dataStatus}>
-          Source:{" "}
-          {catalogRunId
-            ? `Handbook extraction (${catalogRunId})`
-            : "Backend only"}
+          {FACULTY_LABELS[selectedFaculty]} Faculty — handbook course catalogue.
         </Text>
         {!isLoading && loadCompleteness ? (
           <Text style={styles.dataStatus}>
-            {`Listed courses: ${loadCompleteness.totalCourses} | Postgrad: ${loadCompleteness.postgradCourses}`}
+            {`${loadCompleteness.totalCourses} courses | Postgrad: ${loadCompleteness.postgradCourses}`}
           </Text>
         ) : null}
         {isLoading ? (
-          <Text style={styles.infoText}>Loading handbook courses...</Text>
+          <Text style={styles.infoText}>Loading courses...</Text>
         ) : null}
         {!isLoading && loadError ? (
           <Text style={styles.errorText}>
-            Could not load handbook courses: {loadError}
+            Could not load courses: {loadError}
           </Text>
         ) : null}
+      </View>
+
+      <View style={styles.sectionCard}>
+        <Text style={styles.sectionTitle}>Faculty</Text>
+        <ScrollView
+          horizontal
+          showsHorizontalScrollIndicator={false}
+          contentContainerStyle={styles.groupRow}
+        >
+          {getAllFacultySlugs().map((slug) => {
+            const isActive = slug === selectedFaculty;
+            return (
+              <Pressable
+                key={slug}
+                onPress={() => {
+                  setSelectedFaculty(slug);
+                  setActiveGroup("Year 1");
+                }}
+                style={[styles.pill, isActive && styles.pillActive]}
+              >
+                <Text
+                  style={[styles.pillText, isActive && styles.pillTextActive]}
+                >
+                  {FACULTY_LABELS[slug]}
+                </Text>
+              </Pressable>
+            );
+          })}
+        </ScrollView>
       </View>
 
       <View style={styles.sectionCard}>
@@ -461,8 +472,8 @@ export default function Courses({ onCourseSelect }: CoursesProps) {
         >
           {!isLoading && visibleCourses.length === 0 ? (
             <Text style={styles.infoText}>
-              No handbook courses found for {activeGroup}. Run the science
-              pipeline and retry.
+              No courses found for {activeGroup} in{" "}
+              {FACULTY_LABELS[selectedFaculty]}.
             </Text>
           ) : null}
           {visibleCourses.map((course) => (

@@ -1,5 +1,10 @@
 import MainLayout from "@/components/main-layout";
-import { getPrimaryFacultySlug } from "@/constants/faculty";
+import {
+    FACULTY_LABELS,
+    type FacultySlug,
+    getAllFacultySlugs,
+    getPrimaryFacultySlug,
+} from "@/constants/faculty";
 import { theme } from "@/constants/theme";
 import {
     getHandbookMajors,
@@ -8,10 +13,17 @@ import {
     type ScienceMajorEntry,
 } from "@/services/backend-api";
 import React, { useEffect, useState } from "react";
-import { Platform, Pressable, StyleSheet, Text, View } from "react-native";
+import {
+    Platform,
+    Pressable,
+    ScrollView,
+    StyleSheet,
+    Text,
+    View,
+} from "react-native";
 
 interface MajorsProps {
-  onMajorSelect?: (major: ScienceMajorEntry) => void;
+  onMajorSelect?: (major: ScienceMajorEntry, facultySlug: FacultySlug) => void;
 }
 
 function collectCombinationCourses(combination: {
@@ -49,7 +61,9 @@ function countCoursesForYear(major: ScienceMajorEntry, targetYear: number) {
 }
 
 export default function Majors({ onMajorSelect }: MajorsProps) {
-  const activeFacultySlug = getPrimaryFacultySlug();
+  const [selectedFaculty, setSelectedFaculty] = useState<FacultySlug>(
+    getPrimaryFacultySlug(),
+  );
   const [majors, setMajors] = useState<ScienceMajorEntry[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -63,7 +77,7 @@ export default function Majors({ onMajorSelect }: MajorsProps) {
         setError(null);
 
         const majorsPayload = await getHandbookMajors({
-          faculty_slug: activeFacultySlug,
+          faculty_slug: selectedFaculty,
         }).catch(() => getScienceMajors());
         if (!isMounted) {
           return;
@@ -93,16 +107,41 @@ export default function Majors({ onMajorSelect }: MajorsProps) {
     return () => {
       isMounted = false;
     };
-  }, [activeFacultySlug]);
+  }, [selectedFaculty]);
 
   return (
     <MainLayout>
       <View style={styles.header}>
         <Text style={styles.title}>Majors</Text>
         <Text style={styles.subtitle}>
-          Applied Mathematics through Statistics and Data Science from the
-          verified majors catalog.
+          {FACULTY_LABELS[selectedFaculty]} Faculty — available majors and programmes.
         </Text>
+      </View>
+
+      <View style={styles.sectionCard}>
+        <Text style={styles.sectionTitle}>Faculty</Text>
+        <ScrollView
+          horizontal
+          showsHorizontalScrollIndicator={false}
+          contentContainerStyle={styles.pillRow}
+        >
+          {getAllFacultySlugs().map((slug) => {
+            const isActive = slug === selectedFaculty;
+            return (
+              <Pressable
+                key={slug}
+                onPress={() => setSelectedFaculty(slug)}
+                style={[styles.pill, isActive && styles.pillActive]}
+              >
+                <Text
+                  style={[styles.pillText, isActive && styles.pillTextActive]}
+                >
+                  {FACULTY_LABELS[slug]}
+                </Text>
+              </Pressable>
+            );
+          })}
+        </ScrollView>
       </View>
 
       <View style={styles.sectionCard}>
@@ -115,14 +154,14 @@ export default function Majors({ onMajorSelect }: MajorsProps) {
         ) : null}
         {!isLoading && !error && majors.length === 0 ? (
           <Text style={styles.infoText}>
-            No majors found in backend majors catalog.
+            No majors found for {FACULTY_LABELS[selectedFaculty]}.
           </Text>
         ) : null}
         {majors.map((major) => (
           <Pressable
             key={major.major_code || major.major_name}
             style={styles.majorRow}
-            onPress={() => onMajorSelect?.(major)}
+            onPress={() => onMajorSelect?.(major, selectedFaculty)}
           >
             <View style={styles.majorHeaderRow}>
               <Text style={styles.majorName}>{major.major_name}</Text>
@@ -168,6 +207,30 @@ const styles = StyleSheet.create({
     fontWeight: "700",
     color: theme.colors.textPrimary,
     marginBottom: theme.spacing.sm,
+  },
+  pillRow: {
+    flexDirection: "row",
+    gap: theme.spacing.sm,
+  },
+  pill: {
+    backgroundColor: theme.colors.grayLight,
+    borderWidth: 1,
+    borderColor: theme.colors.gray,
+    borderRadius: theme.borderRadius.round,
+    paddingHorizontal: 14,
+    paddingVertical: 8,
+  },
+  pillActive: {
+    backgroundColor: theme.colors.blue,
+    borderColor: theme.colors.blue,
+  },
+  pillText: {
+    color: theme.colors.textPrimary,
+    fontSize: theme.fontSize.sm,
+    fontWeight: "600",
+  },
+  pillTextActive: {
+    color: theme.colors.white,
   },
   majorRow: {
     backgroundColor: theme.colors.white,

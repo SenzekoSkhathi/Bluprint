@@ -17,6 +17,19 @@ const SUPPORTED_FACULTIES: FacultySlug[] = [
 
 const PRIMARY_FACULTY: FacultySlug = "science";
 
+export const FACULTY_LABELS: Record<FacultySlug, string> = {
+  science: "Science",
+  commerce: "Commerce",
+  engineering: "Engineering",
+  "health-sciences": "Health Sciences",
+  humanities: "Humanities",
+  law: "Law",
+};
+
+export function getAllFacultySlugs(): FacultySlug[] {
+  return SUPPORTED_FACULTIES;
+}
+
 export function getPrimaryFacultySlug(): FacultySlug {
   return PRIMARY_FACULTY;
 }

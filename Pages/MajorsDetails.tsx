@@ -1,5 +1,8 @@
 import MainLayout from "@/components/main-layout";
-import { getPrimaryFacultySlug } from "@/constants/faculty";
+import {
+    type FacultySlug,
+    getPrimaryFacultySlug,
+} from "@/constants/faculty";
 import { theme } from "@/constants/theme";
 import {
     getHandbookMajors,
@@ -21,6 +24,7 @@ import {
 interface MajorsDetailsProps {
   majorId?: string;
   majorName?: string;
+  facultySlug?: FacultySlug;
   onBack?: () => void;
 }
 
@@ -74,9 +78,10 @@ function renderYear(year: ScienceMajorYear) {
 export default function MajorsDetails({
   majorId,
   majorName,
+  facultySlug,
   onBack,
 }: MajorsDetailsProps) {
-  const activeFacultySlug = getPrimaryFacultySlug();
+  const activeFacultySlug = facultySlug ?? getPrimaryFacultySlug();
   const [major, setMajor] = useState<ScienceMajorEntry | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
