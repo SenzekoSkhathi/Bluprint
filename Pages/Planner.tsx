@@ -1097,6 +1097,8 @@ export default function Planner({
       yearLabel: string;
       options: string[];
       selected: string;
+      selectedDescription: string;
+      selectedCourses: Array<{ code: string; title: string }>;
       source: "auto" | "manual";
     }>
   >(() => {
@@ -1114,6 +1116,8 @@ export default function Planner({
       yearLabel: string;
       options: string[];
       selected: string;
+      selectedDescription: string;
+      selectedCourses: Array<{ code: string; title: string }>;
       source: "auto" | "manual";
     }> = [];
 
@@ -1157,11 +1161,20 @@ export default function Planner({
               ? manualChoice
               : autoChoice;
 
+          const selectedCombo = year.combinations.find(
+            (c) => c.combination_id === selected,
+          );
+
           rows.push({
             majorName: registeredMajor,
             yearLabel,
             options,
             selected,
+            selectedDescription: selectedCombo?.description ?? selected,
+            selectedCourses: [
+              ...(selectedCombo?.required_core ?? []),
+              ...(selectedCombo?.courses ?? []),
+            ].map((c) => ({ code: c.code, title: c.title ?? "" })),
             source:
               manualChoice && options.includes(manualChoice)
                 ? "manual"
@@ -2330,10 +2343,11 @@ export default function Planner({
 
       {majorPathwayChoices.length > 0 ? (
         <View style={styles.pathwayLockSection}>
-          <Text style={styles.pathwayLockTitle}>Pathway locks</Text>
+          <Text style={styles.pathwayLockTitle}>Your major pathways</Text>
           <Text style={styles.pathwayLockSubtitle}>
-            Cycle a row to override the auto pathway for strict graduation
-            checks.
+            These are the courses being checked for your major requirements each
+            year. Tap Change if the detected route doesn't match what you're
+            actually doing.
           </Text>
 
           {majorPathwayChoices.map((row) => (
@@ -2341,37 +2355,57 @@ export default function Planner({
               key={`${row.majorName}-${row.yearLabel}`}
               style={styles.pathwayLockRow}
             >
+              {/* Header: major + year on left, controls on right */}
               <View style={styles.pathwayLockRowHead}>
-                <Text style={styles.pathwayLockMajor}>{row.majorName}</Text>
-                <Text style={styles.pathwayLockYear}>{row.yearLabel}</Text>
-              </View>
-              <Text style={styles.pathwayLockValue}>{row.selected}</Text>
-              <View style={styles.pathwayLockActions}>
-                <Pressable
-                  onPress={() =>
-                    cycleMajorPathwayLock(
-                      row.majorName,
-                      row.yearLabel,
-                      row.options,
-                    )
-                  }
-                  style={styles.pathwayLockBtn}
-                >
-                  <Text style={styles.pathwayLockBtnText}>Switch</Text>
-                </Pressable>
-                {row.source === "manual" ? (
+                <View style={styles.pathwayLockRowHeadLeft}>
+                  <Text style={styles.pathwayLockMajor}>{row.majorName}</Text>
+                  <Text style={styles.pathwayLockYear}>{row.yearLabel}</Text>
+                </View>
+                <View style={styles.pathwayLockActions}>
+                  {row.source === "manual" ? (
+                    <Pressable
+                      onPress={() =>
+                        clearMajorPathwayLock(row.majorName, row.yearLabel)
+                      }
+                      style={styles.pathwayResetBtn}
+                    >
+                      <Text style={styles.pathwayResetBtnText}>Reset</Text>
+                    </Pressable>
+                  ) : (
+                    <Text style={styles.pathwayAutoTag}>Auto</Text>
+                  )}
                   <Pressable
                     onPress={() =>
-                      clearMajorPathwayLock(row.majorName, row.yearLabel)
+                      cycleMajorPathwayLock(
+                        row.majorName,
+                        row.yearLabel,
+                        row.options,
+                      )
                     }
-                    style={styles.pathwayResetBtn}
+                    style={styles.pathwayLockBtn}
                   >
-                    <Text style={styles.pathwayResetBtnText}>Auto</Text>
+                    <Text style={styles.pathwayLockBtnText}>Change</Text>
                   </Pressable>
-                ) : (
-                  <Text style={styles.pathwayAutoTag}>Auto</Text>
-                )}
+                </View>
               </View>
+
+              {/* Route description */}
+              <Text style={styles.pathwayRouteLabel}>
+                {row.selectedDescription}
+              </Text>
+
+              {/* Course code pills */}
+              {row.selectedCourses.length > 0 ? (
+                <View style={styles.pathwayCoursePills}>
+                  {row.selectedCourses.map((course) => (
+                    <View key={course.code} style={styles.pathwayCoursePill}>
+                      <Text style={styles.pathwayCoursePillText}>
+                        {course.code}
+                      </Text>
+                    </View>
+                  ))}
+                </View>
+              ) : null}
             </View>
           ))}
         </View>
@@ -3171,33 +3205,55 @@ const styles = StyleSheet.create({
     borderRadius: theme.borderRadius.md,
     backgroundColor: theme.colors.grayLight,
     padding: 10,
-    gap: 6,
+    gap: 8,
   },
   pathwayLockRowHead: {
     flexDirection: "row",
-    alignItems: "center",
+    alignItems: "flex-start",
     justifyContent: "space-between",
     gap: 8,
+  },
+  pathwayLockRowHeadLeft: {
+    flex: 1,
+    gap: 2,
   },
   pathwayLockMajor: {
     fontSize: 12,
     fontWeight: "700",
     color: theme.colors.textPrimary,
-    flex: 1,
   },
   pathwayLockYear: {
     fontSize: 11,
     color: theme.colors.textSecondary,
   },
-  pathwayLockValue: {
+  pathwayRouteLabel: {
+    fontSize: 12,
+    color: theme.colors.textSecondary,
+    fontStyle: "italic",
+  },
+  pathwayCoursePills: {
+    flexDirection: "row",
+    flexWrap: "wrap",
+    gap: 6,
+  },
+  pathwayCoursePill: {
+    borderRadius: 20,
+    borderWidth: 1,
+    borderColor: theme.colors.blue,
+    backgroundColor: theme.colors.babyBlue,
+    paddingHorizontal: 10,
+    paddingVertical: 4,
+  },
+  pathwayCoursePillText: {
     fontSize: 11,
-    color: theme.colors.deepBlue,
     fontWeight: "600",
+    color: theme.colors.deepBlue,
   },
   pathwayLockActions: {
     flexDirection: "row",
     alignItems: "center",
-    gap: 8,
+    gap: 6,
+    flexShrink: 0,
   },
   pathwayLockBtn: {
     borderWidth: 1,
@@ -3205,7 +3261,7 @@ const styles = StyleSheet.create({
     backgroundColor: theme.colors.babyBlue,
     borderRadius: theme.borderRadius.md,
     paddingHorizontal: 10,
-    paddingVertical: 6,
+    paddingVertical: 5,
   },
   pathwayLockBtnText: {
     fontSize: 11,
@@ -3217,7 +3273,7 @@ const styles = StyleSheet.create({
     borderColor: theme.colors.gray,
     borderRadius: theme.borderRadius.md,
     paddingHorizontal: 10,
-    paddingVertical: 6,
+    paddingVertical: 5,
     backgroundColor: theme.colors.white,
   },
   pathwayResetBtnText: {
