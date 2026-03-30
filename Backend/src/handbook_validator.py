@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import json
 import re
 from typing import Any
 
@@ -78,36 +79,79 @@ def _parse_prereq_tree(text: str) -> dict[str, Any]:
     return {"type": "or", "operands": operands}
 
 
-def _eval_prereq_tree(tree: dict[str, Any], known_codes: set[str]) -> bool:
+def _pattern_base(code: str) -> str:
+    """Extract the 7-char base (dept + 4 digit/X chars) from a normalized code.
+
+    E.g.  STA100XF/S → STA100X,  STA20XXF → STA20XX,  MAM1031F → MAM1031
+    Returns empty string if the code doesn't match the expected shape.
+    """
+    m = re.match(r"^([A-Z]{3,4}[\dX]{4})", _normalize_code(code))
+    return m.group(1) if m else ""
+
+
+def _load_pattern_map(store: HandbookStore, faculty_slug: str) -> dict[str, set[str]]:
+    """Load pattern_codes.json for a faculty and return a resolved lookup.
+
+    Keys are normalized base codes containing X (e.g. STA100X).
+    Values are the full set of variant codes that satisfy that pattern.
+    """
+    path = store.faculties_dir / faculty_slug / "pattern_codes.json"
+    if not path.exists():
+        return {}
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except Exception:
+        return {}
+
+    result: dict[str, set[str]] = {}
+    for raw_base, entry in data.get("patterns", {}).items():
+        base = _normalize_code(raw_base)
+        resolved: set[str] = set()
+        for code_str in entry.get("resolves_to", []):
+            resolved.update(_course_code_variants(code_str))
+        if resolved:
+            result[base] = resolved
+    return result
+
+
+def _eval_prereq_tree(
+    tree: dict[str, Any],
+    known_codes: set[str],
+    pattern_map: dict[str, set[str]] | None = None,
+) -> bool:
     """Evaluate a prerequisite tree against a set of known-satisfied course codes."""
     tree_type = tree.get("type")
     if tree_type == "code":
-        return _is_requirement_satisfied(tree["code"], known_codes)
+        return _is_requirement_satisfied(tree["code"], known_codes, pattern_map)
     if tree_type == "and":
-        return all(_eval_prereq_tree(op, known_codes) for op in tree.get("operands", []))
+        return all(_eval_prereq_tree(op, known_codes, pattern_map) for op in tree.get("operands", []))
     if tree_type == "or":
-        return any(_eval_prereq_tree(op, known_codes) for op in tree.get("operands", []))
+        return any(_eval_prereq_tree(op, known_codes, pattern_map) for op in tree.get("operands", []))
     # "any" or unknown → no requirement
     return True
 
 
-def _describe_prereq_tree(tree: dict[str, Any], known_codes: set[str]) -> str:
+def _describe_prereq_tree(
+    tree: dict[str, Any],
+    known_codes: set[str],
+    pattern_map: dict[str, set[str]] | None = None,
+) -> str:
     """Return a human-readable description of what is missing in the tree."""
     tree_type = tree.get("type")
     if tree_type == "code":
         code = tree["code"]
-        if not _is_requirement_satisfied(code, known_codes):
+        if not _is_requirement_satisfied(code, known_codes, pattern_map):
             return code
         return ""
     if tree_type == "and":
         missing = [
-            _describe_prereq_tree(op, known_codes)
+            _describe_prereq_tree(op, known_codes, pattern_map)
             for op in tree.get("operands", [])
         ]
         missing = [m for m in missing if m]
         return ", ".join(missing) if missing else ""
     if tree_type == "or":
-        all_parts = [op.get("code") or _describe_prereq_tree(op, known_codes) for op in tree.get("operands", [])]
+        all_parts = [op.get("code") or _describe_prereq_tree(op, known_codes, pattern_map) for op in tree.get("operands", [])]
         all_parts = [p for p in all_parts if p]
         return f"one of [{' / '.join(all_parts)}]" if all_parts else ""
     return ""
@@ -182,7 +226,17 @@ def _expand_known_codes_with_equivalences(
     return expanded
 
 
-def _is_requirement_satisfied(required_code: str, known_codes: set[str]) -> bool:
+def _is_requirement_satisfied(
+    required_code: str,
+    known_codes: set[str],
+    pattern_map: dict[str, set[str]] | None = None,
+) -> bool:
+    norm = _normalize_code(required_code)
+    # Pattern code: X in the 4-digit numeric section (e.g. STA100XF/S, STA20XX)
+    if pattern_map and "X" in norm:
+        base = _pattern_base(norm)
+        if base and base in pattern_map:
+            return not known_codes.isdisjoint(pattern_map[base])
     required_variants = _course_code_variants(required_code)
     if not required_variants:
         return False
@@ -207,6 +261,7 @@ class HandbookValidator:
 
         selected_majors = [str(item).strip() for item in (selected_majors or []) if str(item).strip()]
         equivalence_map = self.handbook_store.load_equivalence_map()
+        pattern_map = _load_pattern_map(self.handbook_store, target_faculty)
 
         normalized_rows: list[dict[str, Any]] = []
         for row in planned_courses:
@@ -353,8 +408,8 @@ class HandbookValidator:
             known_through_term = _expand_known_codes_with_equivalences(known_through_term, equivalence_map)
 
             # Evaluate the prerequisite tree (correctly handles OR/AND).
-            if prereq_tree is not None and not _eval_prereq_tree(prereq_tree, known_before):
-                missing_desc = _describe_prereq_tree(prereq_tree, known_before) or "prerequisite"
+            if prereq_tree is not None and not _eval_prereq_tree(prereq_tree, known_before, pattern_map):
+                missing_desc = _describe_prereq_tree(prereq_tree, known_before, pattern_map) or "prerequisite"
                 # Remove self-reference from missing description.
                 missing_desc = missing_desc.replace(code, "").strip(", ") or "prerequisite"
                 issues.append(
@@ -372,7 +427,7 @@ class HandbookValidator:
             coreq_missing = sorted(
                 required
                 for required in coreq_codes
-                if required != code and not _is_requirement_satisfied(required, known_through_term)
+                if required != code and not _is_requirement_satisfied(required, known_through_term, pattern_map)
             )
             if coreq_missing:
                 issues.append(
@@ -483,7 +538,7 @@ class HandbookValidator:
 
                         satisfied = sum(
                             1 for c in combo_courses
-                            if _is_requirement_satisfied(c, all_plan_codes)
+                            if _is_requirement_satisfied(c, all_plan_codes, pattern_map)
                         )
                         ratio = satisfied / len(combo_courses)
 
@@ -508,7 +563,7 @@ class HandbookValidator:
                     ]
                     missing_from_best = sorted(
                         c for c in best_courses
-                        if c and not _is_requirement_satisfied(c, all_plan_codes)
+                        if c and not _is_requirement_satisfied(c, all_plan_codes, pattern_map)
                     )
                     if missing_from_best:
                         combo_id = best_combo.get("combination_id", "")
@@ -539,7 +594,7 @@ class HandbookValidator:
                         if not candidates:
                             continue
                         satisfied_count = sum(
-                            1 for c in candidates if _is_requirement_satisfied(c, all_plan_codes)
+                            1 for c in candidates if _is_requirement_satisfied(c, all_plan_codes, pattern_map)
                         )
                         if satisfied_count < n:
                             issues.append(
@@ -583,7 +638,7 @@ class HandbookValidator:
             if required_core:
                 missing_required = sorted(
                     c for c in required_core
-                    if c and not _is_requirement_satisfied(c, all_plan_codes)
+                    if c and not _is_requirement_satisfied(c, all_plan_codes, pattern_map)
                 )
                 if missing_required:
                     issues.append(
