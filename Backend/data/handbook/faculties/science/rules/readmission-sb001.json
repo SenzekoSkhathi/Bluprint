@@ -1,0 +1,8 @@
+{
+  "$schema": "handbook-readmission-v1",
+  "pathway_code": "SB001",
+  "applies_to": "Students first registered from 2023",
+  "rule_reference": "FB5.1",
+  "preceding_year_min_credits": 72,
+  "data": {}
+}

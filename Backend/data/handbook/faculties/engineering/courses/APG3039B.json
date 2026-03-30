@@ -1,0 +1,32 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "APG3039B",
+  "title": "Spatial Data Infrastructures",
+  "department": "architecture-planning-geomatics",
+  "credits": 12,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "Q2",
+  "semester_code": "B",
+  "convener": "Dr S Mphuthi",
+  "prerequisites": {
+    "text": "MAM1021F/S, STA1000S, CSC1015F or CSC1017F, APG2014S, APG2015F",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "MAM1021F",
+        "STA1000S",
+        "CSC1015F",
+        "CSC1017F",
+        "APG2014S",
+        "APG2015F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to introduce students to spatial information systems analysis and design, spatial data infrastructures and metadata, distributed Geographical Information Systems, GIS project management, digital cartography, copyright and privacy issues, and SDI legislation.",
+  "lecture_times": "3rd period Monday to Friday. Practicals: one per week, Tuesday 14h00-17h00",
+  "dp_requirements": "Attendance of all tutorial and practical sessions; submission of all assignments.",
+  "assessment": "100% of Project portfolio examination.",
+  "is_engineering_course": true
+}

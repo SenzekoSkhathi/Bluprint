@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AHS4067S",
+  "title": "Seminars in Communication Sciences",
+  "department": "health-and-rehabilitation-sciences",
+  "credits": 4,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "TBC",
+  "prerequisites": {
+    "text": "None",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "The aims of this course are: To enable students to review and critique discipline specific knowledge; develop and present integrated and coherent oral and written arguments; and facilitate academic discussion and debate. Content in cludes topical and professional issues in audiology and speech- language pathology (SLP). Students acquire the skill of knowledge transla tion and learn the skill of self-directed learning for continui ng professional development. They acquire an appreciation of the professions in context. Teaching and learning activities may includ e guided self-study, small group discussions, tutorials and class presentations. Themes underpinning the course include the provision of contextually relevant services in a multilingual, multicultural society, evidence-based practice and developing agents for change. DEPARTMENTS IN THE FACULTY 119",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Attendance of all academic activities is required. Students are required to submit all coursework by the due date. A minimum course work mark of 45% is required for entrance into the examination.",
+  "assessment": "The course grade is made up of a cour sework mark (weighted 60%) and a final examination mark (weighted 40%). If a supplementary examination is awarded, it will count 40 % of the final mark, as the course work mark will still be included in the final mark.",
+  "is_health_sciences_course": true
+}

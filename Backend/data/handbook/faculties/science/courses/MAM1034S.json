@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MAM1034S",
+  "title": "Mathematics 1034",
+  "department": "mathematics-applied-mathematics",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": "First Year",
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr H Wiggins",
+  "prerequisites": {
+    "text": "MAM1033F.",
+    "parsed": {
+      "type": "and",
+      "codes": [
+        "MAM1033F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course introduces the fundamental ideas in calculus and related topics. Main topics include integral calculus, differential equations, partial derivatives, vector geometry, matrix algebra, complex numbers and Taylor polynomials. The course includes an explicit focus on mathematical thinking practices including inductive and deductive reasoning, justifying, defining, proving, using mathematical understanding to flexibly solve multi-level problems, reading mathematics for learning, and communicating mathematical knowledge in writing. This course (or equivalent), along with MAM1033F (or equivalent), is necessary for entry into second-year mathematics.",
+  "lecture_times": "Five lectures per week, Monday - Friday, 1st or 3rd period.",
+  "dp_requirements": "Minimum of 30% for class tests; minimum 30% for weekly online tests; 80% attendance at tutorial sessions; 100% attendance at Mathematical Thinking workshops.",
+  "assessment": "Semester mark counts 33.3%; end-of-semester exam counts 66.6%.",
+  "is_science_course": true
+}

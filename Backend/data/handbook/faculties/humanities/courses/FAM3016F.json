@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "FAM3016F",
+  "title": "Screen Production III: Production",
+  "department": "film-and-media-studies",
+  "credits": 48,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr L Maasdorp",
+  "prerequisites": {
+    "text": "FAM2014S.",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "FAM2014S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "Objective: This course is designed to provide a general introduction to the study of the financial function in business, particularly in a South African environment. The course has two primary objectives: Firstly to expose students with little or no commercial or fin ancial background to the fundamentals of the financial aspects of business and the environment in which businesses operate. The second objective is to afford the students with the opportunity of gaining as much practical experience as possible in key areas of Finance, Management Accounting and Accounting. Course outline: The third-year screen production course follows on from Screen Production I and is limited to students who have successfully completed that course. Students will consolidate skills learnt in the second - year course and further develop the fundamental techniques of production for film, television and the web. Classes are workshop-based and concentrate on practical and conceptual filmmaking skills.",
+  "lecture_times": "Four lectures per week (two workshops) and a compulsory screening during 4 th and 5th periods, Monday – Wednesday. Self-paced lab time and group work.",
+  "dp_requirements": "Full attendance and submission of all classwork.",
+  "assessment": "See departmental and faculty assessment rules in the 2026 Humanities Faculty Handbook.",
+  "is_humanities_course": true
+}

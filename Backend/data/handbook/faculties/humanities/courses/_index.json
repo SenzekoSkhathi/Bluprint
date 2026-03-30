@@ -1,0 +1,1940 @@
+{
+  "$schema": "handbook-course-index-v1",
+  "faculty": "humanities",
+  "year": 2026,
+  "total_courses": 212,
+  "courses": [
+    {
+      "code": "ASL1300F",
+      "title": "Introduction to Language Studies",
+      "nqf_credits": 15,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "ASL"
+    },
+    {
+      "code": "ASL1301S",
+      "title": "Introduction to Sociolinguistics",
+      "nqf_credits": 15,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "ASL"
+    },
+    {
+      "code": "ASL1305S",
+      "title": "Introduction to Language Studies (Extended)",
+      "nqf_credits": 15,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "ASL"
+    },
+    {
+      "code": "ASL2202F",
+      "title": "Applied Sociolinguistics",
+      "nqf_credits": 24,
+      "nqf_level": 6,
+      "semester": "S1",
+      "year_level": 2,
+      "department_prefix": "ASL"
+    },
+    {
+      "code": "ASL2203F",
+      "title": "Applied Sociolinguistics (Extended)",
+      "nqf_credits": 24,
+      "nqf_level": 6,
+      "semester": "S1",
+      "year_level": 2,
+      "department_prefix": "ASL"
+    },
+    {
+      "code": "BUS1007S",
+      "title": "Introduction to Business Management",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "BUS",
+      "is_humanities_course": false,
+      "offered_by_faculty": "commerce"
+    },
+    {
+      "code": "BUS2024F",
+      "title": "Business Management II",
+      "nqf_credits": 24,
+      "nqf_level": 6,
+      "semester": "S1",
+      "year_level": 2,
+      "department_prefix": "BUS",
+      "is_humanities_course": false,
+      "offered_by_faculty": "commerce"
+    },
+    {
+      "code": "BUS3003F",
+      "title": "Business Administration III",
+      "nqf_credits": 24,
+      "nqf_level": 7,
+      "semester": "S1",
+      "year_level": 3,
+      "department_prefix": "BUS",
+      "is_humanities_course": false,
+      "offered_by_faculty": "commerce"
+    },
+    {
+      "code": "BUS3004S",
+      "title": "Business Administration III",
+      "nqf_credits": 24,
+      "nqf_level": 7,
+      "semester": "S2",
+      "year_level": 3,
+      "department_prefix": "BUS",
+      "is_humanities_course": false,
+      "offered_by_faculty": "commerce"
+    },
+    {
+      "code": "DOH1005F",
+      "title": "Thinking About: Ideas and Knowledge",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "DOH"
+    },
+    {
+      "code": "DOH1017S",
+      "title": "Introduction to Business Concepts for Humanities Students",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "DOH"
+    },
+    {
+      "code": "DOH2024F",
+      "title": "Business Management for Humanities Students",
+      "nqf_credits": 24,
+      "nqf_level": 6,
+      "semester": "S1",
+      "year_level": 2,
+      "department_prefix": "DOH"
+    },
+    {
+      "code": "DOH3003F",
+      "title": "Business Administration for Humanities Students",
+      "nqf_credits": 24,
+      "nqf_level": 7,
+      "semester": "S1",
+      "year_level": 3,
+      "department_prefix": "DOH"
+    },
+    {
+      "code": "DOH3004S",
+      "title": "Business Administration for Humanities Students",
+      "nqf_credits": 24,
+      "nqf_level": 7,
+      "semester": "S2",
+      "year_level": 3,
+      "department_prefix": "DOH"
+    },
+    {
+      "code": "ECO1010F",
+      "title": "Microeconomics I",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "ECO",
+      "is_humanities_course": false,
+      "offered_by_faculty": "commerce"
+    },
+    {
+      "code": "ECO1011S",
+      "title": "Macroeconomics I",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "ECO",
+      "is_humanities_course": false,
+      "offered_by_faculty": "commerce"
+    },
+    {
+      "code": "ECO2003F",
+      "title": "Microeconomics II",
+      "nqf_credits": 18,
+      "nqf_level": 6,
+      "semester": "S1",
+      "year_level": 2,
+      "department_prefix": "ECO",
+      "is_humanities_course": false,
+      "offered_by_faculty": "commerce"
+    },
+    {
+      "code": "ECO2004S",
+      "title": "Macroeconomics II",
+      "nqf_credits": 18,
+      "nqf_level": 6,
+      "semester": "S2",
+      "year_level": 2,
+      "department_prefix": "ECO",
+      "is_humanities_course": false,
+      "offered_by_faculty": "commerce"
+    },
+    {
+      "code": "ECO2007S",
+      "title": "Co-operation and Competition",
+      "nqf_credits": 18,
+      "nqf_level": 6,
+      "semester": "S2",
+      "year_level": 2,
+      "department_prefix": "ECO",
+      "is_humanities_course": false,
+      "offered_by_faculty": "commerce"
+    },
+    {
+      "code": "ECO3025S",
+      "title": "Public Economics",
+      "nqf_credits": 18,
+      "nqf_level": 7,
+      "semester": "S2",
+      "year_level": 3,
+      "department_prefix": "ECO",
+      "is_humanities_course": false,
+      "offered_by_faculty": "commerce"
+    },
+    {
+      "code": "ELL1010S",
+      "title": "Introduction to Literature (Extended)",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "ELL"
+    },
+    {
+      "code": "ELL1016S",
+      "title": "Introduction to Literature",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "ELL"
+    },
+    {
+      "code": "ELL2000F",
+      "title": "English Studies IIA",
+      "nqf_credits": 24,
+      "nqf_level": 6,
+      "semester": "S1",
+      "year_level": 2,
+      "department_prefix": "ELL"
+    },
+    {
+      "code": "ELL2016F",
+      "title": "English Studies IIA (Extended)",
+      "nqf_credits": 24,
+      "nqf_level": 6,
+      "semester": "S1",
+      "year_level": 2,
+      "department_prefix": "ELL"
+    },
+    {
+      "code": "FAM1000S",
+      "title": "Introduction to Film Studies",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "FAM"
+    },
+    {
+      "code": "FAM1010S",
+      "title": "Introduction to Film Studies (Extended)",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "FAM"
+    },
+    {
+      "code": "FAM2004S",
+      "title": "Audiovisual Studies",
+      "nqf_credits": 24,
+      "nqf_level": 6,
+      "semester": "S2",
+      "year_level": 2,
+      "department_prefix": "FAM"
+    },
+    {
+      "code": "FAM2013F",
+      "title": "Screen Production II: Production",
+      "nqf_credits": 30,
+      "nqf_level": 6,
+      "semester": "S1",
+      "year_level": 2,
+      "department_prefix": "FAM"
+    },
+    {
+      "code": "FAM2014S",
+      "title": "Screen Production II: Post-Production",
+      "nqf_credits": 30,
+      "nqf_level": 6,
+      "semester": "S2",
+      "year_level": 2,
+      "department_prefix": "FAM"
+    },
+    {
+      "code": "FAM3003S",
+      "title": "Screen Production III: Post-Production",
+      "nqf_credits": 48,
+      "nqf_level": 7,
+      "semester": "S2",
+      "year_level": 3,
+      "department_prefix": "FAM"
+    },
+    {
+      "code": "FAM3005F",
+      "title": "Screen Production III: Pre-Production",
+      "nqf_credits": 36,
+      "nqf_level": 7,
+      "semester": "S1",
+      "year_level": 3,
+      "department_prefix": "FAM"
+    },
+    {
+      "code": "FAM3016F",
+      "title": "Screen Production III: Production",
+      "nqf_credits": 48,
+      "nqf_level": 7,
+      "semester": "S1",
+      "year_level": 3,
+      "department_prefix": "FAM"
+    },
+    {
+      "code": "FAM3017S",
+      "title": "Screen Production III: Advanced Post-Production",
+      "nqf_credits": 48,
+      "nqf_level": 7,
+      "semester": "S2",
+      "year_level": 3,
+      "department_prefix": "FAM"
+    },
+    {
+      "code": "FIN1001W",
+      "title": "Art Practice 1",
+      "nqf_credits": 72,
+      "nqf_level": 5,
+      "semester": "FY",
+      "year_level": 1,
+      "department_prefix": "FIN"
+    },
+    {
+      "code": "FIN1005W",
+      "title": "Visual Culture Studies 1",
+      "nqf_credits": 36,
+      "nqf_level": 5,
+      "semester": "FY",
+      "year_level": 1,
+      "department_prefix": "FIN"
+    },
+    {
+      "code": "FIN1006F",
+      "title": "Theory of Art I",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "FIN"
+    },
+    {
+      "code": "FIN1008W",
+      "title": "Art Practice 1 (Extended)",
+      "nqf_credits": 72,
+      "nqf_level": 5,
+      "semester": "FY",
+      "year_level": 1,
+      "department_prefix": "FIN"
+    },
+    {
+      "code": "FIN1009S",
+      "title": "Theory of Art I",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "FIN"
+    },
+    {
+      "code": "FIN2011W",
+      "title": "Drawing 2",
+      "nqf_credits": 36,
+      "nqf_level": 6,
+      "semester": "FY",
+      "year_level": 2,
+      "department_prefix": "FIN"
+    },
+    {
+      "code": "FIN2012W",
+      "title": "Painting 2",
+      "nqf_credits": 36,
+      "nqf_level": 6,
+      "semester": "FY",
+      "year_level": 2,
+      "department_prefix": "FIN"
+    },
+    {
+      "code": "FIN2013W",
+      "title": "Photography 2",
+      "nqf_credits": 36,
+      "nqf_level": 6,
+      "semester": "FY",
+      "year_level": 2,
+      "department_prefix": "FIN"
+    },
+    {
+      "code": "FIN2014W",
+      "title": "Printmaking 2",
+      "nqf_credits": 36,
+      "nqf_level": 6,
+      "semester": "FY",
+      "year_level": 2,
+      "department_prefix": "FIN"
+    },
+    {
+      "code": "FIN2015W",
+      "title": "Sculpture 2",
+      "nqf_credits": 36,
+      "nqf_level": 6,
+      "semester": "FY",
+      "year_level": 2,
+      "department_prefix": "FIN"
+    },
+    {
+      "code": "FIN2016W",
+      "title": "Textiles 2",
+      "nqf_credits": 36,
+      "nqf_level": 6,
+      "semester": "FY",
+      "year_level": 2,
+      "department_prefix": "FIN"
+    },
+    {
+      "code": "FIN2025W",
+      "title": "New Media 2",
+      "nqf_credits": 36,
+      "nqf_level": 6,
+      "semester": "FY",
+      "year_level": 2,
+      "department_prefix": "FIN"
+    },
+    {
+      "code": "FIN2026W",
+      "title": "Visual Culture Studies 2",
+      "nqf_credits": 36,
+      "nqf_level": 6,
+      "semester": "FY",
+      "year_level": 2,
+      "department_prefix": "FIN"
+    },
+    {
+      "code": "FIN2027F",
+      "title": "Theory of Art IIA",
+      "nqf_credits": 18,
+      "nqf_level": 6,
+      "semester": "S1",
+      "year_level": 2,
+      "department_prefix": "FIN"
+    },
+    {
+      "code": "FIN2028S",
+      "title": "Theory of Art IIB",
+      "nqf_credits": 18,
+      "nqf_level": 6,
+      "semester": "S2",
+      "year_level": 2,
+      "department_prefix": "FIN"
+    },
+    {
+      "code": "FIN2029F",
+      "title": "Theory of Art IIA",
+      "nqf_credits": 18,
+      "nqf_level": 6,
+      "semester": "S1",
+      "year_level": 2,
+      "department_prefix": "FIN"
+    },
+    {
+      "code": "FIN3011W",
+      "title": "Drawing 3",
+      "nqf_credits": 48,
+      "nqf_level": 7,
+      "semester": "FY",
+      "year_level": 3,
+      "department_prefix": "FIN"
+    },
+    {
+      "code": "FIN3012W",
+      "title": "Painting 3",
+      "nqf_credits": 48,
+      "nqf_level": 7,
+      "semester": "FY",
+      "year_level": 3,
+      "department_prefix": "FIN"
+    },
+    {
+      "code": "FIN3013W",
+      "title": "Photography 3",
+      "nqf_credits": 48,
+      "nqf_level": 7,
+      "semester": "FY",
+      "year_level": 3,
+      "department_prefix": "FIN"
+    },
+    {
+      "code": "FIN3014W",
+      "title": "Printmaking 3",
+      "nqf_credits": 48,
+      "nqf_level": 7,
+      "semester": "FY",
+      "year_level": 3,
+      "department_prefix": "FIN"
+    },
+    {
+      "code": "FIN3015W",
+      "title": "Sculpture 3",
+      "nqf_credits": 48,
+      "nqf_level": 7,
+      "semester": "FY",
+      "year_level": 3,
+      "department_prefix": "FIN"
+    },
+    {
+      "code": "FIN3016W",
+      "title": "Textiles 3",
+      "nqf_credits": 48,
+      "nqf_level": 7,
+      "semester": "FY",
+      "year_level": 3,
+      "department_prefix": "FIN"
+    },
+    {
+      "code": "FIN3025W",
+      "title": "New Media 3",
+      "nqf_credits": 48,
+      "nqf_level": 7,
+      "semester": "FY",
+      "year_level": 3,
+      "department_prefix": "FIN"
+    },
+    {
+      "code": "FIN3026F",
+      "title": "Theory of Art IIIA",
+      "nqf_credits": 18,
+      "nqf_level": 7,
+      "semester": "S1",
+      "year_level": 3,
+      "department_prefix": "FIN"
+    },
+    {
+      "code": "FIN3027S",
+      "title": "Theory of Art IIIB",
+      "nqf_credits": 18,
+      "nqf_level": 7,
+      "semester": "S2",
+      "year_level": 3,
+      "department_prefix": "FIN"
+    },
+    {
+      "code": "FIN3028F",
+      "title": "Theory of Art IIIA",
+      "nqf_credits": 18,
+      "nqf_level": 7,
+      "semester": "S1",
+      "year_level": 3,
+      "department_prefix": "FIN"
+    },
+    {
+      "code": "FIN3029S",
+      "title": "Theory of Art IIIB",
+      "nqf_credits": 18,
+      "nqf_level": 7,
+      "semester": "S2",
+      "year_level": 3,
+      "department_prefix": "FIN"
+    },
+    {
+      "code": "FIN3030W",
+      "title": "Visual Culture Studies 3",
+      "nqf_credits": 36,
+      "nqf_level": 7,
+      "semester": "FY",
+      "year_level": 3,
+      "department_prefix": "FIN"
+    },
+    {
+      "code": "FIN4012W",
+      "title": "Theory and Practice of Art",
+      "nqf_credits": 48,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 4,
+      "department_prefix": "FIN"
+    },
+    {
+      "code": "FIN4015W",
+      "title": "Fine Art 4",
+      "nqf_credits": 108,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 4,
+      "department_prefix": "FIN"
+    },
+    {
+      "code": "HST1013F",
+      "title": "Historical Studies I",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "HST"
+    },
+    {
+      "code": "HST1015F",
+      "title": "Historical Studies I (Extended)",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "HST"
+    },
+    {
+      "code": "MAM1010F",
+      "title": "Mathematics I",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "MAM",
+      "is_humanities_course": false,
+      "offered_by_faculty": "science"
+    },
+    {
+      "code": "MUZ1110H",
+      "title": "Foundation Music Skills I",
+      "nqf_credits": 24,
+      "nqf_level": 5,
+      "semester": "FY",
+      "year_level": 1,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ1111H",
+      "title": "Foundation Music Skills II",
+      "nqf_credits": 24,
+      "nqf_level": 5,
+      "semester": "FY",
+      "year_level": 1,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ1121H",
+      "title": "African Ensemble B1",
+      "nqf_credits": 12,
+      "nqf_level": 5,
+      "semester": "FY",
+      "year_level": 1,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ1131H",
+      "title": "Jazz Ensemble B1",
+      "nqf_credits": 12,
+      "nqf_level": 5,
+      "semester": "FY",
+      "year_level": 1,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ1165H",
+      "title": "Violin B1",
+      "nqf_credits": 24,
+      "nqf_level": 5,
+      "semester": "FY",
+      "year_level": 1,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ1170H",
+      "title": "Guitar B1",
+      "nqf_credits": 24,
+      "nqf_level": 5,
+      "semester": "FY",
+      "year_level": 1,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ1175H",
+      "title": "Accordion B1",
+      "nqf_credits": 24,
+      "nqf_level": 5,
+      "semester": "FY",
+      "year_level": 1,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ1300F",
+      "title": "South African Music Studies I",
+      "nqf_credits": 12,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ1301S",
+      "title": "South African Music Studies II",
+      "nqf_credits": 12,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ1306F",
+      "title": "African Music I: Theory",
+      "nqf_credits": 12,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ1307S",
+      "title": "African Music I: Practice",
+      "nqf_credits": 12,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ1410H",
+      "title": "Organ B1",
+      "nqf_credits": 24,
+      "nqf_level": 5,
+      "semester": "FY",
+      "year_level": 1,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ1420H",
+      "title": "Piano B1",
+      "nqf_credits": 24,
+      "nqf_level": 5,
+      "semester": "FY",
+      "year_level": 1,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ1440H",
+      "title": "Voice B1",
+      "nqf_credits": 24,
+      "nqf_level": 5,
+      "semester": "FY",
+      "year_level": 1,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ1500F",
+      "title": "Western Art Music I",
+      "nqf_credits": 12,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ1501S",
+      "title": "Western Art Music II",
+      "nqf_credits": 12,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ1600F",
+      "title": "Jazz Studies I",
+      "nqf_credits": 12,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ1601S",
+      "title": "Jazz Studies II",
+      "nqf_credits": 12,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ1700H",
+      "title": "Opera Studies I",
+      "nqf_credits": 24,
+      "nqf_level": 5,
+      "semester": "FY",
+      "year_level": 1,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ1800F",
+      "title": "Composition I",
+      "nqf_credits": 12,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ1801S",
+      "title": "Composition II",
+      "nqf_credits": 12,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ1900F",
+      "title": "Music Technology I",
+      "nqf_credits": 12,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ1901S",
+      "title": "Music Technology II",
+      "nqf_credits": 12,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ2110H",
+      "title": "Musicianship III",
+      "nqf_credits": 18,
+      "nqf_level": 6,
+      "semester": "FY",
+      "year_level": 2,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ2111H",
+      "title": "Musicianship IV",
+      "nqf_credits": 18,
+      "nqf_level": 6,
+      "semester": "FY",
+      "year_level": 2,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ2121H",
+      "title": "African Ensemble B2",
+      "nqf_credits": 12,
+      "nqf_level": 6,
+      "semester": "FY",
+      "year_level": 2,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ2131H",
+      "title": "Jazz Ensemble B2",
+      "nqf_credits": 12,
+      "nqf_level": 6,
+      "semester": "FY",
+      "year_level": 2,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ2165H",
+      "title": "Violin B2",
+      "nqf_credits": 24,
+      "nqf_level": 6,
+      "semester": "FY",
+      "year_level": 2,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ2170H",
+      "title": "Guitar B2",
+      "nqf_credits": 24,
+      "nqf_level": 6,
+      "semester": "FY",
+      "year_level": 2,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ2175H",
+      "title": "Accordion B2",
+      "nqf_credits": 24,
+      "nqf_level": 6,
+      "semester": "FY",
+      "year_level": 2,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ2306F",
+      "title": "Ethnomusicology I",
+      "nqf_credits": 12,
+      "nqf_level": 6,
+      "semester": "S1",
+      "year_level": 2,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ2307F",
+      "title": "African Music II: Theory",
+      "nqf_credits": 12,
+      "nqf_level": 6,
+      "semester": "S1",
+      "year_level": 2,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ2308S",
+      "title": "African Music II: Practice",
+      "nqf_credits": 12,
+      "nqf_level": 6,
+      "semester": "S2",
+      "year_level": 2,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ2410H",
+      "title": "Organ B2",
+      "nqf_credits": 24,
+      "nqf_level": 6,
+      "semester": "FY",
+      "year_level": 2,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ2420H",
+      "title": "Piano B2",
+      "nqf_credits": 24,
+      "nqf_level": 6,
+      "semester": "FY",
+      "year_level": 2,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ2440H",
+      "title": "Voice B2",
+      "nqf_credits": 24,
+      "nqf_level": 6,
+      "semester": "FY",
+      "year_level": 2,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ2500F",
+      "title": "Western Art Music III",
+      "nqf_credits": 12,
+      "nqf_level": 6,
+      "semester": "S1",
+      "year_level": 2,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ2501S",
+      "title": "Western Art Music IV",
+      "nqf_credits": 12,
+      "nqf_level": 6,
+      "semester": "S2",
+      "year_level": 2,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ2600F",
+      "title": "Jazz Studies III",
+      "nqf_credits": 12,
+      "nqf_level": 6,
+      "semester": "S1",
+      "year_level": 2,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ2601S",
+      "title": "Jazz Studies IV",
+      "nqf_credits": 12,
+      "nqf_level": 6,
+      "semester": "S2",
+      "year_level": 2,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ2700H",
+      "title": "Opera Studies II",
+      "nqf_credits": 24,
+      "nqf_level": 6,
+      "semester": "FY",
+      "year_level": 2,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ2800F",
+      "title": "Composition III",
+      "nqf_credits": 12,
+      "nqf_level": 6,
+      "semester": "S1",
+      "year_level": 2,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ2801S",
+      "title": "Composition IV",
+      "nqf_credits": 12,
+      "nqf_level": 6,
+      "semester": "S2",
+      "year_level": 2,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ2900F",
+      "title": "Music Technology III",
+      "nqf_credits": 12,
+      "nqf_level": 6,
+      "semester": "S1",
+      "year_level": 2,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ2901S",
+      "title": "Music Technology IV",
+      "nqf_credits": 12,
+      "nqf_level": 6,
+      "semester": "S2",
+      "year_level": 2,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ3110H",
+      "title": "Musicianship V",
+      "nqf_credits": 14,
+      "nqf_level": 7,
+      "semester": "FY",
+      "year_level": 3,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ3111H",
+      "title": "Musicianship VI",
+      "nqf_credits": 14,
+      "nqf_level": 7,
+      "semester": "FY",
+      "year_level": 3,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ3121H",
+      "title": "African Ensemble B3",
+      "nqf_credits": 12,
+      "nqf_level": 7,
+      "semester": "FY",
+      "year_level": 3,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ3131H",
+      "title": "Jazz Ensemble B3",
+      "nqf_credits": 12,
+      "nqf_level": 7,
+      "semester": "FY",
+      "year_level": 3,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ3165H",
+      "title": "Violin B3",
+      "nqf_credits": 24,
+      "nqf_level": 7,
+      "semester": "FY",
+      "year_level": 3,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ3170H",
+      "title": "Guitar B3",
+      "nqf_credits": 24,
+      "nqf_level": 7,
+      "semester": "FY",
+      "year_level": 3,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ3175H",
+      "title": "Accordion B3",
+      "nqf_credits": 24,
+      "nqf_level": 7,
+      "semester": "FY",
+      "year_level": 3,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ3306F",
+      "title": "African Music III: Theory",
+      "nqf_credits": 12,
+      "nqf_level": 7,
+      "semester": "S1",
+      "year_level": 3,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ3307S",
+      "title": "African Music III: Practice",
+      "nqf_credits": 12,
+      "nqf_level": 7,
+      "semester": "S2",
+      "year_level": 3,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ3410H",
+      "title": "Organ B3",
+      "nqf_credits": 24,
+      "nqf_level": 7,
+      "semester": "FY",
+      "year_level": 3,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ3420H",
+      "title": "Piano B3",
+      "nqf_credits": 24,
+      "nqf_level": 7,
+      "semester": "FY",
+      "year_level": 3,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ3440H",
+      "title": "Voice B3",
+      "nqf_credits": 24,
+      "nqf_level": 7,
+      "semester": "FY",
+      "year_level": 3,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ3500F",
+      "title": "Western Art Music V",
+      "nqf_credits": 12,
+      "nqf_level": 7,
+      "semester": "S1",
+      "year_level": 3,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ3501S",
+      "title": "Western Art Music VI",
+      "nqf_credits": 12,
+      "nqf_level": 7,
+      "semester": "S2",
+      "year_level": 3,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ3600F",
+      "title": "Jazz Studies V",
+      "nqf_credits": 12,
+      "nqf_level": 7,
+      "semester": "S1",
+      "year_level": 3,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ3601S",
+      "title": "Jazz Studies VI",
+      "nqf_credits": 12,
+      "nqf_level": 7,
+      "semester": "S2",
+      "year_level": 3,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ3700H",
+      "title": "Opera Studies III",
+      "nqf_credits": 24,
+      "nqf_level": 7,
+      "semester": "FY",
+      "year_level": 3,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ3800F",
+      "title": "Composition V",
+      "nqf_credits": 12,
+      "nqf_level": 7,
+      "semester": "S1",
+      "year_level": 3,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ3801S",
+      "title": "Composition VI",
+      "nqf_credits": 12,
+      "nqf_level": 7,
+      "semester": "S2",
+      "year_level": 3,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ3900F",
+      "title": "Music Technology V",
+      "nqf_credits": 12,
+      "nqf_level": 7,
+      "semester": "S1",
+      "year_level": 3,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ3901S",
+      "title": "Music Technology VI",
+      "nqf_credits": 12,
+      "nqf_level": 7,
+      "semester": "S2",
+      "year_level": 3,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ4121H",
+      "title": "African Ensemble B4",
+      "nqf_credits": 12,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 4,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ4131H",
+      "title": "Jazz Ensemble B4",
+      "nqf_credits": 12,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 4,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ4165H",
+      "title": "Violin B4",
+      "nqf_credits": 24,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 4,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ4170H",
+      "title": "Guitar B4",
+      "nqf_credits": 24,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 4,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ4175H",
+      "title": "Accordion B4",
+      "nqf_credits": 24,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 4,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ4306F",
+      "title": "African Music IV: Theory",
+      "nqf_credits": 12,
+      "nqf_level": 8,
+      "semester": "S1",
+      "year_level": 4,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ4307S",
+      "title": "African Music IV: Practice",
+      "nqf_credits": 12,
+      "nqf_level": 8,
+      "semester": "S2",
+      "year_level": 4,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ4410H",
+      "title": "Organ B4",
+      "nqf_credits": 24,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 4,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ4420H",
+      "title": "Piano B4",
+      "nqf_credits": 24,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 4,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ4440H",
+      "title": "Voice B4",
+      "nqf_credits": 24,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 4,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ4600F",
+      "title": "Jazz Studies VII",
+      "nqf_credits": 12,
+      "nqf_level": 8,
+      "semester": "S1",
+      "year_level": 4,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ4601S",
+      "title": "Jazz Studies VIII",
+      "nqf_credits": 12,
+      "nqf_level": 8,
+      "semester": "S2",
+      "year_level": 4,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ4700H",
+      "title": "Opera Studies IV",
+      "nqf_credits": 24,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 4,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ4800W",
+      "title": "Composition VII (Portfolio)",
+      "nqf_credits": 48,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 4,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ4900W",
+      "title": "Research Report",
+      "nqf_credits": 48,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 4,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ4901W",
+      "title": "Research Report",
+      "nqf_credits": 48,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 4,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "MUZ4902W",
+      "title": "Music Technology VII (Portfolio)",
+      "nqf_credits": 48,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 4,
+      "department_prefix": "MUZ"
+    },
+    {
+      "code": "PHI1010S",
+      "title": "Ethics and Epistemology",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "PHI"
+    },
+    {
+      "code": "PHI1011S",
+      "title": "Ethics and Epistemology (Extended)",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "PHI"
+    },
+    {
+      "code": "PHI1024F",
+      "title": "Critical Thinking and Reasoning",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "PHI"
+    },
+    {
+      "code": "PHI2041S",
+      "title": "Philosophy IIA",
+      "nqf_credits": 24,
+      "nqf_level": 6,
+      "semester": "S2",
+      "year_level": 2,
+      "department_prefix": "PHI"
+    },
+    {
+      "code": "PHI2042F",
+      "title": "Philosophy IIB",
+      "nqf_credits": 24,
+      "nqf_level": 6,
+      "semester": "S1",
+      "year_level": 2,
+      "department_prefix": "PHI"
+    },
+    {
+      "code": "POL1004F",
+      "title": "Introduction to Politics I",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "POL"
+    },
+    {
+      "code": "POL1005S",
+      "title": "Introduction to Politics II",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "POL"
+    },
+    {
+      "code": "POL1010S",
+      "title": "Introduction to Politics II (Extended)",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "POL"
+    },
+    {
+      "code": "POL2038F",
+      "title": "Political Studies IIA",
+      "nqf_credits": 24,
+      "nqf_level": 6,
+      "semester": "S1",
+      "year_level": 2,
+      "department_prefix": "POL"
+    },
+    {
+      "code": "PSY1004F",
+      "title": "Introduction to Psychology Part 1",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "PSY"
+    },
+    {
+      "code": "PSY1005S",
+      "title": "Introduction to Psychology Part 2",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "PSY"
+    },
+    {
+      "code": "PSY1006F",
+      "title": "Introduction to Psychology Part 1+",
+      "nqf_credits": 10,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "PSY"
+    },
+    {
+      "code": "PSY1007S",
+      "title": "Introduction to Psychology Part 2+",
+      "nqf_credits": 10,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "PSY"
+    },
+    {
+      "code": "PSY1009F",
+      "title": "Introduction to Psychology I",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "PSY"
+    },
+    {
+      "code": "PSY1010S",
+      "title": "Introduction to Psychology II",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "PSY"
+    },
+    {
+      "code": "REL1002F",
+      "title": "Encountering World Religions I",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "REL"
+    },
+    {
+      "code": "REL1006S",
+      "title": "Encountering World Religions II",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "REL"
+    },
+    {
+      "code": "REL1015F",
+      "title": "Encountering World Religions I (Extended)",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "REL"
+    },
+    {
+      "code": "REL1016S",
+      "title": "Encountering World Religions II (Extended)",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "REL"
+    },
+    {
+      "code": "SOC1001F",
+      "title": "Introduction to Sociology I",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "SOC"
+    },
+    {
+      "code": "SOC1005S",
+      "title": "Introduction to Sociology II",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "SOC"
+    },
+    {
+      "code": "SOC1006F",
+      "title": "Introduction to Sociology I (Extended)",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "SOC"
+    },
+    {
+      "code": "SOC1007S",
+      "title": "Introduction to Sociology II (Extended)",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "SOC"
+    },
+    {
+      "code": "STA1000S",
+      "title": "Statistics I",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "STA",
+      "is_humanities_course": false,
+      "offered_by_faculty": "science"
+    },
+    {
+      "code": "SWK1005S",
+      "title": "Introduction to Social Development",
+      "nqf_credits": 12,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "SWK"
+    },
+    {
+      "code": "SWK1006S",
+      "title": "Introduction to Social Work",
+      "nqf_credits": 12,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "SWK"
+    },
+    {
+      "code": "SWK1013F",
+      "title": "Introduction to Social Work Practice",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "SWK"
+    },
+    {
+      "code": "SWK1014F",
+      "title": "Introduction to Social Work Practice (Extended)",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "SWK"
+    },
+    {
+      "code": "SWK2001F",
+      "title": "Social Policy",
+      "nqf_credits": 18,
+      "nqf_level": 6,
+      "semester": "S1",
+      "year_level": 2,
+      "department_prefix": "SWK"
+    },
+    {
+      "code": "SWK2060F",
+      "title": "Social Work Practice II: Individuals",
+      "nqf_credits": 24,
+      "nqf_level": 6,
+      "semester": "S1",
+      "year_level": 2,
+      "department_prefix": "SWK"
+    },
+    {
+      "code": "SWK2065S",
+      "title": "Social Work Practice II: Groups",
+      "nqf_credits": 24,
+      "nqf_level": 6,
+      "semester": "S2",
+      "year_level": 2,
+      "department_prefix": "SWK"
+    },
+    {
+      "code": "SWK2070F",
+      "title": "Social Work Practice II: Field Instruction I",
+      "nqf_credits": 20,
+      "nqf_level": 6,
+      "semester": "S1",
+      "year_level": 2,
+      "department_prefix": "SWK"
+    },
+    {
+      "code": "SWK2075S",
+      "title": "Social Work Practice II: Field Instruction II",
+      "nqf_credits": 20,
+      "nqf_level": 6,
+      "semester": "S2",
+      "year_level": 2,
+      "department_prefix": "SWK"
+    },
+    {
+      "code": "SWK3061F",
+      "title": "Social Work Practice III: Communities",
+      "nqf_credits": 24,
+      "nqf_level": 7,
+      "semester": "S1",
+      "year_level": 3,
+      "department_prefix": "SWK"
+    },
+    {
+      "code": "SWK3066S",
+      "title": "Social Work Practice III: Organisations",
+      "nqf_credits": 24,
+      "nqf_level": 7,
+      "semester": "S2",
+      "year_level": 3,
+      "department_prefix": "SWK"
+    },
+    {
+      "code": "SWK3070F",
+      "title": "Social Work Practice III: Field Instruction III",
+      "nqf_credits": 24,
+      "nqf_level": 7,
+      "semester": "S1",
+      "year_level": 3,
+      "department_prefix": "SWK"
+    },
+    {
+      "code": "SWK3075S",
+      "title": "Social Work Practice III: Field Instruction IV",
+      "nqf_credits": 24,
+      "nqf_level": 7,
+      "semester": "S2",
+      "year_level": 3,
+      "department_prefix": "SWK"
+    },
+    {
+      "code": "SWK4015F",
+      "title": "Social Work Practice IV: Research",
+      "nqf_credits": 24,
+      "nqf_level": 8,
+      "semester": "S1",
+      "year_level": 4,
+      "department_prefix": "SWK"
+    },
+    {
+      "code": "SWK4016S",
+      "title": "Social Work Practice IV: Research Report",
+      "nqf_credits": 24,
+      "nqf_level": 8,
+      "semester": "S2",
+      "year_level": 4,
+      "department_prefix": "SWK"
+    },
+    {
+      "code": "SWK4030F",
+      "title": "Social Work Practice IV: Advanced Practice",
+      "nqf_credits": 24,
+      "nqf_level": 8,
+      "semester": "S1",
+      "year_level": 4,
+      "department_prefix": "SWK"
+    },
+    {
+      "code": "SWK4031S",
+      "title": "Social Work Practice IV: Advanced Practice II",
+      "nqf_credits": 24,
+      "nqf_level": 8,
+      "semester": "S2",
+      "year_level": 4,
+      "department_prefix": "SWK"
+    },
+    {
+      "code": "SWK4032S",
+      "title": "Social Work Practice IV: Field Instruction V",
+      "nqf_credits": 15,
+      "nqf_level": 8,
+      "semester": "S2",
+      "year_level": 4,
+      "department_prefix": "SWK"
+    },
+    {
+      "code": "SWK4033F",
+      "title": "Social Work Practice IV: Field Instruction VI",
+      "nqf_credits": 15,
+      "nqf_level": 8,
+      "semester": "S1",
+      "year_level": 4,
+      "department_prefix": "SWK"
+    },
+    {
+      "code": "TDP1017H",
+      "title": "Performance Studies I",
+      "nqf_credits": 36,
+      "nqf_level": 5,
+      "semester": "FY",
+      "year_level": 1,
+      "department_prefix": "TDP"
+    },
+    {
+      "code": "TDP1018H",
+      "title": "Performance Studies I",
+      "nqf_credits": 36,
+      "nqf_level": 5,
+      "semester": "FY",
+      "year_level": 1,
+      "department_prefix": "TDP"
+    },
+    {
+      "code": "TDP1027F",
+      "title": "Voice and Movement I",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "TDP"
+    },
+    {
+      "code": "TDP1029F",
+      "title": "Voice and Movement I (Extended)",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "TDP"
+    },
+    {
+      "code": "TDP1045S",
+      "title": "Production I",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "TDP"
+    },
+    {
+      "code": "TDP1046W",
+      "title": "Performance Making I",
+      "nqf_credits": 36,
+      "nqf_level": 5,
+      "semester": "FY",
+      "year_level": 1,
+      "department_prefix": "TDP"
+    },
+    {
+      "code": "TDP2010F",
+      "title": "Performance Studies II",
+      "nqf_credits": 36,
+      "nqf_level": 6,
+      "semester": "S1",
+      "year_level": 2,
+      "department_prefix": "TDP"
+    },
+    {
+      "code": "TDP2011S",
+      "title": "Performance Studies II",
+      "nqf_credits": 36,
+      "nqf_level": 6,
+      "semester": "S2",
+      "year_level": 2,
+      "department_prefix": "TDP"
+    },
+    {
+      "code": "TDP2013S",
+      "title": "Production II",
+      "nqf_credits": 18,
+      "nqf_level": 6,
+      "semester": "S2",
+      "year_level": 2,
+      "department_prefix": "TDP"
+    },
+    {
+      "code": "TDP2040W",
+      "title": "Performance Making II",
+      "nqf_credits": 36,
+      "nqf_level": 6,
+      "semester": "FY",
+      "year_level": 2,
+      "department_prefix": "TDP"
+    },
+    {
+      "code": "TDP2042F",
+      "title": "Movement II",
+      "nqf_credits": 18,
+      "nqf_level": 6,
+      "semester": "S1",
+      "year_level": 2,
+      "department_prefix": "TDP"
+    },
+    {
+      "code": "TDP3010F",
+      "title": "Performance Studies III",
+      "nqf_credits": 36,
+      "nqf_level": 7,
+      "semester": "S1",
+      "year_level": 3,
+      "department_prefix": "TDP"
+    },
+    {
+      "code": "TDP3018S",
+      "title": "Performance Studies III",
+      "nqf_credits": 36,
+      "nqf_level": 7,
+      "semester": "S2",
+      "year_level": 3,
+      "department_prefix": "TDP"
+    },
+    {
+      "code": "TDP3041W",
+      "title": "Dance III",
+      "nqf_credits": 60,
+      "nqf_level": 7,
+      "semester": "FY",
+      "year_level": 3,
+      "department_prefix": "TDP"
+    },
+    {
+      "code": "TDP3043W",
+      "title": "Acting III",
+      "nqf_credits": 60,
+      "nqf_level": 7,
+      "semester": "FY",
+      "year_level": 3,
+      "department_prefix": "TDP"
+    },
+    {
+      "code": "TDP3047W",
+      "title": "Performance Making III",
+      "nqf_credits": 60,
+      "nqf_level": 7,
+      "semester": "FY",
+      "year_level": 3,
+      "department_prefix": "TDP"
+    },
+    {
+      "code": "TDP3050W",
+      "title": "Applied Performance/Pedagogy III",
+      "nqf_credits": 60,
+      "nqf_level": 7,
+      "semester": "FY",
+      "year_level": 3,
+      "department_prefix": "TDP"
+    },
+    {
+      "code": "TDP3051W",
+      "title": "Scenography III",
+      "nqf_credits": 60,
+      "nqf_level": 7,
+      "semester": "FY",
+      "year_level": 3,
+      "department_prefix": "TDP"
+    },
+    {
+      "code": "TDP3052W",
+      "title": "Theatre and Performance III",
+      "nqf_credits": 60,
+      "nqf_level": 7,
+      "semester": "FY",
+      "year_level": 3,
+      "department_prefix": "TDP"
+    },
+    {
+      "code": "TDP3902W",
+      "title": "Professional Practice",
+      "nqf_credits": 48,
+      "nqf_level": 7,
+      "semester": "FY",
+      "year_level": 3,
+      "department_prefix": "TDP"
+    }
+  ]
+}

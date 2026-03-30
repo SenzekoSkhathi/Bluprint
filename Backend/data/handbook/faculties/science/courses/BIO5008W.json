@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "BIO5008W",
+  "title": "Conservation Biology Minor Dissertation",
+  "department": "biological-sciences",
+  "credits": 0,
+  "nqf_level": 9,
+  "year_level": 5,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Dr G Jamie",
+  "prerequisites": {
+    "text": "BIO5007H. Note: Students enrol for both BIO5007H and BIO5008W in their first year of registration. Where the minor dissertation is not submitted by the February deadline of the subsequent year, the student will be required to enrol (and pay fees) for the minor dissertation component in the subsequent year/s. Students already in possession of a Master's degree, or in exceptional cases those wishing to upgrade to a PhD, may expand a project.",
+    "parsed": {
+      "type": "complex",
+      "codes_mentioned": [
+        "BIO5007H",
+        "BIO5008W"
+      ],
+      "note": "Complex prerequisite logic - see text"
+    }
+  },
+  "corequisites": [],
+  "outline": "The research component must be submitted as a minor dissertation for formal examination. It should be completed by mid-February following first registration.",
+  "lecture_times": null,
+  "dp_requirements": null,
+  "assessment": "The minor dissertation must be presented for formal examination. The coursework (BIO5007H) and minor dissertation each count 50% towards the degree; each must be passed separately for the award of the degree.",
+  "is_science_course": true
+}

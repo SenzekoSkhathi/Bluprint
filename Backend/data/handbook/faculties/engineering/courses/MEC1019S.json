@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MEC1019S",
+  "title": "Introduction to Materials Science and Engineering",
+  "department": "mechanical-engineering",
+  "credits": 8,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr SL George",
+  "prerequisites": {
+    "text": "Refer to the programme and departmental sections in the 2026 EBE Faculty Handbook.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course introduces the fundamentals of materials science and engineering, emphasising the interrelationship between material structure and properties and processing. It begins with an overview of major material classes —metals, ceramics, polymers, and c omposites—and their relevance in engineering applications. Atomic structure and bonding are explored, including electron configurations, periodic trends, and bonding types and their impact on material properties. The course also covers crystalline structures, including unit cells, lattice systems, and the role of crystallinity in material behaviour. Finally, the course introduces the concepts of stress and strain and examines material defects emphasizing their influence on mechanical, thermal, and electrical properties.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "TDP3052W",
+  "title": "Theatre and Performance III",
+  "department": "theatre-and-performance",
+  "credits": 60,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Dr M Kabwe",
+  "prerequisites": {
+    "text": "Completion of T&P Studiowork 2",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course is comprised of seminars in which aspects of arts organisation and management, and of career management, are explored in relation to the performing arts industry in South Africa today. The course aims to familiarise students with the practica lities, legalities and logistics they will encounter as performance practitioners within the South African industry. Pertinent arts and culture policies will be introduced, and an understanding of professional ethics and conduct fostered. In addition, student’s writing skills for the performing arts industry will be refined for inter alia funding proposals, funding reporting, marketing strategies, professional CV’s, etc. On completion of the course students will be better prepared and empowered to face the demands of operating within the contemporary South African Arts Industry. A fieldwork component may be included as part of this course. DP requirements : Attendance at all designated seminars, workshops, lectures or tutorials. Completion of all oral and written assignments and projects.",
+  "lecture_times": "Seminars will be timetabled departmentally each year. All meetings will be on the Hiddingh Campus",
+  "dp_requirements": "Attendance at all designated seminars, workshops, lectures or tutorials. Completion of all oral or written assignments.",
+  "assessment": "Continuous assessment (essays, projects, practical tasks, class tests) counts 100%.",
+  "is_humanities_course": true
+}

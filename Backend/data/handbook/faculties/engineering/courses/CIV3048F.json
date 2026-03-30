@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CIV3048F",
+  "title": "Structural Analysis II",
+  "department": "civil-engineering",
+  "credits": 16,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Professor A Zingoni",
+  "prerequisites": {
+    "text": "CIV2041S",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "CIV2041S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to develop an understanding of flexibility versus stiffness methods in structural analysis. Analysis of statically indeterminate structures by the force method and displacement method (trusses, beams and frames); the principles of loading (types of loading, code provisions, safety factors). The course introduces computer based structural analysis of statically indeterminate structures.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

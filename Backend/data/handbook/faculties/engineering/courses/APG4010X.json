@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "APG4010X",
+  "title": "Geoinformatics Camp",
+  "department": "architecture-planning-geomatics",
+  "credits": 4,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "varies",
+  "semester_code": "X",
+  "convener": "Dr S Mphuthi",
+  "prerequisites": {
+    "text": "APG3012S.",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "APG3012S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This camp aims to consolidate knowledge and skills learnt in the course APG3012S. To further teach practical problem solving and production tasks in photogrammetry and remote sensing. In addition to perform 3D data modelling of results achieved and present the output by means of suitable visualisation methods. The practical work will be conducted in groups and the outcomes should be reported as a critical evaluation of the processes and methods used.",
+  "lecture_times": "One week during a vacation.",
+  "dp_requirements": "Attendance at and completion of all assignments. DEPARTMENTS IN THE FACULTY AND COURSES OFFERED 89",
+  "assessment": "Pass/Fail based on achieving the learning outcomes of the course.",
+  "is_engineering_course": true
+}

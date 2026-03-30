@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EEE2047S",
+  "title": "Signals and Systems I",
+  "department": "electrical-engineering",
+  "credits": 16,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Associate Professor Andrew Wilkinson",
+  "prerequisites": {
+    "text": "MAM1021F/S or MAM1024S/F",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "MAM1021F",
+        "MAM1024S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course provides students with the basic tools required for understanding linear systems, and the effect that such systems have on deterministic signals. Upon completion, students will be able to characterise and manipulate linear time-invariant systems in terms of input-output relationships, using both time and frequency domain methods. The course includes concepts related to signal representation, linear convolution, Fourier analysis, sampling of continuous-time signals, and Laplace transforms.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course",
+  "is_engineering_course": true
+}

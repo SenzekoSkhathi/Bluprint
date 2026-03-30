@@ -1,0 +1,12 @@
+{
+  "$schema": "handbook-programme-v1",
+  "programme_code": "CB001PHI03",
+  "programme_name": "Bachelor of Commerce specialising in Philosophy, Politics and Economics (PPE)",
+  "degree": "BCom",
+  "specialisation": "Philosophy, Politics and Economics",
+  "faculty": "commerce",
+  "nqf_level": 7,
+  "minimum_credits": 440,
+  "duration_years": 3,
+  "department": "economics"
+}

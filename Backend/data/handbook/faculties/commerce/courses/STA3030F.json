@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "STA3030F",
+  "title": "Statistical Inference & Modelling",
+  "department": "statistical-sciences",
+  "credits": 36,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Associate Professor G Distiller",
+  "prerequisites": {
+    "text": "(STA2030S or STA2004F) AND (STA2020F/S / STA2007F/S or 45% STA2005S) AND (MAM1032 or MAM1034S or MAM1006S or MAM1012F/S or MAM1021F/S or MAM1112S).",
+    "parsed": {
+      "type": "prerequisite",
+      "codes": [
+        "STA2030S",
+        "STA2020F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course forms part of the third-year major in Applied Statistics. The aim of the course is to provide students with the main intellectual and practical skills required in the use of inferential statistics and statistical modelling. The course consists of 4 modules: The simulation module introduces students to the use of computer simulation and data re-sampling techniques (bootstrap). The generalized linear models module introduces students to the exponential family of distributions and extends linear regression models to models for non-normal response variables, including logistic regression. The machine learning module covers a basic introduction to statistical learning paradigms, applications of regression and classification trees, and a primer on feedforward neural networks and backpropagation. The Bayesian module introduces students to decision theory and Bayesian inference. Students will use the R programming language.",
+  "lecture_times": "Monday - Thursday, 1st period.",
+  "dp_requirements": "Class record of at least 35%.",
+  "assessment": "Class record 30% and a 3-hour exam counting 70%. Weights will be adjusted in the case of missed assessments.",
+  "is_commerce_course": false,
+  "offered_by_faculty": "science"
+}

@@ -1,0 +1,12 @@
+{
+  "$schema": "handbook-programme-v1",
+  "programme_code": "CB001INF11",
+  "programme_name": "Bachelor of Commerce specialising in Information Systems and Finance",
+  "degree": "BCom",
+  "specialisation": "Information Systems and Finance",
+  "faculty": "commerce",
+  "nqf_level": 7,
+  "minimum_credits": 440,
+  "duration_years": 3,
+  "department": "information-systems"
+}

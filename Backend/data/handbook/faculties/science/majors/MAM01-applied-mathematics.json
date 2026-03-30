@@ -1,0 +1,192 @@
+{
+  "$schema": "handbook-major-v1",
+  "major_code": "MAM01",
+  "major_name": "Applied Mathematics",
+  "department": "mathematics-applied-mathematics",
+  "notes": "Students wishing to progress to Applied Mathematics Honours are strongly recommended to complete MAM3055Z: Project in Applied Mathematics.",
+  "mutual_exclusions_with": [],
+  "required_companion_majors": [],
+  "has_student_limit": false,
+  "years": [
+    {
+      "year": 1,
+      "label": "First Year Core Courses",
+      "combinations": [
+        {
+          "combination_id": "MAM01-Y1-A",
+          "description": "Mathematics as full-year course",
+          "courses": [
+            {
+              "code": "MAM1000W",
+              "title": "Mathematics 1000",
+              "credits": 36,
+              "nqf_level": 5
+            },
+            {
+              "code": "MAM1043H",
+              "title": "Modelling & Applied Computing",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "MAM1044H",
+              "title": "Dynamics",
+              "credits": 18,
+              "nqf_level": 5
+            }
+          ]
+        },
+        {
+          "combination_id": "MAM01-Y1-B",
+          "description": "Mathematics as two semester courses",
+          "courses": [
+            {
+              "code": "MAM1031F",
+              "title": "Mathematics 1031",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "MAM1032S",
+              "title": "Mathematics 1032",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "MAM1043H",
+              "title": "Modelling & Applied Computing",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "MAM1044H",
+              "title": "Dynamics",
+              "credits": 18,
+              "nqf_level": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "label": "Second Year Core Courses",
+      "combinations": [
+        {
+          "combination_id": "MAM01-Y2-A",
+          "description": "Core MAM plus two of MAM2012S/MAM2013S/MAM2014S",
+          "required_core": [
+            {
+              "code": "MAM2010F",
+              "title": "Advanced Calculus (2AC)",
+              "credits": 12,
+              "nqf_level": 6
+            },
+            {
+              "code": "MAM2011F",
+              "title": "Linear Algebra (2LA)",
+              "credits": 12,
+              "nqf_level": 6
+            },
+            {
+              "code": "MAM2040F",
+              "title": "Ordinary Differential Equations (2OD)",
+              "credits": 12,
+              "nqf_level": 6
+            },
+            {
+              "code": "MAM2041F",
+              "title": "Numerical Analysis (2NA)",
+              "credits": 12,
+              "nqf_level": 6
+            },
+            {
+              "code": "MAM2042S",
+              "title": "Non-linear Dynamics (2ND)",
+              "credits": 12,
+              "nqf_level": 6
+            },
+            {
+              "code": "MAM2043S",
+              "title": "Boundary-Value Problems (2BP)",
+              "credits": 12,
+              "nqf_level": 6
+            }
+          ],
+          "choose_two_of": [
+            {
+              "code": "MAM2012S",
+              "title": "Differential Equations (2DE)",
+              "credits": 12,
+              "nqf_level": 6
+            },
+            {
+              "code": "MAM2013S",
+              "title": "Introductory Algebra (2IA)",
+              "credits": 12,
+              "nqf_level": 6
+            },
+            {
+              "code": "MAM2014S",
+              "title": "Real Analysis (2RA)",
+              "credits": 12,
+              "nqf_level": 6
+            }
+          ],
+          "instruction": "Take all required_core courses plus any two from choose_two_of."
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "label": "Third Year Core Courses",
+      "combinations": [
+        {
+          "combination_id": "MAM01-Y3-A",
+          "description": "Methods of Mathematical Physics plus any three from the elective list",
+          "required_core": [
+            {
+              "code": "MAM3043S",
+              "title": "Methods of Mathematical Physics (3MP)",
+              "credits": 18,
+              "nqf_level": 7
+            }
+          ],
+          "choose_three_of": [
+            {
+              "code": "MAM3012F",
+              "title": "Discrete Mathematics (3DM)",
+              "credits": 18,
+              "nqf_level": 7
+            },
+            {
+              "code": "MAM3042F",
+              "title": "Advanced Numerical Methods (3AN)",
+              "credits": 18,
+              "nqf_level": 7
+            },
+            {
+              "code": "MAM3044F",
+              "title": "Functions of a Complex Variable (3CV)",
+              "credits": 18,
+              "nqf_level": 7
+            },
+            {
+              "code": "MAM3045S",
+              "title": "Introduction to General Relativity (3GR)",
+              "credits": 18,
+              "nqf_level": 7
+            },
+            {
+              "code": "MAM3046S",
+              "title": "Fluid Dynamics (3FD)",
+              "credits": 18,
+              "nqf_level": 7
+            }
+          ],
+          "instruction": "MAM3043S is compulsory; choose any three from the list above."
+        }
+      ]
+    }
+  ]
+}

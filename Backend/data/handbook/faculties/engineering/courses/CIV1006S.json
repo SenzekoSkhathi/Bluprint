@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CIV1006S",
+  "title": "Introduction to Civil Engineering",
+  "department": "civil-engineering",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Professor H Beushausen",
+  "prerequisites": {
+    "text": "None",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "The course aims to introduce students to the nature and the properties of construction materials, to provide an understanding on relevant physical, chemical and mechanical properties of common construction materials, and to highlight proper selection and application of materials in practice. The course illustrates problems that might arise through injudicious choice of materials and the reasons behind the selection of materials for particular applications. The course contents include: a general overview on relevant material properties for structural and non -structural construction materials (strength, toughness, elastic deformations, density, time-dependent deformations, durability, etc.); the nature, properties, and application of common construction materi als (cement and concrete, timber, metals (iron and steel, aluminium), glass, polymers, bitumen and asphalts, bricks and blocks); corrosion of metals; thermal, acoustic and fire properties of building components.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

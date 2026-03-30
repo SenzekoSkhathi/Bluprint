@@ -1,0 +1,31 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PHY1012F",
+  "title": "Physics A for Engineers",
+  "department": "physics",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Associate Professor W A Horowitz",
+  "prerequisites": {
+    "text": "PHY1012F/S or PHY1014F/S",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "PHY1012F",
+        "PHY1014F"
+      ]
+    }
+  },
+  "corequisites": [
+    "MAM1020F"
+  ],
+  "outline": "The course aims to provide students with a strong foundation in mechanics, properties of matter and thermodynamics. The aims are to encourage conceptual understanding, the development of certain mathematical and graphical skills as well as problem solving. Mechanics forms the basis of all the engineering disciplines. It is therefore crucial that students have a good grasp of the concepts and proficiency in the skills. Problem solving abilities develop through the course as a preparation for further developm ent in later engineering courses. Topics include: vectors, kinematics, dynamics, work, energy, power, conservative and non -conservative forces, friction, impulse, momentum, collisions, rotation, rotational dynamics, torque, rotational inertia, rotational e nergy, angular momentum, elasticity, elastic moduli, hydrostatics, hydrodynamics, temperature, heat, kinetic theory of gases, thermodynamics and entropy.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "An average of at least 40% for class record, including 50% for laboratories.",
+  "assessment": "Class record (weekly problem sets, class tests and laboratory record) counts 50%; one 2-hour examination counts 50%. Although a supplementary examination is usually granted for a final grade in the range 45-49%, a supplementary examination may also be granted for certain key courses in the range 40-44% under conditions agreed to by the Deans of EBE and Science, normally involving a mandatory pre-supp tutoring and revision programme.",
+  "is_engineering_course": false,
+  "offered_by_faculty": "science"
+}

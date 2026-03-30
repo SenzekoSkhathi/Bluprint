@@ -1,0 +1,26 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PHI2043S",
+  "title": "Business Ethics",
+  "department": "philosophy",
+  "credits": 18,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "G E T James",
+  "prerequisites": {
+    "text": "At least second year status or be registered for an ACC04/ACC08 programme.",
+    "parsed": {
+      "type": "year_status",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "Ethical choices are unavoidable in business. This course aims to help students to articulate their options when confronted with an ethical dilemma in business, and to make well-informed judgements about the right thing to do. The course will consider a range of problems, from issues that could arise in a student's first job to questions of business regulation that they may one day face as a leader in commerce or government. In each case, the course will challenge students to recognise ethical problems in practical situations, understand the possible solutions, and make reasoned decisions. Please note that this course DOES NOT count towards the Philosophy major.",
+  "lecture_times": "Monday, Tuesday, Wednesday 3rd or 4th period.",
+  "dp_requirements": "Regular attendance at lectures and tutorials; completion of all tests, submission of all essays and assignments by due dates, and an average mark of at least 35% for the coursework.",
+  "assessment": "Coursework counts 40%; one 3-hour examination in June or October/November counts 60%.",
+  "is_commerce_course": false,
+  "offered_by_faculty": "humanities"
+}

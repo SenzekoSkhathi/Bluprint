@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CSC4028Z",
+  "title": "High-Performance Computing",
+  "department": "computer-science",
+  "credits": 12,
+  "nqf_level": 8,
+  "year_level": "Postgraduate (Honours)",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "Professor M M Kuttel",
+  "prerequisites": {
+    "text": "Admission to BSc Hons specialising in Computer Science or Information Technology.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "High performance computing is high-speed computing — the use of parallel processing to run application programs efficiently, reliably and fast. Topics covered include: an introduction to and motivation for HPC; HPC architectures with a focus on current supercomputer design; programming interfaces for parallel computing (OpenMP and MPI); parallel libraries; parallel algorithms; benchmarking, profiling and debugging; and case studies of papers from the annual SuperComputing conference.",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "None.",
+  "assessment": "Final examination: 50%; Coursework: 50%. Subminima of 45% for both exam and the assignments.",
+  "is_science_course": true
+}

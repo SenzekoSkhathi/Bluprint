@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "TDP2040W",
+  "title": "Performance Making II",
+  "department": "theatre-and-performance",
+  "credits": 36,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Associate Professor S Matchett",
+  "prerequisites": {
+    "text": "Completion of T&P Studiowork 1.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This is an intermediate course that expands and extends the foundational skills in theatre and dance established in year one. The year-long course explores varying aspects of theatre and dance including applied performance and pedagogy and emphasizes application of skills. Fieldwork components may be included in the course.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Attendance at all classes, performances and rehearsals. Completion of all projects.",
+  "assessment": "Coursework, classwork and in -house performances count 50% of the final mark; practical examination counts 50% of the final mark. In order to pass, students must obtain at least 50% in both of the above.",
+  "is_humanities_course": true
+}

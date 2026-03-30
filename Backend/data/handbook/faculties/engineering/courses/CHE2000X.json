@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CHE2000X",
+  "title": "Field Trip",
+  "department": "chemical-engineering",
+  "credits": 4,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "varies",
+  "semester_code": "X",
+  "convener": "Dr T Nyathi",
+  "prerequisites": {
+    "text": "Refer to the programme and departmental sections in the 2026 EBE Faculty Handbook.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [
+    "CHE2005W"
+  ],
+  "outline": "The aim of the field trip is to expose the student engineer to industrial scale equipment and processes, as well as opportunities for application of material studied in class to real systems. It also provides experience of industrial safety requirements and opportunities to engage with practising engineers and other plant personnel.",
+  "lecture_times": "None",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EGS3022S",
+  "title": "Geographic Thought",
+  "department": "environmental-geographical-science",
+  "credits": 36,
+  "nqf_level": 7,
+  "year_level": "Third Year",
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "To be advised",
+  "prerequisites": {
+    "text": "EGS2016F (or EGS2013F) and/or EGS2017S (or EGS2015S).",
+    "parsed": {
+      "type": "and",
+      "codes": [
+        "EGS2016F",
+        "EGS2013F",
+        "EGS2017S",
+        "EGS2015S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The course focuses on debates in classical and contemporary human geography. It considers important thematic areas in the geographical literature such as development, spatiality, urban, political and feminist geographies. Each thematic area explores specific debates and key authors' work, providing students with an introduction to the literature, a content overview, and skills to deconstruct and build conceptual and analytical arguments related to evidence drawn from geographical research from around the world (other than South Africa). The course also emphasises academic reading and writing skills taught in practical sessions.",
+  "lecture_times": "Monday - Friday, 4th period. Practicals: One afternoon per week, Wednesday, 14h00–17h00.",
+  "dp_requirements": "Satisfactory completion of essay and practical assignments and participation in tutorials; students must attain an average mark of not less than 40% for the coursework.",
+  "assessment": "Essay and other assignments count 70%; one 3-hour written examination in November counts 30% (sub-minimum of 40% required).",
+  "is_science_course": true
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "INF4027W",
+  "title": "System Development Project II",
+  "department": "information-systems",
+  "credits": 40,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Professor S Kabanda (1st semester) and Professor M Tanner (2nd semester)",
+  "prerequisites": {
+    "text": "Students should meet the entrance requirements to the 4th year BBusSci or IS Honours programme and may be required to write an entrance exam.",
+    "parsed": {
+      "type": "programme_registration",
+      "programmes": [
+        "BBusSci 4th year",
+        "IS Honours"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "For the Systems Development Project II course, teams of students are required to identify and analyse a real-world IS problem, then design, develop and test a fully-functioning Information System that meets current and future requirements. The software projects are formulated by Industry Sponsors and relate to real-life business problems that need to be solved to bring business value. Students are required to use agile methodologies (Scrum/Kanban) to manage their projects. The course combines theoretical elements of agile project management and software development methodologies with the practical implementation of these concepts through the completion of the team projects.",
+  "lecture_times": "To be advised.",
+  "dp_requirements": "To be advised.",
+  "assessment": "Assessment will be based on compulsory deliverables within the following categories: Programming Test, Vision Presentation, BA & Innovation Document, Iterations Assessments (Documentation & Presentation) and the individual portfolio of evidence of each student.",
+  "is_commerce_course": true
+}

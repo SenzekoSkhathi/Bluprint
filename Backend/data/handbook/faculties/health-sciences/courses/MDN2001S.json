@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MDN2001S",
+  "title": "Special Study Modules",
+  "department": "medicine",
+  "credits": 16,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "See 2026 Health Sciences Faculty Handbook",
+  "prerequisites": {
+    "text": "Refer to the programme and departmental sections in the 2026 Health Sciences Faculty Handbook.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "Course title and credit value verified from the 2026 Health Sciences Faculty Handbook.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "See 2026 Health Sciences Faculty Handbook.",
+  "assessment": "See departmental and faculty assessment rules in the 2026 Health Sciences Faculty Handbook.",
+  "is_health_sciences_course": true
+}

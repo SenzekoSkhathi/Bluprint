@@ -1,0 +1,63 @@
+{
+  "id": "ba-theatre-performance",
+  "programme_code": "HB014",
+  "name": "Bachelor of Arts in Theatre and Performance",
+  "abbreviation": "BA(T&P)",
+  "nqf_level": 8,
+  "department": "Drama (Theatre and Performance)",
+  "duration_years": 4,
+  "specialisations": [
+    {
+      "code": "TDP01",
+      "name": "Acting"
+    },
+    {
+      "code": "TDP04",
+      "name": "Dance"
+    },
+    {
+      "code": "TDP05",
+      "name": "Performance Making"
+    },
+    {
+      "code": "TDP06",
+      "name": "Applied Performance/Pedagogy"
+    },
+    {
+      "code": "TDP07",
+      "name": "Scenography"
+    }
+  ],
+  "curriculum": {
+    "year_1": {
+      "core": [
+        "TDP1046W",
+        "TDP1017H",
+        "TDP1027F",
+        "TDP1045S"
+      ],
+      "note": "Plus humanities electives"
+    },
+    "year_2": {
+      "core": [
+        "TDP2010F",
+        "TDP2011S",
+        "TDP2042F",
+        "TDP2013S",
+        "TDP2040W"
+      ],
+      "note": "Plus humanities electives"
+    },
+    "year_3": {
+      "core": [
+        "TDP3010F",
+        "TDP3018S",
+        "TDP3052W"
+      ],
+      "note": "Plus specialisation course at 3000-level"
+    },
+    "year_4": {
+      "note": "Advanced specialisation, professional practice, and research"
+    }
+  }
+}

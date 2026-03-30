@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "BIO2017S",
+  "title": "Plant Diversity and Functional Biology",
+  "department": "biological-sciences",
+  "credits": 0,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Associate Professor S B M Chimphango",
+  "prerequisites": {
+    "text": "BIO1000F/H, BIO1004S. Includes a compulsory four-day field camp.",
+    "parsed": {
+      "type": "and",
+      "codes": [
+        "BIO1000F/H",
+        "BIO1004S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The course begins with a discussion on the nature and origin of plants that includes an overview of major autotrophic eukaryote lineages. The benefits and challenges of life in water and on land are also presented. Diversity and evolution of life histories and reproductive systems in plants and consequences of the diversity of major plant lineages are studied. The functional biology of the major organs of the plant including roots, stems and leaves in relation to strategies for resource acquisition and utilisation, mineral nutrition, plant water relations and carbon metabolism are considered. This entails studying variations in root, stem and leaf morphologies in various plant lineages and unique terrestrial and aquatic environments and their function in water, nutrients, and carbon metabolism. There is a strong focus on African plants, and a particular emphasis on the Cape Floristic region. The course practicals are compulsory and complement the theory with hands-on experience on working with different lineages of plants, data collection and analysis from scientific studies and experiments, and scientific writing. A compulsory 4-day field camp is undertaken for students to study the relationship between ecology and plant morphology, function, and diversity.",
+  "lecture_times": "Monday – Friday, 2nd period. Practicals: One per week, Thursday, 14h00-17h00. Attendance is compulsory for all lectures and practicals.",
+  "dp_requirements": "Completion of at least 70% of deliverables (tests, practicals, field trip report), including at least one class test and the field trip report; attendance of practicals and field trip; minimum of 40% for the class record.",
+  "assessment": "A 3-hour examination written in November, with a subminimum of 40%, counts 50% of the course. Coursework marks will be allocated as follows: Practical classes count 20%, project based on field camp counts 10%, two class tests count 20%",
+  "is_science_course": true
+}

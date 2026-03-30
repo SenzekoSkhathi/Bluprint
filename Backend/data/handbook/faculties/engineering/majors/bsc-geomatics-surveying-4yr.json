@@ -1,0 +1,65 @@
+{
+  "id": "bsc-geomatics-surveying-4yr",
+  "programme_code": "EB019APG09",
+  "name": "Bachelor of Science in Geomatics: Surveying Stream 4-year curriculum",
+  "abbreviation": "BSc(Geomatics)",
+  "department": "Architecture, Planning and Geomatics",
+  "duration_years": 4,
+  "minimum_credits": 519,
+  "saqa_id": 116420,
+  "curriculum": {
+    "year_1": {
+      "core": [
+        "APG1024F",
+        "CSC1017S",
+        "GEO1010F",
+        "MAM1020F",
+        "MAM1021S",
+        "APG1023S",
+        "STA1008S",
+        "PHY1031F"
+      ],
+      "credits": 117
+    },
+    "year_2": {
+      "core": [
+        "APG2014S",
+        "APG2015F",
+        "APG2019X",
+        "APG2040F",
+        "APG2041S",
+        "MAM2083S",
+        "MAM2084F",
+        "PHY1031F",
+        "PHY1032S"
+      ],
+      "credits": 148
+    },
+    "year_3": {
+      "core": [
+        "APG3012S",
+        "APG3013F",
+        "APG3016C",
+        "APG3017D",
+        "APG3027Z",
+        "APG3033W",
+        "APG3038F",
+        "APG3040C"
+      ],
+      "elective_credits": 12,
+      "credits": 154
+    },
+    "year_4": {
+      "core": [
+        "APG4001S",
+        "APG4002Z",
+        "APG4003Z",
+        "APG4005F",
+        "APG4010X",
+        "APG4011F",
+        "APG4012S"
+      ],
+      "credits": 150
+    }
+  }
+}

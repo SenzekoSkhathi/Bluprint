@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AHS3104S",
+  "title": "Vestibular Management",
+  "department": "health-and-rehabilitation-sciences",
+  "credits": 15,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "TBC",
+  "prerequisites": {
+    "text": "None",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to enable the student to discuss the nature and impact of dizziness and vertigo, and to assess and manage vestibular disorders. Content includes the anatomy, physiology and pathology of vestibular and related balance disorders; clin ical and technological assessments of vestibular disorders; and vestibular re habilitation therapy. Students acqu ire skills of analysis and the interpretation of results of clinical and objective evaluation, as well as the ability to select the appropriate management paradigm. They learn that balance disorders are multifactorial in nature, that management is possible at all levels of care, and that the audiologist is an integral part of management. Teaching and learning activities include lectures, web-based learning, case study and group learning. Themes underpinning the course in clude disability and burden of disease, the bi o-psycho-social model, and ethical conduct.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "For discipline specific courses in the BSc Audiology and BSc in Speech-Language Pathology programmes a minimum coursework mark of 40% is required for entrance into the examination.",
+  "assessment": "The course grade is made up of a cour sework mark (weighted 60%) and a final examination mark (weighted 40%). If a supplementary examination is awarded, it will count 40 % of the final mark, as the course work mark will still be included in the final mark.",
+  "is_health_sciences_course": true
+}

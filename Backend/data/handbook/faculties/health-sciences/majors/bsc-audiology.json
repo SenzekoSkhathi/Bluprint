@@ -1,0 +1,62 @@
+{
+  "id": "bsc-audiology",
+  "programme_code": "MB011/MB019",
+  "name": "BSc Audiology",
+  "abbreviation": "BSc(Audiology)",
+  "department": "Health and Rehabilitation Sciences",
+  "duration_years": 4,
+  "total_nqf_credits": 622,
+  "professional_registration": "HPCSA",
+  "curriculum": {
+    "year_1": {
+      "core": [
+        "PPH1001F",
+        "PPH1002S",
+        "AHS1003F",
+        "PSY1004F",
+        "PSY1005S",
+        "HUB1014S",
+        "AHS1025S",
+        "AHS1042F",
+        "ASL1300F",
+        "AHS1045S"
+      ],
+      "credits": 176
+    },
+    "year_2": {
+      "core": [
+        "SLL1028H",
+        "AHS1054W",
+        "PSY2015F",
+        "PSY2014S",
+        "AHS2047S",
+        "AHS2106F",
+        "AHS2046F",
+        "AHS2110W",
+        "AHS2111S"
+      ],
+      "credits": 168
+    },
+    "year_3": {
+      "core": [
+        "AHS3078H",
+        "AHS3008W",
+        "AHS3062F",
+        "AHS3065S",
+        "AHS3075F",
+        "AHS3104S",
+        "AHS3105F"
+      ],
+      "credits": 144
+    },
+    "year_4": {
+      "core": [
+        "AHS4000W",
+        "AHS4067S",
+        "AHS4008H",
+        "AHS4009H"
+      ],
+      "credits": 124
+    }
+  }
+}

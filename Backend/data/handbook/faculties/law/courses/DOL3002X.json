@@ -1,0 +1,24 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "DOL3002X",
+  "title": "Intermediate Year Skills Component",
+  "department": "deans-office-law",
+  "credits": 0,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "varies",
+  "semester_code": "X",
+  "convener": "TBA",
+  "prerequisites": {
+    "text": "None",
+    "parsed": {
+      "type": "none"
+    }
+  },
+  "corequisites": [],
+  "outline": "In the Intermediate year of the LLB, in addition to fulfilling course-specific requirements such as assignments and tests, every student must write one essay and one opinion and attend all tutorials (or submit written work at the discretion of the course convener). This non-credit bearing course will ensure compliance with the Intermediate year requirements and also ensure that each student benefits from the skills component of the LLB.",
+  "lecture_times": "Not applicable.",
+  "dp_requirements": "None",
+  "assessment": "No formal assessment. Students are required to submit two written assignments (one essay and one opinion), to attend a library training tutorial, a writing and referencing skills workshop, and to attend all core course tutorials.",
+  "is_law_course": true
+}

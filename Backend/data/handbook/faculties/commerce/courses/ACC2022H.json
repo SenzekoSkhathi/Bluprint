@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "ACC2022H",
+  "title": "Management Accounting I",
+  "department": "accounting",
+  "credits": 18,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "FY",
+  "semester_code": "H",
+  "convener": "J Dean",
+  "prerequisites": {
+    "text": "ACC1006 or equivalent. Registration for a BCom Accounting, BBusSci Finance with Accounting, or BBusSci Finance degree.",
+    "parsed": {
+      "type": "prerequisite",
+      "codes": [
+        "ACC1006F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "An introduction to the discipline of Management Accounting; the analysis of cost systems, cost classification, and cost behaviour; product costing including job costing and process costing; the allocation of costs from service departments; absorption and variable costing; activity based costing; cost-volume-profit relationships, relevant costing and cost benefit analyses; budgeting systems; standard costing and flexible budgeting; financial performance measurement in business segments.",
+  "lecture_times": "Monday - Thursday 13:00 (with a repeat at 14:00) every second week.",
+  "dp_requirements": "Attendance at and submission of a minimum of 75% of tutorials in each semester AND a weighted average of 40% for class tests AND a weighted average of 40% for assignments.",
+  "assessment": "Coursework 50%; Exam 50%. A subminimum of 45% is required for the final exam.",
+  "is_commerce_course": true
+}

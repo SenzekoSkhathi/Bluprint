@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PBL4502F",
+  "title": "Environmental Law",
+  "department": "public-law",
+  "credits": 9,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "A/Prof J Hall",
+  "prerequisites": {
+    "text": "All Preliminary and Intermediate Level courses to have been completed.",
+    "parsed": {
+      "type": "level_completion",
+      "levels_required": [
+        "preliminary",
+        "intermediate"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The course examines the law applicable to selected environmental problems. The following issues are covered: an introduction to environmental problems; the nature of environmental law; land-use management (environmental impact assessment & other tools); and resource conservation (water, marine living resources, biodiversity, protected areas and mineral resources).",
+  "lecture_times": "Two lectures per week.",
+  "dp_requirements": "None",
+  "assessment": "Coursework 40%; Examination 60%.",
+  "is_law_course": true
+}

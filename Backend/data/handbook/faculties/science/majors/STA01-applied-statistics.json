@@ -1,0 +1,189 @@
+{
+  "$schema": "handbook-major-v1",
+  "major_code": "STA01",
+  "major_name": "Applied Statistics",
+  "department": "statistical-sciences",
+  "notes": "Students wishing to progress to Statistics Honours must complete one semester of Computer Science 1.",
+  "mutual_exclusions_with": [
+    "STA02",
+    "STA13"
+  ],
+  "required_companion_majors": [],
+  "has_student_limit": false,
+  "years": [
+    {
+      "year": 1,
+      "label": "First Year Core Courses",
+      "combinations": [
+        {
+          "combination_id": "STA01-Y1-A",
+          "description": "MAM1000W (full year) plus STA1007S",
+          "courses": [
+            {
+              "code": "MAM1000W",
+              "title": "Mathematics 1000 or equivalent",
+              "credits": 36,
+              "nqf_level": 5
+            },
+            {
+              "code": "STA1007S",
+              "title": "Introductory Statistics for Scientists",
+              "credits": 18,
+              "nqf_level": 5
+            }
+          ]
+        },
+        {
+          "combination_id": "STA01-Y1-B",
+          "description": "MAM1031F + MAM1032S plus STA1007S",
+          "courses": [
+            {
+              "code": "MAM1031F",
+              "title": "Mathematics 1031",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "MAM1032S",
+              "title": "Mathematics 1032",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "STA1007S",
+              "title": "Introductory Statistics for Scientists",
+              "credits": 18,
+              "nqf_level": 5
+            }
+          ]
+        },
+        {
+          "combination_id": "STA01-Y1-C",
+          "description": "MAM1000W (full year) plus STA1000F/S",
+          "courses": [
+            {
+              "code": "MAM1000W",
+              "title": "Mathematics 1000 or equivalent",
+              "credits": 36,
+              "nqf_level": 5
+            },
+            {
+              "code": "STA1000F/S/P/L",
+              "title": "Introductory Statistics",
+              "credits": 18,
+              "nqf_level": 5
+            }
+          ]
+        },
+        {
+          "combination_id": "STA01-Y1-D",
+          "description": "MAM1031F + MAM1032S plus STA1000F/S",
+          "courses": [
+            {
+              "code": "MAM1031F",
+              "title": "Mathematics 1031",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "MAM1032S",
+              "title": "Mathematics 1032",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "STA1000F/S/P/L",
+              "title": "Introductory Statistics",
+              "credits": 18,
+              "nqf_level": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "label": "Second Year Core Courses",
+      "combinations": [
+        {
+          "combination_id": "STA01-Y2-A",
+          "description": "STA2007 stream",
+          "courses": [
+            {
+              "code": "STA2007F/S/H",
+              "title": "Study Design & Data Analysis for Scientists",
+              "credits": 24,
+              "nqf_level": 6
+            },
+            {
+              "code": "STA2030S",
+              "title": "Statistical Theory",
+              "credits": 24,
+              "nqf_level": 6
+            }
+          ]
+        },
+        {
+          "combination_id": "STA01-Y2-B",
+          "description": "STA2020 stream",
+          "courses": [
+            {
+              "code": "STA2020F/S",
+              "title": "Applied Statistics",
+              "credits": 24,
+              "nqf_level": 6
+            },
+            {
+              "code": "STA2030S",
+              "title": "Statistical Theory",
+              "credits": 24,
+              "nqf_level": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "label": "Third Year Core Courses",
+      "combinations": [
+        {
+          "combination_id": "STA01-Y3-A",
+          "description": "Statistical Inference & Modelling plus Applied Multivariate Data Analysis",
+          "courses": [
+            {
+              "code": "STA3030F",
+              "title": "Statistical Inference & Modelling",
+              "credits": 36,
+              "nqf_level": 7
+            },
+            {
+              "code": "STA3022F",
+              "title": "Applied Multivariate Data Analysis",
+              "credits": 36,
+              "nqf_level": 7
+            }
+          ]
+        },
+        {
+          "combination_id": "STA01-Y3-B",
+          "description": "Statistical Inference & Modelling plus Operational Research Techniques",
+          "courses": [
+            {
+              "code": "STA3030F",
+              "title": "Statistical Inference & Modelling",
+              "credits": 36,
+              "nqf_level": 7
+            },
+            {
+              "code": "STA3036S",
+              "title": "Operational Research Techniques",
+              "credits": 36,
+              "nqf_level": 7
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

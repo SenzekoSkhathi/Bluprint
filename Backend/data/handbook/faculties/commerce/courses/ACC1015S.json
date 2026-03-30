@@ -1,0 +1,31 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "ACC1015S",
+  "title": "Business Acumen for Accountants",
+  "department": "accounting",
+  "credits": 15,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Associate Professor J Kew and Associate Professor S Herbert",
+  "prerequisites": {
+    "text": "Registration for a BCom Accounting or BBusSci Finance with Accounting degree.",
+    "parsed": {
+      "type": "programme_registration",
+      "programmes": [
+        "BCom Accounting",
+        "BBusSci Finance with Accounting"
+      ]
+    }
+  },
+  "corequisites": [
+    "ACC1006F",
+    "ACC1011S"
+  ],
+  "outline": "This course exposes students to real-life businesses in South Africa. The internal and external business environment are explored, equipping students with the ability to evaluate the role of business in society, understanding different types of entities and understanding how to apply integrated thinking to business decisions.",
+  "lecture_times": "Monday and Friday 11:00 (S course); F course Monday and Friday 10:00.",
+  "dp_requirements": "Participation in group project, 70% attendance at tutorials and 70% submission of weekly hand-ins.",
+  "assessment": "Group assignment 30%; Individual assignments 20%; Final Exam 50%. A subminimum of 45% for the final examination.",
+  "is_commerce_course": true
+}

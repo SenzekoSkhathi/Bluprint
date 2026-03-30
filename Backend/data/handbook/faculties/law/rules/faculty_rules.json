@@ -1,0 +1,70 @@
+{
+  "$schema": "handbook-rules-v1",
+  "faculty": "law",
+  "year": 2026,
+  "rules": {
+    "duration": {
+      "FP1": "Four-year undergraduate LLB: 4 years (5-year stream: 5 years for continuing students only).",
+      "FP2": "Three-year graduate LLB: 3 years.",
+      "FP3": "Two-year graduate LLB: 2 years."
+    },
+    "curriculum_graduate": {
+      "FP4.1": "Graduate LLB stream (LP001): Preliminary, Intermediate, and Final levels as prescribed.",
+      "FP4.2": "Research component and Community Service are compulsory. Research component weighted 36 NQF credits.",
+      "FP4.3": "Final Level electives are 9 NQF credits each.",
+      "FP4.4": "Minimum 36 NQF credits from Final Level electives. Two kinds: lectures-and-examination electives, and seminars-and-research-paper electives.",
+      "FP4.5": "Every Final Level student must do at least one seminars and research paper elective, or an Independent Research Paper of 8000 words instead.",
+      "FP4.6": "Maximum credits for elective courses in Final Level: 54 NQF credits.",
+      "FP4.7": "Intermediate Level students may register for DOL4500F/S Legal Practice if >=65% average in Preliminary Level law courses and admitted by UCT Law Clinic Director."
+    },
+    "curriculum_undergraduate": {
+      "FP5.1": "Four-year undergraduate LLB (LB002) curriculum as prescribed.",
+      "FP5.2": "Candidate must pass a numeracy test prescribed by Senate, OR complete MAM1013F Law That Counts. Candidate may not attempt numeracy test a second time.",
+      "FP5.3": "Curriculum for undergraduate LLB stream includes non-law courses in first and second year from other faculties.",
+      "FP5.3.1": "A candidate who has passed the numeracy test with a score of at least 66% must complete an additional semester course offered in another faculty."
+    },
+    "skills_component": {
+      "FP6.1": "All streams have a skills component at each level. Compulsory.",
+      "FP6.2": "Skills include: writing, computer skills, problem solving, analysis, research, oral presentation.",
+      "FP6.3": "First year emphasis: writing skills, problem solving, reading skills.",
+      "FP6.4": "Second year emphasis: problem solving, analysis including critical analysis, oral presentation.",
+      "FP6.5": "Third year: essay, opinion, attend tutorials.",
+      "FP6.6": "Fourth year: Integrative Assessment Moot (DOL4000H) — capstone."
+    },
+    "progress_graduate": {
+      "FP7.1": "Only one half course outstanding from Preliminary → may proceed to Intermediate. Only one course (or two half courses) outstanding from Intermediate → may proceed to Final. Senate permission required.",
+      "FP7.2": "Failed more than one half course at Preliminary, or more than one course (two half courses) at Intermediate/Final: may not register for full set but may register limited load."
+    },
+    "progress_undergraduate": {
+      "FP8.1": "Only one half course outstanding from first/second year → may proceed. Only one course (two half courses) from third year → may proceed to fourth. Senate permission. Applies to both law and non-law courses.",
+      "FP8.2": "Failed more than one half course in first/second year, or more than one course in third year: limited registration."
+    },
+    "general_progress": {
+      "FP10.1": "Maximum courses per year: (i) 9 half courses at Preliminary, (ii) 12 half courses at Intermediate, (iii) 14 half courses at Final.",
+      "FP10.2": "Notwithstanding FP10.1, students may take Humanities courses in Summer Term."
+    },
+    "readmission": {
+      "FP11.1": "May be refused re-registration if fails: (i) equivalent of 4 half courses at any level, OR (ii) all courses within prescribed time plus one year.",
+      "FP11.2": "Five-year undergraduate: refused if fails equivalent of 3 half courses.",
+      "FP12": "Refused students may appeal to Faculty Readmission Appeal Committee. Decision is final."
+    },
+    "assessment": {
+      "FP13.1": "Failure to write exam = failed course for readmission purposes.",
+      "FP13.2": "Senate may grant permission to write on different day for medical, religious, or political reasons. Application to Dean within 7 days.",
+      "FP14": "Sub-minimum of 45% in every University examination (including research paper component of Final Level electives).",
+      "FP15.1": "Final year students may request oral exam if scored 47%+ overall or 45%+ in final exam. Not for seminars/research paper electives.",
+      "FP15.2": "Minimum 72 hours notice for oral examination.",
+      "FP16.1": "Supplementary exams at Senate discretion if sufficiently high standard in 45-49% range, or if candidate is in final year and able to qualify for graduation."
+    },
+    "deferred_exams": {
+      "FP17.1": "Deferred exams on medical or compassionate grounds.",
+      "FP17.2": "Application within 7 days.",
+      "FP17.3": "Student who becomes ill during exam must proceed to Student Wellness Service.",
+      "FP17.4": "Misreading timetable is not grounds for deferral."
+    },
+    "distinction": {
+      "FP18.1": "Cum laude: (i) complete in minimum time without failing, (ii) average 70% in all law courses at UCT, (iii) First Class pass in at least 6 full law courses.",
+      "FP18.2": "Magna cum laude: (i) complete in minimum time without failing, (ii) average 75% in all law courses at UCT, (iii) First Class pass in at least 9 full law courses."
+    }
+  }
+}

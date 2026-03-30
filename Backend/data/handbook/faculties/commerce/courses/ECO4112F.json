@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "ECO4112F",
+  "title": "Mathematics and Statistics for Economists",
+  "department": "economics",
+  "credits": 16,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr C Makanza",
+  "prerequisites": {
+    "text": "See entrance requirements for Honours in Economics.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course covers the basic tools and applications in order to prepare the student for the study of Macroeconomics, Microeconomics and Econometrics at an intermediate and advanced level. Material covered includes linear algebra, comparative statics, optimisation, integration and differential difference equations.",
+  "lecture_times": "To be announced.",
+  "dp_requirements": "None.",
+  "assessment": "Coursework consisting of 3 tests (15% each); 45%; examination 55%. Students who obtain less than 50% for ECO4112F will not be allowed to continue with the programme.",
+  "is_commerce_course": true
+}

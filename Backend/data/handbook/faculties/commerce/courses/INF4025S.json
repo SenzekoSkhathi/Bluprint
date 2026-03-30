@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "INF4025S",
+  "title": "Information Systems Management",
+  "department": "information-systems",
+  "credits": 20,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Professor M Tanner",
+  "prerequisites": {
+    "text": "Students should meet the entrance requirements to the 4th year BBusSci or IS Honours programme.",
+    "parsed": {
+      "type": "programme_registration",
+      "programmes": [
+        "BBusSci 4th year",
+        "IS Honours"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The course covers IS Management topics, which are selected based on current research from academia and industry. Students are required to research a topic, and firstly produce a seminar paper in collaboration with an academic. Once the seminar paper has been approved by the academic, students have to develop and present a seminar on the topic, and facilitate a question and answer session. Guests from industry are often invited to present their experience on the topic after the students.",
+  "lecture_times": "Monday and Thursday, 6th & 7th period.",
+  "dp_requirements": "75% attendance and participation in seminars, a minimum of 50% for seminar management, and a sub-minimum of 45% in the final examination.",
+  "assessment": "Seminar and classwork deliverables 60%; Final Assessment 40%.",
+  "is_commerce_course": true
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PBL4604F",
+  "title": "Social Justice and the Constitution",
+  "department": "public-law",
+  "credits": 9,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Prof P de Vos",
+  "prerequisites": {
+    "text": "All Preliminary and Intermediate Level courses to have been completed. Limited to 25 students.",
+    "parsed": {
+      "type": "level_completion",
+      "levels_required": [
+        "preliminary",
+        "intermediate"
+      ],
+      "note": "Limited to 25 students"
+    }
+  },
+  "corequisites": [],
+  "outline": "The course is intended to give students an opportunity to engage with a number of discrete constitutional law problems in more detail than is possible in the general introductory Constitutional Law course offered in the preliminary year. The course is aimed at providing a space for contestation, critical discussion and reflection on important constitutional law issues and the manner in which lawyers, judges and legal academics engage with such issues against a broader socio-political background. Aiming to go beyond a black letter law discussion of constitutional law principles and legal precedent (but not ignoring such principles and precedent), the course encourages students to ask questions about the nature of constitutional adjudication; the interaction between law, politics and values; and the various ways in which social and political issues should be dealt with from a constitutional perspective.",
+  "lecture_times": "Two lectures per week. Limited to 25 students.",
+  "dp_requirements": "None",
+  "assessment": "Presentations by individual students in seminars 25%; End of semester essay 75%.",
+  "is_law_course": true
+}

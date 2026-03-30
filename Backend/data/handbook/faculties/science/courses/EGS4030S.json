@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EGS4030S",
+  "title": "Climate Modelling",
+  "department": "environmental-geographical-science",
+  "credits": 30,
+  "nqf_level": 8,
+  "year_level": "Postgraduate – Honours elective",
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr S Conradie",
+  "prerequisites": {
+    "text": "EGS4023F and EGS3012S or equivalent; OR at the discretion of the HoD.",
+    "parsed": {
+      "type": "complex",
+      "codes_mentioned": [
+        "EGS4023F",
+        "EGS3012S"
+      ],
+      "note": "Complex prerequisite logic - see text"
+    }
+  },
+  "corequisites": [],
+  "outline": "The course provides an introduction to the fundamental elements of climate models and to the application of operational climate models and climate impact models to real-world questions, with applications focussed on the southern African context. Classes are held in the EGS computer lab, primarily using Python on Linux. Basic climate models — energy balance and advection-diffusion models — are developed from conceptual models to numerical implementation run on desktops.",
+  "lecture_times": null,
+  "dp_requirements": "At least 80% attendance record and submission of all assignments.",
+  "assessment": "100% Coursework.",
+  "is_science_course": true
+}

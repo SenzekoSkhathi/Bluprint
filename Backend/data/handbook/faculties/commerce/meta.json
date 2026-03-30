@@ -1,0 +1,251 @@
+{
+  "$schema": "handbook-meta-v1",
+  "university": "University of Cape Town",
+  "faculty": "Faculty of Commerce",
+  "faculty_slug": "commerce",
+  "year": 2026,
+  "handbook_title": "Faculty of Commerce Undergraduate Studies",
+  "handbook_series": "Book 6a in the series of handbooks",
+  "contact": {
+    "postal_address": "University of Cape Town, Private Bag X3, 7701 Rondebosch",
+    "deans_office": "Room LC 2.26, Leslie Commerce Building, Upper Campus",
+    "office_hours": "Monday to Friday: 08h30 - 16h30",
+    "telephones": {
+      "deans_office": "(021) 650-2256",
+      "faculty_office": "(021) 650-4375",
+      "accounts_and_fees": "(021) 650-1704/4076",
+      "admissions": "(021) 650-2128"
+    },
+    "websites": {
+      "uct": "https://www.uct.ac.za",
+      "commerce_faculty": "http://www.commerce.uct.ac.za",
+      "dean_email": "dean.commerce@uct.ac.za",
+      "faculty_email": "com-faculty@uct.ac.za"
+    }
+  },
+  "qualifications": {
+    "undergraduate_degrees": [
+      {
+        "name": "Bachelor of Business Science",
+        "abbreviation": "BBusSci",
+        "saqa_id": 116396,
+        "nqf_level": 8,
+        "minimum_duration_years": 4,
+        "minimum_credits": 528,
+        "nqf_level_8_credits": 120,
+        "description": "Professional undergraduate degree, not an Honours degree"
+      },
+      {
+        "name": "Bachelor of Business Science in Actuarial Science",
+        "abbreviation": "BBusSci (Actuarial Science)",
+        "saqa_id": 4411,
+        "nqf_level": 8,
+        "minimum_duration_years": 4,
+        "minimum_credits": 528,
+        "nqf_level_8_credits": 120
+      },
+      {
+        "name": "Bachelor of Commerce in Actuarial Science",
+        "abbreviation": "BCom (Actuarial Science)",
+        "saqa_id": 101993,
+        "nqf_level": 7,
+        "minimum_duration_years": 3,
+        "minimum_credits": 440,
+        "nqf_level_7_credits": 120
+      },
+      {
+        "name": "Bachelor of Commerce",
+        "abbreviation": "BCom",
+        "saqa_id": 116431,
+        "nqf_level": 7,
+        "minimum_duration_years": 3,
+        "minimum_credits": 440,
+        "nqf_level_7_credits": 120
+      }
+    ],
+    "advanced_diplomas": [
+      {
+        "name": "Advanced Diploma in Actuarial Science",
+        "abbreviation": "AdvDip (Actuarial Science)",
+        "saqa_id": 99629,
+        "minimum_duration_years": 1
+      },
+      {
+        "name": "Advanced Diploma in Management Development",
+        "abbreviation": "AdvDip (Management Development)",
+        "saqa_id": 101556,
+        "minimum_duration_years": 1
+      },
+      {
+        "name": "Advanced Diploma in Accounting",
+        "abbreviation": "AdvDip (Accounting)",
+        "saqa_id": 94786,
+        "minimum_duration_years": 1
+      }
+    ]
+  },
+  "course_code_system": {
+    "description": "The code structure is uniform: AAA1nnnS, where AAA is the department prefix, 1 is the year level, nnn is the course number, and S is the semester suffix.",
+    "handbook_page": 12,
+    "suffix_codes": {
+      "F": {
+        "meaning": "First-semester course",
+        "semester": "S1",
+        "registration": "beginning_of_year",
+        "duration": "semester_1_only"
+      },
+      "S": {
+        "meaning": "Second-semester course",
+        "semester": "S2",
+        "registration": "mid_year",
+        "duration": "semester_2_only"
+      },
+      "W": {
+        "meaning": "Whole-year course",
+        "semester": "FY",
+        "registration": "beginning_of_year",
+        "duration": "full_year"
+      },
+      "H": {
+        "meaning": "Half-course taught throughout the year",
+        "semester": "FY",
+        "registration": "beginning_of_year",
+        "duration": "full_year"
+      },
+      "Z": {
+        "meaning": "Non-standard period",
+        "semester": "varies",
+        "registration": "varies",
+        "duration": "varies"
+      },
+      "Q": {
+        "meaning": "Online first-semester course",
+        "semester": "S1",
+        "registration": "beginning_of_year",
+        "duration": "semester_1_only",
+        "note": "Online delivery format"
+      },
+      "R": {
+        "meaning": "Online second-semester course",
+        "semester": "S2",
+        "registration": "mid_year",
+        "duration": "semester_2_only",
+        "note": "Online delivery format"
+      },
+      "P": {
+        "meaning": "Summer term course (November - December)",
+        "semester": "summer",
+        "registration": "end_of_year",
+        "duration": "nov_dec"
+      },
+      "U": {
+        "meaning": "Summer term course (November - January)",
+        "semester": "summer",
+        "registration": "end_of_year",
+        "duration": "nov_jan"
+      },
+      "L": {
+        "meaning": "Winter term course (June - July)",
+        "semester": "winter",
+        "registration": "mid_year",
+        "duration": "jun_jul"
+      }
+    },
+    "code_structure": {
+      "example": {
+        "code": "ACC1006F",
+        "breakdown": {
+          "ACC": "Department prefix — Accounting",
+          "1": "Year level — first year",
+          "006": "Course number — distinguishes from other first-year Accounting courses",
+          "F": "Suffix — first-semester course"
+        }
+      }
+    }
+  },
+  "nqf_course_levels": {
+    "5": "Entry-level of an undergraduate degree",
+    "6": "Intermediate level of an undergraduate degree",
+    "7": "Exit level for a general 3-year bachelor's degree (BCom)",
+    "8": "Exit level for a professional 4-year degree (BBusSci)"
+  },
+  "gpa_rules": {
+    "bbusc_bcom": {
+      "includes": "All courses required for the degree as stipulated in the handbook",
+      "excludes": "Additional courses not required for the degree",
+      "first_attempt_only": true,
+      "ab_fail_dpr_inc": "Count towards GPA with 0%",
+      "equivalents": "Count towards GPA — if original failed and equivalent passed, original mark counts towards GPA but equivalent credits count towards degree"
+    },
+    "bcom_management_studies": {
+      "core_courses": 18,
+      "first_attempt_counts": true,
+      "failed_elective_replaced": "Initial mark excluded from GPA"
+    }
+  },
+  "departments": [
+    "College of Accounting",
+    "School of Economics",
+    "Finance and Tax",
+    "Education Development Unit: Academic Development",
+    "Department of Information Systems",
+    "School of Management Studies",
+    "Nelson Mandela School of Public Governance",
+    "Graduate School of Business"
+  ],
+  "department_prefixes": [
+    "ACC", "BUS", "DOC", "ECO", "FTX", "GPP", "GSB", "INF"
+  ],
+  "cross_faculty_departments": [
+    {
+      "department": "Department of Computer Science",
+      "prefix": "CSC",
+      "home_faculty": "science"
+    },
+    {
+      "department": "Department of Environmental and Geographical Science",
+      "prefix": "EGS",
+      "home_faculty": "science"
+    },
+    {
+      "department": "Department of Mathematics and Applied Mathematics",
+      "prefix": "MAM",
+      "home_faculty": "science"
+    },
+    {
+      "department": "Department of Statistical Sciences",
+      "prefix": "STA",
+      "home_faculty": "science"
+    },
+    {
+      "department": "Department of Commercial Law",
+      "prefix": "CML",
+      "home_faculty": "law"
+    },
+    {
+      "department": "Department of Private Law",
+      "prefix": "PVL",
+      "home_faculty": "law"
+    },
+    {
+      "department": "Department of Public Law",
+      "prefix": "PBL",
+      "home_faculty": "law"
+    },
+    {
+      "department": "Department of Philosophy",
+      "prefix": "PHI",
+      "home_faculty": "humanities"
+    },
+    {
+      "department": "Department of Political Studies",
+      "prefix": "POL",
+      "home_faculty": "humanities"
+    },
+    {
+      "department": "Department of Psychology",
+      "prefix": "PSY",
+      "home_faculty": "humanities"
+    }
+  ]
+}

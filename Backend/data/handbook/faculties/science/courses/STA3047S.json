@@ -1,0 +1,35 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "STA3047S",
+  "title": "Introduction to Machine Learning",
+  "department": "statistical-sciences",
+  "credits": 6,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr E Pienaar",
+  "prerequisites": {
+    "text": "STA2004F, STA2005S and (MAM2010F, MAM2011F, MAM2012S and MAM2014S) strongly recommended. Co-requisites: STA3048S. Note: A student cannot obtain credits for both STA3043S and (STA3047S + STA3048S).",
+    "parsed": {
+      "type": "and",
+      "codes": [
+        "STA2004F",
+        "STA2005S",
+        "MAM2010F",
+        "MAM2011F",
+        "MAM2012S",
+        "MAM2014S",
+        "STA3048S",
+        "STA3043S",
+        "STA3047S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "Machine learning topics include: a basic introduction to statistical learning paradigms, applications of regression and classification trees, and a primer on feedforward neural networks and backpropagation.",
+  "lecture_times": "Monday - Friday, 1st period (see departmental entry). Two practicals per week.",
+  "dp_requirements": "Satisfactory attendance of lectures, tutorials, practicals and tests and completion of assignments and/or class exercises as set out in course outline.",
+  "assessment": "A computer based exam.",
+  "is_science_course": true
+}

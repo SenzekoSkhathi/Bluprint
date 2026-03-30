@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MCB2022S",
+  "title": "Metabolism & Bioengineering",
+  "department": "molecular-cell-biology",
+  "credits": 24,
+  "nqf_level": 6,
+  "year_level": "Second Year",
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr M Williams",
+  "prerequisites": {
+    "text": "MCB2020F and MCB2021F.",
+    "parsed": {
+      "type": "and",
+      "codes": [
+        "MCB2020F",
+        "MCB2021F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course introduces key aspects of metabolic energy production in eukaryotic and prokaryotic systems. It aims to raise awareness of issues at the forefront of the discipline and give students the ability to dissect problems to identify solutions. Topics covered may include carbohydrate and lipid metabolism, metabolic integration, the metabolic diversity in Bacteria and Archaea, and bioengineering in bacteria and plants.",
+  "lecture_times": "Monday - Friday, 5th period.",
+  "dp_requirements": "50% average for assignments and practical reports; attendance at all practicals and tutorials.",
+  "assessment": "Tests and assignments count 40%; practicals count 10%; one 3-hour paper written in November counts 50%. A sub-minimum of 40% in the examination is required.",
+  "is_science_course": true
+}

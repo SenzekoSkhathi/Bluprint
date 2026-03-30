@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MAM4111W",
+  "title": "Applied Mathematics Honours (Extended2)",
+  "department": "mathematics-applied-mathematics",
+  "credits": 40,
+  "nqf_level": 8,
+  "year_level": "Postgraduate – Honours (Extended, Year 2 of 2)",
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Dr F Ebobisse-Bille",
+  "prerequisites": {
+    "text": "A pass in MAM4101W.",
+    "parsed": {
+      "type": "and",
+      "codes": [
+        "MAM4101W"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course, together with MAM4101W and MAM4016W, covers the content of MAM4001W over two years. Students do two modules in the first semester and the project (MAM4016W) in the second semester (total 80 credits including MAM4016W).",
+  "lecture_times": null,
+  "dp_requirements": null,
+  "assessment": "As per MAM4001W.",
+  "is_science_course": true
+}

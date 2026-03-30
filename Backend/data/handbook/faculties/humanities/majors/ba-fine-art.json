@@ -1,0 +1,67 @@
+{
+  "id": "ba-fine-art",
+  "programme_code": "HB008",
+  "name": "Bachelor of Arts in Fine Art",
+  "abbreviation": "BA(Fine Art)",
+  "nqf_level": 8,
+  "department": "Michaelis School of Fine Art",
+  "duration_years": 4,
+  "minimum_credits": 619,
+  "curriculum": {
+    "year_1": {
+      "core": [
+        "FIN1001W",
+        "FIN1005W",
+        "FIN1006F",
+        "FIN1009S"
+      ],
+      "credits": 153,
+      "note": "Plus 1 humanities elective"
+    },
+    "year_2": {
+      "core": [
+        "FIN2026W",
+        "FIN2027F",
+        "FIN2028S"
+      ],
+      "studiowork_choices": [
+        "FIN2011W",
+        "FIN2012W",
+        "FIN2013W",
+        "FIN2014W",
+        "FIN2015W",
+        "FIN2016W",
+        "FIN2025W"
+      ],
+      "studiowork_required": 2,
+      "credits_range": "154-164",
+      "note": "Choose 2 studiowork courses; plus 2 humanities electives. FIN2029F alternative to FIN2027F."
+    },
+    "year_3": {
+      "core": [
+        "FIN3030W",
+        "FIN3026F",
+        "FIN3027S"
+      ],
+      "studiowork_choices": [
+        "FIN3011W",
+        "FIN3012W",
+        "FIN3013W",
+        "FIN3014W",
+        "FIN3015W",
+        "FIN3016W",
+        "FIN3025W"
+      ],
+      "studiowork_required": 1,
+      "credits": 156,
+      "note": "Choose 1 studiowork course; plus humanities electives. FIN3028F/FIN3029S alternatives."
+    },
+    "year_4": {
+      "core": [
+        "FIN4015W",
+        "FIN4012W"
+      ],
+      "credits": 156
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "POL1005S",
+  "title": "Introduction to Politics II",
+  "department": "political-studies",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Associate Professor Z Jolobe",
+  "prerequisites": {
+    "text": "DP for POL1004F or with special permission from the Head of Department.",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "POL1004F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course is an introduction to two related fields of Political Studies – Comparative Politics and International Relations. Comparative Politics involves the use of comparative approaches to study political institutions and processes within states. Inter national Relations examines power relations across state borders. The course provides an introduction to the systematic study of both fields, with an emphasis on some of the leading theories and questions.",
+  "lecture_times": "Monday to Thursday 7th period.",
+  "dp_requirements": "Tutorial attendance is compulsory and students who attend fewer than 85% of the tutorials will not be allowed to write the final examination. In addition, completion of all written assignments, essays and tests are a requirement for a DP. Should students f ail to hand in written assignments by due date, they will be penalised according to the grading formula of the Department. All required work for DP purposes MUST be submitted by the last day of the course.",
+  "assessment": "Coursework counts 50%; final two-hour examination counts 50%.",
+  "is_humanities_course": true
+}

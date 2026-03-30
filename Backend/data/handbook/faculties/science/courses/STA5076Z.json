@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "STA5076Z",
+  "title": "Supervised Learning",
+  "department": "statistical-sciences",
+  "credits": 18,
+  "nqf_level": 9,
+  "year_level": "Postgraduate (Master's)",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "Dr S Er",
+  "prerequisites": {
+    "text": "Acceptance into the Master's program in Data Science or Statistics and Data Science, and/or statistical background deemed sufficient by Head of Department.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "Supervised learning covers statistical modelling tools for predicting or estimating relationships between predictor and target variables in complex data sets. This course covers: the bias-variance trade-off; regularisation; variable selection procedures; model evaluation and comparison. Modelling techniques include linear and non-linear regression; logistic regression; classification and regression trees; ensemble techniques like random forests and gradient boosting. The course also introduces Support Vector Machines, Neural Networks, and Deep Learning principles, with practical application in R.",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "None.",
+  "assessment": "Six quizzes (25%) and a take-home exam on each of three sections (75%).",
+  "is_science_course": true
+}

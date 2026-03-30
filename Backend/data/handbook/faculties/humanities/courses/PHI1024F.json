@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PHI1024F",
+  "title": "Critical Thinking and Reasoning",
+  "department": "philosophy",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Professor R Nefdt",
+  "prerequisites": {
+    "text": "None",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course is an introduction to philosophy that aims to make students more conscious, creative and critical in thinking about their own fundamental beliefs and values. Fundamental issues investigated include: the nature and possibility of knowledge, self -knowledge, the relationship between the mind and the body, the knowledge of other minds, whether we have free will, and whether life has a meaning. These issues are explored with the help of classical and contemporary philosophers, including Plato, Aristotle, Aquinas, Descartes, Hume, Biko, Appiah, Menkiti, Haslanger and others. As an introductory course, we use content that engages the diversity of students' lifeworlds and is cognizant of our African location. We employ innovative teaching and delivery me thods that allow more time for active engagement and the development of critical reading and writing skills in the Humanities.",
+  "lecture_times": "Monday, Tuesday, Wednesday 5th period.",
+  "dp_requirements": "Regular attendance at lectures and tutorials; completion of all tests, submission of all essays and assignments by due dates, and an average mark of at least 35% for the coursework.",
+  "assessment": "Coursework counts 40%; one 3-hour examination in June counts 60%.",
+  "is_humanities_course": true
+}

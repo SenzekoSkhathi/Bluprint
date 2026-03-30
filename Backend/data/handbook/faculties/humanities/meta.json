@@ -1,0 +1,262 @@
+{
+  "$schema": "handbook-meta-v1",
+  "university": "University of Cape Town",
+  "faculty": "Faculty of Humanities",
+  "faculty_slug": "humanities",
+  "year": 2026,
+  "handbook_title": "Faculty of Humanities Undergraduate Studies",
+  "handbook_series": "Book 5 in the series of handbooks",
+  "contact": {
+    "postal_address": "University of Cape Town, Private Bag X3, 7701 Rondebosch",
+    "deans_office": "Beattie Building, Upper Campus",
+    "office_hours": "Monday to Friday: 08h30 - 16h30",
+    "telephones": {
+      "deans_office": "(021) 650-2712",
+      "faculty_office": "(021) 650-2712",
+      "accounts_and_fees": "(021) 650-1704",
+      "admissions": "(021) 650-2128"
+    },
+    "websites": {
+      "uct": "http://www.uct.ac.za",
+      "humanities_faculty": "http://www.humanities.uct.ac.za",
+      "dean_email": "humanities@uct.ac.za"
+    }
+  },
+  "qualifications": {
+    "undergraduate_degrees": [
+      {
+        "name": "Bachelor of Arts",
+        "abbreviation": "BA",
+        "nqf_level": 7,
+        "minimum_duration_years": 3,
+        "minimum_credits": 384,
+        "note": "General BA with choice of majors from Humanities departments"
+      },
+      {
+        "name": "Bachelor of Social Science",
+        "abbreviation": "BSocSc",
+        "nqf_level": 7,
+        "minimum_duration_years": 3,
+        "minimum_credits": 384,
+        "note": "Social science focus — majors in Psychology, Sociology, Politics, Economics etc."
+      },
+      {
+        "name": "Bachelor of Social Science in Philosophy, Politics and Economics",
+        "abbreviation": "BSocSc(PPE)",
+        "programme_code": "HB027",
+        "nqf_level": 7,
+        "minimum_duration_years": 3,
+        "minimum_credits": 413
+      },
+      {
+        "name": "Bachelor of Arts in Fine Art",
+        "abbreviation": "BA(Fine Art)",
+        "programme_code": "HB008",
+        "nqf_level": 8,
+        "minimum_duration_years": 4,
+        "minimum_credits": 619,
+        "note": "Professional 4-year degree, HEQSF exit level 8"
+      },
+      {
+        "name": "Bachelor of Arts in Theatre and Performance",
+        "abbreviation": "BA(T&P)",
+        "programme_code": "HB014",
+        "nqf_level": 8,
+        "minimum_duration_years": 4,
+        "note": "5 specialisations: Acting, Dance, Performance Making, Applied Performance/Pedagogy, Scenography"
+      },
+      {
+        "name": "Bachelor of Music",
+        "abbreviation": "BMus",
+        "programme_code": "HB010",
+        "nqf_level": 8,
+        "minimum_duration_years": 4,
+        "note": "7 streams: General, African Music Performance, Classical Performance, Jazz Studies, Opera, Classical Composition, Music Technology"
+      },
+      {
+        "name": "Bachelor of Social Work",
+        "abbreviation": "BSW",
+        "programme_code": "HB063",
+        "nqf_level": 8,
+        "minimum_duration_years": 4,
+        "minimum_credits": 480,
+        "professional_registration": "South African Council for Social Service Professions (SACSSP)"
+      }
+    ],
+    "diplomas": [
+      {
+        "name": "Diploma in Musical Performance",
+        "abbreviation": "DMP",
+        "programme_code": "HU021",
+        "nqf_level": 6,
+        "minimum_duration_years": 3,
+        "note": "5 streams: World Music, African Music, Classical, Jazz Studies, Opera"
+      },
+      {
+        "name": "Diploma in Theatre and Performance",
+        "programme_code": "HU020",
+        "nqf_level": 6,
+        "minimum_duration_years": 3
+      },
+      {
+        "name": "Advanced Diploma in Theatre",
+        "programme_code": "HU050",
+        "nqf_level": 7,
+        "minimum_duration_years": 1,
+        "note": "Not offered in 2026"
+      }
+    ],
+    "extended_programmes": [
+      {
+        "name": "BA Extended",
+        "programme_code": "HB046",
+        "duration_years": 4,
+        "note": "4-year version of BA with additional academic development support in year 1"
+      },
+      {
+        "name": "BSocSc Extended",
+        "programme_code": "HB047",
+        "duration_years": 4,
+        "note": "4-year version of BSocSc with academic development support"
+      },
+      {
+        "name": "BA(Fine Art) Extended",
+        "programme_code": "HB064",
+        "duration_years": 5,
+        "minimum_credits": 672,
+        "note": "5-year version of BA(Fine Art)"
+      },
+      {
+        "name": "BMus Extended",
+        "programme_code": "HB034",
+        "duration_years": 5,
+        "note": "5-year versions of all 7 BMus streams. Continuing students only, no new intake 2026."
+      },
+      {
+        "name": "DMP Extended",
+        "programme_code": "HU034",
+        "duration_years": 4,
+        "note": "4-year version of DMP. Continuing students only."
+      }
+    ]
+  },
+  "course_code_system": {
+    "description": "Eight character code AAAnnnnB: AAA=department, nnnn=year level+number, B=suffix.",
+    "suffix_codes": {
+      "F": {
+        "meaning": "First-semester course",
+        "semester": "S1"
+      },
+      "S": {
+        "meaning": "Second-semester course",
+        "semester": "S2"
+      },
+      "W": {
+        "meaning": "Whole-year course",
+        "semester": "FY"
+      },
+      "H": {
+        "meaning": "Half course taught over whole year",
+        "semester": "FY"
+      },
+      "X": {
+        "meaning": "Not classified",
+        "semester": "varies"
+      },
+      "Z": {
+        "meaning": "Other",
+        "semester": "varies"
+      }
+    }
+  },
+  "departments": [
+    "Academic Development Programme",
+    "African Languages and Literatures",
+    "Archaeology",
+    "Centre for African Studies",
+    "Centre for Film and Media Studies",
+    "Centre for Rhetoric Studies",
+    "Drama (Theatre and Performance)",
+    "English Language and Literature",
+    "Environmental and Geographical Science",
+    "Fine Art (Michaelis School of Fine Art)",
+    "Gender Studies",
+    "Historical Studies",
+    "Knowledge and Information Stewardship",
+    "Linguistics",
+    "Modern and Classical Languages",
+    "Music (South African College of Music)",
+    "Philosophy",
+    "Political Studies",
+    "Psychology",
+    "Religious Studies",
+    "Social Development (Social Work)",
+    "Sociology"
+  ],
+  "department_prefixes": [
+    "DOH",
+    "ASL",
+    "AXL",
+    "AFR",
+    "FAM",
+    "RHT",
+    "TDP",
+    "ELL",
+    "EGS",
+    "FIN",
+    "GND",
+    "HST",
+    "LIS",
+    "LIN",
+    "MCL",
+    "MUZ",
+    "PHI",
+    "POL",
+    "PSY",
+    "REL",
+    "SWK",
+    "SOC"
+  ],
+  "cross_faculty_departments": [
+    {
+      "department": "Economics",
+      "prefix": "ECO",
+      "home_faculty": "commerce"
+    },
+    {
+      "department": "Mathematics & Applied Mathematics",
+      "prefix": "MAM",
+      "home_faculty": "science"
+    },
+    {
+      "department": "Statistical Sciences",
+      "prefix": "STA",
+      "home_faculty": "science"
+    },
+    {
+      "department": "Computer Science",
+      "prefix": "CSC",
+      "home_faculty": "science"
+    },
+    {
+      "department": "Management Studies",
+      "prefix": "BUS",
+      "home_faculty": "commerce"
+    },
+    {
+      "department": "Commercial Law",
+      "prefix": "CML",
+      "home_faculty": "law"
+    },
+    {
+      "department": "Public Law",
+      "prefix": "PBL",
+      "home_faculty": "law"
+    },
+    {
+      "department": "Private Law",
+      "prefix": "PVL",
+      "home_faculty": "law"
+    }
+  ]
+}

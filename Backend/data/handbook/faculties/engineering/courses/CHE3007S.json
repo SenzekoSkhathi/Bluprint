@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CHE3007S",
+  "title": "Data Science, System Dynamics and Process Control",
+  "department": "chemical-engineering",
+  "credits": 24,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr RK Abrahams",
+  "prerequisites": {
+    "text": "CHE2005W, MAM2083F/S, MAM2084F/S",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "CHE2005W",
+        "MAM2083F",
+        "MAM2084F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to further develop the understanding of chemical engineering theory and practice. The theory blocks covered are: (1) Dynamic Systems - the study of the influence of time on the operation and start-up of process units and the development of criteria for their stable and safe operation. (2) Data Science - the examination of scientific and engineering data through the application of scientific methodologies and computational instruments, with the objective of extracting valuable information that can enhance operational processes, safety measures, and product quality. (3) Control Systems - the study of the dynamic responses of equipment and how to develop control systems that manipulate process variables automatically to ensure safe and stable operation and to improve the quality of the product and yield the most economic operation. The practice is reinforced and contextualised via a: Control practical - designed to provide deeper insight into the theoretical concepts studied and develop hands-on practical skills. The practical is integrated with the engineering practice tools, in particular professional communication. Dynamics/data science/control project - an application of the theory, concepts and criteria developed to study and design a control system using the engineering practice tools, in particular computing and professional communication.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

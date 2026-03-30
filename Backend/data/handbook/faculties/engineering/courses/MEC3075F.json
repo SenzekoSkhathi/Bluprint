@@ -1,0 +1,32 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MEC3075F",
+  "title": "Computer Methods for Mechanical Engineers",
+  "department": "mechanical-engineering",
+  "credits": 12,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Mr EB Ismail",
+  "prerequisites": {
+    "text": "CSC1019F or CSC1017F or CSC1015F/S or CSC1010H",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "CSC1019F",
+        "CSC1017F",
+        "CSC1015F",
+        "CSC1010H"
+      ]
+    }
+  },
+  "corequisites": [
+    "MAM2084F"
+  ],
+  "outline": "DEPARTMENTS IN THE FACULTY AND COURSES OFFERED 151 This course aims to teach students how to design and use computational techniques for the analysis of problems in Mechanical Engineering. The course covers design of spreadsheets, creation of automation scripts in Python, how to select an appropriate numerical method, implementation of basic numerical methods, using numerical methods libaries (NumPy), and testing and debugging of computer code. These broad topics are investigated through application to specific engineering science problems from across Mechanical Engineering. Topics include: basic computer architecture, number systems and computation, propagation of numerical error, text file manipulation, Newton's method for single and multivariate problems, LU factorisation and iterative solution of linear algebra systems, numerical differentiation, numerical integration using the trapezoidal rule and Gauss quadrature, solution of linear ordinary differential equations (Euler, Central Differnece, Newmark methods).",
+  "lecture_times": "3 lectures per week.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

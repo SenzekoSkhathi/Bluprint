@@ -89,3 +89,67 @@ To connect the Expo frontend, set `EXPO_PUBLIC_BACKEND_URL` in the app environme
   : Body `{ "query": "...", "top_k": 5, "run_id": "optional" }`
 
 If `run_id` is omitted, the backend automatically uses the latest index manifest in `data/index`.
+
+## Phase 2 Validation (Deterministic Handbook Core)
+
+The backend now supports deterministic plan validation directly from structured handbook JSON files under `data/handbook/faculties/*`.
+
+### Primary endpoints
+
+- `GET /rules/handbook/faculties`
+  : Returns detected faculty datasets and counts.
+
+- `POST /rules/handbook/validate-plan`
+  : Validates a plan using structured handbook data (faculty-aware, deterministic).
+
+Request body example:
+
+```json
+{
+  "target_faculty": "science",
+  "selected_majors": ["Computer Science"],
+  "planned_courses": [
+    {
+      "code": "CSC1015F",
+      "year": "Year 1",
+      "semester": "Semester 1",
+      "credits": 24
+    }
+  ]
+}
+```
+
+### Backward compatibility
+
+- `POST /rules/science/validate-plan` remains available.
+- Science validation now merges deterministic handbook-core issues into the legacy science rules response.
+
+### Validation source-of-truth
+
+- `src/handbook_store.py`: deterministic handbook data access layer.
+- `src/handbook_validator.py`: deterministic faculty-aware validator.
+
+## Phase 2 Pre-flight Checks (Before Phase 3)
+
+- Run backend tests:
+
+```bash
+python -m unittest discover -s tests -p "test_*.py"
+```
+
+- Run handbook integrity audit:
+
+```bash
+python scripts/audit_handbook_integrity.py
+```
+
+Audit output:
+
+- `data/audits/handbook_integrity_report.json`
+
+The audit checks:
+
+- missing course references in major/programme JSON
+- missing equivalence targets
+- suffix/semester consistency (`F`, `S`, `W`)
+- malformed JSON files

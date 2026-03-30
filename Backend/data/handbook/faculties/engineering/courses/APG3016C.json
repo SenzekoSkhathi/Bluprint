@@ -1,0 +1,30 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "APG3016C",
+  "title": "Surveying II",
+  "department": "architecture-planning-geomatics",
+  "credits": 12,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "Q3",
+  "semester_code": "C",
+  "convener": "Professor J Whittal",
+  "prerequisites": {
+    "text": "APG1016H; for BSc Geomatics students APG2016W or (APG2040F and APG2041S) are also prerequisites.",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "APG1016H",
+        "APG2016W",
+        "APG2040F",
+        "APG2041S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "Course Aims: To provide insight into the origins of the surveying discipline. To introduce some specialised instruments and methods used currently. To equip the student with a theoretical and working knowledge of satellite positioning methods. To further e quip the student with group work, technical report writing, research, oral presentation, and problem solving skills, and to encourage critical enquiry. Course Content: The history of surveying in southern Africa is self -taught through reading and assessed by essay. Some additional surveying instrumentation/methods not mentioned in pre-requisite courses are introduced. Surveying with the global navigation satellite systems is covered in detail and consists of 80% of the course.",
+  "lecture_times": "Third or fourth quarter. 4th period Mon-Fri. Assignments: one per week, Wed 14h00- 17h00",
+  "dp_requirements": "Attendance at and completion of all assignments with a minimum average of 50%, a minimum class test average of 35%.",
+  "assessment": "Tests count 20%, practical assignments count 20%, examination of 1 ½ hours counts 60% (sub-minimum 40%).",
+  "is_engineering_course": true
+}

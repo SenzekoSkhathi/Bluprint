@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "STA5067Z",
+  "title": "Longitudinal Data Analysis",
+  "department": "statistical-sciences",
+  "credits": 15,
+  "nqf_level": 9,
+  "year_level": "Postgraduate (Master's)",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "Professor F Gumedze",
+  "prerequisites": {
+    "text": "Acceptance into Master's programs in Statistics & Data Science, Data Science or Biostatistics, and/or statistical background deemed sufficient by the Head of Department.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "This course covers advanced methods for the analysis of longitudinal data, including linear mixed effect models, generalized estimating equations, generalized linear mixed effect models, nonlinear mixed effect models, smoothing spline models, imputation methods for missing data and causal models. Both the underlying theory and the application of these models using appropriate statistical software are covered.",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "40% for the assignment component.",
+  "assessment": "Assignments 50%. Written exam 50%. Sub-minimum of 40% in each of assignment and examination component.",
+  "is_science_course": true
+}

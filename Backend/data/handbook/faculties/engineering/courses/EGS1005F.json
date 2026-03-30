@@ -1,0 +1,33 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EGS1005F",
+  "title": "Introduction to Environmental Science",
+  "department": "environmental-and-geographical-science",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr J von Holdt",
+  "prerequisites": {
+    "text": "At least 50% for NSC Geography or GEO1009F. For Humanities students: At least 50% for NSC Geography",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "GEO1009F"
+      ]
+    }
+  },
+  "corequisites": [
+    "CIV4041F",
+    "CIV4042F",
+    "CIV4045F",
+    "CIV4046F"
+  ],
+  "outline": "Sustainability is one of the most important concepts to date and is critical to address the challenges we face in the Anthropocene. Challenges such as climate change, biodiversity loss, resource depletion, pollution and social inequity can only be addresse d by adopting transformative changes in policies, behaviours and systems that foster sustainability. This course will explore the critical role engineers play in society and the impact of their activities on the social, industrial (workplace) and physical environment. We will explore a range of relevant topics, including key concepts of and the rationale for sustainability (which remains a contested concept with many potential definitions), basic climate science and the implications of climate change, mitigating pollution (water/air/soil), sustainable urban practice, assessing risk and managing impacts, and environmental assessment and management tools. Throughout the course, students will critically engage and reflect on the practice of engineering and develop a deep appreciation for the interconnectedness of environmental, social, and economic sustainability. The course includes practical sessions, case studies, field trips and a course project.",
+  "lecture_times": "Students from outside Civil Engineering should confirm course scheduling with the convener.",
+  "dp_requirements": "Attendance of all, and satisfactory completion of all tutorial and practical assignments; students must attain an average mark of not less than 40% for the coursework component.",
+  "assessment": "A class test, practical assignments and field report count 50%; one 2-hour examination written in June count 50% (sub-minimum of 40% required).",
+  "is_engineering_course": false,
+  "offered_by_faculty": "science"
+}

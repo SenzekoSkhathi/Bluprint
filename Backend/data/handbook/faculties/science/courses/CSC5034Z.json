@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CSC5034Z",
+  "title": "Machine Learning",
+  "department": "computer-science",
+  "credits": 12,
+  "nqf_level": 9,
+  "year_level": "Postgraduate (Master's)",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "Associate Professor G Nitschke",
+  "prerequisites": {
+    "text": "Admission into the Master's degree specialising in Artificial Intelligence, or permission from the course convener.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "This course will expose students to foundational concepts and computational techniques in Machine Learning and underlying theory related to formulating and implementing machine learning algorithms to solve a wide range of problems. Students will also learn how to implement a broad range of classical to biologically inspired machine learning algorithms with real-world applications. Core topics include supervised and unsupervised learning such as: concept learning, clustering, artificial neural networks and reinforcement learning.",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "None.",
+  "assessment": "Practical work counts 50%; examination counts 50%.",
+  "is_science_course": true
+}

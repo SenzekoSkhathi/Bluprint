@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "TDP3010F",
+  "title": "Performance Studies III",
+  "department": "theatre-and-performance",
+  "credits": 36,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr M Mtshali",
+  "prerequisites": {
+    "text": "TDP2010F or TDP2011S or with permission of the Head of Department.",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "TDP2010F",
+        "TDP2011S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The course will explore major theatrical groups who have “broken the rules”; and who have contributed to the creation of contemporary theatre performances in South Africa and elsewhere. The course will combine theoretical and practical approaches to Performance Making. Fieldwork visits to local performance/theatre/dance events may be included as part of this course.",
+  "lecture_times": "Mondays and Thursdays 5th and meridian. Fridays 5th to 7th period.",
+  "dp_requirements": "Satisfactory attendance and participation at all scheduled course meetings and practical classes, and submission of all written or practical work by the due dates is compulsory for DP certificate purposes.",
+  "assessment": "Continuous assessment (essays, projects, practical tasks, class tests) counts 100%.",
+  "is_humanities_course": true
+}

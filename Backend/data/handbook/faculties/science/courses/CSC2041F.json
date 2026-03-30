@@ -1,0 +1,33 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CSC2041F",
+  "title": "Introduction to AI 1: Knowledge Representation",
+  "department": "computer-science",
+  "credits": 24,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr Z Mahlaza",
+  "prerequisites": {
+    "text": "CSC1015F/S, CSC1016S, MAM1031F (or equivalent), MAM1032S (or equivalent), (MAM1019H or STA1000X or MAM1008S). Note: A laptop is required.",
+    "parsed": {
+      "type": "or",
+      "codes": [
+        "CSC1015F/S",
+        "CSC1016S",
+        "MAM1031F",
+        "MAM1032S",
+        "MAM1019H",
+        "STA1000X",
+        "MAM1008S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The course introduces the field of Artificial Intelligence and then covers the fundamentals of knowledge representation and reasoning as a paradigm for Artificial Intelligence. It includes relevant topics such as logical agents and the creation of symbolic and logical representations from problem statements. Inference in propositional and first-order logic are used to build upon the fundamentals of computational logic and automated reasoning. An overview of core algorithms for knowledge representation (e.g., tableau, case-based, constraints, SAT solving) is given. Approaches to handling uncertainty in knowledge representation and reasoning are introduced through random variables, probabilistic inference, and the framework of utility functions for decision making.",
+  "lecture_times": "Monday - Friday, 3rd period. Four lectures per week. Practicals: One 4-hour practical per week, Monday - Friday, 14h00 - 18h00.",
+  "dp_requirements": "Minimum of 45% aggregate in practical work.",
+  "assessment": "Tests 25%; practicals and practical test 25%; examination 50%. Subminima: 45% on weighted average of theory tests and examination.",
+  "is_science_course": true
+}

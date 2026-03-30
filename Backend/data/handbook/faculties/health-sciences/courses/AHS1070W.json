@@ -1,0 +1,32 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AHS1070W",
+  "title": "Work Integrated Practice Learning",
+  "department": "health-and-rehabilitation-sciences",
+  "credits": 50,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Ms S Damonse",
+  "prerequisites": {
+    "text": "Refer to the programme and departmental sections in the 2026 Health Sciences Faculty Handbook.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [
+    "AHS1060F",
+    "AHS1063F",
+    "AHS1065F",
+    "AHS1061S",
+    "AHS1062S",
+    "AHS1064S"
+  ],
+  "outline": "Students must effectively screen adult and paediatric clients with various conditions to determine their impairments. Demonstrate the ability to operate as an interdisciplinary member of the healthcare team within the different care centres. Understand the client ’s main challenges(s) according to ICF. Co- plan and Co-facilitate appropriate group interventions. Understand the referral system within the care centre setting as well as the re ferral system when a client is returning home back into their communities. Educate clients, family and caregivers on their role in the m anagement of the health conditions. Determine the resour ces available within the commun ity. Determine barriers and facilitators to inclusion for persons with disab ilities. Work collaboratively to empower and enable persons with disabilities. Keep accurate and well-documented records. Each student rotates through 4 WIPL blocks across the year: Community, Adult rehabilitation, paediatrics and mental health.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Full attendance and participa tion in all lectures, block placements, practical sessions, workshops and tutorials, and submission of assignments by the due dates.",
+  "assessment": "The final course mark is comprised of the in-course mark weighted at 60% and the end- of-course mark weighted at 40%",
+  "is_health_sciences_course": true
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "ECO4021W",
+  "title": "Research and Writing I (Long Paper)",
+  "department": "economics",
+  "credits": 30,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Dr C Makanza",
+  "prerequisites": {
+    "text": "See entrance requirements for Honours in Economics. At least 50% for ECO4112F. If students do not pass ECO4006F, ECO4007F, and ECO4016F, they will have to deregister from ECO4021W.",
+    "parsed": {
+      "type": "prerequisite",
+      "codes": [
+        "ECO4112F",
+        "ECO4006F",
+        "ECO4007F",
+        "ECO4016F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The long paper is to take the form of an article intended for submission to the South African Journal of Economics. A student must follow their referencing style. Given that it is to take the form of an article, the long paper should be divided into sections rather than chapters, and a maximum of 8 000 words has been imposed. It must be written in an appropriate academic style.",
+  "lecture_times": "None.",
+  "dp_requirements": "None.",
+  "assessment": "100% written work. Students that receive a subminimum of 40% for their research paper will be given one opportunity to revise and resubmit. The revised research paper will be eligible for a maximum grade of 50%.",
+  "is_commerce_course": true
+}

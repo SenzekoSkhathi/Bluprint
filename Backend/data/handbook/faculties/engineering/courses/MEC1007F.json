@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MEC1007F",
+  "title": "Introduction to Engineering Drawing",
+  "department": "mechanical-engineering",
+  "credits": 8,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Mr L Siboya",
+  "prerequisites": {
+    "text": "None",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to provide first year students with knowledge and skill in analysing producing technical engineering drawings according to SABS 0111-1 standard. It also enables students with the ability to use drawings as a medium of communicating ideas, concepts and even the actual design / prototype during the design process. This course will provide the candidate with knowledge to correctly read and interpret engineering drawings holistically. The course aims to provide the relevant knowledge and skills to continue into the design courses. The objectives of the course are to: develop the knowledge and skill to read, analyse and interpret technical drawings (orthographic and sectional drawings); develop knowledge and skill on how to produce isometric draw ings from orthographic views and vice versa; develop drawing skills and hands-on experience in producing technical drawings using drawing instruments; highlight the importance of SABS 0111-1 standard and working drawings in the design and manufacturing processes; and develop time management and independent working skill.",
+  "lecture_times": "1 lecture and 1 tutorial per week",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

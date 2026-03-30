@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CSC5012Z",
+  "title": "MIT: Human Computer Interaction",
+  "department": "computer-science",
+  "credits": 12,
+  "nqf_level": 9,
+  "year_level": "Postgraduate (Master's specialising in IT)",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "To be advised",
+  "prerequisites": {
+    "text": "Admission into the Master's degree specialising in IT, or permission from the course convener.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "Introduction to the discipline of human-computer interaction. This module covers how knowledge from fields such as psychology and graphic design can be used to increase the usability of computer software.",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "40% for assignment component.",
+  "assessment": "Final examination: 50%; Practical assignments: 50%. A sub-minimum of 40% will be required for each of the assignment and exam components of the course.",
+  "is_science_course": true
+}

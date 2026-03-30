@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CSC5026Z",
+  "title": "Introduction to ICT for Development",
+  "department": "computer-science",
+  "credits": 12,
+  "nqf_level": 9,
+  "year_level": "Postgraduate (Master's)",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "Associate Professor M Densmore",
+  "prerequisites": {
+    "text": "Admission into the Master's degree specialising in Computer Science, or permission from the course convener.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "The goal is to understand basic ideas underlying ICT4D and how they are used in practice. Course content includes: Introduction to key terminology around socio-economic development; Key concepts in ICT4D (e.g. social inclusion, after access); Case studies in specific domains including healthcare, agriculture, mobile money, education, etc.; Critical evaluation of ICT4D projects.",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "None.",
+  "assessment": "Practical assignments: 80%; Case Study Presentation: 10%; Class Participation: 10%.",
+  "is_science_course": true
+}

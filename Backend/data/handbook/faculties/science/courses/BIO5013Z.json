@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "BIO5013Z",
+  "title": "Fundamentals of Applied Ocean Sciences",
+  "department": "biological-sciences",
+  "credits": 0,
+  "nqf_level": 9,
+  "year_level": 5,
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "Professor M Vichi and Dr L C Gammage",
+  "prerequisites": {
+    "text": "A relevant Honours degree (or equivalent). Students with backgrounds in scientific and engineering disciplines are encouraged to apply. Co-requisites: BIO5014Z or SEA5011Z depending on chosen stream; a minor dissertation code chosen from a list to be provided.",
+    "parsed": {
+      "type": "complex",
+      "codes_mentioned": [
+        "BIO5014Z",
+        "SEA5011Z"
+      ],
+      "note": "Complex prerequisite logic - see text"
+    }
+  },
+  "corequisites": [],
+  "outline": "The course is composed of the following modules covering the foundational aspects of applied ocean sciences: 1) Whole-of-systems approach to ocean sustainability, which focuses on paths to achieving sustainability in marine social-ecological systems. It will address the complexity of the task, and introduce students to varied concepts and approaches, using African examples where possible. The treated topics include project management, economics, law, socio-cultural systems, and institutional and governance arrangements. 2) Dynamics of African marine ecosystems, which ensures all students have basic knowledge of key physical, chemical, geological and biological concepts to help them understand how marine ecosystems function. Ecosystems will be covered in an interdisciplinary context, using African examples from eastern boundary, western boundary, tropical and polar regions. 3) Quantitative skills for ocean sciences, which provides introductory numerical skills in handling and analysing data. It will cover major statistical concepts and provide background knowledge of scientific programming, data management, and data visualization (including mapping), focusing on the main applications found in ocean sciences. Key packages to be used will be Ocean Data View, R and Python.",
+  "lecture_times": null,
+  "dp_requirements": null,
+  "assessment": "Every module is assessed independently either with a class test or individual project assignments. The syllabus and the relative weight for each module are described in a handbook available on the BIO5012W website (hosted by the Marine and Antarctic Research Centre for Innovation and Sustainability).",
+  "is_science_course": true
+}

@@ -1,0 +1,31 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "STA3048S",
+  "title": "Statistical Modelling and Bayesian Analysis",
+  "department": "statistical-sciences",
+  "credits": 30,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr E Pienaar",
+  "prerequisites": {
+    "text": "STA2004F & STA2005S and MAM2000W (or equivalent) strongly recommended. Recommended MAM2000W (or equivalent) modules: 2LA, 2AC, 2DE, 2RA.",
+    "parsed": {
+      "type": "prerequisite",
+      "codes": [
+        "STA2004F",
+        "STA2005S"
+      ]
+    }
+  },
+  "corequisites": [
+    "STA3047S"
+  ],
+  "outline": "This course forms part of the third-year major in Mathematical Statistics. It consists of three modules: The first, Generalised Linear Models, introduces students to the theory and application of fitting linear models to various types of response variables with different underlying distributions. Subsequently, elementary concepts and methods in machine learning within the framework of statistical learning are explored. Finally, the Introduction to Bayesian Analysis module is dedicated to the Bayesian paradigm of statistical inference, analysis, and risk theory. Topics include: Generalized linear models (the exponential family, the GLM formulation, estimation and inference, models for continuous responses with skew distributions, logistic regression, log-linear models and Poisson regression); Introduction to Bayesian Analysis (use of Bayes' theorem; Bayesian statistical analysis for Bernoulli and normal sampling; empirical Bayes and credibility theory; loss and extreme value distributions; Monte Carlo methods).",
+  "lecture_times": "To be advised.",
+  "dp_requirements": "Satisfactory attendance of lectures, tutorials, practicals and tests and completion of assignments and/or class exercises as set out in course outline. Class record of at least 35%.",
+  "assessment": "Class record 30% and a 3-hour exam counting 70%. Weights will be adjusted in the case of missed assessments.",
+  "is_commerce_course": false,
+  "offered_by_faculty": "science"
+}

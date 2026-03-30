@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "APG3000Z",
+  "title": "History & Theory of Architecture V",
+  "department": "architecture-planning-geomatics",
+  "credits": 10,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "TBC",
+  "prerequisites": {
+    "text": "Refer to the programme and departmental sections in the 2026 EBE Faculty Handbook.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "The main educational objective in this course is to locate aspects of architectural design in relation to major theoretical and philosophical movements. Its broad intentions are to foster a knowledge and critical perspective of current practice and theory in architecture and urbanism. The course aims to give students the means by which to locate themselves within the contradictory conditions of contemporary cultural production and thereby to articulate their own design positions.",
+  "lecture_times": "Refer to departmental timetable",
+  "dp_requirements": "80% attendance and100% submission of all assignments",
+  "assessment": "100% on the exam",
+  "is_engineering_course": true
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AHS4065W",
+  "title": "Clinical Physiotherapy III",
+  "department": "health-and-rehabilitation-sciences",
+  "credits": 98,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Ms N Arends DEPARTMENTS IN THE FACULTY 117",
+  "prerequisites": {
+    "text": "All third-year courses. Registration with the South African Society of Physiotherapy is encouraged).",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [
+    "AHS4071F",
+    "AHS4066F"
+  ],
+  "outline": "Objective: By the end of this course students will be able to assess, plan for and implement treatment for a range of clients requiring physiotherapy in terventions across core areas of physiotherapy practice. Course outline: This course provides clinical exposure to the areas of cardiopulmonary, paediatrics, orthopaedic, neurological, musculoskeletal, and other tertiary level skills as well as a community placement. Students rotate between several clinical placements (including but not limited to ICU, musculoskeletal out-patient clinics, paediatric, rehabilitation centres and community settings). Students spend approximately 26-30 hours per week in clinical areas, where clinical oversight and supervision is provided. The course is taught through practical sessions, group teaching, self- directed learning tasks and clinical practice. Clinical placements are situated in the Cape Town Metropole but may include a semester in the Garden Route and/ or a block in the Vredenburg/Saldanha Bay districts.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Pre-block assessment requirements exist for ICU and some paediatric placements. Students who do not meet these requirements will be ineligible to complete the specific block and will be required to re-do the block. (Rule FBF3.3) Students are obliged to complete all the required hours for the year as per HPCSA regula tions. Further requirements are full attendance of and participation in all clinical activities and completion of clinical portfolio requirements by the due dates, to be able to complete the end of block exam. If a student is absent 8 days or more on a particular block, and has provided the necessary documentation and concession forms, the student would be required to re-do the entire block before being eligible to do the end of block exam. (Rule FBF 3.1) Where applicable, the satisfactory completion of an elective placement will form part of the compulsory requirements of the AHS4065W course. Students who have not met this DP requirement will be required to complete an additional 40 hours of supervised professional work approved by the Division prior to completing the course.",
+  "assessment": "The course is assessed via continuous assessment conducted at the end of each clinical module/block and an additional unse en patient exam. The pa ss mark for the cou rse is 50%. Each clinical block comprises of a block performance mark (which includes portfolio submissions) and an end of block patient or presentation exam where applicable. Weightings for the individual components will be provided at the start of the academic year. The final course mark is calculated as an average of all completed clinical block mark s plus the additional patient assess ment. Students who receive less than 45% on calculation of the final course mark wi ll have failed the course. Opportunities exist for remediation and re-examination, pr ior to submission of the final course grade, unde r the following circumstances: (a) If a student recei ves a course mark of 50 % or more but failed 2 or more end of block examinations; (b) If a student obtains a final course score of between 45 and 49%. Remediation and re-examination will be offered in the patient fo cused clinical area in wh ich the student received their lowest or second lowest ma rk, depending on access to the clinical area during the remediation period. If a re-examination is awar ded, the mark for the re-examinati on will form th e final course grade. A subminimum of 50% is required for th e re-examination. No further supplementary opportunities will be offered after remediation and re-examination. If a student fails and is eligible to repeat the course the student will be required to register for the AHS4065X course in the following academic year.",
+  "is_health_sciences_course": true
+}

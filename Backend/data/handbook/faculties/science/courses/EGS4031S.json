@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EGS4031S",
+  "title": "Introduction to Climate Change & Sustainable Development",
+  "department": "environmental-geographical-science",
+  "credits": 30,
+  "nqf_level": 8,
+  "year_level": "Postgraduate – Honours elective",
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr M Norton",
+  "prerequisites": {
+    "text": "Acceptance for EGS Honours and by agreement of the course convenor.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "This course provides a broad, integrated knowledge on key issues in climate change and sustainable development, making students conversant across the spectrum of climate change issues and history. Topics include: sustainable development; the climate system, anthropogenic forcing and climate system response; African climate variability and change; international climate change legal frameworks, negotiations and politics; the economics of climate change and climate change financing; and the concept of climate compatible development. The course is lecture, seminar and group-work based, with each section involving basic framing lectures supported by essay or group work exercises and seminars.",
+  "lecture_times": null,
+  "dp_requirements": "80% of classes and all assignments.",
+  "assessment": "Coursework 75%; examination 25%.",
+  "is_science_course": true
+}

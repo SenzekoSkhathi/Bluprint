@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PSY1005S",
+  "title": "Introduction to Psychology Part 2",
+  "department": "psychology",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr S Mkabile",
+  "prerequisites": {
+    "text": "PSY1004F and PSY1005S",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "PSY1004F",
+        "PSY1005S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course provides an introduction to two major areas of psychological research and theory. Social Psychology is taught in one half of the course. The social psychology module introduces students to some basic concepts and theories in social psychology, exposes students to current research within the field, and provides an opportunity for students to engage critically with existing theories and their relevance to the South African context. Some of the major topics covered will include race and racism, social identity and social change, intergroup contact, and social influence. Developmental psychology is taught in the other half of the course. The developmental psychology module focuses on understanding the changes and continuities that occur in children f rom conception through adolescence. The sessions will cover central theoretical issues and research strategies in developmental psychology, prenatal development, cognitive and language development, social and emotional development, and contexts of development.",
+  "lecture_times": "Tuesday to Friday, 7th period.",
+  "dp_requirements": "Completion of all coursework, and 80% attendance at tutorials.",
+  "assessment": "Coursework will be weighted at 50%, and will include completion of tutorial assignments, essays and tests as required. An exam at the end of the semester will be weighted 50%.",
+  "is_humanities_course": true
+}

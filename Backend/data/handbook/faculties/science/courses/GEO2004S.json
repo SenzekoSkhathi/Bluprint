@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "GEO2004S",
+  "title": "Physical Geology",
+  "department": "geological-sciences",
+  "credits": 24,
+  "nqf_level": 6,
+  "year_level": "Second Year",
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Associate Professor A Sloan",
+  "prerequisites": {
+    "text": "GEO2001F; PHY1031F or equivalent.",
+    "parsed": {
+      "type": "or",
+      "codes": [
+        "GEO2001F",
+        "PHY1031F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course builds on the previous mineralogy course and explores the physical structure of the Earth and the physical processes involved in sedimentary rock formation and rock deformation. Topics include: transport and deposition of sediments; sedimentary textures and structure; siliciclastic, carbonate, evaporitic and other sedimentary rocks; earthquakes, stress, displacement and strain; brittle and ductile deformation; interpretation of geological maps and cross sections; introduction to tectonics and global geophysics.",
+  "lecture_times": "Monday - Friday, 2nd period.",
+  "dp_requirements": "An average of 30% in marked classwork, and attendance at 80% of practicals.",
+  "assessment": "Class tests and practicals count 25%; one 2-hour practical examination in November counts 30%; one 2-hour theory examination in November counts 45%. Sub-minima of 40% are required in both practical and theory examination papers.",
+  "is_science_course": true
+}

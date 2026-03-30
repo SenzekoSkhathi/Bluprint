@@ -1,0 +1,31 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CSC3044S",
+  "title": "AI: AI Systems",
+  "department": "computer-science",
+  "credits": 18,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "To be advised",
+  "prerequisites": {
+    "text": "CSC2001F, CSC2041F, CSC2042S, (CSC3041F or CSC3042F).",
+    "parsed": {
+      "type": "or",
+      "codes": [
+        "CSC2001F",
+        "CSC2041F",
+        "CSC2042S",
+        "CSC3041F",
+        "CSC3042F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course provides an overview of agent architectures: cognitive architectures; software agents such as collaborative and information-gathering agents; as well as human-agent interaction and societal impacts of AI systems. Students will apply these concepts through a practical AI system development capstone project.",
+  "lecture_times": "Monday - Friday, 3rd period. Practicals: One 4-hour practical per week, by arrangement.",
+  "dp_requirements": "Minimum of 45% aggregate in practical work.",
+  "assessment": "Tests 25%; practical work 25%; examinations 50%. Subminima: 45% for practicals, 45% weighted average of theory tests and examinations.",
+  "is_science_course": true
+}

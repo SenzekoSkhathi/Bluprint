@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "BIO3022S",
+  "title": "People and the Sea",
+  "department": "biological-sciences",
+  "credits": 0,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Professor P W Froneman",
+  "prerequisites": {
+    "text": "A pass or permission to write a SUPP exam in BIO2014F; BIO3002F.",
+    "parsed": {
+      "type": "or",
+      "codes": [
+        "BIO2014F",
+        "BIO3002F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course covers the science that supports the understanding and management of the relationship between humans and the sea. Modules include the ocean in the context of social and economic systems, marine systems under global change, life history theory, fisheries science and management, topics in marine conservation and modelling of marine ecosystems. The course will teach a wide range of skills for applied marine biologists including sampling, modelling, hypothesis testing and assessment of marine ecosystems and marine resources. Teaching will consist of lectures and practical classes.",
+  "lecture_times": "Monday - Friday, 3rd period. Tutorials: By arrangement. Practicals: One per week, Thursday, 14h00 - 17h00. Attendance is compulsory for all lectures and practicals.",
+  "dp_requirements": "Completion of at least 80% of deliverables (tests, practical and project reports), including at least one class test and one project report is required. Attendance of practicals, and a minimum of 40% for the class record is required.",
+  "assessment": "A 3-hour examination written in November, with a sub-minimum of 40%, will count for 50% of the course. Coursework marks will be allocated as follows: Practical classes count 10%; project work counts 20%; two class tests count 20%",
+  "is_science_course": true
+}

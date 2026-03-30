@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "STA4027Z",
+  "title": "Bayesian Computational Methods",
+  "department": "statistical-sciences",
+  "credits": 12,
+  "nqf_level": 8,
+  "year_level": "Postgraduate (Honours/Master's)",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "Associate Professor A Clark",
+  "prerequisites": {
+    "text": "Currently doing an honours or master's degree in statistics, or at the discretion of the Head of Department.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "The course aims to provide students with an introduction to the Bayesian method and the acquisition of theory and methods required to apply Bayesian analysis to real world practical problems. Topics included: Bayesian linear regression, variable selection, mixture modelling, Markov chain Monte Carlo methods (theory and practical applications).",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "Satisfactory completion of assignments.",
+  "assessment": "Assignments and Exam.",
+  "is_science_course": true
+}

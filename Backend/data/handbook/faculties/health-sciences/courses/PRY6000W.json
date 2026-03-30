@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PRY6000W",
+  "title": "Psychiatry",
+  "department": "psychiatry-and-mental-health",
+  "credits": 21,
+  "nqf_level": 8,
+  "year_level": 6,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Dr M Karjiker and Dr E Reid",
+  "prerequisites": {
+    "text": "Successful completion of all co urses within the preceding academic year.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "The course is designed on a blend ed learning model. St udents on the course are assigned to three clinical sites, Valkenberg, Groo te Schuur and Lentegeur hospital s. They are assigned clinical placements at these sites with their clinical partners. It is a student internship block where students are expected to integrate fully into th e clinical team and take clinical direction and supervision from the clinical team. They must behave and dress in a professional manner, engage empathically with patients and their families and show respect to all levels of staff. They work as student interns, clerk patients, attend ward rounds and follow up th e clinical management of their patients. They also do whatever clinical work is expected of them by the clinical team. Each placement has unique opportunities and challenges, and students are expected to engage fully with these to facilitate their learning. The online teaching component includes the Cape Town and the Eden district st udents. The students are in the wards for the entire work ing day from Mondays to Thursdays under th e supervision of the clinical team. There are no after hour calls for the block. Friday’s students are not in the wards and engage with online learning sessions. They will get Teams invites via email for these sessions. The first Friday covers Psychiatry core topics, the second Friday covers the Psychology teaching, and the third Friday covers the Child Psychiatry teaching. Two to four students per block are selected to do counselling at a Day Hospital for three Tuesdays of the block. They will get input on this on the first Friday of the block. Students are expected to collate a clinical teaching portfo lio of four cases. They must also collaborate in groups to do ac ademic presentations for the whole group on the core topics of the psychiatry curriculum.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Students must attend 90% of the ward clinical days and engage fully with clinical work from Mondays to Thursdays. They must attend all three Frid ay teaching sessions. The Friday sessions has an electronic record of attendance, and the clinical team will supervise the attendance of students in the wards. Students mu st participate academically in their group academic presentation. Students must submit their four portfolio cases by midnight on the last Thursday of the block. Failure to do so will mean that the stude nt is not eligible to write the exam on the Friday. Should the ward consultant and the course convener feel that a student needs to make up time for clinical days missed, and the time cannot be made up, then the student will need to repeat the course.",
+  "assessment": "There are four components to the course assessment: 1) Portfolio – this contributes 20% to the final mark. 2) Academic Presentation – Th is contributes 10% to th e final mark. 3) Ward Assessment – this contributes20% to the final mark. 4) SAQ written exam – this contributes 50% to the final mark. This exam is written on the last Friday of the block. A student must achieve a total of DEPARTMENTS IN THE FACULTY 219 50% to pass the course. There is no supplementary exam for this course. A student who fails the course will need to repeat the course in the following academic year.",
+  "is_health_sciences_course": true
+}

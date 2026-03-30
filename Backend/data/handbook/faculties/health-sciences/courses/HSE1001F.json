@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "HSE1001F",
+  "title": "Fundamentals of Health Sciences",
+  "department": "health-sciences-education",
+  "credits": 60,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr E Badenhorst and Dr B Ige",
+  "prerequisites": {
+    "text": "None",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course is designed for studen ts who failed any first-year cour se in the following programmes: MBChB, Physiotherapy, Occupational Therapy, Audiology and Speech Therapy. Students will enter the Fundamentals of Health Science s semester to revisit content co vered in first year semester one courses of the programmes. The aim of the course is to strengthen and develop foundational building blocks in courses students were un successful in, in semester one, an d to further equip students with learning strategies to successfully navigate thei r undergraduate studies in the health sciences. The course will be presented as content modules and academic skills workshops. The content modules will be revisiting content from semester one, but with the aim of addressing the necessary building blocks for successful transitioning from sch ool subjects to first year health sciences courses. The academic skills workshops will address learning skills students need to develop and strengthen to successfully navigate the content modules. Ac ademic skills will therefore con tinuously be developed and integrated into the content modules. Further obj ectives include creating a safe environment where students can develop and refine st udy skills, competencies and knowledge in order to successfully continue with their studies; allo wing for opportunities to promot e more effective learning for subsequent years; and aspiring to improve self-confidence, in order to contribute to students’ academic and personal growth and developmen t. The course aims at familiaris ing students with the modes of learning that will be required of them when they return to semester one courses the following year, as well as the style of instruction they will encounter in the rest of their studies. Learning activities in the programme are designed to enhance students’ capacity to transf er skills and kn owledge between different aspects and components of their studies",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Students are required to attend all learning and as sessment opportunities which form the basis for this course as scheduled.",
+  "assessment": "Assessment is continuous and formative. Students need to dem onstrate competencies and milestones. There will be no su mmative assessment at the end of the course. Students who have completed this course, will be allowed to register and repeat first year failed semester one or semester two courses.",
+  "is_health_sciences_course": true
+}

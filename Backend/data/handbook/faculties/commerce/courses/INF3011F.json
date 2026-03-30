@@ -1,0 +1,31 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "INF3011F",
+  "title": "I.T. Project Management",
+  "department": "information-systems",
+  "credits": 18,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "G Mwalemba",
+  "mutual_exclusions": ["INF3003W"],
+  "prerequisites": {
+    "text": "A pass in INF2003F, INF2009F and at least 45% for INF2011S. Students cannot be credited for this course and for INF3003W.",
+    "parsed": {
+      "type": "prerequisite",
+      "codes": ["INF2003F", "INF2009F", "INF2011S"],
+      "conditions": [
+        "Pass in INF2003F",
+        "Pass in INF2009F",
+        "At least 45% for INF2011S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This is a first-semester capstone course for students majoring in Information Systems (IS) and either Computer Science, Finance or Informatics who wish not only to gain an understanding of project management issues but also experience the execution of such projects. The course thus combines the theoretical elements of project management (and people management) with the practical implementation of these concepts through the completion of a team project. The course integrates practical and theoretical elements obtained and developed in other undergraduate IS courses.",
+  "lecture_times": "10h00-10h45 Monday to Thursday and 10h00-11h45 Friday.",
+  "dp_requirements": "Submission of required project work and a sub-minimum of 45% for the year mark prior to writing the final examination. Students must have satisfactory attendance at tutorials and lectures.",
+  "assessment": "Coursework counts 70%. Final examination counts 30%. Sub-minimum of 40% for the final examination.",
+  "is_commerce_course": true
+}

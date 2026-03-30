@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MAM1019H",
+  "title": "Fundamentals of Mathematics",
+  "department": "mathematics-applied-mathematics",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": "First Year",
+  "semester": "FY",
+  "semester_code": "H",
+  "convener": "Associate Professor A Schauerte",
+  "prerequisites": {
+    "text": "At least 70% in NSC Mathematics.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "The aim of this course is to familiarise students with the most fundamental concepts and tools of modern mathematics at an elementary level. Topics include: fundamentals of logic and set theory; concepts of a function; relations; equivalence and order relations; some basic mathematical structures; and the fundamental number systems. Students who intend to major in mathematics are expected to take this course during their first year.",
+  "lecture_times": "Five lectures every two weeks in meridian.",
+  "dp_requirements": "Minimum of 30% in year mark and satisfactory tutorial attendance.",
+  "assessment": "Year mark counts 30–40%; one 2-hour examination written in June/July and one in October/November equally make up the balance.",
+  "is_science_course": true
+}

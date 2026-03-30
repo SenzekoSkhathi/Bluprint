@@ -1,0 +1,35 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "IBS3020W",
+  "title": "Molecular Medicine",
+  "department": "integrative-biomedical-sciences",
+  "credits": 72,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Professor AA Katz",
+  "prerequisites": {
+    "text": "For students admi tted to the intercalat ed BMedScHons-MBChB track: Students wishing to do the intercalated BMedScHons must have passed second year MBChB, must generally have obtained an average of at least 70% in the courses listed below, with no less than 60% for any single course (exceptions to be considered on merit by the course admission committee): CEM1011F or (for Intervention Programme Students) CEM1111 S and CEM1011X, Chemistry; PHY1025F, HUB1006F and HUB10 07S or (for Intervention Pr ogramme Students) HUB1010S and HUB1011F, HUB2017H, LAB2000S and MDN2001S (ex ceptions to be considered on merit by the course selection committee). For students wishing to ex it with a BSc (Medicine): Students must have passed second year MBChB with an average of at least 60% and with no less than 55% for any of the courses mentioned above (exceptions to be considered on merit by the course Convenor).",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "CEM1011F",
+        "CEM1011X",
+        "PHY1025F",
+        "HUB1006F",
+        "HUB1010S",
+        "HUB1011F",
+        "HUB2017H",
+        "LAB2000S",
+        "MDN2001S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "Objective: The Special Study Mo dule (SSM) is designed to gi ve students an opportunity for independent supervised work in an area of interest and develop skills for rigorous scientific medical practice. Course outline: The course includes lectures, tutorials and practical work that cover core and advanced topics on the molecular basis of disease. Core topics include DNA, RNA and protein structure, function, and how these are integrated to control normal cellular proc ess such as signalling, pr oliferation, apoptosis, development and differentiation. Fundamentals of molecular and cellular immunology and molecular genetics are introduce d. Advanced topics include stem cells, their biology and ap plication, cancer biology, and infectious agents, infectious diseases and inherited diseases. These topics are presented in a multidisciplinary fashion, integrating principles of gene tics and genomics, eukaryotic gene regulation, and cell signalling. Ba sic bioinformatics of DNA and prot eins are introduced. Practical laboratory work covers theoreti cal and practical aspects of mole cular, cellular and biochemical laboratory techniques, with emphasis on recombinant DNA techniques. There is also an introduction to genomic, proteomic and computational approaches to study molecular systems.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Attendance of all practicals and an average mark of 50% in tests and assignments/laboratory reports combined.",
+  "assessment": "Two tests and assignments/laboratory reports that are written during the course and one examination at the end of the course. Tests contribute 60%, assignments/laboratory reports contribute 5% and the end-of-year examination contributes 35% to the course final mark. 144 DEPARTMENTS IN THE FACULTY MEDICINE Medicine J46, Old Main Building, Groote Schuur Hospital",
+  "is_health_sciences_course": true
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EEE4124C",
+  "title": "Impact of Engineering on the Natural & Social Environment",
+  "department": "electrical-engineering",
+  "credits": 8,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "Q3",
+  "semester_code": "C",
+  "convener": "M Moorlach",
+  "prerequisites": {
+    "text": "EEE3088F",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "EEE3088F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course is designed to meet ECSA requirements GA7 (The Engineer and the World) and GA8 (Individual and Collaborative Teamwork), with a particular focus on multi-disciplinary work. Course content will explore the two complex environments in which graduate engineers operate: The natural environment – considering sustainability, resource efficiency, and life -cycle analysis and the social environment – addressing the broader societal impact of engineering. A systems thinking approach will be central, emphas ising environmental sustainability, health and safety, and responsible engineering practices. Through case studies, students will critically assess the wider impact of engineering activities and industry. Additionally, engagement with non -engineering profe ssionals from industry will provide valuable multi -disciplinary perspectives, encouraging students to think beyond traditional engineering boundaries.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

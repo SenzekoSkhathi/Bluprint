@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PSY1010S",
+  "title": "Introduction to Psychology II",
+  "department": "psychology",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "H Matutu",
+  "prerequisites": {
+    "text": "PSY1009F (previously PSY1004F).",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "PSY1009F",
+        "PSY1004F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course builds on the content covered in Introduction to Psychology Part 1. There is emphasis on research methods, both quantitative and qualitative methods. This course deepens students’ engagement with psychology as a scientific and interpretive discipline concerned with understanding behaviour, thought, and emotion in context. Emphasis is placed on developing a critical appreciation of different psychological inquiry and analysis approaches. Through exposure to a range of thematic areas, students bui ld competencies in research literacy, academic writing, and the evaluation of evidence.",
+  "lecture_times": "Tuesday to Friday 1st or 5th period.",
+  "dp_requirements": "Satisfactory completion of all assignments by the due date, attending at least 80% of classroom tutorials, submitting all statistics lab -based exercises, complete both class tests. In addition, obtain two Student Research Participation Programme (SRPP) points or equivalent.",
+  "assessment": "See departmental and faculty assessment rules in the 2026 Humanities Faculty Handbook.",
+  "is_humanities_course": true
+}

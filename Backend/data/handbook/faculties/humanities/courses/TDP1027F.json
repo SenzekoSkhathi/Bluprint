@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "TDP1027F",
+  "title": "Voice and Movement I",
+  "department": "theatre-and-performance",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "M Steyn",
+  "prerequisites": {
+    "text": "Admission to this course is prioritised for students (a) registered for the Diploma and BA in Theatre & Performance (b) majoring in Theatre & Dance Studies.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course offers students an introduction to the key conceptual frames of performance: ACTOR/CHARACTER, SPACE, AUDIENCE, STORY. These conceptual frames are applied to a series of weekly case studies of different performance practices across select countries on the African continent. Students are also tutored through practical projects that explore these fundamental concepts in practice. A fieldwork component is included as part of this course.",
+  "lecture_times": "Tuesday and Wednesday 3rd period. Tutorial Friday 3rd period. Practical on Tuesday afternoon.",
+  "dp_requirements": "Attendance at 80% of lectures and 100% of tutorials, practicals and theatre visits, and satisfactory presentation of assignments are compulsory for DP certificate purposes.",
+  "assessment": "Continuous assessment (essays, projects, practical tasks, class tests) counts 100%.",
+  "is_humanities_course": true
+}

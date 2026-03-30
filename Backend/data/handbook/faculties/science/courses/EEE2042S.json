@@ -1,0 +1,36 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EEE2042S",
+  "title": "Introduction to Analogue and Digital Electronics",
+  "department": "electrical-engineering",
+  "credits": 8,
+  "nqf_level": 6,
+  "year_level": "Second Year",
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "TBC",
+  "prerequisites": {
+    "text": "MAM1021F/S (MEC), PHY1013F/S (MEC), PHY1004W or PHY1032S (CSC), MAM1004F (>60%) and MAM1008S (>60%) or MAM1000W (CSC); DP for EEE2041F.",
+    "parsed": {
+      "type": "complex",
+      "codes_mentioned": [
+        "MAM1021F/S",
+        "PHY1013F/S",
+        "PHY1004W",
+        "PHY1032S",
+        "MAM1004F",
+        "MAM1008S",
+        "MAM1000W",
+        "EEE2041F"
+      ],
+      "note": "Complex prerequisite logic - see text"
+    }
+  },
+  "corequisites": [],
+  "outline": "Topics include: (a) Introduction to semiconductor physics and diode basics; (b) Diode circuit model, applications and LEDs; (c) Introduction to BJTs and basic models; (d) BJT amplifier circuit (common-emitter focus); (e) Introduction to Op Amps, ideal and practical models; (f) Op-amp inverting and non-inverting applications; (g) Introduction to FETs and FET analogue applications; (h) Simple H-bridge circuits; (i) Difference between analogue and digital applications, introduction to digital electronics; (j) Digital electronics continued — Boolean algebra and logic gates; (k) FET digital applications and introduction to Flip Flops; (l) Basics of state machines and electronic instruments.",
+  "lecture_times": "Refer to official course handout document.",
+  "dp_requirements": "Refer to the official course handout document for detailed DP requirements.",
+  "assessment": "Refer to the official course handout document for assessment criteria.",
+  "is_science_course": false,
+  "offered_by_faculty": "engineering"
+}

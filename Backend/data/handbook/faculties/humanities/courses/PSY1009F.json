@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PSY1009F",
+  "title": "Introduction to Psychology I",
+  "department": "psychology",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "H Matutu",
+  "prerequisites": {
+    "text": "Faculty admission. Admission to this course is restricted to students (a) registered for the major in Psychology, (b) for which the completion of this course is a degree-specific requirement (e.g., Social Work, Physiotherapy, Occupational Therapy, Speech a nd Communication Disorders [Speech Therapy and Audiology], or any other approved Health Sciences service programme), (c) majoring in Organisational Psychology and (d) registered for the BMus and BA(T&P) degrees, where the Head of Section has approved their elective choice.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course introduces students to selected areas of psychological inquiry, offering an overview of the field's foundational and applied dimensions. These areas can range widely, from, for example, the history of the discipline, to biological and cognitive processes, to mental health. In addition to engaging with key conceptual and empirical debates, students will begin cultivating essential academic skills, with particular attention to ethical scholarship, academic writing, and the conventions of psychological communication.",
+  "lecture_times": "Tuesday to Friday 1st or 5th period. PSYCHOLOGY 382",
+  "dp_requirements": "Satisfactory completion of all assignments by the due date, attending at least 80% of tutorials, complete both class tests. In addition, obtain one Student Research Participation Programme (SRPP) point or equivalent.",
+  "assessment": "Coursework (term assignments and tests) counts 50%; one two-hour examination in June counts 50%. Students are expected to complete the June examination and all coursework before being awarded a pass in this class.",
+  "is_humanities_course": true
+}

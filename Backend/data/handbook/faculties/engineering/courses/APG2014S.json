@@ -1,0 +1,33 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "APG2014S",
+  "title": "Geomatics II",
+  "department": "architecture-planning-geomatics",
+  "credits": 24,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Associate Professor P Odera",
+  "prerequisites": {
+    "text": "CSC1015F or CSC1017F, APG1016F/H",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "CSC1015F",
+        "CSC1017F",
+        "APG1016F"
+      ]
+    }
+  },
+  "corequisites": [
+    "APG2040F",
+    "MAM2084F",
+    "STA1000S"
+  ],
+  "outline": "This course builds further upon the introduction to co-ordinate systems provided in Geomatics I, and extends it to cover co -ordinate transformations, 3 -D co -ordinate systems and time variations. The student is also introduced to the method of least squares as a means of solving over -determined systems of equations, with applications in co-ordinate transformations. Course Content: Introduction to error theory and error propagation; method of least squares - parametric case; two-dimensional co- ordinate systems; motions of the Earth; time; satellite orbits; three -dimensional co-ordinate systems and spherical trigonometry.",
+  "lecture_times": "4th period Monday-Friday. Practicals: one per week, Monday 14h00- 17h00",
+  "dp_requirements": "Attendance at and completion of all assignments and tests with a combined minimum average of 40%.",
+  "assessment": "See departmental and faculty assessment rules in the 2026 EBE Faculty Handbook.",
+  "is_engineering_course": true
+}

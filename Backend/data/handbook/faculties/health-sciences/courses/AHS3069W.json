@@ -1,0 +1,30 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AHS3069W",
+  "title": "Clinical Physiotherapy II",
+  "department": "health-and-rehabilitation-sciences",
+  "credits": 62,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Ms N Arends",
+  "prerequisites": {
+    "text": "All second-year courses. Registratio n with the South African Society of Physiotherapists is encouraged.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [
+    "AHS3077H",
+    "AHS3076H",
+    "AHS3004W",
+    "AHS3070H"
+  ],
+  "outline": "Objective: By the end of this course students will be able to assess, plan for and implement treatment for a range of clients requiring physiotherapy in terventions across core areas of physiotherapy practice. Course outline: The course provides clinical exp osure to the core areas of physiotherapy care including (but not exclusively) paediatrics, ca rdiopulmonary physiotherapy, orthopaedics, musculoskeletal 106 DEPARTMENTS IN THE FACULTY physiotherapy, neurology and care of the elderly. Students rotate between clinical placements, where clinical oversight and supervision is provided. This course is taught through practical sessions, group teaching, self- directed learning tasks and clinical practice.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Students are obliged to complete all the required clinical hours for the year as per HPCSA regulations. Further requirements are full at tendance of and particip ation in all clinical activities and completion of clinical portfolio requirements by the due dates, to be ab le to complete each end of block exam. If a student is absent 8 days or more on a particular block, and has provided the necessary documentation and co ncession forms, the st udent will be required to re-do the entire module/block before being eligible to do the end of block exam (Rule FBF 3.1).",
+  "assessment": "The course is assessed via continuous assess ment, and the pass mark for the course is 50%. The final course mark is ca lculated as an average of all th e completed clinical module/ block marks. Each clinical module mark comprises of an overall performance mark (which includes a portfolio submission) and either a patient-focused engagement or related tasks. Students who obtain below 45% will fail and n eed to repeat the course . Opportunities exist fo r remediation and re- assessment prior to submission of the final course under the following circumstances: (a) If a student receives a course mark of 50% or more, but has failed two or mo re end of block patient focused engagements or related ta sks. (b) If a student obtains a cours e mark of between 45 and 49%. The remediation and re-assessment will be offered in the patient focused clinical area in which the student received their lowest or second lowest mark, depending on acces s to the clinical area during the remediation period. If a re-assessment is awarded, the mark for the re-assessment will form the final course grade. A subminimum of 50% applies for this re-assessment. No further supplementary opportunities will be offered afte r remediation and re-assessment. Students who are unable to complete the clinical course within the academic year, will not be able to defe r components into the next year and will need to register for the course again, in the following academic.",
+  "is_health_sciences_course": true
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MAM3014F",
+  "title": "Topics in Analysis (3TN)",
+  "department": "mathematics-applied-mathematics",
+  "credits": 18,
+  "nqf_level": 7,
+  "year_level": "Third Year",
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr F Ebobisse-Bille",
+  "prerequisites": {
+    "text": "MAM3010F.",
+    "parsed": {
+      "type": "and",
+      "codes": [
+        "MAM3010F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "Topics include: (1) study of sequences of real numbers; (2) revision on metric spaces including distance, balls, open and closed sets, convergence, compactness, completeness, spaces of continuous functions, normed spaces, linear continuous mappings, equivalence of norms, Banach spaces and dual spaces; (3) Hilbert spaces including scalar product, orthogonal complement, orthogonal projection and the Gram-Schmidt orthonormalization process; (4) differential calculus between normed spaces including Gâteaux and Fréchet differentiability, chain rule, the Lagrange inequality, convexity, the implicit function theorem and the inverse mapping theorem; (5) an introduction to Riemann integration and its limitations.",
+  "lecture_times": "Mondays, Thursdays and some Wednesdays in 5th period.",
+  "dp_requirements": null,
+  "assessment": null,
+  "is_science_course": true
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CON3054S",
+  "title": "Property Development II",
+  "department": "construction-economics-and-management",
+  "credits": 10,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr R Terblanche",
+  "prerequisites": {
+    "text": "CON3047F, CON3048F",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "CON3047F",
+        "CON3048F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to develop an understanding of: the role of property development in property markets; theories of property development; computer software programmes in conjunction with feasibility and viability studies; researching markets for property developments; the development of residential units; the development of commercial units; marketing of property developments; and financing property developments.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

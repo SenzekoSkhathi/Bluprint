@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CSC4027Z",
+  "title": "Computer Game Design",
+  "department": "computer-science",
+  "credits": 12,
+  "nqf_level": 8,
+  "year_level": "Postgraduate (Honours)",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "Professor J Gain",
+  "prerequisites": {
+    "text": "Admission to BSc Hons specialising in Computer Science or Information Technology. Computer Graphics at third year level.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "This course will introduce students to the techniques and technologies used in designing and programming computer games and related applications. It introduces high-level game programming concepts and practical game construction. Course content include: terminology, methods and tools for computer game development; fundamental algorithms for 2D game development; design and development of simple 3D and networked games; uncertainty and constantly changing gaming environments; and techniques for multiuser and distributed games. Students collaborate with designers and artists to produce a full game.",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "None.",
+  "assessment": "Final examination: 60%; Practical assignments: 40%.",
+  "is_science_course": true
+}

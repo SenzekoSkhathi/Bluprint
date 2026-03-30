@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "BIO1000F",
+  "title": "Cell Biology",
+  "department": "biological-sciences",
+  "credits": 0,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Associate Professor J M Bishop",
+  "prerequisites": {
+    "text": "Pass in NSC Physical Science or Life Science with at least 60%. Preference given to Science Faculty students. Students assessed in week 5; if not coping, required to transfer to BIO1000H from week 7.",
+    "parsed": {
+      "type": "or",
+      "codes": [
+        "BIO1000H"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "Basic biological principles and processes at a cellular level provide an essential grounding for future study in the life sciences. The structure and function of cell components is introduced, followed by an introduction to chemistry, including the structure and functions of biological macro-molecules. Cell division and the role of genetics in inheritance and the control of biological systems is then considered. This leads into an introduction to membrane physiology, metabolism and its regulation. Cellular processes that are considered in detail include the functioning of photosynthesis and cellular respiration, and how these relate to organismal physiology. Cellular communication and the immune system of animals complete the organismal physiology.",
+  "lecture_times": "Monday - Friday, 5th period. Tutorials: One per week, by arrangement. Practicals: One afternoon per week, Monday, Tuesday, Wednesday or Thursday, 14h00 - 17h00. Attendance is compulsory for all lectures and practicals.",
+  "dp_requirements": "Completion of at least 80% of deliverables (tests, practicals, tutorials), including at least one class test and at least one practical test, and attendance of practicals; minimum of 40% for the class record.",
+  "assessment": "Class record counts 40% (two class tests count 27%; two practical tests count 5%; and a practical bookmark counts 8%). One 2-hour examination paper (Theory) written in June counts 40%; a subminimum of 40% is required for this paper. One 1.5-hour examination paper (Practical) in June counts 20%",
+  "is_science_course": true
+}

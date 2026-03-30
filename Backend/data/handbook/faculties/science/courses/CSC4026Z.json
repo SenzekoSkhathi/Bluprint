@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CSC4026Z",
+  "title": "Network & Internetwork Security",
+  "department": "computer-science",
+  "credits": 12,
+  "nqf_level": 8,
+  "year_level": "Postgraduate (Honours)",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "Dr J Chavula",
+  "prerequisites": {
+    "text": "Admission to BSc Hons specialising in Computer Science or Information Technology. Computer Networking at third year level.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "The objective of this course is to introduce cryptographic techniques and protocols for secure exchange of information on networks and internetworks, and to examine the deployment of these in emerging technologies. Topics include: risk issues (ISO27000; PoPI act); security services; conventional encryption (classical encryption techniques, DES/AES, key distribution, key generation); public-key encryption (RSA algorithm, key management, certification hierarchies); authentication and digital signatures; authentication and key exchange (Kerberos, Diffie-Hellman); electronic messaging security (S-MIME/PGP/WhatsApp); HTTP security (S-HTTP, SSL, capabilities); secure electronic commerce (SET); web application security (OWASP); web-services security (WS-Security, SAML); cloud computing security; critical infrastructure security; Security Information and Event Management (SIEM) and next generation Security Operation Centres.",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "None.",
+  "assessment": "Final examination: 60%; Practical assignments: 40%.",
+  "is_science_course": true
+}

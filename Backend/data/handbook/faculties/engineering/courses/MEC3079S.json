@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MEC3079S",
+  "title": "Control Systems",
+  "department": "mechanical-engineering",
+  "credits": 12,
+  "nqf_level": 8,
+  "year_level": 3,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr A Pretorius",
+  "prerequisites": {
+    "text": "(MAM2083F/S or MAM2085F/S) and MAM2084F/S",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "MAM2083F",
+        "MAM2085F",
+        "MAM2084F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course provides an introduction to control system analysis and design techniques. Specific topics in this course include: mathematical modelling of systems in the time-domain and frequency-domain; Laplace and inverse Laplace transforms; block diagrams and block diagram algebra; open -loop and closed-loop configurations; analysis methods to assess system stability, sensitivity, and performance; frequency-domain design techniques; archetypal control schemes; digital control principles; and considerations for controller implementation. The course will additionally cover a subset of the following topics: system identification methods; state space modelling; introduction to linear state estimation; and time-domain control design techniques.",
+  "lecture_times": "3 lectures per week.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

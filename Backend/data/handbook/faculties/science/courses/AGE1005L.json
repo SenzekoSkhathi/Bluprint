@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AGE1005L",
+  "title": "Towards a Decolonised Science in South Africa",
+  "department": "archaeology",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": "First Year",
+  "semester": "winter",
+  "semester_code": "L",
+  "convener": "Professor R Ackermann",
+  "prerequisites": {
+    "text": "None",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "This course addresses key topics relevant to the decolonization of science in South Africa. Course objectives include: (1) contrasting the science behind human diversity (e.g. skin colour variation, sex) with socially-constructed categories (e.g. race, gender binary); (2) demonstrating how the history of racism and gender bias has limited the focus of scientific enquiry; (3) highlighting the importance of diversity and diverse voices in the production of scientific knowledge; (4) showing how African voices have shaped and are continuing to shape the trajectory of science. The approach is a blended learning environment combining online lectures, tutorials, tasks, and assessments. Guests from within UCT and from further afield supplement material through lectures, interviews and/or short case studies.",
+  "lecture_times": "Offered during winter term (blended/online format)",
+  "dp_requirements": null,
+  "assessment": "Class participation (workshops/tutorials and online discussions) 20%; online tests 20%; final exam 30%; final project 30%. Note: The 30% final exam allocation reflects the format and intensive interactive nature of the course; the final project (equal weight to the exam) will be externally examined.",
+  "is_science_course": true
+}

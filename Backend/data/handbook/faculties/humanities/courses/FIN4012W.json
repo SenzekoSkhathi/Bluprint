@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "FIN4012W",
+  "title": "Theory and Practice of Art",
+  "department": "fine-art",
+  "credits": 48,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Associate Professor K Campbell",
+  "prerequisites": {
+    "text": "FIN2029F, FIN2028S and a pass in both Studiowork 3 courses.",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "FIN2029F",
+        "FIN2028S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course examines the place of the artist in contemporary society and the skills and tools (both practical and theoretical) that may be needed to traverse this terrain. Through the course students will be exposed to the conventions of professional art p ractice; examine the relationship between theory and practice; look at how the current internal art world is structured and discuss the economics and ethics of art production both globally and locally. Students will learn to write catalogue essays and design exhibition catalogues.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "The submission of satisfactory assignments and satisfactory participation in the work of the class.",
+  "assessment": "Research essay on a South African artist: 30%; Catalogue of professional practice: 20%; Senior theoretical essay: 50%.",
+  "is_humanities_course": true
+}

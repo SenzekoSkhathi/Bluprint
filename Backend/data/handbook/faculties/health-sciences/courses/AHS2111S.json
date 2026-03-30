@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AHS2111S",
+  "title": "Diagnostic Audiology in Special Populations",
+  "department": "health-and-rehabilitation-sciences",
+  "credits": 15,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr L Petersen",
+  "prerequisites": {
+    "text": "AHS2046F",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "AHS2046F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to enable th e student to understand and disc uss the nature, assessment and management of central auditory processing disorders (CAPD); and the hearing assessment of (a) the paediatric population (0-6 years), and (b) individuals who r equire modified assessment strategies. Content includes CAPD – its nature, assessment, differential diagnosis, management, as well as modified assessment strategies for paediatric and difficult-to-test populations. Students also learn the DEPARTMENTS IN THE FACULTY 103 design and interpretation of test protocol, communication of results, and further management. Students acquire the ability to select an appropriate diagnostic test battery; an alyse test results and integrate these results to inform decision s about the patient diagnosis a nd management plan. They design a management plan for furt her testing/referral/therapy (CAPD). They learn that early diagnosis and management of CAPD and hearing disorders in special populations is critical to a successful outcome and that holistic management and exercising duty of care are im portant. Teaching and learning activities include lectures, self-study, test dem onstrations and case-based learning. Themes underpinning the course are disability and the burden of disease; equity and affirmation of diversity; and ethical conduct.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "For discipline specific courses in the BSc Audiology and BSc in Speech-Language Pathology programmes a minimum coursework mark of 40% is required for entrance into the examination.",
+  "assessment": "The course grade is made up of a cour sework mark (weighted 60%) and a final examination mark (weighted 40%). If a supplementary examination is awarded, it will count 40 % of the final mark, as the course work mark will still be included in the final mark.",
+  "is_health_sciences_course": true
+}

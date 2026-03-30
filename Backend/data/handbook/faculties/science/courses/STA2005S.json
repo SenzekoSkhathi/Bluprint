@@ -1,0 +1,31 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "STA2005S",
+  "title": "Linear Models",
+  "department": "statistical-sciences",
+  "credits": 24,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr B Erni",
+  "prerequisites": {
+    "text": "A pass in STA2004F. MAM2011F (Linear Algebra) is strongly recommended. Note: A student cannot obtain credits for more than one of STA2020F/S, STA2007F/H/S, STA2005S.",
+    "parsed": {
+      "type": "and",
+      "codes": [
+        "STA2004F",
+        "MAM2011F",
+        "STA2020F/S",
+        "STA2007F/H",
+        "STA2005S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course gives an introduction to statistical modelling and the theory of linear statistical models. The course has two sections: Regression (the multivariate normal distribution; quadratic forms; the linear model; maximum likelihood; estimates of parameters in the linear model; the Gauss-Markov theorem; variable selection procedures; analysis of residuals, bootstrapping; principal component analysis for dimension reduction and for regression) and Design and analysis of experiments (introduction to basic design principles, basic experimental designs, factorial experiments, analysis of variance, multiple comparisons, power and sample size calculations, random effects and repeated measures, permutation/randomisation tests, nonparametric tests, bootstrapping). Students are introduced to relevant statistical software and practical data analysis through weekly computer practicals.",
+  "lecture_times": "Five lectures per week, Monday - Friday, 1st period.",
+  "dp_requirements": "Satisfactory attendance of lectures, tutorials, practicals and tests and completion of assignments and/or class exercises as set out in course outline. Class record of at least 35%.",
+  "assessment": "Class record 30% and a 3-hour exam counting 70%. Weights will be adjusted in the case of missed assessments, as detailed in the course outline.",
+  "is_science_course": true
+}

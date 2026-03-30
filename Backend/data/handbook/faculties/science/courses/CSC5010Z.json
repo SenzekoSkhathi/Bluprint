@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CSC5010Z",
+  "title": "MIT: Computer Networks",
+  "department": "computer-science",
+  "credits": 12,
+  "nqf_level": 9,
+  "year_level": "Postgraduate (Master's specialising in IT)",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "Dr J Chavula",
+  "prerequisites": {
+    "text": "Admission into the Master's degree specialising in IT, or permission from the course convener.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "A framework for describing the operation of computer networks is developed. Starting with local-area networks, packet-switched networks and the Internet, the module then moves to the uses made of these networks, concentrating on business applications. The effect on organisations of introducing such networked applications is also examined.",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "40% for assignment component.",
+  "assessment": "Final examination: 50%; Practical assignments: 50%. A sub-minimum of 40% will be required for each of the assignment and exam components of the course.",
+  "is_science_course": true
+}

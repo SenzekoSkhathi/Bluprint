@@ -1,0 +1,43 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AHS2050H",
+  "title": "Clinical Physiotherapy I",
+  "department": "health-and-rehabilitation-sciences",
+  "credits": 18,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "FY",
+  "semester_code": "H",
+  "convener": "Mrs I Du Plessis",
+  "prerequisites": {
+    "text": "All 1st year courses. AHS1033F, AHS1034S, PPH1001F, PPH1002S, HUB1019F, HUB1020S, PSY1004F, HUB1022F, HUB1023S",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "AHS1033F",
+        "AHS1034S",
+        "PPH1001F",
+        "PPH1002S",
+        "HUB1019F",
+        "HUB1020S",
+        "PSY1004F",
+        "HUB1022F",
+        "HUB1023S"
+      ]
+    }
+  },
+  "corequisites": [
+    "AHS2052H",
+    "AHS2053H",
+    "AHS2002W",
+    "HUB2015W",
+    "HUB2023W",
+    "AHS1028H",
+    "AHS1048H"
+  ],
+  "outline": "This course is comprised of two parts; a theo retical component and a cl inical component: The theoretical component includes intr oductory modules on International Classification of Functioning and how to relate these concepts to assessment, Ethics of pa tient care as well as a module on Communication and Counselling. The clinical component integrates these modules and addresses the theory and practical application of development and wellness across the lifespan paediatric neurology, respiratory, orthopaedic, and mu sculoskeletal therapy. There are two clinical blocks and students spend a portion of the week in various clinical areas, working with patients under supervision. Clinical reasoning sessions are included. Students may be required to do a nursing elective of 24 hours at an approved facility. The course also includes an interpro fessional education a pproach where students learn about the multidisciplinary team. It in tegrates vertically with the Becoming a Professional/Becoming a Health Professional multidisciplinary courses at first year level.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Full attendance and participation in all coursework. Student attendance at clinical sessions is monitored in accordance with HPCSA regulations.",
+  "assessment": "The course is assessed via continuous in course assessment. The theoretical modules are assessed through integrated written or clinical assessment and an online component. Clinical modules are assessed through end of block clinical s ubmissions (including but not limited to block performance, case study presentation) and skill testing. The pass mark for the course is 50%. Should a student obtain between 45-49% an opportunity for re- assessme nt will be provided. The re- DEPARTMENTS IN THE FACULTY 99 assessment will replace the previous lowest clinical block mark and the course average will be re- calculated using the re-examination mark. A student must achieve a minimum of 50% to pass the re- assessment. If the student does not obtain 50%, they will fail the course.",
+  "is_health_sciences_course": true
+}

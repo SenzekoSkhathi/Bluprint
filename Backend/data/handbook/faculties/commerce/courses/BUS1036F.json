@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "BUS1036F",
+  "title": "Evidence-based Management",
+  "department": "management-studies",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "J Rousseau",
+  "prerequisites": {
+    "text": "Admission as first year Faculty of Commerce students, or by permission of Head of School.",
+    "parsed": {
+      "type": "admission",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course equips students with crucial intellectual resources for facing the challenges presented by a globalised knowledge-dependent economy. Its focus is on developing critical reasoning skills, in particular competence at, and confidence in, assessing the quality of available evidence; distinguishing disinformation from misinformation, and understanding the influence of social media on shaping judgments and decision-making. Students will learn how to use evidence and sound argumentation to reach well-justified conclusions, and to then efficiently and persuasively communicate those conclusions to relevant stakeholders.",
+  "lecture_times": "To be advised.",
+  "dp_requirements": "Submission of all coursework assignments. Participation in small group case study discussions as required. Achieving a weighted average of at least 40%.",
+  "assessment": "Coursework 75%; Capstone assessment 25%. A sub-minimum of 45% must be achieved in the capstone assessment.",
+  "is_commerce_course": true
+}

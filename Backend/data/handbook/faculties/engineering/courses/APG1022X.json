@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "APG1022X",
+  "title": "Practical Training in Geomatics",
+  "department": "architecture-planning-geomatics",
+  "credits": 0,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "varies",
+  "semester_code": "X",
+  "convener": "Associate Professor S Hull",
+  "prerequisites": {
+    "text": "Refer to the programme and departmental sections in the 2026 EBE Faculty Handbook.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to to consolidate knowledge and skills of field surveying and data processing learnt in the course APG1016W. Allied outcomes are to equip the student with skills relating to the workplace, which may include: group work, professional commun ication skills, office procedures, timekeeping, logistical planning, organisational skills and administrative procedures. Outcomes: After completing this practical training module the student should have an appreciation of basic technical surveying operations in the field and the roles of the professional, technical, assistant staff; the student should have an appreciation of office operations and data processing. The student should have a developing understanding of the following: the importance of timekeeping, communication norms and procedures within the survey team, care of equipment before, during and after fieldwork operations. The course includes practical work of not less than 2 weeks (10 working days) duration related to surveying. The student is re quired to submit a daily work diary, signed daily by both students and employer. Copies of observations and calculations are to be submitted. A signed letter from each employer on company letterhead must accompany the diary. The letter should confirm the p ractical training duration and the range of tasks undertaken. For students in the surveying stream, this is a prerequisite for third year courses.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Satisfactory completion determined from the following submissions: a daily diary of work signed by student and employer, copies of observations and calculations as specified in the course materials and a signed letter from the employer on a company letterhead.",
+  "assessment": "Pass/fail determined according to whether tasks have been duly performed.",
+  "is_engineering_course": true
+}

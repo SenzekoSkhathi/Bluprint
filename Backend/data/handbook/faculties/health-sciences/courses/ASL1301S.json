@@ -1,0 +1,26 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "ASL1301S",
+  "title": "Introduction to Sociolinguistics",
+  "department": "african-languages-and-literatures",
+  "credits": 15,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "TBA",
+  "prerequisites": {
+    "text": "None",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course focuses on the study of language in its social context, a branch of Linguistics that is referred to as sociolinguistics. The course includes topics such as introduction (b asic concepts and issues in sociolinguistics); regional variation; social variation; language change, language and social media; multilingualism; language an d interaction; gender and languag e; language contact; pidgins, creoles and new Englishes; language planning and policy; language and education; the sociolinguistics of sign language.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "None.",
+  "assessment": "Continuous assessment (essays, projects, tests, etc.) counts 100%.",
+  "is_health_sciences_course": false,
+  "offered_by_faculty": "humanities"
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AHS2002W",
+  "title": "Clinical Sciences I",
+  "department": "health-and-rehabilitation-sciences",
+  "credits": 13,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Dr MA De Souza",
+  "prerequisites": {
+    "text": "Pre-requisites for course: HUB1019F and HUB1020S",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "HUB1019F",
+        "HUB1020S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The course covers the aetio logy, clinical signs and symptoms, as sessment and medical and surgical treatment of patients of all age groups suff ering from conditions enc ountered by occupational therapists and physiotherapists duri ng their work. The lecture series has been designed to integrate information about pathology and the clinical ma nagement of a range of conditions across the previously demarcated areas of medicine, surgery, orthopaedics and paediatr ics. The topics covered include pathology, oncology, orth opaedics, child health, neurosur gery, spinal cord injuries, cardiothoracic surgery, medi cine and palliative care. At the end of the course, students will have a basic understanding of the physiology, patholog y, clinical presentati on and management of the conditions presented; will be able to recognise and deal with the clinical emergencies that may impair or result in loss of function; will understand the role of the various discipli nes in managing these conditions; and will recognise the im portance of a multidisciplinary team in managing patients they are likely to encounter.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "80% attendance of face-to-face lectures, synchronous online lectures, and online forum tasks. Full particip ation in all learning activities and co mpletion of all coursework and three assignments by the due dates.",
+  "assessment": "There are three term assessments, in March, June and September. Each of these is a one- hour online test and count s 10% each towards the year mark. 6% of the year mark is made up from forum tasks during the year. Each of the three assignments is worth 7% to the final year mark There is an examination at the end of the year (a two-hour exam) which accounts for 43% of the total mark. A supplementary assessment (a two-hour exam) may be offered for students obtaining an overall mark between 45 and 49%. 80% attendance and to complete 3 assignment s. Assessments: Test 1 = 10%; Test 2 -10%; Test 3 – 10%; Forum task s = 6%; Assignment 1 – 7%; Assignment 2 – 7%; Assignment 3- 7%; Final exam =43%; Total = 100%.",
+  "is_health_sciences_course": true
+}

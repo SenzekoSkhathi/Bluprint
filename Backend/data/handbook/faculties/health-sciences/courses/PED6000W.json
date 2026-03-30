@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PED6000W",
+  "title": "Paediatrics and Child Health",
+  "department": "paediatrics-and-child-health",
+  "credits": 30,
+  "nqf_level": 8,
+  "year_level": 6,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Doctor J Ahrens (Paediatrics), Doctor K Reichmuth(Co-ordinator)",
+  "prerequisites": {
+    "text": "Successful completion of all co urses within the preceding academic year. DEPARTMENTS IN THE FACULTY 197",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This is a four-week course during which students are placed at George Provincial, Red Cross War Memorial Children’s, Victoria, Gr oote Schuur or New So merset Hospital. wher e they are integral members of the clinical team. They participate fully in the academic and clinical activities of the firm including after-hours cover. Learning outcomes include demonstration of core knowledge of common paediatric diseases and conditions; history-taking skills; emergency manage ment and resuscitation; defining problem lists; formulating appropriate management plans; performing basic procedures; professional behaviour and attitud e; and advocacy of the rights of children. The core curriculum focuses on common paediatric conditions. During the paediatric attachment students attend procedure and resuscitation training and are exposed to opportunities to acquire a prescribed list of necessary procedural skills",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "To qualify for the end-of-block examinat ion, students must fulfil all of the following: (a) Achieve at least 50% for the paediatric in-course assessment; (b) successfully complete the procedure and resuscitation [Paediatric Life Support] training; (c) complete a written portfolio of the required minimum number of original case write -ups of patients seen during the time in PED6000W - this portfolio must be brought to the end-of-block clinical examination; (d) submit the hard copy completed, signed, and dated PED6000W logbook by the deadline stipulated in the course handbook; and (e) achieve a mini mum of 80% attendance* *Any absence is only allowed with permission subject to the leave of absence rules as stated in the course handbook. If a student is absent with permission for five or more working days, the time missed will need to be made up to attain the minimum attendance criterion; DP concession rules apply.",
+  "assessment": "Formative assessment covering all aspects of the student’s performance is given during the block. The end-of-block summative assessment is made up as follows: (a) An in-course assessment [40% of the overall mark]; (b) short-cases clinical examination [30% of the overall mark]; (c) an oral portfolio exam [15% of the overall mark] and (d ) a computer-based MCQ/EMI assessment [15% of the overall mark]. While the overall pass mark is 50%, a subminimum of 50% must be met for each of the following components: (a) the end-of-block paediatric short-cases clinical examination [average of the two cases], (b) the oral portfolio examination, and (c ) the computer based MCQ/EMI assessment. In addition, students must obtain an exempt pass in the exit examination on procedural competence (MDN6004W). The fo llowing will be recommended to the Faculty Examinations Committee, that students who: (a) achieve 48–49% in the end-of-block clinical or portfolio assessment are required to undertake a supplementary examination* in the failed component; (b) achieve 47% or less in the end-of-block clinical or portfolio a ssessment are required to complete two weeks of additional clinical time and under go a supplementary examination* in the failed component; (c) achieve less than 50% in th e computer based MCQ/EMI asse ssment are required to do a supplementary MCQ/EMI examination; (d) fail the course overall with a mark of 48–49% are required to complete two weeks of additional time and undergo a full supplementary examination*; (e) fail the course overall with a mark of 47% or less are r equired to repeat the full course in the following academic year; (f) do not meet the Due Performance requirements fail the course and are required to repeat it and its end-of-block summa tive assessment in full in the next academic ye ar. It will be recommended to the Supplementary Faculty Examinations Committee that students who achieve 49% or less in the supplementary examination or who do not attend or fail the deferred examination must repeat the full course and its end- of-block summative asse ssment in the next academic year.*All additional time and supplementary examinations will take place in the supplementary time period as scheduled by the University or at a time agreed to by all of the following: the Faculty of Health Sciences Undergraduate Office, th e Department of Paediatrics and Child Health, any other affected department, and the student.",
+  "is_health_sciences_course": true
+}

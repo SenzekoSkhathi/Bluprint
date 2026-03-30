@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EGS5068F",
+  "title": "Disaster Risk Science",
+  "department": "environmental-geographical-science",
+  "credits": 23,
+  "nqf_level": 9,
+  "year_level": "Postgraduate – Masters elective",
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr P Sabela-Rikhotso",
+  "prerequisites": {
+    "text": "Acceptance for EGS Masters.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "Through a transdisciplinary lens, this course explores broad concepts, legislative and policy frameworks, practical applications, tools and skills influencing disaster risk science. The course explores scholarly arguments about the unnatural state of natural disasters, investigates theoretical models and case studies that underscore the fundamentals of disaster impact minimisation, and interrogates various ways in which humans, through environmental and socio-economic factors, drive vulnerability and create disaster risk.",
+  "lecture_times": null,
+  "dp_requirements": "At least 80% attendance and submission of all assignments.",
+  "assessment": "Assignments 50%; final exam 50%.",
+  "is_science_course": true
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "STA3022F",
+  "title": "Applied Multivariate Data Analysis",
+  "department": "statistical-sciences",
+  "credits": 36,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr S Er",
+  "prerequisites": {
+    "text": "STA2020F/S or STA2007F/S/H, or at least 45% for STA2005S.",
+    "parsed": {
+      "type": "prerequisite",
+      "codes": [
+        "STA2020F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The aim of the course is to create a practical working familiarity with the analysis of data, focusing on multivariate methods as applied in areas such as marketing, the social science and the sciences. Topics covered include item reliability analysis, multidimensional scaling, correspondence analysis, principal component and factor analysis, cluster analysis, discriminant analysis, classification trees and structural equation modelling.",
+  "lecture_times": "Monday - Thursday, 4th period.",
+  "dp_requirements": "Satisfactory attendance of lectures, tutorials, practicals and tests and completion of assignments and/or class exercises as set out in course outline. Class record of at least 35%.",
+  "assessment": "Class record 30% and a 3-hour exam counting 70%. Weights will be adjusted in the case of missed assessments.",
+  "is_commerce_course": false,
+  "offered_by_faculty": "science"
+}

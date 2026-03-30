@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EEE3096S",
+  "title": "Embedded Systems II",
+  "department": "electrical-engineering",
+  "credits": 16,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Associate Professor S Winberg",
+  "prerequisites": {
+    "text": "EEE2046F/S",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "EEE2046F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course focuses on embedded systems architectures, firmware and software tool stacks. This course builds on the Embedded Systems I course. Consideration for Internet of Things (IoT) is included in the form of design scenarios and project-based learning. The course is split into two parts. Part 1 (10 credits) covers: theory and practices of design and analysis through modeling and simulation of embedded systems; embedded operating systems, and methods for modelling and simulation of computer systems are studied. An introduction to Linux command line and source code version control are also taught. Part 2 (6 credits) introduces Hardware Description Language (HDL) programming and computer architecture fundamentals techniques and tools for developing gateware and simulating designs. Part 1 practicals concern using a single board computer, deploying and using an embedded operating system, building applications using a cross-compiler tool stacks, and hardware DEPARTMENTS IN THE FACULTY AND COURSES OFFERED 137 software interfaces – the practical work culminates in Miniproject A, which requires the use of taught tools to design, analyse and implement an IoT application. Part2 practicals involve implementing a combination logic design and developing a small HDL testbench to analyse its behavior.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

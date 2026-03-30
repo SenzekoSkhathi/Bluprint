@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MAM5020F",
+  "title": "Generative AI for Research: Applications & Implications",
+  "department": "mathematics-applied-mathematics",
+  "credits": 0,
+  "nqf_level": 9,
+  "year_level": "Postgraduate – Masters",
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": null,
+  "prerequisites": {
+    "text": "None",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "This course introduces graduate science students to generative artificial intelligence and its applications in research processes. Students gain a comprehensive understanding of how AI systems work, their capabilities, limitations and ethical implications. The course covers practical applications of AI across the research lifecycle, including ideation, literature review, data exploration and scientific writing. Through hands-on workshops and critical discussion, students develop skills to effectively and responsibly integrate AI tools into their research practice while maintaining scientific integrity and addressing domain-specific challenges.",
+  "lecture_times": null,
+  "dp_requirements": null,
+  "assessment": null,
+  "is_science_course": true
+}

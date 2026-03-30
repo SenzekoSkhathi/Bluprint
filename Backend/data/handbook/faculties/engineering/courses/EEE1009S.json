@@ -1,0 +1,33 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EEE1009S",
+  "title": "Introduction to Electrical Engineering B",
+  "department": "electrical-engineering",
+  "credits": 12,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr D Ramotsoela",
+  "prerequisites": {
+    "text": "PHY1013F/S (MEC), MAM1021S (MEC), PHY1004W or PHY1032S (CSC), MAM1004F (>60%) and MAM1008S (>60%) or MAM1000W (CSC)",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "PHY1013F",
+        "MAM1021S",
+        "PHY1004W",
+        "PHY1032S",
+        "MAM1004F",
+        "MAM1008S",
+        "MAM1000W"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to motivate and help students understand the basic concepts of power generation, transmission, distribution and basic principles of electric circuits and networks. A further aim is to develop students’ confidence in rational problem -solving approaches, in performing laboratory exercises and to introduce students to the design process. Topics include introduction to complex numbers, sinusoids and phasors, sinusoidal steady state analysis, AC power analysis, basics of semiconductor physics, transistors, digital systems and introduction to integrated circuits.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

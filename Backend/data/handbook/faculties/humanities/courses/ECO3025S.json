@@ -1,0 +1,26 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "ECO3025S",
+  "title": "Public Economics",
+  "department": "economics",
+  "credits": 18,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "J Chien",
+  "prerequisites": {
+    "text": "ECO1010 and ECO1011; At least TWO 2000-level economics courses.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course is a simulation of a multi -national, multilateral trade negotiating round, based on the ‘Doha agenda.’ Students representing countries, based on random assignment, and, after researching their country's trade policies and interests, participate in supervised negotiations simulating the World Trade Organisation bargaining and treaty -making process. The course is partly web -based, using a special site and resources on the Vula interface. There is no sit-down examination, but students submit substantial final reports that are externally examined and have equivalent status to an examination.",
+  "lecture_times": "10h00 – 11h00 Monday, Tuesday, Wednesday, Thursday, Friday",
+  "dp_requirements": "None",
+  "assessment": "Coursework: 60%; Final Research Report: 40%. The course outline will detail the breakdown for submission weighting and variation for exemptions and absences.",
+  "is_humanities_course": false,
+  "offered_by_faculty": "commerce"
+}

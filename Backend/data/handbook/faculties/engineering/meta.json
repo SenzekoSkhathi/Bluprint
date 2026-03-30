@@ -1,0 +1,162 @@
+{
+  "$schema": "handbook-meta-v1",
+  "university": "University of Cape Town",
+  "faculty": "Faculty of Engineering and the Built Environment",
+  "faculty_slug": "engineering",
+  "year": 2026,
+  "handbook_title": "Faculty of Engineering & the Built Environment Undergraduate Studies",
+  "handbook_series": "Book 7a in the series of handbooks",
+  "contact": {
+    "postal_address": "University of Cape Town, Private Bag X3, 7701 Rondebosch",
+    "deans_office": "New Engineering Building, Upper Campus",
+    "office_hours": "Monday to Friday: 08h30 - 16h30",
+    "telephones": {
+      "deans_office": "(021) 650-2702",
+      "faculty_office": "(021) 650-2699",
+      "accounts_and_fees": "(021) 650-1704",
+      "admissions": "(021) 650-2128"
+    },
+    "websites": {
+      "uct": "http://www.uct.ac.za",
+      "ebe_faculty": "http://www.ebe.uct.ac.za",
+      "dean_email": "ebe-dean@uct.ac.za",
+      "faculty_email": "ebe-faculty@uct.ac.za"
+    }
+  },
+  "qualifications": {
+    "undergraduate_degrees": [
+      {
+        "name": "Bachelor of Architectural Studies",
+        "abbreviation": "BAS",
+        "saqa_id": 3933,
+        "minimum_duration_years": 3,
+        "minimum_credits": 376
+      },
+      {
+        "name": "Bachelor of Science in Construction Studies",
+        "abbreviation": "BSc(ConstStudies)",
+        "saqa_id": 11703,
+        "minimum_duration_years": 3,
+        "minimum_credits": 422
+      },
+      {
+        "name": "Bachelor of Science in Property Studies",
+        "abbreviation": "BSc(PropStudies)",
+        "saqa_id": 11693,
+        "minimum_duration_years": 3,
+        "minimum_credits": 452
+      },
+      {
+        "name": "Bachelor of Science in Engineering in Chemical Engineering",
+        "abbreviation": "BSc(Eng)(Chemical)",
+        "saqa_id": 13983,
+        "minimum_duration_years": 4,
+        "minimum_credits": 560
+      },
+      {
+        "name": "Bachelor of Science in Engineering in Civil Engineering",
+        "abbreviation": "BSc(Eng)(Civil)",
+        "saqa_id": 13974,
+        "minimum_duration_years": 4,
+        "minimum_credits": 576
+      },
+      {
+        "name": "Bachelor of Science in Engineering in Electrical Engineering",
+        "abbreviation": "BSc(Eng)(Electrical)",
+        "saqa_id": 13979,
+        "minimum_duration_years": 4,
+        "minimum_credits": 560
+      },
+      {
+        "name": "Bachelor of Science in Engineering in Electrical and Computer Engineering",
+        "abbreviation": "BSc(Eng)(Elec&Comp)",
+        "saqa_id": 66518,
+        "minimum_duration_years": 4,
+        "minimum_credits": 560
+      },
+      {
+        "name": "Bachelor of Science in Engineering in Mechatronics",
+        "abbreviation": "BSc(Eng)(Mechatronics)",
+        "saqa_id": 13980,
+        "minimum_duration_years": 4,
+        "minimum_credits": 560
+      },
+      {
+        "name": "Bachelor of Science in Engineering in Mechanical Engineering",
+        "abbreviation": "BSc(Eng)(Mechanical)",
+        "saqa_id": 13977,
+        "minimum_duration_years": 4,
+        "minimum_credits": 560
+      },
+      {
+        "name": "Bachelor of Science in Engineering in Mechanical & Mechatronic Engineering",
+        "abbreviation": "BSc(Eng)(Mech&Mechatronic)",
+        "saqa_id": 13982,
+        "minimum_duration_years": 4,
+        "minimum_credits": 560
+      },
+      {
+        "name": "Bachelor of Science in Geomatics",
+        "abbreviation": "BSc(Geomatics)",
+        "saqa_id": 116420,
+        "minimum_duration_years": 4,
+        "minimum_credits": 519
+      }
+    ]
+  },
+  "course_code_system": {
+    "description": "Eight character code AAAnnnnB: AAA=department, nnnn=year level+number, B=suffix.",
+    "handbook_page": 11,
+    "suffix_codes": {
+      "A": {"meaning": "1st quarter course", "semester": "Q1"},
+      "B": {"meaning": "2nd quarter course", "semester": "Q2"},
+      "C": {"meaning": "3rd quarter course", "semester": "Q3"},
+      "D": {"meaning": "4th quarter course", "semester": "Q4"},
+      "F": {"meaning": "First semester course", "semester": "S1"},
+      "S": {"meaning": "Second semester course", "semester": "S2"},
+      "H": {"meaning": "Half course taught over whole year", "semester": "FY"},
+      "W": {"meaning": "Full course, year-long", "semester": "FY"},
+      "L": {"meaning": "Winter term", "semester": "winter"},
+      "M": {"meaning": "Multiterm", "semester": "varies"},
+      "U": {"meaning": "Summer Term Sessions 1 and 2", "semester": "summer"},
+      "J": {"meaning": "Summer Term Session 1", "semester": "summer"},
+      "P": {"meaning": "Summer Term Session 2", "semester": "summer"},
+      "X": {"meaning": "Not classified (e.g. practical training)", "semester": "varies"},
+      "Z": {"meaning": "Other", "semester": "varies"}
+    },
+    "note": "Levels 1-3 are undergraduate. Level 4 CHE/CIV/EEE/MEC courses are undergraduate; level 4 APG (non-Geomatics) and CON are postgraduate. Level 5+ is postgraduate."
+  },
+  "departments": [
+    "Architecture, Planning and Geomatics",
+    "Chemical Engineering",
+    "Civil Engineering",
+    "Construction Economics and Management",
+    "Electrical Engineering",
+    "Mechanical Engineering"
+  ],
+  "department_prefixes": [
+    "APG", "CHE", "CIV", "CON", "EEE", "MEC", "END"
+  ],
+  "cross_faculty_departments": [
+    {"department": "Accounting", "prefix": "ACC", "home_faculty": "commerce"},
+    {"department": "Biological Sciences", "prefix": "BIO", "home_faculty": "science"},
+    {"department": "Chemistry", "prefix": "CEM", "home_faculty": "science"},
+    {"department": "Computer Science", "prefix": "CSC", "home_faculty": "science"},
+    {"department": "Economics", "prefix": "ECO", "home_faculty": "commerce"},
+    {"department": "Environmental & Geographical Science", "prefix": "EGS", "home_faculty": "science"},
+    {"department": "Geological Sciences", "prefix": "GEO", "home_faculty": "science"},
+    {"department": "Human Biology", "prefix": "HUB", "home_faculty": "health-sciences"},
+    {"department": "Information Systems", "prefix": "INF", "home_faculty": "commerce"},
+    {"department": "Mathematics & Applied Mathematics", "prefix": "MAM", "home_faculty": "science"},
+    {"department": "Physics", "prefix": "PHY", "home_faculty": "science"},
+    {"department": "Statistical Sciences", "prefix": "STA", "home_faculty": "science"},
+    {"department": "Commercial Law", "prefix": "CML", "home_faculty": "law"},
+    {"department": "Management Studies", "prefix": "BUS", "home_faculty": "commerce"}
+  ],
+  "academic_development": {
+    "programme": "ASPECT (Academic Support Programme for Engineering in Cape Town)",
+    "description": "5-year extended curriculum providing additional academic support. Same courses, spaced over 5 years.",
+    "extended_maths": ["MAM1023F", "MAM1024S"],
+    "extended_physics": ["PHY1014F", "PHY1015S"]
+  }
+}

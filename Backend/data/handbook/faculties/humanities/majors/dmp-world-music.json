@@ -1,0 +1,37 @@
+{
+  "id": "dmp-world-music",
+  "programme_code": "HU021",
+  "stream_code": "MUZ14",
+  "name": "Diploma in Musical Performance (World Music)",
+  "abbreviation": "DMP",
+  "nqf_level": 6,
+  "department": "South African College of Music",
+  "duration_years": 3,
+  "credits_range": "413-452",
+  "curriculum": {
+    "year_1": {
+      "core": [
+        "MUZ1110H",
+        "MUZ1111H",
+        "MUZ1300F",
+        "MUZ1301S"
+      ],
+      "note": "Plus instrument B1 and ensemble"
+    },
+    "year_2": {
+      "core": [
+        "MUZ2110H",
+        "MUZ2111H",
+        "MUZ2306F"
+      ],
+      "note": "Plus instrument B2 and ensemble"
+    },
+    "year_3": {
+      "core": [
+        "MUZ3110H",
+        "MUZ3111H"
+      ],
+      "note": "Plus instrument B3 recital"
+    }
+  }
+}

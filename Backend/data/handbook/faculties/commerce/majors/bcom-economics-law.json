@@ -1,0 +1,12 @@
+{
+  "$schema": "handbook-programme-v1",
+  "programme_code": "CB001ECO03",
+  "programme_name": "Bachelor of Commerce specialising in Economics with Law",
+  "degree": "BCom",
+  "specialisation": "Economics with Law",
+  "faculty": "commerce",
+  "nqf_level": 7,
+  "minimum_credits": 440,
+  "duration_years": 3,
+  "department": "economics"
+}

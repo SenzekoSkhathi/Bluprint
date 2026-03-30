@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CSC5000W",
+  "title": "Computer Science Dissertation",
+  "department": "computer-science",
+  "credits": 180,
+  "nqf_level": 9,
+  "year_level": "Postgraduate (Master's by dissertation)",
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Professor J Gain",
+  "prerequisites": {
+    "text": "Computer Science Honours from UCT prior to 2018, or permission from the Head of Department in exceptional cases. In the normal case, students will be expected to register for Master's specialising in Computer Science by coursework and minor dissertation. Students will be expected to attend a research methods course in the first year.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "This course consists of an investigation of an approved topic chosen for intensive study by the candidate, culminating in the submission of a dissertation. The dissertation shall demonstrate the successful completion of a programme of training in research methods, a thorough understanding of the scientific principles underlying the research and an appropriate acquaintance with the relevant literature. It must be clearly presented and conform to the standards of the department and faculty.",
+  "lecture_times": "Not applicable.",
+  "dp_requirements": "Not specified.",
+  "assessment": "Examination by dissertation.",
+  "is_science_course": true
+}

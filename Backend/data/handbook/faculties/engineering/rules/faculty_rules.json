@@ -1,0 +1,54 @@
+{
+  "$schema": "handbook-rules-v1",
+  "faculty": "engineering",
+  "year": 2026,
+  "rules": {
+    "admission": {
+      "FB1": "Candidates must hold: (a) NSC endorsed by Umalusi for degree study; (b) senior certificate with matric endorsement; (c) certificate of complete/conditional exemption from Matriculation Board; or (d) a recognised degree."
+    },
+    "duration": {
+      "FB2.1": "BAS, BSc(ConstStudies), BSc(PropStudies): minimum 3 academic years.",
+      "FB2.2": "BSc(Eng), BSc(Geomatics): minimum 4 academic years."
+    },
+    "curriculum": {
+      "FB3.1": "Candidates must comply with curriculum and course requirements prescribed by Senate.",
+      "FB3.2": "Minimum 560 credits for 4-year degrees, 432 credits for 3-year degrees.",
+      "FB3.3": "Curriculum subject to approval of Dean and Head of Department.",
+      "FB3.4": "Timetable clashes not allowed. Priority given to courses in arrears.",
+      "FB3.5": "Cannot withdraw from a repeating course without Dean's permission."
+    },
+    "credit_exemption": {
+      "FB4.1": "Credit/exemption may be granted per Rules GB2 and GB3.",
+      "FB4.2": "Course credits older than 10 years cannot be carried forward without special Senate permission."
+    },
+    "progress": {
+      "FB5": "Academic year determined by expected graduation year."
+    },
+    "assessment": {
+      "FB6.1": "Courses assessed by formal examination or review with satisfactory DP performance.",
+      "FB6.2": "Formal examination: written/oral examination, tutorials, class tests, term papers.",
+      "FB6.3": "DP certificate may be withheld if work incomplete or attendance unsatisfactory.",
+      "FB6.4": "DP courses: pass/fail result (PA or DPR).",
+      "FB6.5": "Review: assessment by internal examiner(s) of coursework."
+    },
+    "supplementary_examinations": {
+      "FB7.1": "Senate may permit supplementary exams: must have DP and at least 45%.",
+      "FB7.1_note": "Chemical Engineering courses with mandatory reassessments do not offer supplementaries.",
+      "FB7.2": "TRP: Tutored Reassessment Programme for marks 40-44%, with mandatory attendance.",
+      "FB7.3": "Senate may permit one additional assessment for one course in final year preventing graduation (min 45%)."
+    },
+    "readmission": {
+      "FB8.1_BAS": "Cannot renew if: fail major course, fail any course more than once, fail 80% of credits, or cannot complete in 4 years. Min 64 credits/year.",
+      "FB8.2_ChemEng4yr": "Cannot renew if: first year fail to get 102 credits (FECR at 66); subsequent years fail 108 credits.",
+      "FB8.3_ChemEng5yr": "Cannot renew if: first year fail to get 66 credits (FECR at 48); subsequent years fail 82 credits.",
+      "FB8.8_CivEng4yr": "Cannot renew if: first year fail 112 credits (FECR 68, must pass MAM1020F/S and PHY1012F/S plus 32 from others); subsequent years 112 credits.",
+      "FB8.10_ElecEng4yr": "Cannot renew if: first year fail 96 credits (FECR 66); subsequent years 116 or 112 credits depending on curriculum.",
+      "FB8.11_MechEng4yr": "Cannot renew if: first year fail 116 credits (FECR 90); subsequent years 116 credits."
+    },
+    "distinction": {
+      "FB9.1_BAS": "First class pass in Design & Theory Studio III Exam and first class pass or second class (Div 1) in another Studio Exam, plus 3 additional first class passes.",
+      "FB9.2_BSc_Eng_Geomatics": "Complete in minimum time, at least first class in research project, and for honours: second class in research project. CWA 65% for honours, 75% for first class honours.",
+      "FB9.3_ConstStudies_PropStudies": "Minimum CWA of 75%."
+    }
+  }
+}

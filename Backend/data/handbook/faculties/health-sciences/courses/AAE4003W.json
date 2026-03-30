@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AAE4003W",
+  "title": "Anaesthesia (Part I) for External Credit",
+  "department": "anaesthesia-and-perioperative-medicine",
+  "credits": 8,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Doctor A Ernst",
+  "prerequisites": {
+    "text": "None",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This is a three-week block in which students will rotate in theatre to acquire the basic skills necessary for the conduct of safe anaesthesia. Formal teaching consists of seminars with a mixture of case-based, interactive, and didactic learni ng, as well as attendance of work shops in airway management and anaesthesia simulation in the skills laboratory. There is an emphasis on safe anaesthesia practice and professional behaviour appropriate to the role of the a naesthetist as a periope rative physician. Core knowledge comprises the core physiology and pharmacology relevant to anaesthesia, basic knowledge of anaesthesia techniques, drugs, and equipment, and u nderstanding the inter action of surgery, anaesthesia and pre-existing disease in various clinical scenarios. A logbook of clinical skills is to be completed.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Full completion of all anaesthesia skills lis ted in the logbook (including airway and simulation workshops) and attendance of at least 5 of the 6 seminars.",
+  "assessment": "One computer-based exam comprising multip le choice questions (single best answer)and matching items format.",
+  "is_health_sciences_course": true
+}

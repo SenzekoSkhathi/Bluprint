@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AHS4072H",
+  "title": "Research Methods and Biostatistics II",
+  "department": "health-and-rehabilitation-sciences",
+  "credits": 10,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "FY",
+  "semester_code": "H",
+  "convener": "Associate Professor G Ferguson",
+  "prerequisites": {
+    "text": "AHS3078H",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "AHS3078H"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "Objective: This course is desig ned to familiarize groups of stude nts with the research process. Students enter the course having completed a research proposal developed in AHS3078H. At the end of this course the student should be able to: plan and conduct appropriate research in an ethical manner; analyse, interpret, and discuss research findings; critically evaluate own and other’s research; write a research report; present research findings. Course outline: Students, working in groups, prepare a 3500-word literature review and will conduct a research project that will be documented as a scientific article of no more than 3500 words and complete a presentation of their final findings.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "See 2026 Health Sciences Faculty Handbook.",
+  "assessment": "The course comprises a literature review, research project and presentation. These components contribute 75% to the fi nal course grade. Peer review is incorporated into each of the three components of the course and contributes 25% to the final course grade. If the final course grade is between 40-49% an opportunity for reassessment w ill be offered. A maxi mum of 50% will be awarded for this re-assessment. Students who fail the reassessment or obtain less than 40% for their final grade, will fail the course and be required to reregister for AHS4072H and complete a individual research project in the following academic year.",
+  "is_health_sciences_course": true
+}

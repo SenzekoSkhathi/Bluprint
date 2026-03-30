@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-pattern-codes-v1",
+  "faculty": "science",
+  "year": 2026,
+  "description": "Pattern codes used in major curricula where any course matching the pattern satisfies the requirement. The 'x' is a wildcard digit.",
+  "patterns": {
+    "STA100x": {
+      "description": "Any first-year Statistics course",
+      "resolves_to": ["STA1000F", "STA1000S", "STA1000P/L", "STA1006S", "STA1007S"],
+      "used_in_majors": ["CSC05", "CSC02", "CSC08", "BIO13", "STA13"]
+    },
+    "STA20xx": {
+      "description": "Any second-year Statistics course",
+      "resolves_to": ["STA2004F", "STA2005S", "STA2007F/S/H", "STA2020F", "STA2020S", "STA2030S"],
+      "used_in_majors": ["BIO13"]
+    },
+    "STA30xx": {
+      "description": "Any third-year Statistics course",
+      "resolves_to": ["STA3022F", "STA3030F", "STA3036S", "STA3041F", "STA3045F", "STA3047S", "STA3048S"],
+      "used_in_majors": ["BIO13"]
+    },
+    "MAM304x": {
+      "description": "Any third-year Applied Mathematics course (3AN, 3MP, 3CV, 3GR, 3FD)",
+      "resolves_to": ["MAM3042F/S", "MAM3043F/S", "MAM3044F/S", "MAM3045F/S", "MAM3046F/S"],
+      "used_in_majors": ["BIO13"]
+    }
+  }
+}

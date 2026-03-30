@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MAM2083S",
+  "title": "Differential Equations",
+  "department": "mathematics-and-applied-mathematics",
+  "credits": 12,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr E Fredericks",
+  "prerequisites": {
+    "text": "MAM1020 or equivalent and MAM1021 or equivalent.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [
+    "MAM1020F"
+  ],
+  "outline": "DEPARTMENTS IN OTHER FACULTIES AND COURSES OFFERED 183 This course aims to develop an understanding of differentiation of vector valued functions, space curves and surfaces. Partial derivatives, chain rule, maxima and minima, Lagrange multipliers. Gradient, divergence and curl. Taylor's theorem for one and sev eral variables, Jacobians, Newton's method for several variables. Multiple integrals and change of variable. Surface integrals. Line integrals, work done by a force, potentials. Green's theorem, divergence theorem, and Stokes' theorem.",
+  "lecture_times": "4 lectures per week, 1 double-period tutorial per week.",
+  "dp_requirements": "35% class record and satisfactory tutorial attendance.",
+  "assessment": "One paper written in June or November no longer than 2.5 hours: up to 80%, year mark: up to 40%.",
+  "is_engineering_course": false,
+  "offered_by_faculty": "science"
+}

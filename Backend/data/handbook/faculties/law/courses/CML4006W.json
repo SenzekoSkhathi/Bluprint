@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CML4006W",
+  "title": "Commercial Transactions Law",
+  "department": "commercial-law",
+  "credits": 36,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "B Zungu",
+  "prerequisites": {
+    "text": "All Preliminary and Intermediate Level courses to have been completed.",
+    "parsed": {
+      "type": "level_completion",
+      "levels_required": [
+        "preliminary",
+        "intermediate"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The course covers principles of the law of agency, sale, lease, credit agreements, insurance, secured transactions and insolvency. Aspects of consumer protection, financial inclusion, and financial technology will also be covered. Assessment: One compulsory class test in June, 30%; One optional written assignment, 20%; One November examination, 50% or 70%. The material tested in June will not be examined directly in the final examination but students will be expected to be familiar with that material for the final examination.",
+  "lecture_times": "Seventy-two lectures, six small group teaching sessions.",
+  "dp_requirements": "None",
+  "assessment": "Coursework 30% or 50%, Final Examination 70% or 50%.",
+  "is_law_course": true
+}

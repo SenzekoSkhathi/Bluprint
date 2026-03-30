@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CSC5021Z",
+  "title": "Computational Geometry for 3D Printing",
+  "department": "computer-science",
+  "credits": 12,
+  "nqf_level": 9,
+  "year_level": "Postgraduate (Master's)",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "Professor J Gain",
+  "prerequisites": {
+    "text": "Admission into the Master's degree specialising in Computer Science, or permission from the course convener. Computer Graphics at third-year level.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "The objective is to master surface and volumetric modelling concepts applicable to 3D printing. Topics covered include: Geometry and Topology for Computer Graphics; 3D Printing Concepts (Printing Hardware, Overhang Support, Applications); Volumetric Concepts (Voxels, Computational Solid Geometry, Isosurface Extraction); Surface Concepts (Parametric Surfaces, Mesh Smoothing, Free-Form Deformation). From a practical perspective, students will code modelling software, then design and ultimately print a 3D model.",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "None.",
+  "assessment": "Exam: open book, 2 hours, 40%; Practical assessments 50%; Final printed show piece, 10%.",
+  "is_science_course": true
+}

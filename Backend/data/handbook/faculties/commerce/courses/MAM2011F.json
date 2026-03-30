@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MAM2011F",
+  "title": "Linear Algebra (2LA)",
+  "department": "mathematics",
+  "credits": 12,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr H Spakowski",
+  "prerequisites": {
+    "text": "MAM1031F and MAM1032S or equivalent. With permission from the convener, students with 70% for both MAM1010F and MAM1012S may register for MAM2011F.",
+    "parsed": {
+      "type": "prerequisite",
+      "codes": [
+        "MAM1031F",
+        "MAM1032S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "Students will study the fundamentals of linear algebra, including: Vector spaces, linear independence, spans, bases, row space, column space, null space; Linear maps; Eigenvectors and eigenvalues; Inner product spaces, orthogonality. Please note that lectures alternate during the week so that students can take MAM2010F and MAM2011F concurrently.",
+  "lecture_times": "Mondays, Thursdays and some Wednesdays in 5th period.",
+  "dp_requirements": "To be advised.",
+  "assessment": "To be advised.",
+  "is_commerce_course": false,
+  "offered_by_faculty": "science"
+}

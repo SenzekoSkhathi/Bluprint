@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "DOH2024F",
+  "title": "Business Management for Humanities Students",
+  "department": "academic-development-programme",
+  "credits": 24,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Professor L Green",
+  "prerequisites": {
+    "text": "At least second -year status, or at the discretion of the Head of Department.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "The purpose of this course is to augment and support its co -requisite course: BUS2024F PSYCHOLOGY OF HUMAN RESOURCE MANAGEMENT. It aims to improve students’ performance by enhancing their grasp of key ideas and concepts, and by developing their mastery of the disciplinary discourse. It provides additional pedagogic enrichment in the form of regular Plus Tuts that extend into Writing Hub exercises and consultations. In these tutorials, students will receive explicit support around the co -requisite course ass ignments and detailed feedback on their written work. DOH2100S HABITABILITY AND THE SUSTAINABLE DEVELOPMENT GOALS IN AFRICA This course is open to all second-year students across all faculties who can take electives. 20 NQF credits at NQF level 6 Convener: Professor L Green Course entry requirements: At least second -year status, or at the discretion of the Head of Department. Course outline: This course invites students to critically examine sustainability and habitability by engaging with global and continental frameworks, waste ecologies, urban planning, and science communication. It begins with an exploration of the Sustainable Development Goals (SDGs) and Agenda 2063, questioning their future visions and the assumptions they carry. It also invites students to investigate sustainability as a contested concept, asking who defines it and who benefits from its implementation. The course will then shift to material landscapes, looking at landfills as sites where waste, value, and politics intersect. It also explores the phenomenon of greenwashing, exposing the ways sustainability is co-opted by corporate and state agendas. Soil health and contami nation emerge as key concerns, UMTHOMBO CENTRE FOR STUDENT SUCCESS 441 linking environmental degradation to food security, public health, and ecological resilience. Urban planning and waste management are examined in relation to broader questions of public health and social justice. An interdisciplinary approach underpins the course, introducing a range of research methods that equip students to analyse sustainability and waste from multiple perspectives. Attention is also given to soil restoration as a pathway to planetary habitability, encouraging big -picture thinking. The c ourse concludes with a focus on science communication, citizen science, and collaboration, preparing students to engage critically with sustainability research and action.",
+  "lecture_times": "Tuesday, Wednesday and Thursday, 6 th period.",
+  "dp_requirements": "Attendance at lectures, tutorials, and practicals and submission of all assignments.",
+  "assessment": "Continuous assessment as follows:1. Blogpost (20%) 2. Essay (20%) 3. Video essay/infographic (50%) 4. Practicals (10%)",
+  "is_humanities_course": true
+}

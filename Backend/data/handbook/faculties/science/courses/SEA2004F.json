@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "SEA2004F",
+  "title": "Principles of Oceanography",
+  "department": "oceanography",
+  "credits": 24,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "To be advised",
+  "prerequisites": {
+    "text": "GEO1009F, CEM1000W, or permission of the convener.",
+    "parsed": {
+      "type": "or",
+      "codes": [
+        "GEO1009F",
+        "CEM1000W"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "An introduction to the principles of oceanography, including an introduction to physical, biological and chemical oceanography, marine geology, and the ocean atmosphere system. The course comprises multiple modules which cover the above topics. Oceanographic instrumentation and methods of data analysis will be covered in the tutorials and practicals.",
+  "lecture_times": "Monday - Friday, 4th period. Practicals: Tuesday, 14h00 - 17h00.",
+  "dp_requirements": "Attendance at practicals and a class mark of at least 40%.",
+  "assessment": "Practicals and tests count 40%; one 3-hour examination written in June/July counts 40%. A subminimum of 40% in the examination is required.",
+  "is_science_course": true
+}

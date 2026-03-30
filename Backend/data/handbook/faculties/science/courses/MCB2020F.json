@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MCB2020F",
+  "title": "Biological Information Transfer",
+  "department": "molecular-cell-biology",
+  "credits": 24,
+  "nqf_level": 6,
+  "year_level": "Second Year",
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Associate Professor C O'Ryan",
+  "prerequisites": {
+    "text": "CEM1000W and BIO1000F (or equivalents).",
+    "parsed": {
+      "type": "and",
+      "codes": [
+        "CEM1000W",
+        "BIO1000F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course introduces students to fundamental concepts in genetics and examines how biological information is organised, used and transferred in viruses, prokaryotes and eukaryotes. Topics covered include the biological explanations for Mendel's laws of genetics, principles of evolutionary genetics, genome organisation, horizontal gene transfer and gene structure and regulation.",
+  "lecture_times": "Monday - Friday, 4th period.",
+  "dp_requirements": "50% average for assignments and practical reports; attendance at all practicals and tutorials.",
+  "assessment": "Tests and assignments count 40%; practicals count 10%; one 3-hour paper written in June counts 50%. A sub-minimum of 40% in the examination is required.",
+  "is_science_course": true
+}

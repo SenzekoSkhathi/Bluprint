@@ -1,0 +1,26 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "SLL1041S",
+  "title": "Beginners isiXhosa for MBChB",
+  "department": "language-studies",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "T Skade",
+  "prerequisites": {
+    "text": "This course is offered to 1st year students who are registered for the MBChB degree. Students seeking exemption from this course are required to pass an oral proficiency test prior to the commencement of the course in Semester 2.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "An introduction to the noun class system of Xhos a and how this generate s the concords used in creating sentences. A treatment of the tense system of Xhosa, po sitive and negative, including the stative (which is used extensively in talking about medical conditions). The development of relevant vocabulary banks and skills to manipulate the lexicon to form prepositions, pronouns and possessives. A simple explanation of Xhosa moods: indicative (making a statement), subj unctive (giving advice and making suggestions), participial (used in a wi de range of contexts). An explanation of the difference between the active and passive voice in Xhosa, and a focus on how these are used in medical dialogues and patient interviews.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Attendance of all tutorials.",
+  "assessment": "One oral summative assessment, for which students receive a PA (pass) or F (fail) grade.",
+  "is_health_sciences_course": false,
+  "offered_by_faculty": "humanities"
+}

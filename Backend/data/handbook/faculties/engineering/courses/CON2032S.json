@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CON2032S",
+  "title": "Property Investment and Finance I",
+  "department": "construction-economics-and-management",
+  "credits": 14,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "TBA",
+  "prerequisites": {
+    "text": "MAM1010F/S",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "MAM1010F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to develop an understanding of determinants of interest rates; Reserve Bank and inflation targeting; term structure of interest rates (segmentation theory, expectations theory, liquidity preference theory); simple/compound interest; annuit ies; discounting; sinking funds; amortisations; DEPARTMENTS IN THE FACULTY AND COURSES OFFERED 120 initial return, minimum accepted rate of return (MARR), payback period; net present value (NPV); internal rate of return (IRR); the mortgage loan process; private sources of property finance, and government sources of property finance.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

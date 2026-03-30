@@ -1,0 +1,32 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CEM2005W",
+  "title": "Intermediate Chemistry",
+  "department": "chemistry",
+  "credits": 48,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Dr G A Venter",
+  "prerequisites": {
+    "text": "For Science students: CEM1000W (or equivalent), 1000-level full course in Physics, 1000-level full or semester course in Mathematics. Concurrent registration for STA1000F/S (or equivalent) is highly recommended. For Chemical Engineering students: CEM1000W (or equivalent), PHY1012F/S, MAM1020F/S, CHE1005W. Note: CEM2005W is required for students proceeding to a major in Chemistry.",
+    "parsed": {
+      "type": "or",
+      "codes": [
+        "CEM1000W",
+        "STA1000F/S",
+        "PHY1012F/S",
+        "MAM1020F/S",
+        "CHE1005W",
+        "CEM2005W"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course develops the foundations of a major in Chemistry at an intermediate level and allows continuation to third-year Chemistry for the completion of a major in Chemistry. The theory component features a set of intermediate topics, and the laboratory component develops both experimental and interpretative skills. The course includes the following topics: spectroscopy and modern analytical tools, introduction to inorganic chemistry, organic structure and reactivity, thermodynamics, thermodynamics of solutions, phase equilibria, chemical reaction kinetics and equilibria, reactions of organic molecules (patterns, predictions and preparation of new products), introduction to coordination chemistry, structures and energetics of inorganic solids and electrochemistry. The practical course covers the same topics and aims to develop manipulative and technical laboratory skills including the application of modern analytical methods to the elucidation of chemical structures.",
+  "lecture_times": "Monday - Friday, 3rd period. Tutorials and problem sheets by arrangement. Practicals, EBE: Tuesday, 14h00 - 17h00; Science: Thursday, 14h00 - 17h00.",
+  "dp_requirements": "Attendance and completion of practicals, tests and tutorial exercises; at least 40% average for practical exams.",
+  "assessment": "The class record counts 50%; one 3-hour examination written in November counts 50%. The class record consists of class tests (20%), tutorials and problem sheets (10%), practical reports (10%) and practical exams (10%). A subminimum of 40% is required in the final examination.",
+  "is_science_course": true
+}

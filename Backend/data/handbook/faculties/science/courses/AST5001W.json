@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AST5001W",
+  "title": "Astrophysics & Space Science Minor Dissertation (NASSP)",
+  "department": "astronomy",
+  "credits": 90,
+  "nqf_level": 9,
+  "year_level": "Postgraduate – Masters",
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": null,
+  "prerequisites": {
+    "text": "AST5003F",
+    "parsed": {
+      "type": "and",
+      "codes": [
+        "AST5003F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course consists of an investigation of an approved research topic on which a minor dissertation must be presented for formal assessment. The minor dissertation shall demonstrate the successful completion of a programme of training in research methods, a thorough understanding of the scientific principles underlying the research and an appropriate acquaintance with the relevant literature.",
+  "lecture_times": null,
+  "dp_requirements": null,
+  "assessment": "The minor dissertation must be presented for formal examination. Coursework and minor dissertation each count 50% towards the degree; each must be passed separately for the award of the degree.",
+  "is_science_course": true
+}

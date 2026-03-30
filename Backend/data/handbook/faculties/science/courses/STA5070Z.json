@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "STA5070Z",
+  "title": "Problem Structuring and System Dynamics",
+  "department": "statistical-sciences",
+  "credits": 15,
+  "nqf_level": 9,
+  "year_level": "Postgraduate (Master's)",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "Dr R G Rakotonirainy",
+  "prerequisites": {
+    "text": "Acceptance into Master's programs in Statistics & Data Science, Data Science or Biostatistics, and/or statistical background deemed sufficient by the Head of Department.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "Problem Structuring: explores tools and methods which support the initial phases of a process of enquiry or analysis, examining the epistemological basis of different approaches and their rigour and insight, critiqued through a variety of case studies. System Dynamics: discusses features that result in complexity of systems through case studies, represented first qualitatively then quantitatively in simulation studies using appropriate software (Vensim proposed).",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "40% for project work components.",
+  "assessment": "Problem Structuring section: project work (50%), written exam (50%). System Dynamics section: project work (40%), written exam (60%). The two sections count equally to the final grade. In each section a subminimum of 40% is required in both the project and written exam.",
+  "is_science_course": true
+}

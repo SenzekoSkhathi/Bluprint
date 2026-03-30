@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "GEO1006S",
+  "title": "Introduction to Minerals, Rocks & Structure",
+  "department": "geological-sciences",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": "First Year",
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Associate Professor R Pickering",
+  "prerequisites": {
+    "text": "A minimum of 45% in GEO1009F.",
+    "parsed": {
+      "type": "and",
+      "codes": [
+        "GEO1009F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course introduces students to the Geology major and covers the essentials of the discipline: crystals and minerals; igneous and metamorphic rocks; structural geology; mineral deposits and economic geology; palaeontology; and the interpretation of geological maps. A three-day field trip to the Western Cape serves as an introduction to field geology.",
+  "lecture_times": "Monday - Friday, 5th period.",
+  "dp_requirements": "An average of 30% in all marked classwork and tests.",
+  "assessment": "Class tests count 35%; field reports count 15%; one 2-hour theory examination written in November counts 50%. A sub-minimum of 40% is required in the theory examination paper.",
+  "is_science_course": true
+}

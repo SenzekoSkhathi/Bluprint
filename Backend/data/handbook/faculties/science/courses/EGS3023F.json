@@ -1,0 +1,30 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EGS3023F",
+  "title": "Anthropocene Environments in Perspective",
+  "department": "environmental-geographical-science",
+  "credits": 36,
+  "nqf_level": 7,
+  "year_level": "Third Year",
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr D Kibirige",
+  "prerequisites": {
+    "text": "EGS2016F (or EGS2013F) and/or EGS2017S (or EGS2015S).",
+    "parsed": {
+      "type": "and",
+      "codes": [
+        "EGS2016F",
+        "EGS2013F",
+        "EGS2017S",
+        "EGS2015S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The course deals with the dynamic physical environment including the human impact on global environments at various spatial and temporal scales during the so-called Anthropocene. The general aim is to illustrate the nature and scale of changes that characterise the Earth's environment, against a background of both natural and anthropogenically-induced processes. This provides an important perspective when thinking about contemporary environments and how they might change in the future, with consequences for our own species and others with which we share the planet.",
+  "lecture_times": "Monday - Friday, 5th period. Practicals: One afternoon per week, Thursday, 14h00–17h00.",
+  "dp_requirements": "Satisfactory completion of practicals and all written assignments, including fieldwork report, essays and class tests. Students must attain an average mark of not less than 40% for the coursework.",
+  "assessment": "Field report, essays, class tests and practical assignments count 50%; one 3-hour examination written in June counts 50% (sub-minimum of 40% required).",
+  "is_science_course": true
+}

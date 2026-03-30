@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "SWK2065S",
+  "title": "Social Work Practice II: Groups",
+  "department": "social-development",
+  "credits": 24,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "R Addinall",
+  "prerequisites": {
+    "text": "This course is only for students doing the BSW and student must have completed SWK2060F, or with permission from the Head of Department.",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "SWK2060F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course builds on SWK2060F which examines the assessment phase of working with client systems. This course introduces students to a range of theories, concepts, processes and skills underpinning different strategies of intervention at the level of indi viduals, families, groups and communities. It is designed to enable students to facilitate appropriate processes of change at micro, mezzo and macro levels.",
+  "lecture_times": "Tuesday to Friday 3rd period.",
+  "dp_requirements": "At least 80% attendance at lectures/seminars, submission of all essays, projects, seminar materials and other required written work by the due date.",
+  "assessment": "Coursework counts 50%; two-hour November examination counts 50%.",
+  "is_humanities_course": true
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CSC4002W",
+  "title": "Computer Science Honours Project",
+  "department": "computer-science",
+  "credits": 60,
+  "nqf_level": 8,
+  "year_level": "Postgraduate (Honours)",
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "To be advised",
+  "prerequisites": {
+    "text": "BSc degree with a major in Computer Science from UCT. An overall pass for the coursework component of this degree.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "This course is the compulsory research project component of a Computer Science Honours degree. The research project comprises a large project run over the course of the year under academic supervision, with a final mini-dissertation and other project deliverables.",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "Not specified.",
+  "assessment": "Not specified in handbook; forms part of the overall Honours degree assessment.",
+  "is_science_course": true
+}

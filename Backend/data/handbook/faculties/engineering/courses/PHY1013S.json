@@ -1,0 +1,31 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PHY1013S",
+  "title": "Physics B for Engineers",
+  "department": "physics",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "D R Geduld",
+  "prerequisites": {
+    "text": "PHY1012F/S or PHY1014F/S",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "PHY1012F",
+        "PHY1014F"
+      ]
+    }
+  },
+  "corequisites": [
+    "MAM1020F"
+  ],
+  "outline": "The course is the second part of the first year engineering Physics sequence. It aims to provide a foundation in the concepts and mathematics of physical phenomena within the context of vibrations and waves, and electromagnetism, and features the topics of electric charge, electric field, Gauss' Law, electric potential, capacitance, current, current density, emf, resistance, resistivity, networks, the magnetic field, Biot -Savart Law, Ampere's Law, electromagnetic induction, inductance, simple harmonic motion, damped oscillations, resonance, travelling waves, phase velocity, superposition, standing waves, sound waves, sound intensity, Doppler effect, interference and diffraction.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "An average of at least 40% for class record, including 50% for laboratories.",
+  "assessment": "Class record (weekly problem sets, class tests and laboratory record) counts 50%; one 2- hour examination counts 50%. Although a supplementary examination is usually granted for a final DEPARTMENTS IN OTHER FACULTIES AND COURSES OFFERED 189 grade in the range 45-49%, a supplementary examination may also be granted for certain key courses in the range 40-44% under conditions agreed to by the Deans of EBE and Science, normally involving a mandatory pre-supp tutoring and revision programme.",
+  "is_engineering_course": false,
+  "offered_by_faculty": "science"
+}

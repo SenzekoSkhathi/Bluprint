@@ -1,0 +1,31 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MAM1006H",
+  "title": "Mathematics 1006",
+  "department": "mathematics-applied-mathematics",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": "First Year",
+  "semester": "FY",
+  "semester_code": "H",
+  "convener": "Associate Professor B Osano",
+  "prerequisites": {
+    "text": "MAM1005H or a pass with at least 65% in MAM1004F/S. Students who passed MAM1004F/S with less than 65% must write and pass the examination paper for MAM1005H before registering. Note: MAM1005H + MAM1006H is equivalent to MAM1000W in level, credit value and as prerequisite for certain courses.",
+    "parsed": {
+      "type": "complex",
+      "codes_mentioned": [
+        "MAM1005H",
+        "MAM1004F/S",
+        "MAM1006H",
+        "MAM1000W"
+      ],
+      "note": "Complex prerequisite logic - see text"
+    }
+  },
+  "corequisites": [],
+  "outline": "Similar to MAM1000W, this course introduces the fundamental ideas in calculus, linear algebra and related topics. It covers those topics in the MAM1000W syllabus not covered in MAM1005H, including differential equations, partial derivatives, vector geometry, matrix algebra, complex numbers and Taylor series.",
+  "lecture_times": "Lectures Monday, Tuesday, Wednesday and Friday in first period. Tutorials Thursday in first period. No workshops.",
+  "dp_requirements": "Minimum of 35% in class tests and very satisfactory attendance at lectures and tutorials.",
+  "assessment": "Year mark counts up to 40%; one 2-hour examination written in October/November makes up the balance.",
+  "is_science_course": true
+}

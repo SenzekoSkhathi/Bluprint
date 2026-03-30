@@ -1,0 +1,30 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EGS3021F",
+  "title": "Sustainability & Environment",
+  "department": "environmental-geographical-science",
+  "credits": 36,
+  "nqf_level": 7,
+  "year_level": "Third Year",
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr P Sabela-Rikhotso",
+  "prerequisites": {
+    "text": "EGS2016F (or EGS2013F), EGS2017S (or EGS2015S).",
+    "parsed": {
+      "type": "and",
+      "codes": [
+        "EGS2016F",
+        "EGS2013F",
+        "EGS2017S",
+        "EGS2015S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The course critically engages with current debates and discourses in the fields of sustainability, vulnerability and environmental management, including examination of key concepts such as integration, systems-thinking, complexity, equity, vulnerability, risk, resilience, adaptation and mitigation. Approaches and methods for analysing environmental problems and integrating risk reduction, as well as sustainability principles and practices into policy, programme, plan and project cycle processes are investigated and applied in different contexts.",
+  "lecture_times": "Monday - Friday, 3rd period. Practicals: One afternoon per week, Wednesday, 14h00–17h00.",
+  "dp_requirements": "Attendance and satisfactory completion of practicals (including fieldwork), other assignments and tests; students must attain an average mark of not less than 40% for the coursework.",
+  "assessment": "Practical reports (including fieldwork), class tests and other assignments count 60%; one 3-hour June examination counts 40% (sub-minimum of 40% required).",
+  "is_science_course": true
+}

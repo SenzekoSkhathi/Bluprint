@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AAE4002W",
+  "title": "Anaesthesia Part 1",
+  "department": "anaesthesia-and-perioperative-medicine",
+  "credits": 20,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Doctor A Ernst",
+  "prerequisites": {
+    "text": "Successful completion of all co urses within the preceding academic year.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "Objective: The student is expected to acquire the basic knowledge and skills required for safe clinical anaesthesia, including the ability to perform pre-operative asse ssments and render appropriate postoperative care. There is an em phasis on safe anaesthesia practi ce with a focus on professional behaviour appropriate to the role of the anaesthetist as a peri-operative physician. Course outline: Anaesthesia is formally taught in the fourth year of study with an additio nal clinical component in sixth year. The fourth- and sixth-years’ learning in anaesthesia are complementary. The four-week, foundational fourth year course is integrated with Ambulatory and Acute Care Medicine in an eight- week rotation. Learning is based on understanding the es sential physiology, pharmacology, clinical medicine, and techniques required to provide sa fe perioperative care and appropriate pain management. Clinical teaching con sists of practical training in operating theatres covering various disciplines of surgery, guided by the completion of a logbook. Formal teaching consists of seminars combining interactive teaching, group-based activities, airway skills practice, and tutorials grounded in clinical scenarios for which students must prepare in advance . In addition, students attend a symposium dedicated to understanding pain and its management in or der to render appropriate care in the setting of both acute and chronic pain.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Appropriately completed logbook (including airway simulation training), satisfactory attendance of seminars (4 out of 6), attendance of a Pain Workshop.",
+  "assessment": "One computer-based exam comp rising multiple choice ques tions (single best answer) and matching items format.",
+  "is_health_sciences_course": true
+}

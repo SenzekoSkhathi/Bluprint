@@ -1,0 +1,33 @@
+{
+  "id": "bsc-medicine",
+  "programme_code": "MB001",
+  "name": "Bachelor of Science in Medicine",
+  "abbreviation": "BSc(Medicine)",
+  "saqa_id": 116296,
+  "department": "Medicine",
+  "duration_years": 1,
+  "minimum_credits": 360,
+  "eligibility": "MBChB students who have completed at least second year",
+  "curriculum": {
+    "year_1": {
+      "credits_from_mbchb": [
+        "HUB1006F",
+        "IBS1007S",
+        "PHY1025F",
+        "PTY2000S",
+        "HUB2017H",
+        "MDN2001S",
+        "FCE2000W",
+        "SLL2002H",
+        "PTY3009F"
+      ],
+      "additional_courses": [
+        "HUB3006F",
+        "HUB3007S",
+        "IBS3020W",
+        "AHS3078H"
+      ],
+      "note": "Credit given for MBChB courses plus additional FHS courses"
+    }
+  }
+}

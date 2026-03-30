@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AHS2107F",
+  "title": "Child Speech",
+  "department": "health-and-rehabilitation-sciences",
+  "credits": 18,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "TBC DEPARTMENTS IN THE FACULTY 101",
+  "prerequisites": {
+    "text": "AHS1042F or HSE1005S",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "AHS1042F",
+        "HSE1005S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to enable students to compare different speech difficulties in children, describe and discuss speech assessment and principles of speech intervention and apply principles of intervention to special populations. Content incl udes the nature of articulation and phonological difficulties, and assessment of and therapy for children with articulation and phonological difficulties. Students learn skills of observation and interactio n with children, learn to profile a child’s development in relation to expected milestones, and learn transcription an d analysis of child speec h, as well as knowledge translation and clinical reasoni ng skills. They acquire an awaren ess that culture and individual differences influence children’s speech and acquire an ability and willingness to problem-solve when clients and clinicians do not share a common language . Teaching and learni ng activities include lectures, small group discussions, class presentations, and observations of and interaction with young children. Themes underp inning the course are a multilingual, multicultural context; provision of contextually relevant services; and developing agents for change.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "For discipline specific courses in the BSc Audiology and BSc in Speech-Language Pathology programmes a minimum coursework mark of 40% is required for entrance into the examination.",
+  "assessment": "The course grade is made up of a cour sework mark (weighted 60%) and a final examination mark (weighted 40%). If a supplementary examination is awarded, it will count 40 % of the final mark, as the course work mark will still be included in the final mark.",
+  "is_health_sciences_course": true
+}

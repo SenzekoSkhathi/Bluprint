@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "DOH1005F",
+  "title": "Thinking About: Ideas and Knowledge",
+  "department": "academic-development-programme",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr C Hutchings",
+  "prerequisites": {
+    "text": "Admission to this course is restricted to Humanities students registered for extended programmes of study in the diploma and degrees in the Performing Arts and Fine Arts.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "Reading and writing practices in the academic environment of the university are different from those encountered at most schools. All students face various challenges around reading and writing in their respective disciplines. In response to this, this cou rse provides a general orientation to some of the writing and learning practices, ideas and key concepts in the Humanities. This course aims to equip students with the necessary tools to engage with different forms of writing at university. These tools are developed through an exploration of the concept of ‘identity’ – allowing students to engage with the various ways we describe ourselves and others in a dynamic context. This engagement is facilitated by reading and writing in a face to face and online env ironment. As an introductory course, we use content that engages the diversity of students' lifeworlds and is cognizant of our African location. We facilitate student transition into university life and employ innovative teaching and delivery methods, including multilingual pedagogies and digital literacy, that allow more time for active engagement and the development of critical reading and writing skills for Performing Arts students in the Humanities.",
+  "lecture_times": "Monday to Thursday2nd period.",
+  "dp_requirements": "At least 75% attendance at lectures and 100% completion of assignments and at least 50% for coursework.",
+  "assessment": "Continuous assessment (essays, projects, tests, etc.) counts 100%.",
+  "is_humanities_course": true
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "BUS3039F",
+  "title": "People Management",
+  "department": "management-studies",
+  "credits": 18,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Associate Professor S Savahl",
+  "prerequisites": {
+    "text": "BUS3039F: Entry restricted to 1.) third year BCom (Management Studies) students who have not taken organisational psychology undergraduate courses, 2.) third year BBusSc students in all fields except for Organisational Psychology, Finance, Finance (CA), and 3.) PG Diploma students in the following areas: Sports Management, Business Communication, Entrepreneurship and Marketing.",
+    "parsed": {
+      "type": "restricted_entry",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course introduces business science and management students to people management issues (e.g., leadership, teamwork, and diversity) that may arise as they enter the world of work. Students will learn to manage current and emerging South African contextual complexities in managing people from diverse local lived realities. Adopting a collaborative learning approach, the course focuses on building the knowledge and skills necessary for students to be active in leading transformative workplace change and social justice.",
+  "lecture_times": "To be advised.",
+  "dp_requirements": "None.",
+  "assessment": "Coursework 100%.",
+  "is_commerce_course": true
+}

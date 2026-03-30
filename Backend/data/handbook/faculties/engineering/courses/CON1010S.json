@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CON1010S",
+  "title": "Construction Information Systems",
+  "department": "construction-economics-and-management",
+  "credits": 8,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "TBA",
+  "prerequisites": {
+    "text": "Refer to the programme and departmental sections in the 2026 EBE Faculty Handbook.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to provide an introduction to computers, networks, data storage, manipulation/analysis and reporting using spreadsheets and relational databases. Solving problems using spreadsheets and databases is also covered.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course. DEPARTMENTS IN THE FACULTY AND COURSES OFFERED 117",
+  "is_engineering_course": true
+}

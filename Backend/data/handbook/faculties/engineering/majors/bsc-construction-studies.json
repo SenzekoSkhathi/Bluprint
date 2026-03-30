@@ -1,0 +1,54 @@
+{
+  "id": "bsc-construction-studies",
+  "programme_code": "EB015CON04",
+  "name": "Bachelor of Science in Construction Studies",
+  "abbreviation": "BSc(ConstStudies)",
+  "department": "Construction Economics and Management",
+  "duration_years": 3,
+  "minimum_credits": 422,
+  "saqa_id": 11703,
+  "curriculum": {
+    "year_1": {
+      "core": [
+        "ACC1021F",
+        "CIV1006S",
+        "CON1004W",
+        "CON1010S",
+        "ECO1008F",
+        "ECO1009S",
+        "MAM1010F",
+        "MEC1010F",
+        "STA1000S",
+        "CON1007X"
+      ],
+      "credits": 145
+    },
+    "year_2": {
+      "core": [
+        "ACC2042H",
+        "APG1023S",
+        "CML1001F",
+        "CML2005F",
+        "CON2006W",
+        "CON2020S",
+        "CON2034S",
+        "CON2037W",
+        "CON2013X"
+      ],
+      "credits": 141
+    },
+    "year_3": {
+      "core": [
+        "CON3012W",
+        "CON3030F",
+        "CON3031W",
+        "CON3032W",
+        "CON3033S",
+        "CON3038W",
+        "CON3043W",
+        "CON3022X"
+      ],
+      "credits": 136
+    }
+  }
+}

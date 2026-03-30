@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CSC2002S",
+  "title": "Computer Science 2002",
+  "department": "computer-science",
+  "credits": 24,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Emeritus Associate Professor S Berman",
+  "prerequisites": {
+    "text": "CSC2001F (At least 45% for CSC2001F).",
+    "parsed": {
+      "type": "prerequisite",
+      "codes": [
+        "CSC2001F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The aim of this course is to build on the foundational concepts covered in CSC2001F, with further necessary core topics of an undergraduate Computer Science curriculum. These topics comprise: concurrent and parallel computing (including practical work in Java); computer architecture; an introduction to Society, Ethics, and the Profession; and Theory of Computing (including Turing Machines and the limits of computation).",
+  "lecture_times": "Monday - Friday, 2nd period. Four lectures per week. Practicals: One 4-hour practical per week, Monday - Friday, 14h00 - 18h00.",
+  "dp_requirements": "Minimum of 45% aggregate in practical work.",
+  "assessment": "Tests 20%; practicals and practical test 30%; exam 50%. Subminima: 45% on weighted average of theory tests and examination.",
+  "is_commerce_course": false,
+  "offered_by_faculty": "science"
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "INF2006F",
+  "title": "Business Intelligence and Analytics",
+  "department": "information-systems",
+  "credits": 6,
+  "nqf_level": 6,
+  "year_level": "Second Year",
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "A Budree",
+  "prerequisites": {
+    "text": "INF1002 or equivalent.",
+    "parsed": {
+      "type": "or",
+      "codes": [
+        "INF1002"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The course introduces students to the main features of business intelligence and business analytics, including data warehousing and data marts, decision support systems, OLAP, data mining and analytics, corporate performance management, data visualisation, real-time BI, pervasive BI, mobile BI and big data analytics. Case studies and management approaches for implementation are covered, and a hands-on project requires students to produce a management report after analysing data using commercial BI software.",
+  "lecture_times": "Course runs only for 3 weeks: Monday to Wednesday 5th period, Friday 4th and 5th period.",
+  "dp_requirements": "80% class attendance.",
+  "assessment": "Assessment requirements for both INF2006F and INF2007F need to be met in order to pass INF2008F.",
+  "is_science_course": false,
+  "offered_by_faculty": "commerce"
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "INF2011S",
+  "title": "Systems Design & Development",
+  "department": "information-systems",
+  "credits": 18,
+  "nqf_level": 7,
+  "year_level": 2,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr D Snyman",
+  "prerequisites": {
+    "text": "Minimum 45% final mark for [INF2007 or INF2008 or CSC2001 or equivalent] and INF2009 and [INF2003 or CSC1016 or equivalent].",
+    "parsed": {
+      "type": "prerequisite",
+      "codes": [
+        "INF2007F",
+        "INF2009F",
+        "INF2003F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course is intended to provide students with an in-depth knowledge of the systems development process with particular emphasis on the design and implementation stages of the life cycle. There is a strong practical component to the course, where students will use object-oriented tools to design and construct a working system. The course is designed to build on the skills acquired in INF2009F Systems Analysis.",
+  "lecture_times": "Monday, Tuesday and Wednesday, 4th period, Thursday: Weekly workshop sessions 3rd to 4th OR 4th to 5th periods. Friday: Practical workshops 5th - 7th.",
+  "dp_requirements": "Submit 80% of workshops and quizzes. Year-mark of 45%. Submitted all project work.",
+  "assessment": "The final grade is derived from the following deliverables: Coursework: 60%; Exam 40%. Subminimum 45% for the final exam.",
+  "is_commerce_course": true
+}

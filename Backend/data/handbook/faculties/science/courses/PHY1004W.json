@@ -1,0 +1,35 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PHY1004W",
+  "title": "Matter & Interactions",
+  "department": "physics",
+  "credits": 36,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Professor A Buffler",
+  "prerequisites": {
+    "text": "At least 60% for NSC Physical Science. MAM1000W or both MAM1031F & MAM1032S (or equivalent) and CSC1015F & CSC1015S (or equivalent) must have been passed or be taken concurrently. Students assessed in week 5; if not coping, may be required to transfer to PHY1031F or PHY1023H from week 7. Note: A laptop is required. Credit will not be given for both PHY1023H and PHY1031F; credit can be given for both PHY1023H and PHY1004W.",
+    "parsed": {
+      "type": "complex",
+      "codes_mentioned": [
+        "MAM1000W",
+        "MAM1031F",
+        "MAM1032S",
+        "CSC1015F",
+        "CSC1015S",
+        "PHY1031F",
+        "PHY1023H",
+        "PHY1004W"
+      ],
+      "note": "Complex prerequisite logic - see text"
+    }
+  },
+  "corequisites": [],
+  "outline": "PHY1004W is an advanced calculus-based introductory course for Science students intending to continue with second-year Physics. It features the modelling of physical systems from fundamental principles, and computational problem solving using Python. The course includes: Modern mechanics (Conservation laws, the momentum principle, atomic nature of matter, conservation of energy, energy in macroscopic systems, energy quantization, multi-particle systems, exploring the nucleus, angular momentum, entropy) and Electric and magnetic interactions (Electric fields, electric potential, magnetic fields, electric circuits, capacitance, resistance, magnetic force, Gauss' Law, Ampere's Law, Faraday's Law, induction, electromagnetic radiation, waves and particles).",
+  "lecture_times": "Monday - Friday, 3rd period.",
+  "dp_requirements": "Minimum of 40% in class record, including 50% in laboratory assessment.",
+  "assessment": "Class record (weekly problem sets, class tests and laboratory record) counts 50%; one 2-hour examination in June counts 25%; one 2-hour examination in November counts 25%.",
+  "is_science_course": true
+}

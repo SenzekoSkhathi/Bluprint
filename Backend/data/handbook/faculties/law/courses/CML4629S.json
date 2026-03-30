@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CML4629S",
+  "title": "Law and Regional Integration in Africa",
+  "department": "commercial-law",
+  "credits": 9,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Prof A Ordor",
+  "prerequisites": {
+    "text": "All Preliminary and Intermediate Level courses to have been completed.",
+    "parsed": {
+      "type": "level_completion",
+      "levels_required": [
+        "preliminary",
+        "intermediate"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course provides a forum for students to study the ways in which the law has been utilised to shape and direct regional integration processes in Africa. The course starts with a discussion of theories of regional integration, followed by an overview of the historical trajectory of integration on the continent, with a focus on development integration. Its comparative dimension is directed at identifying and analysing strengths, weaknesses and challenges reflected in various regional efforts at integration on the continent, including the AU, SADC, EAC, ECOWAS, AMU, the Tripartite Free Trade Area (TFTA) as well as the proposed African Continental Free Trade Area (AfCFTA). The role of regional institutions such as regional courts is discussed. The course is delivered through a series of weekly seminars, with occasional guest lectures.",
+  "lecture_times": "Two lectures per week. Limited to 25 students.",
+  "dp_requirements": "None",
+  "assessment": "Coursework 20%; final research paper 80%.",
+  "is_law_course": true
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "SWK1005S",
+  "title": "Introduction to Social Development",
+  "department": "social-development",
+  "credits": 12,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr F Williams",
+  "prerequisites": {
+    "text": "Acceptance for the Bachelor of Social Work [HB063] degree. This course is a co-requisite for SWK1006S for Bachelor of Social Work [HB063] degree students ONLY.",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "SWK1006S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course is located in the second semester of the first year of the undergraduate degree. The course affords those students studying for the Bachelor of Social Work degree the foundation they require to prepare them for working within the profession. This is the first field practice course of the programme and is constructed to offer students a “hands on” approach to the theoretical material. Thus, the lecture component of the SWK1006S course provides the theoretical knowledge, skills and value base of professional interaction.",
+  "lecture_times": "Wednesdays and Thursdays, 7th and 8th periods.",
+  "dp_requirements": "Attendance of at least 80% of the workshops.",
+  "assessment": "The course will be examined through a practical examination where students will have to demonstrate that they have achieved competency in using the skills taught in the workshops.",
+  "is_humanities_course": true
+}

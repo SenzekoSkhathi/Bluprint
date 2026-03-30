@@ -1,0 +1,66 @@
+{
+  "$schema": "handbook-rules-v1",
+  "faculty": "humanities",
+  "year": 2026,
+  "rules": {
+    "general": {
+      "FB1": "Students must complete minimum credits per year as specified for their programme.",
+      "FB2": "Major sequences must be completed through 1000, 2000, and 3000 levels.",
+      "FB3": "Students may not register for courses at a higher level without completing prerequisites.",
+      "FB4": "Extended programme students follow augmented first-year curriculum with additional academic development courses."
+    },
+    "music_rules": {
+      "FS1": "BMus students must maintain instrument studies throughout all 4 years.",
+      "FS2": "Ensemble participation compulsory for all BMus and DMP students.",
+      "FS3": "BMus Year 4 research report (MUZ4900W or MUZ4901W) compulsory for all streams.",
+      "FS4": "Performance examinations held at end of each year for all instrument courses.",
+      "FS5": "Students must pass instrument course to proceed to next year level.",
+      "FS6": "BMus General stream requires breadth across Western Art Music, Ethnomusicology, and South African Music.",
+      "FS7": "DMP is a 3-year diploma; does not lead directly to Honours without bridging.",
+      "FS8": "BMus Extended (HB034): 5-year version, continuing students only — no new intake 2026.",
+      "FS9": "DMP Extended (HU034): 4-year version, continuing students only.",
+      "FS10": "Instrument allocation subject to availability and audition results.",
+      "FS11": "All BMus/DMP students attend weekly masterclasses.",
+      "FS12": "Repertoire requirements specified per instrument and year level."
+    },
+    "fine_art_rules": {
+      "FBN1": "BA(Fine Art) Year 1: Art Practice 1 (FIN1001W) and Visual Culture Studies 1 (FIN1005W) compulsory.",
+      "FBN2": "Year 2: choose 2 studiowork courses from available media.",
+      "FBN3": "Year 3: choose 1 studiowork specialisation.",
+      "FBN4": "Year 4: Fine Art 4 (FIN4015W, 108 credits) is the capstone studio project.",
+      "FBN5": "Theory of Art courses compulsory in years 1-3.",
+      "FBN6": "Humanities electives required in years 1-3 (minimum 1 per year).",
+      "FBN7": "Extended programme (HB064): 5-year version with DOH1005F in Year 1.",
+      "FBN8": "Portfolio review required for progression from Year 2 to Year 3.",
+      "FBN9": "Exhibition at end of Year 4 is part of assessment."
+    },
+    "social_work_rules": {
+      "FBW1": "BSW students must complete all field instruction placements (SWK*070*, SWK*075*, SWK*032*, SWK*033*).",
+      "FBW2": "Professional registration with SACSSP required upon graduation.",
+      "FBW3": "PSY and SOC courses compulsory as supporting disciplines in years 1-3."
+    },
+    "screen_production_rules": {
+      "FB11": "BA Screen Production (HB067): FAM1000S compulsory in Year 1.",
+      "FB12": "Screen Production courses (FAM2013F, FAM2014S, FAM3016F, FAM3017S) are sequential.",
+      "FB13": "Portfolio submission required for admission to Screen Production programme."
+    },
+    "ppe_rules": {
+      "FB14": "BSocSc(PPE): ECO, PHI, POL all compulsory — cannot drop any of the three disciplines.",
+      "FB15": "STA1000S and MAM1010F compulsory in Year 1 as quantitative foundations."
+    },
+    "theatre_rules": {
+      "FGT1": "Diploma in Theatre: 3-year programme with Year 3 specialisation choice.",
+      "FGT2": "BA(T&P): 4-year degree with 5 specialisations, HEQSF exit level 8.",
+      "FGT3": "Performance assessment at end of each year.",
+      "FGT4": "Production participation compulsory.",
+      "FGT5": "TDP1027F (Voice and Movement I) compulsory for all theatre students.",
+      "FGT6": "Year 3 specialisation: choose one from Acting, Dance, Performance Making, Applied Performance/Pedagogy, Scenography.",
+      "FGT7": "Advanced Diploma in Theatre (HU050): not offered in 2026.",
+      "FGT8": "DOH1005F compulsory for Diploma in Theatre Year 1."
+    },
+    "extended_programme": {
+      "DOH_augmenting": "Extended programme students take augmenting versions of courses paired with standard equivalents.",
+      "pairs_note": "Standard and extended course pairs exist at 1000, 2000, and 3000 levels across multiple departments."
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PHY3004W",
+  "title": "Advanced Physics",
+  "department": "physics",
+  "credits": 72,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Dr T W Leadbeater",
+  "prerequisites": {
+    "text": "PHY2004W, and 40% in MAM2000W or (MAM2010F & MAM2011F). Note: A laptop is required.",
+    "parsed": {
+      "type": "complex",
+      "codes_mentioned": [
+        "PHY2004W",
+        "MAM2000W",
+        "MAM2010F",
+        "MAM2011F"
+      ],
+      "note": "Complex prerequisite logic - see text"
+    }
+  },
+  "corequisites": [],
+  "outline": "This course completes the major in Physics. The theory component aims to develop advanced skills in problem solving within physics and includes: Electromagnetism (Maxwell's equations in vacuum and matter, momentum and angular momentum in electromagnetic fields, electromagnetic waves, wave guides, gauge transformations, retarded potentials, electric and magnetic dipole radiation, special relativity, relativistic kinematics and electrodynamics, electromagnetic field tensor); Thermodynamics and Statistical Physics (temperature, heat and work, laws of thermodynamics, ensembles and entropy, Boltzmann distribution and Helmholtz free energy, thermal radiation, chemical potential and Gibbs distribution, Fermi-Dirac statistics, electrons in metals, Bose-Einstein statistics, phonons, photons and the black-body distribution, the Bose-Einstein condensate); Applications of Quantum Mechanics (Atomic Physics: atomic structure and spectra, selection rules, spin, fine structure, Zeeman effect, perturbation theory; Nuclear and Particle Physics: properties of nuclei, nuclear forces, structure, reactions and models, interactions of elementary particles, quarks and leptons, symmetries and gauge forces; Solid State Physics: crystal structure, lattice vibrations, electron states in solids, energy band theory, semiconductor physics and devices). The laboratory component includes practical and computational tasks to develop advanced skills of experimentation and scientific report writing.",
+  "lecture_times": "Monday - Friday, 4th period. Practicals: Monday, 14h00 - 17h00 and Tuesday (see departmental entry).",
+  "dp_requirements": "Minimum of 40% for the class record; attendance at all tests; completion of all laboratory reports; completion of the project; and completion of 75% of tutorials and problem sets.",
+  "assessment": "Class record (tests, weekly problem sets, laboratory work and project) counts 50%; two 2-hour examinations in June count 25%; two 2-hour examinations in November count 25%. A subminimum of 40% exists in the weighted average of the four examinations.",
+  "is_science_course": true
+}

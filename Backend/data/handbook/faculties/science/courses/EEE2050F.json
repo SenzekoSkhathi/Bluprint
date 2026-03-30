@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EEE2050F",
+  "title": "Embedded Systems I for Science Students",
+  "department": "electrical-engineering",
+  "credits": 18,
+  "nqf_level": 6,
+  "year_level": "Second Year",
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "R Verrinder",
+  "prerequisites": {
+    "text": "CSC1015F/S and EEE2042S.",
+    "parsed": {
+      "type": "and",
+      "codes": [
+        "CSC1015F/S",
+        "EEE2042S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course gives Science students majoring in Computer Engineering a strong foundation in embedded systems, introducing digital system fundamentals including: information representation, Boolean algebra, logic gate behaviour, combinational and sequential digital circuits, digital building blocks and algorithmic state machines; C programming with a focus on microcontroller applications; and basic microcontroller usage including an introduction to computer architecture, general purpose input/outputs, analogue to digital convertors and basic timers.",
+  "lecture_times": "Refer to official course handout document.",
+  "dp_requirements": "Refer to the official course handout document for detailed DP requirements.",
+  "assessment": "Refer to the official course handout document for assessment criteria.",
+  "is_science_course": false,
+  "offered_by_faculty": "engineering"
+}

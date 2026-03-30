@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "STA5073Z",
+  "title": "Data Science for Industry",
+  "department": "statistical-sciences",
+  "credits": 15,
+  "nqf_level": 9,
+  "year_level": "Postgraduate (Master's)",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "Associate Professor I Durbach",
+  "prerequisites": {
+    "text": "Acceptance into the Master's course in Data Science or quantitative background deemed sufficient by Head of Department.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "The goal is to provide an applied, hands-on overview of selected topics useful in the working world of data science not covered by other modules. Topics fall into two themes: (1) Workflow/productivity tools and skills — data wrangling (reading/writing data, webscraping, accessing APIs), version control with Git, and visualisation and communication of data and results (ggplot2, R shiny); (2) Modelling — recommender systems, text mining and basic natural language processing, and feedforward and convolutional neural networks.",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "At least 40% for the assignments section.",
+  "assessment": "Assignments: 50%. Examination: 50%. A sub-minimum of 40% for each of the assignment and examination component will be required.",
+  "is_science_course": true
+}

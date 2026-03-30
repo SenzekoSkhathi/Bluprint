@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PVL4513F",
+  "title": "Advanced Contract Law",
+  "department": "private-law",
+  "credits": 9,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Prof T Naudé",
+  "prerequisites": {
+    "text": "Passed Law of Contract PVL3005W (or obtained a credit for an equivalent course if a transferring student).",
+    "parsed": {
+      "type": "specific",
+      "codes_mentioned": [
+        "PVL3005W"
+      ]
+    }
+  },
+  "corequisites": [
+    "Registered for Commercial Transactions Law CML4006W (or passed it before)."
+  ],
+  "outline": "This course covers aspects of the general principles of the law of contract not covered in the core Law of Contract course, PVL3005W. These include termination of obligations, including prescription, supervening impossibility of performance and change of circumstances more generally, compromise and performance. Also included are aspects of breach and remedies for breach of contract, as well as a more in depth study of controlling unfair contract terms. In addition, drafting of contracts in plain and understandable language, and using contract design, including illustrations and graphics will be considered. The course also covers aspects of certain specific contracts not covered in the core Commercial Transactions Law course, CML4006W.",
+  "lecture_times": "Two lectures per week.",
+  "dp_requirements": "Satisfactory lecture attendance. Obtained 35% average overall in assessments prior to exam (if exempted from one of these assessments, then 35% in the other).",
+  "assessment": "Mid-semester test 25%, Oral assessment 25% OR assignment 25%, Exam (May/June) 50%.",
+  "is_law_course": true
+}

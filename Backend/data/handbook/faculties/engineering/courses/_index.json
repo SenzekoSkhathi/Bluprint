@@ -1,0 +1,2267 @@
+{
+  "$schema": "handbook-course-index-v1",
+  "faculty": "engineering",
+  "year": 2026,
+  "total_courses": 243,
+  "courses": [
+    {
+      "code": "ACC1021F",
+      "title": "Accounting for Business I",
+      "nqf_credits": 15,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "ACC",
+      "is_ebe_course": false,
+      "offered_by_faculty": "commerce"
+    },
+    {
+      "code": "ACC2042H",
+      "title": "Accounting for Construction",
+      "nqf_credits": 24,
+      "nqf_level": 6,
+      "semester": "FY",
+      "year_level": 2,
+      "department_prefix": "ACC",
+      "is_ebe_course": false,
+      "offered_by_faculty": "commerce"
+    },
+    {
+      "code": "APG1003W",
+      "title": "Technology I",
+      "nqf_credits": 20,
+      "nqf_level": 5,
+      "semester": "FY",
+      "year_level": 1,
+      "department_prefix": "APG"
+    },
+    {
+      "code": "APG1004F",
+      "title": "History & Theory of Architecture I",
+      "nqf_credits": 10,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "APG"
+    },
+    {
+      "code": "APG1005S",
+      "title": "History & Theory of Architecture II",
+      "nqf_credits": 10,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "APG"
+    },
+    {
+      "code": "APG1016H",
+      "title": "Geomatics I",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "FY",
+      "year_level": 1,
+      "department_prefix": "APG"
+    },
+    {
+      "code": "APG1020W",
+      "title": "Design & Theory Studio I",
+      "nqf_credits": 60,
+      "nqf_level": 5,
+      "semester": "FY",
+      "year_level": 1,
+      "department_prefix": "APG"
+    },
+    {
+      "code": "APG1021W",
+      "title": "Representation I",
+      "nqf_credits": 20,
+      "nqf_level": 5,
+      "semester": "FY",
+      "year_level": 1,
+      "department_prefix": "APG"
+    },
+    {
+      "code": "APG1022X",
+      "title": "Practical Training in Geomatics",
+      "nqf_credits": 0,
+      "nqf_level": 5,
+      "semester": "varies",
+      "year_level": 1,
+      "department_prefix": "APG"
+    },
+    {
+      "code": "APG1023S",
+      "title": "Surveying and GIS",
+      "nqf_credits": 15,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "APG"
+    },
+    {
+      "code": "APG1024F",
+      "title": "Introduction to Geo-Spatial Sciences",
+      "nqf_credits": 8,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "APG"
+    },
+    {
+      "code": "APG2000F",
+      "title": "History & Theory of Architecture III",
+      "nqf_credits": 10,
+      "nqf_level": 6,
+      "semester": "S1",
+      "year_level": 2,
+      "department_prefix": "APG"
+    },
+    {
+      "code": "APG2003S",
+      "title": "History & Theory of Architecture IV",
+      "nqf_credits": 10,
+      "nqf_level": 6,
+      "semester": "S2",
+      "year_level": 2,
+      "department_prefix": "APG"
+    },
+    {
+      "code": "APG2009F",
+      "title": "Theory of Structures I",
+      "nqf_credits": 10,
+      "nqf_level": 6,
+      "semester": "S1",
+      "year_level": 2,
+      "department_prefix": "APG"
+    },
+    {
+      "code": "APG2014S",
+      "title": "Geomatics II",
+      "nqf_credits": 24,
+      "nqf_level": 6,
+      "semester": "S2",
+      "year_level": 2,
+      "department_prefix": "APG"
+    },
+    {
+      "code": "APG2015F",
+      "title": "Geographic Information Systems I",
+      "nqf_credits": 24,
+      "nqf_level": 6,
+      "semester": "S1",
+      "year_level": 2,
+      "department_prefix": "APG"
+    },
+    {
+      "code": "APG2019X",
+      "title": "Practical Training I",
+      "nqf_credits": 0,
+      "nqf_level": 6,
+      "semester": "varies",
+      "year_level": 2,
+      "department_prefix": "APG"
+    },
+    {
+      "code": "APG2021W",
+      "title": "Technology II (Major Course)",
+      "nqf_credits": 20,
+      "nqf_level": 6,
+      "semester": "FY",
+      "year_level": 2,
+      "department_prefix": "APG"
+    },
+    {
+      "code": "APG2026F",
+      "title": "Construction Surveying",
+      "nqf_credits": 16,
+      "nqf_level": 6,
+      "semester": "S1",
+      "year_level": 2,
+      "department_prefix": "APG"
+    },
+    {
+      "code": "APG2027X",
+      "title": "Work Experience",
+      "nqf_credits": 0,
+      "nqf_level": 6,
+      "semester": "varies",
+      "year_level": 2,
+      "department_prefix": "APG"
+    },
+    {
+      "code": "APG2039W",
+      "title": "Design & Theory Studio II (Major Course)",
+      "nqf_credits": 60,
+      "nqf_level": 6,
+      "semester": "FY",
+      "year_level": 2,
+      "department_prefix": "APG"
+    },
+    {
+      "code": "APG2040F",
+      "title": "Surveying I",
+      "nqf_credits": 18,
+      "nqf_level": 6,
+      "semester": "S1",
+      "year_level": 2,
+      "department_prefix": "APG"
+    },
+    {
+      "code": "APG2041S",
+      "title": "Applied Surveying & GISc",
+      "nqf_credits": 14,
+      "nqf_level": 6,
+      "semester": "S2",
+      "year_level": 2,
+      "department_prefix": "APG"
+    },
+    {
+      "code": "APG2042Z",
+      "title": "Representation II",
+      "nqf_credits": 8,
+      "nqf_level": 6,
+      "semester": "varies",
+      "year_level": 2,
+      "department_prefix": "APG"
+    },
+    {
+      "code": "APG2043F",
+      "title": "Environment & Services I",
+      "nqf_credits": 10,
+      "nqf_level": 6,
+      "semester": "S1",
+      "year_level": 2,
+      "department_prefix": "APG"
+    },
+    {
+      "code": "APG3000Z",
+      "title": "History & Theory of Architecture V",
+      "nqf_credits": 10,
+      "nqf_level": 7,
+      "semester": "varies",
+      "year_level": 3,
+      "department_prefix": "APG"
+    },
+    {
+      "code": "APG3012S",
+      "title": "Geomatics III",
+      "nqf_credits": 24,
+      "nqf_level": 7,
+      "semester": "S2",
+      "year_level": 3,
+      "department_prefix": "APG"
+    },
+    {
+      "code": "APG3013F",
+      "title": "Numerical Methods in Geomatics",
+      "nqf_credits": 16,
+      "nqf_level": 7,
+      "semester": "S1",
+      "year_level": 3,
+      "department_prefix": "APG"
+    },
+    {
+      "code": "APG3016C",
+      "title": "Surveying II",
+      "nqf_credits": 12,
+      "nqf_level": 7,
+      "semester": "Q3",
+      "year_level": 3,
+      "department_prefix": "APG"
+    },
+    {
+      "code": "APG3017D",
+      "title": "Surveying III",
+      "nqf_credits": 12,
+      "nqf_level": 7,
+      "semester": "Q4",
+      "year_level": 3,
+      "department_prefix": "APG"
+    },
+    {
+      "code": "APG3023W",
+      "title": "Technology III (major course)",
+      "nqf_credits": 20,
+      "nqf_level": 7,
+      "semester": "FY",
+      "year_level": 3,
+      "department_prefix": "APG"
+    },
+    {
+      "code": "APG3027Z",
+      "title": "Cadastral Survey & Registration Projects",
+      "nqf_credits": 24,
+      "nqf_level": 7,
+      "semester": "varies",
+      "year_level": 3,
+      "department_prefix": "APG"
+    },
+    {
+      "code": "APG3028X",
+      "title": "Independent Research",
+      "nqf_credits": 0,
+      "nqf_level": 7,
+      "semester": "varies",
+      "year_level": 3,
+      "department_prefix": "APG"
+    },
+    {
+      "code": "APG3033W",
+      "title": "Land & Cadastral Survey Law",
+      "nqf_credits": 16,
+      "nqf_level": 7,
+      "semester": "FY",
+      "year_level": 3,
+      "department_prefix": "APG"
+    },
+    {
+      "code": "APG3034Z",
+      "title": "Environment & Services II",
+      "nqf_credits": 10,
+      "nqf_level": 7,
+      "semester": "varies",
+      "year_level": 3,
+      "department_prefix": "APG"
+    },
+    {
+      "code": "APG3035F",
+      "title": "Theory of Structures II",
+      "nqf_credits": 10,
+      "nqf_level": 7,
+      "semester": "S1",
+      "year_level": 3,
+      "department_prefix": "APG"
+    },
+    {
+      "code": "APG3036F",
+      "title": "Management Practice Law",
+      "nqf_credits": 10,
+      "nqf_level": 7,
+      "semester": "S1",
+      "year_level": 3,
+      "department_prefix": "APG"
+    },
+    {
+      "code": "APG3037W",
+      "title": "Design & Theory Studio III (Major Course)",
+      "nqf_credits": 60,
+      "nqf_level": 7,
+      "semester": "FY",
+      "year_level": 3,
+      "department_prefix": "APG"
+    },
+    {
+      "code": "APG3038F",
+      "title": "Professional Communication Studies",
+      "nqf_credits": 12,
+      "nqf_level": 7,
+      "semester": "S1",
+      "year_level": 3,
+      "department_prefix": "APG"
+    },
+    {
+      "code": "APG3039B",
+      "title": "Spatial Data Infrastructures",
+      "nqf_credits": 12,
+      "nqf_level": 7,
+      "semester": "Q2",
+      "year_level": 3,
+      "department_prefix": "APG"
+    },
+    {
+      "code": "APG3040C",
+      "title": "Advanced Spatial Data Analysis",
+      "nqf_credits": 12,
+      "nqf_level": 7,
+      "semester": "Q3",
+      "year_level": 3,
+      "department_prefix": "APG"
+    },
+    {
+      "code": "APG3041Z",
+      "title": "Representation III",
+      "nqf_credits": 8,
+      "nqf_level": 7,
+      "semester": "varies",
+      "year_level": 3,
+      "department_prefix": "APG"
+    },
+    {
+      "code": "APG4001S",
+      "title": "Geodesy",
+      "nqf_credits": 24,
+      "nqf_level": 8,
+      "semester": "S2",
+      "year_level": 4,
+      "department_prefix": "APG"
+    },
+    {
+      "code": "APG4002Z",
+      "title": "Land Use Planning & Township Design",
+      "nqf_credits": 16,
+      "nqf_level": 8,
+      "semester": "varies",
+      "year_level": 4,
+      "department_prefix": "APG"
+    },
+    {
+      "code": "APG4003Z",
+      "title": "Geomatics Project",
+      "nqf_credits": 40,
+      "nqf_level": 8,
+      "semester": "varies",
+      "year_level": 4,
+      "department_prefix": "APG"
+    },
+    {
+      "code": "APG4005F",
+      "title": "Engineering Surveying & Adjustment",
+      "nqf_credits": 18,
+      "nqf_level": 8,
+      "semester": "S1",
+      "year_level": 4,
+      "department_prefix": "APG"
+    },
+    {
+      "code": "APG4010X",
+      "title": "Geoinformatics Camp",
+      "nqf_credits": 4,
+      "nqf_level": 8,
+      "semester": "varies",
+      "year_level": 4,
+      "department_prefix": "APG"
+    },
+    {
+      "code": "APG4011F",
+      "title": "Geomatics IV",
+      "nqf_credits": 24,
+      "nqf_level": 8,
+      "semester": "S1",
+      "year_level": 4,
+      "department_prefix": "APG"
+    },
+    {
+      "code": "APG4012S",
+      "title": "Geomatics Management & Professionalism",
+      "nqf_credits": 24,
+      "nqf_level": 8,
+      "semester": "S2",
+      "year_level": 4,
+      "department_prefix": "APG"
+    },
+    {
+      "code": "CEM1000W",
+      "title": "Chemistry 1000",
+      "nqf_credits": 36,
+      "nqf_level": 5,
+      "semester": "FY",
+      "year_level": 1,
+      "department_prefix": "CEM",
+      "is_ebe_course": false,
+      "offered_by_faculty": "science"
+    },
+    {
+      "code": "CHE1001P",
+      "title": "Introduction to Chemical Engineering",
+      "nqf_credits": 22,
+      "nqf_level": 5,
+      "semester": "summer",
+      "year_level": 1,
+      "department_prefix": "CHE"
+    },
+    {
+      "code": "CHE1006F",
+      "title": "Chemical Engineering IA",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "CHE"
+    },
+    {
+      "code": "CHE1007S",
+      "title": "Chemical Engineering IB",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "CHE"
+    },
+    {
+      "code": "CHE2000X",
+      "title": "Field Trip",
+      "nqf_credits": 4,
+      "nqf_level": 6,
+      "semester": "varies",
+      "year_level": 2,
+      "department_prefix": "CHE"
+    },
+    {
+      "code": "CHE2005W",
+      "title": "Chemical Engineering II",
+      "nqf_credits": 72,
+      "nqf_level": 6,
+      "semester": "FY",
+      "year_level": 2,
+      "department_prefix": "CHE"
+    },
+    {
+      "code": "CHE2006S",
+      "title": "Introduction to Biotechnology",
+      "nqf_credits": 24,
+      "nqf_level": 6,
+      "semester": "S2",
+      "year_level": 2,
+      "department_prefix": "CHE"
+    },
+    {
+      "code": "CHE3000X",
+      "title": "Workplace Experience",
+      "nqf_credits": 0,
+      "nqf_level": 7,
+      "semester": "varies",
+      "year_level": 3,
+      "department_prefix": "CHE"
+    },
+    {
+      "code": "CHE3006F",
+      "title": "Fundamentals of Chemical Engineering III",
+      "nqf_credits": 54,
+      "nqf_level": 7,
+      "semester": "S1",
+      "year_level": 3,
+      "department_prefix": "CHE"
+    },
+    {
+      "code": "CHE3007S",
+      "title": "Data Science, System Dynamics and Process Control",
+      "nqf_credits": 24,
+      "nqf_level": 7,
+      "semester": "S2",
+      "year_level": 3,
+      "department_prefix": "CHE"
+    },
+    {
+      "code": "CHE3008S",
+      "title": "Chemical Engineering Project Management & Unit Operation Design",
+      "nqf_credits": 20,
+      "nqf_level": 7,
+      "semester": "S2",
+      "year_level": 3,
+      "department_prefix": "CHE"
+    },
+    {
+      "code": "CHE3067S",
+      "title": "Design and Operation of Catalytic Reactors",
+      "nqf_credits": 16,
+      "nqf_level": 7,
+      "semester": "S2",
+      "year_level": 3,
+      "department_prefix": "CHE"
+    },
+    {
+      "code": "CHE3068S",
+      "title": "Bioprocess Engineering",
+      "nqf_credits": 16,
+      "nqf_level": 7,
+      "semester": "S2",
+      "year_level": 3,
+      "department_prefix": "CHE"
+    },
+    {
+      "code": "CHE3069S",
+      "title": "Mineral and Metallurgical Processing",
+      "nqf_credits": 16,
+      "nqf_level": 7,
+      "semester": "S2",
+      "year_level": 3,
+      "department_prefix": "CHE"
+    },
+    {
+      "code": "CHE3070S",
+      "title": "Numerical Simulation for Chemical Engineers",
+      "nqf_credits": 16,
+      "nqf_level": 7,
+      "semester": "S2",
+      "year_level": 3,
+      "department_prefix": "CHE"
+    },
+    {
+      "code": "CHE4036Z",
+      "title": "Chemical Engineering Design",
+      "nqf_credits": 36,
+      "nqf_level": 8,
+      "semester": "varies",
+      "year_level": 4,
+      "department_prefix": "CHE"
+    },
+    {
+      "code": "CHE4045Z",
+      "title": "Chemical Engineering Research",
+      "nqf_credits": 36,
+      "nqf_level": 8,
+      "semester": "varies",
+      "year_level": 4,
+      "department_prefix": "CHE"
+    },
+    {
+      "code": "CHE4048F",
+      "title": "Business, Society & Environment",
+      "nqf_credits": 20,
+      "nqf_level": 8,
+      "semester": "S1",
+      "year_level": 4,
+      "department_prefix": "CHE"
+    },
+    {
+      "code": "CHE4049F",
+      "title": "Process Synthesis & Equipment Design",
+      "nqf_credits": 20,
+      "nqf_level": 8,
+      "semester": "S1",
+      "year_level": 4,
+      "department_prefix": "CHE"
+    },
+    {
+      "code": "CHE4057F",
+      "title": "Industrial Ecology for Chemical Engineers",
+      "nqf_credits": 8,
+      "nqf_level": 8,
+      "semester": "S1",
+      "year_level": 4,
+      "department_prefix": "CHE"
+    },
+    {
+      "code": "CHE4058Z",
+      "title": "Life Cycle Assessment",
+      "nqf_credits": 8,
+      "nqf_level": 8,
+      "semester": "varies",
+      "year_level": 4,
+      "department_prefix": "CHE"
+    },
+    {
+      "code": "CHE4068F",
+      "title": "Bioprocess Engineering Design",
+      "nqf_credits": 16,
+      "nqf_level": 8,
+      "semester": "S1",
+      "year_level": 4,
+      "department_prefix": "CHE"
+    },
+    {
+      "code": "CHE4069F",
+      "title": "Mineral & Metallurgical Processing II",
+      "nqf_credits": 16,
+      "nqf_level": 8,
+      "semester": "S1",
+      "year_level": 4,
+      "department_prefix": "CHE"
+    },
+    {
+      "code": "CHE4070F",
+      "title": "Numerical Optimisation for Chemical Engineers",
+      "nqf_credits": 16,
+      "nqf_level": 8,
+      "semester": "S1",
+      "year_level": 4,
+      "department_prefix": "CHE"
+    },
+    {
+      "code": "CHE4072F",
+      "title": "Renewable Energy in the Process Industry",
+      "nqf_credits": 16,
+      "nqf_level": 8,
+      "semester": "S1",
+      "year_level": 4,
+      "department_prefix": "CHE"
+    },
+    {
+      "code": "CIV1006S",
+      "title": "Introduction to Civil Engineering",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "CIV"
+    },
+    {
+      "code": "CIV1008F",
+      "title": "Introduction to Civil Engineering",
+      "nqf_credits": 12,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "CIV"
+    },
+    {
+      "code": "CIV1009F",
+      "title": "Civil Engineering Drawing",
+      "nqf_credits": 8,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "CIV"
+    },
+    {
+      "code": "CIV1011S",
+      "title": "Introduction to Engineering Mechanics",
+      "nqf_credits": 15,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "CIV"
+    },
+    {
+      "code": "CIV1012S",
+      "title": "Sustainable Urban Infrastructure",
+      "nqf_credits": 8,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "CIV"
+    },
+    {
+      "code": "CIV1013S",
+      "title": "Environmental Chemistry for Civil Engineers",
+      "nqf_credits": 12,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "CIV"
+    },
+    {
+      "code": "CIV1014Z",
+      "title": "Water Challenge Scenario Project",
+      "nqf_credits": 4,
+      "nqf_level": 6,
+      "semester": "varies",
+      "year_level": 1,
+      "department_prefix": "CIV"
+    },
+    {
+      "code": "CIV2020X",
+      "title": "Practical Experience",
+      "nqf_credits": 0,
+      "nqf_level": 6,
+      "semester": "varies",
+      "year_level": 2,
+      "department_prefix": "CIV"
+    },
+    {
+      "code": "CIV2044F",
+      "title": "Mechanics of Materials",
+      "nqf_credits": 15,
+      "nqf_level": 6,
+      "semester": "S1",
+      "year_level": 2,
+      "department_prefix": "CIV"
+    },
+    {
+      "code": "CIV2045F",
+      "title": "Geotechnical Engineering I",
+      "nqf_credits": 8,
+      "nqf_level": 6,
+      "semester": "S1",
+      "year_level": 2,
+      "department_prefix": "CIV"
+    },
+    {
+      "code": "CIV2046F",
+      "title": "Transportation Engineering I",
+      "nqf_credits": 15,
+      "nqf_level": 6,
+      "semester": "S1",
+      "year_level": 2,
+      "department_prefix": "CIV"
+    },
+    {
+      "code": "CIV2047Z",
+      "title": "Transportation Infrastructure Project",
+      "nqf_credits": 4,
+      "nqf_level": 6,
+      "semester": "varies",
+      "year_level": 2,
+      "department_prefix": "CIV"
+    },
+    {
+      "code": "CIV2048S",
+      "title": "Hydraulics I",
+      "nqf_credits": 15,
+      "nqf_level": 7,
+      "semester": "S2",
+      "year_level": 2,
+      "department_prefix": "CIV"
+    },
+    {
+      "code": "CIV2049Z",
+      "title": "Water and Sanitation Infrastructure Project",
+      "nqf_credits": 4,
+      "nqf_level": 6,
+      "semester": "varies",
+      "year_level": 2,
+      "department_prefix": "CIV"
+    },
+    {
+      "code": "CIV2050Z",
+      "title": "Structural Systems Project",
+      "nqf_credits": 4,
+      "nqf_level": 6,
+      "semester": "varies",
+      "year_level": 2,
+      "department_prefix": "CIV"
+    },
+    {
+      "code": "CIV2051S",
+      "title": "Analysis of Statistically Determinate Structures",
+      "nqf_credits": 15,
+      "nqf_level": 7,
+      "semester": "S2",
+      "year_level": 2,
+      "department_prefix": "CIV"
+    },
+    {
+      "code": "CIV3042F",
+      "title": "Geotechnical Engineering II",
+      "nqf_credits": 16,
+      "nqf_level": 7,
+      "semester": "S1",
+      "year_level": 3,
+      "department_prefix": "CIV"
+    },
+    {
+      "code": "CIV3043F",
+      "title": "Hydraulic Engineering",
+      "nqf_credits": 16,
+      "nqf_level": 7,
+      "semester": "S1",
+      "year_level": 3,
+      "department_prefix": "CIV"
+    },
+    {
+      "code": "CIV3044F",
+      "title": "Engineering Hydrology",
+      "nqf_credits": 8,
+      "nqf_level": 7,
+      "semester": "S1",
+      "year_level": 3,
+      "department_prefix": "CIV"
+    },
+    {
+      "code": "CIV3045S",
+      "title": "Transportation Planning",
+      "nqf_credits": 16,
+      "nqf_level": 7,
+      "semester": "S2",
+      "year_level": 3,
+      "department_prefix": "CIV"
+    },
+    {
+      "code": "CIV3046S",
+      "title": "Water Treatment",
+      "nqf_credits": 12,
+      "nqf_level": 7,
+      "semester": "S2",
+      "year_level": 3,
+      "department_prefix": "CIV"
+    },
+    {
+      "code": "CIV3047S",
+      "title": "Urban Water Services",
+      "nqf_credits": 16,
+      "nqf_level": 7,
+      "semester": "S2",
+      "year_level": 3,
+      "department_prefix": "CIV"
+    },
+    {
+      "code": "CIV3048F",
+      "title": "Structural Analysis II",
+      "nqf_credits": 16,
+      "nqf_level": 7,
+      "semester": "S1",
+      "year_level": 3,
+      "department_prefix": "CIV"
+    },
+    {
+      "code": "CIV3049S",
+      "title": "Structural Design I",
+      "nqf_credits": 16,
+      "nqf_level": 7,
+      "semester": "S2",
+      "year_level": 3,
+      "department_prefix": "CIV"
+    },
+    {
+      "code": "CIV4035C",
+      "title": "Design Project",
+      "nqf_credits": 24,
+      "nqf_level": 8,
+      "semester": "Q3",
+      "year_level": 4,
+      "department_prefix": "CIV"
+    },
+    {
+      "code": "CIV4041F",
+      "title": "Professional Practice",
+      "nqf_credits": 12,
+      "nqf_level": 8,
+      "semester": "S1",
+      "year_level": 4,
+      "department_prefix": "CIV"
+    },
+    {
+      "code": "CIV4042F",
+      "title": "Wastewater Treatment",
+      "nqf_credits": 12,
+      "nqf_level": 8,
+      "semester": "S1",
+      "year_level": 4,
+      "department_prefix": "CIV"
+    },
+    {
+      "code": "CIV4044S",
+      "title": "Research Project",
+      "nqf_credits": 48,
+      "nqf_level": 8,
+      "semester": "S2",
+      "year_level": 4,
+      "department_prefix": "CIV"
+    },
+    {
+      "code": "CIV4045F",
+      "title": "Structural Design II",
+      "nqf_credits": 18,
+      "nqf_level": 8,
+      "semester": "S1",
+      "year_level": 4,
+      "department_prefix": "CIV"
+    },
+    {
+      "code": "CIV4046F",
+      "title": "Transportation Engineering",
+      "nqf_credits": 18,
+      "nqf_level": 8,
+      "semester": "S1",
+      "year_level": 4,
+      "department_prefix": "CIV"
+    },
+    {
+      "code": "CML1001F",
+      "title": "Business Law",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "CML",
+      "is_ebe_course": false,
+      "offered_by_faculty": "law"
+    },
+    {
+      "code": "CML2005F",
+      "title": "Construction Law",
+      "nqf_credits": 18,
+      "nqf_level": 6,
+      "semester": "S1",
+      "year_level": 2,
+      "department_prefix": "CML",
+      "is_ebe_course": false,
+      "offered_by_faculty": "law"
+    },
+    {
+      "code": "CML4607F",
+      "title": "Construction Law (Advanced)",
+      "nqf_credits": 18,
+      "nqf_level": 8,
+      "semester": "S1",
+      "year_level": 4,
+      "department_prefix": "CML",
+      "is_ebe_course": false,
+      "offered_by_faculty": "law"
+    },
+    {
+      "code": "CON1004W",
+      "title": "Construction Technology I",
+      "nqf_credits": 26,
+      "nqf_level": 5,
+      "semester": "FY",
+      "year_level": 1,
+      "department_prefix": "CON"
+    },
+    {
+      "code": "CON1007X",
+      "title": "Practical Training",
+      "nqf_credits": 0,
+      "nqf_level": 5,
+      "semester": "varies",
+      "year_level": 1,
+      "department_prefix": "CON"
+    },
+    {
+      "code": "CON1010S",
+      "title": "Construction Information Systems",
+      "nqf_credits": 8,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "CON"
+    },
+    {
+      "code": "CON1021F",
+      "title": "Property and Planning I",
+      "nqf_credits": 14,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "CON"
+    },
+    {
+      "code": "CON1022F",
+      "title": "Building Construction I",
+      "nqf_credits": 14,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "CON"
+    },
+    {
+      "code": "CON1023S",
+      "title": "Building Construction II",
+      "nqf_credits": 14,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "CON"
+    },
+    {
+      "code": "CON1024S",
+      "title": "Property Economics I",
+      "nqf_credits": 14,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "CON"
+    },
+    {
+      "code": "CON1025S",
+      "title": "Property and Technology",
+      "nqf_credits": 14,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "CON"
+    },
+    {
+      "code": "CON2006W",
+      "title": "Construction Technology II",
+      "nqf_credits": 28,
+      "nqf_level": 6,
+      "semester": "FY",
+      "year_level": 2,
+      "department_prefix": "CON"
+    },
+    {
+      "code": "CON2013X",
+      "title": "Practical Training",
+      "nqf_credits": 0,
+      "nqf_level": 6,
+      "semester": "varies",
+      "year_level": 2,
+      "department_prefix": "CON"
+    },
+    {
+      "code": "CON2020S",
+      "title": "Construction Management I",
+      "nqf_credits": 16,
+      "nqf_level": 6,
+      "semester": "S2",
+      "year_level": 2,
+      "department_prefix": "CON"
+    },
+    {
+      "code": "CON2032S",
+      "title": "Property Investment and Finance I",
+      "nqf_credits": 14,
+      "nqf_level": 6,
+      "semester": "S2",
+      "year_level": 2,
+      "department_prefix": "CON"
+    },
+    {
+      "code": "CON2033F",
+      "title": "Real Property Law I",
+      "nqf_credits": 14,
+      "nqf_level": 6,
+      "semester": "S1",
+      "year_level": 2,
+      "department_prefix": "CON"
+    },
+    {
+      "code": "CON2034S",
+      "title": "Professionalism in the Built Environment",
+      "nqf_credits": 12,
+      "nqf_level": 6,
+      "semester": "S2",
+      "year_level": 2,
+      "department_prefix": "CON"
+    },
+    {
+      "code": "CON2035S",
+      "title": "Property and Planning II",
+      "nqf_credits": 14,
+      "nqf_level": 6,
+      "semester": "S2",
+      "year_level": 2,
+      "department_prefix": "CON"
+    },
+    {
+      "code": "CON2036F",
+      "title": "Property Valuation I",
+      "nqf_credits": 14,
+      "nqf_level": 6,
+      "semester": "S1",
+      "year_level": 2,
+      "department_prefix": "CON"
+    },
+    {
+      "code": "CON2037W",
+      "title": "Measurement & Design Appraisal I",
+      "nqf_credits": 20,
+      "nqf_level": 6,
+      "semester": "FY",
+      "year_level": 2,
+      "department_prefix": "CON"
+    },
+    {
+      "code": "CON3012W",
+      "title": "Construction Technology III",
+      "nqf_credits": 28,
+      "nqf_level": 7,
+      "semester": "FY",
+      "year_level": 3,
+      "department_prefix": "CON"
+    },
+    {
+      "code": "CON3022X",
+      "title": "Practical Training",
+      "nqf_credits": 0,
+      "nqf_level": 7,
+      "semester": "varies",
+      "year_level": 3,
+      "department_prefix": "CON"
+    },
+    {
+      "code": "CON3030F",
+      "title": "Construction Costing",
+      "nqf_credits": 14,
+      "nqf_level": 7,
+      "semester": "S1",
+      "year_level": 3,
+      "department_prefix": "CON"
+    },
+    {
+      "code": "CON3031W",
+      "title": "Measurement & Design Appraisal II",
+      "nqf_credits": 26,
+      "nqf_level": 7,
+      "semester": "FY",
+      "year_level": 3,
+      "department_prefix": "CON"
+    },
+    {
+      "code": "CON3032W",
+      "title": "Applied Contract Law I",
+      "nqf_credits": 12,
+      "nqf_level": 7,
+      "semester": "FY",
+      "year_level": 3,
+      "department_prefix": "CON"
+    },
+    {
+      "code": "CON3033S",
+      "title": "Property Studies I",
+      "nqf_credits": 14,
+      "nqf_level": 7,
+      "semester": "S2",
+      "year_level": 3,
+      "department_prefix": "CON"
+    },
+    {
+      "code": "CON3038W",
+      "title": "Construction Management II",
+      "nqf_credits": 28,
+      "nqf_level": 7,
+      "semester": "FY",
+      "year_level": 3,
+      "department_prefix": "CON"
+    },
+    {
+      "code": "CON3043W",
+      "title": "Cost Engineering under Uncertainty",
+      "nqf_credits": 14,
+      "nqf_level": 7,
+      "semester": "FY",
+      "year_level": 3,
+      "department_prefix": "CON"
+    },
+    {
+      "code": "CON3046S",
+      "title": "Property and Facilities Management",
+      "nqf_credits": 14,
+      "nqf_level": 7,
+      "semester": "S2",
+      "year_level": 3,
+      "department_prefix": "CON"
+    },
+    {
+      "code": "CON3047F",
+      "title": "Property Investment and Finance II",
+      "nqf_credits": 14,
+      "nqf_level": 7,
+      "semester": "S1",
+      "year_level": 3,
+      "department_prefix": "CON"
+    },
+    {
+      "code": "CON3048F",
+      "title": "Property Development I",
+      "nqf_credits": 14,
+      "nqf_level": 7,
+      "semester": "S1",
+      "year_level": 3,
+      "department_prefix": "CON"
+    },
+    {
+      "code": "CON3050F",
+      "title": "Property and Contract Law",
+      "nqf_credits": 14,
+      "nqf_level": 7,
+      "semester": "S1",
+      "year_level": 3,
+      "department_prefix": "CON"
+    },
+    {
+      "code": "CON3051F",
+      "title": "Property Valuation II",
+      "nqf_credits": 14,
+      "nqf_level": 7,
+      "semester": "S1",
+      "year_level": 3,
+      "department_prefix": "CON"
+    },
+    {
+      "code": "CON3052S",
+      "title": "Property Economics II",
+      "nqf_credits": 14,
+      "nqf_level": 7,
+      "semester": "S2",
+      "year_level": 3,
+      "department_prefix": "CON"
+    },
+    {
+      "code": "CON3053S",
+      "title": "Property and Environment",
+      "nqf_credits": 14,
+      "nqf_level": 7,
+      "semester": "S2",
+      "year_level": 3,
+      "department_prefix": "CON"
+    },
+    {
+      "code": "CON3054S",
+      "title": "Property Development II",
+      "nqf_credits": 10,
+      "nqf_level": 7,
+      "semester": "S2",
+      "year_level": 3,
+      "department_prefix": "CON"
+    },
+    {
+      "code": "CSC1015F",
+      "title": "Computer Science 1015",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "CSC",
+      "is_ebe_course": false,
+      "offered_by_faculty": "science"
+    },
+    {
+      "code": "CSC1015S",
+      "title": "Computer Science 1015",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "CSC",
+      "is_ebe_course": false,
+      "offered_by_faculty": "science"
+    },
+    {
+      "code": "CSC1016S",
+      "title": "Computer Science 1016",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "CSC",
+      "is_ebe_course": false,
+      "offered_by_faculty": "science"
+    },
+    {
+      "code": "CSC1017S",
+      "title": "Computer Science 1017",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "CSC",
+      "is_ebe_course": false,
+      "offered_by_faculty": "science"
+    },
+    {
+      "code": "CSC1019F",
+      "title": "Computer Science 1019",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "CSC",
+      "is_ebe_course": false,
+      "offered_by_faculty": "science"
+    },
+    {
+      "code": "CSC2001F",
+      "title": "Data Structures",
+      "nqf_credits": 24,
+      "nqf_level": 6,
+      "semester": "S1",
+      "year_level": 2,
+      "department_prefix": "CSC",
+      "is_ebe_course": false,
+      "offered_by_faculty": "science"
+    },
+    {
+      "code": "CSC2002S",
+      "title": "Data Structures",
+      "nqf_credits": 24,
+      "nqf_level": 6,
+      "semester": "S2",
+      "year_level": 2,
+      "department_prefix": "CSC",
+      "is_ebe_course": false,
+      "offered_by_faculty": "science"
+    },
+    {
+      "code": "ECO1007S",
+      "title": "Economics for Engineers",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "ECO",
+      "is_ebe_course": false,
+      "offered_by_faculty": "commerce"
+    },
+    {
+      "code": "ECO1008F",
+      "title": "Microeconomics I",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "ECO",
+      "is_ebe_course": false,
+      "offered_by_faculty": "commerce"
+    },
+    {
+      "code": "ECO1009S",
+      "title": "Macroeconomics I",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "ECO",
+      "is_ebe_course": false,
+      "offered_by_faculty": "commerce"
+    },
+    {
+      "code": "EEE1000X",
+      "title": "Practical Training",
+      "nqf_credits": 0,
+      "nqf_level": 5,
+      "semester": "varies",
+      "year_level": 1,
+      "department_prefix": "EEE"
+    },
+    {
+      "code": "EEE1008F",
+      "title": "Introduction to Electrical Engineering A",
+      "nqf_credits": 12,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "EEE"
+    },
+    {
+      "code": "EEE1009S",
+      "title": "Introduction to Electrical Engineering B",
+      "nqf_credits": 12,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "EEE"
+    },
+    {
+      "code": "EEE2041F",
+      "title": "Introduction to Electrical Engineering & Power Utilisation",
+      "nqf_credits": 16,
+      "nqf_level": 6,
+      "semester": "S1",
+      "year_level": 2,
+      "department_prefix": "EEE"
+    },
+    {
+      "code": "EEE2042S",
+      "title": "Introduction to Analogue & Digital Electronics",
+      "nqf_credits": 8,
+      "nqf_level": 6,
+      "semester": "S2",
+      "year_level": 2,
+      "department_prefix": "EEE"
+    },
+    {
+      "code": "EEE2044S",
+      "title": "Introduction to Power Engineering",
+      "nqf_credits": 16,
+      "nqf_level": 6,
+      "semester": "S2",
+      "year_level": 2,
+      "department_prefix": "EEE"
+    },
+    {
+      "code": "EEE2045F",
+      "title": "Analogue Electronics",
+      "nqf_credits": 16,
+      "nqf_level": 6,
+      "semester": "S1",
+      "year_level": 2,
+      "department_prefix": "EEE"
+    },
+    {
+      "code": "EEE2046F",
+      "title": "Embedded Systems I",
+      "nqf_credits": 16,
+      "nqf_level": 6,
+      "semester": "S1",
+      "year_level": 2,
+      "department_prefix": "EEE"
+    },
+    {
+      "code": "EEE2046S",
+      "title": "Signals and Systems I",
+      "nqf_credits": 24,
+      "nqf_level": 6,
+      "semester": "S2",
+      "year_level": 2,
+      "department_prefix": "EEE"
+    },
+    {
+      "code": "EEE2047S",
+      "title": "Signals and Systems I",
+      "nqf_credits": 16,
+      "nqf_level": 6,
+      "semester": "S2",
+      "year_level": 2,
+      "department_prefix": "EEE"
+    },
+    {
+      "code": "EEE2048S",
+      "title": "Professional Communication for Electrical Engineering",
+      "nqf_credits": 8,
+      "nqf_level": 6,
+      "semester": "S2",
+      "year_level": 2,
+      "department_prefix": "EEE"
+    },
+    {
+      "code": "EEE3000X",
+      "title": "Practical Training",
+      "nqf_credits": 0,
+      "nqf_level": 7,
+      "semester": "varies",
+      "year_level": 3,
+      "department_prefix": "EEE"
+    },
+    {
+      "code": "EEE3088F",
+      "title": "Electrical Engineering Design Principles",
+      "nqf_credits": 8,
+      "nqf_level": 7,
+      "semester": "S1",
+      "year_level": 3,
+      "department_prefix": "EEE"
+    },
+    {
+      "code": "EEE3089F",
+      "title": "Electromagnetic Engineering",
+      "nqf_credits": 16,
+      "nqf_level": 7,
+      "semester": "S1",
+      "year_level": 3,
+      "department_prefix": "EEE"
+    },
+    {
+      "code": "EEE3090F",
+      "title": "Electronic Devices and Circuits",
+      "nqf_credits": 16,
+      "nqf_level": 7,
+      "semester": "S1",
+      "year_level": 3,
+      "department_prefix": "EEE"
+    },
+    {
+      "code": "EEE3091F",
+      "title": "Energy Conversion I",
+      "nqf_credits": 16,
+      "nqf_level": 7,
+      "semester": "S1",
+      "year_level": 3,
+      "department_prefix": "EEE"
+    },
+    {
+      "code": "EEE3092F",
+      "title": "Signals & Systems II",
+      "nqf_credits": 16,
+      "nqf_level": 7,
+      "semester": "S1",
+      "year_level": 3,
+      "department_prefix": "EEE"
+    },
+    {
+      "code": "EEE3093S",
+      "title": "Communication & Network Engineering",
+      "nqf_credits": 16,
+      "nqf_level": 7,
+      "semester": "S2",
+      "year_level": 3,
+      "department_prefix": "EEE"
+    },
+    {
+      "code": "EEE3094S",
+      "title": "Control Systems Engineering",
+      "nqf_credits": 16,
+      "nqf_level": 7,
+      "semester": "S2",
+      "year_level": 3,
+      "department_prefix": "EEE"
+    },
+    {
+      "code": "EEE3096S",
+      "title": "Embedded Systems II",
+      "nqf_credits": 16,
+      "nqf_level": 7,
+      "semester": "S2",
+      "year_level": 3,
+      "department_prefix": "EEE"
+    },
+    {
+      "code": "EEE3097S",
+      "title": "Engineering Design: Electrical & Computer Engineering",
+      "nqf_credits": 8,
+      "nqf_level": 7,
+      "semester": "S2",
+      "year_level": 3,
+      "department_prefix": "EEE"
+    },
+    {
+      "code": "EEE3098S",
+      "title": "Engineering Design: Electrical Engineering",
+      "nqf_credits": 8,
+      "nqf_level": 7,
+      "semester": "S2",
+      "year_level": 3,
+      "department_prefix": "EEE"
+    },
+    {
+      "code": "EEE3099S",
+      "title": "Engineering Design: Mechatronics",
+      "nqf_credits": 8,
+      "nqf_level": 7,
+      "semester": "S2",
+      "year_level": 3,
+      "department_prefix": "EEE"
+    },
+    {
+      "code": "EEE3100S",
+      "title": "Energy Systems & Grids I",
+      "nqf_credits": 16,
+      "nqf_level": 7,
+      "semester": "S2",
+      "year_level": 3,
+      "department_prefix": "EEE"
+    },
+    {
+      "code": "EEE4022S",
+      "title": "Research Project",
+      "nqf_credits": 40,
+      "nqf_level": 8,
+      "semester": "S2",
+      "year_level": 4,
+      "department_prefix": "EEE"
+    },
+    {
+      "code": "EEE4113F",
+      "title": "Engineering System Design",
+      "nqf_credits": 16,
+      "nqf_level": 8,
+      "semester": "S1",
+      "year_level": 4,
+      "department_prefix": "EEE"
+    },
+    {
+      "code": "EEE4114F",
+      "title": "Digital Signal Processing",
+      "nqf_credits": 16,
+      "nqf_level": 8,
+      "semester": "S1",
+      "year_level": 4,
+      "department_prefix": "EEE"
+    },
+    {
+      "code": "EEE4117F",
+      "title": "Energy Conversion II",
+      "nqf_credits": 16,
+      "nqf_level": 8,
+      "semester": "S1",
+      "year_level": 4,
+      "department_prefix": "EEE"
+    },
+    {
+      "code": "EEE4118F",
+      "title": "Process Control & Instrumentation",
+      "nqf_credits": 16,
+      "nqf_level": 8,
+      "semester": "S1",
+      "year_level": 4,
+      "department_prefix": "EEE"
+    },
+    {
+      "code": "EEE4119F",
+      "title": "Mechatronics",
+      "nqf_credits": 16,
+      "nqf_level": 8,
+      "semester": "S1",
+      "year_level": 4,
+      "department_prefix": "EEE"
+    },
+    {
+      "code": "EEE4120F",
+      "title": "High Performance Digital Embedded Systems",
+      "nqf_credits": 16,
+      "nqf_level": 8,
+      "semester": "S1",
+      "year_level": 4,
+      "department_prefix": "EEE"
+    },
+    {
+      "code": "EEE4121F",
+      "title": "Mobile and Wireless Networks",
+      "nqf_credits": 16,
+      "nqf_level": 8,
+      "semester": "S1",
+      "year_level": 4,
+      "department_prefix": "EEE"
+    },
+    {
+      "code": "EEE4124C",
+      "title": "Impact of Engineering on the Natural & Social Environment",
+      "nqf_credits": 8,
+      "nqf_level": 8,
+      "semester": "Q3",
+      "year_level": 4,
+      "department_prefix": "EEE"
+    },
+    {
+      "code": "EEE4125C",
+      "title": "New Ventures: Planning, Practice & Professionalism",
+      "nqf_credits": 16,
+      "nqf_level": 8,
+      "semester": "Q3",
+      "year_level": 4,
+      "department_prefix": "EEE"
+    },
+    {
+      "code": "EEE4126F",
+      "title": "Energy Systems & Grids II",
+      "nqf_credits": 16,
+      "nqf_level": 8,
+      "semester": "S1",
+      "year_level": 4,
+      "department_prefix": "EEE"
+    },
+    {
+      "code": "EEE4127F",
+      "title": "Mechatronic Systems",
+      "nqf_credits": 16,
+      "nqf_level": 8,
+      "semester": "S1",
+      "year_level": 4,
+      "department_prefix": "EEE"
+    },
+    {
+      "code": "EGS1005F",
+      "title": "Introduction to Environmental Science",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "EGS",
+      "is_ebe_course": false,
+      "offered_by_faculty": "science"
+    },
+    {
+      "code": "END1019Z",
+      "title": "Ethics and Engineering",
+      "nqf_credits": 0,
+      "nqf_level": 5,
+      "semester": "varies",
+      "year_level": 1,
+      "department_prefix": "END"
+    },
+    {
+      "code": "FTX2020F",
+      "title": "Business Finance",
+      "nqf_credits": 18,
+      "nqf_level": 6,
+      "semester": "S1",
+      "year_level": 2,
+      "department_prefix": "FTX",
+      "is_ebe_course": false,
+      "offered_by_faculty": "commerce"
+    },
+    {
+      "code": "GEO1008F",
+      "title": "Introduction to Earth and Environmental Sciences",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "GEO",
+      "is_ebe_course": false,
+      "offered_by_faculty": "science"
+    },
+    {
+      "code": "GEO1010F",
+      "title": "Geology for Engineers",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "GEO",
+      "is_ebe_course": false,
+      "offered_by_faculty": "science"
+    },
+    {
+      "code": "MAM1010F",
+      "title": "Mathematics I (Commerce/Humanities)",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "MAM",
+      "is_ebe_course": false,
+      "offered_by_faculty": "science"
+    },
+    {
+      "code": "MAM1020F",
+      "title": "Mathematics for Engineers I",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "MAM",
+      "is_ebe_course": false,
+      "offered_by_faculty": "science"
+    },
+    {
+      "code": "MAM1021S",
+      "title": "Mathematics for Engineers II",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "MAM",
+      "is_ebe_course": false,
+      "offered_by_faculty": "science"
+    },
+    {
+      "code": "MAM2083F",
+      "title": "Differential Equations",
+      "nqf_credits": 12,
+      "nqf_level": 6,
+      "semester": "S1",
+      "year_level": 2,
+      "department_prefix": "MAM",
+      "is_ebe_course": false,
+      "offered_by_faculty": "science"
+    },
+    {
+      "code": "MAM2083S",
+      "title": "Differential Equations",
+      "nqf_credits": 12,
+      "nqf_level": 6,
+      "semester": "S2",
+      "year_level": 2,
+      "department_prefix": "MAM",
+      "is_ebe_course": false,
+      "offered_by_faculty": "science"
+    },
+    {
+      "code": "MAM2084F",
+      "title": "Linear Algebra",
+      "nqf_credits": 12,
+      "nqf_level": 6,
+      "semester": "S1",
+      "year_level": 2,
+      "department_prefix": "MAM",
+      "is_ebe_course": false,
+      "offered_by_faculty": "science"
+    },
+    {
+      "code": "MAM2084S",
+      "title": "Linear Algebra",
+      "nqf_credits": 12,
+      "nqf_level": 6,
+      "semester": "S2",
+      "year_level": 2,
+      "department_prefix": "MAM",
+      "is_ebe_course": false,
+      "offered_by_faculty": "science"
+    },
+    {
+      "code": "MEC1000X",
+      "title": "Practical Training I",
+      "nqf_credits": 0,
+      "nqf_level": 5,
+      "semester": "varies",
+      "year_level": 1,
+      "department_prefix": "MEC"
+    },
+    {
+      "code": "MEC1003F",
+      "title": "Engineering Drawing",
+      "nqf_credits": 8,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "MEC"
+    },
+    {
+      "code": "MEC1007F",
+      "title": "Introduction to Engineering Drawing",
+      "nqf_credits": 8,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "MEC"
+    },
+    {
+      "code": "MEC1008S",
+      "title": "Introduction to Mechanical Design",
+      "nqf_credits": 8,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "MEC"
+    },
+    {
+      "code": "MEC1009F",
+      "title": "Introduction to Engineering Mechanics",
+      "nqf_credits": 16,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "MEC"
+    },
+    {
+      "code": "MEC1009S",
+      "title": "Introduction to Engineering Mechanics",
+      "nqf_credits": 16,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "MEC"
+    },
+    {
+      "code": "MEC1010F",
+      "title": "Introduction to Mechanical Engineering",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "MEC"
+    },
+    {
+      "code": "MEC1018S",
+      "title": "Introduction to Computer-Aided Design",
+      "nqf_credits": 6,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "MEC"
+    },
+    {
+      "code": "MEC1019S",
+      "title": "Introduction to Materials Science and Engineering",
+      "nqf_credits": 8,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "MEC"
+    },
+    {
+      "code": "MEC1020W",
+      "title": "Introduction to Mechanical Engineering",
+      "nqf_credits": 20,
+      "nqf_level": 5,
+      "semester": "FY",
+      "year_level": 1,
+      "department_prefix": "MEC"
+    },
+    {
+      "code": "MEC2000X",
+      "title": "Practical Training II",
+      "nqf_credits": 0,
+      "nqf_level": 7,
+      "semester": "varies",
+      "year_level": 2,
+      "department_prefix": "MEC"
+    },
+    {
+      "code": "MEC2045S",
+      "title": "Applied Engineering Mechanics",
+      "nqf_credits": 16,
+      "nqf_level": 6,
+      "semester": "S2",
+      "year_level": 2,
+      "department_prefix": "MEC"
+    },
+    {
+      "code": "MEC2046F",
+      "title": "Materials Science in Mechanical Engineering",
+      "nqf_credits": 12,
+      "nqf_level": 6,
+      "semester": "S1",
+      "year_level": 2,
+      "department_prefix": "MEC"
+    },
+    {
+      "code": "MEC2047F",
+      "title": "Engineering Dynamics",
+      "nqf_credits": 16,
+      "nqf_level": 6,
+      "semester": "S1",
+      "year_level": 2,
+      "department_prefix": "MEC"
+    },
+    {
+      "code": "MEC2047S",
+      "title": "Engineering Dynamics",
+      "nqf_credits": 16,
+      "nqf_level": 6,
+      "semester": "S2",
+      "year_level": 2,
+      "department_prefix": "MEC"
+    },
+    {
+      "code": "MEC2048S",
+      "title": "Mechanical Engineering Design",
+      "nqf_credits": 16,
+      "nqf_level": 6,
+      "semester": "S2",
+      "year_level": 2,
+      "department_prefix": "MEC"
+    },
+    {
+      "code": "MEC2049F",
+      "title": "Solid Mechanics I",
+      "nqf_credits": 16,
+      "nqf_level": 6,
+      "semester": "S1",
+      "year_level": 2,
+      "department_prefix": "MEC"
+    },
+    {
+      "code": "MEC2050S",
+      "title": "Thermofluids I",
+      "nqf_credits": 16,
+      "nqf_level": 6,
+      "semester": "S2",
+      "year_level": 2,
+      "department_prefix": "MEC"
+    },
+    {
+      "code": "MEC3074F",
+      "title": "Measurement and Actuators",
+      "nqf_credits": 8,
+      "nqf_level": 7,
+      "semester": "S1",
+      "year_level": 3,
+      "department_prefix": "MEC"
+    },
+    {
+      "code": "MEC3075F",
+      "title": "Computer Methods for Mechanical Engineers",
+      "nqf_credits": 12,
+      "nqf_level": 7,
+      "semester": "S1",
+      "year_level": 3,
+      "department_prefix": "MEC"
+    },
+    {
+      "code": "MEC3076F",
+      "title": "Stress Analysis and Materials",
+      "nqf_credits": 16,
+      "nqf_level": 7,
+      "semester": "S1",
+      "year_level": 3,
+      "department_prefix": "MEC"
+    },
+    {
+      "code": "MEC3077F",
+      "title": "Thermofluids II",
+      "nqf_credits": 16,
+      "nqf_level": 7,
+      "semester": "S1",
+      "year_level": 3,
+      "department_prefix": "MEC"
+    },
+    {
+      "code": "MEC3078S",
+      "title": "Mechanics of Machines",
+      "nqf_credits": 8,
+      "nqf_level": 7,
+      "semester": "S2",
+      "year_level": 3,
+      "department_prefix": "MEC"
+    },
+    {
+      "code": "MEC3079S",
+      "title": "Control Systems",
+      "nqf_credits": 12,
+      "nqf_level": 8,
+      "semester": "S2",
+      "year_level": 3,
+      "department_prefix": "MEC"
+    },
+    {
+      "code": "MEC3080S",
+      "title": "Thermofluids III",
+      "nqf_credits": 16,
+      "nqf_level": 7,
+      "semester": "S2",
+      "year_level": 3,
+      "department_prefix": "MEC"
+    },
+    {
+      "code": "MEC3081S",
+      "title": "Manufacturing Sciences",
+      "nqf_credits": 12,
+      "nqf_level": 7,
+      "semester": "S2",
+      "year_level": 3,
+      "department_prefix": "MEC"
+    },
+    {
+      "code": "MEC3082S",
+      "title": "Mechanical Engineering Machine Element Design",
+      "nqf_credits": 16,
+      "nqf_level": 7,
+      "semester": "S2",
+      "year_level": 3,
+      "department_prefix": "MEC"
+    },
+    {
+      "code": "MEC3083W",
+      "title": "Engineer in Society",
+      "nqf_credits": 16,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 3,
+      "department_prefix": "MEC"
+    },
+    {
+      "code": "MEC4047F",
+      "title": "Mechanical Vibrations",
+      "nqf_credits": 12,
+      "nqf_level": 8,
+      "semester": "S1",
+      "year_level": 4,
+      "department_prefix": "MEC"
+    },
+    {
+      "code": "MEC4108S",
+      "title": "System Design",
+      "nqf_credits": 12,
+      "nqf_level": 8,
+      "semester": "S2",
+      "year_level": 4,
+      "department_prefix": "MEC"
+    },
+    {
+      "code": "MEC4123F",
+      "title": "Engineer in Business",
+      "nqf_credits": 16,
+      "nqf_level": 8,
+      "semester": "S1",
+      "year_level": 4,
+      "department_prefix": "MEC"
+    },
+    {
+      "code": "MEC4124W",
+      "title": "Engineering Product Design",
+      "nqf_credits": 22,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 4,
+      "department_prefix": "MEC"
+    },
+    {
+      "code": "MEC4125F",
+      "title": "Thermofluids IV",
+      "nqf_credits": 20,
+      "nqf_level": 8,
+      "semester": "S1",
+      "year_level": 4,
+      "department_prefix": "MEC"
+    },
+    {
+      "code": "MEC4126F",
+      "title": "Integrating Embedded Systems",
+      "nqf_credits": 16,
+      "nqf_level": 8,
+      "semester": "S1",
+      "year_level": 4,
+      "department_prefix": "MEC"
+    },
+    {
+      "code": "MEC4127F",
+      "title": "Mechatronic Systems",
+      "nqf_credits": 16,
+      "nqf_level": 8,
+      "semester": "S1",
+      "year_level": 4,
+      "department_prefix": "MEC"
+    },
+    {
+      "code": "MEC4128Z",
+      "title": "Final Year Engineering Project",
+      "nqf_credits": 20,
+      "nqf_level": 8,
+      "semester": "varies",
+      "year_level": 4,
+      "department_prefix": "MEC"
+    },
+    {
+      "code": "PHY1012F",
+      "title": "Physics A for Engineers",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "PHY",
+      "is_ebe_course": false,
+      "offered_by_faculty": "science"
+    },
+    {
+      "code": "PHY1013S",
+      "title": "Physics B for Engineers",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "PHY",
+      "is_ebe_course": false,
+      "offered_by_faculty": "science"
+    },
+    {
+      "code": "PHY1031F",
+      "title": "Physics for Geomatics",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "PHY",
+      "is_ebe_course": false,
+      "offered_by_faculty": "science"
+    },
+    {
+      "code": "PHY1032S",
+      "title": "Physics for Geomatics",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "PHY",
+      "is_ebe_course": false,
+      "offered_by_faculty": "science"
+    },
+    {
+      "code": "PHY2010S",
+      "title": "Electronics",
+      "nqf_credits": 24,
+      "nqf_level": 6,
+      "semester": "S2",
+      "year_level": 2,
+      "department_prefix": "PHY",
+      "is_ebe_course": false,
+      "offered_by_faculty": "science"
+    },
+    {
+      "code": "STA1000S",
+      "title": "Statistics 1000",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "STA",
+      "is_ebe_course": false,
+      "offered_by_faculty": "science"
+    },
+    {
+      "code": "STA1008F",
+      "title": "Statistics for Engineers",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "STA",
+      "is_ebe_course": false,
+      "offered_by_faculty": "science"
+    },
+    {
+      "code": "STA1008S",
+      "title": "Statistics for Engineers",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "STA",
+      "is_ebe_course": false,
+      "offered_by_faculty": "science"
+    },
+    {
+      "code": "STA2020S",
+      "title": "Applied Statistics",
+      "nqf_credits": 24,
+      "nqf_level": 6,
+      "semester": "S2",
+      "year_level": 2,
+      "department_prefix": "STA",
+      "is_ebe_course": false,
+      "offered_by_faculty": "science"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PSY2015F",
+  "title": "Research in Psychology I",
+  "department": "psychology",
+  "credits": 20,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Professor C Ward",
+  "prerequisites": {
+    "text": "PSY1004F, PSY1005S; and meeting mathematics criterion for entrance into PSY1004F.",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "PSY1004F",
+        "PSY1005S",
+        "PSY1004F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course introduces st udents to research in Psychology. We will cover four major approaches to research in Psychology , namely quantitative research meth ods, qualitative research methods, statistical analysis of data, and psychometrics. FACULTIES AND DEPARTMENTS OFFERING COURSES TO THE FACULTY 255",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Completion of all coursework, 80% attendance at tutorials, and obtaining 3 points through the Student Research Participation Programme (SRPP).",
+  "assessment": "Coursework will be weighted at 50%, and will include comp letion of tutorial assignments, and tests as required. An exam at the end of the semester will be weighted 50%.",
+  "is_health_sciences_course": false,
+  "offered_by_faculty": "humanities"
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MEC3083W",
+  "title": "Engineer in Society",
+  "department": "mechanical-engineering",
+  "credits": 16,
+  "nqf_level": 8,
+  "year_level": 3,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Associate Professor B Kloot",
+  "prerequisites": {
+    "text": "AYOS 3",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course frames engineering as a socio-technical endeavour and deals with the broader context in which engineering activity takes place. This includes the economic systems in which engineering organisations are embedded; the socio -economic status of com munities that might feel the impact from engineering activity; explores, through site visits, the notion of ‘community’ in post -apartheid South Africa; and deals with the political systems in which engineering operations occur, including issues of labour relations.",
+  "lecture_times": "2 lectures and 1 tutorial per week.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

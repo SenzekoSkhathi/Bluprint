@@ -1,0 +1,32 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CON3043W",
+  "title": "Cost Engineering under Uncertainty",
+  "department": "construction-economics-and-management",
+  "credits": 14,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "TBA",
+  "prerequisites": {
+    "text": "CON2006W and CON2037W",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "CON2006W",
+        "CON2037W"
+      ]
+    }
+  },
+  "corequisites": [
+    "CON3012W",
+    "CON3031W",
+    "CON3030F"
+  ],
+  "outline": "DEPARTMENTS IN THE FACULTY AND COURSES OFFERED 124 This course aims to develop an understanding of cost engineering under uncertainty. Topics include: consideration of client/developer motivation and needs; the client briefing process; the theory of construction cost planning and cost control; design economics, elemental cost analyses of buildings; and cost studies/cost comparisons. Consideration of cost and price indices. Techniques for cost planning and cost control, and the preparation of approximate estimates. Communication applied to the cost planning and control environment. Consideration of current research being conducted on the practice of cost planning and cost control in South Africa.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

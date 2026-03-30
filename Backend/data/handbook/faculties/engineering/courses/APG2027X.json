@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "APG2027X",
+  "title": "Work Experience",
+  "department": "architecture-planning-geomatics",
+  "credits": 0,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "varies",
+  "semester_code": "X",
+  "convener": "TBA",
+  "prerequisites": {
+    "text": "None",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [
+    "APG2021W",
+    "APG2039W"
+  ],
+  "outline": "Students find their own employment for a three week period of work experience during the second year mid -year break, to consolidate learning and gain exposure to career directions, requiring the submission of a logbook. Approved work experience can be unde rtaken in a variety of contexts, including design offices, government departments, NGOs, community-based projects, building sites, etc.",
+  "lecture_times": "None",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "FIN3016W",
+  "title": "Textiles 3",
+  "department": "fine-art",
+  "credits": 48,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "See 2026 Humanities Faculty Handbook",
+  "prerequisites": {
+    "text": "Refer to programme and departmental requirements in the 2026 Humanities Faculty Handbook.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "Course title and credit value verified from the 2026 Humanities Faculty Handbook.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "See 2026 Humanities Faculty Handbook.",
+  "assessment": "See departmental and faculty assessment rules in the 2026 Humanities Faculty Handbook.",
+  "is_humanities_course": true
+}

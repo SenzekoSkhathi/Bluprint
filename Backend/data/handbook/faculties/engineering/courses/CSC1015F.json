@@ -1,0 +1,31 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CSC1015F",
+  "title": "Computer Science 1015",
+  "department": "computer-science",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "K Prag",
+  "prerequisites": {
+    "text": "At least 70% for NSC Mathematics. Students assessed in week 5; if not coping may be required to transfer to CSC1010H from week 7. Note: Credit will not be given for CSC1015F/S and CSC1016S together with CSC1010H and CSC1011H.",
+    "parsed": {
+      "type": "and",
+      "codes": [
+        "CSC1010H",
+        "CSC1015F/S",
+        "CSC1016S",
+        "CSC1011H"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course is an introduction to problem solving, algorithm development and programming in the Python language. It includes fundamental programming constructs and abstractions, sorting and searching techniques, and machine representations of data. The practical component covers input/output, conditionals, loops, strings, functions, arrays, lists, dictionaries, recursion, text files and exceptions in Python. Students are taught testing and debugging, as well as sorting and searching algorithms, algorithm complexity and equivalence classes. Number systems, binary arithmetic, Boolean algebra and logic gates are also introduced. The course is offered in a blended-learning format: students are provided with a set of online video lectures and contact time is in a tutorial/practical format aimed at reinforcing the principles introduced in the online lectures and giving students time to do exercises under the supervision of tutors.",
+  "lecture_times": "4th or 5th period once per week. Tutorials: One per week, replacing one lecture. Practicals: One per week, Monday, Tuesday, Wednesday or Thursday, 14h00 - 16h00 or 16h00 - 18h00.",
+  "dp_requirements": "Minimum of 45% aggregate in practical work.",
+  "assessment": "Theory tests 15%; practical tests and practical assignments 25%; June examination 2 hours 60%. Subminima: 45% for practicals, 45% on weighted average of theory tests and examination.",
+  "is_engineering_course": false,
+  "offered_by_faculty": "science"
+}

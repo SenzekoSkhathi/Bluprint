@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CIV2049Z",
+  "title": "Water and Sanitation Infrastructure Project",
+  "department": "civil-engineering",
+  "credits": 4,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "T Mofokeng",
+  "prerequisites": {
+    "text": "Refer to the programme and departmental sections in the 2026 EBE Faculty Handbook.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This project aims to allow students to apply principles of hydraulics by designing a water or sanitation distribution network. Through theoretical knowledge of laminar flow; turbulent flow- Reynolds; head losses in pipelines; fittings; design of pump syste ms; pump selection, and practical applications in a real-world context.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

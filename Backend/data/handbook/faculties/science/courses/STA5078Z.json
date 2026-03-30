@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "STA5078Z",
+  "title": "Stochastic Processes",
+  "department": "statistical-sciences",
+  "credits": 15,
+  "nqf_level": 9,
+  "year_level": "Postgraduate (Master's)",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "M Mavuso",
+  "prerequisites": {
+    "text": "STA4029Z (Honours course in Advanced Probability Theory), or at the discretion of the Head of Department.",
+    "parsed": {
+      "type": "or",
+      "codes": [
+        "STA4029Z"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The course aims to cover advanced concepts in stochastic processes and stochastic calculus, together with financial applications. Topics include: semimartingales, stochastic integration, Ito's formula, Feynman-Kac theorem, martingale representation, discrete trading, and continuous trading.",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "Class record of at least 40%.",
+  "assessment": "Assignments, Class Test and Exam.",
+  "is_science_course": true
+}

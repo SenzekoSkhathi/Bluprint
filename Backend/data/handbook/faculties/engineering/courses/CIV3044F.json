@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CIV3044F",
+  "title": "Engineering Hydrology",
+  "department": "civil-engineering",
+  "credits": 8,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr J Okedi",
+  "prerequisites": {
+    "text": "STA1008F/S (DP)",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "STA1008F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to develop an understanding of engineering hydrology. Topics include: factors affecting runoff; flow measurements; selected flood prediction methods; flood routing; and reservoir sizing:",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

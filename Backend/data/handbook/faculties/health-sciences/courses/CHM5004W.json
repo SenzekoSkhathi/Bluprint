@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CHM5004W",
+  "title": "Trauma for External Credit",
+  "department": "surgery",
+  "credits": 10,
+  "nqf_level": 8,
+  "year_level": 5,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Dr S Edu, Professor P Navsaria, Professor AJ Nicol and Dr McPherson",
+  "prerequisites": {
+    "text": "Successful completion of all co urses within the preceding academic years.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "Objective: Build knowledge and basic skills necessary to manage common trauma problems. Course outline: The four-week block, which is shared with Orthop aedic Surgery, comprises a series of lectures incorporating the “Advanced Trauma Life Support” (ATLS) format . Lectures are provided on the Vula Trauma Site, F2F (Zoom) lectures will consis t of clinical scenarios. The course will combine online learning (VULA) with face- to-face teaching (either physical or Zoom) clinical skills will be taught during “on call time”, skills courses will resume once labs are functional and logistics permit. Students are rostered for duties in the Trauma Centre at Groote Schuur Hospital in order to gain first- hand experience in managing trauma patients under the supervision of the on-call surgical registrars and consultants. Core learning outcomes include the initial assessment and management of the trauma patient; an approach to specific injuries; skills in resuscitation and basi c life-saving techniques; application of splints and plaste rs; and debridement and suturing of wounds. A core curriculum has been divided into; “must know”, “must recognise”, “may hear or see” and “must be aware of”. Face to face (Zoom) lectures will be announced at beginning of the block",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Completion of online lect ures and quizzes (80% correct answers), 100% attendance of F2F lectures (Zoom), participate in a minimum of 4 “calls” in C14 Trauma Centre GSH (signed off by consultant on call) A student who for any reason is or has been unable to attend an activity must supply reasons to th e convener, who has the discretion to decide whether the reason is adequate to avoid being given a DPR. The ma ximum amount a time a student may miss with permission (maximum DP concession allowed) before becoming ineligible to write the examination is one week, 2 face to face (Zoom) lectures and 1 C14 call, 1 skills course.",
+  "assessment": "The end-of-block examinati on comprises an MCQ (50%) and an OSCE (50%). The minimum pass mark is 50%. A student who fails the course with 48% of 49% may be required by the Faculty Examinations Committee to undergo additional training time before writing a supplementary examination.",
+  "is_health_sciences_course": true
+}

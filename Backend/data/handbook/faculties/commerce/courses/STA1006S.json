@@ -1,0 +1,30 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "STA1006S",
+  "title": "Mathematical Statistics I",
+  "department": "statistical-sciences",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "S Salau",
+  "prerequisites": {
+    "text": "At least 60% in MAM1005H or MAM1020F/S or at least 70% in MAM1010F/S and concurrent registration for MAM1006H or MAM1012F/S or MAM1021S.",
+    "parsed": {
+      "type": "prerequisite",
+      "codes": [
+        "MAM1010F"
+      ]
+    }
+  },
+  "corequisites": [
+    "MAM1012S"
+  ],
+  "outline": "This is an introduction to statistics: the study of collecting, analysing, and interpreting data. It is the key entry-point into a mathematical statistics major and hence it is compulsory for students intending to major in Mathematical Statistics. This course provides foundation knowledge in statistical theory. Topics covered include: Types of data variables; Exploratory data analysis; Grouping and graphing of data; Set theory and Counting rules; Probability; conditional probabilities, independence; Bayes theorem; Random variables and values, probability mass and density functions, cumulative distribution functions; Population models and parameters; Sampling distributions; Point and interval estimation; Sample size estimation; Hypotheses testing.",
+  "lecture_times": "Monday - Friday, 2nd period and a two-hour compulsory tutorial on Monday afternoons.",
+  "dp_requirements": "Satisfactory attendance of lectures, tutorials, practicals and tests and completion of assignments and/or class exercises as set out in course outline. Class record of at least 35%.",
+  "assessment": "Class record 30% and a 3-hour exam counting 70%. Weights will be adjusted in the case of missed assessments. Students write the same class tests and examination as students registered for STA1006S.",
+  "is_commerce_course": false,
+  "offered_by_faculty": "science"
+}

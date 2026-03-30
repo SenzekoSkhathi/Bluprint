@@ -1,0 +1,54 @@
+{
+  "id": "bsc-property-studies",
+  "programme_code": "EB017CON03",
+  "name": "Bachelor of Science in Property Studies",
+  "abbreviation": "BSc(PropStudies)",
+  "department": "Construction Economics and Management",
+  "duration_years": 3,
+  "minimum_credits": 452,
+  "saqa_id": 11693,
+  "curriculum": {
+    "year_1": {
+      "core": [
+        "CON1021F",
+        "CON1022F",
+        "CON1023S",
+        "CON1024S",
+        "CON1025S",
+        "ECO1008F",
+        "ECO1009S",
+        "MAM1010F",
+        "STA1000S"
+      ],
+      "credits": 142
+    },
+    "year_2": {
+      "core": [
+        "ACC1021F",
+        "CML1001F",
+        "CON2032S",
+        "CON2033F",
+        "CON2034S",
+        "CON2035S",
+        "CON2036F",
+        "FTX2020F",
+        "STA2020S"
+      ],
+      "credits": 143
+    },
+    "year_3": {
+      "core": [
+        "CON3046S",
+        "CON3047F",
+        "CON3048F",
+        "CON3050F",
+        "CON3051F",
+        "CON3052S",
+        "CON3053S",
+        "CON3054S",
+        "CSC1015F"
+      ],
+      "credits": 126
+    }
+  }
+}

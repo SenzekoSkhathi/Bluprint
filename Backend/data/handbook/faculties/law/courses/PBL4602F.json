@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PBL4602F",
+  "title": "Criminal Justice and the Constitution",
+  "department": "public-law",
+  "credits": 9,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "A/Prof J Omar",
+  "prerequisites": {
+    "text": "All Preliminary and Intermediate Level courses to have been completed. Limited to 25 students.",
+    "parsed": {
+      "type": "level_completion",
+      "levels_required": [
+        "preliminary",
+        "intermediate"
+      ],
+      "note": "Limited to 25 students"
+    }
+  },
+  "corequisites": [],
+  "outline": "This course provides students with the opportunity to explore selected advanced issues in criminal justice, punishment and the manner in which the Constitution impacts the criminal justice system in the context of South Africa's socio, politico and economic history and the transition to democracy. Students will use the group discussions to develop research skills, including critical thinking and produce research papers. The course draws on principles of criminal law, constitutional law, the law of evidence and interacts with criminology.",
+  "lecture_times": "Two lectures per week. Limited to 25 students.",
+  "dp_requirements": "Satisfactory attendance at weekly seminars.",
+  "assessment": "Coursework — 20%; Research Paper 80%.",
+  "is_law_course": true
+}

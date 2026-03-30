@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EGS1007S",
+  "title": "Human & Physical Systems",
+  "department": "environmental-geographical-science",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": "First Year",
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Professor F Eckardt",
+  "prerequisites": {
+    "text": "At least 50% for NSC Geography, or GEO1009F. For Humanities students: at least 50% for NSC Geography.",
+    "parsed": {
+      "type": "or",
+      "codes": [
+        "GEO1009F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The course presents fundamental environmental and geographical concepts from the fields of human and physical geography, and explores the interconnections, flows and boundaries across these systems. How these systems have played out in the past, how they are changing, and what the future may hold is critical to a full appreciation of current and future environmental challenges. The course brings together an understanding of both the biophysical geographic settings and processes that inform all facets of our landscapes, and the social engagement with their components, which present both opportunity and limitation to human development.",
+  "lecture_times": "Monday - Friday, 2nd period. Tutorials/Practicals: One per every two weeks, Monday, Tuesday or Thursday, 14h00–17h00.",
+  "dp_requirements": "Attendance of all, and satisfactory completion of all tutorial and practical assignments; students must attain an average mark of not less than 40% for the coursework component.",
+  "assessment": "Essays, assignments and tutorial work count 60%; one 2-hour theory examination written in November counts 40% (sub-minimum of 40% required).",
+  "is_science_course": true
+}

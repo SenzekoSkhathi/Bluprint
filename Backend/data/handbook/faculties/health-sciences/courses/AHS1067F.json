@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AHS1067F",
+  "title": "Work-Integrated Practice Learning Part II",
+  "department": "health-and-rehabilitation-sciences",
+  "credits": 25,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Mrs S Damonse",
+  "prerequisites": {
+    "text": "Refer to the programme and departmental sections in the 2026 Health Sciences Faculty Handbook.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [
+    "AHS1064S",
+    "AHS1062S",
+    "AHS1061S"
+  ],
+  "outline": "DEPARTMENTS IN THE FACULTY 95 By the end of this course, student s should be able to demonstrat e an understanding of the disability issues within a wider context and in relation to the community in which they practice; apply essential methods, procedures and techniques to address the difficulties and disorders experienced by people in the community; demonstrate ability to solve problems as required; demonstrate efficient information- gathering, analysis and decision-making abilities; demonstrate ability to evaluate and reflect in and on action; and demonstrate appropriate written and verbal communication skills.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Full attendance of and part icipation in all lectur es, practical sessions, workshops and tutorials, and submission of assignments by the due dates.",
+  "assessment": "Coursework (weekly task subm ission and Portfolio of Evidence) contributes 50% and the examination contributes 50%.",
+  "is_health_sciences_course": true
+}

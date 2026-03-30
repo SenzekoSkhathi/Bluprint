@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AHS3071F",
+  "title": "Acquired Neurogenic Language Disorders",
+  "department": "health-and-rehabilitation-sciences",
+  "credits": 22,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr C Legg",
+  "prerequisites": {
+    "text": "AHS2106F",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "AHS2106F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to enable student s to describe and critically disc uss the consequences of an adult neurogenic language disorder with reference to the internationa l classification of functioning, disability and health (ICF) and from a disability perspective. They learn the aetiologies and nature of adult neurogenic language disorders and the nature of assessme nts and comprehensive management of adults with neurogenic language disorders. Content includes the nature and prevalence of CVA, DEPARTMENTS IN THE FACULTY 107 TBI and degenerative diseases; principles and the nature of assessment and management; the role of SLP and multidisciplinary managem ent; and evidence-based practice. Students acquire skills of knowledge translation, critical an d analytical thinking, and differ ential diagnosis. They acquire attitudes of empathy, ethical princi ples of respect and a holistic view of individuals. Teaching and learning activities include lectures, case discussions and presentations, videos, observation, and construction of assessment materials. Themes underpinning the course include management within a multilingual and multicultural context , the need for a holistic view of clients, developing agents for change, and materials development.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "For discipline specific courses in the BSc Audiology and BSc in Speech-Language Pathology programmes a minimum coursework mark of 40% is required for entrance into the examination.",
+  "assessment": "The course grade is made up of a cour sework mark (weighted 60%) and a final examination mark (weighted 40%). If a supplementary examination is awarded, it will count 40 % of the final mark, as the course work mark will still be included in the final mark.",
+  "is_health_sciences_course": true
+}

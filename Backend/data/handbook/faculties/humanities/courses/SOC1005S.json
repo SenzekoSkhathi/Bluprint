@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "SOC1005S",
+  "title": "Introduction to Sociology II",
+  "department": "sociology",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Associate Professor J de Wet",
+  "prerequisites": {
+    "text": "None",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This is an introductory course, designed to explore key issues and activities in South African society today. It aims to assist the student to search for and identify accurate information and relevant ideas, situate these in social context, and to outline and begin to probe views around key social issues. We live in a society with deeply structured social inequalities and a range of issues and problems which people confront every day. What is actually happening to people positioned differently in society? What is changing and what is continuing? How do ordinary people deal with these issues? What forms of organisation and action do they turn to as they try to meet their needs and build lives which are fulfilling and dignified? The course examines selected so cial processes, structures, institutions and behaviours which help us understand these issues and ways of dealing with them.",
+  "lecture_times": "Tuesday, Wednesday, Thursday 4th or 6th period.",
+  "dp_requirements": "Completion of all written tests, essays and assignments as set.",
+  "assessment": "Continuous assessment (essays, projects, tests, etc.) counts 100%.",
+  "is_humanities_course": true
+}

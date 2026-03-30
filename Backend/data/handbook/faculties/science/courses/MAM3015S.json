@@ -1,0 +1,32 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MAM3015S",
+  "title": "Complex Analysis (3CA)",
+  "department": "mathematics-applied-mathematics",
+  "credits": 18,
+  "nqf_level": 7,
+  "year_level": "Third Year",
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Associate Professor E Berdysheva",
+  "prerequisites": {
+    "text": "MAM2010F, MAM2011F, MAM2014S and at least one of MAM2012S or MAM2013S.",
+    "parsed": {
+      "type": "complex",
+      "codes_mentioned": [
+        "MAM2010F",
+        "MAM2011F",
+        "MAM2014S",
+        "MAM2012S",
+        "MAM2013S"
+      ],
+      "note": "Complex prerequisite logic - see text"
+    }
+  },
+  "corequisites": [],
+  "outline": "Topics include: fields of complex numbers; holomorphic functions; power series; elementary functions; complex integration; Cauchy's Integral Theorem; Cauchy's Integral Formula; Liouville's Theorem; Fundamental Theorem of Algebra; Coincidence Principle; Maximum Modulus Principle; singularities; residues; Laurent Series; arguments; Rouché's Theorem; and Open Mapping Theorems.",
+  "lecture_times": "Tuesdays, Fridays and some Wednesdays in 4th period.",
+  "dp_requirements": null,
+  "assessment": null,
+  "is_science_course": true
+}

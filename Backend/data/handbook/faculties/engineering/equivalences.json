@@ -1,0 +1,50 @@
+{
+  "$schema": "handbook-equivalences-v1",
+  "faculty": "engineering",
+  "year": 2026,
+  "equivalences": [
+    {
+      "type": "extended_curriculum",
+      "standard": "MAM1020F",
+      "extended": "MAM1023F",
+      "note": "ASPECT extended version of Mathematics IA for Engineers"
+    },
+    {
+      "type": "extended_curriculum",
+      "standard": "MAM1021S",
+      "extended": "MAM1024S",
+      "note": "ASPECT extended version of Mathematics IB for Engineers"
+    },
+    {
+      "type": "extended_curriculum",
+      "standard": "PHY1012F",
+      "extended": "PHY1014F",
+      "note": "ASPECT extended version of Physics A for Engineers"
+    },
+    {
+      "type": "extended_curriculum",
+      "standard": "PHY1013S",
+      "extended": "PHY1015S",
+      "note": "ASPECT extended version of Physics B for Engineers"
+    },
+    {
+      "type": "extended_curriculum",
+      "standard": "MAM2083S",
+      "extended": "MAM2083S",
+      "aspect_version": "MAM2085F",
+      "note": "Vector Calculus for ASPECT students taken as MAM2085F"
+    },
+    {
+      "type": "extended_curriculum",
+      "standard": "MAM2084F",
+      "aspect_version": "MAM2084S",
+      "note": "Linear Algebra for ASPECT students taken in S2 as MAM2084S"
+    },
+    {
+      "type": "cross_programme",
+      "course": "CIV1006S",
+      "equivalent": "CIV1008F",
+      "note": "Building Science I (Construction Studies) vs Introduction to Civil Engineering"
+    }
+  ]
+}

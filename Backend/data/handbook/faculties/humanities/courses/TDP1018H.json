@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "TDP1018H",
+  "title": "Performance Studies I",
+  "department": "theatre-and-performance",
+  "credits": 36,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "FY",
+  "semester_code": "H",
+  "convener": "Associate Professor S Matchett",
+  "prerequisites": {
+    "text": "Students must have completed TDP1017H. This course is compulsory for all students enrolled for the BA Theatre and Performance and the Diploma in Theatre and Performance. Students from the general degrees will be admitted subject to Head of Department’s approval, and subject to capacity.",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "TDP1017H"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "Students are introduced to the notion of a production concept, its importance in relation to the staging of a performance piece and the manner in which it permeates every aspect of creating a production/ performance, from design particularly (scenery, ligh ting, costume and make -up) through to acting style. Strategies for establishing a production concept will be presented and students will be given the opportunity to work with a prescribed play. Through this experience students will begin their understanding of how concept is integral to every aspect of a work of art.",
+  "lecture_times": "Lectures scheduled departmentally. Attendance at rehearsals, performances and in the Little Theatre office, wardrobe and workshops as required. Students should note that extensive time is required to complete this course. Fieldwork components may be included in the course.",
+  "dp_requirements": "Attendance at all lectures, practicals and all rehearsals/performances/ office experience slots as assigned. In order to obtain a DP certificate, students must have earned the required number of apprenticeship 'credits' by completing sufficient apprenticeship practicums over two years of study as determined by the course co-ordinator.",
+  "assessment": "Coursework counts for 40% of final mark; examination counts for 60%. A sub-minimum of 40% must be achieved in coursework and the examination.",
+  "is_humanities_course": true
+}

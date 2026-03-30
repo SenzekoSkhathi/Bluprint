@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MEC1003F",
+  "title": "Engineering Drawing",
+  "department": "mechanical-engineering",
+  "credits": 8,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Mr L Siboya",
+  "prerequisites": {
+    "text": "None",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "DEPARTMENTS IN THE FACULTY AND COURSES OFFERED 145 This course aims to provide an overview of the knowledge and skills required for basic engineering drawing. The course is offered in 3 parts: Part 1 introduces the principles of orthographic and pictorial projections. These are demonstrated by using free hand sketching as well as drawing instruments. Part 2 introduces the basics of CAD 3D Modelling. Part 3 introduces the basics of PCB Design.",
+  "lecture_times": "1 Lecture and 1 Tutorial per week.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

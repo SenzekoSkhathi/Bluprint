@@ -1,0 +1,33 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PTY2001S",
+  "title": "Infectious Disease and Vaccines (Faculty of Science)",
+  "department": "pathology",
+  "credits": 24,
+  "nqf_level": 6,
+  "year_level": "Second Year",
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Professor W Burgers and Associate Professor S Hadebe",
+  "prerequisites": {
+    "text": "BIO1000F, CEM1000W, MAM1004F and STA1007S or MAM1000W (or equivalent).",
+    "parsed": {
+      "type": "complex",
+      "codes_mentioned": [
+        "BIO1000F",
+        "CEM1000W",
+        "MAM1004F",
+        "STA1007S",
+        "MAM1000W"
+      ],
+      "note": "Complex prerequisite logic - see text"
+    }
+  },
+  "corequisites": [],
+  "outline": "The course introduces students to: the burden of infectious disease in South Africa and Africa; foundational epidemiological concepts including epidemics, outbreaks and public health; the micro-organisms of importance to human health and disease (bacteria, viruses, fungi and parasites) and their classification; and the prevention, control and treatment of infectious disease, with a focus on vaccines, integrated with an introduction to the human immune system. By the end of the course, students will be able to describe biological and social determinants of health across diverse epidemiological contexts; interpret epidemiological data; classify major human pathogens and compare their transmission, pathogenesis and control strategies; explain the structure and function of the immune system; describe how vaccines work; apply knowledge from one infectious disease to analyse another; integrate concepts from virology, bacteriology and immunology; and communicate infectious disease concepts clearly in oral, written and graphic formats.",
+  "lecture_times": "Lectures: Monday to Friday, 2nd period. Practicals: Fridays, 14h00–17h00.",
+  "dp_requirements": "Attendance of 75% practical and tutorial sessions; 40% average in weekly quizzes; and an average of 50% for all assignments.",
+  "assessment": "Class record 60% (weekly quizzes 20%, practical write-ups 20%, assignments 20%); one 3-hour final examination written in November 40%. Supplementary examinations may be offered to students with an overall score of 45–49%.",
+  "is_science_course": false,
+  "offered_by_faculty": "health-sciences"
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "STA5092Z",
+  "title": "Exploratory Data Analysis",
+  "department": "statistical-sciences",
+  "credits": 12,
+  "nqf_level": 9,
+  "year_level": "Postgraduate (Master's)",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "Dr S Er",
+  "prerequisites": {
+    "text": "Acceptance into Master's program in Data Science or Statistics & Data Science, and/or statistical background deemed sufficient by Head of Department.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "As part of the MSc specialising in Data Science, this course introduces essential techniques for performing exploratory data analysis (EDA). These techniques are typically applied before formal modelling and allow the researcher to discover patterns, spot anomalies, test hypotheses and check assumptions. Different types of data will be described and the appropriate EDA techniques for each data type introduced, distinguishing between univariate and multivariate, and graphical and non-graphical techniques, with R syntax for each. Presentation of an EDA with interactive elements in a dashboard environment will also be covered and assessed.",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "Not specified.",
+  "assessment": "A take-home exam on each of the three sections.",
+  "is_science_course": true
+}

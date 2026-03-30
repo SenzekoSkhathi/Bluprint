@@ -1,0 +1,36 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "STA3045F",
+  "title": "Advanced Stochastic Processes & Distribution Theory",
+  "department": "statistical-sciences",
+  "credits": 36,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Associate Professor T Gebbie",
+  "prerequisites": {
+    "text": "STA2004F, STA2005S and MAM2010F, MAM2011F, MAM2012S and MAM2014S. Concurrent registration for STA3041F required. Note: A student may not register concurrently for STA3045F and CSC2001F. This course is for students studying Actuarial Science or Mathematical Statistics, though not a requirement for a major in Mathematical Statistics.",
+    "parsed": {
+      "type": "complex",
+      "codes_mentioned": [
+        "STA2004F",
+        "STA2005S",
+        "MAM2010F",
+        "MAM2011F",
+        "MAM2012S",
+        "MAM2014S",
+        "STA3041F",
+        "STA3045F",
+        "CSC2001F"
+      ],
+      "note": "Complex prerequisite logic - see text"
+    }
+  },
+  "corequisites": [],
+  "outline": "This course begins with a brief introduction to copulas and extreme value theory, together with applications to risk management. The rest of the course gives a theoretical overview of stochastic processes, with models spanning both discrete and continuous time as well as discrete and continuous state-space. Though the emphasis is on theoretical properties of the models, real-world applications are also explored. Topics covered: copulas, extreme value theory, homogenous and non-homogeneous continuous-time Markov chains, random walks, probability theory, martingales, Brownian motion, and diffusion processes.",
+  "lecture_times": "Five lectures per week, Monday - Friday, 2nd period.",
+  "dp_requirements": "Satisfactory attendance of lectures, tutorials, practicals and tests and completion of assignments and/or class exercises as set out in course outline. Class record of at least 35%.",
+  "assessment": "Class record 30% and a 3-hour exam counting 70%. Weights will be adjusted in the case of missed assessments, as detailed in the course outline.",
+  "is_science_course": true
+}

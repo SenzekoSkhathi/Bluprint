@@ -1,0 +1,32 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EGS3012S",
+  "title": "Atmospheric Science",
+  "department": "environmental-geographical-science",
+  "credits": 36,
+  "nqf_level": 7,
+  "year_level": "Third Year",
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr P Matikinca",
+  "prerequisites": {
+    "text": "At least 60% in NSC Mathematics; GEO1009F or equivalent; EGS2016F (or EGS2013F) and/or EGS2017S (or EGS2015S) or SEA2004F or any approved 2000-level Science course; and/or any approved 1000-level Physics or Mathematics course.",
+    "parsed": {
+      "type": "or",
+      "codes": [
+        "GEO1009F",
+        "EGS2016F",
+        "EGS2013F",
+        "EGS2017S",
+        "EGS2015S",
+        "SEA2004F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course provides a thorough understanding of the physical processes that control the Earth's atmosphere. Topics include: atmospheric energy balance, thermodynamics, dynamics and general circulation; tropical and mid-latitude weather producing systems; weather and climate extreme events (e.g. heat-waves, drought, floods) in Africa; climate variability and change; atmospheric boundary layer turbulence, chemistry and pollution. Lectures are complemented with field measurements and laboratory practicals demonstrating basic data analysis techniques in atmospheric sciences.",
+  "lecture_times": "Monday - Friday, 1st period. Practicals: One afternoon per week, Tuesday or Wednesday, 14h00–17h00.",
+  "dp_requirements": "Satisfactory completion of practicals and all written assignments, including essays, project reports and class tests.",
+  "assessment": "Essays and tests count 20%; project reports and practicals count 20%; one 3-hour examination in November counts 60% (sub-minimum of 40% required).",
+  "is_science_course": true
+}

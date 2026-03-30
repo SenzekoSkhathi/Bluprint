@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CSC5023Z",
+  "title": "Meta-Heuristics",
+  "department": "computer-science",
+  "credits": 12,
+  "nqf_level": 9,
+  "year_level": "Postgraduate (Master's)",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "Associate Professor G Nitschke",
+  "prerequisites": {
+    "text": "Admission into the Master's degree specialising in Computer Science or Artificial Intelligence, or permission from the course convener. A basic understanding of genetics and evolution is useful but not required.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "Meta-heuristics are a sub-field of biologically inspired artificial intelligence and general algorithmic frameworks applicable to different optimisation problems. This course examines the theory and application of several meta-heuristic methods, including: iterated local search, tabu search, evolutionary algorithms, ant colony optimisation, simulated annealing, and particle swarm optimisation. Course objectives include gaining an understanding of the algorithmic theory and implementation of various meta-heuristics, identifying suitable meta-heuristics for solving different types of problems, and how to apply them to optimisation, machine learning, and design tasks.",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "None.",
+  "assessment": "Exam: 50%; Practical assignments: 50%.",
+  "is_science_course": true
+}

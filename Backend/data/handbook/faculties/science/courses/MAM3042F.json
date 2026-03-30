@@ -1,0 +1,30 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MAM3042F",
+  "title": "Advanced Numerical Methods (3AN)",
+  "department": "mathematics-applied-mathematics",
+  "credits": 18,
+  "nqf_level": 7,
+  "year_level": "Third Year",
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr N Alexeeva",
+  "prerequisites": {
+    "text": "MAM2040F, MAM2041F, MAM2042S and MAM2043S.",
+    "parsed": {
+      "type": "and",
+      "codes": [
+        "MAM2040F",
+        "MAM2041F",
+        "MAM2042S",
+        "MAM2043S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "Advanced methods for ODEs, boundary value problems and differential eigenvalue problems. Numerical solution of PDEs by methods of finite differences, finite elements and spectral methods.",
+  "lecture_times": "Monday - Friday, 3rd period.",
+  "dp_requirements": "A class record of 30% or more.",
+  "assessment": "Class record counts up to 20%; the balance is made up by the final examination.",
+  "is_science_course": true
+}

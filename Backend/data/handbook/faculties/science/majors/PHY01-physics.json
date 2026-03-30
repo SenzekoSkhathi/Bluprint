@@ -1,0 +1,162 @@
+{
+  "$schema": "handbook-major-v1",
+  "major_code": "PHY01",
+  "major_name": "Physics",
+  "department": "physics",
+  "notes": "MAM1043H (Modelling & Applied Computing) and MAM1044H (Dynamics) are recommended. MAM2040F and MAM2043S are highly recommended at second year.",
+  "mutual_exclusions_with": [],
+  "required_companion_majors": [],
+  "has_student_limit": false,
+  "years": [
+    {
+      "year": 1,
+      "label": "First Year Core Courses",
+      "combinations": [
+        {
+          "combination_id": "PHY01-Y1-A",
+          "description": "MAM1000W + PHY1004W + CSC1015F/S",
+          "courses": [
+            {
+              "code": "MAM1000W",
+              "title": "Mathematics 1000",
+              "credits": 36,
+              "nqf_level": 5
+            },
+            {
+              "code": "PHY1004W",
+              "title": "Matter and Interactions",
+              "credits": 36,
+              "nqf_level": 5
+            },
+            {
+              "code": "CSC1015F/S",
+              "title": "Computer Science 1015",
+              "credits": 18,
+              "nqf_level": 5
+            }
+          ],
+          "recommended": [
+            {
+              "code": "MAM1043H",
+              "title": "Modelling & Applied Computing",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "MAM1044H",
+              "title": "Dynamics",
+              "credits": 18,
+              "nqf_level": 5
+            }
+          ]
+        },
+        {
+          "combination_id": "PHY01-Y1-B",
+          "description": "MAM1031F + MAM1032S + PHY1004W + CSC1015F/S",
+          "courses": [
+            {
+              "code": "MAM1031F",
+              "title": "Mathematics 1031",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "MAM1032S",
+              "title": "Mathematics 1032",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "PHY1004W",
+              "title": "Matter and Interactions",
+              "credits": 36,
+              "nqf_level": 5
+            },
+            {
+              "code": "CSC1015F/S",
+              "title": "Computer Science 1015",
+              "credits": 18,
+              "nqf_level": 5
+            }
+          ],
+          "recommended": [
+            {
+              "code": "MAM1043H",
+              "title": "Modelling & Applied Computing",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "MAM1044H",
+              "title": "Dynamics",
+              "credits": 18,
+              "nqf_level": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "label": "Second Year Core Courses",
+      "combinations": [
+        {
+          "combination_id": "PHY01-Y2-A",
+          "description": "Core courses; MAM2040F and MAM2043S highly recommended",
+          "required_core": [
+            {
+              "code": "MAM2010F",
+              "title": "Advanced Calculus (2AC)",
+              "credits": 12,
+              "nqf_level": 6
+            },
+            {
+              "code": "MAM2011F",
+              "title": "Linear Algebra (2LA)",
+              "credits": 12,
+              "nqf_level": 6
+            },
+            {
+              "code": "PHY2004W",
+              "title": "Intermediate Physics",
+              "credits": 48,
+              "nqf_level": 6
+            }
+          ],
+          "highly_recommended": [
+            {
+              "code": "MAM2040F",
+              "title": "Ordinary Differential Equations (2OD)",
+              "credits": 12,
+              "nqf_level": 6
+            },
+            {
+              "code": "MAM2043S",
+              "title": "Boundary-Value Problems (2BP)",
+              "credits": 12,
+              "nqf_level": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "label": "Third Year Core Courses",
+      "combinations": [
+        {
+          "combination_id": "PHY01-Y3-A",
+          "description": "Fixed third year course",
+          "courses": [
+            {
+              "code": "PHY3004W",
+              "title": "Advanced Physics",
+              "credits": 72,
+              "nqf_level": 7
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "INF5010W",
+  "title": "Masters in IT: Information Technology Minor Dissertation",
+  "department": "computer-science",
+  "credits": 90,
+  "nqf_level": 9,
+  "year_level": "Postgraduate (Master's specialising in IT)",
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "I Brown",
+  "prerequisites": {
+    "text": "A non-IT honours degree, or equivalent.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "The research component will expose students to critical reading and writing skills, develop analysis and research skills through research methodology and data analysis techniques. Students should be in a position to submit the final dissertation by the end of the year.",
+  "lecture_times": "Not applicable.",
+  "dp_requirements": "In order to be permitted to sit the final exam a minimum average of 40% on the coursework must be obtained.",
+  "assessment": "The minor dissertation must be presented for formal examination. The coursework and minor dissertation each count 50% towards the degree; each must be passed separately for the award of the degree.",
+  "is_science_course": false,
+  "offered_by_faculty": "commerce"
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "TDP1017H",
+  "title": "Performance Studies I",
+  "department": "theatre-and-performance",
+  "credits": 36,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "FY",
+  "semester_code": "H",
+  "convener": "J-L Crewe",
+  "prerequisites": {
+    "text": "This course is compulsory for all students enrolled for the BA Theatre and Performance and the Diploma in Theatre and Performance. Students from the general degrees will be admitted subject to Head of Department’s approval, and subject to capacity.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This hands-on, intensely practical course introduces students to selected aspects of theatre production including stage management, properties, costume, lighting and sound. The role and functions of the FOH personnel, stage-manager, props ASM, lighting and sound operator/technicians will be explored and practised in workshops and by assignment on production.",
+  "lecture_times": "Lectures and practicals scheduled departmentally. Students will also be assigned to between one and three productions for their apprenticeship practicums and attendance will be compulsory at all times stipulated by the nature of the job. This could encompa ss attendance at rehearsals, performances and in the Little Theatre office, wardrobe and workshops. Participation will generally last for the duration of one production and will therefore be sporadic through the year. Students should note th at this course requires a considerable commitment of time as the learning situation is provided by the work circumstances. Fieldwork components may be included in the course.",
+  "dp_requirements": "Attendance at all rehearsals/performances/office experience slots as assigned. In order to obtain a DP certificate, students must earn the required number of apprenticeship 'credits' by completing sufficient apprenticeship practicums as determined by the c ourse co -ordinator in any particular year. In addition students are required to complete any Front of House assignments set for them by the course co-ordinator.",
+  "assessment": "Coursework counts for 40% of final mark; examination counts for 60%. A sub-minimum of 40% must be achieved in coursework and the examination.",
+  "is_humanities_course": true
+}

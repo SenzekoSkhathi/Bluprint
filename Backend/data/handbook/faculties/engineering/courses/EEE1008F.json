@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EEE1008F",
+  "title": "Introduction to Electrical Engineering A",
+  "department": "electrical-engineering",
+  "credits": 12,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr D Ramotsoela",
+  "prerequisites": {
+    "text": "Refer to the programme and departmental sections in the 2026 EBE Faculty Handbook.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to motivate and help students understand the nature and scope of electronic engineering by providing an introduction to the content, methods and modes of thinking. A further aim is to develop students’ confidence in rational problem -solving approaches and to introduce students to the design process. Topics include: basic concepts, basic laws, methods of analysis, circuit theorems, properties of basic components and first order circuits.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

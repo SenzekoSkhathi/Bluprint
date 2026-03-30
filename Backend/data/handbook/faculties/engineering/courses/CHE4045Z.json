@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CHE4045Z",
+  "title": "Chemical Engineering Research",
+  "department": "chemical-engineering",
+  "credits": 36,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "Associate Professor MA Fagan-Endres",
+  "prerequisites": {
+    "text": "All core third year courses.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course is an assigned experimental or theoretical investigation involving limited staff supervision. The assessment of performance is based on engineering ability and initiative displayed in the formulation of objectives, execution of the project and presentation of the results. There are limited lectures in the scientific method, survey of the literature, design of experiments, relevant analytical equipment and techniques, safety in the laboratory, the handling of wastes, introduction to statistics, analysis and interpretation of data, report writing, presentation of research findings.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

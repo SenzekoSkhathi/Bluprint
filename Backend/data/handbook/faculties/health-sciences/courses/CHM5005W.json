@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CHM5005W",
+  "title": "Orthopaedic Surgery for External Credit",
+  "department": "surgery",
+  "credits": 10,
+  "nqf_level": 8,
+  "year_level": 5,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Doctor A Horn",
+  "prerequisites": {
+    "text": "Completion of semester 1 of NMFC program.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to cover the common entities in adult and paediatric orthopa edic surgery. Core learning outcomes include kn owledge of common musculoske letal trauma and pathological conditions; skills in examinati on of the musculoskeletal trau ma and pathological conditions, application of treatments and carrying out procedures specific to the specialty; x-ray assessment, and professional behaviour appropriate to clinical practice. The curri culum has been organised into core clinical problems students are expect ed to be able to evaluate clin ically and core clinical topics students are expected to be knowledgeable about. The topics have been furt her stratified into “must know” (have a detailed knowledge of the clinical presentation, laboratory investigation and management of these important, common conditions); “must recognise” (have a basic understanding of the clinical features suggestive of this diagnosis, appr opriate investigations that would assist in making the diagnosis and a limited under standing of the principles of treatment of these important conditions, all of which have seri ous implications if missed). The blended learning course has an E- learning component and a clinical contact component. The E-learni ng component, comprised of lecture videos and the New Stud ent Textbook for Primary care Or thopaedics, are expected to be completed online during the block. The clinical c ontact component includes ro stered attendance in clinics, ward rounds, orthopaedic tutorials, and theatre.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Full and punctual attendance of all ward rounds, clin ics, and tutorials as per timetable. Completion of 2-week firm attachment, signed off by registrar or consultant. Attendance of ASCI tutorial, hands tutorial and Red Cross fracture clinic. The student needs to have a minimum of 4 out of the suggested 8 clinical skills signed off as competent. Students should apply for concession to miss classes, should they not be able to attend for any reason, including illness. Three or more days of absence will be considered a DPR and the student will be required to repeat the course.",
+  "assessment": "End-of-course examination consists of an invigila ted 100 SBA MCQ exam. The minimum pass mark is 50%. Students achieving 45-49% will be considered for a supplementary exam.",
+  "is_health_sciences_course": true
+}

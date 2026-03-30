@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PBL4801F",
+  "title": "Law of Evidence",
+  "department": "public-law",
+  "credits": 18,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "S Mesitrie",
+  "prerequisites": {
+    "text": "All Preliminary and Intermediate Level courses to have been completed.",
+    "parsed": {
+      "type": "level_completion",
+      "levels_required": [
+        "preliminary",
+        "intermediate"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The aim of the course is to equip students with knowledge of the history and sources of the law of evidence; the rules for admissibility in the context of the relevancy requirement, such as character, similar fact and opinion evidence; rules excluding relevant evidence such as privilege and hearsay; detrimental statements such as confessions; kinds of evidence and presentation thereof; witnesses including their competence and compellability and calling of witnesses; proof without evidence; evaluation of evidence; and the standards and burdens of proof.",
+  "lecture_times": "Three lectures per week.",
+  "dp_requirements": "None",
+  "assessment": "Coursework 40%; June examination (2 hour) 60%.",
+  "is_law_course": true
+}

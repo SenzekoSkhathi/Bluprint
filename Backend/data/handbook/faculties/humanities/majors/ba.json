@@ -1,0 +1,24 @@
+{
+  "id": "ba",
+  "name": "Bachelor of Arts",
+  "abbreviation": "BA",
+  "nqf_level": 7,
+  "department": "Faculty of Humanities",
+  "duration_years": 3,
+  "minimum_credits": 384,
+  "curriculum": {
+    "structure": "Flexible: choose 2 majors from Humanities departments. Must include courses at 1000, 2000, and 3000 levels.",
+    "year_1": {
+      "credits": 120,
+      "note": "4-5 first-year courses across chosen major and elective departments"
+    },
+    "year_2": {
+      "credits": 120,
+      "note": "Continue major sequences at 2000-level, plus electives"
+    },
+    "year_3": {
+      "credits": 144,
+      "note": "Complete major sequences at 3000-level"
+    }
+  }
+}

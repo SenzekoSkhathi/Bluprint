@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "INF4024W",
+  "title": "Information Systems Research Project",
+  "department": "information-systems",
+  "credits": 60,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Professor S Kabanda",
+  "prerequisites": {
+    "text": "This course is restricted to students admitted into the 4th year BBusSci, the honours programmes in Information Systems and the honours programme in Management Information Systems.",
+    "parsed": {
+      "type": "programme_registration",
+      "programmes": [
+        "BBusSci 4th year",
+        "Honours in IS"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The course provides a first research exposure leading to the completion of a research project. Candidates will be expected to develop critical reading, analysis and research design skills, as well as to demonstrate good writing skills. The course commences with taught sessions in research techniques. Thereafter students will select research areas and prepare research proposals. Students will be assigned to mentors, who will assist and guide them through the research process.",
+  "lecture_times": "This course runs in 2 block sessions: One in the beginning of the 1st semester, and the second block runs in the middle of the 1st semester.",
+  "dp_requirements": "To be advised.",
+  "assessment": "Students will be evaluated as follows: Interim deliverables 40%; Empirical report 60%. An overall mark of at least 50% is required to pass the programme and a minimum of 50% must be obtained for the Empirical Report.",
+  "is_commerce_course": true
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "STA3045F",
+  "title": "Stochastic Processes and Distribution",
+  "department": "statistical-sciences",
+  "credits": 36,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Associate Professor T Gebbie",
+  "prerequisites": {
+    "text": "STA2004F, STA2005S, MAM2000W and concurrent registration for STA3041F. Recommended MAM2000W modules: MAM2011F, MAM2010F, MAM2012S and MAM2014S. Note: A student may not register concurrently for STA3045F and CSC2001F.",
+    "parsed": {
+      "type": "prerequisite",
+      "codes": [
+        "STA2004F",
+        "STA2005S"
+      ],
+      "concurrent": [
+        "STA3041F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This is a third year module for students studying Actuarial Science or Mathematical Statistics, though not a requirement for a major in Mathematical Statistics. The course begins by giving a brief introduction to copulas and extreme value theory, together with some applications to risk management. The rest of the course gives a theoretical overview of stochastic processes, with the models covered spanning both discrete and continuous time as well as discrete and continuous state-space. Topics covered: copulas, extreme value theory, homogeneous and non-homogeneous continuous-time Markov chains, random walks, probability theory, martingales, Brownian motion, ito calculus, and diffusion processes.",
+  "lecture_times": "Five lectures per week, Monday - Friday, 2nd period.",
+  "dp_requirements": "Satisfactory attendance of lectures, tutorials, practicals and tests and completion of assignments and/or class exercises as set out in course outline. Class record of at least 35%.",
+  "assessment": "Class record 30% and a 3-hour exam counting 70%. Weights will be adjusted in the case of missed assessments.",
+  "is_commerce_course": false,
+  "offered_by_faculty": "science"
+}

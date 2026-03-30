@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EGS4059F",
+  "title": "Environmental Governance in the Global South",
+  "department": "environmental-geographical-science",
+  "credits": 30,
+  "nqf_level": 8,
+  "year_level": "Postgraduate – Honours elective",
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr P Mbatha",
+  "prerequisites": {
+    "text": "Acceptance for Honours or Master's specialising in EGS.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "This course introduces students to the theory and praxis of environmental governance relevant to global South contexts. It outlines dominant historical and current environmental governance theories, models and approaches at the global level, then engages economic, political, historical, institutional and social drivers that influence governance processes, using the global South as a lens. It draws on various natural resource use and governance sectors (biodiversity conservation, mining, forestry, tourism, etc.) and engages the Sustainable Development Goals from a governance perspective, critically analysing whether they can address issues relating to environmental governance practice in the global South.",
+  "lecture_times": null,
+  "dp_requirements": "At least 80% attendance record and submission of all assignments.",
+  "assessment": "Assignments 60%; examination 40%.",
+  "is_science_course": true
+}

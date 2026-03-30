@@ -1,0 +1,221 @@
+{
+  "$schema": "handbook-programme-v1",
+  "programme_code": "CB004INF01",
+  "programme_name": "Bachelor of Business Science specialising in Information Systems",
+  "degree": "BBusSci",
+  "specialisation": "Information Systems",
+  "faculty": "commerce",
+  "nqf_level": 8,
+  "minimum_credits": 528,
+  "duration_years": 4,
+  "department": "information-systems",
+  "curriculum": [
+    {
+      "year": 1,
+      "total_credits": 150,
+      "courses": [
+        {
+          "code": "ACC1021F",
+          "title": "Accounting for Business I",
+          "nqf_credits": 15,
+          "nqf_level": 5
+        },
+        {
+          "code": "ACC1022Z",
+          "title": "Accounting for Business II",
+          "nqf_credits": 9,
+          "nqf_level": 5
+        },
+        {
+          "code": "BUS1036F",
+          "title": "Evidence-based Management",
+          "nqf_credits": 18,
+          "nqf_level": 5
+        },
+        {
+          "code": "INF1002F",
+          "title": "Foundations of Information Systems",
+          "nqf_credits": 18,
+          "nqf_level": 5,
+          "alternative": "CSC1015F"
+        },
+        {
+          "code": "ECO1010F",
+          "title": "Microeconomics I",
+          "nqf_credits": 18,
+          "nqf_level": 5
+        },
+        {
+          "code": "MAM1010F",
+          "title": "Mathematics 1010",
+          "nqf_credits": 18,
+          "nqf_level": 5
+        },
+        {
+          "code": "ECO1011S",
+          "title": "Macroeconomics I",
+          "nqf_credits": 18,
+          "nqf_level": 5
+        },
+        {
+          "code": "MAM1012S",
+          "title": "Mathematics 1012",
+          "nqf_credits": 18,
+          "nqf_level": 5
+        },
+        {
+          "code": "STA1000S",
+          "title": "Introductory Statistics",
+          "nqf_credits": 18,
+          "nqf_level": 5
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "total_credits": 150,
+      "courses": [
+        {
+          "code": "INF2003F",
+          "title": "Commercial Programming",
+          "nqf_credits": 18,
+          "nqf_level": 6
+        },
+        {
+          "code": "INF2006F",
+          "title": "Business Intelligence and Analytics",
+          "nqf_credits": 6,
+          "nqf_level": 6
+        },
+        {
+          "code": "INF2007F",
+          "title": "Applying Database Principles",
+          "nqf_credits": 12,
+          "nqf_level": 6
+        },
+        {
+          "code": "INF2009F",
+          "title": "Systems Analysis",
+          "nqf_credits": 18,
+          "nqf_level": 6
+        },
+        {
+          "code": "FTX2020F",
+          "title": "Business Finance",
+          "nqf_credits": 18,
+          "nqf_level": 6
+        },
+        {
+          "code": "STA2020S",
+          "title": "Business Statistics",
+          "nqf_credits": 24,
+          "nqf_level": 6
+        },
+        {
+          "code": "INF2010S",
+          "title": "IT Architecture",
+          "nqf_credits": 18,
+          "nqf_level": 7
+        },
+        {
+          "code": "INF2011S",
+          "title": "Systems Design & Development",
+          "nqf_credits": 18,
+          "nqf_level": 7
+        },
+        {
+          "code": "CML1001F",
+          "title": "Business Law I",
+          "nqf_credits": 18,
+          "nqf_level": 5,
+          "alternative": "CML1001S"
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "total_credits": 156,
+      "courses": [
+        {
+          "code": "BUS2010F",
+          "title": "Marketing I",
+          "nqf_credits": 18,
+          "nqf_level": 6
+        },
+        {
+          "code": "BUS3039F",
+          "title": "People Management",
+          "nqf_credits": 18,
+          "nqf_level": 7,
+          "alternative": "BUS3039S"
+        },
+        {
+          "code": "INF3014F",
+          "title": "Electronic Commerce",
+          "nqf_credits": 18,
+          "nqf_level": 7
+        },
+        {
+          "code": "INF3003W",
+          "title": "Systems Development Project I",
+          "nqf_credits": 48,
+          "nqf_level": 7
+        },
+        {
+          "code": "BUS2033S",
+          "title": "Professional Communication",
+          "nqf_credits": 18,
+          "nqf_level": 6
+        },
+        {
+          "code": "INF3012S",
+          "title": "BPM & Enterprise Systems",
+          "nqf_credits": 18,
+          "nqf_level": 7
+        },
+        {
+          "code": "PHI2043S",
+          "title": "Business Ethics",
+          "nqf_credits": 18,
+          "nqf_level": 6
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "total_credits": 158,
+      "courses": [
+        {
+          "code": "INF4026F",
+          "title": "Application and Technical Development",
+          "nqf_credits": 20,
+          "nqf_level": 8
+        },
+        {
+          "code": "BUS4050H",
+          "title": "Strategic Thinking",
+          "nqf_credits": 18,
+          "nqf_level": 8
+        },
+        {
+          "code": "INF4027W",
+          "title": "System Development Project II",
+          "nqf_credits": 40,
+          "nqf_level": 8
+        },
+        {
+          "code": "INF4024W",
+          "title": "Information Systems Research Project",
+          "nqf_credits": 60,
+          "nqf_level": 8
+        },
+        {
+          "code": "INF4025S",
+          "title": "Information Systems Management",
+          "nqf_credits": 20,
+          "nqf_level": 8
+        }
+      ]
+    }
+  ]
+}

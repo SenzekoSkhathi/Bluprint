@@ -1,0 +1,26 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CSC1017S",
+  "title": "Computer Science 1017",
+  "department": "computer-science",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "A Safla",
+  "prerequisites": {
+    "text": "At least 70% for NSC Mathematics.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to provide an introduction to programming and algorithms, using the Python programming language. Topics to be included will be: basic syntax, variables, operators, comments, expressions, strings, input and output; conditional statements, i f, nested ifs, if-else ladders, Boolean expressions; loops, for and while, nested loops; functions, parameters, return values; testing and debugging; arrays and lists, multidimensional arrays; sorting and searching; text files; and number systems. The course is offered in a blended-learning format. Students are provided with a set of video lectures that they can watch multiple times. Student contact time is in a tutorial/practical format aimed at reinforcing the principles introduced in the online lectures and giving students time to do exercises under the supervision of tutors.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "45% weighted average for practical work.",
+  "assessment": "Theory tests count for 20%, practicals count for 20%, practical tests count for 10%, June examination counts for 50% of the course mark. Subminima: 45% weighted average for practical work, 45% weighted average of tests and exams.",
+  "is_engineering_course": false,
+  "offered_by_faculty": "science"
+}

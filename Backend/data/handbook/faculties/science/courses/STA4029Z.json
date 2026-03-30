@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "STA4029Z",
+  "title": "Advanced Probability Theory",
+  "department": "statistical-sciences",
+  "credits": 12,
+  "nqf_level": 8,
+  "year_level": "Postgraduate (Honours/Master's)",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "M Mavuso",
+  "prerequisites": {
+    "text": "Currently doing an honours or master's degree in statistics, or at the discretion of the Head of Department.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "The course aims to cover advanced concepts in probability and martingale theory, including products and conditioning, analysis, L2 theory of random variables, characteristic functions, convergence and uniform integrability, martingales, square integrable martingales, and local martingales.",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "Class record of at least 40%.",
+  "assessment": "Assignments, Class tests and Exam.",
+  "is_science_course": true
+}

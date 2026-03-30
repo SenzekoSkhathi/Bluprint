@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "STA5074Z",
+  "title": "Decision Modelling for Prescriptive Analytics",
+  "department": "statistical-sciences",
+  "credits": 12,
+  "nqf_level": 9,
+  "year_level": "Postgraduate (Master's)",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "Dr R G Rakotonirainy",
+  "prerequisites": {
+    "text": "Acceptance into the Master's course in Data Science or quantitative background deemed sufficient by Head of Department.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "This course aims to develop an understanding of the role of formal modelling (soft and hard; deterministic and stochastic) in decision support and analyses, to develop understanding of the key technologies behind decision modelling for prescriptive analytics, and to introduce new tools and techniques for analysing data in new ways in order to improve decision making.",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "None.",
+  "assessment": "Assignments and Exam.",
+  "is_science_course": true
+}

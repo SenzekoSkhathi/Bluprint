@@ -1,0 +1,40 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "STA3030F",
+  "title": "Statistical Inference & Modelling",
+  "department": "statistical-sciences",
+  "credits": 36,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Associate Professor G Distiller",
+  "prerequisites": {
+    "text": "(STA2030S or STA2004F) and (STA2020F/S / STA2007F/S or 45% STA2005S) and (MAM1032 or MAM1034S or MAM1006S or MAM1012F/S or MAM1021F/S or MAM1112S). Note: A student cannot obtain credits for both STA3030F and STA3041F.",
+    "parsed": {
+      "type": "complex",
+      "codes_mentioned": [
+        "STA2030S",
+        "STA2004F",
+        "STA2020F/S",
+        "STA2007F/S",
+        "STA2005S",
+        "MAM1032",
+        "MAM1034S",
+        "MAM1006S",
+        "MAM1012F/S",
+        "MAM1021F/S",
+        "MAM1112S",
+        "STA3030F",
+        "STA3041F"
+      ],
+      "note": "Complex prerequisite logic - see text"
+    }
+  },
+  "corequisites": [],
+  "outline": "This course forms part of the third-year major in Applied Statistics. It consists of 4 modules: (1) Simulation — introduces use of computer simulation and data re-sampling techniques (bootstrap) to investigate one and two sample tests, ANOVA, and properties of distributions; (2) Generalised linear models — introduces the exponential family of distributions and extends linear regression to models for non-normal response variables, including logistic regression; (3) Machine learning — covers a basic introduction to statistical learning paradigms, applications of regression and classification trees, and a primer on feedforward neural networks and backpropagation; (4) Bayesian — introduces decision theory and Bayesian inference. Students will use the R programming language.",
+  "lecture_times": "Monday - Thursday, 1st period.",
+  "dp_requirements": "Class record of at least 35%.",
+  "assessment": "Class record 30% and a 3-hour exam counting 70%. Weights will be adjusted in the case of missed assessments, as detailed in the course outline.",
+  "is_science_course": true
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PHI2041S",
+  "title": "Philosophy IIA",
+  "department": "philosophy",
+  "credits": 24,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Associate Professor T Angier",
+  "prerequisites": {
+    "text": "At least second year status and the successful completion of any PHI course. However, completing PHI1024F before attempting PHI2041S is strongly encouraged.",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "PHI1024F",
+        "PHI2041S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course will introduce students to a selection of philosophy’s major figures. The figures chosen may vary from year to year but they will be selected on the basis of their originality, profundity, influence and on the degree to which their works speak to one another. Philosophy often proceeds through an engagement with its past and engaging with one’s philosophical inheritance is one of the most rewarding aspects of studying philosophy. This course will ask students to try to understand a set of histori cal thinkers and writers not as contemporaries who can be presumed to share our philosophical concerns nor yet as merely historical figures; rather we shall try to appreciate the thinker’s writings in the context of his own concerns, which may differ signi ficantly from ours. We shall discover that, when properly understood in this way, these thinkers still have relevance.",
+  "lecture_times": "Monday, Tuesday, Wednesday 4th period.",
+  "dp_requirements": "Regular attendance at lectures and tutorials; completion of all tests, submission of all essays and assignments by due dates, and an average mark of at least 35% for the coursework.",
+  "assessment": "Coursework counts 40%; one 3-hour examination in October/November counts 60%.",
+  "is_humanities_course": true
+}

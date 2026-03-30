@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "FIN1005W",
+  "title": "Visual Culture Studies 1",
+  "department": "fine-art",
+  "credits": 36,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Dr S Mguni",
+  "prerequisites": {
+    "text": "This compulsory (core) course is open only to students registered for the BA(FA).",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "The course introduces creative thinking and critical literacy (written, visual, sonic, etc.), paying attention to a variety of textual forms and communication skills. “Situations” will be used to introduce core concepts, issues, theories and approaches to different ways of knowing. The common theme will be contemporaneity focusing on situated insights and subjectivity. This includes looking at the ways in which positionality reflects and imposes on power, politics, gender and identity. Students will be introduced to examples in image making practices looking out from the continent and on to the rest of the world. Khoesan and other indigenous rock arts in South Africa will be used to exemplify enduring image making contexts from prehistory. This course aims to enable students to articulate and contextualise their own creative production. An integration of all sensory faculties will be emphasised. FINE ART, MICHAELIS SCHOOL OF 215 Fieldwork in the form of gallery visits introduces art in context. Students will be expected to work in groups and to produce at least one project as a group, as well as using online platforms such as blogs etc.",
+  "lecture_times": "Wednesday 11:00am to 13:00pm (lunch time lecture 13:00-14:00 TBC). Friday 11:00 to 13:00 (Gallery visits TBC).",
+  "dp_requirements": "At least 80% attendance of tutorials and lectures, 80% of Bi -weekly assignments/peer reviews and satisfactory completion of at least two essay assignment and group projects.",
+  "assessment": "Examination portfolio in November (50%), Term Assignments (40%) and weekly tasks and participation (10%). Your mid-semester mark counts towards your exam entry mark, so do take the assignments seriously. Mark weighting is subject to confirmation at the end of each semester and may be adjusted to accommodate unforeseen or unavoidable shifts in submissions criteria that may occur.",
+  "is_humanities_course": true
+}

@@ -1,0 +1,70 @@
+{
+  "id": "bsc-eng-chemical-4yr",
+  "programme_code": "EB001CHE01",
+  "name": "Bachelor of Science in Engineering in Chemical Engineering 4-year curriculum",
+  "abbreviation": "BSc(Eng)(Chemical)",
+  "department": "Chemical Engineering",
+  "duration_years": 4,
+  "minimum_credits": 560,
+  "saqa_id": 13983,
+  "curriculum": {
+    "year_1": {
+      "core": [
+        "CEM1000W",
+        "CHE1006F",
+        "CHE1007S",
+        "MAM1020F",
+        "MAM1021S",
+        "PHY1012F",
+        "STA1008S"
+      ],
+      "credits": 138
+    },
+    "year_2": {
+      "core": [
+        "CHE2000X",
+        "CHE2005W",
+        "MAM2083S",
+        "MAM2084F"
+      ],
+      "elective_credits": "0-48",
+      "credits": "108-156"
+    },
+    "year_3": {
+      "core": [
+        "CHE3006F",
+        "CHE3007S",
+        "CHE3008S",
+        "CHE3000X"
+      ],
+      "elective_credits": "16-58",
+      "credits": "114-156"
+    },
+    "year_4": {
+      "core": [
+        "CHE4036Z",
+        "CHE4045Z",
+        "CHE4048F",
+        "CHE4049F"
+      ],
+      "elective_credits": "16-34",
+      "credits": "128-146"
+    }
+  },
+  "elective_categories": {
+    "science_electives": {
+      "minimum_credits": 42,
+      "minimum_nqf6_credits": 24
+    },
+    "humanities_electives": {
+      "minimum_credits": 15
+    },
+    "advanced_engineering_electives": {
+      "minimum_credits": 32,
+      "minimum_nqf8_credits": 16
+    },
+    "free_elective": {
+      "minimum_credits": 15
+    }
+  }
+}

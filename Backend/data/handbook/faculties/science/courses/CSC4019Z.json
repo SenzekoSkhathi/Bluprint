@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CSC4019Z",
+  "title": "Research & Innovation",
+  "department": "computer-science",
+  "credits": 16,
+  "nqf_level": 8,
+  "year_level": "Postgraduate (Honours)",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "F Meyer",
+  "prerequisites": {
+    "text": "Admission to BSc Hons specialising in Computer Science.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "This course introduces students to knowledge essential for computer professionals and researchers. The course develops communication and writing skills and introduces basic research methodology. The first module focuses on Professional Communications in general, including written and visual communication. A second component teaches entrepreneurship as New Venture Planning: introducing students to the ideas, theories and concepts associated with entrepreneurial ventures, with a focus on the elements needed to develop a viable business plan. A third module teaches scientific writing and research methods for statistical analysis and evaluation of data.",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "None.",
+  "assessment": "Practical aspects evaluated through: a series of 4 NVP assignments (10%/15%/35%/40%), culminating in a business plan; a literature review for the project (35%) and the project proposal (40%). NVP and Research Methods are equally weighted.",
+  "is_science_course": true
+}

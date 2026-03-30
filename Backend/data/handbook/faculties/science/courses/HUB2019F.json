@@ -1,0 +1,31 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "HUB2019F",
+  "title": "Integrated Anatomical and Physiological Sciences Part A",
+  "department": "human-biology",
+  "credits": 24,
+  "nqf_level": 6,
+  "year_level": "Second Year",
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr J Harbron and Associate Professor D Lang",
+  "prerequisites": {
+    "text": "BIO1000F, BIO1004S and CEM1000W (or equivalent courses). An average grade of 60% or more for these courses is recommended.",
+    "parsed": {
+      "type": "complex",
+      "codes_mentioned": [
+        "BIO1000F",
+        "BIO1004S",
+        "CEM1000W"
+      ],
+      "note": "Complex prerequisite logic - see text"
+    }
+  },
+  "corequisites": [],
+  "outline": "This course introduces the concept of integrating human physiology, anatomy, cell biology and histology. It includes the study of cells and tissues, the basic anatomy and histology of the musculoskeletal, endocrine and digestive systems, and an introduction to embryology and osteology. Physiological concepts include fluid balance, cell signalling, hormone regulation, digestion, absorption and metabolism. Practicals involve students working in small groups using computers and specialised equipment to study the physiology and histology of the abovementioned organ systems.",
+  "lecture_times": "Lectures: Monday to Friday, 08h00–08h45. Practicals: Mondays or Tuesdays, 14h00–17h00.",
+  "dp_requirements": "Attendance at all practical sessions; 40% average in class tests; and an average of 50% for all assignments.",
+  "assessment": "Class tests 30%; practical write-up 15%; assignments or tutorials 5%; final examinations 50% (theory 30% + practical 20%). Sub-minimum of 40% required for both theory and practical examinations. Supplementary examinations may be offered to students with an overall score of 45–49%. An oral examination may be required for selected students.",
+  "is_science_course": false,
+  "offered_by_faculty": "health-sciences"
+}

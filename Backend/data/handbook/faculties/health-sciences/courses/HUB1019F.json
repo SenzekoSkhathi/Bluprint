@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "HUB1019F",
+  "title": "Anatomy and Physiology 1A",
+  "department": "human-biology",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Ms J Luckrajh-Williams",
+  "prerequisites": {
+    "text": "Refer to the programme and departmental sections in the 2026 Health Sciences Faculty Handbook.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "134 DEPARTMENTS IN THE FACULTY This course consists of five lectures and one practical/tutorial per week. It in cludes a broad introduction to relevant body systems. The anatomy component focuses on the anatomy of the upper limb. The physiology component includes an introduction to the cellular basis of physiology, tissue, and body systems.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Attendance of and participation in all lectures, practical sessions, workshops and tutorials, and submission of assignments by the due date. Both the anatomy and physiology components of the course require a subminimum of at least 40% to achieve DP.",
+  "assessment": "The in-course assessments comprise written and on-going practical assessments, which make up 45% of the final course mark. The final written and practical exams make up the remaining 55% of the final course mark. In order to pass HUB 1019F, a final course mark of 50% is required. However, both the anatomy and physiology components of the cou rse must be passed with a subminimum of at least 45% in the final course mark. In addition, a subminimum of 40% needs to be achieved in the examination.",
+  "is_health_sciences_course": true
+}

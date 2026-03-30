@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CON2013X",
+  "title": "Practical Training",
+  "department": "construction-economics-and-management",
+  "credits": 0,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "varies",
+  "semester_code": "X",
+  "convener": "Ms K Le Jeune",
+  "prerequisites": {
+    "text": "CON1007X",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "CON1007X"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This practical training takes the form of 160 hours (4 weeks) of approved experience employed in any of the built environment disciplines: construction, engineering, housing, property development and DEPARTMENTS IN THE FACULTY AND COURSES OFFERED 119 management, quantity surveying, relevant local authority, and provincial and national government departments).",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

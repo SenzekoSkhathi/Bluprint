@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MEC3080S",
+  "title": "Thermofluids III",
+  "department": "mechanical-engineering",
+  "credits": 16,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Associate Professor WH Ho",
+  "prerequisites": {
+    "text": "MEC3077F (DP)",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "MEC3077F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The aim of this course is to introduce students to differential analysis of fluid control volumes, similitude and dimensional analysis, and the analysis of steady state incompressible and compressible internal flows and its application to pipe and duct flows as well as flow measuring devices. It covers: The differential forms of the fundamental conservation laws of mass, energy and momentum and its application to laminar flows and vortices; Similitude and dimensional analysis and its application to the vel ocity and thermal boundary layers, as well as pump and fan, scaling laws; Analysis of incompressible internal flows including the effects of frictional losses and convective heat transfer in pipes, ducts and pipe networks; The application of obstruction flow measuring devices and uncertainty DEPARTMENTS IN THE FACULTY AND COURSES OFFERED 153 propagation in flow measurement; Analysis of compressible internal flows including the effect of area change, choking, shocks, and flows with friction and heat transfer in pipes and ducts.",
+  "lecture_times": "4 lectures and 2 tutorials per week.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

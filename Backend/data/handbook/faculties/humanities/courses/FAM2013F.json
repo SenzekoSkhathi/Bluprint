@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "FAM2013F",
+  "title": "Screen Production II: Production",
+  "department": "film-and-media-studies",
+  "credits": 30,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr D Marco",
+  "prerequisites": {
+    "text": "At least second year status",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [
+    "FAM2000F"
+  ],
+  "outline": "This course provides an introduction to genre studies for screen texts. This investigation of genre is supported by a sampling of film and television genre texts. The concept of genre provides a lens for considering the industrial, historical and sociopoli tical factors which shape screen media. While drawing from a range of global examples, this course will also pay attention to the ways genre has been adapted for African audiences and South African audiences, in particular. The course explores a number of key questions related to genre: (1) What is genre and how are genres defined? (2) How do industries and audiences influence and shape genre texts? (3) How do genre texts reproduce, reinforce or challenge dominant ideology? (4) What might genre codes revea l about the social, political and historical context of a texts production and reception? (5) How can filmmakers make critical use of genre tropes? (6) How might we understand genre's relevance across different screen media platforms including, television film and streaming platforms?; and (7) What are politics of genres which travel across different national and economic contexts?",
+  "lecture_times": "Monday and Tuesday, 5th period.",
+  "dp_requirements": "All written work must be submitted by the stipulated dates.",
+  "assessment": "Continuous assessment (essays, projects, tests, etc.) counts 100%.",
+  "is_humanities_course": true
+}

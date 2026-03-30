@@ -1,0 +1,35 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PVL2002H",
+  "title": "Law of Property",
+  "department": "private-law",
+  "credits": 18,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "FY",
+  "semester_code": "H",
+  "convener": "Dr G Mathiba",
+  "prerequisites": {
+    "text": "Undergraduate LLB students: concurrent registration with PBL2000W and PVL2003H. Graduate LLB students: concurrent registration with PVL1003W, PVL1004F, PVL1008H, PBL2000W and PVL2003H.",
+    "parsed": {
+      "type": "concurrent_registration",
+      "undergraduate": [
+        "PBL2000W",
+        "PVL2003H"
+      ],
+      "graduate": [
+        "PVL1003W",
+        "PVL1004F",
+        "PVL1008H",
+        "PBL2000W",
+        "PVL2003H"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The purpose of this course is to introduce students to fundamental concepts and common law principles of the South African Law of Property as regards what is property, how rights in property are acquired or lost and are protected. The law is examined in its current constitutional and socio-political context. In addition to the focus on the content of this area of law, considerable attention is given to development of appropriate analytical and problem-solving skills, independent and active learning as well as appropriate study methodology and techniques.",
+  "lecture_times": "Thirty-six lectures.",
+  "dp_requirements": "None",
+  "assessment": "Coursework 50%, Final Examination 50%.",
+  "is_law_course": true
+}

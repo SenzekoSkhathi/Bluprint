@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MEC4047F",
+  "title": "Mechanical Vibrations",
+  "department": "mechanical-engineering",
+  "credits": 12,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Mr EB Ismail",
+  "prerequisites": {
+    "text": "MEC3078S or MEC3031S and MEC3075F or equivalent",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "MEC3078S",
+        "MEC3031S",
+        "MEC3075F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course introduces modelling of dynamical systems for vibration analysis, analytical and computational solution techniques, interpretation of these solutions, and vibration in real -world scenarios and machines. The course considers the development of equations of motion for continuous, single, and multi-degree of freedom systems with Newtonian and Energy methods. Analytical solution of equations of motion is considered using time-domain and Laplace techniques and modal analysis. Topics include viscous and Coulomb damping, harmonic and general forced vibration, base excitation, rotating unbalance, vibration measurement and condition monitoring, vibration isolation and absorption, and one-dimensional vibration of continuous systems.",
+  "lecture_times": "3 lectures and 1 tutorial/computer session per week.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

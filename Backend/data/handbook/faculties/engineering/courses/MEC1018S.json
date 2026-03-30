@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MEC1018S",
+  "title": "Introduction to Computer-Aided Design",
+  "department": "mechanical-engineering",
+  "credits": 6,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Mr L Siboya",
+  "prerequisites": {
+    "text": "Refer to the programme and departmental sections in the 2026 EBE Faculty Handbook.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course provides first-year students with the knowledge and skills to use SolidWorks software as an engineering computer tool to model isometric (3D) mechanical parts and also assemble the modelled parts. It also provides the students with the knowledg e and skills to produce orthographic (2D) working drawings from the modelled assemblies or single mechanical parts as a medium of communicating ideas, concepts or the actual design during the design and manufacturing processes. DEPARTMENTS IN THE FACULTY AND COURSES OFFERED 147",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

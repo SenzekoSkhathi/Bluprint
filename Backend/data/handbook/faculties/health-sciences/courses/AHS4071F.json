@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AHS4071F",
+  "title": "Applied Physiotherapy III",
+  "department": "health-and-rehabilitation-sciences",
+  "credits": 20,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Doctor S Manie",
+  "prerequisites": {
+    "text": "AHS3077H, AHS3004W",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "AHS3077H",
+        "AHS3004W"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The AHS4071F course co mprises of components on Cardio pulmonary, Musculoskeletal and Neurological physiotherapy; Chr onic Pain and Pharmacology. The course will be delivered via lectures, workshops and tutorials.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Full attendance of and participation in all lectures, practical sessions, workshops and tutorials, and submission of assignments by the due dates.",
+  "assessment": "The course is assessed via continuous evalua tion (CE) weighted at 60%, and the June exam is weighted at 40%. The m odules within the course will be weighted accor ding to the contact hours given to each module and will be provided to students at the start of the year. The Final theory examination contributes 40% to the final mark. A student who obtains between 45 - 49% will be offered a written supplementary opp ortunity. A student who fails the course or supplementary examination will register for AHS 4184S in the second semester.",
+  "is_health_sciences_course": true
+}

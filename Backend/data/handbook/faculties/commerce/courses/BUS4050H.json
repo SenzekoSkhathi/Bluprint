@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "BUS4050H",
+  "title": "Strategic Thinking",
+  "department": "management-studies",
+  "credits": 18,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "FY",
+  "semester_code": "H",
+  "convener": "Dr M Hoffman",
+  "prerequisites": {
+    "text": "Completion of all special field courses up to the end of the third year (e.g. a Finance student must have completed all Finance courses). Students may register for BUS4050W only in the year in which they can potentially graduate.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "BUS4050W is the capstone course available only to final year Business Science students. The aim is to test and improve students' strategic thinking ability and how they can apply this to business. This future-oriented and outcome-based course develops other types of thinking or competencies which include visionary thinking, contextual thinking, collaborative thinking and creative thinking. The course covers classic Strategic Management, Blue Ocean Strategy, Scenario Planning, and Business Models.",
+  "lecture_times": "To be advised.",
+  "dp_requirements": "Completion of all coursework assessments.",
+  "assessment": "Coursework 100%.",
+  "is_commerce_course": true
+}

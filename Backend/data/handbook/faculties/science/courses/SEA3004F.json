@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "SEA3004F",
+  "title": "Ocean & Atmosphere Dynamics",
+  "department": "oceanography",
+  "credits": 36,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr M Ragoasha",
+  "prerequisites": {
+    "text": "MAM1031F + MAM1032S (recommended) or equivalent, PHY1031F or equivalent, or permission of the convener.",
+    "parsed": {
+      "type": "or",
+      "codes": [
+        "MAM1031F",
+        "MAM1032S",
+        "PHY1031F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The Ocean & Atmosphere Dynamics course will begin to specialise in advanced material related to physical oceanography, atmospheric science and climate. Topics include a quantitative approach to ocean/atmosphere dynamics, theories of circulation and the development of ocean and atmospheric weather systems, coupled ocean/atmosphere processes, interactions and feedbacks with the carbon cycle in the earth system, and climate change. Methods of analysis of both observations and model data will be covered in the tutorials and practicals.",
+  "lecture_times": "Monday - Friday, 3rd period.",
+  "dp_requirements": "Attendance at tutorials and practicals, and a class mark of at least 40%.",
+  "assessment": "Tutorials/practicals and tests count 50%; one 3-hour examination written in June/July counts 50%. A subminimum of 40% in the examination is required.",
+  "is_science_course": true
+}

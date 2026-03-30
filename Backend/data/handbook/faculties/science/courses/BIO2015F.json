@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "BIO2015F",
+  "title": "Vertebrate Diversity & Functional Biology",
+  "department": "biological-sciences",
+  "credits": 0,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr C A Ngcamphalala",
+  "prerequisites": {
+    "text": "BIO1000F/H, BIO1004S. Includes a compulsory field camp (4-day).",
+    "parsed": {
+      "type": "and",
+      "codes": [
+        "BIO1000F/H",
+        "BIO1004S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course begins with an overview of the evolution, characteristics, diversity, morphology, and life histories of the different craniate classes, paying particular attention to adaptations underlying the success of the vertebrates. Distinctive or advanced biological features of each group are highlighted, and their ecological/economic importance briefly considered. The rest of the course comprises integrative, cross-taxonomic modules on the functional biology of vertebrates, notably locomotion, sensory systems, metabolism, homeostasis and behaviour. The course includes a strong practical component to demonstrate the links between form and function; as well as a 4-day compulsory field camp during which students will be trained in methods for studying the diversity, ecology and behaviour of selected vertebrate groups.",
+  "lecture_times": "Monday – Friday, 3rd period. Practicals: One per week, Wednesday, 14h00-17h00. Attendance is compulsory for all lectures and practicals.",
+  "dp_requirements": "Completion of at least 70% of deliverables (tests, practicals, project report), including at least one class test and the project report; attendance of practicals; minimum of 40% for the class record.",
+  "assessment": "A 3-hour theory examination written in June, with subminimum of 40%, will count 50% of the course mark. Coursework marks will be allocated as follows: practical tests (three deliverables) count 15%, project report based on projects counts 15%, two class tests together count 20%",
+  "is_science_course": true
+}

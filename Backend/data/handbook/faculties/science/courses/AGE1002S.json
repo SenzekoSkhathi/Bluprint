@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AGE1002S",
+  "title": "The Human Planet: Prehistory to Present",
+  "department": "archaeology",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": "First Year",
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr V J Hare",
+  "prerequisites": {
+    "text": "None",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "This course introduces the study of archaeology and the study of human origins. Archaeology is defined as the study of the human past through material culture. Over the second semester, this course presents an overview of prehistory leading up to the modern day, as well as the broader climatic, geographic, ecological, social, and cultural contexts which made modern humans. It looks at the past through the lens of what people leave behind — the archaeological record. Students develop a broad understanding of the timescales of human prehistory and our interactions with the Earth System, from the Early Pleistocene through to the Historical period and the emergence of present day societies (the 'Anthropocene'). Students also gain an understanding of current concepts in archaeological thought and familiarity with foundational skills and terminology for present-day archaeological research. This broad course is suitable for all undergraduate students in the sciences and humanities, particularly for those wishing to major in Archaeology, Environmental & Geographical Science, or cognate subjects.",
+  "lecture_times": "Monday - Thursday, 5th period",
+  "dp_requirements": "Attendance at lectures and tutorials and completion of assignments.",
+  "assessment": "Assignments and class tests count 50% towards the final mark; one 3-hour examination written in November counts 50%. A sub-minimum of 40% is required for the examination.",
+  "is_science_course": true
+}

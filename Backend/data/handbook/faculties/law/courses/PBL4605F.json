@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PBL4605F",
+  "title": "Women and Law",
+  "department": "public-law",
+  "credits": 9,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr N Ramalekana and N Luwaya",
+  "prerequisites": {
+    "text": "All Preliminary and Intermediate Level courses to have been completed. Limited to 25 students.",
+    "parsed": {
+      "type": "level_completion",
+      "levels_required": [
+        "preliminary",
+        "intermediate"
+      ],
+      "note": "Limited to 25 students"
+    }
+  },
+  "corequisites": [],
+  "outline": "The course aims to introduce students to literature and debates on the relationship between women and the law, allowing them to examine specific aspects of South African law in the light of feminist theory. In the seminars we consider feminist theories of law and the position of women in South African Law. Possible subjects include: feminist and social theory; the constitutional protection of women; family law including divorce, maintenance, adoption and custody, abortion and surrogate motherhood; the law relating to violent crimes against women, including rape and domestic violence; employment law, including sex discrimination, equal pay, maternity benefits, sexual harassment and domestic workers; aspects of customary law; and the law governing censorship and pornography.",
+  "lecture_times": "Two lectures per week. Limited to 25 students.",
+  "dp_requirements": "None",
+  "assessment": "Reflection papers 10%; Presentation at symposium on women and law 10%; Research paper 80%.",
+  "is_law_course": true
+}

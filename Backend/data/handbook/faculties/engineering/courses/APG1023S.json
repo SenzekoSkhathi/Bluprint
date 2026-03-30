@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "APG1023S",
+  "title": "Surveying and GIS",
+  "department": "architecture-planning-geomatics",
+  "credits": 15,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Mr K Singh",
+  "prerequisites": {
+    "text": "Refer to the programme and departmental sections in the 2026 EBE Faculty Handbook.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course is an introduction to surveying (what surveying is, the roles of the surveyor, measuring systems). Introduction to instrumentation (level & GPS). Calculations (joins, polars, levelling, topographic mapping and surface fitting, map creation and interpretation, GIS analysis). Collection and representation of spatial data (contouring, surface fitting; planning a detail survey; DEMs and DTMs and TINs). Introduction to GIS as a tool for representation and analysis of spatial data.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Attendance at and completion of all assignments with a minimum average of 40%, a minimum class test average of 40%.",
+  "assessment": "Tests count 25%, practical assignments count 25%, examination of 3 hours counts 50% (sub-minimum 40%).",
+  "is_engineering_course": true
+}

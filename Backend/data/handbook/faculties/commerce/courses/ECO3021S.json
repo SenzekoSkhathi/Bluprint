@@ -1,0 +1,30 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "ECO3021S",
+  "title": "Quantitative Methods in Economics",
+  "department": "economics",
+  "credits": 18,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Professor E Muchapondwa",
+  "prerequisites": {
+    "text": "Students must have completed MAM1010 (or an equivalent), STA1000, ECO2003 and ECO2004.",
+    "parsed": {
+      "type": "prerequisite",
+      "codes": [
+        "MAM1010F",
+        "STA1000S",
+        "ECO2003F",
+        "ECO2004S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The emphasis in this course is to introduce students to new tools and techniques for quantitative analysis in the social and behavioural sciences. In this respect, it is aimed at students wishing to pursue postgraduate studies in economics. The course covers two inter-related modules: Module one: cross sectional econometrics using Stata. Module two: time series econometrics using R.",
+  "lecture_times": "09h00 - 10h00 Tuesday, Wednesday, Thursday, Friday.",
+  "dp_requirements": "None.",
+  "assessment": "Exam 40%; Coursework 60%. In some years a bonus 5% may be achievable for a Stata Assignment.",
+  "is_commerce_course": true
+}

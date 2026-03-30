@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AHS2110W",
+  "title": "Clinical Audiology I",
+  "department": "health-and-rehabilitation-sciences",
+  "credits": 24,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Miss N Luwaca",
+  "prerequisites": {
+    "text": "AHS2046F (see FBC 5.3).",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "AHS2046F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to enable the student to demonstrate professional conduct, to screen communication development in children aged 0 – 5yrs, and to assess peripheral auditory function in adults. Content includes neonatal hearing screening, school-based hearing screening, prevention and promotion, and diagnostic audiology in adults. There are five clinical blocks, which in clude Project Design and Management. Students have the opportunity to work with children of different ages and adults, within different clinical settings. Students acquire skills of ethical and prof essional practice, professional communication, clinic management, and assessment and management of the client. Students learn to develop a willingness to engage professionally and ethically, begin to accept responsibility for clinical service provision, acquire sensitivit y to cultural diversity, and deve lop respect for client autonomy. Teaching and learning activities incl ude clinical practice, clinic wo rkshops, modelling (by clinical educators) and guided observation, simulations (e.g. Otis), clinic preparatory worksheets, as well as tutorials and reflective tasks. Themes underpinning the course are primary healthcare, evidence-based practice, ethical and professional practice, and a client- and family-centred approach.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Attendance at all clinic activities; co mpletion of all coursework and required documentation (e.g. ELOs and hour s) by the due dates; and profe ssional conduct. A concession to miss clinic activities with a valid reason must be approved by the course convenor. When concessions are granted students must still maintain a minimum of 80% attendance or they may be asked to repeat the course or block (see FBD 4).",
+  "assessment": "Continuous assessments during each clinical block contributes to the final course mark. Refer to AHS2110W clinic descriptor document for specific assessment details.",
+  "is_health_sciences_course": true
+}

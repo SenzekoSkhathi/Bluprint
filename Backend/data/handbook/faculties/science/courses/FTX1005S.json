@@ -1,0 +1,23 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "FTX1005S",
+  "title": "Managerial Finance",
+  "department": "finance-and-tax",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": "First Year",
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "FTX1005F: TBC / FTX1005S: N Jwara",
+  "prerequisites": {
+    "text": "Matriculation mathematics, Mathematics Literacy, or registration for the Postgraduate Diploma in Management in Entrepreneurship, Marketing, Sport and Business Communication.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "This course introduces students with little or no commercial or financial background to the fundamentals of managerial finance. Students will develop a basic understanding of accounting concepts, the ability to read financial statements and perform basic ratio analysis, an understanding of time value of money, basic steps toward efficient working capital management, and a basic understanding of capital budgeting and valuations. Key topics include: introduction to basic accounting concepts; understanding annual financial statements; sources of finance; basic financial ratio analysis; investments, risk and return; working capital management; cost volume profit analysis; budgeting; time value of money; basic valuations; cost of capital; discounted cash flow; and capital budgeting.",
+  "lecture_times": "Monday, Wednesday, Thursday & Friday: 12h00–12h45.",
+  "dp_requirements": "Writing all class tests. Attendance and submission of 80% of tutorials. Satisfactory completion of the project and assignments. 40% average year mark.",
+  "assessment": "Class test 1 – 15%; class test 2 – 15%; objective tests (10% – best 5 out of 10); 1 group project (10%); final examination (50%).",
+  "is_science_course": false,
+  "offered_by_faculty": "commerce"
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "ACC2042H",
+  "title": "Accounting for Construction",
+  "department": "accounting",
+  "credits": 24,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "FY",
+  "semester_code": "H",
+  "convener": "M Tshingilane",
+  "prerequisites": {
+    "text": "ACC1006F or equivalent.",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "ACC1006F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This is a terminating course covering an introduction to the discipline of Management Accounting; the analysis of cost systems, cost classification, and cost behaviour; product costing including job costing and process costing; the allocation of costs from service departments; absorption and variable costing; activity based costing; cost -volume-profit relationships, relevant costing and cost benefit analyses; budgeting systems; standard costing and flexible budgeting; financial performance measurement in business segments. This course is intended for students registering for Construction Studies and does not lead to further accounting studies.",
+  "lecture_times": "Monday – Thursday 13:00 (with a repeat at 14:00) every second week.",
+  "dp_requirements": "Weighted average mark of 40% for all class tests (excluding objective tests) AND Attendance at and submission of a minimum of 75% of tutorials and assignments.",
+  "assessment": "Invigilated tests (40%) and one final exam (60%), no projects.",
+  "is_engineering_course": false,
+  "offered_by_faculty": "commerce"
+}

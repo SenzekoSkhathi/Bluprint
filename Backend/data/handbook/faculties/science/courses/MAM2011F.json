@@ -1,0 +1,31 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MAM2011F",
+  "title": "Linear Algebra (2LA)",
+  "department": "mathematics-applied-mathematics",
+  "credits": 12,
+  "nqf_level": 6,
+  "year_level": "Second Year",
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr H Spakowski",
+  "prerequisites": {
+    "text": "MAM1031F and MAM1032S or equivalent. With convener permission, students with 70% for both MAM1010F and MAM1012S may register.",
+    "parsed": {
+      "type": "complex",
+      "codes_mentioned": [
+        "MAM1031F",
+        "MAM1032S",
+        "MAM1010F",
+        "MAM1012S"
+      ],
+      "note": "Complex prerequisite logic - see text"
+    }
+  },
+  "corequisites": [],
+  "outline": "Students study the fundamentals of linear algebra, including: vector spaces, linear independence, spans, bases, row space, column space, null space; linear maps; eigenvectors and eigenvalues; inner product spaces; and orthogonality.",
+  "lecture_times": "Mondays, Thursdays and some Wednesdays in 5th period. Note: Lectures alternate during the week so students can take MAM2010F and MAM2011F concurrently.",
+  "dp_requirements": null,
+  "assessment": null,
+  "is_science_course": true
+}

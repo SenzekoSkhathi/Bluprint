@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "INF2010S",
+  "title": "IT Architecture",
+  "department": "information-systems",
+  "credits": 18,
+  "nqf_level": 7,
+  "year_level": 2,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "G Oosterwyk",
+  "prerequisites": {
+    "text": "Minimum 45% final mark for INF2003F or equivalent. Students cannot be credited for this course and CSC2002S.",
+    "parsed": {
+      "type": "prerequisite",
+      "codes": [
+        "INF2003F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course is intended to provide students with an in-depth knowledge of hardware, software, data communications and networking theory. This course is designed to build the skills required for the management and building of distributed systems and commercial networks. This course provides the hardware and software technology background for understanding various computer architectures for single and multiple users. The analysis and design of networked applications is covered, including telecommunication devices, media, network hardware and software, network configuration and applications, network architectures, topologies and protocols, LAN and WAN networks, intranets and the Internet. The underlying architecture of modern computer hardware and operating systems, mobile computing, the cloud and basic computer security is also covered.",
+  "lecture_times": "Monday to Wednesday 12h00 - 12h45.",
+  "dp_requirements": "Completing 80% of deliverables including quizzes, assignments (including the IT technical report) and semester test. Year mark of 45%.",
+  "assessment": "The final grade is derived from the results of quizzes, assignments (including IT technical report) and the semester test which counts 60%; the Final Exam (40%) - sub-minimum of 45% for the final examination.",
+  "is_commerce_course": true
+}

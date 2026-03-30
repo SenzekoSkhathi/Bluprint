@@ -1,0 +1,325 @@
+{
+  "$schema": "handbook-major-v1",
+  "major_code": "BIO13",
+  "major_name": "Quantitative Biology",
+  "department": "biological-sciences",
+  "notes": "MAM1004F/S can be replaced by MAM1031F. Registration for starred courses is conditional on prerequisites having been met.",
+  "mutual_exclusions_with": [],
+  "required_companion_majors": [],
+  "has_student_limit": false,
+  "years": [
+    {
+      "year": 1,
+      "label": "First Year Core Courses",
+      "combinations": [
+        {
+          "combination_id": "BIO13-Y1-A",
+          "description": "STA + MAM1004F + MAM1008S",
+          "courses": [
+            {
+              "code": "BIO1000F",
+              "title": "Cell Biology",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "BIO1004S",
+              "title": "Biological Diversity",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "STA100xF/S",
+              "title": "Any 1000-level Science STA course",
+              "credits": 18,
+              "nqf_level": 5,
+              "is_pattern": true,
+              "resolves_to": [
+                "STA1000F",
+                "STA1000S",
+                "STA1000P/L",
+                "STA1006S",
+                "STA1007S"
+              ]
+            },
+            {
+              "code": "MAM1004F",
+              "title": "Mathematics 1004",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "MAM1008S",
+              "title": "Introduction to Discrete Mathematics",
+              "credits": 18,
+              "nqf_level": 5
+            }
+          ]
+        },
+        {
+          "combination_id": "BIO13-Y1-B",
+          "description": "STA + MAM1000W",
+          "courses": [
+            {
+              "code": "BIO1000F",
+              "title": "Cell Biology",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "BIO1004S",
+              "title": "Biological Diversity",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "STA100xF/S",
+              "title": "Any 1000-level Science STA course",
+              "credits": 18,
+              "nqf_level": 5,
+              "is_pattern": true,
+              "resolves_to": [
+                "STA1000F",
+                "STA1000S",
+                "STA1000P/L",
+                "STA1006S",
+                "STA1007S"
+              ]
+            },
+            {
+              "code": "MAM1000W",
+              "title": "Mathematics 1000",
+              "credits": 36,
+              "nqf_level": 5
+            }
+          ]
+        },
+        {
+          "combination_id": "BIO13-Y1-C",
+          "description": "STA + MAM1031F + MAM1032S",
+          "courses": [
+            {
+              "code": "BIO1000F",
+              "title": "Cell Biology",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "BIO1004S",
+              "title": "Biological Diversity",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "STA100xF/S",
+              "title": "Any 1000-level Science STA course",
+              "credits": 18,
+              "nqf_level": 5,
+              "is_pattern": true,
+              "resolves_to": [
+                "STA1000F",
+                "STA1000S",
+                "STA1000P/L",
+                "STA1006S",
+                "STA1007S"
+              ]
+            },
+            {
+              "code": "MAM1031F",
+              "title": "Mathematics 1031",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "MAM1032S",
+              "title": "Mathematics 1032",
+              "credits": 18,
+              "nqf_level": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "label": "Second Year Core Courses",
+      "combinations": [
+        {
+          "combination_id": "BIO13-Y2-A",
+          "description": "BIO2014F + BIO elective + Applied MAM stream",
+          "courses": [
+            {
+              "code": "BIO2014F",
+              "title": "Principles of Ecology & Evolution",
+              "credits": 24,
+              "nqf_level": 6
+            }
+          ],
+          "choose_one_bio": [
+            {
+              "code": "BIO2015F",
+              "title": "Vertebrate Diversity & Functional Biology",
+              "credits": 24,
+              "nqf_level": 6
+            },
+            {
+              "code": "BIO2016S",
+              "title": "Invertebrate Diversity & Functional Biology",
+              "credits": 24,
+              "nqf_level": 6
+            },
+            {
+              "code": "BIO2017S",
+              "title": "Plant Diversity & Functional Biology",
+              "credits": 24,
+              "nqf_level": 6
+            }
+          ],
+          "mam_stream": [
+            {
+              "code": "MAM2040F",
+              "title": "Ordinary Differential Equations (2OD)",
+              "credits": 12,
+              "nqf_level": 6
+            },
+            {
+              "code": "MAM2041F",
+              "title": "Numerical Analysis (2NA)",
+              "credits": 12,
+              "nqf_level": 6
+            },
+            {
+              "code": "MAM2042S",
+              "title": "Non-linear Dynamics (2ND)",
+              "credits": 12,
+              "nqf_level": 6
+            },
+            {
+              "code": "MAM2043S",
+              "title": "Boundary-Value Problems (2BP)",
+              "credits": 12,
+              "nqf_level": 6
+            }
+          ],
+          "instruction": "Take BIO2014F plus one BIO elective, then either the Applied MAM stream or a 2000-level STA course"
+        },
+        {
+          "combination_id": "BIO13-Y2-B",
+          "description": "BIO2014F + BIO elective + STA stream",
+          "courses": [
+            {
+              "code": "BIO2014F",
+              "title": "Principles of Ecology & Evolution",
+              "credits": 24,
+              "nqf_level": 6
+            }
+          ],
+          "choose_one_bio": [
+            {
+              "code": "BIO2015F",
+              "title": "Vertebrate Diversity & Functional Biology",
+              "credits": 24,
+              "nqf_level": 6
+            },
+            {
+              "code": "BIO2016S",
+              "title": "Invertebrate Diversity & Functional Biology",
+              "credits": 24,
+              "nqf_level": 6
+            },
+            {
+              "code": "BIO2017S",
+              "title": "Plant Diversity & Functional Biology",
+              "credits": 24,
+              "nqf_level": 6
+            }
+          ],
+          "sta_stream": [
+            {
+              "code": "STA20xxF/S/H",
+              "title": "Any 2000-level Science STA course",
+              "credits": 24,
+              "nqf_level": 6,
+              "is_pattern": true,
+              "resolves_to": [
+                "STA2004F",
+                "STA2005S",
+                "STA2007F/S/H",
+                "STA2020F",
+                "STA2020S",
+                "STA2030S"
+              ]
+            }
+          ],
+          "instruction": "Take BIO2014F plus one BIO elective, then either the Applied MAM stream or a 2000-level STA course"
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "label": "Third Year Core Courses",
+      "combinations": [
+        {
+          "combination_id": "BIO13-Y3-A",
+          "description": "BIO3019S + two Applied MAM courses",
+          "courses": [
+            {
+              "code": "BIO3019S",
+              "title": "Quantitative Biology",
+              "credits": 36,
+              "nqf_level": 7
+            }
+          ],
+          "choose_mam_stream": [
+            {
+              "code": "MAM304xF/S",
+              "title": "Any two 3000-level Applied MAM courses",
+              "credits": 36,
+              "nqf_level": 7,
+              "is_pattern": true,
+              "resolves_to": [
+                "MAM3042F/S",
+                "MAM3043F/S",
+                "MAM3044F/S",
+                "MAM3045F/S",
+                "MAM3046F/S"
+              ]
+            }
+          ],
+          "instruction": "BIO3019S is compulsory; add either two Applied MAM courses or one STA course"
+        },
+        {
+          "combination_id": "BIO13-Y3-B",
+          "description": "BIO3019S + one STA course",
+          "courses": [
+            {
+              "code": "BIO3019S",
+              "title": "Quantitative Biology",
+              "credits": 36,
+              "nqf_level": 7
+            }
+          ],
+          "choose_sta_stream": [
+            {
+              "code": "STA30xxF/S",
+              "title": "Any 3000-level Science STA course",
+              "credits": 36,
+              "nqf_level": 7,
+              "is_pattern": true,
+              "resolves_to": [
+                "STA3022F",
+                "STA3030F",
+                "STA3036S",
+                "STA3041F",
+                "STA3045F",
+                "STA3047S",
+                "STA3048S"
+              ]
+            }
+          ],
+          "instruction": "BIO3019S is compulsory; add either two Applied MAM courses or one STA course"
+        }
+      ]
+    }
+  ]
+}

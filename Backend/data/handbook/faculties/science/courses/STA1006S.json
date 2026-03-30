@@ -1,0 +1,42 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "STA1006S",
+  "title": "Mathematical Statistics I",
+  "department": "statistical-sciences",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "S Salau",
+  "prerequisites": {
+    "text": "At least 60% in MAM1031F or MAM1033F or MAM1005H or MAM1020F/S or at least 70% in MAM1010F/S or MAM1004F and concurrent registration for MAM1032S or MAM1034S, or MAM1006H or MAM1012F/S or MAM1021S. Note: A student cannot obtain credits for more than one of STA1000F/S/P/L, STA1007S, STA1006S, STA1008F/S. This is the key entry-point into a Mathematical Statistics major and is compulsory for students intending to major in Mathematical Statistics.",
+    "parsed": {
+      "type": "complex",
+      "codes_mentioned": [
+        "MAM1031F",
+        "MAM1033F",
+        "MAM1005H",
+        "MAM1020F/S",
+        "MAM1010F/S",
+        "MAM1004F",
+        "MAM1032S",
+        "MAM1034S",
+        "MAM1006H",
+        "MAM1012F/S",
+        "MAM1021S",
+        "STA1000F/S",
+        "STA1007S",
+        "STA1006S",
+        "STA1008F/S"
+      ],
+      "note": "Complex prerequisite logic - see text"
+    }
+  },
+  "corequisites": [],
+  "outline": "This is an introduction to statistics covering foundation knowledge in statistical theory. Topics covered include: Types of data variables; Exploratory data analysis; Grouping and graphing of data; Set theory and counting rules; Probability (conditional probabilities, independence, Bayes theorem); Random variables and values, probability mass and density functions, cumulative distribution functions; Population models and parameters (binomial, Poisson, geometric, negative binomial, hypergeometric, Uniform, Exponential, Gaussian); Expectation; Coefficient of variation; Sampling distributions (t, Chi-square, F); Point and interval estimation; Sample size estimation; Hypothesis testing (Z-test and T-test, F-test, Chi-squared test); Meaning of p-values; Bivariate data (scatterplot, simple linear regression and correlation).",
+  "lecture_times": "Five lectures per week, Monday - Friday, 4th period.",
+  "dp_requirements": "Satisfactory attendance of lectures, tutorials, practicals and tests and completion of assignments and/or class exercises as set out in course outline. Class record of at least 35%.",
+  "assessment": "Class record 30% and a 3-hour exam counting 70%. Weights will be adjusted in the case of missed assessments, as detailed in the course outline.",
+  "is_science_course": true
+}

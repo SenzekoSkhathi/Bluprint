@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "HUB1022F",
+  "title": "Biosciences for Physiotherapy IA",
+  "department": "human-biology",
+  "credits": 9,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Associate Professor T Mutsvangwa",
+  "prerequisites": {
+    "text": "None",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "Objective: Physics: To equip students with basic skills to assess simple probl ems involving forces and torques in systems; predict what forces and torques are required to cause motion. Chemistry: To provide students with a basic unde rstanding of the chemical princi ples and how they relate to the physiology of the body. Course outline: This introductory course provides first year physiotherapy students with the fundamental aspects of chemistry, biochemistry and fundamental physical science related to biomechanics. Topics have been selected to promote the integration of theoretic al and practical knowle dge. Content for physical science includes measurement, un its, conversion of units, review of trigonometry; vectors, vector algebra and resolution of vectors; displacement, velocity and acceleration; free-body diagrams; forces and Newton’s laws in linear systems; torques a nd angular systems; and leve r systems. Content for chemistry includes physical chemis try; principles of atoms and el ements; basic stoichiometry of DEPARTMENTS IN THE FACULTY 135 reactions in solutions, with an emphasis on molar concen trations and the principle of osmosis; an introduction to physiological enz yme structure and kinetics; the basics of cellular metabolism; chemical equilibrium, acids and bases and biological buffering systems. The course is taught through lectures, weekly tutorials and assignments. By the end of the course, students should be able to assess simple problems and determine for ces and torques in systems; pred ict what forces and torques are required to cause motion; and understand basic chemical princi ples and how they relate to body physiology.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Students must attend 75% of tutorials, hand-ins and mini tests and must obtain a combined class mark of at least 40%.",
+  "assessment": "The course mark contributes 60% and comprises assignments (10%); class tests (30%); and ad hoc mini tests (20%). The examination contributes 40% and co nsists of a three-hour written examination in June. Both the physics and chemistry components of the course must be passed, with a subminimum of at least 40% for each component in the final examination.",
+  "is_health_sciences_course": true
+}

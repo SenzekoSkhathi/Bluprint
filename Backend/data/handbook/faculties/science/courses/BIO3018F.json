@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "BIO3018F",
+  "title": "Ecology & Evolution in the Field",
+  "department": "biological-sciences",
+  "credits": 0,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Associate Professor J A Slingsby",
+  "prerequisites": {
+    "text": "A pass or permission to write a SUPP exam in BIO2014F. Note: The Department reserves the right to not run the course in years when projected enrolments are below 10 students.",
+    "parsed": {
+      "type": "or",
+      "codes": [
+        "BIO2014F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "Ecological and evolutionary processes together determine patterns of biodiversity. This African-centric ecology and evolution course utilises regional examples within the global context to illustrate plant and animal ecology and evolution. The course starts with community assembly and the mechanisms (e.g., functional traits) that contribute to species coexistence (e.g., niche construction) and turnover (competition/facilitation for resources) between communities and the results of this (e.g., succession and alternate states). The role of disturbance (e.g., fire, herbivory, predation) in structuring communities and the roles of adaptation versus exaptation are then considered. Alien invasions are considered in the context of the supposed 'empty niche' and as current examples of dispersalism and mechanisms (e.g., traits) of coexistence and competition. This is followed by behavioural ecology, focusing on how competition and cooperation between and within species affects evolutionary fitness. This leads into analytical biogeography, considering the distribution of species and how this was established (i.e., vicariance versus dispersalism) before discussing the evolution and coexistence of species regionally and globally. The course is based on a two-week fieldtrip before the semester starts, with assignment hand-ins and tutorials during the semester.",
+  "lecture_times": "All lectures and practicals occur during a residential two-week field course occurring before the start of the first semester. Tutorials: By arrangement in 5th period – typically one per practical. Practical slot (used for prac, tutorials or tests): Tuesday, 14h00 - 17h00. Attendance is compulsory for all lectures and practicals.",
+  "dp_requirements": "Completion of at least 70% of deliverables (tests, practicals, field trip seminar), including the class test and the field trip seminar; attendance of two-week field trip and subsequent practicals; minimum of 40% for the class record.",
+  "assessment": "An examination, written in June, with a subminimum of 40%, counts for 50% of the course mark. The class record, which counts for the balance, is made up as follows: practicals 35%, seminar 5%, class test 10%",
+  "is_science_course": true
+}

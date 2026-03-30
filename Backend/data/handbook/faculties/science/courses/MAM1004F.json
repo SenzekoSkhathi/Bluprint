@@ -1,0 +1,31 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MAM1004F",
+  "title": "Mathematics 1004",
+  "department": "mathematics-applied-mathematics",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": "First Year",
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "T C Van Heerden",
+  "prerequisites": {
+    "text": "At least 70% in NSC Mathematics. Students in other faculties not meeting the 70% NSC requirement may instead complete MAM1014F/MAM1022F followed by MAM1015S with a mark of 70% or higher. From 2027, this may be replaced by MAM1025F/MAM1026F followed by MAM1015S with 70% or higher.",
+    "parsed": {
+      "type": "or",
+      "codes": [
+        "MAM1014F/M",
+        "AM1022F",
+        "MAM1015S",
+        "MAM1025F/M",
+        "AM1026F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course provides mathematics for applications, particularly in the Life and Earth sciences. Topics include: functions and graphs; straight lines, power functions, polynomials, exponential and logarithmic functions, trigonometric functions (radians); discrete-time dynamical systems; stability and equilibria; rates of change; limits, derivatives; maxima and minima; concavity; asymptotes and curve sketching; antiderivatives and integrals; mathematical modelling; separable and linear differential equations.",
+  "lecture_times": "Monday - Friday, 1st period.",
+  "dp_requirements": "A class record of 30% or more; satisfactory lecture and tutorial attendance.",
+  "assessment": "Class tests and regular assignments determine a class record; one 3-hour examination makes up the balance of the final mark.",
+  "is_science_course": true
+}

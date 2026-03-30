@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "TDP3018S",
+  "title": "Performance Studies III",
+  "department": "theatre-and-performance",
+  "credits": 36,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "M Mbothwe",
+  "prerequisites": {
+    "text": "TDP3010F or by permission of the Head of Department.",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "TDP3010F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course examines various production processes that lead to the staging of performance events. It introduces students to the work of the director of scripted plays; the choreographer of dance performances; and the facilitator of collaboratively created works and/or interactive, participatory THEATRE, DANCE AND PERFORMANCE STUDIES 425 projects in non-theatrical contexts. Process elements including: research, analysis, concept, design and process strategies/methods will be explored through lectures, workshops and practical sessions. In addition, students will work on an essay that explor es more closely an aspect of the work of the director, the choreographer or the facilitator. Fieldwork visits to local performance/theatre/dance events may be included as part of this course.",
+  "lecture_times": "Mondays and Thursdays 5th and meridian. Fridays 5th to 7th period.",
+  "dp_requirements": "Satisfactory attendance at and participation in all scheduled course meetings and practical classes, and submission of all written and/or practical work by the due dates is compulsory for DP certificate purposes.",
+  "assessment": "Continuous assessment (essays, projects, practical tasks, class tests) counts 100%.",
+  "is_humanities_course": true
+}

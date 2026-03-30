@@ -1,0 +1,39 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "STA2030S",
+  "title": "Statistical Theory",
+  "department": "statistical-sciences",
+  "credits": 24,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "S Britz",
+  "prerequisites": {
+    "text": "At least 45% for STA2020F/S or STA2007F/S/H or STA2005S or (DP mark for STA2004F with concurrent registration for STA2020S/STA2007S). Co-requisites: Concurrent registration for MAM1032S or MAM1034S or MAM1012S or MAM1021F/S. Note: A student may not register concurrently for STA2030S and MAM1006H. A student cannot obtain credits for both STA2004F and STA2030S.",
+    "parsed": {
+      "type": "complex",
+      "codes_mentioned": [
+        "STA2020F/S",
+        "STA2007F/S",
+        "STA2005S",
+        "STA2004F",
+        "STA2020S/S",
+        "TA2007S",
+        "MAM1032S",
+        "MAM1034S",
+        "MAM1012S",
+        "MAM1021F/S",
+        "STA2030S",
+        "MAM1006H"
+      ],
+      "note": "Complex prerequisite logic - see text"
+    }
+  },
+  "corequisites": [],
+  "outline": "This course introduces students to Statistical Theory and Inference. It explores aspects of probability theory particularly relevant to statistics, including random variables, joint probability distributions, expected values and moment generating functions. The course content includes univariate distributions and moments of univariate distributions, moments of bivariate distributions, distributions of sample statistics, and parameter estimation and inference.",
+  "lecture_times": "Monday - Thursday, 1st period.",
+  "dp_requirements": "Satisfactory attendance of lectures, tutorials, practicals and tests and completion of assignments and/or class exercises as set out in course outline. Class record of at least 35%.",
+  "assessment": "Class record 40% and a 3-hour exam counting 60%. Weights will be adjusted in the case of missed assessments, as detailed in the course outline.",
+  "is_science_course": true
+}

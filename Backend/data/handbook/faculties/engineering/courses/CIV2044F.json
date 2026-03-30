@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CIV2044F",
+  "title": "Mechanics of Materials",
+  "department": "civil-engineering",
+  "credits": 15,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Professor S Skatulla",
+  "prerequisites": {
+    "text": "Refer to the programme and departmental sections in the 2026 EBE Faculty Handbook.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "The course aims to introduce students to the concepts of stress and strain in elastically deformable bodies. The course focuses on the analysis of stress and strain distributions in structures due to axial forces, shear forces, flexural and torsional momen ts with simplifications for rods, beams and shafts considering solid, hollow and thin-walled sections. Fundamentals of the three-dimensional theory of elasticity are applied to problems characterized by linear elastic and isotropic material behaviour. Difference between isotropic and anisotropic behaviour is discussed. The course is restricted simple statically-determinate structural systems, and simple applications to structures making use of the principle of equilibrium.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

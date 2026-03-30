@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EGS4047F",
+  "title": "Policy and Governance",
+  "department": "environmental-geographical-science",
+  "credits": 30,
+  "nqf_level": 8,
+  "year_level": "Postgraduate – Honours elective",
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr S Greyling",
+  "prerequisites": {
+    "text": "Acceptance for Honours or Master's specialising in EGS.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "This course looks at the underlying dynamics involved in the negotiation of environmental policy and its implementation. The assumption is that unsustainable outcomes are not a result of a lack of will or intention, but rather due to vastly varying values, knowledge and data that are brought to bear on decision making for the environment. The course challenges the 'cultural embeddedness' of policy and critiques the cultural processes underlying environmental policy. Topics include the processes through which institutions define and mediate policy outcomes; governance arrangements for sustainable development; and the roles of power, rationality, knowledge and values in achieving environmental and social justice.",
+  "lecture_times": null,
+  "dp_requirements": "At least 80% attendance record and submission of all assignments.",
+  "assessment": "Assignments 60%; examination 40%.",
+  "is_science_course": true
+}

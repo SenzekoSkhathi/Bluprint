@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CON3052S",
+  "title": "Property Economics II",
+  "department": "construction-economics-and-management",
+  "credits": 14,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr A Ametefe",
+  "prerequisites": {
+    "text": "CON1024S",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "CON1024S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to develop an understanding of: macro-economic analysis of property markets; micro-economic analysis of property markets; technology and property markets (blockchain, artificial intelligence, virtual property markets, shared workspaces, short-term housing rental, autonomous vehicles, research and information platforms, sales and leasing platforms, crowdfunding and equity raising platforms debt and mortgage platforms); positive and negative externalities in property markets; property markets and the environment; location theory and gravity models; property market cycles; modelling and forecasting of property markets; the impact of the public sector (fiscal and monetary policy) on property markets; institutional economics/analysis and property markets; and the role of property as a catalyst for economic growth. DEPARTMENTS IN THE FACULTY AND COURSES OFFERED 126",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

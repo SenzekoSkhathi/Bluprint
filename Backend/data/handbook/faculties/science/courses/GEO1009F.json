@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "GEO1009F",
+  "title": "Geosystems: An Introduction to Earth & Environmental Sciences",
+  "department": "environmental-and-geographical-science-administered-by-geological-sciences",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": "First Year",
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Associate Professor E M Bordy",
+  "prerequisites": {
+    "text": "At least 50% for NSC Geography, or at least 60% for NSC Physical Science or Life Sciences. Preference given to students majoring in Archaeology, Environmental and Geographical Science, Geology or Oceanography.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "This course aims to develop a broad understanding of how the Earth works. Over its >4.5 billion-year history, the Earth has been shaped by chemical, physical and biological processes. The course demonstrates why decoding the rock record of deep-time events is critical for explaining past, present and future environmental changes and the distribution of natural resources. It examines the interplay of terrestrial, marine, atmospheric and cryospheric processes within the Earth system, with emphasis on monitoring essential variables for understanding climate variability and change. The course also reviews human evolution and how Homo sapiens became the dominant cause of global environmental change, and explores social risks and vulnerabilities in response to the Earth's biophysical processes. It concludes with concepts of environmental hazard, risk, resilience, monitoring and adaptation.",
+  "lecture_times": "Monday - Friday, 2nd period.",
+  "dp_requirements": "An average of 40% on all marked classwork and tests. Submission of 80% of weekly assignments in each of the four sections (GEO, AGE, SEA, EGS). Attendance of the field trip is compulsory for students majoring in Archaeology, EGS, Geology or Oceanography.",
+  "assessment": "Marked classwork including class test/s counts 50%; a 3-hour written examination counts 50%. A sub-minimum of 40% in the class mark is required to write the theory examination. Supplementary examinations offered in July.",
+  "is_science_course": true
+}

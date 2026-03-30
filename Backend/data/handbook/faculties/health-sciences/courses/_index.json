@@ -1,0 +1,1547 @@
+{
+  "$schema": "handbook-course-index-v1",
+  "faculty": "health-sciences",
+  "year": 2026,
+  "total_courses": 167,
+  "courses": [
+    {
+      "code": "AAE4002W",
+      "title": "Anaesthesia Part 1",
+      "nqf_credits": 20,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 4,
+      "department_prefix": "AAE"
+    },
+    {
+      "code": "AAE4003W",
+      "title": "Anaesthesia (Part I) for External Credit",
+      "nqf_credits": 8,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 4,
+      "department_prefix": "AAE"
+    },
+    {
+      "code": "AAE5000W",
+      "title": "Anaesthesia (Part II) for External Credit",
+      "nqf_credits": 10,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 5,
+      "department_prefix": "AAE"
+    },
+    {
+      "code": "AAE6000W",
+      "title": "Anaesthesia Part II",
+      "nqf_credits": 10,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 6,
+      "department_prefix": "AAE"
+    },
+    {
+      "code": "AHS1003F",
+      "title": "Speech and Hearing Science",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS1025S",
+      "title": "Early Intervention",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS1032S",
+      "title": "Occupational Perspectives on Health and Well-being",
+      "nqf_credits": 20,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS1033F",
+      "title": "Movement Science I",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS1034S",
+      "title": "Introduction to Applied Physiotherapy",
+      "nqf_credits": 22,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS1035F",
+      "title": "Human Occupation and Development",
+      "nqf_credits": 22,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS1042F",
+      "title": "Human Communication Development",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS1045S",
+      "title": "Basis of Hearing and Balance",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS1054W",
+      "title": "South African Sign Language",
+      "nqf_credits": 8,
+      "nqf_level": 5,
+      "semester": "FY",
+      "year_level": 1,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS1060F",
+      "title": "Disability Info Management & Communication Systems I",
+      "nqf_credits": 7,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS1061F",
+      "title": "Disability Info Management & Communication Systems II",
+      "nqf_credits": 8,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS1062F",
+      "title": "Promoting Healthy Lifestyles",
+      "nqf_credits": 10,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS1063F",
+      "title": "Health, Wellness and Functional Ability Part I",
+      "nqf_credits": 15,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS1064F",
+      "title": "Health, Wellness and Functional Ability Part II",
+      "nqf_credits": 15,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS1065F",
+      "title": "Inclusive Development and Agency",
+      "nqf_credits": 15,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS1066F",
+      "title": "Work-Integrated Practice Learning Part I",
+      "nqf_credits": 25,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS1067F",
+      "title": "Work-Integrated Practice Learning Part II",
+      "nqf_credits": 25,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS1068W",
+      "title": "Disability Information Management and Communication Systems",
+      "nqf_credits": 15,
+      "nqf_level": 5,
+      "semester": "FY",
+      "year_level": 1,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS1069W",
+      "title": "Health and Functional Ability",
+      "nqf_credits": 30,
+      "nqf_level": 5,
+      "semester": "FY",
+      "year_level": 1,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS1070W",
+      "title": "Work Integrated Practice Learning",
+      "nqf_credits": 50,
+      "nqf_level": 5,
+      "semester": "FY",
+      "year_level": 1,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS2002W",
+      "title": "Clinical Sciences I",
+      "nqf_credits": 13,
+      "nqf_level": 6,
+      "semester": "FY",
+      "year_level": 2,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS2043W",
+      "title": "Occupational Therapy II",
+      "nqf_credits": 36,
+      "nqf_level": 6,
+      "semester": "FY",
+      "year_level": 2,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS2046F",
+      "title": "Diagnostic Audiology",
+      "nqf_credits": 18,
+      "nqf_level": 6,
+      "semester": "S1",
+      "year_level": 2,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS2047S",
+      "title": "Paediatric Rehabilitative Audiology",
+      "nqf_credits": 18,
+      "nqf_level": 6,
+      "semester": "S2",
+      "year_level": 2,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS2050H",
+      "title": "Clinical Physiotherapy I",
+      "nqf_credits": 18,
+      "nqf_level": 6,
+      "semester": "FY",
+      "year_level": 2,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS2052H",
+      "title": "Movement Science II",
+      "nqf_credits": 38,
+      "nqf_level": 6,
+      "semester": "FY",
+      "year_level": 2,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS2053H",
+      "title": "Applied Physiotherapy I",
+      "nqf_credits": 32,
+      "nqf_level": 6,
+      "semester": "FY",
+      "year_level": 2,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS2106F",
+      "title": "Child Language",
+      "nqf_credits": 21,
+      "nqf_level": 6,
+      "semester": "S1",
+      "year_level": 2,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS2107F",
+      "title": "Child Speech",
+      "nqf_credits": 18,
+      "nqf_level": 6,
+      "semester": "S1",
+      "year_level": 2,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS2108W",
+      "title": "Clinical Speech Therapy I",
+      "nqf_credits": 24,
+      "nqf_level": 6,
+      "semester": "FY",
+      "year_level": 2,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS2109S",
+      "title": "School-Based Interventions",
+      "nqf_credits": 21,
+      "nqf_level": 6,
+      "semester": "S2",
+      "year_level": 2,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS2110W",
+      "title": "Clinical Audiology I",
+      "nqf_credits": 24,
+      "nqf_level": 6,
+      "semester": "FY",
+      "year_level": 2,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS2111S",
+      "title": "Diagnostic Audiology in Special Populations",
+      "nqf_credits": 15,
+      "nqf_level": 6,
+      "semester": "S2",
+      "year_level": 2,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS3005W",
+      "title": "Clinical Speech Therapy II",
+      "nqf_credits": 30,
+      "nqf_level": 7,
+      "semester": "FY",
+      "year_level": 3,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS3008W",
+      "title": "Clinical Audiology II",
+      "nqf_credits": 30,
+      "nqf_level": 7,
+      "semester": "FY",
+      "year_level": 3,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS3062F",
+      "title": "Rehabilitation Technology",
+      "nqf_credits": 22,
+      "nqf_level": 7,
+      "semester": "S1",
+      "year_level": 3,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS3065S",
+      "title": "Adult Rehabilitative Audiology",
+      "nqf_credits": 18,
+      "nqf_level": 7,
+      "semester": "S2",
+      "year_level": 3,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS3069W",
+      "title": "Clinical Physiotherapy II",
+      "nqf_credits": 62,
+      "nqf_level": 7,
+      "semester": "FY",
+      "year_level": 3,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS3070H",
+      "title": "Becoming a Rehabilitation Professional I",
+      "nqf_credits": 22,
+      "nqf_level": 7,
+      "semester": "FY",
+      "year_level": 3,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS3071F",
+      "title": "Acquired Neurogenic Language Disorders",
+      "nqf_credits": 22,
+      "nqf_level": 7,
+      "semester": "S1",
+      "year_level": 3,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS3072S",
+      "title": "Paediatric Motor Speech Disorders & Dysphagia",
+      "nqf_credits": 22,
+      "nqf_level": 7,
+      "semester": "S2",
+      "year_level": 3,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS3073F",
+      "title": "Adult Dysphagia and Motor Speech",
+      "nqf_credits": 22,
+      "nqf_level": 7,
+      "semester": "S1",
+      "year_level": 3,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS3075F",
+      "title": "OAEs and Electrophysiology",
+      "nqf_credits": 22,
+      "nqf_level": 7,
+      "semester": "S1",
+      "year_level": 3,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS3076H",
+      "title": "Movement Science III",
+      "nqf_credits": 24,
+      "nqf_level": 7,
+      "semester": "FY",
+      "year_level": 3,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS3077H",
+      "title": "Applied Physiotherapy II",
+      "nqf_credits": 22,
+      "nqf_level": 7,
+      "semester": "FY",
+      "year_level": 3,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS3078H",
+      "title": "Research Methods and Biostatistics I",
+      "nqf_credits": 10,
+      "nqf_level": 7,
+      "semester": "FY",
+      "year_level": 3,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS3102S",
+      "title": "Child Language II",
+      "nqf_credits": 15,
+      "nqf_level": 7,
+      "semester": "S2",
+      "year_level": 3,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS3103F",
+      "title": "Voice",
+      "nqf_credits": 15,
+      "nqf_level": 7,
+      "semester": "S1",
+      "year_level": 3,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS3104S",
+      "title": "Vestibular Management",
+      "nqf_credits": 15,
+      "nqf_level": 7,
+      "semester": "S2",
+      "year_level": 3,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS3105F",
+      "title": "Public Health Audiology",
+      "nqf_credits": 15,
+      "nqf_level": 7,
+      "semester": "S1",
+      "year_level": 3,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS3107W",
+      "title": "Occupational Therapy Theory and Practice in Physical Health",
+      "nqf_credits": 38,
+      "nqf_level": 7,
+      "semester": "FY",
+      "year_level": 3,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS3108W",
+      "title": "Occupational Therapy Theory and Practice in Mental Health",
+      "nqf_credits": 38,
+      "nqf_level": 7,
+      "semester": "FY",
+      "year_level": 3,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS3113W",
+      "title": "Foundation Theory for Occupational Therapy Practice I",
+      "nqf_credits": 26,
+      "nqf_level": 7,
+      "semester": "FY",
+      "year_level": 3,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS4000W",
+      "title": "Research Report",
+      "nqf_credits": 30,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 4,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS4005H",
+      "title": "Clinical Speech Therapy IIIA",
+      "nqf_credits": 45,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 4,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS4006H",
+      "title": "Clinical Speech Therapy IIIB",
+      "nqf_credits": 45,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 4,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS4008H",
+      "title": "Clinical Audiology IIIA",
+      "nqf_credits": 45,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 4,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS4009H",
+      "title": "Clinical Audiology IIIB",
+      "nqf_credits": 45,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 4,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS4065W",
+      "title": "Clinical Physiotherapy III",
+      "nqf_credits": 98,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 4,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS4066F",
+      "title": "Becoming a Rehabilitation Professional II",
+      "nqf_credits": 4,
+      "nqf_level": 8,
+      "semester": "S1",
+      "year_level": 4,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS4067S",
+      "title": "Seminars in Communication Sciences",
+      "nqf_credits": 4,
+      "nqf_level": 8,
+      "semester": "S2",
+      "year_level": 4,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS4071F",
+      "title": "Applied Physiotherapy III",
+      "nqf_credits": 20,
+      "nqf_level": 8,
+      "semester": "S1",
+      "year_level": 4,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS4072H",
+      "title": "Research Methods and Biostatistics II",
+      "nqf_credits": 10,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 4,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS4119W",
+      "title": "Occupational Therapy Research and Practice Management",
+      "nqf_credits": 48,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 4,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS4120W",
+      "title": "Foundation Theory for Occupational Therapy Practice II",
+      "nqf_credits": 48,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 4,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS4121W",
+      "title": "Occupational Therapy Practice and Service Learning",
+      "nqf_credits": 48,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 4,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS4184S",
+      "title": "Applied Physiotherapy III",
+      "nqf_credits": 20,
+      "nqf_level": 8,
+      "semester": "S2",
+      "year_level": 4,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "AHS4185S",
+      "title": "Becoming a Rehabilitation Professional II",
+      "nqf_credits": 4,
+      "nqf_level": 8,
+      "semester": "S2",
+      "year_level": 4,
+      "department_prefix": "AHS"
+    },
+    {
+      "code": "ASL1300F",
+      "title": "Introduction to Language Studies",
+      "nqf_credits": 15,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "ASL",
+      "is_hs_course": false,
+      "offered_by_faculty": "humanities"
+    },
+    {
+      "code": "ASL1301S",
+      "title": "Introduction to Sociolinguistics",
+      "nqf_credits": 15,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "ASL",
+      "is_hs_course": false,
+      "offered_by_faculty": "humanities"
+    },
+    {
+      "code": "CEM1011F",
+      "title": "Chemistry for Medical Students",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "CEM",
+      "is_hs_course": false,
+      "offered_by_faculty": "science"
+    },
+    {
+      "code": "CHM5003W",
+      "title": "Surgery",
+      "nqf_credits": 40,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 5,
+      "department_prefix": "CHM"
+    },
+    {
+      "code": "CHM5004H",
+      "title": "Trauma for External Credit",
+      "nqf_credits": 10,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 5,
+      "department_prefix": "CHM"
+    },
+    {
+      "code": "CHM5004W",
+      "title": "Trauma for External Credit",
+      "nqf_credits": 10,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 5,
+      "department_prefix": "CHM"
+    },
+    {
+      "code": "CHM5005W",
+      "title": "Orthopaedic Surgery for External Credit",
+      "nqf_credits": 10,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 5,
+      "department_prefix": "CHM"
+    },
+    {
+      "code": "CHM5007W",
+      "title": "Neurology and Neurosurgery",
+      "nqf_credits": 20,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 5,
+      "department_prefix": "CHM"
+    },
+    {
+      "code": "CHM5008W",
+      "title": "Ophthalmology",
+      "nqf_credits": 10,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 5,
+      "department_prefix": "CHM"
+    },
+    {
+      "code": "CHM5009W",
+      "title": "Otorhinolaryngology",
+      "nqf_credits": 10,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 5,
+      "department_prefix": "CHM"
+    },
+    {
+      "code": "CHM5010W",
+      "title": "Urology",
+      "nqf_credits": 10,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 5,
+      "department_prefix": "CHM"
+    },
+    {
+      "code": "CHM5011W",
+      "title": "Surgery for External Credit",
+      "nqf_credits": 19,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 5,
+      "department_prefix": "CHM"
+    },
+    {
+      "code": "CHM6000W",
+      "title": "Surgery (including Allied Disciplines)",
+      "nqf_credits": 41,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 6,
+      "department_prefix": "CHM"
+    },
+    {
+      "code": "FCE2000W",
+      "title": "Becoming a Doctor Part 1A",
+      "nqf_credits": 21,
+      "nqf_level": 6,
+      "semester": "FY",
+      "year_level": 2,
+      "department_prefix": "FCE"
+    },
+    {
+      "code": "FCE3000F",
+      "title": "Becoming a Doctor Part IIA",
+      "nqf_credits": 10,
+      "nqf_level": 7,
+      "semester": "S1",
+      "year_level": 3,
+      "department_prefix": "FCE"
+    },
+    {
+      "code": "FCE6000W",
+      "title": "Family Medicine and Palliative Care",
+      "nqf_credits": 21,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 6,
+      "department_prefix": "FCE"
+    },
+    {
+      "code": "FCE6001W",
+      "title": "Long Elective",
+      "nqf_credits": 19,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 6,
+      "department_prefix": "FCE"
+    },
+    {
+      "code": "FCE6005W",
+      "title": "Short Elective",
+      "nqf_credits": 10,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 6,
+      "department_prefix": "FCE"
+    },
+    {
+      "code": "HSE1001F",
+      "title": "Fundamentals of Health Sciences",
+      "nqf_credits": 60,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "HSE"
+    },
+    {
+      "code": "HSE2000W",
+      "title": "Becoming a Doctor Part 1C",
+      "nqf_credits": 22,
+      "nqf_level": 6,
+      "semester": "FY",
+      "year_level": 2,
+      "department_prefix": "HSE"
+    },
+    {
+      "code": "HSE3000F",
+      "title": "Becoming a Doctor Part IIC",
+      "nqf_credits": 15,
+      "nqf_level": 7,
+      "semester": "S1",
+      "year_level": 3,
+      "department_prefix": "HSE"
+    },
+    {
+      "code": "HSE6004W",
+      "title": "Exit Examination on Procedural Competence",
+      "nqf_credits": 0,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 6,
+      "department_prefix": "HSE"
+    },
+    {
+      "code": "HUB1006F",
+      "title": "Introduction to Integrated Health Sciences: Part I",
+      "nqf_credits": 30,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "HUB"
+    },
+    {
+      "code": "HUB1014S",
+      "title": "Anatomy of Communication Sciences",
+      "nqf_credits": 20,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "HUB"
+    },
+    {
+      "code": "HUB1019F",
+      "title": "Anatomy and Physiology 1A",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "HUB"
+    },
+    {
+      "code": "HUB1020S",
+      "title": "Anatomy and Physiology IB",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "HUB"
+    },
+    {
+      "code": "HUB1022F",
+      "title": "Biosciences for Physiotherapy IA",
+      "nqf_credits": 9,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "HUB"
+    },
+    {
+      "code": "HUB1023S",
+      "title": "Biosciences for Physiotherapy IB",
+      "nqf_credits": 9,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "HUB"
+    },
+    {
+      "code": "HUB2015W",
+      "title": "Anatomy & Physiology II for Health & Rehab Sciences",
+      "nqf_credits": 36,
+      "nqf_level": 6,
+      "semester": "FY",
+      "year_level": 2,
+      "department_prefix": "HUB"
+    },
+    {
+      "code": "HUB2017H",
+      "title": "Integrated Health Systems Part 1A",
+      "nqf_credits": 57,
+      "nqf_level": 6,
+      "semester": "FY",
+      "year_level": 2,
+      "department_prefix": "HUB"
+    },
+    {
+      "code": "HUB2023W",
+      "title": "Biosciences for Physiotherapy II",
+      "nqf_credits": 9,
+      "nqf_level": 6,
+      "semester": "FY",
+      "year_level": 2,
+      "department_prefix": "HUB"
+    },
+    {
+      "code": "HUB3006F",
+      "title": "Applied Human Biology",
+      "nqf_credits": 36,
+      "nqf_level": 7,
+      "semester": "S1",
+      "year_level": 3,
+      "department_prefix": "HUB"
+    },
+    {
+      "code": "HUB3007S",
+      "title": "Human Neurosciences",
+      "nqf_credits": 36,
+      "nqf_level": 7,
+      "semester": "S2",
+      "year_level": 3,
+      "department_prefix": "HUB"
+    },
+    {
+      "code": "IBS1007S",
+      "title": "Introduction to Integrated Health Sciences: Part II",
+      "nqf_credits": 35,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "IBS"
+    },
+    {
+      "code": "IBS3020W",
+      "title": "Molecular Medicine",
+      "nqf_credits": 72,
+      "nqf_level": 7,
+      "semester": "FY",
+      "year_level": 3,
+      "department_prefix": "IBS"
+    },
+    {
+      "code": "MDN2001S",
+      "title": "Special Study Modules",
+      "nqf_credits": 16,
+      "nqf_level": 6,
+      "semester": "S2",
+      "year_level": 2,
+      "department_prefix": "MDN"
+    },
+    {
+      "code": "MDN3001S",
+      "title": "Introduction to Clinical Practice",
+      "nqf_credits": 68,
+      "nqf_level": 7,
+      "semester": "S2",
+      "year_level": 3,
+      "department_prefix": "MDN"
+    },
+    {
+      "code": "MDN3005W",
+      "title": "Scientific Principles of Cosmetic Formulations",
+      "nqf_credits": 30,
+      "nqf_level": 7,
+      "semester": "FY",
+      "year_level": 3,
+      "department_prefix": "MDN"
+    },
+    {
+      "code": "MDN3006W",
+      "title": "Cosmetic Formulation Technology",
+      "nqf_credits": 30,
+      "nqf_level": 7,
+      "semester": "FY",
+      "year_level": 3,
+      "department_prefix": "MDN"
+    },
+    {
+      "code": "MDN3007W",
+      "title": "Hair and Skin Biology for the Cosmetic Formulator",
+      "nqf_credits": 30,
+      "nqf_level": 7,
+      "semester": "FY",
+      "year_level": 3,
+      "department_prefix": "MDN"
+    },
+    {
+      "code": "MDN3008W",
+      "title": "Cosmetics: Claims, Regulation and Ethics",
+      "nqf_credits": 15,
+      "nqf_level": 7,
+      "semester": "FY",
+      "year_level": 3,
+      "department_prefix": "MDN"
+    },
+    {
+      "code": "MDN3009W",
+      "title": "Professional Communication & Project Management for Cosmetic Scientists",
+      "nqf_credits": 15,
+      "nqf_level": 7,
+      "semester": "FY",
+      "year_level": 3,
+      "department_prefix": "MDN"
+    },
+    {
+      "code": "MDN3010W",
+      "title": "Cosmetic Formulation Science Inservice Training",
+      "nqf_credits": 0,
+      "nqf_level": 7,
+      "semester": "FY",
+      "year_level": 3,
+      "department_prefix": "MDN"
+    },
+    {
+      "code": "MDN4001W",
+      "title": "Medicine: Ambulatory Care",
+      "nqf_credits": 20,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 4,
+      "department_prefix": "MDN"
+    },
+    {
+      "code": "MDN4011W",
+      "title": "Medicine: Ward Care",
+      "nqf_credits": 40,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 4,
+      "department_prefix": "MDN"
+    },
+    {
+      "code": "MDN4015W",
+      "title": "Pharmacology and Applied Therapeutics",
+      "nqf_credits": 20,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 4,
+      "department_prefix": "MDN"
+    },
+    {
+      "code": "MDN4017W",
+      "title": "Medicine for External Credit",
+      "nqf_credits": 15,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 4,
+      "department_prefix": "MDN"
+    },
+    {
+      "code": "MDN5000W",
+      "title": "Medicine for External Credit",
+      "nqf_credits": 24,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 5,
+      "department_prefix": "MDN"
+    },
+    {
+      "code": "MDN5003H",
+      "title": "Pharmacology and Applied Therapeutics",
+      "nqf_credits": 20,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 5,
+      "department_prefix": "MDN"
+    },
+    {
+      "code": "MDN5006W",
+      "title": "Rheumatology",
+      "nqf_credits": 10,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 5,
+      "department_prefix": "MDN"
+    },
+    {
+      "code": "MDN5008W",
+      "title": "Dermatology",
+      "nqf_credits": 10,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 5,
+      "department_prefix": "MDN"
+    },
+    {
+      "code": "MDN6000W",
+      "title": "Medicine (including Allied Disciplines)",
+      "nqf_credits": 41,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 6,
+      "department_prefix": "MDN"
+    },
+    {
+      "code": "OBS4003W",
+      "title": "Obstetrics",
+      "nqf_credits": 30,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 4,
+      "department_prefix": "OBS"
+    },
+    {
+      "code": "OBS4006W",
+      "title": "Obstetrics for External Credit",
+      "nqf_credits": 15,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 4,
+      "department_prefix": "OBS"
+    },
+    {
+      "code": "OBS5000W",
+      "title": "Gynaecology",
+      "nqf_credits": 4,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 5,
+      "department_prefix": "OBS"
+    },
+    {
+      "code": "OBS5005W",
+      "title": "Gynaecology",
+      "nqf_credits": 20,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 5,
+      "department_prefix": "OBS"
+    },
+    {
+      "code": "OBS5006W",
+      "title": "Gynaecology for External Credit",
+      "nqf_credits": 27,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 5,
+      "department_prefix": "OBS"
+    },
+    {
+      "code": "OBS5007W",
+      "title": "Obstetrics for External Credit",
+      "nqf_credits": 41,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 5,
+      "department_prefix": "OBS"
+    },
+    {
+      "code": "OBS6000W",
+      "title": "Obstetrics",
+      "nqf_credits": 41,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 6,
+      "department_prefix": "OBS"
+    },
+    {
+      "code": "PED4016W",
+      "title": "Neonatology",
+      "nqf_credits": 10,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 4,
+      "department_prefix": "PED"
+    },
+    {
+      "code": "PED4017W",
+      "title": "Neonatology for External Credit",
+      "nqf_credits": 7,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 4,
+      "department_prefix": "PED"
+    },
+    {
+      "code": "PED4049W",
+      "title": "Introduction to Child and Adolescent Health",
+      "nqf_credits": 10,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 4,
+      "department_prefix": "PED"
+    },
+    {
+      "code": "PED5004W",
+      "title": "General Care of the Child for External Credit",
+      "nqf_credits": 40,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 5,
+      "department_prefix": "PED"
+    },
+    {
+      "code": "PED5005W",
+      "title": "Caring for Children: Paediatric Surgery",
+      "nqf_credits": 10,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 5,
+      "department_prefix": "PED"
+    },
+    {
+      "code": "PED5006W",
+      "title": "Caring for Children: Paediatric Medicine",
+      "nqf_credits": 30,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 5,
+      "department_prefix": "PED"
+    },
+    {
+      "code": "PED6000W",
+      "title": "Paediatrics and Child Health",
+      "nqf_credits": 30,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 6,
+      "department_prefix": "PED"
+    },
+    {
+      "code": "PED6004W",
+      "title": "Neonatal Medicine",
+      "nqf_credits": 10,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 6,
+      "department_prefix": "PED"
+    },
+    {
+      "code": "PHY1025F",
+      "title": "Physics",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "PHY",
+      "is_hs_course": false,
+      "offered_by_faculty": "science"
+    },
+    {
+      "code": "PPH1001F",
+      "title": "Becoming a Professional",
+      "nqf_credits": 15,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "PPH"
+    },
+    {
+      "code": "PPH1002S",
+      "title": "Becoming a Health Professional",
+      "nqf_credits": 15,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "PPH"
+    },
+    {
+      "code": "PPH4056W",
+      "title": "Health in Context",
+      "nqf_credits": 40,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 4,
+      "department_prefix": "PPH"
+    },
+    {
+      "code": "PPH6001W",
+      "title": "Long Elective",
+      "nqf_credits": 6,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 6,
+      "department_prefix": "PPH"
+    },
+    {
+      "code": "PRY2002W",
+      "title": "Psychiatry for Occupational Therapists",
+      "nqf_credits": 14,
+      "nqf_level": 6,
+      "semester": "FY",
+      "year_level": 2,
+      "department_prefix": "PRY"
+    },
+    {
+      "code": "PRY4000W",
+      "title": "Clinical Psychiatry",
+      "nqf_credits": 30,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 4,
+      "department_prefix": "PRY"
+    },
+    {
+      "code": "PRY4001W",
+      "title": "Psychiatry for External Credit",
+      "nqf_credits": 15,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 4,
+      "department_prefix": "PRY"
+    },
+    {
+      "code": "PRY5001W",
+      "title": "Psychiatry and Mental Health for External Credit",
+      "nqf_credits": 30,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 5,
+      "department_prefix": "PRY"
+    },
+    {
+      "code": "PRY6000W",
+      "title": "Psychiatry",
+      "nqf_credits": 21,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 6,
+      "department_prefix": "PRY"
+    },
+    {
+      "code": "PSY1004F",
+      "title": "Introduction to Psychology Part 1",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "PSY",
+      "is_hs_course": false,
+      "offered_by_faculty": "humanities"
+    },
+    {
+      "code": "PSY1005S",
+      "title": "Introduction to Psychology Part 2",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "PSY",
+      "is_hs_course": false,
+      "offered_by_faculty": "humanities"
+    },
+    {
+      "code": "PSY1006F",
+      "title": "Introduction to Psychology Part 1+",
+      "nqf_credits": 10,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "PSY",
+      "is_hs_course": false,
+      "offered_by_faculty": "humanities"
+    },
+    {
+      "code": "PSY1007S",
+      "title": "Introduction to Psychology Part 2+",
+      "nqf_credits": 10,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "PSY",
+      "is_hs_course": false,
+      "offered_by_faculty": "humanities"
+    },
+    {
+      "code": "PSY2013F",
+      "title": "Social and Developmental Psychology",
+      "nqf_credits": 20,
+      "nqf_level": 6,
+      "semester": "S1",
+      "year_level": 2,
+      "department_prefix": "PSY",
+      "is_hs_course": false,
+      "offered_by_faculty": "humanities"
+    },
+    {
+      "code": "PSY2014S",
+      "title": "Cognitive Neuroscience and Abnormal Psychology",
+      "nqf_credits": 20,
+      "nqf_level": 6,
+      "semester": "S2",
+      "year_level": 2,
+      "department_prefix": "PSY",
+      "is_hs_course": false,
+      "offered_by_faculty": "humanities"
+    },
+    {
+      "code": "PSY2015F",
+      "title": "Research in Psychology I",
+      "nqf_credits": 20,
+      "nqf_level": 6,
+      "semester": "S1",
+      "year_level": 2,
+      "department_prefix": "PSY",
+      "is_hs_course": false,
+      "offered_by_faculty": "humanities"
+    },
+    {
+      "code": "PTY2000S",
+      "title": "Integrated Health Systems Part IB",
+      "nqf_credits": 47,
+      "nqf_level": 6,
+      "semester": "S2",
+      "year_level": 2,
+      "department_prefix": "PTY"
+    },
+    {
+      "code": "PTY3009F",
+      "title": "Integrated Health Systems Part II",
+      "nqf_credits": 59,
+      "nqf_level": 7,
+      "semester": "S1",
+      "year_level": 3,
+      "department_prefix": "PTY"
+    },
+    {
+      "code": "PTY5012W",
+      "title": "Forensic Medicine for External Credit",
+      "nqf_credits": 10,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 5,
+      "department_prefix": "PTY"
+    },
+    {
+      "code": "PTY6012W",
+      "title": "Forensic Medicine",
+      "nqf_credits": 10,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 6,
+      "department_prefix": "PTY"
+    },
+    {
+      "code": "SLL1028H",
+      "title": "Xhosa for Health and Rehabilitation Sciences",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "FY",
+      "year_level": 1,
+      "department_prefix": "SLL",
+      "is_hs_course": false,
+      "offered_by_faculty": "humanities"
+    },
+    {
+      "code": "SLL1041S",
+      "title": "Beginners isiXhosa for MBChB",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "SLL",
+      "is_hs_course": false,
+      "offered_by_faculty": "humanities"
+    },
+    {
+      "code": "SLL1044S",
+      "title": "Beginners Afrikaans for MBChB",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "SLL",
+      "is_hs_course": false,
+      "offered_by_faculty": "humanities"
+    },
+    {
+      "code": "SLL1048H",
+      "title": "Afrikaans for Health and Rehabilitation Sciences",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "FY",
+      "year_level": 1,
+      "department_prefix": "SLL",
+      "is_hs_course": false,
+      "offered_by_faculty": "humanities"
+    },
+    {
+      "code": "SLL2002H",
+      "title": "Becoming a Doctor Part 1B",
+      "nqf_credits": 18,
+      "nqf_level": 6,
+      "semester": "FY",
+      "year_level": 2,
+      "department_prefix": "SLL",
+      "is_hs_course": false,
+      "offered_by_faculty": "humanities"
+    },
+    {
+      "code": "SLL3002F",
+      "title": "Becoming a Doctor (languages) Part IB",
+      "nqf_credits": 30,
+      "nqf_level": 7,
+      "semester": "S1",
+      "year_level": 3,
+      "department_prefix": "SLL",
+      "is_hs_course": false,
+      "offered_by_faculty": "humanities"
+    },
+    {
+      "code": "SLL3003W",
+      "title": "Clinical Language",
+      "nqf_credits": 0,
+      "nqf_level": 7,
+      "semester": "FY",
+      "year_level": 3,
+      "department_prefix": "SLL",
+      "is_hs_course": false,
+      "offered_by_faculty": "humanities"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CSC5035Z",
+  "title": "Natural Language Processing",
+  "department": "computer-science",
+  "credits": 12,
+  "nqf_level": 9,
+  "year_level": "Postgraduate (Master's)",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "Dr J Buys",
+  "prerequisites": {
+    "text": "Admission into the Master's degree specialising in Computer Science or Artificial Intelligence, or permission from the course convener.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "The course introduces fundamental concepts and current approaches in Natural Language Processing. Course content includes: Text preprocessing; Naive Bayes and logistic regression for text classification; Word vectors and distributional semantics; n-gram language models; Sequence labelling with hidden Markov Models; Syntactic parsing; Recurrent neural networks for sequence processing; Encoder-decoder neural networks; Transformers neural networks and contextual embeddings. Selected NLP applications include: Sentiment analysis, Parts-of-Speech tagging, Named Entity Recognition, machine translation, information extraction and question answering.",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "None.",
+  "assessment": "Exam (take-home): 50%; Assignments: 50%.",
+  "is_science_course": true
+}

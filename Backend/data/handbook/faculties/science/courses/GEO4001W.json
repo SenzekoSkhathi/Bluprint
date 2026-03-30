@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "GEO4001W",
+  "title": "Geochemistry Honours",
+  "department": "geological-sciences",
+  "credits": 160,
+  "nqf_level": 8,
+  "year_level": "Postgraduate – Honours",
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": null,
+  "prerequisites": {
+    "text": "As for GEO4000W. Students undertaking a geochemical or analytical geochemistry project may elect to graduate in Geochemistry, subject to approval of the Head of Department.",
+    "parsed": {
+      "type": "or",
+      "codes": [
+        "GEO4000W"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "As for GEO4000W (Geology Honours). Students undertaking a geochemical or analytical geochemistry project elect to graduate under this code.",
+  "lecture_times": null,
+  "dp_requirements": null,
+  "assessment": "As for GEO4000W.",
+  "is_science_course": true
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CON2006W",
+  "title": "Construction Technology II",
+  "department": "construction-economics-and-management",
+  "credits": 28,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Mr U Ordor",
+  "prerequisites": {
+    "text": "CON1004W",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "CON1004W"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to develop an understanding of construction technology appropriate for assembly of light weight long span structures and multi -storey buildings, including: assembly and performance, reinforced concrete, steel and timber, materials, compone nts, plant and equipment required: such as formwork, concrete, steel including reinforcing, roofing systems (including flat roof waterproofing); cladding systems; windows and doors, ceilings and partitions, access flooring, finishes; services requirements and services spaces; and fire and other regulations.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

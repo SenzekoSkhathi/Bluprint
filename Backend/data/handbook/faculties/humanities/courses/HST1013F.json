@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "HST1013F",
+  "title": "Historical Studies I",
+  "department": "historical-studies",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "TBA",
+  "prerequisites": {
+    "text": "None",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "We often do not realise how much of our contemporary, everyday world has been shaped by processes of the long past. Through a carefully selected set of practices, objects, events, ideas and institutions, this course offers a broad and critical narrative of world history from the sixteenth to the end of the eighteenth century. While new links came to be forged between hitherto unconnected world regions through an increased level of travel, commerce and colonisation during this period, for many societies in t he world it was also a profound experience of rupture with their traditional modes of social organisation. In encouraging students to think dialectically about this complex interaction, this course aims at providing them with a firm grounding in both empirical and conceptual literature appropriate to a first-year undergraduate programme.",
+  "lecture_times": "Monday, Tuesday, Wednesday 3rd period.",
+  "dp_requirements": "100% of required coursework and course evaluation.",
+  "assessment": "Continuous assessment (essays, projects, tests, etc.) counts 100%.",
+  "is_humanities_course": true
+}

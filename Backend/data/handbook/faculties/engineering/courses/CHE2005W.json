@@ -1,0 +1,35 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CHE2005W",
+  "title": "Chemical Engineering II",
+  "department": "chemical-engineering",
+  "credits": 72,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Dr TP Mokone",
+  "prerequisites": {
+    "text": "CEM1000W, CHE1006F, CHE1007S, MAM1020F/S, MAM1021S/F, PHY1012F/S, STA1008S",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "CEM1000W",
+        "CHE1006F",
+        "CHE1007S",
+        "MAM1020F",
+        "MAM1021S",
+        "PHY1012F",
+        "STA1008S"
+      ]
+    }
+  },
+  "corequisites": [
+    "CHE2000X"
+  ],
+  "outline": "This course aims to further develop the understanding of chemical engineering theory and practice. The theory is taught in integrated blocks and is reinforced and contextualised by: theory-related tools (e.g. heuristics, flowsheeting, charts, tables); engi neering practice -related tools and skills (e.g. sustainability, environment & economics, safety & health, communication, teamwork, drawing and computing); practicals; and project work. Detailed theory topics are: Energy Balances and Thermodynamic Properties of Substances: ideal gas; phase diagrams; energy balance elements and influence of T and P; Bernouilli equation; simultaneous mass and energy balances; Mollier diagrams; cyclic systems; entropy. Reaction Systems: heats of formation/reaction/combustion; mass and energy balances with reaction; chemical equilibrium; reactor mole balances; CSTR, PFR and multiple reactors; chemical kinetics; recycle effects; design using data; reactor profiles. Interface Systems: binary systems; equilibrium diagrams; equilibrium constants; volatility; flash calculations; counter -current cascade systems; multistage vapour -liquid equilibrium; column internals; multicomponent distillation. Heat Systems: heat transfer mechanisms; resistances in series; heat exchanger networks. Fluid Systems: forces on submerged surfaces; fluids under constant acceleration; linear momentum and forces on bends; viscosity; laminar and turbulent flow; Hagen -Poiseuille law; friction; drag coefficients; pump characteristics.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

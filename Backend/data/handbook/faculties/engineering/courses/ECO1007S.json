@@ -1,0 +1,26 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "ECO1007S",
+  "title": "Economics for Engineers",
+  "department": "economics",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "C Mlatsheni",
+  "prerequisites": {
+    "text": "None",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "ECO1007S is a one semester course that introduces students to the core concepts in both micro - and macroeconomics. The focus is on the understanding of theoretical concepts and applications, rather 161 than on rigorous proofs. Microeconomics focuses on the decisions of individual consumers, producers, and households, and in this section we look at standard economic models including the production possibility frontier, demand and supply analysis, and elas ticity. We also explore the idea of comparative advantage as it applies to specialisation and trade. Macroeconomics focuses on the economy as a whole and in this section of the course we unravel the meaning, application, and limitations of such everyday concepts as money, inflation, exchange rates, unemployment, and GDP.",
+  "lecture_times": "12h00 - 13h00 Tuesday, Wednesday, Thursday & Friday",
+  "dp_requirements": "All assessments (including tests and essay) to be completed.",
+  "assessment": "Coursework: 45%; Exam: 55%. The course outline will provide more detail on the breakdown for submission weightings and variation for exemptions and absences.",
+  "is_engineering_course": false,
+  "offered_by_faculty": "commerce"
+}

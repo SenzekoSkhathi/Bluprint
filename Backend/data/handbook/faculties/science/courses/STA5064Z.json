@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "STA5064Z",
+  "title": "Ecological Statistics",
+  "department": "statistical-sciences",
+  "credits": 15,
+  "nqf_level": 9,
+  "year_level": "Postgraduate (Master's)",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "Professor R Altwegg",
+  "prerequisites": {
+    "text": "Not specified.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "This module covers the latest statistical methods particular to ecological statistics. Topics include capture-mark-recapture models (closed and open populations, multi-state models), occupancy models, distance sampling, spatially explicit capture-recapture models, state-space models in ecology, and models for animal movement.",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "Not specified.",
+  "assessment": "100% Assignments.",
+  "is_science_course": true
+}

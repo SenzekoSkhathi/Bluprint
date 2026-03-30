@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CSC5033Z",
+  "title": "Human Computer Interaction",
+  "department": "computer-science",
+  "credits": 12,
+  "nqf_level": 9,
+  "year_level": "Postgraduate (Master's)",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "Associate Professor M Densmore",
+  "prerequisites": {
+    "text": "Admission into the Master's degree specialising in Computer Science, or permission from the course convener.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "This course introduces basic concepts and practice around user-centred design of digital systems. Topics include the design cycle, sketching and storyboarding, task analysis, contextual inquiry, conceptual models, usability inspection, human information processing, experience design, and qualitative and quantitative study design and evaluation. The course contains additional practical work to distinguish it from the honours level module CSC4024Z.",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "None.",
+  "assessment": "Participation: 10%; Individual Practical Assessments: 20%; Group Project Assessments: 40%; Final Exam: 30%.",
+  "is_science_course": true
+}

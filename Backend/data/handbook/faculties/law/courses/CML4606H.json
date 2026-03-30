@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CML4606H",
+  "title": "Moot Caput",
+  "department": "commercial-law",
+  "credits": 9,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "FY",
+  "semester_code": "H",
+  "convener": "TBA (Department of Commercial Law)",
+  "prerequisites": {
+    "text": "All Preliminary and Intermediate Level courses to have been completed.",
+    "parsed": {
+      "type": "level_completion",
+      "levels_required": [
+        "preliminary",
+        "intermediate"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The option of doing a moot is available in each department in the Faculty. Students should identify the department in which they wish to moot and may register for a moot only with the permission of a member of the department concerned. Usually departments will require at least two students before a moot option will be offered. To complete a moot option successfully, students must submit adequate heads of argument and participate in moot proceedings presided over by more than one person, at least one of whom should not be a member of the Faculty.",
+  "lecture_times": "Not applicable.",
+  "dp_requirements": "None",
+  "assessment": "Heads of argument count for 100% unless the supervisor agrees to allocate a percentage of the mark to oral presentation. The percentage of the mark allocated to oral presentation may not exceed 50%.",
+  "is_law_course": true
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PBL4111S",
+  "title": "Public Interest Litigation",
+  "department": "public-law",
+  "credits": 9,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "TBA",
+  "prerequisites": {
+    "text": "All Preliminary and Intermediate Level courses to have been completed.",
+    "parsed": {
+      "type": "level_completion",
+      "levels_required": [
+        "preliminary",
+        "intermediate"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course examines the theory and practice of public interest litigation in South Africa.",
+  "lecture_times": "Two lectures per week.",
+  "dp_requirements": "None",
+  "assessment": "Refer to course handout.",
+  "is_law_course": true
+}

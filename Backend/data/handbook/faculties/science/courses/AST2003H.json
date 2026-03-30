@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AST2003H",
+  "title": "Astronomical Techniques",
+  "department": "astronomy",
+  "credits": 24,
+  "nqf_level": 6,
+  "year_level": "Second Year",
+  "semester": "FY",
+  "semester_code": "H",
+  "convener": "Professor P A Woudt",
+  "prerequisites": {
+    "text": "{'pre_requisites': 'PHY1004W and MAM1000W or both MAM1031F & MAM1032S (or equivalent); or PHY1023H and MAM1005H; CSC1015F/S', 'co_requisites': 'PHY1004W and MAM1006H'}",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "This course combines a large practical component (radio and optical astronomy practicals) with theoretical background in astronomical techniques, instrumentation and data analysis. Topics include: Positional astronomy: time systems, spherical astronomy, co-ordinate systems and conversions, astrometry; Detection systems: interaction of radiation and matter, ultraviolet and optical detectors; Optics and telescope design; Multi-wavelength astronomy: infrared, ultraviolet, x-ray and gamma-ray astronomy, fundamentals of radio astronomy; Observational techniques: photometry and spectroscopy; Orthodox statistics: probability distributions, Chi-squared distribution, propagation of errors; Stochastic processes and noise: photon noise.",
+  "lecture_times": "Monday - Friday, 2nd period, Term 1 and 3. Tutorials: Five over the year, Wednesday, 14h00–17h00, by arrangement. Practicals: Evening observing practicals using the UCT teaching telescopes, by arrangement.",
+  "dp_requirements": "Satisfactory attendance at lectures and tutorials. Attendance at all fieldwork practicals. Class record of at least 35%.",
+  "assessment": "Two class tests 15%; 6 tutorials over the year (astronomical data analysis and statistical techniques) count 20%; observing projects, practicals and quizzes together count 40%; one 2-hour theoretical examination counts 25%.",
+  "is_science_course": true
+}

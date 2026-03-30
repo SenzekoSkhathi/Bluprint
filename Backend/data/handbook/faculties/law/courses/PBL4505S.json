@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PBL4505S",
+  "title": "International Human Rights Law and the Constitution",
+  "department": "public-law",
+  "credits": 9,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "S Lutchman",
+  "prerequisites": {
+    "text": "All Preliminary and Intermediate Level courses to have been completed.",
+    "parsed": {
+      "type": "level_completion",
+      "levels_required": [
+        "preliminary",
+        "intermediate"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The course aims to examine the relationship between International Human Rights Law and the South African Constitution, particularly how international human rights norms are received and enforced under the Constitution and the extent to which the South African Bill of Rights can and does give effect to international human rights norms. It will provide participants with the opportunity to consider and critically reflect upon the relationship between international and municipal law, the development of international human rights norms and standards, the tension between universal norms and cultural specificity, the content and interpretations of the South African Bill of Rights and the suitability of domestic Bills of Rights as vehicles through which to receive and implement international human rights law.",
+  "lecture_times": "Two lectures per week.",
+  "dp_requirements": "Satisfactory attendance at weekly seminars.",
+  "assessment": "Written assignments and class participation 40%. One written examination (2 hours) 60%.",
+  "is_law_course": true
+}

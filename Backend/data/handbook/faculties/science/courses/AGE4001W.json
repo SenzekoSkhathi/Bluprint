@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AGE4001W",
+  "title": "Archaeology & Environmental Science Honours",
+  "department": "archaeology",
+  "credits": 160,
+  "nqf_level": 8,
+  "year_level": "Postgraduate – Honours",
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Dr Y Sahle",
+  "prerequisites": {
+    "text": "A BSc degree with majors in both Archaeology and Environmental & Geographical Science. Acceptance at the discretion of the Head of Department.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "Using the resources of both the Departments of Archaeology and Environmental & Geographical Science, this Honours programme focuses on the palaeoenvironmental context in which humans lived during the long course of the Quaternary. Course requirements include modules from both Archaeology and from Environmental & Geographical Science and a research project (48 credits).",
+  "lecture_times": null,
+  "dp_requirements": null,
+  "assessment": "On average the coursework component counts 70% (including 50% from final examinations) and the research project counts 30%. A sub-minimum of 50% is required for the research project. Coursework and project codes must each be passed separately for the award of the degree.",
+  "is_science_course": true
+}

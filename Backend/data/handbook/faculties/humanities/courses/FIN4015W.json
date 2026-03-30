@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "FIN4015W",
+  "title": "Fine Art 4",
+  "department": "fine-art",
+  "credits": 108,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Associate Professor S Josephy",
+  "prerequisites": {
+    "text": "Both FIN3000-level third-year Studiowork courses.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course is self -motivated study and research into an area of contemporary fine art practice that may include painting, sculpture, printmaking, photography or the expanded field of contemporary art, including Interdisciplinarity. Familiarisation with the historical and contemporary trajectories of the chosen practice is emphasised, as are display and exhibition methodologies. Students work towards an exhibition or other realisation presented at the end of the year. Students work in consultation with supervisors and peers in a studio-based learning student-centered model.",
+  "lecture_times": "Monday to Friday, 14h00 to 17h00. Studio times: Studio times are from 09h00 to 17h00, with students breaking to attend lectures and tutorials as required by the timetable.",
+  "dp_requirements": "Satisfactory presentation of coursework at mid -year assessment, at least 80% attendance of studio classes and critiques.",
+  "assessment": "Year-end coursework examination 100%.",
+  "is_humanities_course": true
+}

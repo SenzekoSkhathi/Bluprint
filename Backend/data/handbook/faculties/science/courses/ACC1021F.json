@@ -1,0 +1,23 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "ACC1021F",
+  "title": "Accounting for Business I",
+  "department": "college-of-accounting",
+  "credits": 15,
+  "nqf_level": 5,
+  "year_level": "First Year",
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Muhammad West",
+  "prerequisites": {
+    "text": "Admission to degree. NSC level 5 in Mathematics and level 4 in English HL (or level 5 in English FAL).",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "An introductory course in accounting aimed at all Commerce students who are not required to complete specialised accounting courses, and also open to students in other faculties seeking an introduction to the accounting discipline. The course provides Commerce graduates with the necessary acumen to engage in a managerial context with the accounting function within their organisations. Topics include a basic introduction to financial accounting and published financial statements, and management accounting. Commerce students are also required to complete ACC1022Z.",
+  "lecture_times": "4 lectures a week, Mondays to Thursdays. Tutorials: a double-period tutorial per week.",
+  "dp_requirements": "75% course participation and a minimum of 38% for the April test.",
+  "assessment": "One class test in April. One final exam as part of the June exam block.",
+  "is_science_course": false,
+  "offered_by_faculty": "commerce"
+}

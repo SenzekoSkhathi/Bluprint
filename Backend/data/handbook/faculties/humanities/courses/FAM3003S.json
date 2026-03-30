@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "FAM3003S",
+  "title": "Screen Production III: Post-Production",
+  "department": "film-and-media-studies",
+  "credits": 48,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr V Suparsad",
+  "prerequisites": {
+    "text": "FAM1000S, FAM2004S, and FAM2013F, or at the discretion of the Head of Department.",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "FAM1000S",
+        "FAM2004S",
+        "FAM2013F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The course builds on cineliteracy, socio -political understanding and theoretical insights acquired in the preceding film courses. The lectures and seminars aim to broaden and deepen students’ grasp of key contemporary developments in film theory that will be illustrated by means of case studies drawn from a wide diversity of films from around the world.",
+  "lecture_times": "4th period, Monday and Tuesday; screening: 6th and 7th periods, Friday.",
+  "dp_requirements": "All written work must be submitted by the stipulated dates. Students who miss more than two seminar classes will lose their DPs.",
+  "assessment": "Continuous assessment (essays, projects, tests, etc.) counts 100%. The lecture series counts 50% and the seminar 50% of the final mark for the course.",
+  "is_humanities_course": true
+}

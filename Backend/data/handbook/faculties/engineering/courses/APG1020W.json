@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "APG1020W",
+  "title": "Design & Theory Studio I",
+  "department": "architecture-planning-geomatics",
+  "credits": 60,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Ms B Mathole",
+  "prerequisites": {
+    "text": "None",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [
+    "APG1003W"
+  ],
+  "outline": "As a basic course for architecture, urban design and landscape architecture, its focus is on initiating the development of transferable design ability through the medium of architecture. Its primary objective is to introduce students to essential concepts, three dimensional spatialisation and inhabitation and to develop skills and techniques. Particular emphasis is paid to the development of productive working methods in design. The format of the course consists of short experimental exercises, longer projects and en loge tests.",
+  "lecture_times": "Refer to departmental timetable",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

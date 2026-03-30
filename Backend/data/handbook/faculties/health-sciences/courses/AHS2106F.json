@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AHS2106F",
+  "title": "Child Language",
+  "department": "health-and-rehabilitation-sciences",
+  "credits": 21,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Associate Professor M Harty",
+  "prerequisites": {
+    "text": "AHS1042F or HSE1005S",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "AHS1042F",
+        "HSE1005S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to enable the student to compare and contrast chil d language delay, difference and disorder; and to describe and critically discuss the principles and nature of assessment and comprehensive management of ch ild language. Content includes the nature, assessment and management of child language difficulties. Students learn to profile a child’s general development in relation to expected mi lestones. They acquire knowledge and sk ills in the transcription and analysis of child language; clinical reasoning; and strategies for working with child language difficulties in multilingual, multicultural envir onments. They acquire an apprec iation of a multilinguistic, multicultural society in the assessment and management of child language difficulties and a willingness to problem-solve when clients and clinicians do not share a common language. Teaching and learning activities include le ctures, small group discussions, class presentations and case discussions (video and paper). Themes underpinning the course are a multilingual, multicultural society, provision of contextually relevant services, and developing agents for change.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "For discipline specific courses in the BSc Audiology and BSc in Speech-Language Pathology programmes a minimum coursework mark of 40% is required for entrance into the examination.",
+  "assessment": "The course grade is made up of a cour sework mark (weighted 60%) and a final examination mark (weighted 40%). If a supplementary examination is awarded, it will count 40 % of the final mark, as the course work mark will still be included in the final mark.",
+  "is_health_sciences_course": true
+}

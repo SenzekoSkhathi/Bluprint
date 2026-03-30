@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EEE2045F",
+  "title": "Analogue Electronics",
+  "department": "electrical-engineering",
+  "credits": 16,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "J Son",
+  "prerequisites": {
+    "text": "EEE1006F",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "EEE1006F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to give students a sound background in analogue electronics design which will help them to understand, analyse and design circuits involving analogue electronic components and parts. Topics include: Diodes: Basic Diode Concepts. Load -Line Analysis of Diode Circuits. Zener-Diode Voltage-Regulator Circuits. Ideal-Diode Model. Piecewise-Linear Diode Models. Rectifier Circuits. Wave-Shaping Circuits. Linear Small -Signal Equivalent Circuits Bipolar Junction Transistors: Current and Voltage Relationships (Ebers-Moll model). Common-Emitter Characteristics. Load-Line Analysis of a Common-Emitter Amplifier. pnp-Bipolar Junction Transistors. Large-Signal DC Circuit Models. Large -Signal DC Analysis of BJT Circuits. Small -Signal Equivalent Circuits. Com mon- Emitter Amplifiers. Emitter Followers Field-Effect Transistors: NMOS and PMOS Transistors. Load Line Analysis of a Simple NMOS Amplifier. Bias Circuits. Small -Signal Equivalent Circuits. Common-Source Amplifiers. Source Followers. CMOS Logic Gates Ampl ifiers: Specifications and External Characteristics Basic Amplifier Concepts. Cascaded Amplifiers. Power Supplies and Efficiency. Operational Amplifiers: Ideal Operational Amplifiers. Inverting Amplifiers. Non - inverting Amplifiers. Design of Simple Amplifi ers. Op-Amp Imperfections in the Linear Range of Operation. Nonlinear Limitations. DC Imperfections. Differential and Instrumentation Amplifiers. Integrators and Differentiators. Frequency Response & Active Filters RLC Circuits and their steady state analysis. Frequency response of single pole RLC circuits. Ideal filter frequency characteristics. Butterworth filter design. Filter design using OpAmps.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

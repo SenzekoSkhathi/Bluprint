@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MAM1043H",
+  "title": "Modelling & Applied Computing",
+  "department": "mathematics-applied-mathematics",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": "First Year",
+  "semester": "FY",
+  "semester_code": "H",
+  "convener": "Dr P W Adams",
+  "prerequisites": {
+    "text": "None",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "The aim of this course is to introduce Applied Mathematics and Mathematical Modelling through approximations and estimation theory, dimensional analysis, numerical methods, rudimentary modelling using first- and second-order ordinary differential equations, discrete- and continuous-time dynamical systems, and modelling and simulation of discrete- and continuous-time processes with MATLAB.",
+  "lecture_times": "First Semester: 2nd period Monday, Wednesday, Friday. Second Semester: 2nd period Tuesday, Thursday.",
+  "dp_requirements": "A class record of 30% or more; satisfactory attendance at lectures and tutorials; submission of all assigned work.",
+  "assessment": "Class record counts 20–40%; one 3-hour examination written in October/November makes up the balance.",
+  "is_science_course": true
+}

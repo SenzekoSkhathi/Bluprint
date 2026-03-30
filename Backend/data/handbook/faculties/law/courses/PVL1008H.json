@@ -1,0 +1,35 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PVL1008H",
+  "title": "Law of Persons and Family",
+  "department": "private-law",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "FY",
+  "semester_code": "H",
+  "convener": "A/Prof A Barratt",
+  "prerequisites": {
+    "text": "Corequisites — Undergraduate LLB students: concurrent registration with PVL1003W and PVL1004F. Graduate LLB students: concurrent registration with PVL1003W, PVL1004F, PVL2002H, PVL2003H and PBL2000W.",
+    "parsed": {
+      "type": "concurrent_registration",
+      "undergraduate": [
+        "PVL1003W",
+        "PVL1004F"
+      ],
+      "graduate": [
+        "PVL1003W",
+        "PVL1004F",
+        "PVL2002H",
+        "PVL2003H",
+        "PBL2000W"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This is a foundational law course and focuses particularly on developing legal problem-solving skills. The course examines the nature of legal personality; the principles of legal capacity; and the principles of domicile. Most of the course focuses on Family Law and looks particularly at the legal relationships between parents and children; the personal consequences of marriage; the law of marital property; divorce; and the law governing unmarried people who live in long-term domestic partnerships. The course also examines the ways in which South African family law is changing to become compliant with the Constitution and Bill of Rights.",
+  "lecture_times": "Thirty-six lectures and three tutorials.",
+  "dp_requirements": "None",
+  "assessment": "Coursework 50%, Final Examination 50%.",
+  "is_law_course": true
+}

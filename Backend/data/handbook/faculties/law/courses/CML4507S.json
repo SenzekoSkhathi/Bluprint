@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CML4507S",
+  "title": "Statutory Tax Law of Entities and Transactions",
+  "department": "commercial-law",
+  "credits": 9,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Prof J Hattingh",
+  "prerequisites": {
+    "text": "All Preliminary and Intermediate Level courses to have been completed.",
+    "parsed": {
+      "type": "level_completion",
+      "levels_required": [
+        "preliminary",
+        "intermediate"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course builds on Fundamental Principles of Tax Law as a further introductory course for law undergraduates on the subject of tax law. The focus is on legislation as the primary source of tax law. In much of the coursework, the emphasis will be on the South African income tax legislation. A recapitulation of the legal framework for statutory construction is provided. A selection of features of the South African Income Tax Act, 58 of 1962, will be considered. The relevant provisions are categorised into those dealing with the main tenants of the taxation of individuals, companies and other vehicles such as trusts and partnerships. Selected issues affecting the taxation of corporate income will be considered. In addition, the legislation imposing tax on capital gains will be dealt with. The course is concluded by a consideration of the various common law and statutory measures that address tax evasion and tax avoidance.",
+  "lecture_times": "Two lectures per week.",
+  "dp_requirements": "None",
+  "assessment": "Coursework 20%, Examination 80%.",
+  "is_law_course": true
+}

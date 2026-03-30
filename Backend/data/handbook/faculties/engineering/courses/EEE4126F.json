@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EEE4126F",
+  "title": "Energy Systems & Grids II",
+  "department": "electrical-engineering",
+  "credits": 16,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Professor K Folly",
+  "prerequisites": {
+    "text": "EEE3100S DEPARTMENTS IN THE FACULTY AND COURSES OFFERED 142",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "EEE3100S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to develop advanced understanding of various topics in the operation and control of power and energy systems. Topics covered will include, renewable energy, distributed generation, power grid analysis, protection, grid reliability and powe r quality, network impedance and admittances, power flow, faults, optimization power system stability, smart grid monitoring and control systems, transmission, and distribution lines, substations, and electrification.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "BUS2010S",
+  "title": "Marketing I",
+  "department": "management-studies",
+  "credits": 18,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Associate Professor J Lappeman",
+  "prerequisites": {
+    "text": "Students should be in their second AYOS or above.",
+    "parsed": {
+      "type": "year_status",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "The marketing concept, the marketing environment, consumer markets and industrial markets, buyer behaviour, marketing research, the use and importance of differentiation, market segmentation and target marketing, the marketing mix, product policy, pricing policy, distribution policy, promotion policy, marketing strategy, marketing organisation and implementation, measurement and control of marketing effectiveness including the marketing audit.",
+  "lecture_times": "To be advised.",
+  "dp_requirements": "40% class mark and the completion of all required assignments.",
+  "assessment": "Essays, case studies, project and test 50%; June/October examinations (2 hours) 50%.",
+  "is_commerce_course": true
+}

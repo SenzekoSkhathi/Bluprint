@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "INF2009F",
+  "title": "Systems Analysis",
+  "department": "information-systems",
+  "credits": 18,
+  "nqf_level": 6,
+  "year_level": "Second Year",
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "A Pekane",
+  "prerequisites": {
+    "text": "INF1003F or equivalent, or INF1003F as co-requisite.",
+    "parsed": {
+      "type": "or",
+      "codes": [
+        "INF1003F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "A half course designed for students intending to major in Information Systems or Computer Science for the BCom, BBusSci or BSc degrees (students pursuing other computing degrees may be accepted, space permitting). The course explores the role of the Systems Analyst in business, different approaches used in the development of information systems, and the various tools and techniques used in the specification of system requirements. It provides in-depth knowledge of the systems development process with particular emphasis on the analysis stage of the life cycle, with a strong practical component teaching students to understand and use common tools of object-oriented systems analysis, particularly UML models.",
+  "lecture_times": "Monday to Wednesday, 4th period. Practical workshops: Thursday 3rd & 4th periods OR 4th & 5th periods OR 8th & 9th periods.",
+  "dp_requirements": "Submitted at least 80% of the coursework (80% of individual deliverables and 80% of group work). Sub-minimum of 45% course year-mark.",
+  "assessment": "Coursework (Formative Assessment 40% + Summative Assessment 20%) and Final Examination (40%). Sub-minimum of 40% for the final examination.",
+  "is_science_course": false,
+  "offered_by_faculty": "commerce"
+}

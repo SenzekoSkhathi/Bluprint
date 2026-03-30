@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "SWK4031S",
+  "title": "Social Work Practice IV: Advanced Practice II",
+  "department": "social-development",
+  "credits": 24,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Associate Professor L Holtzhausen",
+  "prerequisites": {
+    "text": "This course is only for students doing the BSW and must have fourth year status, or with permission from the Head of Department.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "The course examines the social, environmental determinants of mental health. Risk factors are presented and the process of developing protective factors are explored and examined. The course is designed inter alia to present the South African demographics regarding the social, environmental and economic determinants of mental health and focusses on selected risk populations.",
+  "lecture_times": "Monday and Tuesday 6th and 7th periods.",
+  "dp_requirements": "At least 80% attendance at lectures/seminars and submission of all essays/projects/seminar materials and other required written work by the due date.",
+  "assessment": "Coursework counts 50%; November examination counts 50%.",
+  "is_humanities_course": true
+}

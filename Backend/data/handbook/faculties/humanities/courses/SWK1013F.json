@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "SWK1013F",
+  "title": "Introduction to Social Work Practice",
+  "department": "social-development",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr S Hoosain",
+  "prerequisites": {
+    "text": "None.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to develop students’ understanding of the interactions between different social systems in the context of selected contemporary social issues and the impact of these on individuals, households and communities and the range of resources tha t target these challenges. The course creates an opportunity for students to develop their professional relationship and communication skills while developing their skills in data gathering and recording for assessment purposes. Students are introduced to selected intervention strategies.",
+  "lecture_times": "Tuesday to Friday 4th period.",
+  "dp_requirements": "Submission of all essays, projects, seminar materials, and other required written work by the due date. Field trips where required, are compulsory. Attendance of lectures or seminars as indicated by the department.",
+  "assessment": "Coursework counts 50%; two-hour examination counts 50%.",
+  "is_humanities_course": true
+}

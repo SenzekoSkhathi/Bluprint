@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "ECO2003F",
+  "title": "Microeconomics II",
+  "department": "economics",
+  "credits": 18,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "L Edwards",
+  "prerequisites": {
+    "text": "ECO1010 and MAM1010 (or an equivalent) or MAM1031F or MAM1032S.",
+    "parsed": {
+      "type": "prerequisite",
+      "codes": [
+        "ECO1010F",
+        "MAM1010F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The course studies the role of institutions and power in influencing the outcomes of economic exchange. The course introduces the concept of institutions and how they influence the balance of power in economic interactions, and affect the fairness and efficiency of the allocations that result. The course then applies these concepts to a study of economic inequality, focusing on its trends, sources and policy options for more equal societies. The course then considers firms and the role that market structure plays in the setting of prices. Finally, the course studies market failures with application to environmental policy, and innovation and the networked economy. The course makes use of mathematical techniques to complement the graphical and discursive representation of the theory. All sections of the course incorporate real world applications.",
+  "lecture_times": "Lecture/Workshop times: 09h00 - 10h00 Monday, Tuesday, Wednesday, Thursday. 12h00 - 13h00 Monday, Tuesday, Wednesday, Thursday. 13h00 - 14h00 Monday, Tuesday, Wednesday, Thursday.",
+  "dp_requirements": "None.",
+  "assessment": "Coursework 50%; Exam 50%.",
+  "is_commerce_course": true
+}

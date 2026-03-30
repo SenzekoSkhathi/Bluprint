@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "STA5091Z",
+  "title": "Data-Analysis for High-Frequency Trading",
+  "department": "statistical-sciences",
+  "credits": 15,
+  "nqf_level": 9,
+  "year_level": "Postgraduate (Master's)",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "Associate Professor T Gebbie",
+  "prerequisites": {
+    "text": "Acceptance into Master's programs in Statistics & Data Science or Data Science, and/or statistical background deemed sufficient by the Head of Department.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "The course aims to equip students with data-science skills required to manage and explore high-frequency financial market data. Topics include: managing large financial data-sets; statistical analysis of large data-sets; the link between statistical analysis of fast large data-sets, the modelling thereof, and how this can be used to understand and control real-time trading and risk systems in modern financial markets. Students will acquire skills in: Understanding and Preparing Financial Market Data; Data Science of Market Microstructure; Market Structure and Market Microstructure; Statistical Learning for Financial Market Data.",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "Not specified.",
+  "assessment": "Not specified in handbook.",
+  "is_science_course": true
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CIV1009F",
+  "title": "Civil Engineering Drawing",
+  "department": "civil-engineering",
+  "credits": 8,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Ms F Chebet",
+  "prerequisites": {
+    "text": "Refer to the programme and departmental sections in the 2026 EBE Faculty Handbook.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "The objective of the course is to develop visual thinking skills and foundational technical drawing skills appropriate to the practice of Civil Engineering. It is foundational to engineering projects and design skills. Students will be introduced to 3D ske tching as a form of conceptual reasoning and informal communication. They will learn to read technical drawings and recognise standard drawing conventions and symbols on technical drawings (including structural and civil engineering infrastructure drawings). Basic functions of CAD drawing packages will be introduced (layers, lines, dimensions) in order to produce simple civil engineering technical drawings to formal standards and codes of practice.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

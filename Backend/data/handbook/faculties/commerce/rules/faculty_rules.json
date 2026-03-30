@@ -1,0 +1,93 @@
+{
+  "$schema": "handbook-rules-v1",
+  "faculty": "commerce",
+  "year": 2026,
+  "rule_sets": [
+    {
+      "code": "FBA",
+      "applies_to": "All undergraduate degrees in Commerce",
+      "rules": [
+        {"id": "FBA1", "topic": "selection_procedure", "text": "A person shall not be admitted as a student for any degree in the Faculty of Commerce unless the person has fulfilled all admission criteria as approved by Council."},
+        {"id": "FBA3", "topic": "right_of_admission", "text": "The right of admission to lectures, classes and seminars is restricted to students who are specifically registered for the courses concerned."},
+        {"id": "FBA4", "topic": "max_years", "text": "Students must complete all requirements for the degree within the standard number of years."},
+        {"id": "FBA5", "topic": "dp_requirements", "text": "Candidates may not sit the final examination if they have not been granted a Duly Performed Certificate (DP)."},
+        {"id": "FBA6", "topic": "repeating_courses", "text": "Students who fail a University course twice will not be allowed to register for the same course a third time."},
+        {"id": "FBA6.1", "topic": "repeating_courses", "text": "Should a required course be failed twice (including DPR, INC, AB, UF, SM or SF), the student has to transfer to a programme of study where the same course is not required."},
+        {"id": "FBA6.2", "topic": "repeating_courses", "text": "A student may not repeat a course already passed."},
+        {"id": "FBA7", "topic": "prerequisites", "text": "A student shall not be admitted to a course for which pre-requisites have not been obtained."},
+        {"id": "FBA8", "topic": "timetable_clash", "text": "A student may not register for a combination of courses with a timetable clash."},
+        {"id": "FBA9", "topic": "deviation", "text": "A student may, in special circumstances, apply to the Dean for a concession to deviate from a programme curriculum prescribed in the schedule."},
+        {"id": "FBA10", "topic": "max_courses_per_year", "text": "A student may not take more than the total number of courses stipulated for the year of the specialisation."},
+        {"id": "FBA11", "topic": "programme_change", "text": "A student may change their qualification and/or programme of study with the permission of the Dean. Not all courses passed in the previous programme may be credited towards a new qualification."},
+        {"id": "FBA13", "topic": "exemption", "text": "Exemption from the requirements of the degree may be granted to students who have completed courses at this or other approved universities."},
+        {"id": "FBA14", "topic": "supplementary_exams", "text": "Senate may permit a candidate to write a supplementary examination in one or more courses failed. A student will be granted a supplementary examination where only one outstanding course remains for the completion of the degree, and the student attained a final mark between 40% and 44%."},
+        {"id": "FBA15", "topic": "distinction", "text": "The degree may be awarded: with distinction, with distinction in one or more subjects, or with distinction in the degree and with distinction in one or more subjects."},
+        {"id": "FBA16", "topic": "promotion_law", "text": "Students studying Law by Commerce programs may only proceed to the academic year including the PVL 1000-level courses if they have received confirmation of a place on those courses."},
+        {"id": "FBA16.3", "topic": "promotion_law_aggregate", "text": "Must obtain an aggregate of at least 63% for all courses in the prescribed curriculum prior to the year of including the PVL courses."},
+        {"id": "FBA17", "topic": "actuarial_fail", "text": "Students who fail any one of MAM1031F/MAM1032S/MAM1005H/MAM1006H/STA1006S/STA1106H/ECO1010F/ECO1110F/ECO1011S/ECO1111S/ACC1006F/ACC1106F/ACC1011S/ACC1111S will be required to leave all Actuarial Science degrees."},
+        {"id": "FBA22", "topic": "prescribed_courses", "text": "A student will be required to complete all compulsory and optional courses prescribed for each year of study to proceed to courses prescribed for the following year."},
+        {"id": "FBA23", "topic": "performance", "text": "A student who fails no more than four semester courses in any year may be permitted to proceed to the next year of study."}
+      ]
+    },
+    {
+      "code": "FBB",
+      "applies_to": "Bachelor of Business Science (BBusSci)",
+      "rules": [
+        {"id": "FBB1", "topic": "general", "text": "All the degree rules for undergraduate degrees (FBA) apply unless specified below."},
+        {"id": "FBB2", "topic": "minimum_credits", "text": "The curriculum shall consist of a minimum of 528 NQF credits of which 120 NQF credits must be at NQF level 8."},
+        {"id": "FBB3", "topic": "readmission", "text": "A student shall not be permitted to renew registration if they fail any course required for the degree more than once."},
+        {"id": "FBB3.2", "topic": "readmission_progress", "text": "Must complete: 4 semester courses by end of year 1; 10 by end of year 2; 18 by end of year 3."},
+        {"id": "FBB3.3", "topic": "readmission_failures", "text": "Must not fail the equivalent of seven or more semester courses during the period of registration."},
+        {"id": "FBB3.5", "topic": "minimum_programme_requirements", "text": "Must complete minimum programme requirements per specialisation as specified in the handbook."}
+      ]
+    },
+    {
+      "code": "FBE",
+      "applies_to": "Bachelor of Commerce (BCom)",
+      "rules": [
+        {"id": "FBE1", "topic": "general", "text": "All the degree rules for undergraduate degrees (FBA) apply unless specified below."},
+        {"id": "FBE2", "topic": "minimum_credits", "text": "The curriculum shall consist of a minimum of 440 NQF credits of which 120 NQF credits must be at NQF Level 7."},
+        {"id": "FBE3", "topic": "readmission", "text": "A student shall not be permitted to renew registration if they fail any course required for the degree more than once."},
+        {"id": "FBE3.2", "topic": "readmission_progress", "text": "Must complete: 4 semester courses by end of year 1; 8 by end of year 2 (including specialisation courses); 15 by end of year 3."},
+        {"id": "FBE3.3", "topic": "readmission_failures", "text": "Must not fail the equivalent of seven or more semester courses during the period of registration."},
+        {"id": "FBE5", "topic": "accounting_readmission", "text": "Students not achieving DP status in ACC1006F by end of first year of study; or not passing all required first year courses and obtaining 60% for ACC1011S by end of second year; or not passing ACC2012W by end of third year will not be permitted to renew registration."}
+      ]
+    },
+    {
+      "code": "FBF",
+      "applies_to": "Bachelor of Commerce in Actuarial Science",
+      "rules": [
+        {"id": "FBF1", "topic": "general", "text": "All the degree rules for undergraduate degrees (FBA) and the Bachelor of Business Science (FBB) apply."},
+        {"id": "FBF2", "topic": "minimum_credits", "text": "The curriculum shall consist of a minimum of 528 NQF credits of which 120 will be at NQF Level 7."},
+        {"id": "FBF3.5", "topic": "bus2016h_entry", "text": "Students are allowed to register for BU2016H if they have achieved at least 60% average for ACC1006F & ACC1011S, and ECO1010F/S & ECO1011F (OR for the EDU-equivalents), AND one of four conditions involving MAM/STA averages."}
+      ]
+    }
+  ],
+  "distinction_rules": {
+    "bcom": {
+      "threshold": "80% weighted average",
+      "requirements": "No failures. Completed in standard number of years. Courses passed at supplementary exam do not count as failures.",
+      "weighting": "Course levels 1 and 2 weighted 1, course level 3 weighted 2. Only first attempt and only courses required for the programme."
+    },
+    "bbusc": {
+      "threshold": "80% weighted average",
+      "requirements": "No failures. Completed in standard time.",
+      "weighting": "Course levels 1 and 2 weighted 1, course levels 3 and 4 weighted 2. Only first attempt and only courses required for the programme."
+    },
+    "course_distinctions": {
+      "actuarial_science": "75% or above for each of Actuarial Science II Models, Contingencies, and Actuarial Science III courses",
+      "computer_science": "Average 75% or above for CSC 2001/2002, and average 75% for CSC 3002/3003",
+      "economics_bcom": "Average 80% across ECO3020F and two other 3000-level ECO courses, with at least 75% in at least two",
+      "economics_bbusc": "Same as BCom PLUS average 75% for ECO4000-level courses at first attempt, with subminimum 70% for coursework and research paper",
+      "finance_bbusc": "Average mark for FTX3044F and FTX3045S of 75% or more; average for FTX4056S, FTX4057F and FTX4087S of 75% or more; with a subminimum of 70% for each of five courses",
+      "finance_bcom": "Average 75% or more for FTX2024F/S and average 75% for FTX3044F and FTX3045S combined",
+      "information_systems": "75% weighted average for all final year Information Systems courses",
+      "marketing": "Weighted average of 75% for BUS4026W, BUS4052H, BUS4058F, BUS3041F, BUS3043S and BUS3008W, with subminimum of 70% for each",
+      "statistics": "75% in two 2000-level and two 3000-level courses required for the major subject",
+      "management_accounting": "80% or above for Management Accounting I and 75% or above for Management Accounting II",
+      "taxation": "80% or above for Taxation I and 75% or above for Taxation II",
+      "mathematics": "At least 75% for Mathematics II and Mathematics III",
+      "io_psychology": "At least 75% overall for BUS4006W and BUS4030H, obtaining not less than 70% for both the coursework and the research report components"
+    }
+  }
+}

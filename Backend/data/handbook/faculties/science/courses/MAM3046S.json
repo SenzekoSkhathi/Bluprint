@@ -1,0 +1,30 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MAM3046S",
+  "title": "Fluid Dynamics (3FD)",
+  "department": "mathematics-applied-mathematics",
+  "credits": 18,
+  "nqf_level": 7,
+  "year_level": "Third Year",
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Professor A Malan",
+  "prerequisites": {
+    "text": "MAM2040F, MAM2041F, MAM2042S and MAM2043S.",
+    "parsed": {
+      "type": "and",
+      "codes": [
+        "MAM2040F",
+        "MAM2041F",
+        "MAM2042S",
+        "MAM2043S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "Applications, description of fluids, equations of fluid flow for simple fluids, and analytical techniques.",
+  "lecture_times": "Monday and Tuesday, meridian. Thursday, 5th period.",
+  "dp_requirements": "A class record of 30% or more; attendance of both 75% of all lectures and 75% of all tutorials.",
+  "assessment": "Class record counts up to 50%; the balance is made up by the final examination.",
+  "is_science_course": true
+}

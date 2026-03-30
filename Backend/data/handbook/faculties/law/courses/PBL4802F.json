@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PBL4802F",
+  "title": "Criminal Procedure",
+  "department": "public-law",
+  "credits": 18,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "A/Prof J Omar",
+  "prerequisites": {
+    "text": "All Preliminary and Intermediate Level courses to have been completed.",
+    "parsed": {
+      "type": "level_completion",
+      "levels_required": [
+        "preliminary",
+        "intermediate"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "Criminal Procedure deals with the practice and procedure of the criminal process, from the police to the courts. Students are given concrete and topical examples in class, tutorials and assignments and are expected to apply their knowledge of general principles in a critical way, having regard to criminal justice and contemporary social justice imperatives. Students are challenged with legal and ethical dilemmas that they would confront in practical situations and are required to provide justiciable answers in conformity with ethics norms often informed by constitutional values. The course draws heavily on principles of criminal law, constitutional law as well as the law of evidence, to illustrate the interaction between adjectival and substantive law.",
+  "lecture_times": "Three lectures per week.",
+  "dp_requirements": "None",
+  "assessment": "Coursework 40%, June examination 60%.",
+  "is_law_course": true
+}

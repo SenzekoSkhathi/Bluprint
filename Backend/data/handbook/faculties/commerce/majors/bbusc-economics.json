@@ -1,0 +1,223 @@
+{
+  "$schema": "handbook-programme-v1",
+  "programme_code": "CB004ECO01",
+  "programme_name": "Bachelor of Business Science specialising in Economics",
+  "degree": "BBusSci",
+  "specialisation": "Economics",
+  "faculty": "commerce",
+  "nqf_level": 8,
+  "minimum_credits": 528,
+  "duration_years": 4,
+  "department": "economics",
+  "curriculum": [
+    {
+      "year": 1,
+      "total_credits": 132,
+      "courses": [
+        {
+          "code": "ACC1021F",
+          "title": "Accounting for Business I",
+          "nqf_credits": 15,
+          "nqf_level": 5
+        },
+        {
+          "code": "ACC1022Z",
+          "title": "Accounting for Business II",
+          "nqf_credits": 9,
+          "nqf_level": 5
+        },
+        {
+          "code": "ECO1010F",
+          "title": "Microeconomics I",
+          "nqf_credits": 18,
+          "nqf_level": 5
+        },
+        {
+          "code": "INF1002F",
+          "title": "Foundations of Information Systems",
+          "nqf_credits": 18,
+          "nqf_level": 5
+        },
+        {
+          "code": "MAM1010F",
+          "title": "Mathematics 1010",
+          "nqf_credits": 18,
+          "nqf_level": 5
+        },
+        {
+          "code": "ECO1011S",
+          "title": "Macroeconomics I",
+          "nqf_credits": 18,
+          "nqf_level": 5
+        },
+        {
+          "code": "MAM1012S",
+          "title": "Mathematics 1012",
+          "nqf_credits": 18,
+          "nqf_level": 5
+        },
+        {
+          "code": "STA1000S",
+          "title": "Introductory Statistics",
+          "nqf_credits": 18,
+          "nqf_level": 5
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "total_credits": 156,
+      "courses": [
+        {
+          "code": "CML1001F",
+          "title": "Business Law I",
+          "nqf_credits": 18,
+          "nqf_level": 5
+        },
+        {
+          "code": "ECO2003F",
+          "title": "Microeconomics II",
+          "nqf_credits": 18,
+          "nqf_level": 6
+        },
+        {
+          "code": "FTX2020F",
+          "title": "Business Finance",
+          "nqf_credits": 18,
+          "nqf_level": 6,
+          "alternative": "FTX2024F"
+        },
+        {
+          "code": "STA2020F",
+          "title": "Applied Statistics",
+          "nqf_credits": 24,
+          "nqf_level": 6
+        },
+        {
+          "code": "BUS2010F",
+          "title": "Marketing I",
+          "nqf_credits": 18,
+          "nqf_level": 6
+        },
+        {
+          "code": "ECO2004S",
+          "title": "Macroeconomics II",
+          "nqf_credits": 18,
+          "nqf_level": 6
+        },
+        {
+          "code": "ECO2007S",
+          "title": "Co-operation and Competition",
+          "nqf_credits": 18,
+          "nqf_level": 6
+        },
+        {
+          "code": "STA2030S",
+          "title": "Theory of Statistics",
+          "nqf_credits": 24,
+          "nqf_level": 6,
+          "alternative": "STA3022F"
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "total_credits": 162,
+      "courses": [
+        {
+          "code": "BUS2033F",
+          "title": "Professional Communication",
+          "nqf_credits": 18,
+          "nqf_level": 7,
+          "alternative": "BUS2033S"
+        },
+        {
+          "code": "BUS3039F",
+          "title": "People Management",
+          "nqf_credits": 18,
+          "nqf_level": 7,
+          "alternative": "BUS3039S"
+        },
+        {
+          "code": "ECO3020F",
+          "title": "Advanced Macro & Microeconomics",
+          "nqf_credits": 18,
+          "nqf_level": 7
+        },
+        {
+          "code": "FTX3044F",
+          "title": "Investment Management A",
+          "nqf_credits": 18,
+          "nqf_level": 7
+        },
+        {
+          "code": "STA3030F",
+          "title": "Statistical Inference & Modelling",
+          "nqf_credits": 36,
+          "nqf_level": 7
+        },
+        {
+          "code": "ECO3021S",
+          "title": "Quantitative Methods in Economics",
+          "nqf_credits": 18,
+          "nqf_level": 7
+        },
+        {
+          "code": "FTX3045S",
+          "title": "Investment Management B",
+          "nqf_credits": 18,
+          "nqf_level": 7
+        },
+        {
+          "code": "STA3036S",
+          "title": "Operational Research Techniques",
+          "nqf_credits": 36,
+          "nqf_level": 7
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "total_credits": 140,
+      "courses": [
+        {
+          "code": "BUS4050H",
+          "title": "Strategic Thinking",
+          "nqf_credits": 18,
+          "nqf_level": 8
+        },
+        {
+          "code": "ECO4006F",
+          "title": "Macroeconomics",
+          "nqf_credits": 16,
+          "nqf_level": 8
+        },
+        {
+          "code": "ECO4007F",
+          "title": "Microeconomics",
+          "nqf_credits": 16,
+          "nqf_level": 8
+        },
+        {
+          "code": "ECO4016F",
+          "title": "Econometrics",
+          "nqf_credits": 16,
+          "nqf_level": 8
+        },
+        {
+          "code": "ECO4112F",
+          "title": "Mathematics and Statistics for Economists",
+          "nqf_credits": 16,
+          "nqf_level": 8
+        },
+        {
+          "code": "ECO4021W",
+          "title": "Research and Writing I (Long Paper)",
+          "nqf_credits": 30,
+          "nqf_level": 8
+        }
+      ],
+      "note": "Core 78 credits + 2 electives from list"
+    }
+  ]
+}

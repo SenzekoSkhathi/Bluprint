@@ -1,0 +1,30 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "IBS1007S",
+  "title": "Introduction to Integrated Health Sciences: Part II",
+  "department": "integrative-biomedical-sciences",
+  "credits": 35,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Associate Professor Z Woodman and Doctor R Ebrahim",
+  "prerequisites": {
+    "text": "PPH1001F, HUB1006F, CEM1011F and PHY1025F",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "PPH1001F",
+        "HUB1006F",
+        "CEM1011F",
+        "PHY1025F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The course introduces students to key principles and concepts of the basic sciences of histology, anatomy, immunology, biochemistry and physiology, and of public health and family medicine. The Primary Health Care (PHC) approach is at the cent re of the health care sy stem in South Africa and hence the PHC approach is emphasis ed throughout the course. Problem-based learning (PBL) is the central learning activity of the co urse. Each student is allocated to a PBL group that meets regularly to discuss and analyse a number of carefully desi gned cases illustrating th e key objectives of the course. In addition, students are provided with a range of activities to support their learning (including lectures, practical sessions, tutorials and workshops). At the conclusion of this course, students will have acquired an integrated u nderstanding of key South African health challenges within a broader social and environmental context; the epidemiology of the major causes of disease in South Africa; the basic structure and function of all organ systems of the human body; and the basic structure and function of the biochemical components of the human body. A blended approach to learning may be used where academic activities will be delivered online and face-to-face, if feasible. This will be at the discretion of the course convener.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Irrespective of whether online or face- to-face, attendance of all academic activities, where official registers are circulated, including problem-based learning sessions, tutorials, Family Medicine OPD visits, workshops, and BH S practical sessions are a requirement for DP. Submission of all written assignm ents on time and completion of a ll in-course assessment activities are also a requirement for DP. Students may not miss any schedu led activities without the written permission of the academic staff responsible for these activities. St udents are required to apply for concession to miss clas ses and submit appropriate supporting documentation should they miss a scheduled activity due to illness or approved non-medical reasons. If a student miss teaching and learning activities without appropriate permission, the student will not be awarded a DP certificate for the course. If a student is not awarded a DP certificate, they w ill not be allowed to write the examinations and therefore not pass the course and will not be able to progress to second year.",
+  "assessment": "Assessments include in-course and end-of-course assessments. Regular self-assessment activities provide feedback to students on their progress. Assessments include written, computer-based and practical components. Written components use a case-based format. When students are unable to DEPARTMENTS IN THE FACULTY 143 write an assessment for what is deemed a legitimate re ason, a deferred assessment may be given. A medical certificate on ground of illness, or appr opriate supporting documentation for all approved non-medical reasons, must be submitted when apply ing for a deferred assess ment. Should a student fail to provide legitimate reasons, with supporting documentation, for being un able to complete an assessment activity, or fail to take a scheduled deferred assessment, a mark of zero will be given for that assessment. A student will not be allowed to miss more than one asse ssment or have more than one opportunity to take a deferred assessment. In-course assessments and end-of-course assessments are weighted as stipulated in th e course handbook and count towards the final course mark. Sub- minima may apply. Students are required to achieve a course result of 45-49% and to pass at least one class test or the final examination in order to be eligible for a supplementary examination. Should students be granted a supplement ary examination, the same weight ing as the original examination mark will be used to calculate the final mark.",
+  "is_health_sciences_course": true
+}

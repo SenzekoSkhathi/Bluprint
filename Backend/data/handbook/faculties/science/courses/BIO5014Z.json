@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "BIO5014Z",
+  "title": "Applied Marine Biology",
+  "department": "biological-sciences",
+  "credits": 0,
+  "nqf_level": 9,
+  "year_level": 5,
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "Dr L C Gammage",
+  "prerequisites": {
+    "text": "A relevant Honours degree (or equivalent). Students with backgrounds in scientific and engineering disciplines are encouraged to apply. Co-requisites: BIO5012W, BIO5013Z, and a minor dissertation code chosen from a list to be provided.",
+    "parsed": {
+      "type": "and",
+      "codes": [
+        "BIO5012W",
+        "BIO5013Z"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course is comprised of modules covering the topics required for a thorough understanding of applied marine biology skills (e.g. fundamentals in applied marine ecology, marine conservation, fisheries and resource management and aquaculture). The core modules are intended to provide a context for applying marine science knowledge, especially with reference to management and conservation of marine natural resources. Compulsory attendance is required in the case of field trips to various sectors like commercial fish factories, aquaculture farms and national government facilities. In addition, students will choose at least two elective courses, chosen from a range of modules offered in both disciplinary streams. They provide the student the opportunity to explore new areas, or look at more specific disciplinary backgrounds in the vast subject of ocean sciences. The list and details of these courses will be made available at the opening of each registration period in the BIO5012W handbook on the MARIS website.",
+  "lecture_times": null,
+  "dp_requirements": null,
+  "assessment": "Every module is assessed independently either with a class test or individual project assignments. The syllabus and the relative weight for each module are described in a handbook available on the BIO5012W website (hosted by the Marine and Antarctic Research Centre for Innovation and Sustainability).",
+  "is_science_course": true
+}

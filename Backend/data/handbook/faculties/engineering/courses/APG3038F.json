@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "APG3038F",
+  "title": "Professional Communication Studies",
+  "department": "architecture-planning-geomatics",
+  "credits": 12,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Mrs A Gwynne-Evans",
+  "prerequisites": {
+    "text": "None",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to develop an understanding of effective reporting and of academic style and referencing. Students learn the requirements for written and oral reports in terms of planning, organisation and selection of information, as well as in terms of linguistic style and final presentation. Students will have to demonstrate proficiency in both formats.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "80% attendance at all sessions and 50% class test average.",
+  "assessment": "Tests and assignments count 40%, Oral presentation counts 30% and written examination of 3 hours counts 30%.",
+  "is_engineering_course": true
+}

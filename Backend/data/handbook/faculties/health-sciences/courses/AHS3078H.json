@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AHS3078H",
+  "title": "Research Methods and Biostatistics I",
+  "department": "health-and-rehabilitation-sciences",
+  "credits": 10,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "FY",
+  "semester_code": "H",
+  "convener": "Associate Professor G Ferguson, Associate Professor P Gretschel, and Doctor L Petersen",
+  "prerequisites": {
+    "text": "Refer to the programme and departmental sections in the 2026 Health Sciences Faculty Handbook.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "Objective: At the end of this course, the student will be able to: (a) Describe and distinguish between the philosophical underpinnings of qualitative and quan titative research, (b) Describe and apply the principles of evidence-based prac tice, (c) Conduct a literature search and critically review research literature using critical appraisal tools, (d) Describe and critique qualitative and quantitative research designs, (e) Describe principles and methods of sampling, (f) Desc ribe, critique, and develop data collection methods and tools, (g) Describe and apply the methods of data analysis for qualitative and quantitative research, (h) Describe and apply the principles of rese arch ethics, (i) Apply the above- mentioned knowledge and skills to develop a group research protocol. Course outline: The course provides students with the necessary skills and conceptual knowledge to conduct research in health and rehabilitation sc iences. Students participate in lectures, workshops and online assignments which cover th e theory of qualitative and quantitative research, the ethics of research, epidemiology and basic biostatistics. Students learn how to analyse research articles critically and to develop a research proposal. 110 DEPARTMENTS IN THE FACULTY",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Students are expected to attend 80% of all lectures and 80% of all supervision sessions.",
+  "assessment": "Students will take part in continuous assessment which will contribute to a 100% course work mark for the course. They will complete six online assessment s in the form of quizzes which will contribute 10% each, totalling a 60% contribution to the course mark. Students will need to pass four out of the six quizzes to progress to the 4000-level research course. One additional opportunity for reassessment will be created should they not meet this requirement. The division specific research protocol will contribute the remain ing 40% to the course mark. T he final mark for the research protocol is constituted by a combination of the group protocol mark, and an individual peer evaluation mark, which is in line with the peer evaluation process establis hed by each division. Students must obtain a minimum of 50% for all aspects. If they do not meet this requirement, they must complete a re-assessment.",
+  "is_health_sciences_course": true
+}

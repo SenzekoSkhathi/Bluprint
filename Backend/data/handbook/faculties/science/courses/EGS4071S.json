@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EGS4071S",
+  "title": "Climate Change & Marine Ecosystems",
+  "department": "environmental-geographical-science",
+  "credits": 30,
+  "nqf_level": 8,
+  "year_level": "Postgraduate – Honours elective",
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr P Matikinca",
+  "prerequisites": {
+    "text": "Acceptance for Honours or Master's specialising in EGS.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "The course introduces students to the effects of climate change on marine and coastal ecosystems and the implications for marine ecosystem services. The course focuses on three themes: (i) changing marine and coastal environments in the face of climate change; (ii) linking biological responses to climate-induced drivers; and (iii) climate change impacts on marine ecosystem services.",
+  "lecture_times": null,
+  "dp_requirements": "At least 80% attendance and submission of all assignments.",
+  "assessment": "Research paper 25%; seminar presentation 20%; poster 15%; exam 40%.",
+  "is_science_course": true
+}

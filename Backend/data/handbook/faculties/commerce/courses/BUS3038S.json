@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "BUS3038S",
+  "title": "Introduction to Project Management",
+  "department": "management-studies",
+  "credits": 18,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr M Hoffman",
+  "prerequisites": {
+    "text": "Students should be in their 3rd year of a BCom or BBusSc or be registered for a Postgraduate Diploma in Management, or be an approved SSA student.",
+    "parsed": {
+      "type": "year_status",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "The key objective of this course is to provide a general introduction to Project Management for Commerce students. Students are introduced to the Project Life Cycle and the project management methodology as outlined in the Project Management Body of Knowledge (PBOK). Students registered for this course will be required to apply the project management process to new product development, with the practical group project focusing on doing a feasibility study for a new product. Particular emphasis is placed on quality.",
+  "lecture_times": "To be advised.",
+  "dp_requirements": "Completion of all coursework assessments.",
+  "assessment": "Coursework 100%.",
+  "is_commerce_course": true
+}

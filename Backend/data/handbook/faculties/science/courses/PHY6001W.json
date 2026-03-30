@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PHY6001W",
+  "title": "Tertiary Physics Education Thesis",
+  "department": "physics",
+  "credits": 360,
+  "nqf_level": 10,
+  "year_level": "Postgraduate (PhD)",
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Not specified",
+  "prerequisites": {
+    "text": "Not specified.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "The PhD is a research degree on an advanced topic under supervision which can be taken in any of the departments in the Faculty. Examination is by thesis alone. A candidate shall undertake doctoral research and advanced study under the guidance of a supervisor/s appointed by Senate. The thesis must constitute a substantial contribution to knowledge in the chosen subject, must show evidence of original investigation and give a full statement of the literature on the subject. The PhD degree demands that the candidate is able to conduct independent research on their own initiative. Through the thesis the candidate must demonstrate that they are at the academic forefront in the topic selected, that the work is original and that it advances knowledge in the relevant field. Candidates are referred to the rules for this degree as set out in Book 3, General Rules and Policies.",
+  "lecture_times": "Not applicable.",
+  "dp_requirements": "Not applicable.",
+  "assessment": "Examination by thesis alone.",
+  "is_science_course": true
+}

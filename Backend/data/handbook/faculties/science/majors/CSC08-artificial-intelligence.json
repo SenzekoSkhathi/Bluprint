@@ -1,0 +1,176 @@
+{
+  "$schema": "handbook-major-v1",
+  "major_code": "CSC08",
+  "major_name": "Artificial Intelligence",
+  "department": "computer-science",
+  "notes": "",
+  "mutual_exclusions_with": [],
+  "required_companion_majors": [],
+  "has_student_limit": false,
+  "years": [
+    {
+      "year": 1,
+      "label": "First Year Core Courses",
+      "combinations": [
+        {
+          "combination_id": "CSC08-Y1-A",
+          "description": "With MAM1019H as the mathematics-adjacent course",
+          "courses": [
+            {
+              "code": "CSC1015F/S",
+              "title": "Computer Science 1015",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "CSC1016S",
+              "title": "Computer Science 1016",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "MAM1031F",
+              "title": "Mathematics 1031 (or equivalent)",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "MAM1032S",
+              "title": "Mathematics 1032 (or equivalent)",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "MAM1019H",
+              "title": "Fundamentals of Mathematics",
+              "credits": 18,
+              "nqf_level": 5
+            }
+          ]
+        },
+        {
+          "combination_id": "CSC08-Y1-B",
+          "description": "With a 1000-level STA course",
+          "courses": [
+            {
+              "code": "CSC1015F/S",
+              "title": "Computer Science 1015",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "CSC1016S",
+              "title": "Computer Science 1016",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "MAM1031F",
+              "title": "Mathematics 1031 (or equivalent)",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "MAM1032S",
+              "title": "Mathematics 1032 (or equivalent)",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "STA100xF/S",
+              "title": "Any 1000-level Science STA course",
+              "credits": 18,
+              "nqf_level": 5,
+              "is_pattern": true,
+              "resolves_to": [
+                "STA1000F",
+                "STA1000S",
+                "STA1000P/L",
+                "STA1006S",
+                "STA1007S"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "label": "Second Year Core Courses",
+      "combinations": [
+        {
+          "combination_id": "CSC08-Y2-A",
+          "description": "Fixed second year courses",
+          "courses": [
+            {
+              "code": "CSC2001F",
+              "title": "Computer Science 2001",
+              "credits": 24,
+              "nqf_level": 6
+            },
+            {
+              "code": "CSC2041F",
+              "title": "AI 1: Knowledge Representation",
+              "credits": 24,
+              "nqf_level": 6
+            },
+            {
+              "code": "CSC2042S",
+              "title": "AI 2: Machine Learning",
+              "credits": 24,
+              "nqf_level": 6
+            },
+            {
+              "code": "MAM2010F",
+              "title": "Advanced Calculus (2AC)",
+              "credits": 12,
+              "nqf_level": 6
+            },
+            {
+              "code": "MAM2011F",
+              "title": "Linear Algebra (2LA)",
+              "credits": 12,
+              "nqf_level": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "label": "Third Year Core Courses",
+      "combinations": [
+        {
+          "combination_id": "CSC08-Y3-A",
+          "description": "Fixed third year courses",
+          "courses": [
+            {
+              "code": "CSC3041F",
+              "title": "Automated Planning and Control",
+              "credits": 18,
+              "nqf_level": 7
+            },
+            {
+              "code": "CSC3042F",
+              "title": "Deep Learning",
+              "credits": 18,
+              "nqf_level": 7
+            },
+            {
+              "code": "CSC3043S",
+              "title": "Reasoning in AI",
+              "credits": 18,
+              "nqf_level": 7
+            },
+            {
+              "code": "CSC3044S",
+              "title": "AI Systems",
+              "credits": 18,
+              "nqf_level": 7
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

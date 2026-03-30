@@ -1,0 +1,35 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "STA3048S",
+  "title": "Statistical Modelling & Bayesian Analysis",
+  "department": "statistical-sciences",
+  "credits": 30,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr E Pienaar",
+  "prerequisites": {
+    "text": "STA2004F, STA2005S and (MAM2010F, MAM2011F, MAM2012S and MAM2014S) strongly recommended. Co-requisites: STA3047S. Note: A student cannot obtain credits for both STA3043S and (STA3047S + STA3048S). This course forms part of the third-year major in Mathematical Statistics.",
+    "parsed": {
+      "type": "and",
+      "codes": [
+        "STA2004F",
+        "STA2005S",
+        "MAM2010F",
+        "MAM2011F",
+        "MAM2012S",
+        "MAM2014S",
+        "STA3047S",
+        "STA3043S",
+        "STA3048S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course consists of three modules: (1) Generalised Linear Models — theory and application of fitting linear models to various types of response variables with different underlying distributions; covers the exponential family of distributions, the GLM formulation, estimation and inference, models for continuous responses with skew distributions, logistic regression, log-linear models and Poisson regression; (2) Machine Learning — elementary concepts and methods in machine learning within the framework of statistical learning; (3) Introduction to Bayesian Analysis — Bayesian paradigm of statistical inference, analysis, and risk theory; covers Bayes' theorem, Bayesian statistical analysis for Bernoulli and normal sampling, empirical Bayes and credibility theory, loss and extreme value distributions, Monte Carlo methods.",
+  "lecture_times": "Monday - Friday, 1st period (see departmental entry). Two practicals per week.",
+  "dp_requirements": "Satisfactory attendance of lectures, tutorials, practicals and tests and completion of assignments and/or class exercises as set out in course outline. Class record of at least 35%.",
+  "assessment": "Class record 30% and a 3-hour exam counting 70%. Weights will be adjusted in the case of missed assessments, as detailed in the course outline.",
+  "is_science_course": true
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "SLL1044S",
+  "title": "Beginners Afrikaans for MBChB",
+  "department": "language-studies",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr M Lewis-Adams",
+  "prerequisites": {
+    "text": "This course is offered to 1st year students who are registered for the MBChB degree. Students seeking exemption from this course are required to pass an oral proficiency test prior to the commencement of the course in Semester 2",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This is a course on the basic gram mar of Afrikaans. It prepares st udents with lim ited or no prior knowledge in Afrikaans for the SL L2002H (Becoming a Doctor Part IB ) course and is taken a year prior to SLL2002H registration. By the end of the course, students are ready to apply the acquired grammatical knowledge in a medical context.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Attendance of all lectures AN D students are required to complete all in-course vocabulary and listening comprehension tests.",
+  "assessment": "In-course assessments (50%) and one oral summative assessment (50%). The students receive a PA (pass) or F (fail) grade at the end of the course.",
+  "is_health_sciences_course": false,
+  "offered_by_faculty": "humanities"
+}

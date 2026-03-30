@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "STA5069Z",
+  "title": "Multivariate Statistics",
+  "department": "statistical-sciences",
+  "credits": 15,
+  "nqf_level": 9,
+  "year_level": "Postgraduate (Master's)",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "Dr S Er",
+  "prerequisites": {
+    "text": "Acceptance into Master's programs in Statistics & Data Science, Data Science or Biostatistics, and/or statistical background deemed sufficient by the Head of Department.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "Multivariate statistical analysis methods with associated graphical representations are discussed. Topics to be covered include Principal Component Analysis and PCA biplots, Simple and Multiple Correspondence Analysis, Multidimensional Scaling, Cluster Analysis, Discriminant Analysis, Canonical Variate Analysis, Analysis of Distance and Biadditive Models.",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "40% for assignment component.",
+  "assessment": "Project 45%, class exercises 5%, written examination (theory and practical) 50%. Sub-minimum of 40% in each of project and overall written examination.",
+  "is_science_course": true
+}

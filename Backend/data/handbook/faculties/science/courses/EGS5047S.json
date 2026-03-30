@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EGS5047S",
+  "title": "Policy and Governance",
+  "department": "environmental-geographical-science",
+  "credits": 23,
+  "nqf_level": 9,
+  "year_level": "Postgraduate – Masters elective",
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr S Greyling",
+  "prerequisites": {
+    "text": "Acceptance for Honours or Master's specialising in EGS.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "This course looks at the underlying dynamics involved in the negotiation of environmental policy and its implementation, challenging the 'cultural embeddedness' of policy. Topics include processes through which institutions define and mediate policy outcomes; governance arrangements for sustainable development; and the roles of power, rationality, knowledge and values in achieving environmental and social justice. At NQF 9 level, students are assigned two presentations and subsequent written submissions with emphasis on application of theoretical considerations, and an extended policy analysis assignment with additional analytical variables.",
+  "lecture_times": null,
+  "dp_requirements": "At least 80% attendance record and submission of all assignments.",
+  "assessment": "Assignments 60%; examination 40%.",
+  "is_science_course": true
+}

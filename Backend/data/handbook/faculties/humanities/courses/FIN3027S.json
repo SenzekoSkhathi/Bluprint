@@ -1,0 +1,30 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "FIN3027S",
+  "title": "Theory of Art IIIB",
+  "department": "fine-art",
+  "credits": 18,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr P Malatjie",
+  "prerequisites": {
+    "text": "FIN1006F, FIN1009S, FIN2029F and FIN2028S",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "FIN1006F",
+        "FIN1009S",
+        "FIN2029F",
+        "FIN2028S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course focuses on basic and nuanced understandings of the history and development of key concepts underpinning radical curatorial practices and theory, including, interdependent and collaborative curatorial engagements, undocumented co -curatorship, cu ratorial practices of care, decolonial methodologies in display strategies and imagined and speculative curatorial futures. The course will look at ways in which practitioners are dealing with current and urgent ideas around decoloniality, intersectionality and different forms of curatorial methods that might de -centre the exhibition as the goal and final outcome. This focus will enable students to situate their own creative practice – whether artistic, curatorial or theoretical – within the contemporary (and future) moment. Students will develop advanced skills in visual and auditory analysis, critical thinking as well as approaches to visual, textual, auditory, and other forms of research and knowledge production.",
+  "lecture_times": "Monday, Wednesday, Thursday, 3rd period",
+  "dp_requirements": "At least 80% attendance of tutorials and lectures. Satisfactory completion of coursework.",
+  "assessment": "100% coursework (formative and summative essays) and no written examination.",
+  "is_humanities_course": true
+}

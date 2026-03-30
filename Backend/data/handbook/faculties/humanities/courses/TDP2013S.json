@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "TDP2013S",
+  "title": "Production II",
+  "department": "theatre-and-performance",
+  "credits": 18,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Associate Professor V Baxter",
+  "prerequisites": {
+    "text": "None (extended programme and diploma students only).",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "The purpose of this course is to augment and support its co -requisite course: ANALYSIS AND CRITICISM. It aims to improve students’ performance by enhancing their grasp of core concepts, and by developing their mastery of the disciplinary discourse. It provides additional pedagogic enrichment in the form of regular Plus Tutorials that extend into writing exercises. Students may also arrange additional consultations with their tutors in order to further assist them in areas where they may still be struggling. Students will receive explicit support around the corequisite course assignments and detailed feedback on their written work.",
+  "lecture_times": "Fridays 2nd and 3rd period.",
+  "dp_requirements": "No DP requirements.",
+  "assessment": "This course will be assessed on a Pass/Fail basis. In order to receive a pass grade, students will be required to complete at least 80% of all course requirements (attendance at tutorials, submission of written exercises, etc.)",
+  "is_humanities_course": true
+}

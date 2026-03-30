@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "SWK3061F",
+  "title": "Social Work Practice III: Communities",
+  "department": "social-development",
+  "credits": 24,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr K Kubeka",
+  "prerequisites": {
+    "text": "This course is only for students doing the BSW and must have at least third year status.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course provides the student with a theoretical understanding of the key stages/related concepts in the research process. At the same time central themes/issues that are linked to the knowledge, skills and value base of research in the broad field of h uman services are explored. Students will also be required to design and execute a small research project.",
+  "lecture_times": "Tuesday to Friday 2nd period.",
+  "dp_requirements": "At least 80% attendance at lectures/seminars, submission of all essays, projects, seminar materials and other required written work by the due date.",
+  "assessment": "Coursework counts 50%; two-hour June examination counts 50%.",
+  "is_humanities_course": true
+}

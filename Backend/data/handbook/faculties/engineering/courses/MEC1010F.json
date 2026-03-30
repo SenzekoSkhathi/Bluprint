@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MEC1010F",
+  "title": "Introduction to Mechanical Engineering",
+  "department": "mechanical-engineering",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Mr L Siboya",
+  "prerequisites": {
+    "text": "Refer to the programme and departmental sections in the 2026 EBE Faculty Handbook.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to introduce students, who have no prior drawing experience, to basic drawing principles and to provide the knowledge required to continue with the design stream of the relevant engineering degrees. Drawing equipment and free hand sketching will be used to convey the principles of descriptive geometry, orthographic and pictorial projections and basic design principles. Drawing conventions and standards, relevant to the discipline, will be introduced. CAD software will be used to address the following topics: detailed drawings, interpretation of drawings; and assembly design.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

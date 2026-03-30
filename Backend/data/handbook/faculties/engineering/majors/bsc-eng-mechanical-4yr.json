@@ -1,0 +1,72 @@
+{
+  "id": "bsc-eng-mechanical-4yr",
+  "programme_code": "EB005MEC01",
+  "name": "Bachelor of Science in Engineering in Mechanical Engineering 4-year curriculum",
+  "abbreviation": "BSc(Eng)(Mechanical)",
+  "department": "Mechanical Engineering",
+  "duration_years": 4,
+  "minimum_credits": 560,
+  "saqa_id": 13977,
+  "curriculum": {
+    "year_1": {
+      "core": [
+        "MAM1020F",
+        "MAM1021S",
+        "MEC1007F",
+        "MEC1009S",
+        "MEC1018S",
+        "MEC1019S",
+        "MEC1020W",
+        "PHY1012F",
+        "PHY1013S"
+      ],
+      "credits": 130
+    },
+    "year_2": {
+      "core": [
+        "CSC1019F",
+        "EEE2041F",
+        "EEE2042S",
+        "MAM2083F",
+        "MAM2084S",
+        "MEC1000X",
+        "MEC2046F",
+        "MEC2047S",
+        "MEC2048S",
+        "MEC2049F",
+        "MEC2050S"
+      ],
+      "credits": 144
+    },
+    "year_3": {
+      "core": [
+        "MEC2000X",
+        "MEC3074F",
+        "MEC3075F",
+        "MEC3076F",
+        "MEC3077F",
+        "MEC3078S",
+        "MEC3079S",
+        "MEC3080S",
+        "MEC3081S",
+        "MEC3082S",
+        "MEC3083W",
+        "STA1008F"
+      ],
+      "credits": 144
+    },
+    "year_4": {
+      "core": [
+        "MEC4047F",
+        "MEC4108S",
+        "MEC4123F",
+        "MEC4124W",
+        "MEC4125F",
+        "MEC4128Z"
+      ],
+      "complementary_studies_credits": 15,
+      "open_elective_credits": 27,
+      "credits": 144
+    }
+  }
+}

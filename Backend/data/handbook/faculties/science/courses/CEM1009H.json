@@ -1,0 +1,30 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CEM1009H",
+  "title": "Chemistry 1009",
+  "department": "chemistry",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "FY",
+  "semester_code": "H",
+  "convener": "Dr C Edmonds-Smith",
+  "prerequisites": {
+    "text": "NSC Physical Science with at least 60%. Permission of the Dean or Head of Department required prior to registration. Intended for students advised to transfer from CEM1000W after week 5 assessment. Note: CEM1009H + CEM1010H is equivalent to CEM1000W in level, credit value towards the degree and as prerequisite for certain other courses.",
+    "parsed": {
+      "type": "complex",
+      "codes_mentioned": [
+        "CEM1000W",
+        "CEM1009H",
+        "CEM1010H"
+      ],
+      "note": "Complex prerequisite logic - see text"
+    }
+  },
+  "corequisites": [],
+  "outline": "This course lays the foundation of chemistry in its context as a central science for scientists working in the chemical, biological or earth sciences. Fundamental concepts in chemistry are covered to illustrate their application to understanding the molecular nature of the world around us. Topics include microscopic and macroscopic concepts, atomic structure, chemical bonding and molecular structure, chemical equilibrium, acids and bases, solubility, phases of matter, thermochemistry, osmosis and chemical kinetics. The course continues with an introduction to the language of organic chemistry, including naming of compounds, identification of functional groups and isomers. Practicals are designed to develop essential manipulative and technical laboratory skills, to take measurements and handle data, as well as to draw links to interpreting the physical world in terms of its molecular nature.",
+  "lecture_times": "Wednesday - Friday, 4th period. Tutorials: Monday and Tuesday, 4th period. Practicals: Wednesday, 14h00 - 17h00.",
+  "dp_requirements": "Attendance and completion of practicals, tests and tutorial exercises and at least 35% for the class record.",
+  "assessment": "Class record (comprising tests, tutorials and practicals) counts 50%; one 2-hour examination written in November counts 50%. A subminimum of 50% is required in the final examination.",
+  "is_science_course": true
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EGS5003W",
+  "title": "Environmental & Geographical Science Dissertation",
+  "department": "environmental-geographical-science",
+  "credits": 180,
+  "nqf_level": 9,
+  "year_level": "Postgraduate – Masters",
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Dr S Scheba",
+  "prerequisites": {
+    "text": "None",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "This course consists of an investigation of an approved topic chosen for intensive study by the candidate, culminating in the submission of a dissertation. The dissertation shall demonstrate the successful completion of a programme of training in research methods, a thorough understanding of the scientific principles underlying the research and an appropriate acquaintance with the relevant literature. It must be clearly presented and conform to the standards of the department and faculty.",
+  "lecture_times": null,
+  "dp_requirements": null,
+  "assessment": "Examination by dissertation.",
+  "is_science_course": true
+}

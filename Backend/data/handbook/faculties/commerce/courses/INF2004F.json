@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "INF2004F",
+  "title": "Information Technology in Business",
+  "department": "information-systems",
+  "credits": 18,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr T Chimboza",
+  "prerequisites": {
+    "text": "Successful completion of INF1002F/S and ACC1006F or equivalents.",
+    "parsed": {
+      "type": "prerequisite",
+      "codes": [
+        "INF1002F",
+        "ACC1006F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "Information Technology in Business (INF2004F) is offered to Accounting and Finance students in order to prepare them for a range of roles within the business environment. The course prepares students for a range of IT-related roles such as users, manager, designers, project managers and evaluators of information systems. The course covers the conceptual foundations, control, applications, and system development process of Accounting Information Systems. The course has been developed to be in line with South African Institute of Chartered Accountants (SAICA) competency requirements.",
+  "lecture_times": "Monday and Tuesday either 15h00-15h45 or 16h00-16:45. Tutorials/Practicals: Thursday 1st-7th period and Friday 3rd-7th period.",
+  "dp_requirements": "Year mark greater than or equal to 45% (based on all continuous assessment prior to the final exam) and 80% participation for all practicals (tutorials and workshops).",
+  "assessment": "Coursework 60%, Final Examination 40% with a Sub-minimum of 40% for the final exam.",
+  "is_commerce_course": true
+}

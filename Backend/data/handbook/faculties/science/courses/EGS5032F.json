@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EGS5032F",
+  "title": "Climate Change Adaptation & Mitigation",
+  "department": "environmental-geographical-science",
+  "credits": 23,
+  "nqf_level": 9,
+  "year_level": "Postgraduate – Masters elective",
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr M Norton",
+  "prerequisites": {
+    "text": "Acceptance for EGS5012W and by agreement of the course convenor.",
+    "parsed": {
+      "type": "and",
+      "codes": [
+        "EGS5012W"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course provides in-depth coverage of (i) adaptation and (ii) mitigation from both a theoretical and practical/applied point of view, from a developing country, climate compatible perspective. Adaptation and mitigation are the two key domains required for students to be qualified to undertake research and be employable in the climate change arena in the South African and developing country context.",
+  "lecture_times": null,
+  "dp_requirements": null,
+  "assessment": "Coursework 80%; examination 20%.",
+  "is_science_course": true
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "SWK4015F",
+  "title": "Social Work Practice IV: Research",
+  "department": "social-development",
+  "credits": 24,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr E Campbell",
+  "prerequisites": {
+    "text": "This course is only for students doing the BSW. Students must have completed SWK 3061F, or with permission from the Head of Department.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This research course builds on the knowledge, values and skills of social work students enabling them to do applied research with individuals, families, groups and organisations in the South African social services context. Particular emphasis will be given to interrogating the philosophical assumptions that underpin research (epistemologies) as well as participatory action research, policy research and programme evaluation.",
+  "lecture_times": "Monday & Tuesday, 8th and 9th period.",
+  "dp_requirements": "At least 80% attendance at lectures/seminars, submission of all essays, projects, seminar materials and other required written work by the due date.",
+  "assessment": "Coursework counts 50%; June examination counts 50%.",
+  "is_humanities_course": true
+}

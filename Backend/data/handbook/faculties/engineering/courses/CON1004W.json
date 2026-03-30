@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CON1004W",
+  "title": "Construction Technology I",
+  "department": "construction-economics-and-management",
+  "credits": 26,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Dr A Filtane",
+  "prerequisites": {
+    "text": "Refer to the programme and departmental sections in the 2026 EBE Faculty Handbook.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to develop an understanding of the building as a System; the site including site/soil investigation, setting-out of a building etc.; Construction Technology appropriate for assembly of a double-storey house, including: manufacture and perf ormance of materials and components used; construction of such dwelling; and preparation of a report concerning the temporary facilities, plant and equipment used, specialists used, sequence of building and comparison of the requirements of good practice; and the National Building Regulations and the Occupational Health and Safety Act.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MAM3010S",
+  "title": "Metric Spaces (3MS)",
+  "department": "mathematics-applied-mathematics",
+  "credits": 18,
+  "nqf_level": 7,
+  "year_level": "Third Year",
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "S Chili",
+  "prerequisites": {
+    "text": "MAM2010F, MAM2011F, MAM2014S and at least one of MAM2012S or MAM2013S.",
+    "parsed": {
+      "type": "complex",
+      "codes_mentioned": [
+        "MAM2010F",
+        "MAM2011F",
+        "MAM2014S",
+        "MAM2012S",
+        "MAM2013S"
+      ],
+      "note": "Complex prerequisite logic - see text"
+    }
+  },
+  "corequisites": [],
+  "outline": "This course introduces fundamental concepts in metric spaces and topology. Topics include: metrics, ultrametrics, pseudometrics, quasi-metrics; convergence in metric spaces; closed sets and closures; open sets and interiors; definition of topology in metric space and in general; continuous, uniformly continuous, Lipschitz continuous, contractions, isometries functions; topological, uniform and metric isomorphisms; completeness via Cauchy sequences; Cantor's intersection theorem; construction and uniqueness of completion; Banach's Fixed Point Theorem and applications; compactness via convergent subsequences and equivalence with total boundedness, completeness and open cover property; connectedness, disconnectedness and connected components.",
+  "lecture_times": "Tuesdays, Fridays and some Wednesdays in 5th period.",
+  "dp_requirements": null,
+  "assessment": null,
+  "is_science_course": true
+}

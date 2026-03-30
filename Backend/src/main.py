@@ -6,16 +6,19 @@ import boto3
 import botocore.exceptions
 import hashlib
 import hmac
+import json
 from pathlib import Path
 import re
 from pypdf import PdfReader
-from typing import Literal
+from typing import Any, Literal
 
 from src.advisor import ScienceAdvisor
 from src.academic_rules import ScienceHandbookRulesService
 from src.auth_storage import AuthSessionStore, StudentCredentialStore
 from src.course_catalog import ScienceCourseCatalog
 from src.advisor_catalog import ScienceAdvisorCatalog
+from src.handbook_store import HandbookStore
+from src.handbook_validator import HandbookValidator
 from src.major_catalog import ScienceMajorCatalog
 from src.config import get_settings
 from src.models import (
@@ -53,6 +56,13 @@ class RetrievalRequest(BaseModel):
     run_id: str | None = None
 
 
+class HandbookRetrievalRequest(BaseModel):
+    query: str = Field(min_length=1)
+    top_k: int = Field(default=5, ge=1, le=20)
+    run_id: str | None = None
+    faculty_slug: str = Field(default="science", min_length=2)
+
+
 class AdvisorRequest(BaseModel):
     query: str = Field(min_length=1)
     top_k: int = Field(default=5, ge=1, le=20)
@@ -64,7 +74,58 @@ class AdvisorRequest(BaseModel):
     student_context: dict | None = None
 
 
+class HandbookAdvisorRequest(BaseModel):
+    query: str = Field(min_length=1)
+    top_k: int = Field(default=5, ge=1, le=20)
+    run_id: str | None = None
+    model_profile: Literal["fast", "thinking"] | None = None
+    student_context: dict | None = None
+    faculty_slug: str = Field(default="science", min_length=2)
+
+
+class AdvisorChatListRequest(BaseModel):
+    faculty_slug: str = Field(default="science", min_length=2)
+
+
+class AdvisorChatMessageInput(BaseModel):
+    id: str = Field(min_length=1)
+    text: str
+    sender: Literal["user", "bot", "system"]
+    timestamp_iso: str = Field(min_length=1)
+
+
+class AdvisorChatThreadInput(BaseModel):
+    id: str = Field(min_length=1)
+    title: str = Field(min_length=1)
+    custom_title: str | None = None
+    preview: str = Field(default="")
+    updated_at_iso: str = Field(min_length=1)
+    messages: list[AdvisorChatMessageInput] = Field(default_factory=list)
+
+
+class AdvisorChatSyncRequest(BaseModel):
+    current_thread_id: str | None = None
+    threads: list[AdvisorChatThreadInput] = Field(default_factory=list)
+    faculty_slug: str = Field(default="science", min_length=2)
+
+
+class AdvisorChatRenameRequest(BaseModel):
+    thread_id: str = Field(min_length=1)
+    title: str = Field(min_length=1)
+    faculty_slug: str = Field(default="science", min_length=2)
+
+
+class AdvisorChatDeleteRequest(BaseModel):
+    thread_id: str = Field(min_length=1)
+    faculty_slug: str = Field(default="science", min_length=2)
+
+
 class CourseCatalogRequest(BaseModel):
+    run_id: str | None = None
+
+
+class HandbookFacultyRequest(BaseModel):
+    faculty_slug: str = Field(default="science", min_length=2)
     run_id: str | None = None
 
 
@@ -91,8 +152,291 @@ class PlannedCourseInput(BaseModel):
 class PlanRulesValidationRequest(BaseModel):
     planned_courses: list[PlannedCourseInput] = Field(default_factory=list)
     selected_majors: list[str] = Field(default_factory=list)
+    selected_major_pathways: dict[str, dict[str, str]] = Field(default_factory=dict)
+    attempt_history: list[dict[str, Any]] = Field(default_factory=list)
+    readmission_pathway: Literal["auto", "sb001", "sb016"] = "auto"
+    plan_intent: Literal["snapshot", "graduation_candidate"] = "snapshot"
+    validation_mode: Literal["advisory", "strict_graduation"] = "advisory"
     run_id: str | None = None
     handbook_title: str = Field(default="2026 Science-Handbook-UCT", min_length=3)
+
+
+class HandbookPlanValidationRequest(BaseModel):
+    planned_courses: list[PlannedCourseInput] = Field(default_factory=list)
+    selected_majors: list[str] = Field(default_factory=list)
+    target_faculty: str = Field(default="science", min_length=2)
+
+
+def _resolve_advisor_faculty(requested: str | None) -> tuple[str, str, bool]:
+    requested_slug = str(requested or "science").strip().lower() or "science"
+    # Advisor runtime remains science-grounded for now; non-science requests
+    # are allowed and transparently routed through science policy guidance.
+    resolved_slug = "science"
+    used_fallback = requested_slug != resolved_slug
+    return requested_slug, resolved_slug, used_fallback
+
+
+def _resolve_retrieval_faculty(requested: str | None) -> tuple[str, str, bool]:
+    requested_slug = str(requested or "science").strip().lower() or "science"
+    # Retrieval currently uses the science index while handbook-wide indexing
+    # is expanded in later Phase 3 slices.
+    resolved_slug = "science"
+    used_fallback = requested_slug != resolved_slug
+    return requested_slug, resolved_slug, used_fallback
+
+
+def _resolve_chat_faculty(requested: str | None) -> str:
+    normalized = _normalize_faculty_slug(requested or "science")
+    allowed = {
+        "science",
+        "commerce",
+        "engineering",
+        "health-sciences",
+        "humanities",
+        "law",
+    }
+    return normalized if normalized in allowed else "science"
+
+
+def _chat_history_path(faculty_slug: str) -> Path:
+    chats_dir = settings.resolved_data_dir / "advisor-chats"
+    chats_dir.mkdir(parents=True, exist_ok=True)
+    return chats_dir / f"{faculty_slug}.json"
+
+
+def _default_chat_payload() -> dict[str, Any]:
+    return {
+        "current_thread_id": None,
+        "threads": [],
+    }
+
+
+def _load_chat_payload(faculty_slug: str) -> dict[str, Any]:
+    path = _chat_history_path(faculty_slug)
+    if not path.exists():
+        return _default_chat_payload()
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return _default_chat_payload()
+    if not isinstance(payload, dict):
+        return _default_chat_payload()
+
+    current_thread_id = payload.get("current_thread_id")
+    threads = payload.get("threads")
+    if not isinstance(threads, list):
+        threads = []
+    return {
+        "current_thread_id": current_thread_id if isinstance(current_thread_id, str) else None,
+        "threads": [row for row in threads if isinstance(row, dict)],
+    }
+
+
+def _save_chat_payload(faculty_slug: str, payload: dict[str, Any]) -> dict[str, Any]:
+    safe_payload = {
+        "current_thread_id": payload.get("current_thread_id")
+        if isinstance(payload.get("current_thread_id"), str)
+        else None,
+        "threads": payload.get("threads") if isinstance(payload.get("threads"), list) else [],
+    }
+    path = _chat_history_path(faculty_slug)
+    path.write_text(json.dumps(safe_payload, ensure_ascii=True, indent=2), encoding="utf-8")
+    return safe_payload
+
+
+def _answer_handbook_advisor(
+    *,
+    query: str,
+    top_k: int,
+    run_id: str | None,
+    model_profile: Literal["fast", "thinking"] | None,
+    student_context: dict | None,
+    faculty_slug: str,
+) -> dict:
+    requested_slug, resolved_slug, used_fallback = _resolve_advisor_faculty(faculty_slug)
+    response = science_advisor.answer(
+        query=query,
+        top_k=top_k,
+        run_id=run_id,
+        model_profile=model_profile,
+        student_context=student_context,
+    )
+
+    if isinstance(response, dict):
+        response["requested_faculty"] = requested_slug
+        response["advisor_faculty"] = resolved_slug
+        response["faculty_fallback"] = used_fallback
+
+    return response
+
+
+def _normalize_faculty_slug(value: str) -> str:
+    return str(value or "").strip().lower()
+
+
+def _normalize_course_group_from_year_level(year_level: Any) -> str:
+    text = str(year_level or "").strip().lower()
+    if isinstance(year_level, int):
+        if year_level <= 1:
+            return "Year 1"
+        if year_level == 2:
+            return "Year 2"
+        if year_level == 3:
+            return "Year 3"
+        return "Postgrad"
+    if "first" in text or text in {"1", "year 1"}:
+        return "Year 1"
+    if "second" in text or text in {"2", "year 2"}:
+        return "Year 2"
+    if "third" in text or text in {"3", "year 3"}:
+        return "Year 3"
+    if text.isdigit():
+        level = int(text)
+        if level <= 1:
+            return "Year 1"
+        if level == 2:
+            return "Year 2"
+        if level == 3:
+            return "Year 3"
+    return "Postgrad"
+
+
+def _build_handbook_courses_response(store: HandbookStore, faculty_slug: str) -> dict[str, Any]:
+    slug = _normalize_faculty_slug(faculty_slug)
+    meta = store.load_faculty_meta(slug)
+    raw_courses = store.list_courses(slug)
+
+    courses: list[dict[str, Any]] = []
+    for row in raw_courses:
+        code = str(row.get("code") or "").strip().upper()
+        if not code:
+            continue
+        title = str(row.get("title") or code).strip()
+        department = str(row.get("department") or "not-specified").strip() or "not-specified"
+        year_level = row.get("year_level")
+        course_group = _normalize_course_group_from_year_level(year_level)
+        prerequisites = row.get("prerequisites")
+        if isinstance(prerequisites, dict):
+            prerequisites_text = str(prerequisites.get("text") or "").strip()
+        else:
+            prerequisites_text = str(prerequisites or "").strip()
+
+        courses.append(
+            {
+                "id": str(row.get("id") or code.lower()).strip(),
+                "code": code,
+                "title": title,
+                "group": course_group,
+                "credits": int(row.get("credits", 0) or 0),
+                "nqf_level": int(row.get("nqf_level", 0) or 0),
+                "semester": str(row.get("semester") or "Not specified").strip() or "Not specified",
+                "department": department,
+                "delivery": str(row.get("delivery") or "Not specified").strip() or "Not specified",
+                "prerequisites": prerequisites_text or "Not specified",
+                "description": str(row.get("outline") or row.get("description") or "No course description available.").strip(),
+                "outcomes": row.get("outcomes") if isinstance(row.get("outcomes"), list) else [],
+                "source": str(row.get("source") or "structured_handbook_json").strip() or "structured_handbook_json",
+                "convener_details": str(row.get("convener") or row.get("convener_details") or "").strip() or None,
+                "entry_requirements": str(row.get("entry_requirements") or "").strip() or None,
+                "outline_details": str(row.get("outline") or "").strip() or None,
+                "lecture_times": str(row.get("lecture_times") or "").strip() or None,
+                "dp_requirements": str(row.get("dp_requirements") or "").strip() or None,
+                "assessment": str(row.get("assessment") or "").strip() or None,
+            }
+        )
+
+    return {
+        "run_id": "handbook-static",
+        "section": str(meta.get("faculty_name") or slug.replace("-", " ").title()),
+        "faculty": slug,
+        "institution": str(meta.get("institution") or "University of Cape Town"),
+        "degree": str(meta.get("degree") or "Various"),
+        "notes": str(meta.get("notes") or ""),
+        "count": len(courses),
+        "courses": courses,
+    }
+
+
+def _build_handbook_majors_response(store: HandbookStore, faculty_slug: str) -> dict[str, Any]:
+    slug = _normalize_faculty_slug(faculty_slug)
+    meta = store.load_faculty_meta(slug)
+    majors_dir = settings.resolved_data_dir / "handbook" / "faculties" / slug / "majors"
+    if not majors_dir.exists():
+        raise FileNotFoundError(f"Majors directory not found for faculty: {slug}")
+
+    majors: list[dict[str, Any]] = []
+    for major_file in sorted(majors_dir.glob("*.json")):
+        if major_file.name.startswith("_"):
+            continue
+        try:
+            payload = json.loads(major_file.read_text(encoding="utf-8"))
+        except (json.JSONDecodeError, OSError):
+            continue
+        if not isinstance(payload, dict):
+            continue
+
+        major_name = str(
+            payload.get("major_name")
+            or payload.get("specialisation")
+            or payload.get("programme_name")
+            or payload.get("name")
+            or major_file.stem
+        ).strip()
+        major_code = str(
+            payload.get("major_code")
+            or payload.get("programme_code")
+            or payload.get("id")
+            or major_file.stem
+        ).strip().upper()
+
+        years = payload.get("years") if isinstance(payload.get("years"), list) else []
+        curriculum = payload.get("curriculum")
+        if not years and isinstance(curriculum, list):
+            normalized_years: list[dict[str, Any]] = []
+            for row in curriculum:
+                if not isinstance(row, dict):
+                    continue
+                year = row.get("year")
+                courses = row.get("courses") if isinstance(row.get("courses"), list) else []
+                normalized_years.append(
+                    {
+                        "year": year if isinstance(year, int) else 1,
+                        "label": str(row.get("label") or f"Year {year or 1}").strip(),
+                        "combinations": [
+                            {
+                                "combination_id": f"{major_code}-Y{year or 1}-A",
+                                "description": "Programme curriculum pathway",
+                                "courses": courses,
+                                "required_core": [],
+                                "choose_one_of": [],
+                                "choose_two_of": [],
+                                "choose_three_of": [],
+                            }
+                        ],
+                    }
+                )
+            years = normalized_years
+
+        majors.append(
+            {
+                "major_name": major_name,
+                "major_code": major_code,
+                "department": str(payload.get("department") or "").strip() or None,
+                "notes": str(payload.get("notes") or "").strip() or None,
+                "years": years,
+            }
+        )
+
+    return {
+        "run_id": "handbook-static",
+        "section": str(meta.get("faculty_name") or slug.replace("-", " ").title()),
+        "faculty": slug,
+        "institution": str(meta.get("institution") or "University of Cape Town"),
+        "degree": str(meta.get("degree") or "Various"),
+        "notes": str(meta.get("notes") or ""),
+        "count": len(majors),
+        "majors": majors,
+    }
 
 
 class StudentLoginRequest(BaseModel):
@@ -636,11 +980,39 @@ def run_science_pipeline() -> dict:
 def query_science_retrieval(request: RetrievalRequest) -> dict:
     try:
         retriever = ScienceRetriever(settings)
-        return retriever.search(
+        response = retriever.search(
             query=request.query,
             top_k=request.top_k,
             run_id=request.run_id,
         )
+        if isinstance(response, dict):
+            response.setdefault("requested_faculty", "science")
+            response.setdefault("retrieval_faculty", "science")
+            response.setdefault("faculty_fallback", False)
+        return response
+    except FileNotFoundError as exc:
+        raise HTTPException(status_code=404, detail=str(exc)) from exc
+    except Exception as exc:
+        raise HTTPException(status_code=500, detail=str(exc)) from exc
+
+
+@app.post("/retrieval/handbook/query")
+def query_handbook_retrieval(request: HandbookRetrievalRequest) -> dict:
+    try:
+        requested_slug, resolved_slug, used_fallback = _resolve_retrieval_faculty(
+            request.faculty_slug
+        )
+        retriever = ScienceRetriever(settings)
+        response = retriever.search(
+            query=request.query,
+            top_k=request.top_k,
+            run_id=request.run_id,
+        )
+        if isinstance(response, dict):
+            response["requested_faculty"] = requested_slug
+            response["retrieval_faculty"] = resolved_slug
+            response["faculty_fallback"] = used_fallback
+        return response
     except FileNotFoundError as exc:
         raise HTTPException(status_code=404, detail=str(exc)) from exc
     except Exception as exc:
@@ -650,12 +1022,30 @@ def query_science_retrieval(request: RetrievalRequest) -> dict:
 @app.post("/advisor/science/ask")
 def ask_science_advisor(request: AdvisorRequest) -> dict:
     try:
-        return science_advisor.answer(
+        return _answer_handbook_advisor(
             query=request.query,
             top_k=request.top_k,
             run_id=request.run_id,
             model_profile=request.model_profile,
             student_context=request.student_context,
+            faculty_slug="science",
+        )
+    except FileNotFoundError as exc:
+        raise HTTPException(status_code=404, detail=str(exc)) from exc
+    except Exception as exc:
+        raise HTTPException(status_code=500, detail=str(exc)) from exc
+
+
+@app.post("/advisor/handbook/ask")
+def ask_handbook_advisor(request: HandbookAdvisorRequest) -> dict:
+    try:
+        return _answer_handbook_advisor(
+            query=request.query,
+            top_k=request.top_k,
+            run_id=request.run_id,
+            model_profile=request.model_profile,
+            student_context=request.student_context,
+            faculty_slug=request.faculty_slug,
         )
     except FileNotFoundError as exc:
         raise HTTPException(status_code=404, detail=str(exc)) from exc
@@ -670,6 +1060,7 @@ async def ask_science_advisor_with_upload(
     run_id: str | None = Form(default=None),
     model_profile: Literal["fast", "thinking"] | None = Form(default=None),
     student_context_json: str | None = Form(default=None),
+    faculty_slug: str = Form(default="science"),
     file: UploadFile = File(...),
 ) -> dict:
     import json as _json
@@ -710,17 +1101,117 @@ async def ask_science_advisor_with_upload(
     )
 
     try:
-        return science_advisor.answer(
+        return _answer_handbook_advisor(
             query=advisor_query,
             top_k=top_k,
             run_id=run_id,
             model_profile=model_profile,
             student_context=student_context,
+            faculty_slug=faculty_slug,
         )
     except FileNotFoundError as exc:
         raise HTTPException(status_code=404, detail=str(exc)) from exc
     except Exception as exc:
         raise HTTPException(status_code=500, detail=str(exc)) from exc
+
+
+@app.post("/advisor/handbook/ask-upload")
+async def ask_handbook_advisor_with_upload(
+    query: str = Form(default=""),
+    top_k: int = Form(default=5),
+    run_id: str | None = Form(default=None),
+    model_profile: Literal["fast", "thinking"] | None = Form(default=None),
+    student_context_json: str | None = Form(default=None),
+    faculty_slug: str = Form(default="science"),
+    file: UploadFile = File(...),
+) -> dict:
+    return await ask_science_advisor_with_upload(
+        query=query,
+        top_k=top_k,
+        run_id=run_id,
+        model_profile=model_profile,
+        student_context_json=student_context_json,
+        faculty_slug=faculty_slug,
+        file=file,
+    )
+
+
+@app.post("/advisor/handbook/chats/list")
+def list_handbook_advisor_chats(request: AdvisorChatListRequest) -> dict:
+    faculty_slug = _resolve_chat_faculty(request.faculty_slug)
+    return _load_chat_payload(faculty_slug)
+
+
+@app.post("/advisor/handbook/chats/sync")
+def sync_handbook_advisor_chats(request: AdvisorChatSyncRequest) -> dict:
+    faculty_slug = _resolve_chat_faculty(request.faculty_slug)
+    payload = {
+        "current_thread_id": request.current_thread_id,
+        "threads": [thread.model_dump() for thread in request.threads],
+    }
+    return _save_chat_payload(faculty_slug, payload)
+
+
+@app.post("/advisor/handbook/chats/rename")
+def rename_handbook_advisor_chat_thread(request: AdvisorChatRenameRequest) -> dict:
+    faculty_slug = _resolve_chat_faculty(request.faculty_slug)
+    payload = _load_chat_payload(faculty_slug)
+    renamed = False
+    for row in payload.get("threads", []):
+        if not isinstance(row, dict):
+            continue
+        if str(row.get("id", "")) != request.thread_id:
+            continue
+        row["custom_title"] = request.title
+        row["title"] = request.title
+        renamed = True
+        break
+
+    _save_chat_payload(faculty_slug, payload)
+    return {"ok": renamed}
+
+
+@app.post("/advisor/handbook/chats/delete")
+def delete_handbook_advisor_chat_thread(request: AdvisorChatDeleteRequest) -> dict:
+    faculty_slug = _resolve_chat_faculty(request.faculty_slug)
+    payload = _load_chat_payload(faculty_slug)
+
+    original_threads = payload.get("threads", [])
+    filtered_threads = [
+        row
+        for row in original_threads
+        if isinstance(row, dict) and str(row.get("id", "")) != request.thread_id
+    ]
+    deleted = len(filtered_threads) != len(original_threads)
+    payload["threads"] = filtered_threads
+    if payload.get("current_thread_id") == request.thread_id:
+        payload["current_thread_id"] = None
+
+    _save_chat_payload(faculty_slug, payload)
+    return {"ok": deleted}
+
+
+@app.post("/advisor/science/chats/list")
+def list_science_advisor_chats() -> dict:
+    return list_handbook_advisor_chats(AdvisorChatListRequest(faculty_slug="science"))
+
+
+@app.post("/advisor/science/chats/sync")
+def sync_science_advisor_chats(request: AdvisorChatSyncRequest) -> dict:
+    req = request.model_copy(update={"faculty_slug": "science"})
+    return sync_handbook_advisor_chats(req)
+
+
+@app.post("/advisor/science/chats/rename")
+def rename_science_advisor_chat_thread(request: AdvisorChatRenameRequest) -> dict:
+    req = request.model_copy(update={"faculty_slug": "science"})
+    return rename_handbook_advisor_chat_thread(req)
+
+
+@app.post("/advisor/science/chats/delete")
+def delete_science_advisor_chat_thread(request: AdvisorChatDeleteRequest) -> dict:
+    req = request.model_copy(update={"faculty_slug": "science"})
+    return delete_handbook_advisor_chat_thread(req)
 
 
 @app.post("/courses/science/list")
@@ -734,11 +1225,33 @@ def list_science_courses(request: CourseCatalogRequest) -> dict:
         raise HTTPException(status_code=500, detail=str(exc)) from exc
 
 
+@app.post("/courses/handbook/list")
+def list_handbook_courses(request: HandbookFacultyRequest) -> dict:
+    try:
+        store = HandbookStore(settings.resolved_data_dir)
+        return _build_handbook_courses_response(store, request.faculty_slug)
+    except FileNotFoundError as exc:
+        raise HTTPException(status_code=404, detail=str(exc)) from exc
+    except Exception as exc:
+        raise HTTPException(status_code=500, detail=str(exc)) from exc
+
+
 @app.post("/majors/science/list")
 def list_science_majors(request: CourseCatalogRequest) -> dict:
     try:
         catalog = ScienceMajorCatalog(settings)
         return catalog.list_majors(run_id=request.run_id)
+    except FileNotFoundError as exc:
+        raise HTTPException(status_code=404, detail=str(exc)) from exc
+    except Exception as exc:
+        raise HTTPException(status_code=500, detail=str(exc)) from exc
+
+
+@app.post("/majors/handbook/list")
+def list_handbook_majors(request: HandbookFacultyRequest) -> dict:
+    try:
+        store = HandbookStore(settings.resolved_data_dir)
+        return _build_handbook_majors_response(store, request.faculty_slug)
     except FileNotFoundError as exc:
         raise HTTPException(status_code=404, detail=str(exc)) from exc
     except Exception as exc:
@@ -817,11 +1330,44 @@ def validate_plan_against_science_rules(request: PlanRulesValidationRequest) -> 
         return service.validate_plan(
             planned_courses=[course.model_dump() for course in request.planned_courses],
             selected_majors=request.selected_majors,
+            selected_major_pathways=request.selected_major_pathways,
+            attempt_history=request.attempt_history,
+            readmission_pathway=request.readmission_pathway,
+            plan_intent=request.plan_intent,
+            validation_mode=request.validation_mode,
             run_id=request.run_id,
             handbook_title=request.handbook_title,
         )
     except FileNotFoundError as exc:
         raise HTTPException(status_code=404, detail=str(exc)) from exc
+    except Exception as exc:
+        raise HTTPException(status_code=500, detail=str(exc)) from exc
+
+
+@app.get("/rules/handbook/faculties")
+def list_handbook_faculties() -> dict:
+    try:
+        store = HandbookStore(settings.resolved_data_dir)
+        summaries = [row.__dict__ for row in store.summarize_faculties()]
+        return {
+            "faculties": summaries,
+            "total": len(summaries),
+            "data_source": "structured_handbook_json",
+        }
+    except Exception as exc:
+        raise HTTPException(status_code=500, detail=str(exc)) from exc
+
+
+@app.post("/rules/handbook/validate-plan")
+def validate_plan_against_handbook(request: HandbookPlanValidationRequest) -> dict:
+    try:
+        store = HandbookStore(settings.resolved_data_dir)
+        validator = HandbookValidator(store)
+        return validator.validate_plan(
+            planned_courses=[course.model_dump() for course in request.planned_courses],
+            selected_majors=request.selected_majors,
+            target_faculty=request.target_faculty,
+        )
     except Exception as exc:
         raise HTTPException(status_code=500, detail=str(exc)) from exc
 

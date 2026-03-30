@@ -1,0 +1,264 @@
+{
+  "$schema": "handbook-programme-v1",
+  "programme_code": "CB003BUS09",
+  "programme_name": "Bachelor of Business Science in Actuarial Science specialising in Quantitative Finance",
+  "degree": "BBusSci",
+  "specialisation": "Actuarial Science - Quantitative Finance",
+  "faculty": "commerce",
+  "nqf_level": 8,
+  "minimum_credits": 528,
+  "duration_years": 4,
+  "department": "management-studies",
+  "curriculum": [
+    {
+      "year": 1,
+      "total_credits": 180,
+      "courses": [
+        {
+          "code": "ACC1006F",
+          "title": "Financial Accounting",
+          "nqf_credits": 18,
+          "nqf_level": 5
+        },
+        {
+          "code": "BUS1036F",
+          "title": "Evidence-based Management",
+          "nqf_credits": 18,
+          "nqf_level": 5
+        },
+        {
+          "code": "CSC1015F",
+          "title": "Computer Science 1015",
+          "nqf_credits": 18,
+          "nqf_level": 5,
+          "alternative": "INF1002F"
+        },
+        {
+          "code": "INF1002F",
+          "title": "Foundations of Information Systems",
+          "nqf_credits": 18,
+          "nqf_level": 5,
+          "alternative": "CSC1015F"
+        },
+        {
+          "code": "ECO1010F",
+          "title": "Microeconomics I",
+          "nqf_credits": 18,
+          "nqf_level": 5
+        },
+        {
+          "code": "MAM1031F",
+          "title": "Mathematics 1031",
+          "nqf_credits": 18,
+          "nqf_level": 5
+        },
+        {
+          "code": "MAM1032S",
+          "title": "Mathematics 1032",
+          "nqf_credits": 18,
+          "nqf_level": 5
+        },
+        {
+          "code": "BUS1003H",
+          "title": "Introduction to Actuarial Science",
+          "nqf_credits": 18,
+          "nqf_level": 5
+        },
+        {
+          "code": "ACC1011S",
+          "title": "Financial Reporting I",
+          "nqf_credits": 18,
+          "nqf_level": 5
+        },
+        {
+          "code": "ECO1011S",
+          "title": "Macroeconomics I",
+          "nqf_credits": 18,
+          "nqf_level": 5
+        },
+        {
+          "code": "STA1006S",
+          "title": "Mathematical Statistics I",
+          "nqf_credits": 18,
+          "nqf_level": 5
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "total_credits": 186,
+      "courses": [
+        {
+          "code": "CML1001F",
+          "title": "Business Law I",
+          "nqf_credits": 18,
+          "nqf_level": 5
+        },
+        {
+          "code": "ECO2003F",
+          "title": "Microeconomics II",
+          "nqf_credits": 18,
+          "nqf_level": 6
+        },
+        {
+          "code": "STA2004F",
+          "title": "Statistical Theory & Inference",
+          "nqf_credits": 24,
+          "nqf_level": 6
+        },
+        {
+          "code": "MAM2010F",
+          "title": "Advanced Calculus (2AC)",
+          "nqf_credits": 12,
+          "nqf_level": 6
+        },
+        {
+          "code": "MAM2011F",
+          "title": "Linear Algebra (2LA)",
+          "nqf_credits": 12,
+          "nqf_level": 6
+        },
+        {
+          "code": "MAM2012S",
+          "title": "Differential Equations (2DE)",
+          "nqf_credits": 12,
+          "nqf_level": 6
+        },
+        {
+          "code": "MAM2014S",
+          "title": "Real Analysis (2RA)",
+          "nqf_credits": 12,
+          "nqf_level": 6
+        },
+        {
+          "code": "BUS2016H",
+          "title": "Financial Mathematics",
+          "nqf_credits": 18,
+          "nqf_level": 6
+        },
+        {
+          "code": "ECO2004S",
+          "title": "Macroeconomics II",
+          "nqf_credits": 18,
+          "nqf_level": 6
+        },
+        {
+          "code": "FTX2024S",
+          "title": "Financial Management",
+          "nqf_credits": 18,
+          "nqf_level": 6
+        },
+        {
+          "code": "STA2005S",
+          "title": "Linear Models",
+          "nqf_credits": 24,
+          "nqf_level": 6
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "total_credits": 198,
+      "courses": [
+        {
+          "code": "BUS2033F",
+          "title": "Professional Communication",
+          "nqf_credits": 18,
+          "nqf_level": 6,
+          "alternative": "BUS2033S"
+        },
+        {
+          "code": "BUS3039F",
+          "title": "People Management",
+          "nqf_credits": 18,
+          "nqf_level": 7,
+          "alternative": "BUS3039S"
+        },
+        {
+          "code": "FTX3044F",
+          "title": "Investment Management A",
+          "nqf_credits": 18,
+          "nqf_level": 7
+        },
+        {
+          "code": "STA3041F",
+          "title": "Stochastic Processes & Time Series",
+          "nqf_credits": 36,
+          "nqf_level": 7
+        },
+        {
+          "code": "STA3045F",
+          "title": "Stochastic Processes and Distribution",
+          "nqf_credits": 36,
+          "nqf_level": 7
+        },
+        {
+          "code": "FTX3045S",
+          "title": "Investment Management B",
+          "nqf_credits": 18,
+          "nqf_level": 7
+        },
+        {
+          "code": "PHI2043S",
+          "title": "Business Ethics",
+          "nqf_credits": 18,
+          "nqf_level": 6
+        },
+        {
+          "code": "STA3047S",
+          "title": "Introduction to Machine Learning",
+          "nqf_credits": 6,
+          "nqf_level": 7
+        },
+        {
+          "code": "STA3048S",
+          "title": "Statistical Modelling and Bayesian Analysis",
+          "nqf_credits": 30,
+          "nqf_level": 7
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "total_credits": 129,
+      "courses": [
+        {
+          "code": "BUS4028F",
+          "title": "Actuarial Science III: Financial Economics",
+          "nqf_credits": 21,
+          "nqf_level": 7
+        },
+        {
+          "code": "FTX4086F",
+          "title": "Alternative Investments",
+          "nqf_credits": 18,
+          "nqf_level": 8
+        },
+        {
+          "code": "BUS4050H",
+          "title": "Strategic Thinking",
+          "nqf_credits": 18,
+          "nqf_level": 8
+        },
+        {
+          "code": "BUS4053H",
+          "title": "Quantitative Finance Project",
+          "nqf_credits": 36,
+          "nqf_level": 8
+        },
+        {
+          "code": "BUS4087S",
+          "title": "Quantitative Finance Selected Topics",
+          "nqf_credits": 18,
+          "nqf_level": 8
+        },
+        {
+          "code": "FTX4056S",
+          "title": "Applied Investments",
+          "nqf_credits": 18,
+          "nqf_level": 8
+        }
+      ]
+    }
+  ]
+}

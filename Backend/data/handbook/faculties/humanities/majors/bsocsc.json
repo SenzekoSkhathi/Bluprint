@@ -1,0 +1,24 @@
+{
+  "id": "bsocsc",
+  "name": "Bachelor of Social Science",
+  "abbreviation": "BSocSc",
+  "nqf_level": 7,
+  "department": "Faculty of Humanities",
+  "duration_years": 3,
+  "minimum_credits": 384,
+  "curriculum": {
+    "structure": "Choose 2 majors from social science disciplines (Psychology, Sociology, Political Studies, Economics, etc.). Must include courses at 1000, 2000, and 3000 levels.",
+    "year_1": {
+      "credits": 120,
+      "note": "4-5 first-year courses in chosen social science disciplines"
+    },
+    "year_2": {
+      "credits": 120,
+      "note": "Continue major sequences at 2000-level"
+    },
+    "year_3": {
+      "credits": 144,
+      "note": "Complete major sequences at 3000-level"
+    }
+  }
+}

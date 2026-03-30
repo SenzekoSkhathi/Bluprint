@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "ECO4006F",
+  "title": "Macroeconomics",
+  "department": "economics",
+  "credits": 16,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr C Makanza",
+  "prerequisites": {
+    "text": "ECO4112F.",
+    "parsed": {
+      "type": "prerequisite",
+      "codes": [
+        "ECO4112F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The course studies the principal macroeconomic approaches towards understanding short-run fluctuations in aggregate output and the longer-term determinants of macroeconomic performance. Business cycles are investigated from a traditional Keynesian and New Keynesian perspective, complemented by a discussion on monetary and fiscal policy options. For understanding economic growth, the course reviews the exogenous growth model as well as new growth theories and alternative perspectives.",
+  "lecture_times": "To be announced.",
+  "dp_requirements": "None.",
+  "assessment": "Coursework 40% and examination 60%. A supplementary exam will only be offered for ECO4006F during the mid-year vacation.",
+  "is_commerce_course": true
+}

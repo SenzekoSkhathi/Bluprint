@@ -1,0 +1,146 @@
+{
+  "$schema": "handbook-meta-v1",
+  "university": "University of Cape Town",
+  "faculty": "Faculty of Law",
+  "faculty_slug": "law",
+  "year": 2026,
+  "handbook_title": "Faculty of Law Handbook",
+  "handbook_series": "Book 10 in the series of handbooks",
+  "contact": {
+    "postal_address": "University of Cape Town, Private Bag X3, 7701 Rondebosch",
+    "deans_office": "Wilfred and Jules Kramer Building, Middle Campus",
+    "office_hours": "Monday to Friday: 08h30 - 16h30",
+    "telephones": {
+      "deans_office": "(021) 650-3086",
+      "faculty_office": "(021) 650-3086",
+      "accounts_and_fees": "(021) 650-1704",
+      "admissions": "(021) 650-2128"
+    },
+    "websites": {
+      "uct": "http://www.uct.ac.za",
+      "law_faculty": "http://www.law.uct.ac.za",
+      "dean_email": "lawfaculty@uct.ac.za"
+    }
+  },
+  "qualifications": {
+    "undergraduate_degrees": [
+      {
+        "name": "Bachelor of Laws",
+        "abbreviation": "LLB",
+        "saqa_id": 10695,
+        "nqf_level": 8,
+        "streams": [
+          {
+            "name": "Three-year graduate LLB",
+            "programme_code": "LP001",
+            "duration_years": 3,
+            "total_credits": 504,
+            "entry": "Holders of an approved degree"
+          },
+          {
+            "name": "Four-year undergraduate LLB",
+            "programme_code": "LB002",
+            "duration_years": 4,
+            "total_credits": 637,
+            "entry": "Direct from school"
+          },
+          {
+            "name": "Combined LLB",
+            "duration_years": "5-6",
+            "entry": "Via Humanities or Commerce degree with law courses, then graduate stream"
+          }
+        ]
+      }
+    ],
+    "postgraduate_qualifications": [
+      {
+        "name": "Postgraduate Diploma in Law",
+        "abbreviation": "PGDip(Law)",
+        "saqa_id": 4393
+      },
+      {
+        "name": "Master of Laws",
+        "abbreviation": "LLM",
+        "saqa_id": 10701
+      },
+      {
+        "name": "Master of Philosophy in Law",
+        "abbreviation": "MPhil(Law)",
+        "saqa_id": 104782
+      },
+      {
+        "name": "Doctor of Laws",
+        "abbreviation": "LLD"
+      },
+      {
+        "name": "Doctor of Philosophy in Law",
+        "abbreviation": "PhD(Law)"
+      }
+    ]
+  },
+  "course_code_system": {
+    "description": "Eight character code AAAnnnnB: AAA=department, nnnn=year level+number, B=suffix.",
+    "suffix_codes": {
+      "F": {
+        "meaning": "First-semester course",
+        "semester": "S1"
+      },
+      "S": {
+        "meaning": "Second-semester course",
+        "semester": "S2"
+      },
+      "W": {
+        "meaning": "Whole-year course",
+        "semester": "FY"
+      },
+      "H": {
+        "meaning": "Half course taught over whole year",
+        "semester": "FY"
+      },
+      "X": {
+        "meaning": "Not classified (e.g. community service)",
+        "semester": "varies"
+      }
+    },
+    "course_levels": {
+      "preliminary": "Foundation law courses (years 1-2 undergrad, year 1 graduate)",
+      "intermediate": "Core substantive law courses (year 3 undergrad, year 2 graduate)",
+      "final": "Compulsory + elective courses (year 4 undergrad, year 3 graduate)"
+    },
+    "note": "Half courses (F/S/H) are 18 NQF credits. Full courses (W) are 36 NQF credits. Final Level electives are 9 NQF credits each."
+  },
+  "departments": [
+    "Department of Commercial Law",
+    "Department of Private Law",
+    "Department of Public Law"
+  ],
+  "department_prefixes": [
+    "CML",
+    "PVL",
+    "PBL",
+    "DOL"
+  ],
+  "cross_faculty_departments": [
+    {
+      "department": "Mathematics & Applied Mathematics",
+      "prefix": "MAM",
+      "home_faculty": "science"
+    },
+    {
+      "department": "English Language and Literature",
+      "prefix": "ELL",
+      "home_faculty": "humanities"
+    },
+    {
+      "department": "Language Studies",
+      "prefix": "SLL",
+      "home_faculty": "humanities"
+    },
+    {
+      "department": "Pathology",
+      "prefix": "PTY",
+      "home_faculty": "health-sciences"
+    }
+  ],
+  "dean": "Professor M Paleker"
+}

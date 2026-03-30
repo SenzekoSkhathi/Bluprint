@@ -1,0 +1,31 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "HUB3006F",
+  "title": "Applied Human Biology",
+  "department": "human-biology",
+  "credits": 36,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Associate Professor DE Rae",
+  "prerequisites": {
+    "text": "HUB2019F and HUB2021S or equivalent.",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "HUB2019F",
+        "HUB2021S"
+      ]
+    }
+  },
+  "corequisites": [
+    "HUB2017H",
+    "PTY2000S"
+  ],
+  "outline": "Objective: To advance your knowledge and understanding of Applied Human Biology, with particular reference to how the major physiological systems function in an integrated fashion to support human life in the context of \"Nutrition, Exercise and Sleep for optimal physical health and performance”, with a view to furthering study at the Honours level. Course outline: This course is under review and the content may change as a result. Building on what was learned in second year, this course is designed to provide students with insights into the integrated physiology of humans eating, exercising and sleeping to reduce risk for diseases of lifestyle and optimise physical performance. The four modules of this course are: Energy Metabolism, Disease of Lifestyle, Sport and Exercise, and Sleep. Within these modules students will learn about: Advanced mitochondrial physiology, Energy metabolism, Energy balance and Obesity; Heart disease and Diabetes; Nutrition and health; Metabolism and physiology of sport and exercise, Adaptation to exercise training, Principles of exercise training, Nutrition for sport; Physiology of sleep and circadian rhythms in health, disease & sport.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Attendance at all practicals, (including tutorials and seminar presentations held during the “practical” time slot), 40% average in class tests and an average of 50% for all assignments.",
+  "assessment": "The final mark comprises clas s tests (30%); practical and tutorial assignments (20%), and final examinations (50%). The final examinations consist of a written theory exam (30%) and a practical exam (20%). A subminimum of 40% is required for both the theory and practical examinations to pass this course. Supplementary examinations in the form of written, practical or oral assessment may be offered to stu dents whose overall course mark is 45 - 49%. An oral examination may be required in the case of selected students.",
+  "is_health_sciences_course": true
+}

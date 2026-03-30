@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MAM2010F",
+  "title": "Advanced Calculus (2AC)",
+  "department": "mathematics",
+  "credits": 12,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr F Ebobisse-Bille",
+  "prerequisites": {
+    "text": "MAM1031F and MAM1032S or equivalent. With permission from the convener, students with 70% for both MAM1010F and MAM1012S may register for MAM2010F.",
+    "parsed": {
+      "type": "prerequisite",
+      "codes": [
+        "MAM1031F",
+        "MAM1032S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "Students will study the fundamentals of multivariable calculus, including: Curves and surfaces in three dimensions, change of coordinates; Line integrals, surface integrals; Stoke's, Green's and divergence theorems. Please note that lectures alternate during the week so that students can take MAM2010F and MAM2011F concurrently.",
+  "lecture_times": "Tuesdays, Fridays and some Wednesdays in 5th period.",
+  "dp_requirements": "To be advised.",
+  "assessment": "To be advised.",
+  "is_commerce_course": false,
+  "offered_by_faculty": "science"
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "APG3036F",
+  "title": "Management Practice Law",
+  "department": "architecture-planning-geomatics",
+  "credits": 10,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "B Mathole",
+  "prerequisites": {
+    "text": "Refer to the programme and departmental sections in the 2026 EBE Faculty Handbook.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "The course provides a broad understanding of social and organizational principles which influence the production of the built environment as well as business principles of practice management related to architectural design and practice. Economic and legal principles are introduced in global and national contexts, giving emphasis to the following two themes: production of the built environment (incl. financial, sectoral, professional and ethical issues) and regulation of the built environment (providing an overview of multiple legislative frameworks and responsibilities, documentation methods).",
+  "lecture_times": "Refer to departmental timetable",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

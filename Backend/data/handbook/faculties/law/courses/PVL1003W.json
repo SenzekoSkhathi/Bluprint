@@ -1,0 +1,35 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PVL1003W",
+  "title": "Foundations of South African Law",
+  "department": "private-law",
+  "credits": 36,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "M Baase",
+  "prerequisites": {
+    "text": "Undergraduate LLB students: concurrent registration with PVL1004F and PVL1008H. Graduate LLB students: concurrent registration with PVL1004F, PVL1008H, PBL2000W, PVL2002H, PVL2003H.",
+    "parsed": {
+      "type": "concurrent_registration",
+      "undergraduate": [
+        "PVL1004F",
+        "PVL1008H"
+      ],
+      "graduate": [
+        "PVL1004F",
+        "PVL1008H",
+        "PBL2000W",
+        "PVL2002H",
+        "PVL2003H"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "An introduction to the South African legal system is covered in the first section of the course. This is followed by an introduction to critical post-apartheid jurisprudence, including transformative constitutionalism and decolonisation. An outline of the development of public law culture, viewed through the lens of the rule of law, follows in the second semester. Finally, a section on the rules of interpretation of law and the practical application of those rules concludes the course.",
+  "lecture_times": "Three lectures per week.",
+  "dp_requirements": "None",
+  "assessment": "Coursework 50%, final examination 50%.",
+  "is_law_course": true
+}

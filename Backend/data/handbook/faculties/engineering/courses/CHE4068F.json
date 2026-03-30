@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CHE4068F",
+  "title": "Bioprocess Engineering Design",
+  "department": "chemical-engineering",
+  "credits": 16,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr SC Mokwatlo",
+  "prerequisites": {
+    "text": "CHE3068S",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "CHE3068S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to give advanced students an opportunity to apply all of their acquired knowledge of the fundamentals of bioprocess engineering and biotechnology to the integrated design of a complete bio-manufacturing plant",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

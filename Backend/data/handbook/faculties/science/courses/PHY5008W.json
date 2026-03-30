@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PHY5008W",
+  "title": "Data Science Minor Dissertation",
+  "department": "physics",
+  "credits": 90,
+  "nqf_level": 9,
+  "year_level": "Postgraduate (Master's specialising in Data Science)",
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Dr S Er",
+  "prerequisites": {
+    "text": "Successful completion of the coursework component of the Masters course in Data Science.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "The research component of the degree is based on a 90 credit dissertation. The topic of the research will be based on an analysis of large data sets from Physics.",
+  "lecture_times": "Not applicable.",
+  "dp_requirements": "Not specified.",
+  "assessment": "Examination by dissertation.",
+  "is_science_course": true
+}

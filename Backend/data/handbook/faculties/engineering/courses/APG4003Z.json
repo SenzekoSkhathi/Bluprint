@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "APG4003Z",
+  "title": "Geomatics Project",
+  "department": "architecture-planning-geomatics",
+  "credits": 40,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "Mr K Singh",
+  "prerequisites": {
+    "text": "The candidate must be able to graduate in the year in which the course is taken.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This project will provide an opportunity to demonstrate ability to design, execute and report on a Geomatics-related problem. Students will start a Geomatics project at the beginning of the year, and will submit a planning and proposal document before the end of the first term. Students shall then perform their project plan and report their results and conclusions in a main project report of their work in the second semester.",
+  "lecture_times": "None. Students are encouraged to meet with their supervisors at least fortnightly to discuss progress, especially in the beginning stages of the project. Additional support is provided through CHED in consultation with students, and students are encouraged to make use of these sessions.",
+  "dp_requirements": "None.",
+  "assessment": "Project proposal count 5%, final project presentation count 10%, final written project report count 85%.",
+  "is_engineering_course": true
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AHS3105F",
+  "title": "Public Health Audiology",
+  "department": "health-and-rehabilitation-sciences",
+  "credits": 15,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Professor L Ramma",
+  "prerequisites": {
+    "text": "None",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to enable students to describe and discuss frameworks for audiology service delivery in the public health sect or; and to plan, implemen t and manage audiology serv ices for the health of the public. Content include s noise and the health of the publ ic, ototoxicity monitoring, cerumen management, and the management of hearing screening programs. Studen ts acquire skills of critical and analytical thinking, knowledge translation, health communication, effective communication with key stakeholders, skills in training of other health workers, and the ability to critique literature. They learn the importance of empathy, the ethical principle of respect, an app reciation of and willingness to address challenges, social responsibility, an appreciation of the value of prevention measures, and to promote healthy and safe acoustic environments. Teaching and learning activities include lectures, case studies, class debates, self-guided study and group learning. Themes underpinning the course are primary healthcare, the burden of disease, developing agents for c hange, equity and affirmation of diversity, and ethics and human rights.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "For discipline specific courses in the BSc Audiology and BSc in Speech-Language Pathology programmes a minimum coursework mark of 40% is required for entrance into the examination.",
+  "assessment": "The course grade is made up of a cour sework mark (weighted 60%) and a final examination mark (weighted 40%). If a supplementary examination is awarded, it will count 40 % of the final mark, as the course work mark will still be included in the final mark. 112 DEPARTMENTS IN THE FACULTY",
+  "is_health_sciences_course": true
+}

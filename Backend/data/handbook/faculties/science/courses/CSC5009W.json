@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CSC5009W",
+  "title": "Data Science Minor Dissertation",
+  "department": "computer-science",
+  "credits": 90,
+  "nqf_level": 9,
+  "year_level": "Postgraduate (Master's specialising in Data Science)",
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Professor J Gain",
+  "prerequisites": {
+    "text": "Successful completion of the coursework component of the Master's specialising in Data Science.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "The research component of the degree is based on a 90 credit dissertation. The topic of the research will be based on an analysis of large data sets from Physics, Astronomy, Medicine, Finance or other areas of application using methodology learnt in the coursework component. Alternatively, the dissertation component may focus on methodological developments in Computer Sciences required for the analysis of large amounts of data.",
+  "lecture_times": "Not applicable.",
+  "dp_requirements": "Not specified.",
+  "assessment": "Examination by dissertation.",
+  "is_science_course": true
+}

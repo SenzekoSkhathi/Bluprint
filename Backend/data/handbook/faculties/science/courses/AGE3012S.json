@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AGE3012S",
+  "title": "Archaeologies of Dominance and Resistance in the Last-500 Years",
+  "department": "archaeology",
+  "credits": 36,
+  "nqf_level": 7,
+  "year_level": "Third Year",
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr V Lupuwana",
+  "prerequisites": {
+    "text": "AGE2011S or AGE2012F, or by permission of the Head of Department.",
+    "parsed": {
+      "type": "or",
+      "codes": [
+        "AGE2011S",
+        "AGE2012F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The period of the last-500 years greatly impacted the social lives and economies of indigenous communities in southern Africa. Preceding this period, the importance of the African continent and its products had led to increased movements and travel from both the East and the West. From the 16th century, these movements and trade routes led to the trade in African people and increased interest in the exploitation of resources and labour on the continent. This period of interaction, domination and colonisation led to new orders of power, control and trade, greatly impacting indigenous societies subjected to slavery, genocide and eventually apartheid. The course explores the impact of these interactions, the subsequent influence and impact of the creation of a European diaspora in southern Africa, and the concept of frontier as a central theme impacting racial, gender and social relations. It also explores indigenous agency and resistance, drawing on archaeological evidence, written sources and oral history to understand the multiple lived experiences and perspectives of the period.",
+  "lecture_times": "Tuesday - Thursday, 5th period. Tutorials: Monday, 5th period. Practicals: Friday, 5th period.",
+  "dp_requirements": "Attendance at lectures and practicals, completion of assignments.",
+  "assessment": "Assignments and class tests count 50% towards the final mark; one 3-hour examination written in November counts 50%. A sub-minimum of 40% is required for the examination.",
+  "is_science_course": true
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CIV1011S",
+  "title": "Introduction to Engineering Mechanics",
+  "department": "civil-engineering",
+  "credits": 15,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Professor P Moyo",
+  "prerequisites": {
+    "text": "PHY1012F/S (DP), MAM1020F/S (DP)",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "PHY1012F",
+        "MAM1020F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The course aims to introduce students to concepts of engineering mechanics which are the foundations of structural engineering, hydraulic engineering and geotechnical engineering. This course develops the concept of force and moment equilibrium, which is foundational for solving engineering problems in many civil engineering disciplines. The course introduces external and internal force and moment vectors acting on structural systems comprising ropes, rods and beams. External loading considered includes point loads; uniformly and non- uniformly distributed loads; and pressure. The principles of static equilibrium and geometric compatibility are applied to analyse structural rigid -body systems with regards to internal member and joint reactions including axia l and shear forces, bending and torsional moments as well as reactions at points of support. The concept of friction as well as its application in statics and hydraulics is briefly discussed. The concepts of centroid and center of gravity are introduced. Consolidation of conceptual knowledge through sketching is undertaken to enhance comprehension. The course is restricted to simple statically determinate systems, and simple applications to structures and fluids.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course. DEPARTMENTS IN THE FACULTY AND COURSES OFFERED 107",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

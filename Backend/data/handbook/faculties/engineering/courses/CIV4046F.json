@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CIV4046F",
+  "title": "Transportation Engineering",
+  "department": "civil-engineering",
+  "credits": 18,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Professor M Zuidgeest",
+  "prerequisites": {
+    "text": "None",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to provide students with an understanding of the fundamentals of road engineering and traffic analysis by providing a grounding in techniques for: (1) the geometric design of roads, freeways and intersections, including road drainage; (2) the design of pavements; (3) traffic engineering design (3) (multi -modal) capacity analysis of traffic facilities, including for public transport and Non-Motorized Transportation (NMT); and (4) management and control of traffic flows (both urban roads, rural roads and highways), including road pricing.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

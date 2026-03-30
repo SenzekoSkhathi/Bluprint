@@ -1,0 +1,26 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MAM1013F",
+  "title": "Law That Counts: Quantitative Literacy for Law",
+  "department": "mathematics-applied-mathematics",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr C Felix",
+  "prerequisites": {
+    "text": "None. Students can be exempted ONLY on the basis of adequate performance in the Quantitative Literacy component of the National Benchmark Test.",
+    "parsed": {
+      "type": "none",
+      "note": "Exemption possible via National Benchmark Test"
+    }
+  },
+  "corequisites": [],
+  "outline": "The course is intended to provide Law students with the necessary quantitative literacy to be able to understand, express and interpret appropriate quantitative ideas. The aim of the course is to give students an appreciation and understanding of mathematical and statistical ideas within real life and legal contexts, and generally with a social justice focus. Content covered includes percentages, ratios, interest and finance concepts, interpretation of graphs, manipulation of data, interpretation of statistics and use of spreadsheets.",
+  "lecture_times": "Monday - Friday, 4th period.",
+  "dp_requirements": "Achieve a class record of 40% and 75% attendance at lectures and tutorials.",
+  "assessment": "Two written assessments, one assignment and assessment of computer tutorials contribute to the class record that counts 50% of the final mark. The final assessment consists of a written paper and a computer assessment that together count 50% of the final mark.",
+  "is_law_course": false,
+  "offered_by_faculty": "science"
+}

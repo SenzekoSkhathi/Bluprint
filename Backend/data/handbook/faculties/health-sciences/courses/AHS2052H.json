@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AHS2052H",
+  "title": "Movement Science II",
+  "department": "health-and-rehabilitation-sciences",
+  "credits": 38,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "FY",
+  "semester_code": "H",
+  "convener": "Dr C Hendricks",
+  "prerequisites": {
+    "text": "All 1st year courses.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [
+    "AHS2002W",
+    "HUB2015W",
+    "HUB2023W"
+  ],
+  "outline": "This course covers orthopaedics and neuromusculoskeletal cond itions. The orthopaedic component covers the scope of physiothera py assessment and management of traumatic orthopaedic conditions of the lumbar spine and the lower quadrant (ankl e, knee and hip). In addition, it covers the physiotherapy assessment and mana gement of people with amputations and paed iatric orthopaedic conditions. The neuromusculoskeletal component covers basic principles of assessment and management, injury prevention an d rehabilitation. In addition, th is component w ill cover the physiotherapy assessment and treatment of neuromusculoskeletal (NMS) conditions, focusing on the lumbar spine and lower quadrant. At the end of this course, students will be able to assess orthopaedic and NMS conditions of the lumbar spine and the lower quarter according to the International Classification of Functioning (ICF); apply joint and soft tissue mobilization techniques to treat NMS conditions of these areas; prescribe progressive exercises to appropriately rehabilitate both NMS and orthopaedic conditions of these areas.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Students are expected to attend and participate in 80% of all lectures and practical sessions and attend all tutorials. Attendance is monitored through the signing of an attendance register at each session. Students are required to submit all coursework as required.",
+  "assessment": "Formative online quizzes throughout the year (15%); Term 1 tests (5%); Term 2 tests (theory: 20%; structured practical evaluation: 10 %); Term 3 assignment (10%); and Final Term 4 examination (theory: 25% and structured practical evaluation: 15%). The pass mark of the course is 50%. Students who obtain between 45-49% in the final year mark, will be eligible for a supplementary exam. If the student should obtai n a mark below 50% and fail the supplementary exam, the student will need to repeat the course the following year.",
+  "is_health_sciences_course": true
+}

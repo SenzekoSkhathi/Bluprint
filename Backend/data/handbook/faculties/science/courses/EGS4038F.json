@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EGS4038F",
+  "title": "Climate Change and Predictability",
+  "department": "environmental-geographical-science",
+  "credits": 30,
+  "nqf_level": 8,
+  "year_level": "Postgraduate – Honours elective",
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr C Jack",
+  "prerequisites": {
+    "text": "Acceptance for Honours or Master's specialising in EGS.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "The course explores the theory of climate change, then goes into the question of predictability, cross-scale relationships and feedbacks in the climate system, the tools and techniques of prediction, and translation of predictions into the user community including impacts and vulnerability analyses, touching on the social dimension.",
+  "lecture_times": null,
+  "dp_requirements": "At least 80% attendance record and submission of all assignments.",
+  "assessment": "100% Coursework.",
+  "is_science_course": true
+}

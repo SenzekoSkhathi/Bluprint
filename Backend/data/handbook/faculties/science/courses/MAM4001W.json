@@ -1,0 +1,30 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MAM4001W",
+  "title": "Applied Mathematics Honours",
+  "department": "mathematics-applied-mathematics",
+  "credits": 160,
+  "nqf_level": 8,
+  "year_level": "Postgraduate – Honours",
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Dr F Ebobisse-Bille",
+  "prerequisites": {
+    "text": "(i) 65% or higher for MAM3040W (or equivalent at another institution); and (ii) the average of the three marks for MAM1043H/1044H, MAM2046W and MAM3040W (or equivalents) should be 65% or higher. Acceptance subject to individual approval by the Head of Department. Students are not allowed to repeat this course. Students are expected to complete the programme in one year.",
+    "parsed": {
+      "type": "complex",
+      "codes_mentioned": [
+        "MAM3040W",
+        "MAM1043H",
+        "MAM2046W"
+      ],
+      "note": "Complex prerequisite logic - see text"
+    }
+  },
+  "corequisites": [],
+  "outline": "This course provides an introduction to a selection of topics in applied mathematics. Students complete an applied mathematics project and modules for a total of at least 160 credits. Most modules are 20 credits; the project (thesis and two seminars) is 40 credits. Each student's curriculum must be approved by the convenor and must include a minimum of 60 credits of applied mathematics modules taught by MAM (CERECAM and DMTCS modules are considered in this category). Students are encouraged to include suitable modules from MAM4000W and from cognate departments (e.g. Computer Science, Physics, Statistics, Economics, Oceanography). Typical module offerings include a selection from: Advanced Mathematical Methods, Continuum Mechanics, Finite Element Analysis, Mathematical Biology, General Relativity and Cosmology, and String Theory.",
+  "lecture_times": null,
+  "dp_requirements": null,
+  "assessment": "Project and seminar together count 25% of the final mark and must be passed (50%). On average, the examination counts at least 50% of the balance. At least 37.5% of the final mark must come from applied mathematics modules taught by MAM. The remaining 37.5% is calculated using the student's best marks in other modules. Coursework and project codes must each be passed separately for the award of the degree.",
+  "is_science_course": true
+}

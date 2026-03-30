@@ -1,0 +1,31 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AST3003S",
+  "title": "Galactic & Extragalactic Astrophysics",
+  "department": "astronomy",
+  "credits": 36,
+  "nqf_level": 7,
+  "year_level": "Third Year",
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr J Delhaize",
+  "prerequisites": {
+    "text": "AST2002H and AST2003H, PHY2004W, MAM2010F and MAM2011F",
+    "parsed": {
+      "type": "and",
+      "codes": [
+        "AST2002H",
+        "AST2003H",
+        "PHY2004W",
+        "MAM2010F",
+        "MAM2011F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The aim of this course is to provide a broad introduction to galactic & extragalactic astrophysics and cosmology. The first part of the course (term 3) focuses on Galactic astronomy, and the second part (term 4) focuses on extragalactic astronomy. Topics include the composition and kinematics of the Milky Way, observations and characterisation of galaxies, active galaxies, galaxy interactions and environments and galaxy evolution. Current research and hot topics are also discussed. A further aim is to develop observing, data analysis skills, scientific presentation and writing skills.",
+  "lecture_times": "Monday - Friday, 2nd period. Tutorials/Practicals: One practical or tutorial per week, Wednesday, 14h00–17h00; one observing practical in Term 4.",
+  "dp_requirements": "Class record of at least 35%. Calculated from all assessments completed within 4 weeks of deadline and lecture/tutorial attendance up until the date by which DP must be achieved. Attendance at practical observing session.",
+  "assessment": "Class record 50% (includes two class tests, assignment sheets, online quizzes, observing practical, Hot Topics assignment, attendance at lectures and tutorials); one 2-hour final examination 50%. Sub-minimum requirement of 40% for final examination.",
+  "is_science_course": true
+}

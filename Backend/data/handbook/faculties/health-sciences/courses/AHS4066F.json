@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AHS4066F",
+  "title": "Becoming a Rehabilitation Professional II",
+  "department": "health-and-rehabilitation-sciences",
+  "credits": 4,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Associate Professor S Maart",
+  "prerequisites": {
+    "text": "AHS3070H",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "AHS3070H"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The emphasis of the AHS4066F course is on developing appropriate knowledge, skills and attitudes for independent physiotherapy practice. This course includes two modules viz Professional Ethics and Practice Management.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "All course activities.",
+  "assessment": "This course will be assess ed via an in-course assign ment (50%) and a summative examination (written paper) (50%). Students who obtain between 45-49 % will be offered a written or oral supplementary examination. Students who fail the course or the supplementary will register for",
+  "is_health_sciences_course": true
+}

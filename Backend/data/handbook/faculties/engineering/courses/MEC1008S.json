@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MEC1008S",
+  "title": "Introduction to Mechanical Design",
+  "department": "mechanical-engineering",
+  "credits": 8,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "See 2026 EBE Faculty Handbook",
+  "prerequisites": {
+    "text": "Refer to the programme and departmental sections in the 2026 EBE Faculty Handbook.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to provide the foundations for graduate level mechanical engineering design. Specific knowledge areas developed are selection of simple machine elements, machine assembly design and basic manufacturing technology. Skills are developed in the use of Computer Aided Design (CAD) software, to produce 3D models of parts, compose these into assemblies with appropriate constraints and produce orthographic drawings of assemblies and parts to accepted standards, suitable for manufacture. Basic product dissection skills are developed.",
+  "lecture_times": "3 lectures and 1 tutorial per week.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

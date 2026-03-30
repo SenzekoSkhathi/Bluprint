@@ -1,0 +1,30 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "INF3003W",
+  "title": "Systems Development Project I",
+  "department": "information-systems",
+  "credits": 48,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Dr W Uys",
+  "prerequisites": {
+    "text": "A pass in all second year Information Systems courses.",
+    "parsed": {
+      "type": "prerequisite",
+      "codes": [
+        "INF2003F",
+        "INF2009F",
+        "INF2010S",
+        "INF2011S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This whole year course is for students majoring in Information Systems (IS) to gain an understanding of the issues that are influencing ICT projects and experience the development and implementation of such a project. This course combines the theoretical elements of project management with the practical implementation of these concepts through the completion of a systems development team project, integrating practical and theoretical elements obtained and developed during other undergraduate IS courses.",
+  "lecture_times": "First semester: 10h00-10h45 Monday and Tuesday, and 10h00-11h45 Wednesday and Friday, and 10h00-12h45 Thursday. Second semester: 12h00-12h45 Thursday.",
+  "dp_requirements": "Students will be considered to have duly performed the course work if they have obtained a minimum of 45% for their year mark.",
+  "assessment": "Coursework 60%. (Weekly coding workshops and tutorials, as well as continuous assignments for the team project culminating in a formal presentation and code presentation). Teamwork makes up 40% of the course mark. Exam 40%. Sub-minimum of 40% for the examination (both Project Management and Code).",
+  "is_commerce_course": true
+}

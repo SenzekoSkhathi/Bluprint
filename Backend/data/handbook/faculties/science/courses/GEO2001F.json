@@ -1,0 +1,30 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "GEO2001F",
+  "title": "Mineralogy, Crystallography and Petrography",
+  "department": "geological-sciences",
+  "credits": 24,
+  "nqf_level": 6,
+  "year_level": "Second Year",
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Professor P E Janney",
+  "prerequisites": {
+    "text": "GEO1009F and GEO1006S; CEM1000W or equivalent.",
+    "parsed": {
+      "type": "complex",
+      "codes_mentioned": [
+        "GEO1009F",
+        "GEO1006S",
+        "CEM1000W"
+      ],
+      "note": "Complex prerequisite logic - see text"
+    }
+  },
+  "corequisites": [],
+  "outline": "This course covers the fundamentals of physical and chemical mineralogy and its application to igneous and metamorphic rocks as a basis for senior courses in petrology. Inter-related sections include: crystallography and crystal optics (including a brief introduction to X-ray crystallography); mineralogy (chemical, physical and optical properties of selected groups of rock-forming minerals, and theory and practice of identifying minerals by polarising microscope); phase diagrams (interpretation of simple phase diagrams relevant to igneous and metamorphic rocks); classification and petrography of igneous rocks (physical processes of magma differentiation and the relationship between chemical composition and modal mineralogy); classification and petrography of metamorphic rocks (types of metamorphism, metamorphic textures and mineral assemblages).",
+  "lecture_times": "Monday - Friday, 2nd period.",
+  "dp_requirements": "Attendance at 80% of practicals and an average of 30% in all marked classwork and tests.",
+  "assessment": "Marked classwork including tests counts 20%; one 2-hour practical examination in June counts 30%; one 2-hour theory examination in June counts 50%. Sub-minima of 40% are required in both practical and theory examination papers.",
+  "is_science_course": true
+}

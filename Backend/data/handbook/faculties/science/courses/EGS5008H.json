@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EGS5008H",
+  "title": "Environment, Society & Sustainability Coursework",
+  "department": "environmental-geographical-science",
+  "credits": 90,
+  "nqf_level": 9,
+  "year_level": "Postgraduate – Masters",
+  "semester": "FY",
+  "semester_code": "H",
+  "convener": "Dr M Norton",
+  "prerequisites": {
+    "text": "An Honours degree (or equivalent). In special circumstances, graduates who have shown by examination, publication, or a record of appropriate training that they have reached a level equivalent to an Honours degree may be considered. Entrance limited to 12 students; selection is competitive, based on quality of qualification, experiential learning and/or referee reports.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "This interdisciplinary course is designed for students with diverse backgrounds who have an interest in the environment, society and sustainability. This course contributes half of the total credits for a Masters qualification (awarded as MSc or MPhil depending on academic background). Coursework starts in February. Students select four modules from areas such as Theory & Practice of Environmental Management, Capital Politics & Nature, Geography of Development & Environment, Living with Environmental Change, Urban Food Security, Cultural Geographies, Managing Complex Human-Ecological Systems, or Geomorphology. Upon successful completion, students register for the minor dissertation (EGS5009W) in the following year.",
+  "lecture_times": null,
+  "dp_requirements": null,
+  "assessment": "Assessment for coursework modules includes written examinations and coursework assignments (essays, projects, practical assignments, etc.). Examinations on average count 50% and coursework 50% for each module.",
+  "is_science_course": true
+}

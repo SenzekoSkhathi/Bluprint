@@ -1,0 +1,134 @@
+{
+  "$schema": "handbook-degree-rules-v1",
+  "degree_code": "BSc",
+  "faculty": "science",
+  "year": 2026,
+  "handbook_page": 18,
+  "duration": {
+    "minimum_years": 3,
+    "maximum_years": 6,
+    "rule_reference": "FB5.4",
+    "note": "Except by permission of Senate, a student shall be required to complete the equivalent of 72 credits per year of study."
+  },
+  "registration_limits": {
+    "rule_reference": "FB5.1-FB5.3",
+    "annual_credit_minimum": 72,
+    "note": "Students failing to meet readmission requirements (FB5.1-FB5.3) may be excluded. Senate may grant permission to continue with fewer credits."
+  },
+  "curriculum_rules": {
+    "FB7.1": {
+      "description": "Total credits requirement",
+      "total_credits_minimum": 360,
+      "science_credits_minimum": 180,
+      "note": "All compulsory cross-faculty courses count as Science credits per FB7.6 Note 2 (e.g. EEE for Computer Engineering, HUB for Human Anatomy & Physiology, INF for Business Computing)."
+    },
+    "FB7.2": {
+      "description": "Senior course requirement",
+      "level_7_credits_minimum": 120
+    },
+    "FB7.3": {
+      "description": "Mathematics and Statistics requirement",
+      "options": [
+        {
+          "option": "A",
+          "description": "At least one Science Mathematics course of 18 NQF credits (level 5) AND one Science Statistics course of 18 NQF credits (level 5)."
+        },
+        {
+          "option": "B",
+          "description": "Science Mathematics courses totalling 36 NQF credits (level 5) — no separate Statistics course required."
+        }
+      ]
+    },
+    "FB7.4": {
+      "description": "Cross-faculty elective substitution rules",
+      "free_replacement_limit_credits": 72,
+      "free_replacement_note": "Up to 72 Science credits may be freely replaced by non-Science faculty courses (subject to exclusions and approval by a Student Advisor or Deputy Dean).",
+      "hierarchical_sequence_required_above_credits": 72,
+      "hierarchical_sequence_note": "Where more than 72 Science credits are replaced, each additional non-Science course must form part of a hierarchical sequence linked to those already completed.",
+      "excluded_courses_note": "Courses taught by the Faculty of Science for other faculties are not available to Science-registered students. Students transferring into Science from other faculties may count such courses with Faculty approval.",
+      "cross_faculty_routes_model": {
+        "file": "rules/cross-faculty-routes.json",
+        "purpose": "Defines structured cross-faculty elective sequences for Science students where approved pathways align with second or third major intentions in other faculties."
+      }
+    },
+    "FB7.5": {
+      "description": "Major(s) requirement — at least one Science major required",
+      "minimum_majors": 1,
+      "approved_majors": [
+        "Applied Mathematics",
+        "Applied Statistics",
+        "Archaeology",
+        "Artificial Intelligence",
+        "Astrophysics",
+        "Biochemistry",
+        "Biology",
+        "Business Computing",
+        "Chemistry",
+        "Computer Science",
+        "Computer Engineering",
+        "Environmental & Geographical Science",
+        "Genetics",
+        "Geology",
+        "Human Anatomy & Physiology",
+        "Marine Biology",
+        "Mathematical Statistics",
+        "Mathematics",
+        "Ocean & Atmosphere Science",
+        "Physics",
+        "Quantitative Biology",
+        "Statistics & Data Science"
+      ],
+      "restrictions": [
+        "Business Computing may only be taken in conjunction with a major in Computer Science.",
+        "Computer Engineering may only be taken in conjunction with a major in Computer Science.",
+        "Applied Statistics, Mathematical Statistics, and Statistics & Data Science may not be taken together."
+      ],
+      "entry_note": "Acceptance into the Science Faculty does not guarantee acceptance into a chosen major. Formal acceptance for specific majors (currently Biochemistry, Genetics, and Human Anatomy & Physiology) is limited by student numbers and takes place at the start of the second year."
+    },
+    "FB7.6": {
+      "description": "Compulsory courses per major",
+      "note_1": "Compulsory courses listed per major are the minimum required in addition to those in FB7.3.",
+      "note_2": "All courses taught in other Faculties that are required/compulsory for a Science major count as Science credits for FB7.1 (e.g. EEE courses for Computer Engineering, HUB courses for Human Anatomy & Physiology, INF courses for Business Computing).",
+      "note_3": "Faculty-approved equivalent courses may be substituted. Common equivalences: BIO1000H ≡ BIO1000F; CSC1010H ≡ CSC1015F/S; CSC1011H ≡ CSC1016S; MAM1004F/S (≥65%) ≡ MAM1031F; MAM1005H ≡ MAM1031/3F; MAM1006H ≡ MAM1032/4S; PHY1023H ≡ PHY1031F; (CEM1009H+CEM1010H) ≡ CEM1000W."
+    },
+    "FB7.7": {
+      "description": "Senior (level 7) course requirement per major",
+      "level_7_credits_per_major_minimum": 72,
+      "shared_credits_limit": 36,
+      "note": "The curriculum must contain at least 72 credits of distinct level-7 courses recognised by the Faculty for each major. With Deputy Dean approval, up to 36 credits may count towards more than one major. Rules FB7.1-FB7.3 must still be met independently."
+    }
+  },
+  "course_code_system": {
+    "format": "2–4 letter department prefix + 4-digit number + semester indicator",
+    "semester_indicators": {
+      "F": "First semester",
+      "S": "Second semester",
+      "W": "Full year (both semesters)",
+      "H": "Half course (semester, used in some programmes)",
+      "X": "Year-long course spanning both semesters but assessed separately"
+    },
+    "level_indicators": {
+      "1000": "NQF level 5 — first year",
+      "2000": "NQF level 6 — second year",
+      "3000": "NQF level 7 — third year",
+      "4000": "NQF level 8 — honours",
+      "5000": "NQF level 9 — masters",
+      "6000": "NQF level 10 — doctorate"
+    }
+  },
+  "essential_terminology": {
+    "DP": "Duly Performed — a certificate required to sit for final examinations, earned by meeting minimum attendance and engagement requirements during the year.",
+    "NQF": "National Qualifications Framework — a standardised credit and level system for South African education.",
+    "half_course": "A course worth approximately 18 NQF credits, typically spanning one semester.",
+    "full_year_course": "A course worth approximately 36 NQF credits, spanning both semesters.",
+    "science_credit": "Any NQF credit from a Science Faculty course, or from a cross-faculty course designated as Science-equivalent under FB7.6 Note 2.",
+    "hierarchical_sequence": "A series of courses where later courses build on and require the successful completion of earlier courses in the sequence.",
+    "supplementary_examination": "An additional examination offered to students who narrowly fail (typically 45–49%), subject to Faculty rules."
+  },
+  "progression_status_codes": {
+    "GS": "Good Standing — student meets all progression criteria and may re-register without restriction.",
+    "RS": "Restricted Standing — student may re-register with conditions imposed by the Faculty.",
+    "FC": "Faculty Concession — special permission granted by Faculty to register under non-standard conditions.",
+    "EX": "Excluded — student does not meet re-registration requirements and is not permitted to re-register."
+  }
+}

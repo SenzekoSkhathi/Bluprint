@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MUZ2306F",
+  "title": "Ethnomusicology I",
+  "department": "music",
+  "credits": 12,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "See 2026 Humanities Faculty Handbook",
+  "prerequisites": {
+    "text": "Refer to programme and departmental requirements in the 2026 Humanities Faculty Handbook.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "Course title and credit value verified from the 2026 Humanities Faculty Handbook.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "See 2026 Humanities Faculty Handbook.",
+  "assessment": "See departmental and faculty assessment rules in the 2026 Humanities Faculty Handbook.",
+  "is_humanities_course": true
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CON1022F",
+  "title": "Building Construction I",
+  "department": "construction-economics-and-management",
+  "credits": 14,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Mr U Ordor",
+  "prerequisites": {
+    "text": "Refer to the programme and departmental sections in the 2026 EBE Faculty Handbook.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to introduce the built environment and sets the urban scale and environmental influences which house the micro-level buildings, including the role players involved in creating the built environment, an overview of what they do and how this influences and is in turn influenced by technology and socio -economic factors. The course will look at the built environment from the viewpoint of the construction of the micro-level building and will set the scene for an understanding of the need for st rategic decision making in the development of buildings on a micro scale. The building as a product will introduce students to the component parts of a simple building.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

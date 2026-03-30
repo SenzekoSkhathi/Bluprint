@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "BIO2014F",
+  "title": "Principles of Ecology & Evolution",
+  "department": "biological-sciences",
+  "credits": 0,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Associate Professor T van der Niet",
+  "prerequisites": {
+    "text": "BIO1000F/H, BIO1004F/S, DP in STA1007S. Includes a compulsory weekend field camp.",
+    "parsed": {
+      "type": "and",
+      "codes": [
+        "BIO1000F/H",
+        "BIO1004F/S",
+        "STA1007S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course begins with an exploration of the mechanisms by which populations evolve and ultimately give rise to the entities that we term species. Building on this, it then explores the nature of the genealogical relationships between species (phylogeny), and the manner in which these are estimated in practice. The focus then shifts to abiotic and biotic controls on the distribution of species and higher taxa in nature, as viewed through the lens of niche theory, as well as constraints on the adaptability of populations or species to changing selective conditions. Finally, the course explores life history variation amongst organisms, including the factors that regulate its evolution and its demographic consequences. The latter provides context for a brief introduction to population ecology. Lectures provide theoretical background, while practicals and the compulsory field trip provide hands-on experience of material taught in lectures, as well as training in basic research techniques.",
+  "lecture_times": "Monday-Friday, 2nd period. Practicals: One per week, Monday, 14h00-17h00. Attendance is compulsory for all lectures and practicals.",
+  "dp_requirements": "Completion of at least 70% of deliverables (tests, practicals, field trip report), including at least one class test and the field trip report; attendance of practicals and field trip; minimum of 40% for the class record.",
+  "assessment": "A 3-hour examination, written in June, with a subminimum of 40%, counts 50% of the course mark. The class record, which counts for the balance, is made up as follows: practicals count 15%, the field camp report counts 15% and two class tests count 20%",
+  "is_science_course": true
+}

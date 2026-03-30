@@ -1,0 +1,31 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "STA3047S",
+  "title": "Introduction to Machine Learning",
+  "department": "statistical-sciences",
+  "credits": 6,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr E Pienaar",
+  "prerequisites": {
+    "text": "STA2004F & STA2005S and MAM2000W (or equivalent) strongly recommended. Recommended MAM2000W (or equivalent) modules: 2LA - LINEAR ALGEBRA, 2AC - ADVANCED CALCULUS, 2DE - DIFFERENTIAL EQUATIONS, 2RA - REAL ANALYSIS.",
+    "parsed": {
+      "type": "prerequisite",
+      "codes": [
+        "STA2004F",
+        "STA2005S"
+      ]
+    }
+  },
+  "corequisites": [
+    "STA3048S"
+  ],
+  "outline": "Machine learning: Topics covered include: A basic introduction to statistical learning paradigms, applications of regression and classification trees, and a primer on feedforward neural networks and backpropagation.",
+  "lecture_times": "To be advised.",
+  "dp_requirements": "Satisfactory attendance of lectures, tutorials, practicals and tests and completion of assignments and/or class exercises as set out in course outline.",
+  "assessment": "A computer based exam.",
+  "is_commerce_course": false,
+  "offered_by_faculty": "science"
+}

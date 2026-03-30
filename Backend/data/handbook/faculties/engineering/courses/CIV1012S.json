@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CIV1012S",
+  "title": "Sustainable Urban Infrastructure",
+  "department": "civil-engineering",
+  "credits": 8,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr N Wolmarans",
+  "prerequisites": {
+    "text": "Refer to the programme and departmental sections in the 2026 EBE Faculty Handbook.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "The concept of designing sustainable cities frames the course. It lays the foundations for understanding civil engineering infrastructure in the context of rapid urbanization and climate change. It locates civil engineering in the broader context of the sustainable development goals in relation to the interaction between urban infrastructure, people, and the planet. The course is a project -based course which integrates principles of teamwork, technical communication, independent learning and personal efficacy into a design project.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

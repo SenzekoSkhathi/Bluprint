@@ -1,0 +1,12 @@
+{
+  "$schema": "handbook-programme-v1",
+  "programme_code": "CB004ECO03",
+  "programme_name": "Bachelor of Business Science specialising in Economics with Law",
+  "degree": "BBusSci",
+  "specialisation": "Economics with Law",
+  "faculty": "commerce",
+  "nqf_level": 8,
+  "minimum_credits": 528,
+  "duration_years": 4,
+  "department": "economics"
+}

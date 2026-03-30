@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CML4506F",
+  "title": "Fundamental Principles of Tax Law",
+  "department": "commercial-law",
+  "credits": 9,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "B Cronin",
+  "prerequisites": {
+    "text": "All Preliminary and Intermediate Level courses to have been completed.",
+    "parsed": {
+      "type": "level_completion",
+      "levels_required": [
+        "preliminary",
+        "intermediate"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "Every area of the law affects understanding and practical application of tax law. This course introduces the subject of tax law. It seeks to illustrate the interrelation of tax law with other fields of law by focussing on primary themes and structural challenges faced by a tax system. In much of the coursework, the emphasis will be on the South African income tax. A selection of fundamental features of the South African income tax will be considered, mainly through critical evaluation of case law. Key jurisdictional concepts comprising the source and residence basis of income taxation will be considered. The course will analyse the statutory and jurisprudential frameworks for the determination of taxable income, including the notion of income, the distinction between capital and revenue receipts and the deductibility of expenditure and losses.",
+  "lecture_times": "Two lectures per week.",
+  "dp_requirements": "None",
+  "assessment": "Coursework: 20% (optional), Examination: 80%.",
+  "is_law_course": true
+}

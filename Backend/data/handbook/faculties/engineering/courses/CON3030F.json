@@ -1,0 +1,33 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CON3030F",
+  "title": "Construction Costing",
+  "department": "construction-economics-and-management",
+  "credits": 14,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "TBA",
+  "prerequisites": {
+    "text": "CON1010F, CON1004W, CON2037W",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "CON1010F",
+        "CON1004W",
+        "CON2037W"
+      ]
+    }
+  },
+  "corequisites": [
+    "CON3043W",
+    "CON3012W",
+    "CON3031W"
+  ],
+  "outline": "This course aims to develop an understanding of construction costing and includes: computation of labour costs; synthesis of labour; material and plant costs for Bills of Quantities item rates; pricing approximate quantities of elemental estimates; pricing subcontracts; and pricing preliminaries.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

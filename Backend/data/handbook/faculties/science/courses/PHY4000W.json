@@ -1,0 +1,33 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PHY4000W",
+  "title": "Physics Honours",
+  "department": "physics",
+  "credits": 160,
+  "nqf_level": 8,
+  "year_level": "Postgraduate (Honours)",
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Professor A Peshier",
+  "prerequisites": {
+    "text": "A BSc degree with a major in Physics. Acceptance at the discretion of the Head of Department: requires a pass of 60% in PHY3004W or equivalent; and a pass of 60% in MAM2000W or MAM2046W or equivalent; and in cases deemed necessary, favourable referee reports. Enrolment limited to 15 students. Preference may be given to UCT graduates who meet the course entry requirements. Note: PHY4000W does not carry NQF credit value; students are concurrently registered for PHY4006W (coursework component, 120 NQF credits) and PHY4007W (research project, 40 NQF credits). The Department is presently reviewing the PHY4000W curriculum.",
+    "parsed": {
+      "type": "complex",
+      "codes_mentioned": [
+        "PHY3004W",
+        "MAM2000W",
+        "MAM2046W",
+        "PHY4000W",
+        "PHY4006W",
+        "PHY4007W"
+      ],
+      "note": "Complex prerequisite logic - see text"
+    }
+  },
+  "corequisites": [],
+  "outline": "The Honours course in Physics consists of several modules. Each student needs to design a module package totalling at least 12 units and not more than 14 units. The Research Project (3 units) is compulsory. Compulsory modules (1 unit each): Electromagnetism 1, Quantum Mechanics 1 and Statistical Physics. At least five further modules (1 unit each) chosen from: Electromagnetism 2, Quantum Mechanics 2, Classical Mechanics, Computational Physics, Particle Physics, Nuclear Physics, Relativistic Quantum Mechanics, Quantum Field Theory, and Solid State Physics. Students are strongly encouraged to include both Electromagnetism 2 and Quantum Mechanics 2 in their module choice. The course starts with a compulsory non-credit bearing module on mathematical tools and skills, and aspects of physics education. The course can be complemented by physics-related modules offered by the Departments of Astronomy, and Mathematics and Applied Mathematics.",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "30% for class tests and problem sets, and suitable progress in the Research Project.",
+  "assessment": "The pass mark is 50% based on an aggregation of results of all modules, subject to the following subminimum criteria: a minimum mark of 50% in the Research Project; passing two thirds of all modules; achieving a mark of at least 35% in all but one of the compulsory modules. The Research Project counts 25% of the final mark. Each component must be passed separately for the award of the degree.",
+  "is_science_course": true
+}

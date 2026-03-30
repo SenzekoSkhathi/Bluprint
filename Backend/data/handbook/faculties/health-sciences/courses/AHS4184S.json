@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AHS4184S",
+  "title": "Applied Physiotherapy III",
+  "department": "health-and-rehabilitation-sciences",
+  "credits": 20,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Associate Professor S Maart",
+  "prerequisites": {
+    "text": "Refer to the programme and departmental sections in the 2026 Health Sciences Faculty Handbook.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "The AHS4184S is course is of fered only for students who have failed AHS4071F and comprises components on Cardiopulmona ry, Musculoskeletal and Neur ological physiotherapy, and Pharmacology. The course is o ffered through tutorials, works hops and small group lecturer engagement",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Full attendance of and participation in all lectures, practical sessions, workshops and tutorials, and submission of assignments by the due dates",
+  "assessment": "The course will be assessed through in course components and final examination at the of the year. Students who obtain an examination mark of 45-49% w ill be offered a re-assessment opportunity. Should a mark below 50% be obtained for the reassessment the student will reregister for the AHS4071F course in the first semester of the following academic year",
+  "is_health_sciences_course": true
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CIV2045F",
+  "title": "Geotechnical Engineering I",
+  "department": "civil-engineering",
+  "credits": 8,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Ms L Nolutshungu",
+  "prerequisites": {
+    "text": "Refer to the programme and departmental sections in the 2026 EBE Faculty Handbook.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "Soil Structure, Soil Classification, Soil Phase Relationships, Soil Compaction, Principle of Effective Stress, Total Stress and Pore Water Pressure, Flow of Water in Soil: Head at a Point (Bernoulli’s Equation), Darcy’s Law, Soil Permeability, Laboratory and Field Permeability Testing, Seepage and Flow Nets, Distribution of Applied Stresses in Soil (Boussinesq Equation), Consolidation and Settlement: One-Dimensional Settlement, Laboratory Consolidation Test, Calculation of Settlement, Consolidation Theory.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

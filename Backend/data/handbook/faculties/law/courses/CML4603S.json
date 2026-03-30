@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CML4603S",
+  "title": "Banking Law",
+  "department": "commercial-law",
+  "credits": 9,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr K Motlogeloa",
+  "prerequisites": {
+    "text": "All Preliminary and Intermediate Level courses to have been completed.",
+    "parsed": {
+      "type": "level_completion",
+      "levels_required": [
+        "preliminary",
+        "intermediate"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "In the first half of the course students are introduced to the private law aspect of banking. The course will examine the concepts of money and payments by exploring both the traditional forms of payments to modern methods such as digital finance. The course also examines African banking concepts such as stokvels and credit-rotating associations, and critically analyse the greater need for financial inclusion in South Africa. In the second half students are introduced to the different roles of banks including banks as intermediaries, banks as guarantors, and banks as lenders (domestically and in the international financial markets). This section also focuses on the bank-customer relationship and bank liability arising out of contract, delict or enrichment. The second half of the course examines the regulation of the banking and finance sector by exploring key legislation such as the Banks Act, the Financial Advisory and Intermediary Services Act, the Financial Markets Act amongst many others. Students will also be introduced to key theoretical concepts such as systemic risk and South Africa's reform towards Twin Peaks.",
+  "lecture_times": "Two lectures per week. Limited to 25 students.",
+  "dp_requirements": "None",
+  "assessment": "Research Paper (5000 words) 100%.",
+  "is_law_course": true
+}

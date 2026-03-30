@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EGS5040S",
+  "title": "Special Topic in Human/Environment Interactions",
+  "department": "environmental-geographical-science",
+  "credits": 23,
+  "nqf_level": 9,
+  "year_level": "Postgraduate – Masters elective",
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr S Scheba",
+  "prerequisites": {
+    "text": "Acceptance for Honours or Master's specialising in EGS.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "Issues and themes in contemporary aspects of the Human/Environmental interface will be covered, profiling core debates in a specialist field of human or environmental geography. At NQF 9 level there is a strong emphasis on the development of analytical skills, and students are expected to apply these skills in the context of an appropriate theory to a case study of their own specialist field.",
+  "lecture_times": null,
+  "dp_requirements": "At least 80% attendance record and submission of all assignments.",
+  "assessment": "100% Coursework.",
+  "is_science_course": true
+}

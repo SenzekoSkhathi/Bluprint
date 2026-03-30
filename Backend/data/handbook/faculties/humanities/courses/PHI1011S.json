@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PHI1011S",
+  "title": "Ethics and Epistemology (Extended)",
+  "department": "philosophy",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "R van Litsenborgh",
+  "prerequisites": {
+    "text": "Refer to programme and departmental requirements in the 2026 Humanities Faculty Handbook.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "Objective: In these tutorials, students will receive explicit support around the co -requisite course assignments and detailed feedback on their written work. Course outline: The purpose of this course is to augment and support its co-requisite course: PHI1010S Ethics. It aims to improve students’ performance by enhancing their grasp of key ideas and concepts, and by developing their mastery of the disciplinary discourse. It provides additional pedagogic enrichment in the form of regular Plus Tuts that extend into Writing Hub exercises and consultations.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "100% tutorial attendance plus successful completion of all coursework assignments.",
+  "assessment": "Coursework 100% comprising of tutorial assessments and other written work.",
+  "is_humanities_course": true
+}

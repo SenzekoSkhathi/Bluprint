@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "GEO3001S",
+  "title": "Stratigraphy & Economic Geology",
+  "department": "geological-sciences",
+  "credits": 36,
+  "nqf_level": 7,
+  "year_level": "Third Year",
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Associate Professor G Howarth",
+  "prerequisites": {
+    "text": "GEO2004S and DP in GEO3005F.",
+    "parsed": {
+      "type": "and",
+      "codes": [
+        "GEO2004S",
+        "GEO3005F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course covers the development of the oceanic and continental rock record and associated ore deposits. Topics include: the principles of stratigraphy with examples drawn from the South African rock record; the methods and procedures involved in dating rocks; the genesis of economic mineral deposits, their microscopic textures, and their valuation and exploitation; geophysical techniques.",
+  "lecture_times": "Monday - Friday, 2nd period.",
+  "dp_requirements": "An average of 30% in all marked classwork and class tests.",
+  "assessment": "Practicals and tests count 25%; one 3-hour theory examination written in November counts 45%; two 2-hour practical examinations written in November count 30%. Sub-minima of 40% required in both practical and theory examination papers.",
+  "is_science_course": true
+}

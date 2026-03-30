@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "ECO2004S",
+  "title": "Macroeconomics II",
+  "department": "economics",
+  "credits": 18,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr T Mpofu",
+  "prerequisites": {
+    "text": "ECO1010, ECO1011 and MAM1010 (or an equivalent) or MAM1031F or MAM1032S. A student will be permitted to take ECO2004S without having passed ECO2003F, although it is desirable to pass ECO2003F prior to taking ECO2004S.",
+    "parsed": {
+      "type": "prerequisite",
+      "codes": [
+        "ECO1010F",
+        "ECO1011S",
+        "MAM1010F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The course builds upon ECO1011S and aims to provide students with the analytical tools and formal models to explain the behaviour of output, inflation, employment, interest rates, and other economic aggregates. These tools are used to understand current economic issues, forecast the behaviour of the economy, and assess the impact of policy choices. The course allows students to understand the behaviour of households, firms, governments and Central Banks. It starts with analysing the short run behaviour of the economy and then moves on to explore the open economy and exchange rates. Finally, it looks at the long run and assesses the role of technology and population growth on aggregate economic growth using the Solow growth model.",
+  "lecture_times": "Lecture/Workshop times: 09h00 - 10h00 Monday, Tuesday, Wednesday, Thursday. 12h00 - 13h00 Monday, Tuesday, Wednesday, Thursday. 13h00 - 14h00 Monday, Tuesday, Wednesday, Thursday.",
+  "dp_requirements": "None.",
+  "assessment": "Coursework 50%; Exam 50%.",
+  "is_commerce_course": true
+}

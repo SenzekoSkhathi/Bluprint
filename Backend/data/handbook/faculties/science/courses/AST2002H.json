@@ -1,0 +1,31 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AST2002H",
+  "title": "Astrophysics",
+  "department": "astronomy",
+  "credits": 24,
+  "nqf_level": 6,
+  "year_level": "Second Year",
+  "semester": "FY",
+  "semester_code": "H",
+  "convener": "Dr L Marchetti",
+  "prerequisites": {
+    "text": "PHY1004W, MAM1000W or both MAM1031F & MAM1032S (or equivalent), CSC1015F/S",
+    "parsed": {
+      "type": "or",
+      "codes": [
+        "PHY1004W",
+        "MAM1000W",
+        "MAM1031F",
+        "MAM1032S",
+        "CSC1015F/S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course presents an introduction to the theoretical aspects of modern astrophysics. The key objective is to illustrate the application of physical laws in an astronomical context and to explain how we know what we do about the universe and its constituents. Subject matter includes: Celestial mechanics; radiation laws; blackbody radiation, Planck function and approximations; magnitudes; the hydrogen atom; stellar spectroscopy; stellar evolution and remnants; special relativity; the Earth-Moon system; the Solar system; extrasolar planets; stellar motions; the Milky Way and other galaxies; the extragalactic distance scale; large scale structure; Newtonian cosmology.",
+  "lecture_times": "Monday - Friday, 2nd period, Term 2 and 4. Tutorials: 10 Compulsory tutorial/practical sessions over the year, Wednesday, 14h00–17h00.",
+  "dp_requirements": "Satisfactory attendance at lectures and tutorials; satisfactory completion levels of quizzes, tests and assignments and class mark of at least 35%.",
+  "assessment": "Three class tests count 25%; 4 compulsory tutorials/practicals count 20%; regular quizzes count 5%; one 2-hour final examination in November counts 50%. Sub-minimum requirement of 40% for final examination.",
+  "is_science_course": true
+}

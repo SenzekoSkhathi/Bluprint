@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CEM5000W",
+  "title": "Chemistry Dissertation",
+  "department": "chemistry",
+  "credits": 180,
+  "nqf_level": 9,
+  "year_level": "Postgraduate (Master's)",
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Not specified",
+  "prerequisites": {
+    "text": "Not specified",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "This course consists of an investigation of an approved topic chosen for intensive study by the candidate, culminating in the submission of a dissertation. The dissertation shall demonstrate the successful completion of a programme of training in research methods, a thorough understanding of the scientific principles underlying the research and an appropriate acquaintance with the relevant literature. It must be clearly presented and conform to the standards of the department and faculty. The dissertation will usually consist of a report detailing the conduct and analysis of the results of research performed under the close guidance of a suitably qualified supervisor/s. The dissertation should be well-conceived and acknowledge earlier research in the field. It should demonstrate the ability to undertake a substantial and informed piece of research, and to collect, organise and analyse material.",
+  "lecture_times": "Not applicable",
+  "dp_requirements": "Not specified",
+  "assessment": "Examination by dissertation.",
+  "is_science_course": true
+}

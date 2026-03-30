@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CHE1001P",
+  "title": "Introduction to Chemical Engineering",
+  "department": "chemical-engineering",
+  "credits": 22,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "summer",
+  "semester_code": "P",
+  "convener": "Dr S Bremner",
+  "prerequisites": {
+    "text": "Refer to the programme and departmental sections in the 2026 EBE Faculty Handbook.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "Course outline: This course introduces the field of chemical engineering, unit conversions, material and energy balances, process analysis and design, natural foundations, graphical analysis, engineering drawing, modelling using spreadsheets and COCO and professional development.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

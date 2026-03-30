@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EEE4119F",
+  "title": "Mechatronics",
+  "department": "electrical-engineering",
+  "credits": 16,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr S Shield",
+  "prerequisites": {
+    "text": "MEC2047F and MEC2045S and EEE3094S",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "MEC2047F",
+        "MEC2045S",
+        "EEE3094S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The course aims to provide a unified and holistic view of automation of mechanical systems. Specific topics are: Multibody Kinematics (2D&3D), Inverse Kinematics, Euler -Lagrange Mechanics, Numerical Simulation, Friction modelling and a selection of nonlinear control topics from: Feedback Linearisation, Lyapunov Stability, Sliding Control, Gain Scheduling, Manipulator control and Trajectory Optimisation. Applications of techniques will be tailored towards terrestrial, sea, air as well as industrial robotic s ystems. The course aims to develop knowledge, skills and values through a balanced integration of lectures, laboratory and project work.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

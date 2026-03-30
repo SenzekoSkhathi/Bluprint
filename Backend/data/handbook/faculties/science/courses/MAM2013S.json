@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MAM2013S",
+  "title": "Introductory Algebra (2IA)",
+  "department": "mathematics-applied-mathematics",
+  "credits": 12,
+  "nqf_level": 6,
+  "year_level": "Second Year",
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr T Janelidze-Gray",
+  "prerequisites": {
+    "text": "MAM1031F and MAM1032S or equivalent.",
+    "parsed": {
+      "type": "complex",
+      "codes_mentioned": [
+        "MAM1031F",
+        "MAM1032S"
+      ],
+      "note": "Complex prerequisite logic - see text"
+    }
+  },
+  "corequisites": [],
+  "outline": "Students study the fundamentals of abstract algebra and number theory, including: induction, strong induction and the Well-Ordering axiom; divisibility and prime factorisation; modular arithmetic; permutations; groups, subgroups, cyclic groups; isomorphisms; simple groups, factor groups and Lagrange's Theorem; the First Isomorphism Theorem.",
+  "lecture_times": "Tuesdays, Fridays and some Wednesdays in 5th period. Note: Lectures alternate during the week so students can take MAM2012S, MAM2013S and MAM2014S concurrently.",
+  "dp_requirements": null,
+  "assessment": null,
+  "is_science_course": true
+}

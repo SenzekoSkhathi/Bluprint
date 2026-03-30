@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CSC4023Z",
+  "title": "Big Data Management & Analysis",
+  "department": "computer-science",
+  "credits": 12,
+  "nqf_level": 8,
+  "year_level": "Postgraduate (Honours)",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "To be advised",
+  "prerequisites": {
+    "text": "Admission to BSc Hons specialising in Computer Science or Information Technology. A basic understanding of databases, similar to the CSC2001F database material, is expected.",
+    "parsed": {
+      "type": "or",
+      "codes": [
+        "CSC2001F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course will enable students to understand the challenges of designing and implementing database applications at very large scale. Topics covered include NoSQL, Hadoop, HBase, HIVE, YARN and Apache Spark, as well as an introduction to data mining techniques and tools. The course concludes with a series of short presentations on new developments in database technology such as spatial, temporal, mobile, multimedia, text and social network data management.",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "None.",
+  "assessment": "Final examination: 60%; Practical assignments: 40%.",
+  "is_science_course": true
+}

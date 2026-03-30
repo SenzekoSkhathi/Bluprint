@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CON3047F",
+  "title": "Property Investment and Finance II",
+  "department": "construction-economics-and-management",
+  "credits": 14,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr S Nurick",
+  "prerequisites": {
+    "text": "CON2032S",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "CON2032S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to develop an understanding of: Cost of capital (cost of equity, cost of debit); equity capital; financial leverage; mortgages (types, borrowers’ decision -making, lenders’ decision making); investment decision -making; taxation; construction and development financing; and creative property financing (presales, joint ventures, leasebacks etc).",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

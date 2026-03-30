@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EGS4023S",
+  "title": "Quantitative Research Methods for Environmental Earth Sciences",
+  "department": "environmental-geographical-science",
+  "credits": 30,
+  "nqf_level": 8,
+  "year_level": "Postgraduate – Honours elective",
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr S Conradie",
+  "prerequisites": {
+    "text": "EGS3012S or equivalent; OR at least one of a first-year Mathematics, Applied Mathematics, Physics or Computer Science course; OR at the discretion of the HOD.",
+    "parsed": {
+      "type": "or",
+      "codes": [
+        "EGS3012S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The course has a dual purpose. Firstly, a series of weekly lectures and hands-on practical seminars covering the nuts and bolts of quantitative analysis, including fundamental methods commonly found in the literature: classification, time series analysis, EOF/PCA and non-linear analysis. In parallel, a series of seminars on the Philosophy of Science addresses issues of values, perception and the science community.",
+  "lecture_times": null,
+  "dp_requirements": "At least 80% attendance record and submission of all assignments.",
+  "assessment": "100% Coursework.",
+  "is_science_course": true
+}

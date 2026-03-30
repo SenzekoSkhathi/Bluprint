@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CSC5022Z",
+  "title": "Distributed Scientific Computing",
+  "department": "computer-science",
+  "credits": 12,
+  "nqf_level": 9,
+  "year_level": "Postgraduate (Master's)",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "Professor R Simmonds",
+  "prerequisites": {
+    "text": "Admission into the Master's degree specialising in Computer Science, or permission from the course convener. A basic understanding of computer networking and software systems.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "The objective is to provide an understanding of the basic components used to build Grid and Cloud computing systems, with a focus on how these can support Scientific Computing. This course gives an overview of the components that make up Grid and Cloud computing environments, including the components used to build distributed data and computing grids and the various 'as a Service' systems referred to as Cloud computing. It also looks at how these are used for large scale Scientific Computing.",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "None.",
+  "assessment": "Final examination: 60%; Practical assignments: 40%.",
+  "is_science_course": true
+}

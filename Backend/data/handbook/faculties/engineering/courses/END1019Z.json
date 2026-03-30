@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "END1019Z",
+  "title": "Ethics and Engineering",
+  "department": "engineering-faculty",
+  "credits": 0,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "A Gwynne-Evans",
+  "prerequisites": {
+    "text": "Enrolment is limited to 100 full-time EBE students.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This elective is open to students from all departments and faculties, and contributes to the Complementary Studies B requirement of engineering students. The course provides a space to explore the nexus of ‘university studies and knowledge’ on the one hand, and ‘community issues and knowledge’ on the other. Central to this exploration is the concept of ‘social infrastructures’. Social infrastructures recognises that ‘development’ is a socio -technical process, giving rise to particular relationships between households and communities, shaped by the institutional and political context. It is also used to understand the complex set of relationships or forms of social capital developed within under-resourced communities and used to leverage social change. Throug h a combination of on- and off -campus classes, we utilise a process of ‘horizontal learning’ to explore learning and engagement with a range of community partners in the greater Cape Town area. We look particularly at how we, as students and emerging professionals, might engage with and learn from communities in the context of development and social justice. DEPARTMENTS IN THE FACULTY AND COURSES OFFERED 158",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "A 90% attendance at the in -person and online classes and 100% submission of assignments is required. Please refer to the official course handout document for additional information for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "HUB3007S",
+  "title": "Human Neurosciences",
+  "department": "human-biology",
+  "credits": 36,
+  "nqf_level": 7,
+  "year_level": "Third Year",
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr R Dangarembizi",
+  "prerequisites": {
+    "text": "HUB3006F (or approved equivalent). Exceptions at the discretion of the convener.",
+    "parsed": {
+      "type": "and",
+      "codes": [
+        "HUB3006F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course offers theoretical and practical instruction on advanced concepts in neuroscience, including: embryological development and repair of the nervous system; histological and gross anatomical appearances of the brain; electrophysiology; principles of electrical and morphological brain imaging; neuronal signalling; signal transduction in sensory, motor and autonomic nervous systems; vision and pain perception; eating disorders; mechanisms of learning; and the development of memory.",
+  "lecture_times": "Five 45-minute lectures per week, 1st period, Monday to Friday.",
+  "dp_requirements": "Attendance at all practicals; 40% average mark for class tests; and an average of 50% for all assignments.",
+  "assessment": "Class tests 30%; practicals including assignments/seminar presentation 20%; examinations (written theory and practical theory) 50%. Sub-minimum of 40% required for both theory and practical examinations. Supplementary examinations may be offered to students with an overall score of 45–49%. An oral examination may be required for selected students.",
+  "is_science_course": false,
+  "offered_by_faculty": "health-sciences"
+}

@@ -1,0 +1,31 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "HUB2019F",
+  "title": "Integrated Anatomical and Physiological Sciences Part A",
+  "department": "human-biology",
+  "credits": 24,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr J Harbron and Associate Professor D Lang",
+  "entry_limit": 80,
+  "prerequisites": {
+    "text": "BIO1000F, BIO1004S and CEM1000W (or equivalent courses).",
+    "parsed": {
+      "type": "prerequisite",
+      "codes": ["BIO1000F", "BIO1004S", "CEM1000W"]
+    }
+  },
+  "corequisites": [
+    {
+      "text": "An average grade of 60% or more for BIO1000F and BIO1004S is recommended.",
+      "codes": []
+    }
+  ],
+  "outline": "This course is under review and the content may change as a result. The course introduces the concept of integrating human physiology, anatomy, cell biology and histology. It includes the study of cells and tissues, the basic anatomy and histology of the musculoskeletal, endocrine and digestive systems, and an introduction to embryology and osteology. Physiological concepts include fluid balance, cell signalling, hormone regulation, digestion, absorption and metabolism. The course consists of lectures, practical sessions and tutorials. In the practicals, students work in small groups using computers and specialised equipment to study the physiology and histology of the abovementioned organ systems. At the end of the course, students will be able to describe structure-function relationships of body systems covered in the course; apply concepts and principles taught in lectures and practical sessions to solve theoretical or real-life problems posed in tutorials, tests and examinations; follow and implement instructions in computer-simulated physiology experiments and interpret results; identify micro-anatomical organisation of organs under a microscope or in monographs; identify and name structures in anatomical specimens; and design simple experiments to determine physiological parameters such as blood type, fluid compartment volumes, enzyme activities etc.",
+  "lecture_times": "Lectures: Monday to Friday (08h00-08h45); Practicals: Mondays or Tuesdays (14h00-17h00).",
+  "dp_requirements": "Attendance at all practical sessions, 40% average in class tests and an average of 50% for all assignments.",
+  "assessment": "Class tests 30%, practical write-up 15%, assignments or tutorials 5%. Final examinations (50%): Theory examination 30%, practical examination 20%. A subminimum of 40% is required for the theory and practical examination to pass this course. Supplementary examinations, in the form of written, practical or oral assessment, may be offered to students whose overall score is 45-49%. An oral examination may be required in the case of selected students.",
+  "is_health_sciences_course": true
+}

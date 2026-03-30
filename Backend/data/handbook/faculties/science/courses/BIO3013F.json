@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "BIO3013F",
+  "title": "Global Change Ecology",
+  "department": "biological-sciences",
+  "credits": 0,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Professor A G West",
+  "prerequisites": {
+    "text": "BIO1000F/H, BIO1004F/S; approved 2000-level semester Science course.",
+    "parsed": {
+      "type": "and",
+      "codes": [
+        "BIO1000F/H",
+        "BIO1004F/S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "How are organisms and ecosystems affected by the drivers of global environmental change? In this course we briefly explore the drivers of global change, both natural (e.g. Milankovitch cycles, tectonic drift) and anthropogenic (e.g. greenhouse gas emissions, pollution, land-use change), and then examine how these drivers influence (and are influenced by) terrestrial and marine biological systems. We cover a variety of topics, ranging from organismal and physiological responses to global change, biodiversity, global biogeochemical cycles, ecological function and ecosystem services. While the majority of the class is focussed on contemporary global change, this is contextualized relative to palaeohistorical environmental change. The course provides an integrated knowledge of contemporary environmental issues related to global change (e.g. carbon sequestration, climate change mitigation, land-use change) and its implications for biodiversity, ecosystem services and human wellbeing.",
+  "lecture_times": "Monday - Friday, 2nd period. Practicals: One per week, Monday, 14h00 - 17h00. Attendance is compulsory for all lectures and practicals.",
+  "dp_requirements": "Completion of at least 70% of deliverables (tests, practicals, project report), including at least one class test and the project report; attendance of practicals; minimum of 40% for the class record.",
+  "assessment": "A 3-hour examination written in June, with a sub-minimum of 40%, will count for 50% of the course. Coursework marks will be allocated as follows: Practical classes (assessed weekly) count 15%; research project counts 20%; class tests count 15%",
+  "is_science_course": true
+}

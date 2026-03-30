@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PPH4056W",
+  "title": "Health in Context",
+  "department": "public-health",
+  "credits": 40,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Assoc Prof N Jacob",
+  "prerequisites": {
+    "text": "Successful completion of all co urses within the preceding academic year.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "Objective: The overall aim of the course is to intro duce students to the practice of community- oriented primary care through theore tical and experiential learning. Specific objectives are to a) understand the impact of socio-economic and environmental factors on quality of an individual’s life and health, so that appropriate clinical and soci al management decisions ca n be made; b) to enable students to assess and become involved in initiatives that address socio-economic and environmental causes of ill health within communities and c) to refine teamwork skills through participation in group projects and activities. Course outline: This integrated course comprises public health, family medicine, palliative care and health promotion. The six-week course introduces students to comm unity- oriented primary ca re, where the care and determinants of health of indi viduals and communities are studied. Clinical experience in family medicine and palliative care at a primary care level is integrated with a public health research project, followed by a health promotion in tervention. In public health, students study epidemiology, biostatistics, research methods, human rights, research ethics , demography, o ccupational and environmental health, communicab le disease control, health eco nomics, and health needs of vulnerable groups. In health promotion, during proj ects at community sites and during home visits, students learn skills such as networking, advocacy, communication, organising, facilitation, planning and negotiation, reflection, teamwork, community participation and empowerment. Family medicine and palliative care include clinical attachments in primary care settings and an intermediate healthcare facility, during which students conduct and review video-taped patient consultations and home visits. 228 DEPARTMENTS IN THE FACULTY",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "(a) Completion of all assignments submitted by the deadline/s as stipulated in the course manual; (b) Completion of summative and formative assessments by the stipulated deadlines, with a sub- minimum of 46% for in-course assignme nts/assessments; (c) Participation in and equal contribution to group- work; an d (d) Attendance at all clinical and community te aching and group presentations; and 90% attendance of in-class sessions, including online sessions, prior to the end-of- block assessment.",
+  "assessment": "The following components contribute to the overall mark: (a) An epidemiology research protocol (group mark) (14.5%); (b) A health promotion project (group mark) (12.5%); (c) A combined epidemiology and health promotion oral presentation (group mark) (6%); (d) A motivational interview assessment (4%); (e) A family medicine patient case study (8%); (f) A biostatistics assessment (5%); (g) The end-of-course written examin ation is weighted at 50%. This comprises of Public Health, Health Promotion, Family Medicine and Palliative Care. Penalty for late submission of assignments is 5% per day, to a maximum of five days, following which a stude nt will get zero. Students must obtain an overall aggregate of 50% for the course, as well as 50% overall for the in-course assessments and 50% for the end-of-blo ck assessment in order to pass the block. Accordingly, the criteria for failure are: (a) Failure to achiev e an overall course mark of 50% ; (b) Failure to achieve 50% for coursework as above; (c) Failure to achieve 50% for the end of block EOB assessment. Students who achieve 48-49% in any of t he above components will be offered a suppleme ntary examination. Students who achieve 47% or less in any of the above components will be required to repeat the course",
+  "is_health_sciences_course": true
+}

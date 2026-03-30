@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CHM5010W",
+  "title": "Urology",
+  "department": "surgery",
+  "credits": 10,
+  "nqf_level": 8,
+  "year_level": 5,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Associate Professor JM Lazarus",
+  "prerequisites": {
+    "text": "Successful completion of all co urses within the preceding academic year.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "The Urology apprenticeship lasts two weeks and includes video tutorials and attendance and work at urology wards, clinics and in theatre. The curriculum has been organised into core clinical problems students are expected to be able to evaluate clinically and core clinical topics students are expected to be knowledgeable about. The course work is made up of the video tutorials and the textbook, “A handbook of Urology” which is available at Ward E26.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Full attendance and completi on of all requisite coursework/clinical work. A student who for any reason is or has been unable to meet the above requirements by the due date must supply a reason to the convener, wh o has the discretion to decide wh ether the reason is adequate to 248 DEPARTMENTS IN THE FACULTY avoid being given a DPR. Activities will need to be made up where required. If this is not possible, the student may have to repeat all or a portion of the course.",
+  "assessment": "The final mark is made up of a case report. This comp rises a case report (20%) a logbook/ward performance (30%) and an end-of-block MCQ examination (50%).",
+  "is_health_sciences_course": true
+}

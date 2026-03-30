@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EGS5058S",
+  "title": "Critical Perspectives on the Bio-Economy",
+  "department": "environmental-geographical-science",
+  "credits": 23,
+  "nqf_level": 9,
+  "year_level": "Postgraduate – Masters elective",
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Professor R Wynberg",
+  "prerequisites": {
+    "text": "Acceptance for Honours or Master's specialising in EGS or cognate disciplines.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "Using a political ecology framing, this interdisciplinary course introduces key theories that situate the bio-economy and deepens understanding of emerging debates, from contestations about genetically modified crops and 'biopiracy' charges to the potential of agroecology as a sustainable agricultural future. The course draws on research mostly from Sub-Saharan Africa and includes a short fieldtrip. Students are expected to read set texts, watch set videos and prepare seminars.",
+  "lecture_times": null,
+  "dp_requirements": "At least 80% attendance and submission of all assignments.",
+  "assessment": "1 exam – 40%; 1 essay (4000–5000 words) – 30%; 1 seminar presentation – 15%; 1 critique – 15%.",
+  "is_science_course": true
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "POL1004F",
+  "title": "Introduction to Politics I",
+  "department": "political-studies",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr G Maxaulane",
+  "prerequisites": {
+    "text": "Faculty admission. Admission to this course is restricted to general or extended degree students registered for the major in Politics and Governance, and students in the BSocSc/BCom (PPE) programme.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "The purpose of this course is to provide an introduction to key concepts in Political Studies in particular political theory and public policy and administration. Under political theory, key concepts such as power, authority and legitimacy are discussed. Similarly, basic concepts in Public Policy and Administration are introduced to students. These concepts are applied to the study of politics. The case study of South African politics constitutes an application of the conceptual and theoretical material to contemporary politics. As an introductory course, we use content that engages the diversity of students' life worlds and is cognisant of our African location. We employ innovative teaching and delivery methods that allow more time for active engagement and the development of critical reading and writing skills in the Humanities.",
+  "lecture_times": "Monday to Thursday 7th period. POLITICAL STUDIES 372",
+  "dp_requirements": "Tutorial attendance is compulsory and students who attend fewer than 85% of the tutorials will not be allowed to write the final examination. In addition, completion of all written assignments, essays and tests is a requirement for a DP. Should students fa il to hand in written assignments by due date, they will be penalised according to the grading formula of the Department. All required work for DP purposes MUST be submitted by the last day of the course.",
+  "assessment": "Coursework counts 50%; final two-hour examination counts 50%.",
+  "is_humanities_course": true
+}

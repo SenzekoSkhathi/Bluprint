@@ -1,24 +1,25 @@
 // ...existing code...
 import MainLayout from "@/components/main-layout";
+import { getPrimaryFacultySlug } from "@/constants/faculty";
 import { theme } from "@/constants/theme";
 import { useLoggedInUser } from "@/hooks/use-logged-in-user";
 import { academicRepository } from "@/services/academic-repository";
-import { getScienceCourses } from "@/services/backend-api";
+import { getHandbookCourses, getScienceCourses } from "@/services/backend-api";
 import { getIssueActionHint } from "@/services/remediation-actions";
 import type {
-  CompletedCourseRecord,
-  InProgressCourseRecord,
-  PlannedCourse,
+    CompletedCourseRecord,
+    InProgressCourseRecord,
+    PlannedCourse,
 } from "@/types/academic";
 import { useRouter } from "expo-router";
 import React, { useEffect, useMemo, useState } from "react";
 import {
-  Platform,
-  Pressable,
-  ScrollView,
-  StyleSheet,
-  Text,
-  View,
+    Platform,
+    Pressable,
+    ScrollView,
+    StyleSheet,
+    Text,
+    View,
 } from "react-native";
 
 // ─── Constants ────────────────────────────────────────────────────────────────
@@ -41,7 +42,10 @@ function getYearMilestoneTarget(yearNumber: number | undefined): number {
  * e.g. a Year 4 student in "S1 2025" → Year 4, in "S2 2024" → Year 3.
  * "S2 XXXX" → Sem 2, everything else (S1, FY) → Sem 1.
  */
-function mockCourseToDegreeSemester(calSemester: string, studentYear: number): string {
+function mockCourseToDegreeSemester(
+  calSemester: string,
+  studentYear: number,
+): string {
   const calYearMatch = calSemester.match(/\d{4}/);
   const calYear = calYearMatch ? parseInt(calYearMatch[0], 10) : 2025;
   const degreeYear = Math.min(Math.max(calYear - 2025 + studentYear, 1), 4);
@@ -192,6 +196,7 @@ function CreditRing({
 
 // ─── Component ────────────────────────────────────────────────────────────────
 export default function Progress() {
+  const activeFacultySlug = getPrimaryFacultySlug();
   const router = useRouter();
   const [activeTab, setActiveTab] = useState<CourseTab>("completed");
   const [expandedCourse, setExpandedCourse] = useState<string | null>(null);
@@ -214,7 +219,7 @@ export default function Progress() {
   useEffect(() => {
     let isMounted = true;
 
-    getScienceCourses()
+    getHandbookCourses({ faculty_slug: activeFacultySlug })
       .then((response) => {
         if (!isMounted) return;
         const nextMap = new Map<string, string>();
@@ -223,8 +228,21 @@ export default function Progress() {
         });
         setCatalogTitles(nextMap);
       })
-      .catch(() => {
+      .catch(async () => {
         if (!isMounted) return;
+        if (activeFacultySlug === "science") {
+          try {
+            const response = await getScienceCourses();
+            const nextMap = new Map<string, string>();
+            response.courses.forEach((course) => {
+              nextMap.set(course.code.trim().toUpperCase(), course.title);
+            });
+            setCatalogTitles(nextMap);
+            return;
+          } catch {
+            // fall through to repository fallback
+          }
+        }
         const fallbackCatalog = academicRepository.getCourseCatalog();
         const nextMap = new Map<string, string>();
         fallbackCatalog.forEach((course) => {
@@ -236,7 +254,7 @@ export default function Progress() {
     return () => {
       isMounted = false;
     };
-  }, []);
+  }, [activeFacultySlug]);
 
   const courseCatalog = useMemo(
     () => academicRepository.getCourseCatalog(),
@@ -271,7 +289,9 @@ export default function Progress() {
       return mockUser.completedCourses.passed.map((course, index) => ({
         id: `completed-${index}-${course.code}`,
         code: course.code,
-        title: courseTitleByCode.get(course.code.trim().toUpperCase()) ?? course.title,
+        title:
+          courseTitleByCode.get(course.code.trim().toUpperCase()) ??
+          course.title,
         credits: course.credits,
         grade: course.grade != null ? `${course.grade}%` : "N/A",
         gpa: gradeToGpa(course.grade),
@@ -279,7 +299,8 @@ export default function Progress() {
       }));
     }
     // Fallback for unauthenticated/demo state
-    if (!loggedInUser && !savedPlan) return academicRepository.getCompletedCourses();
+    if (!loggedInUser && !savedPlan)
+      return academicRepository.getCompletedCourses();
     return [];
   }, [mockUser, loggedInUser, savedPlan, courseTitleByCode]);
 
@@ -288,7 +309,9 @@ export default function Progress() {
       return mockUser.completedCourses.failed.map((course, index) => ({
         id: `failed-${index}-${course.code}`,
         code: course.code,
-        title: courseTitleByCode.get(course.code.trim().toUpperCase()) ?? course.title,
+        title:
+          courseTitleByCode.get(course.code.trim().toUpperCase()) ??
+          course.title,
         credits: course.credits,
         grade: course.grade != null ? `${course.grade}%` : "N/A",
         gpa: gradeToGpa(course.grade),
@@ -305,14 +328,17 @@ export default function Progress() {
       return mockUser.coursesInProgress.map((course, index) => ({
         id: `inprogress-${index}-${course.code}`,
         code: course.code,
-        title: courseTitleByCode.get(course.code.trim().toUpperCase()) ?? course.title,
+        title:
+          courseTitleByCode.get(course.code.trim().toUpperCase()) ??
+          course.title,
         credits: course.credits,
         currentGrade: "-",
         status: 50,
         semester: mockCourseToDegreeSemester(course.semester, mockUser.year),
       }));
     }
-    if (!loggedInUser && !savedPlan) return academicRepository.getInProgressCourses();
+    if (!loggedInUser && !savedPlan)
+      return academicRepository.getInProgressCourses();
     return [];
   }, [mockUser, loggedInUser, savedPlan, courseTitleByCode]);
 
@@ -719,7 +745,11 @@ export default function Progress() {
         style={[styles.courseRow, isFailed && styles.courseRowFailed]}
       >
         <View style={styles.courseLeft}>
-          <Text style={[styles.courseCode, isFailed && styles.courseCodeFailed]}>{course.code}</Text>
+          <Text
+            style={[styles.courseCode, isFailed && styles.courseCodeFailed]}
+          >
+            {course.code}
+          </Text>
           <Text style={styles.courseName} numberOfLines={isExpanded ? 0 : 1}>
             {course.title}
           </Text>
@@ -729,7 +759,11 @@ export default function Progress() {
         </View>
         <View style={styles.courseRight}>
           <View style={[styles.gradeBox, isFailed && styles.gradeBoxFailed]}>
-            <Text style={[styles.gradeText, isFailed && styles.gradeTextFailed]}>{course.grade}</Text>
+            <Text
+              style={[styles.gradeText, isFailed && styles.gradeTextFailed]}
+            >
+              {course.grade}
+            </Text>
           </View>
           {isFailed && <Text style={styles.gradeSubFailed}>Failed</Text>}
         </View>
@@ -1097,7 +1131,9 @@ export default function Progress() {
       {priorityFixes.length > 0 ? (
         <>
           <Text style={styles.sectionLabel}>Priority issues</Text>
-          <View style={[styles.insightList, { marginBottom: theme.spacing.md }]}>
+          <View
+            style={[styles.insightList, { marginBottom: theme.spacing.md }]}
+          >
             {priorityFixes.map((fix) => (
               <View
                 key={fix.id}
@@ -1169,7 +1205,9 @@ export default function Progress() {
               {completedCourses.map(renderCompletedCourse)}
               {failedCourses.length > 0 && (
                 <>
-                  <Text style={[styles.sectionLabel, styles.sectionLabelFailed]}>
+                  <Text
+                    style={[styles.sectionLabel, styles.sectionLabelFailed]}
+                  >
                     Failed ({failedCourses.length})
                   </Text>
                   {failedCourses.map(renderCompletedCourse)}

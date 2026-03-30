@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CIV1014Z",
+  "title": "Water Challenge Scenario Project",
+  "department": "civil-engineering",
+  "credits": 4,
+  "nqf_level": 6,
+  "year_level": 1,
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "Professor D Randall",
+  "prerequisites": {
+    "text": "Refer to the programme and departmental sections in the 2026 EBE Faculty Handbook.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "The project course aims to locate water management and treatment into the context of a city. Students are required to investigate the sources of water that need to managed by a municipality and standard treatment facilities.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "ACC2023H",
+  "title": "Taxation I",
+  "department": "accounting",
+  "credits": 18,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "FY",
+  "semester_code": "H",
+  "convener": "S Esack",
+  "prerequisites": {
+    "text": "ACC1011S and concurrent registration or a previous pass in ACC1015. Registration for a BCom Accounting or BBusSci Finance with Accounting degree.",
+    "parsed": {
+      "type": "prerequisite",
+      "codes": [
+        "ACC1011S"
+      ],
+      "concurrent": [
+        "ACC1015S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The primary aim of the course is to provide students with a foundation to the income tax and value-added tax legislation in order to enable them to apply such knowledge in problem-solving situations. The aim in covering these areas is to give students a rounded knowledge of the fiscal tax planning arena.",
+  "lecture_times": "Monday - Thursday 13:00 (with a repeat at 14:00) every second week.",
+  "dp_requirements": "Attendance at and submission of a minimum of 75% of tutorials and assignments in each semester AND a weighted average of 40% for all class tests AND a weighted average of 40% for the project assignments.",
+  "assessment": "Coursework 40%; Exam 60%.",
+  "is_commerce_course": true
+}

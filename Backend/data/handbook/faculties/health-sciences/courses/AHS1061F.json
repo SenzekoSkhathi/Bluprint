@@ -1,0 +1,31 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AHS1061F",
+  "title": "Disability Info Management & Communication Systems II",
+  "department": "health-and-rehabilitation-sciences",
+  "credits": 8,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr I Nwanze DEPARTMENTS IN THE FACULTY 93",
+  "prerequisites": {
+    "text": "AHS1060S",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "AHS1060S"
+      ]
+    }
+  },
+  "corequisites": [
+    "AHS1064F",
+    "AHS1062F",
+    "AHS1067F"
+  ],
+  "outline": "The students will learn basic information and communication systems in relation to care pathways and referral systems for peop le with disabilities. By the end of th is course, students should appreciate critical enquiry; know how to use a variety of participatory rural appraisal methods; be able to apply ethical principles in research ethics work with DPOs; know the components of an information system; understand the principles and practice of record-keeping; know how to use a variety of different tools to gather information (WHO checklist, ICF, PRA); and know how to identify relevant support service and care pathways for effective referral across sectors.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Full attendance of and participation in all lectures, practical sessions, workshops and tutorials, and submission of portfolio by the due dates.",
+  "assessment": "Coursework assessments comprising (oral presentations 10% and portfolio assessments 15%). The examination mark counts 25% of the year mark and comprises an oral presentation",
+  "is_health_sciences_course": true
+}

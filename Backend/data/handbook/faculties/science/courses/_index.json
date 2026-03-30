@@ -1,0 +1,3874 @@
+{
+  "$schema": "handbook-course-index-v1",
+  "faculty": "science",
+  "year": 2026,
+  "courses": [
+    {
+      "code": "ACC1021F",
+      "title": "Accounting for Business I",
+      "nqf_level": 5,
+      "semester": "S1",
+      "is_science_course": false,
+      "offered_by_faculty": "commerce",
+      "nqf_credits": 15,
+      "department_prefix": "ACC",
+      "year_level": 1
+    },
+    {
+      "code": "AGE1002S",
+      "title": "The Human Planet: Prehistory to Present",
+      "nqf_level": 5,
+      "semester": "S2",
+      "nqf_credits": 18,
+      "department_prefix": "AGE",
+      "year_level": 1
+    },
+    {
+      "code": "AGE1005L",
+      "title": "Towards a Decolonised Science in South Africa",
+      "nqf_level": 5,
+      "semester": "winter",
+      "nqf_credits": 18,
+      "department_prefix": "AGE",
+      "year_level": 1
+    },
+    {
+      "code": "AGE2011S",
+      "title": "Human Evolution",
+      "nqf_level": 6,
+      "semester": "S2",
+      "nqf_credits": 24,
+      "department_prefix": "AGE",
+      "year_level": 2
+    },
+    {
+      "code": "AGE2012F",
+      "title": "The First People",
+      "nqf_level": 6,
+      "semester": "S1",
+      "nqf_credits": 24,
+      "department_prefix": "AGE",
+      "year_level": 2
+    },
+    {
+      "code": "AGE3006H",
+      "title": "Directed Reading & Research",
+      "nqf_level": 7,
+      "semester": "FY",
+      "nqf_credits": 36,
+      "department_prefix": "AGE",
+      "year_level": 3
+    },
+    {
+      "code": "AGE3011F",
+      "title": "The Roots of Recent African Identities",
+      "nqf_level": 7,
+      "semester": "S1",
+      "nqf_credits": 36,
+      "department_prefix": "AGE",
+      "year_level": 3
+    },
+    {
+      "code": "AGE3012S",
+      "title": "Archaeologies of Dominance and Resistance in the Last-500 Years",
+      "nqf_level": 7,
+      "semester": "S2",
+      "nqf_credits": 36,
+      "department_prefix": "AGE",
+      "year_level": 3
+    },
+    {
+      "code": "AGE3013H",
+      "title": "Archaeology in Practice",
+      "nqf_level": 7,
+      "semester": "FY",
+      "nqf_credits": 36,
+      "department_prefix": "AGE",
+      "year_level": 3
+    },
+    {
+      "code": "AGE4000W",
+      "title": "Archaeology Honours",
+      "nqf_level": 8,
+      "semester": "FY",
+      "nqf_credits": 160,
+      "department_prefix": "AGE",
+      "year_level": 4
+    },
+    {
+      "code": "AGE4001W",
+      "title": "Archaeology & Environmental Science Honours",
+      "nqf_level": 8,
+      "semester": "FY",
+      "nqf_credits": 160,
+      "department_prefix": "AGE",
+      "year_level": 4
+    },
+    {
+      "code": "AGE5000W",
+      "title": "Archaeology Dissertation",
+      "nqf_level": 9,
+      "semester": "FY",
+      "nqf_credits": 180,
+      "department_prefix": "AGE",
+      "year_level": 5
+    },
+    {
+      "code": "AGE6000W",
+      "title": "Archaeology Thesis",
+      "nqf_level": 10,
+      "semester": "FY",
+      "nqf_credits": 360,
+      "department_prefix": "AGE",
+      "year_level": 6
+    },
+    {
+      "code": "AST1000S",
+      "title": "Introduction to Astronomy",
+      "nqf_level": 5,
+      "semester": "S2",
+      "nqf_credits": 18,
+      "department_prefix": "AST",
+      "year_level": 1
+    },
+    {
+      "code": "AST2002H",
+      "title": "Astrophysics",
+      "nqf_level": 6,
+      "semester": "FY",
+      "nqf_credits": 24,
+      "department_prefix": "AST",
+      "year_level": 2
+    },
+    {
+      "code": "AST2003H",
+      "title": "Astronomical Techniques",
+      "nqf_level": 6,
+      "semester": "FY",
+      "nqf_credits": 24,
+      "department_prefix": "AST",
+      "year_level": 2
+    },
+    {
+      "code": "AST3002F",
+      "title": "Stellar Astrophysics",
+      "nqf_level": 7,
+      "semester": "S1",
+      "nqf_credits": 36,
+      "department_prefix": "AST",
+      "year_level": 3
+    },
+    {
+      "code": "AST3003S",
+      "title": "Galactic & Extragalactic Astrophysics",
+      "nqf_level": 7,
+      "semester": "S2",
+      "nqf_credits": 36,
+      "department_prefix": "AST",
+      "year_level": 3
+    },
+    {
+      "code": "AST4007W",
+      "title": "Astrophysics & Space Science Honours",
+      "nqf_level": 8,
+      "semester": "FY",
+      "nqf_credits": 160,
+      "department_prefix": "AST",
+      "year_level": 4
+    },
+    {
+      "code": "AST5000W",
+      "title": "Astronomy Dissertation",
+      "nqf_level": 9,
+      "semester": "FY",
+      "nqf_credits": 180,
+      "department_prefix": "AST",
+      "year_level": 5
+    },
+    {
+      "code": "AST5001W",
+      "title": "Astrophysics & Space Science Minor Dissertation (NASSP)",
+      "nqf_level": 9,
+      "semester": "FY",
+      "nqf_credits": 90,
+      "department_prefix": "AST",
+      "year_level": 5
+    },
+    {
+      "code": "AST5003F",
+      "title": "Astrophysics & Space Science Coursework (NASSP)",
+      "nqf_level": 9,
+      "semester": "S1",
+      "nqf_credits": 90,
+      "department_prefix": "AST",
+      "year_level": 5
+    },
+    {
+      "code": "AST5004Z",
+      "title": "Data Science for Astronomy",
+      "nqf_level": 9,
+      "semester": "varies",
+      "nqf_credits": 12,
+      "department_prefix": "AST",
+      "year_level": 5
+    },
+    {
+      "code": "AST5005W",
+      "title": "Data Science Minor Dissertation",
+      "nqf_level": 9,
+      "semester": "FY",
+      "nqf_credits": 90,
+      "department_prefix": "AST",
+      "year_level": 5
+    },
+    {
+      "code": "AST6000W",
+      "title": "Astronomy Thesis",
+      "nqf_level": 10,
+      "semester": "FY",
+      "nqf_credits": 360,
+      "department_prefix": "AST",
+      "year_level": 6
+    },
+    {
+      "code": "BIO1000F",
+      "title": "Cell Biology",
+      "nqf_level": 5,
+      "semester": "S1",
+      "nqf_credits": 0,
+      "department_prefix": "BIO",
+      "year_level": 1
+    },
+    {
+      "code": "BIO1000H",
+      "title": "Cell Biology",
+      "nqf_level": 5,
+      "semester": "FY",
+      "nqf_credits": 0,
+      "department_prefix": "BIO",
+      "year_level": 1
+    },
+    {
+      "code": "BIO1004S",
+      "title": "Biological Diversity",
+      "nqf_level": 5,
+      "semester": "S2",
+      "nqf_credits": 0,
+      "department_prefix": "BIO",
+      "year_level": 1
+    },
+    {
+      "code": "BIO2014F",
+      "title": "Principles of Ecology & Evolution",
+      "nqf_level": 6,
+      "semester": "S1",
+      "nqf_credits": 0,
+      "department_prefix": "BIO",
+      "year_level": 2
+    },
+    {
+      "code": "BIO2015F",
+      "title": "Vertebrate Diversity & Functional Biology",
+      "nqf_level": 6,
+      "semester": "S1",
+      "nqf_credits": 0,
+      "department_prefix": "BIO",
+      "year_level": 2
+    },
+    {
+      "code": "BIO2015S",
+      "title": "Vertebrate Diversity & Functional Biology",
+      "nqf_level": 6,
+      "semester": "S2",
+      "nqf_credits": 0,
+      "department_prefix": "BIO",
+      "year_level": 2
+    },
+    {
+      "code": "BIO2016S",
+      "title": "Invertebrate Diversity & Functional Biology",
+      "nqf_level": 6,
+      "semester": "S2",
+      "nqf_credits": 0,
+      "department_prefix": "BIO",
+      "year_level": 2
+    },
+    {
+      "code": "BIO2017F",
+      "title": "Plant Diversity and Functional Biology",
+      "nqf_level": 6,
+      "semester": "S1",
+      "nqf_credits": 0,
+      "department_prefix": "BIO",
+      "year_level": 2
+    },
+    {
+      "code": "BIO2017S",
+      "title": "Plant Diversity and Functional Biology",
+      "nqf_level": 6,
+      "semester": "S2",
+      "nqf_credits": 0,
+      "department_prefix": "BIO",
+      "year_level": 2
+    },
+    {
+      "code": "BIO3002F",
+      "title": "Marine Ecosystems",
+      "nqf_level": 7,
+      "semester": "S1",
+      "nqf_credits": 0,
+      "department_prefix": "BIO",
+      "year_level": 3
+    },
+    {
+      "code": "BIO3013F",
+      "title": "Global Change Ecology",
+      "nqf_level": 7,
+      "semester": "S1",
+      "nqf_credits": 0,
+      "department_prefix": "BIO",
+      "year_level": 3
+    },
+    {
+      "code": "BIO3014S",
+      "title": "Conservation: Genes, Population & Biodiversity",
+      "nqf_level": 7,
+      "semester": "S2",
+      "nqf_credits": 0,
+      "department_prefix": "BIO",
+      "year_level": 3
+    },
+    {
+      "code": "BIO3018F",
+      "title": "Ecology & Evolution in the Field",
+      "nqf_level": 7,
+      "semester": "S1",
+      "nqf_credits": 0,
+      "department_prefix": "BIO",
+      "year_level": 3
+    },
+    {
+      "code": "BIO3019S",
+      "title": "Quantitative Biology",
+      "nqf_level": 7,
+      "semester": "S2",
+      "nqf_credits": 0,
+      "department_prefix": "BIO",
+      "year_level": 3
+    },
+    {
+      "code": "BIO3022S",
+      "title": "People and the Sea",
+      "nqf_level": 7,
+      "semester": "S2",
+      "nqf_credits": 0,
+      "department_prefix": "BIO",
+      "year_level": 3
+    },
+    {
+      "code": "BIO4000W",
+      "title": "Biological Sciences Honours",
+      "nqf_level": 8,
+      "semester": "FY",
+      "nqf_credits": 0,
+      "department_prefix": "BIO",
+      "year_level": 4
+    },
+    {
+      "code": "BIO4001W",
+      "title": "Marine Biology Honours",
+      "nqf_level": 8,
+      "semester": "FY",
+      "nqf_credits": 0,
+      "department_prefix": "BIO",
+      "year_level": 4
+    },
+    {
+      "code": "BIO5007H",
+      "title": "Conservation Biology Coursework",
+      "nqf_level": 9,
+      "semester": "FY",
+      "nqf_credits": 0,
+      "department_prefix": "BIO",
+      "year_level": 5
+    },
+    {
+      "code": "BIO5008W",
+      "title": "Conservation Biology Minor Dissertation",
+      "nqf_level": 9,
+      "semester": "FY",
+      "nqf_credits": 0,
+      "department_prefix": "BIO",
+      "year_level": 5
+    },
+    {
+      "code": "BIO5009W",
+      "title": "Conservation Biology Dissertation",
+      "nqf_level": 9,
+      "semester": "FY",
+      "nqf_credits": 0,
+      "department_prefix": "BIO",
+      "year_level": 5
+    },
+    {
+      "code": "BIO5010W",
+      "title": "Biological Sciences Dissertation",
+      "nqf_level": 9,
+      "semester": "FY",
+      "nqf_credits": 0,
+      "department_prefix": "BIO",
+      "year_level": 5
+    },
+    {
+      "code": "BIO5012W",
+      "title": "Applied Ocean Sciences Coursework",
+      "nqf_level": 9,
+      "semester": "FY",
+      "nqf_credits": 0,
+      "department_prefix": "BIO",
+      "year_level": 5
+    },
+    {
+      "code": "BIO5013Z",
+      "title": "Fundamentals of Applied Ocean Sciences",
+      "nqf_level": 9,
+      "semester": "varies",
+      "nqf_credits": 0,
+      "department_prefix": "BIO",
+      "year_level": 5
+    },
+    {
+      "code": "BIO5014Z",
+      "title": "Applied Marine Biology",
+      "nqf_level": 9,
+      "semester": "varies",
+      "nqf_credits": 0,
+      "department_prefix": "BIO",
+      "year_level": 5
+    },
+    {
+      "code": "BIO5015W",
+      "title": "Applied Ocean Sciences Minor Dissertation",
+      "nqf_level": 9,
+      "semester": "FY",
+      "nqf_credits": 0,
+      "department_prefix": "BIO",
+      "year_level": 5
+    },
+    {
+      "code": "BIO6002W",
+      "title": "Conservation Biology Thesis",
+      "nqf_level": 10,
+      "semester": "FY",
+      "nqf_credits": 0,
+      "department_prefix": "BIO",
+      "year_level": 6
+    },
+    {
+      "code": "BIO6003W",
+      "title": "Biological Sciences Thesis",
+      "nqf_level": 10,
+      "semester": "FY",
+      "nqf_credits": 0,
+      "department_prefix": "BIO",
+      "year_level": 6
+    },
+    {
+      "code": "CEM1000W",
+      "title": "Chemistry 1000",
+      "nqf_level": 5,
+      "semester": "FY",
+      "nqf_credits": 36,
+      "department_prefix": "CEM",
+      "year_level": 1
+    },
+    {
+      "code": "CEM1009H",
+      "title": "Chemistry 1009",
+      "nqf_level": 5,
+      "semester": "FY",
+      "nqf_credits": 18,
+      "department_prefix": "CEM",
+      "year_level": 1
+    },
+    {
+      "code": "CEM1010H",
+      "title": "Chemistry 1010",
+      "nqf_level": 5,
+      "semester": "FY",
+      "nqf_credits": 18,
+      "department_prefix": "CEM",
+      "year_level": 1
+    },
+    {
+      "code": "CEM2005W",
+      "title": "Intermediate Chemistry",
+      "nqf_level": 6,
+      "semester": "FY",
+      "nqf_credits": 48,
+      "department_prefix": "CEM",
+      "year_level": 2
+    },
+    {
+      "code": "CEM3005W",
+      "title": "Chemistry 3005",
+      "nqf_level": 7,
+      "semester": "FY",
+      "nqf_credits": 72,
+      "department_prefix": "CEM",
+      "year_level": 3
+    },
+    {
+      "code": "CEM4000W",
+      "title": "Chemistry Honours",
+      "nqf_level": 8,
+      "semester": "FY",
+      "nqf_credits": 160,
+      "department_prefix": "CEM",
+      "year_level": 4
+    },
+    {
+      "code": "CEM5000W",
+      "title": "Chemistry Dissertation",
+      "nqf_level": 9,
+      "semester": "FY",
+      "nqf_credits": 180,
+      "department_prefix": "CEM",
+      "year_level": 5
+    },
+    {
+      "code": "CEM5002W",
+      "title": "Computational Science Dissertation",
+      "nqf_level": 9,
+      "semester": "FY",
+      "nqf_credits": 180,
+      "department_prefix": "CEM",
+      "year_level": 5
+    },
+    {
+      "code": "CEM5004W",
+      "title": "Tertiary Chemistry Education Dissertation",
+      "nqf_level": 9,
+      "semester": "FY",
+      "nqf_credits": 180,
+      "department_prefix": "CEM",
+      "year_level": 5
+    },
+    {
+      "code": "CEM6000W",
+      "title": "Chemistry Thesis",
+      "nqf_level": 10,
+      "semester": "FY",
+      "nqf_credits": 360,
+      "department_prefix": "CEM",
+      "year_level": 6
+    },
+    {
+      "code": "CEM6001W",
+      "title": "Tertiary Chemistry Education Thesis",
+      "nqf_level": 10,
+      "semester": "FY",
+      "nqf_credits": 360,
+      "department_prefix": "CEM",
+      "year_level": 6
+    },
+    {
+      "code": "CEM6002W",
+      "title": "Computational Science Thesis",
+      "nqf_level": 10,
+      "semester": "FY",
+      "nqf_credits": 360,
+      "department_prefix": "CEM",
+      "year_level": 6
+    },
+    {
+      "code": "CSC1010H",
+      "title": "Computer Science 1010",
+      "nqf_level": 5,
+      "semester": "FY",
+      "nqf_credits": 18,
+      "department_prefix": "CSC",
+      "year_level": 1
+    },
+    {
+      "code": "CSC1011H",
+      "title": "Computer Science 1011",
+      "nqf_level": 5,
+      "semester": "FY",
+      "nqf_credits": 18,
+      "department_prefix": "CSC",
+      "year_level": 1
+    },
+    {
+      "code": "CSC1015F",
+      "title": "Computer Science 1015",
+      "nqf_level": 5,
+      "semester": "S1",
+      "nqf_credits": 18,
+      "department_prefix": "CSC",
+      "year_level": 1
+    },
+    {
+      "code": "CSC1015S",
+      "title": "Computer Science 1015",
+      "nqf_level": 5,
+      "semester": "S2",
+      "nqf_credits": 18,
+      "department_prefix": "CSC",
+      "year_level": 1
+    },
+    {
+      "code": "CSC1016S",
+      "title": "Computer Science 1016",
+      "nqf_level": 5,
+      "semester": "S2",
+      "nqf_credits": 18,
+      "department_prefix": "CSC",
+      "year_level": 1
+    },
+    {
+      "code": "CSC2001F",
+      "title": "Computer Science 2001",
+      "nqf_level": 6,
+      "semester": "S1",
+      "nqf_credits": 24,
+      "department_prefix": "CSC",
+      "year_level": 2
+    },
+    {
+      "code": "CSC2002S",
+      "title": "Computer Science 2002",
+      "nqf_level": 6,
+      "semester": "S2",
+      "nqf_credits": 24,
+      "department_prefix": "CSC",
+      "year_level": 2
+    },
+    {
+      "code": "CSC2004Z",
+      "title": "Programming Assessment",
+      "nqf_level": 6,
+      "semester": "varies",
+      "nqf_credits": 0,
+      "department_prefix": "CSC",
+      "year_level": 2
+    },
+    {
+      "code": "CSC2005F",
+      "title": "Independent Research in Computer Science",
+      "nqf_level": 7,
+      "semester": "S1",
+      "nqf_credits": 24,
+      "department_prefix": "CSC",
+      "year_level": 2
+    },
+    {
+      "code": "CSC2005S",
+      "title": "Independent Research in Computer Science",
+      "nqf_level": 7,
+      "semester": "S2",
+      "nqf_credits": 24,
+      "department_prefix": "CSC",
+      "year_level": 2
+    },
+    {
+      "code": "CSC2041F",
+      "title": "Introduction to AI 1: Knowledge Representation",
+      "nqf_level": 6,
+      "semester": "S1",
+      "nqf_credits": 24,
+      "department_prefix": "CSC",
+      "year_level": 2
+    },
+    {
+      "code": "CSC2042S",
+      "title": "Introduction to AI 2: Machine Learning",
+      "nqf_level": 6,
+      "semester": "S2",
+      "nqf_credits": 24,
+      "department_prefix": "CSC",
+      "year_level": 2
+    },
+    {
+      "code": "CSC3002F",
+      "title": "Networks and Operating Systems",
+      "nqf_level": 7,
+      "semester": "S1",
+      "nqf_credits": 36,
+      "department_prefix": "CSC",
+      "year_level": 3
+    },
+    {
+      "code": "CSC3003S",
+      "title": "Advanced Programming & Algorithms",
+      "nqf_level": 7,
+      "semester": "S2",
+      "nqf_credits": 36,
+      "department_prefix": "CSC",
+      "year_level": 3
+    },
+    {
+      "code": "CSC3024S",
+      "title": "Introduction to C++ Programming",
+      "nqf_level": 7,
+      "semester": "S2",
+      "nqf_credits": 18,
+      "department_prefix": "CSC",
+      "year_level": 3
+    },
+    {
+      "code": "CSC3041F",
+      "title": "AI: Automated Planning and Control",
+      "nqf_level": 7,
+      "semester": "S1",
+      "nqf_credits": 18,
+      "department_prefix": "CSC",
+      "year_level": 3
+    },
+    {
+      "code": "CSC3042F",
+      "title": "AI: Deep Learning",
+      "nqf_level": 7,
+      "semester": "S1",
+      "nqf_credits": 18,
+      "department_prefix": "CSC",
+      "year_level": 3
+    },
+    {
+      "code": "CSC3043S",
+      "title": "AI: Reasoning in AI",
+      "nqf_level": 7,
+      "semester": "S2",
+      "nqf_credits": 18,
+      "department_prefix": "CSC",
+      "year_level": 3
+    },
+    {
+      "code": "CSC3044S",
+      "title": "AI: AI Systems",
+      "nqf_level": 7,
+      "semester": "S2",
+      "nqf_credits": 18,
+      "department_prefix": "CSC",
+      "year_level": 3
+    },
+    {
+      "code": "CSC4002W",
+      "title": "Computer Science Honours Project",
+      "nqf_level": 8,
+      "semester": "FY",
+      "nqf_credits": 60,
+      "department_prefix": "CSC",
+      "year_level": 4
+    },
+    {
+      "code": "CSC4007Z",
+      "title": "Selected Honours Module in Computer Science",
+      "nqf_level": 8,
+      "semester": "varies",
+      "nqf_credits": 12,
+      "department_prefix": "CSC",
+      "year_level": 4
+    },
+    {
+      "code": "CSC4010Z",
+      "title": "Advanced Topics in Computer Science Honours 2",
+      "nqf_level": 8,
+      "semester": "varies",
+      "nqf_credits": 12,
+      "department_prefix": "CSC",
+      "year_level": 4
+    },
+    {
+      "code": "CSC4013Z",
+      "title": "Visualisation",
+      "nqf_level": 8,
+      "semester": "varies",
+      "nqf_credits": 12,
+      "department_prefix": "CSC",
+      "year_level": 4
+    },
+    {
+      "code": "CSC4019Z",
+      "title": "Research & Innovation",
+      "nqf_level": 8,
+      "semester": "varies",
+      "nqf_credits": 16,
+      "department_prefix": "CSC",
+      "year_level": 4
+    },
+    {
+      "code": "CSC4020Z",
+      "title": "Functional Programming",
+      "nqf_level": 8,
+      "semester": "varies",
+      "nqf_credits": 12,
+      "department_prefix": "CSC",
+      "year_level": 4
+    },
+    {
+      "code": "CSC4021Z",
+      "title": "Compilers 1",
+      "nqf_level": 8,
+      "semester": "varies",
+      "nqf_credits": 12,
+      "department_prefix": "CSC",
+      "year_level": 4
+    },
+    {
+      "code": "CSC4022Z",
+      "title": "Compilers 2",
+      "nqf_level": 8,
+      "semester": "varies",
+      "nqf_credits": 12,
+      "department_prefix": "CSC",
+      "year_level": 4
+    },
+    {
+      "code": "CSC4023Z",
+      "title": "Big Data Management & Analysis",
+      "nqf_level": 8,
+      "semester": "varies",
+      "nqf_credits": 12,
+      "department_prefix": "CSC",
+      "year_level": 4
+    },
+    {
+      "code": "CSC4024Z",
+      "title": "Human Computer Interaction",
+      "nqf_level": 8,
+      "semester": "varies",
+      "nqf_credits": 12,
+      "department_prefix": "CSC",
+      "year_level": 4
+    },
+    {
+      "code": "CSC4025Z",
+      "title": "Artificial Intelligence",
+      "nqf_level": 8,
+      "semester": "varies",
+      "nqf_credits": 12,
+      "department_prefix": "CSC",
+      "year_level": 4
+    },
+    {
+      "code": "CSC4026Z",
+      "title": "Network & Internetwork Security",
+      "nqf_level": 8,
+      "semester": "varies",
+      "nqf_credits": 12,
+      "department_prefix": "CSC",
+      "year_level": 4
+    },
+    {
+      "code": "CSC4027Z",
+      "title": "Computer Game Design",
+      "nqf_level": 8,
+      "semester": "varies",
+      "nqf_credits": 12,
+      "department_prefix": "CSC",
+      "year_level": 4
+    },
+    {
+      "code": "CSC4028Z",
+      "title": "High-Performance Computing",
+      "nqf_level": 8,
+      "semester": "varies",
+      "nqf_credits": 12,
+      "department_prefix": "CSC",
+      "year_level": 4
+    },
+    {
+      "code": "CSC4029Z",
+      "title": "Introduction to Computer Graphics",
+      "nqf_level": 8,
+      "semester": "varies",
+      "nqf_credits": 12,
+      "department_prefix": "CSC",
+      "year_level": 4
+    },
+    {
+      "code": "CSC4040Z",
+      "title": "Logics for Artificial Intelligence",
+      "nqf_level": 8,
+      "semester": "varies",
+      "nqf_credits": 12,
+      "department_prefix": "CSC",
+      "year_level": 4
+    },
+    {
+      "code": "CSC4041Z",
+      "title": "Non-Monotonic Reasoning",
+      "nqf_level": 8,
+      "semester": "varies",
+      "nqf_credits": 12,
+      "department_prefix": "CSC",
+      "year_level": 4
+    },
+    {
+      "code": "CSC4042Z",
+      "title": "Answer Set Programming",
+      "nqf_level": 8,
+      "semester": "varies",
+      "nqf_credits": 12,
+      "department_prefix": "CSC",
+      "year_level": 4
+    },
+    {
+      "code": "CSC4043Z",
+      "title": "Evolutionary Computation",
+      "nqf_level": 8,
+      "semester": "varies",
+      "nqf_credits": 12,
+      "department_prefix": "CSC",
+      "year_level": 4
+    },
+    {
+      "code": "CSC4044Z",
+      "title": "Artificial Life",
+      "nqf_level": 8,
+      "semester": "varies",
+      "nqf_credits": 12,
+      "department_prefix": "CSC",
+      "year_level": 4
+    },
+    {
+      "code": "CSC5000W",
+      "title": "Computer Science Dissertation",
+      "nqf_level": 9,
+      "semester": "FY",
+      "nqf_credits": 180,
+      "department_prefix": "CSC",
+      "year_level": 5
+    },
+    {
+      "code": "CSC5002W",
+      "title": "Computer Science Minor Dissertation",
+      "nqf_level": 9,
+      "semester": "FY",
+      "nqf_credits": 90,
+      "department_prefix": "CSC",
+      "year_level": 5
+    },
+    {
+      "code": "CSC5004W",
+      "title": "Information Technology Minor Dissertation",
+      "nqf_level": 9,
+      "semester": "FY",
+      "nqf_credits": 90,
+      "department_prefix": "CSC",
+      "year_level": 5
+    },
+    {
+      "code": "CSC5007Z",
+      "title": "Database Systems",
+      "nqf_level": 9,
+      "semester": "varies",
+      "nqf_credits": 12,
+      "department_prefix": "CSC",
+      "year_level": 5
+    },
+    {
+      "code": "CSC5008Z",
+      "title": "Data Visualisation",
+      "nqf_level": 9,
+      "semester": "varies",
+      "nqf_credits": 12,
+      "department_prefix": "CSC",
+      "year_level": 5
+    },
+    {
+      "code": "CSC5009W",
+      "title": "Data Science Minor Dissertation",
+      "nqf_level": 9,
+      "semester": "FY",
+      "nqf_credits": 90,
+      "department_prefix": "CSC",
+      "year_level": 5
+    },
+    {
+      "code": "CSC5010Z",
+      "title": "MIT: Computer Networks",
+      "nqf_level": 9,
+      "semester": "varies",
+      "nqf_credits": 12,
+      "department_prefix": "CSC",
+      "year_level": 5
+    },
+    {
+      "code": "CSC5011Z",
+      "title": "MIT: Object-Oriented Programming in Python",
+      "nqf_level": 9,
+      "semester": "varies",
+      "nqf_credits": 12,
+      "department_prefix": "CSC",
+      "year_level": 5
+    },
+    {
+      "code": "CSC5012Z",
+      "title": "MIT: Human Computer Interaction",
+      "nqf_level": 9,
+      "semester": "varies",
+      "nqf_credits": 12,
+      "department_prefix": "CSC",
+      "year_level": 5
+    },
+    {
+      "code": "CSC5017Z",
+      "title": "MIT: Research Methods",
+      "nqf_level": 9,
+      "semester": "varies",
+      "nqf_credits": 12,
+      "department_prefix": "CSC",
+      "year_level": 5
+    },
+    {
+      "code": "CSC5020Z",
+      "title": "Research Methods in Computer Science",
+      "nqf_level": 9,
+      "semester": "varies",
+      "nqf_credits": 18,
+      "department_prefix": "CSC",
+      "year_level": 5
+    },
+    {
+      "code": "CSC5021Z",
+      "title": "Computational Geometry for 3D Printing",
+      "nqf_level": 9,
+      "semester": "varies",
+      "nqf_credits": 12,
+      "department_prefix": "CSC",
+      "year_level": 5
+    },
+    {
+      "code": "CSC5022Z",
+      "title": "Distributed Scientific Computing",
+      "nqf_level": 9,
+      "semester": "varies",
+      "nqf_credits": 12,
+      "department_prefix": "CSC",
+      "year_level": 5
+    },
+    {
+      "code": "CSC5023Z",
+      "title": "Meta-Heuristics",
+      "nqf_level": 9,
+      "semester": "varies",
+      "nqf_credits": 12,
+      "department_prefix": "CSC",
+      "year_level": 5
+    },
+    {
+      "code": "CSC5024Z",
+      "title": "Information Retrieval",
+      "nqf_level": 9,
+      "semester": "varies",
+      "nqf_credits": 12,
+      "department_prefix": "CSC",
+      "year_level": 5
+    },
+    {
+      "code": "CSC5025Z",
+      "title": "Intelligent Systems",
+      "nqf_level": 9,
+      "semester": "varies",
+      "nqf_credits": 12,
+      "department_prefix": "CSC",
+      "year_level": 5
+    },
+    {
+      "code": "CSC5026Z",
+      "title": "Introduction to ICT for Development",
+      "nqf_level": 9,
+      "semester": "varies",
+      "nqf_credits": 12,
+      "department_prefix": "CSC",
+      "year_level": 5
+    },
+    {
+      "code": "CSC5027Z",
+      "title": "Logics for Artificial Intelligence",
+      "nqf_level": 9,
+      "semester": "varies",
+      "nqf_credits": 12,
+      "department_prefix": "CSC",
+      "year_level": 5
+    },
+    {
+      "code": "CSC5028Z",
+      "title": "Ontology Engineering",
+      "nqf_level": 9,
+      "semester": "varies",
+      "nqf_credits": 12,
+      "department_prefix": "CSC",
+      "year_level": 5
+    },
+    {
+      "code": "CSC5029Z",
+      "title": "Introduction to Image Processing and Computer Vision",
+      "nqf_level": 9,
+      "semester": "varies",
+      "nqf_credits": 12,
+      "department_prefix": "CSC",
+      "year_level": 5
+    },
+    {
+      "code": "CSC5030Z",
+      "title": "Advanced Topics in Computer Science Master's 1",
+      "nqf_level": 9,
+      "semester": "varies",
+      "nqf_credits": 12,
+      "department_prefix": "CSC",
+      "year_level": 5
+    },
+    {
+      "code": "CSC5031Z",
+      "title": "Advanced Topics in Computer Science Master's 2",
+      "nqf_level": 9,
+      "semester": "varies",
+      "nqf_credits": 12,
+      "department_prefix": "CSC",
+      "year_level": 5
+    },
+    {
+      "code": "CSC5032Z",
+      "title": "Networks & Internet Systems",
+      "nqf_level": 9,
+      "semester": "varies",
+      "nqf_credits": 12,
+      "department_prefix": "CSC",
+      "year_level": 5
+    },
+    {
+      "code": "CSC5033Z",
+      "title": "Human Computer Interaction",
+      "nqf_level": 9,
+      "semester": "varies",
+      "nqf_credits": 12,
+      "department_prefix": "CSC",
+      "year_level": 5
+    },
+    {
+      "code": "CSC5034Z",
+      "title": "Machine Learning",
+      "nqf_level": 9,
+      "semester": "varies",
+      "nqf_credits": 12,
+      "department_prefix": "CSC",
+      "year_level": 5
+    },
+    {
+      "code": "CSC5035Z",
+      "title": "Natural Language Processing",
+      "nqf_level": 9,
+      "semester": "varies",
+      "nqf_credits": 12,
+      "department_prefix": "CSC",
+      "year_level": 5
+    },
+    {
+      "code": "CSC5036Z",
+      "title": "Virtual Reality",
+      "nqf_level": 9,
+      "semester": "varies",
+      "nqf_credits": 12,
+      "department_prefix": "CSC",
+      "year_level": 5
+    },
+    {
+      "code": "CSC5037W",
+      "title": "Artificial Intelligence Minor Dissertation",
+      "nqf_level": 9,
+      "semester": "FY",
+      "nqf_credits": 90,
+      "department_prefix": "CSC",
+      "year_level": 5
+    },
+    {
+      "code": "CSC5038Z",
+      "title": "Artificial Life",
+      "nqf_level": 9,
+      "semester": "varies",
+      "nqf_credits": 12,
+      "department_prefix": "CSC",
+      "year_level": 5
+    },
+    {
+      "code": "CSC5039Z",
+      "title": "Non-Monotonic Reasoning",
+      "nqf_level": 9,
+      "semester": "varies",
+      "nqf_credits": 12,
+      "department_prefix": "CSC",
+      "year_level": 5
+    },
+    {
+      "code": "CSC5042Z",
+      "title": "Natural Language Generation",
+      "nqf_level": 9,
+      "semester": "varies",
+      "nqf_credits": 12,
+      "department_prefix": "CSC",
+      "year_level": 5
+    },
+    {
+      "code": "CSC6000W",
+      "title": "Computer Science Thesis",
+      "nqf_level": 10,
+      "semester": "FY",
+      "nqf_credits": 360,
+      "department_prefix": "CSC",
+      "year_level": 6
+    },
+    {
+      "code": "EEE2041F",
+      "title": "Introduction to Electrical Engineering & Power Utilisation",
+      "nqf_level": 6,
+      "semester": "S1",
+      "is_science_course": false,
+      "offered_by_faculty": "engineering",
+      "nqf_credits": 16,
+      "department_prefix": "EEE",
+      "year_level": 2
+    },
+    {
+      "code": "EEE2042S",
+      "title": "Introduction to Analogue and Digital Electronics",
+      "nqf_level": 6,
+      "semester": "S2",
+      "is_science_course": false,
+      "offered_by_faculty": "engineering",
+      "nqf_credits": 8,
+      "department_prefix": "EEE",
+      "year_level": 2
+    },
+    {
+      "code": "EEE2050F",
+      "title": "Embedded Systems I for Science Students",
+      "nqf_level": 6,
+      "semester": "S1",
+      "is_science_course": false,
+      "offered_by_faculty": "engineering",
+      "nqf_credits": 18,
+      "department_prefix": "EEE",
+      "year_level": 2
+    },
+    {
+      "code": "EEE3095S",
+      "title": "Embedded Systems II for Science Students",
+      "nqf_level": 7,
+      "semester": "S2",
+      "is_science_course": false,
+      "offered_by_faculty": "engineering",
+      "nqf_credits": 18,
+      "department_prefix": "EEE",
+      "year_level": 3
+    },
+    {
+      "code": "EGS1007S",
+      "title": "Human & Physical Systems",
+      "nqf_level": 5,
+      "semester": "S2",
+      "nqf_credits": 18,
+      "department_prefix": "EGS",
+      "year_level": 1
+    },
+    {
+      "code": "EGS2016F",
+      "title": "Geographies Across Space",
+      "nqf_level": 6,
+      "semester": "S1",
+      "nqf_credits": 24,
+      "department_prefix": "EGS",
+      "year_level": 2
+    },
+    {
+      "code": "EGS2017S",
+      "title": "Geographies Across Time",
+      "nqf_level": 6,
+      "semester": "S2",
+      "nqf_credits": 24,
+      "department_prefix": "EGS",
+      "year_level": 2
+    },
+    {
+      "code": "EGS3012S",
+      "title": "Atmospheric Science",
+      "nqf_level": 7,
+      "semester": "S2",
+      "nqf_credits": 36,
+      "department_prefix": "EGS",
+      "year_level": 3
+    },
+    {
+      "code": "EGS3021F",
+      "title": "Sustainability & Environment",
+      "nqf_level": 7,
+      "semester": "S1",
+      "nqf_credits": 36,
+      "department_prefix": "EGS",
+      "year_level": 3
+    },
+    {
+      "code": "EGS3022S",
+      "title": "Geographic Thought",
+      "nqf_level": 7,
+      "semester": "S2",
+      "nqf_credits": 36,
+      "department_prefix": "EGS",
+      "year_level": 3
+    },
+    {
+      "code": "EGS3023F",
+      "title": "Anthropocene Environments in Perspective",
+      "nqf_level": 7,
+      "semester": "S1",
+      "nqf_credits": 36,
+      "department_prefix": "EGS",
+      "year_level": 3
+    },
+    {
+      "code": "EGS4001W",
+      "title": "Atmospheric Science Honours",
+      "nqf_level": 8,
+      "semester": "FY",
+      "nqf_credits": 160,
+      "department_prefix": "EGS",
+      "year_level": 4
+    },
+    {
+      "code": "EGS4004W",
+      "title": "Environmental & Geographical Science Honours",
+      "nqf_level": 8,
+      "semester": "FY",
+      "nqf_credits": 160,
+      "department_prefix": "EGS",
+      "year_level": 4
+    },
+    {
+      "code": "EGS4023F",
+      "title": "Quantitative Research Methods for Environmental Earth Sciences",
+      "nqf_level": 8,
+      "semester": "S1",
+      "nqf_credits": 30,
+      "department_prefix": "EGS",
+      "year_level": 4
+    },
+    {
+      "code": "EGS4023S",
+      "title": "Quantitative Research Methods for Environmental Earth Sciences",
+      "nqf_level": 8,
+      "semester": "S2",
+      "nqf_credits": 30,
+      "department_prefix": "EGS",
+      "year_level": 4
+    },
+    {
+      "code": "EGS4030F",
+      "title": "Climate Modelling",
+      "nqf_level": 8,
+      "semester": "S1",
+      "nqf_credits": 30,
+      "department_prefix": "EGS",
+      "year_level": 4
+    },
+    {
+      "code": "EGS4030S",
+      "title": "Climate Modelling",
+      "nqf_level": 8,
+      "semester": "S2",
+      "nqf_credits": 30,
+      "department_prefix": "EGS",
+      "year_level": 4
+    },
+    {
+      "code": "EGS4031F",
+      "title": "Introduction to Climate Change & Sustainable Development",
+      "nqf_level": 8,
+      "semester": "S1",
+      "nqf_credits": 30,
+      "department_prefix": "EGS",
+      "year_level": 4
+    },
+    {
+      "code": "EGS4031S",
+      "title": "Introduction to Climate Change & Sustainable Development",
+      "nqf_level": 8,
+      "semester": "S2",
+      "nqf_credits": 30,
+      "department_prefix": "EGS",
+      "year_level": 4
+    },
+    {
+      "code": "EGS4032F",
+      "title": "Climate Change Adaptation & Mitigation",
+      "nqf_level": 8,
+      "semester": "S1",
+      "nqf_credits": 30,
+      "department_prefix": "EGS",
+      "year_level": 4
+    },
+    {
+      "code": "EGS4032S",
+      "title": "Climate Change Adaptation & Mitigation",
+      "nqf_level": 8,
+      "semester": "S2",
+      "nqf_credits": 30,
+      "department_prefix": "EGS",
+      "year_level": 4
+    },
+    {
+      "code": "EGS4034F",
+      "title": "Interrogating Southern African Landscapes",
+      "nqf_level": 8,
+      "semester": "S1",
+      "nqf_credits": 30,
+      "department_prefix": "EGS",
+      "year_level": 4
+    },
+    {
+      "code": "EGS4034S",
+      "title": "Interrogating Southern African Landscapes",
+      "nqf_level": 8,
+      "semester": "S2",
+      "nqf_credits": 30,
+      "department_prefix": "EGS",
+      "year_level": 4
+    },
+    {
+      "code": "EGS4038F",
+      "title": "Climate Change and Predictability",
+      "nqf_level": 8,
+      "semester": "S1",
+      "nqf_credits": 30,
+      "department_prefix": "EGS",
+      "year_level": 4
+    },
+    {
+      "code": "EGS4038S",
+      "title": "Climate Change and Predictability",
+      "nqf_level": 8,
+      "semester": "S2",
+      "nqf_credits": 30,
+      "department_prefix": "EGS",
+      "year_level": 4
+    },
+    {
+      "code": "EGS4039F",
+      "title": "Urban Food Security",
+      "nqf_level": 8,
+      "semester": "S1",
+      "nqf_credits": 30,
+      "department_prefix": "EGS",
+      "year_level": 4
+    },
+    {
+      "code": "EGS4039S",
+      "title": "Urban Food Security",
+      "nqf_level": 8,
+      "semester": "S2",
+      "nqf_credits": 30,
+      "department_prefix": "EGS",
+      "year_level": 4
+    },
+    {
+      "code": "EGS4040F",
+      "title": "Special Topic in Human/Environment Interactions",
+      "nqf_level": 8,
+      "semester": "S1",
+      "nqf_credits": 30,
+      "department_prefix": "EGS",
+      "year_level": 4
+    },
+    {
+      "code": "EGS4040S",
+      "title": "Special Topic in Human/Environment Interactions",
+      "nqf_level": 8,
+      "semester": "S2",
+      "nqf_credits": 30,
+      "department_prefix": "EGS",
+      "year_level": 4
+    },
+    {
+      "code": "EGS4041F",
+      "title": "Approaches and Issues in Physical and Environmental Sciences",
+      "nqf_level": 8,
+      "semester": "S1",
+      "nqf_credits": 30,
+      "department_prefix": "EGS",
+      "year_level": 4
+    },
+    {
+      "code": "EGS4041S",
+      "title": "Approaches and Issues in Physical and Environmental Sciences",
+      "nqf_level": 8,
+      "semester": "S2",
+      "nqf_credits": 30,
+      "department_prefix": "EGS",
+      "year_level": 4
+    },
+    {
+      "code": "EGS4043F",
+      "title": "Climate Change Adaptation and Transformation",
+      "nqf_level": 8,
+      "semester": "S1",
+      "nqf_credits": 30,
+      "department_prefix": "EGS",
+      "year_level": 4
+    },
+    {
+      "code": "EGS4043S",
+      "title": "Climate Change Adaptation and Transformation",
+      "nqf_level": 8,
+      "semester": "S2",
+      "nqf_credits": 30,
+      "department_prefix": "EGS",
+      "year_level": 4
+    },
+    {
+      "code": "EGS4045F",
+      "title": "Geomorphology",
+      "nqf_level": 8,
+      "semester": "S1",
+      "nqf_credits": 30,
+      "department_prefix": "EGS",
+      "year_level": 4
+    },
+    {
+      "code": "EGS4045S",
+      "title": "Geomorphology",
+      "nqf_level": 8,
+      "semester": "S2",
+      "nqf_credits": 30,
+      "department_prefix": "EGS",
+      "year_level": 4
+    },
+    {
+      "code": "EGS4047F",
+      "title": "Policy and Governance",
+      "nqf_level": 8,
+      "semester": "S1",
+      "nqf_credits": 30,
+      "department_prefix": "EGS",
+      "year_level": 4
+    },
+    {
+      "code": "EGS4047S",
+      "title": "Policy and Governance",
+      "nqf_level": 8,
+      "semester": "S2",
+      "nqf_credits": 30,
+      "department_prefix": "EGS",
+      "year_level": 4
+    },
+    {
+      "code": "EGS4057F",
+      "title": "Urban Political Ecology",
+      "nqf_level": 8,
+      "semester": "S1",
+      "nqf_credits": 30,
+      "department_prefix": "EGS",
+      "year_level": 4
+    },
+    {
+      "code": "EGS4057S",
+      "title": "Urban Political Ecology",
+      "nqf_level": 8,
+      "semester": "S2",
+      "nqf_credits": 30,
+      "department_prefix": "EGS",
+      "year_level": 4
+    },
+    {
+      "code": "EGS4058F",
+      "title": "Critical Perspectives on the Bio-Economy",
+      "nqf_level": 8,
+      "semester": "S1",
+      "nqf_credits": 30,
+      "department_prefix": "EGS",
+      "year_level": 4
+    },
+    {
+      "code": "EGS4058S",
+      "title": "Critical Perspectives on the Bio-Economy",
+      "nqf_level": 8,
+      "semester": "S2",
+      "nqf_credits": 30,
+      "department_prefix": "EGS",
+      "year_level": 4
+    },
+    {
+      "code": "EGS4059F",
+      "title": "Environmental Governance in the Global South",
+      "nqf_level": 8,
+      "semester": "S1",
+      "nqf_credits": 30,
+      "department_prefix": "EGS",
+      "year_level": 4
+    },
+    {
+      "code": "EGS4059S",
+      "title": "Environmental Governance in the Global South",
+      "nqf_level": 8,
+      "semester": "S2",
+      "nqf_credits": 30,
+      "department_prefix": "EGS",
+      "year_level": 4
+    },
+    {
+      "code": "EGS4067F",
+      "title": "Air Quality Monitoring, Management and Prediction",
+      "nqf_level": 8,
+      "semester": "S1",
+      "nqf_credits": 30,
+      "department_prefix": "EGS",
+      "year_level": 4
+    },
+    {
+      "code": "EGS4067S",
+      "title": "Air Quality Monitoring, Management and Prediction",
+      "nqf_level": 8,
+      "semester": "S2",
+      "nqf_credits": 30,
+      "department_prefix": "EGS",
+      "year_level": 4
+    },
+    {
+      "code": "EGS4068F",
+      "title": "Disaster Risk Science",
+      "nqf_level": 8,
+      "semester": "S1",
+      "nqf_credits": 30,
+      "department_prefix": "EGS",
+      "year_level": 4
+    },
+    {
+      "code": "EGS4068S",
+      "title": "Disaster Risk Science",
+      "nqf_level": 8,
+      "semester": "S2",
+      "nqf_credits": 30,
+      "department_prefix": "EGS",
+      "year_level": 4
+    },
+    {
+      "code": "EGS4069F",
+      "title": "Water Resources in a Changing Climate",
+      "nqf_level": 8,
+      "semester": "S1",
+      "nqf_credits": 30,
+      "department_prefix": "EGS",
+      "year_level": 4
+    },
+    {
+      "code": "EGS4069S",
+      "title": "Water Resources in a Changing Climate",
+      "nqf_level": 8,
+      "semester": "S2",
+      "nqf_credits": 30,
+      "department_prefix": "EGS",
+      "year_level": 4
+    },
+    {
+      "code": "EGS4070F",
+      "title": "Reading the Sea: Interdisciplinary Approaches to Coastal Studies",
+      "nqf_level": 8,
+      "semester": "S1",
+      "nqf_credits": 30,
+      "department_prefix": "EGS",
+      "year_level": 4
+    },
+    {
+      "code": "EGS4070S",
+      "title": "Reading the Sea: Interdisciplinary Approaches to Coastal Studies",
+      "nqf_level": 8,
+      "semester": "S2",
+      "nqf_credits": 30,
+      "department_prefix": "EGS",
+      "year_level": 4
+    },
+    {
+      "code": "EGS4071F",
+      "title": "Climate Change & Marine Ecosystems",
+      "nqf_level": 8,
+      "semester": "S1",
+      "nqf_credits": 30,
+      "department_prefix": "EGS",
+      "year_level": 4
+    },
+    {
+      "code": "EGS4071S",
+      "title": "Climate Change & Marine Ecosystems",
+      "nqf_level": 8,
+      "semester": "S2",
+      "nqf_credits": 30,
+      "department_prefix": "EGS",
+      "year_level": 4
+    },
+    {
+      "code": "EGS5000W",
+      "title": "Environmental & Geographical Science Dissertation",
+      "nqf_level": 9,
+      "semester": "FY",
+      "nqf_credits": 180,
+      "department_prefix": "EGS",
+      "year_level": 5
+    },
+    {
+      "code": "EGS5003W",
+      "title": "Environmental & Geographical Science Dissertation",
+      "nqf_level": 9,
+      "semester": "FY",
+      "nqf_credits": 180,
+      "department_prefix": "EGS",
+      "year_level": 5
+    },
+    {
+      "code": "EGS5008H",
+      "title": "Environment, Society & Sustainability Coursework",
+      "nqf_level": 9,
+      "semester": "FY",
+      "nqf_credits": 90,
+      "department_prefix": "EGS",
+      "year_level": 5
+    },
+    {
+      "code": "EGS5009W",
+      "title": "Environment, Society & Sustainability Minor Dissertation",
+      "nqf_level": 9,
+      "semester": "FY",
+      "nqf_credits": 90,
+      "department_prefix": "EGS",
+      "year_level": 5
+    },
+    {
+      "code": "EGS5012W",
+      "title": "Climate Change and Predictability Coursework",
+      "nqf_level": 9,
+      "semester": "FY",
+      "nqf_credits": 0,
+      "department_prefix": "EGS",
+      "year_level": 5
+    },
+    {
+      "code": "EGS5023F",
+      "title": "Quantitative Research Methods for Environmental Earth Sciences",
+      "nqf_level": 9,
+      "semester": "S1",
+      "nqf_credits": 23,
+      "department_prefix": "EGS",
+      "year_level": 5
+    },
+    {
+      "code": "EGS5023H",
+      "title": "Senior Research Project in Environmental & Geographical Studies (MA)",
+      "nqf_level": 9,
+      "semester": "FY",
+      "nqf_credits": 90,
+      "department_prefix": "EGS",
+      "year_level": 5
+    },
+    {
+      "code": "EGS5023S",
+      "title": "Quantitative Research Methods for Environmental Earth Sciences",
+      "nqf_level": 9,
+      "semester": "S2",
+      "nqf_credits": 23,
+      "department_prefix": "EGS",
+      "year_level": 5
+    },
+    {
+      "code": "EGS5029H",
+      "title": "Climate Change Minor Dissertation",
+      "nqf_level": 9,
+      "semester": "FY",
+      "nqf_credits": 90,
+      "department_prefix": "EGS",
+      "year_level": 5
+    },
+    {
+      "code": "EGS5030F",
+      "title": "Climate Modelling",
+      "nqf_level": 9,
+      "semester": "S1",
+      "nqf_credits": 23,
+      "department_prefix": "EGS",
+      "year_level": 5
+    },
+    {
+      "code": "EGS5030S",
+      "title": "Climate Modelling",
+      "nqf_level": 9,
+      "semester": "S2",
+      "nqf_credits": 23,
+      "department_prefix": "EGS",
+      "year_level": 5
+    },
+    {
+      "code": "EGS5031F",
+      "title": "Introduction to Climate Change & Sustainable Development",
+      "nqf_level": 9,
+      "semester": "S1",
+      "nqf_credits": 23,
+      "department_prefix": "EGS",
+      "year_level": 5
+    },
+    {
+      "code": "EGS5032F",
+      "title": "Climate Change Adaptation & Mitigation",
+      "nqf_level": 9,
+      "semester": "S1",
+      "nqf_credits": 23,
+      "department_prefix": "EGS",
+      "year_level": 5
+    },
+    {
+      "code": "EGS5032S",
+      "title": "Climate Change Adaptation & Mitigation",
+      "nqf_level": 9,
+      "semester": "S2",
+      "nqf_credits": 23,
+      "department_prefix": "EGS",
+      "year_level": 5
+    },
+    {
+      "code": "EGS5038F",
+      "title": "Climate Change & Predictability",
+      "nqf_level": 9,
+      "semester": "S1",
+      "nqf_credits": 23,
+      "department_prefix": "EGS",
+      "year_level": 5
+    },
+    {
+      "code": "EGS5038S",
+      "title": "Climate Change & Predictability",
+      "nqf_level": 9,
+      "semester": "S2",
+      "nqf_credits": 23,
+      "department_prefix": "EGS",
+      "year_level": 5
+    },
+    {
+      "code": "EGS5039F",
+      "title": "Urban Food Security",
+      "nqf_level": 9,
+      "semester": "S1",
+      "nqf_credits": 23,
+      "department_prefix": "EGS",
+      "year_level": 5
+    },
+    {
+      "code": "EGS5039S",
+      "title": "Urban Food Security",
+      "nqf_level": 9,
+      "semester": "S2",
+      "nqf_credits": 23,
+      "department_prefix": "EGS",
+      "year_level": 5
+    },
+    {
+      "code": "EGS5040F",
+      "title": "Special Topic in Human/Environment Interactions",
+      "nqf_level": 9,
+      "semester": "S1",
+      "nqf_credits": 23,
+      "department_prefix": "EGS",
+      "year_level": 5
+    },
+    {
+      "code": "EGS5040S",
+      "title": "Special Topic in Human/Environment Interactions",
+      "nqf_level": 9,
+      "semester": "S2",
+      "nqf_credits": 23,
+      "department_prefix": "EGS",
+      "year_level": 5
+    },
+    {
+      "code": "EGS5041F",
+      "title": "Approaches and Issues in Physical and Environmental Sciences",
+      "nqf_level": 9,
+      "semester": "S1",
+      "nqf_credits": 23,
+      "department_prefix": "EGS",
+      "year_level": 5
+    },
+    {
+      "code": "EGS5041S",
+      "title": "Approaches and Issues in Physical and Environmental Sciences",
+      "nqf_level": 9,
+      "semester": "S2",
+      "nqf_credits": 23,
+      "department_prefix": "EGS",
+      "year_level": 5
+    },
+    {
+      "code": "EGS5045F",
+      "title": "Geomorphology",
+      "nqf_level": 9,
+      "semester": "S1",
+      "nqf_credits": 23,
+      "department_prefix": "EGS",
+      "year_level": 5
+    },
+    {
+      "code": "EGS5045S",
+      "title": "Geomorphology",
+      "nqf_level": 9,
+      "semester": "S2",
+      "nqf_credits": 23,
+      "department_prefix": "EGS",
+      "year_level": 5
+    },
+    {
+      "code": "EGS5046F",
+      "title": "Water Resource Management",
+      "nqf_level": 9,
+      "semester": "S1",
+      "nqf_credits": 23,
+      "department_prefix": "EGS",
+      "year_level": 5
+    },
+    {
+      "code": "EGS5046S",
+      "title": "Water Resource Management",
+      "nqf_level": 9,
+      "semester": "S2",
+      "nqf_credits": 23,
+      "department_prefix": "EGS",
+      "year_level": 5
+    },
+    {
+      "code": "EGS5047F",
+      "title": "Policy and Governance",
+      "nqf_level": 9,
+      "semester": "S1",
+      "nqf_credits": 23,
+      "department_prefix": "EGS",
+      "year_level": 5
+    },
+    {
+      "code": "EGS5047S",
+      "title": "Policy and Governance",
+      "nqf_level": 9,
+      "semester": "S2",
+      "nqf_credits": 23,
+      "department_prefix": "EGS",
+      "year_level": 5
+    },
+    {
+      "code": "EGS5052W",
+      "title": "Applied Ocean Sciences Minor Dissertation",
+      "nqf_level": 9,
+      "semester": "FY",
+      "nqf_credits": 90,
+      "department_prefix": "EGS",
+      "year_level": 5
+    },
+    {
+      "code": "EGS5057F",
+      "title": "Urban Political Ecology",
+      "nqf_level": 9,
+      "semester": "S1",
+      "nqf_credits": 23,
+      "department_prefix": "EGS",
+      "year_level": 5
+    },
+    {
+      "code": "EGS5057S",
+      "title": "Urban Political Ecology",
+      "nqf_level": 9,
+      "semester": "S2",
+      "nqf_credits": 23,
+      "department_prefix": "EGS",
+      "year_level": 5
+    },
+    {
+      "code": "EGS5058F",
+      "title": "Critical Perspectives on the Bio-Economy",
+      "nqf_level": 9,
+      "semester": "S1",
+      "nqf_credits": 23,
+      "department_prefix": "EGS",
+      "year_level": 5
+    },
+    {
+      "code": "EGS5058S",
+      "title": "Critical Perspectives on the Bio-Economy",
+      "nqf_level": 9,
+      "semester": "S2",
+      "nqf_credits": 23,
+      "department_prefix": "EGS",
+      "year_level": 5
+    },
+    {
+      "code": "EGS5059F",
+      "title": "Environmental Governance in the Global South",
+      "nqf_level": 9,
+      "semester": "S1",
+      "nqf_credits": 23,
+      "department_prefix": "EGS",
+      "year_level": 5
+    },
+    {
+      "code": "EGS5059S",
+      "title": "Environmental Governance in the Global South",
+      "nqf_level": 9,
+      "semester": "S2",
+      "nqf_credits": 23,
+      "department_prefix": "EGS",
+      "year_level": 5
+    },
+    {
+      "code": "EGS5067F",
+      "title": "Air Quality Monitoring, Management and Prediction",
+      "nqf_level": 9,
+      "semester": "S1",
+      "nqf_credits": 23,
+      "department_prefix": "EGS",
+      "year_level": 5
+    },
+    {
+      "code": "EGS5067S",
+      "title": "Air Quality Monitoring, Management and Prediction",
+      "nqf_level": 9,
+      "semester": "S2",
+      "nqf_credits": 23,
+      "department_prefix": "EGS",
+      "year_level": 5
+    },
+    {
+      "code": "EGS5068F",
+      "title": "Disaster Risk Science",
+      "nqf_level": 9,
+      "semester": "S1",
+      "nqf_credits": 23,
+      "department_prefix": "EGS",
+      "year_level": 5
+    },
+    {
+      "code": "EGS5069F",
+      "title": "Water Resources in a Changing Climate",
+      "nqf_level": 9,
+      "semester": "S1",
+      "nqf_credits": 23,
+      "department_prefix": "EGS",
+      "year_level": 5
+    },
+    {
+      "code": "EGS5069S",
+      "title": "Water Resources in a Changing Climate",
+      "nqf_level": 9,
+      "semester": "S2",
+      "nqf_credits": 23,
+      "department_prefix": "EGS",
+      "year_level": 5
+    },
+    {
+      "code": "EGS5070F",
+      "title": "Reading the Sea: Interdisciplinary Approaches to Coastal Studies",
+      "nqf_level": 9,
+      "semester": "S1",
+      "nqf_credits": 23,
+      "department_prefix": "EGS",
+      "year_level": 5
+    },
+    {
+      "code": "EGS5070S",
+      "title": "Reading the Sea: Interdisciplinary Approaches to Coastal Studies",
+      "nqf_level": 9,
+      "semester": "S2",
+      "nqf_credits": 23,
+      "department_prefix": "EGS",
+      "year_level": 5
+    },
+    {
+      "code": "EGS5071F",
+      "title": "Climate Change & Marine Ecosystems",
+      "nqf_level": 9,
+      "semester": "S1",
+      "nqf_credits": 23,
+      "department_prefix": "EGS",
+      "year_level": 5
+    },
+    {
+      "code": "EGS5071S",
+      "title": "Climate Change & Marine Ecosystems",
+      "nqf_level": 9,
+      "semester": "S2",
+      "nqf_credits": 23,
+      "department_prefix": "EGS",
+      "year_level": 5
+    },
+    {
+      "code": "EGS6003W",
+      "title": "Environmental & Geographical Science Thesis",
+      "nqf_level": 10,
+      "semester": "FY",
+      "nqf_credits": 360,
+      "department_prefix": "EGS",
+      "year_level": 6
+    },
+    {
+      "code": "FTX1005F",
+      "title": "Managerial Finance",
+      "nqf_level": 5,
+      "semester": "S1",
+      "is_science_course": false,
+      "offered_by_faculty": "commerce",
+      "nqf_credits": 18,
+      "department_prefix": "FTX",
+      "year_level": 1
+    },
+    {
+      "code": "FTX1005S",
+      "title": "Managerial Finance",
+      "nqf_level": 5,
+      "semester": "S2",
+      "is_science_course": false,
+      "offered_by_faculty": "commerce",
+      "nqf_credits": 18,
+      "department_prefix": "FTX",
+      "year_level": 1
+    },
+    {
+      "code": "GEO1006S",
+      "title": "Introduction to Minerals, Rocks & Structure",
+      "nqf_level": 5,
+      "semester": "S2",
+      "nqf_credits": 18,
+      "department_prefix": "GEO",
+      "year_level": 1
+    },
+    {
+      "code": "GEO1009F",
+      "title": "Geosystems: An Introduction to Earth & Environmental Sciences",
+      "nqf_level": 5,
+      "semester": "S1",
+      "nqf_credits": 18,
+      "department_prefix": "GEO",
+      "year_level": 1
+    },
+    {
+      "code": "GEO2001F",
+      "title": "Mineralogy, Crystallography and Petrography",
+      "nqf_level": 6,
+      "semester": "S1",
+      "nqf_credits": 24,
+      "department_prefix": "GEO",
+      "year_level": 2
+    },
+    {
+      "code": "GEO2004S",
+      "title": "Physical Geology",
+      "nqf_level": 6,
+      "semester": "S2",
+      "nqf_credits": 24,
+      "department_prefix": "GEO",
+      "year_level": 2
+    },
+    {
+      "code": "GEO2005X",
+      "title": "Field Geology & Geological Mapping",
+      "nqf_level": 6,
+      "semester": "varies",
+      "nqf_credits": 24,
+      "department_prefix": "GEO",
+      "year_level": 2
+    },
+    {
+      "code": "GEO3001S",
+      "title": "Stratigraphy & Economic Geology",
+      "nqf_level": 7,
+      "semester": "S2",
+      "nqf_credits": 36,
+      "department_prefix": "GEO",
+      "year_level": 3
+    },
+    {
+      "code": "GEO3005F",
+      "title": "Petrology & Structural Geology",
+      "nqf_level": 7,
+      "semester": "S1",
+      "nqf_credits": 36,
+      "department_prefix": "GEO",
+      "year_level": 3
+    },
+    {
+      "code": "GEO4000W",
+      "title": "Geology Honours",
+      "nqf_level": 8,
+      "semester": "FY",
+      "nqf_credits": 160,
+      "department_prefix": "GEO",
+      "year_level": 4
+    },
+    {
+      "code": "GEO4001W",
+      "title": "Geochemistry Honours",
+      "nqf_level": 8,
+      "semester": "FY",
+      "nqf_credits": 160,
+      "department_prefix": "GEO",
+      "year_level": 4
+    },
+    {
+      "code": "GEO5000W",
+      "title": "Geology Dissertation",
+      "nqf_level": 9,
+      "semester": "FY",
+      "nqf_credits": 180,
+      "department_prefix": "GEO",
+      "year_level": 5
+    },
+    {
+      "code": "GEO5003W",
+      "title": "Geochemistry Dissertation",
+      "nqf_level": 9,
+      "semester": "FY",
+      "nqf_credits": 180,
+      "department_prefix": "GEO",
+      "year_level": 5
+    },
+    {
+      "code": "GEO5005H",
+      "title": "Climate Change Minor Dissertation",
+      "nqf_level": 9,
+      "semester": "FY",
+      "nqf_credits": 90,
+      "department_prefix": "GEO",
+      "year_level": 5
+    },
+    {
+      "code": "GEO6000W",
+      "title": "Geology Thesis",
+      "nqf_level": 10,
+      "semester": "FY",
+      "nqf_credits": 360,
+      "department_prefix": "GEO",
+      "year_level": 6
+    },
+    {
+      "code": "GEO6001W",
+      "title": "Geochemistry Thesis",
+      "nqf_level": 10,
+      "semester": "FY",
+      "nqf_credits": 360,
+      "department_prefix": "GEO",
+      "year_level": 6
+    },
+    {
+      "code": "HUB2019F",
+      "title": "Integrated Anatomical and Physiological Sciences Part A",
+      "nqf_level": 6,
+      "semester": "S1",
+      "is_science_course": false,
+      "offered_by_faculty": "health-sciences",
+      "nqf_credits": 24,
+      "department_prefix": "HUB",
+      "year_level": 2
+    },
+    {
+      "code": "HUB2021S",
+      "title": "Integrated Anatomical and Physiological Sciences Part B",
+      "nqf_level": 6,
+      "semester": "S2",
+      "is_science_course": false,
+      "offered_by_faculty": "health-sciences",
+      "nqf_credits": 24,
+      "department_prefix": "HUB",
+      "year_level": 2
+    },
+    {
+      "code": "HUB3006F",
+      "title": "Applied Human Biology",
+      "nqf_level": 7,
+      "semester": "S1",
+      "is_science_course": false,
+      "offered_by_faculty": "health-sciences",
+      "nqf_credits": 36,
+      "department_prefix": "HUB",
+      "year_level": 3
+    },
+    {
+      "code": "HUB3007S",
+      "title": "Human Neurosciences",
+      "nqf_level": 7,
+      "semester": "S2",
+      "is_science_course": false,
+      "offered_by_faculty": "health-sciences",
+      "nqf_credits": 36,
+      "department_prefix": "HUB",
+      "year_level": 3
+    },
+    {
+      "code": "IBS5004Z",
+      "title": "Bioinformatics for High-Throughput Biology",
+      "nqf_level": 9,
+      "semester": "varies",
+      "is_science_course": false,
+      "offered_by_faculty": "health-sciences",
+      "nqf_credits": 15,
+      "department_prefix": "IBS",
+      "year_level": 5
+    },
+    {
+      "code": "IBS5005W",
+      "title": "Data Science Minor Dissertation",
+      "nqf_level": 9,
+      "semester": "FY",
+      "is_science_course": false,
+      "offered_by_faculty": "health-sciences",
+      "nqf_credits": 90,
+      "department_prefix": "IBS",
+      "year_level": 5
+    },
+    {
+      "code": "INF2006F",
+      "title": "Business Intelligence and Analytics",
+      "nqf_level": 6,
+      "semester": "S1",
+      "is_science_course": false,
+      "offered_by_faculty": "commerce",
+      "nqf_credits": 6,
+      "department_prefix": "INF",
+      "year_level": 2
+    },
+    {
+      "code": "INF2009F",
+      "title": "Systems Analysis",
+      "nqf_level": 6,
+      "semester": "S1",
+      "is_science_course": false,
+      "offered_by_faculty": "commerce",
+      "nqf_credits": 18,
+      "department_prefix": "INF",
+      "year_level": 2
+    },
+    {
+      "code": "INF2011S",
+      "title": "Systems Design & Development",
+      "nqf_level": 7,
+      "semester": "S2",
+      "is_science_course": false,
+      "offered_by_faculty": "commerce",
+      "nqf_credits": 18,
+      "department_prefix": "INF",
+      "year_level": 2
+    },
+    {
+      "code": "INF3011F",
+      "title": "I.T. Project Management",
+      "nqf_level": 7,
+      "semester": "S1",
+      "is_science_course": false,
+      "offered_by_faculty": "commerce",
+      "nqf_credits": 18,
+      "department_prefix": "INF",
+      "year_level": 3
+    },
+    {
+      "code": "INF3012S",
+      "title": "BPM & Enterprise Systems",
+      "nqf_level": 7,
+      "semester": "S2",
+      "is_science_course": false,
+      "offered_by_faculty": "commerce",
+      "nqf_credits": 18,
+      "department_prefix": "INF",
+      "year_level": 3
+    },
+    {
+      "code": "INF3014F",
+      "title": "Electronic Commerce",
+      "nqf_level": 7,
+      "semester": "S1",
+      "is_science_course": false,
+      "offered_by_faculty": "commerce",
+      "nqf_credits": 18,
+      "department_prefix": "INF",
+      "year_level": 3
+    },
+    {
+      "code": "INF5007Z",
+      "title": "Social Issues and Professional Practice",
+      "nqf_level": 9,
+      "semester": "varies",
+      "is_science_course": false,
+      "offered_by_faculty": "commerce",
+      "nqf_credits": 12,
+      "department_prefix": "INF",
+      "year_level": 5
+    },
+    {
+      "code": "INF5008Z",
+      "title": "Systems Security",
+      "nqf_level": 9,
+      "semester": "varies",
+      "is_science_course": false,
+      "offered_by_faculty": "commerce",
+      "nqf_credits": 12,
+      "department_prefix": "INF",
+      "year_level": 5
+    },
+    {
+      "code": "INF5009Z",
+      "title": "Software Engineering",
+      "nqf_level": 9,
+      "semester": "varies",
+      "is_science_course": false,
+      "offered_by_faculty": "commerce",
+      "nqf_credits": 12,
+      "department_prefix": "INF",
+      "year_level": 5
+    },
+    {
+      "code": "INF5010W",
+      "title": "Masters in IT: Information Technology Minor Dissertation",
+      "nqf_level": 9,
+      "semester": "FY",
+      "is_science_course": false,
+      "offered_by_faculty": "commerce",
+      "nqf_credits": 90,
+      "department_prefix": "INF",
+      "year_level": 5
+    },
+    {
+      "code": "MAM1004F",
+      "title": "Mathematics 1004",
+      "nqf_level": 5,
+      "semester": "S1",
+      "nqf_credits": 18,
+      "department_prefix": "MAM",
+      "year_level": 1
+    },
+    {
+      "code": "MAM1004S",
+      "title": "Mathematics 1004",
+      "nqf_level": 5,
+      "semester": "S2",
+      "nqf_credits": 18,
+      "department_prefix": "MAM",
+      "year_level": 1
+    },
+    {
+      "code": "MAM1005H",
+      "title": "Mathematics 1005",
+      "nqf_level": 5,
+      "semester": "FY",
+      "nqf_credits": 18,
+      "department_prefix": "MAM",
+      "year_level": 1
+    },
+    {
+      "code": "MAM1006H",
+      "title": "Mathematics 1006",
+      "nqf_level": 5,
+      "semester": "FY",
+      "nqf_credits": 18,
+      "department_prefix": "MAM",
+      "year_level": 1
+    },
+    {
+      "code": "MAM1008S",
+      "title": "Introduction to Discrete Mathematics",
+      "nqf_level": 5,
+      "semester": "S2",
+      "nqf_credits": 18,
+      "department_prefix": "MAM",
+      "year_level": 1
+    },
+    {
+      "code": "MAM1019H",
+      "title": "Fundamentals of Mathematics",
+      "nqf_level": 5,
+      "semester": "FY",
+      "nqf_credits": 18,
+      "department_prefix": "MAM",
+      "year_level": 1
+    },
+    {
+      "code": "MAM1031F",
+      "title": "Mathematics 1031",
+      "nqf_level": 5,
+      "semester": "S1",
+      "nqf_credits": 18,
+      "department_prefix": "MAM",
+      "year_level": 1
+    },
+    {
+      "code": "MAM1032S",
+      "title": "Mathematics 1032",
+      "nqf_level": 5,
+      "semester": "S2",
+      "nqf_credits": 18,
+      "department_prefix": "MAM",
+      "year_level": 1
+    },
+    {
+      "code": "MAM1033F",
+      "title": "Mathematics 1033",
+      "nqf_level": 5,
+      "semester": "S1",
+      "nqf_credits": 18,
+      "department_prefix": "MAM",
+      "year_level": 1
+    },
+    {
+      "code": "MAM1034S",
+      "title": "Mathematics 1034",
+      "nqf_level": 5,
+      "semester": "S2",
+      "nqf_credits": 18,
+      "department_prefix": "MAM",
+      "year_level": 1
+    },
+    {
+      "code": "MAM1043H",
+      "title": "Modelling & Applied Computing",
+      "nqf_level": 5,
+      "semester": "FY",
+      "nqf_credits": 18,
+      "department_prefix": "MAM",
+      "year_level": 1
+    },
+    {
+      "code": "MAM1044H",
+      "title": "Dynamics",
+      "nqf_level": 5,
+      "semester": "FY",
+      "nqf_credits": 18,
+      "department_prefix": "MAM",
+      "year_level": 1
+    },
+    {
+      "code": "MAM2010F",
+      "title": "Advanced Calculus (2AC)",
+      "nqf_level": 6,
+      "semester": "S1",
+      "nqf_credits": 12,
+      "department_prefix": "MAM",
+      "year_level": 2
+    },
+    {
+      "code": "MAM2011F",
+      "title": "Linear Algebra (2LA)",
+      "nqf_level": 6,
+      "semester": "S1",
+      "nqf_credits": 12,
+      "department_prefix": "MAM",
+      "year_level": 2
+    },
+    {
+      "code": "MAM2012S",
+      "title": "Differential Equations (2DE)",
+      "nqf_level": 6,
+      "semester": "S2",
+      "nqf_credits": 12,
+      "department_prefix": "MAM",
+      "year_level": 2
+    },
+    {
+      "code": "MAM2013S",
+      "title": "Introductory Algebra (2IA)",
+      "nqf_level": 6,
+      "semester": "S2",
+      "nqf_credits": 12,
+      "department_prefix": "MAM",
+      "year_level": 2
+    },
+    {
+      "code": "MAM2014S",
+      "title": "Real Analysis (2RA)",
+      "nqf_level": 6,
+      "semester": "S2",
+      "nqf_credits": 12,
+      "department_prefix": "MAM",
+      "year_level": 2
+    },
+    {
+      "code": "MAM2040F",
+      "title": "Ordinary Differential Equations (2OD)",
+      "nqf_level": 6,
+      "semester": "S1",
+      "nqf_credits": 12,
+      "department_prefix": "MAM",
+      "year_level": 2
+    },
+    {
+      "code": "MAM2041F",
+      "title": "Numerical Analysis (2NA)",
+      "nqf_level": 6,
+      "semester": "S1",
+      "nqf_credits": 12,
+      "department_prefix": "MAM",
+      "year_level": 2
+    },
+    {
+      "code": "MAM2042S",
+      "title": "Non-linear Dynamics (2ND)",
+      "nqf_level": 6,
+      "semester": "S2",
+      "nqf_credits": 12,
+      "department_prefix": "MAM",
+      "year_level": 2
+    },
+    {
+      "code": "MAM2043S",
+      "title": "Boundary-Value Problems (2BP)",
+      "nqf_level": 6,
+      "semester": "S2",
+      "nqf_credits": 12,
+      "department_prefix": "MAM",
+      "year_level": 2
+    },
+    {
+      "code": "MAM3006Z",
+      "title": "Project in Mathematics",
+      "nqf_level": 7,
+      "semester": "varies",
+      "nqf_credits": 0,
+      "department_prefix": "MAM",
+      "year_level": 3
+    },
+    {
+      "code": "MAM3010F",
+      "title": "Metric Spaces (3MS)",
+      "nqf_level": 7,
+      "semester": "S1",
+      "nqf_credits": 18,
+      "department_prefix": "MAM",
+      "year_level": 3
+    },
+    {
+      "code": "MAM3010S",
+      "title": "Metric Spaces (3MS)",
+      "nqf_level": 7,
+      "semester": "S2",
+      "nqf_credits": 18,
+      "department_prefix": "MAM",
+      "year_level": 3
+    },
+    {
+      "code": "MAM3011F",
+      "title": "Modern Abstract Algebra (3AL)",
+      "nqf_level": 7,
+      "semester": "S1",
+      "nqf_credits": 18,
+      "department_prefix": "MAM",
+      "year_level": 3
+    },
+    {
+      "code": "MAM3011S",
+      "title": "Modern Abstract Algebra (3AL)",
+      "nqf_level": 7,
+      "semester": "S2",
+      "nqf_credits": 18,
+      "department_prefix": "MAM",
+      "year_level": 3
+    },
+    {
+      "code": "MAM3012F",
+      "title": "Discrete Mathematics (3DM)",
+      "nqf_level": 7,
+      "semester": "S1",
+      "nqf_credits": 18,
+      "department_prefix": "MAM",
+      "year_level": 3
+    },
+    {
+      "code": "MAM3012S",
+      "title": "Discrete Mathematics (3DM)",
+      "nqf_level": 7,
+      "semester": "S2",
+      "nqf_credits": 18,
+      "department_prefix": "MAM",
+      "year_level": 3
+    },
+    {
+      "code": "MAM3013S",
+      "title": "Topics in Algebra (3TA)",
+      "nqf_level": 7,
+      "semester": "S2",
+      "nqf_credits": 18,
+      "department_prefix": "MAM",
+      "year_level": 3
+    },
+    {
+      "code": "MAM3014F",
+      "title": "Topics in Analysis (3TN)",
+      "nqf_level": 7,
+      "semester": "S1",
+      "nqf_credits": 18,
+      "department_prefix": "MAM",
+      "year_level": 3
+    },
+    {
+      "code": "MAM3014S",
+      "title": "Topics in Analysis (3TN)",
+      "nqf_level": 7,
+      "semester": "S2",
+      "nqf_credits": 18,
+      "department_prefix": "MAM",
+      "year_level": 3
+    },
+    {
+      "code": "MAM3015F",
+      "title": "Complex Analysis (3CA)",
+      "nqf_level": 7,
+      "semester": "S1",
+      "nqf_credits": 18,
+      "department_prefix": "MAM",
+      "year_level": 3
+    },
+    {
+      "code": "MAM3015S",
+      "title": "Complex Analysis (3CA)",
+      "nqf_level": 7,
+      "semester": "S2",
+      "nqf_credits": 18,
+      "department_prefix": "MAM",
+      "year_level": 3
+    },
+    {
+      "code": "MAM3042F",
+      "title": "Advanced Numerical Methods (3AN)",
+      "nqf_level": 7,
+      "semester": "S1",
+      "nqf_credits": 18,
+      "department_prefix": "MAM",
+      "year_level": 3
+    },
+    {
+      "code": "MAM3042S",
+      "title": "Advanced Numerical Methods (3AN)",
+      "nqf_level": 7,
+      "semester": "S2",
+      "nqf_credits": 18,
+      "department_prefix": "MAM",
+      "year_level": 3
+    },
+    {
+      "code": "MAM3043F",
+      "title": "Methods of Mathematical Physics (3MP)",
+      "nqf_level": 7,
+      "semester": "S1",
+      "nqf_credits": 18,
+      "department_prefix": "MAM",
+      "year_level": 3
+    },
+    {
+      "code": "MAM3043S",
+      "title": "Methods of Mathematical Physics (3MP)",
+      "nqf_level": 7,
+      "semester": "S2",
+      "nqf_credits": 18,
+      "department_prefix": "MAM",
+      "year_level": 3
+    },
+    {
+      "code": "MAM3044F",
+      "title": "Functions of a Complex Variable (3CV)",
+      "nqf_level": 7,
+      "semester": "S1",
+      "nqf_credits": 18,
+      "department_prefix": "MAM",
+      "year_level": 3
+    },
+    {
+      "code": "MAM3044S",
+      "title": "Functions of a Complex Variable (3CV)",
+      "nqf_level": 7,
+      "semester": "S2",
+      "nqf_credits": 18,
+      "department_prefix": "MAM",
+      "year_level": 3
+    },
+    {
+      "code": "MAM3045F",
+      "title": "Introduction to General Relativity (3GR)",
+      "nqf_level": 7,
+      "semester": "S1",
+      "nqf_credits": 18,
+      "department_prefix": "MAM",
+      "year_level": 3
+    },
+    {
+      "code": "MAM3045S",
+      "title": "Introduction to General Relativity (3GR)",
+      "nqf_level": 7,
+      "semester": "S2",
+      "nqf_credits": 18,
+      "department_prefix": "MAM",
+      "year_level": 3
+    },
+    {
+      "code": "MAM3046F",
+      "title": "Fluid Dynamics (3FD)",
+      "nqf_level": 7,
+      "semester": "S1",
+      "nqf_credits": 18,
+      "department_prefix": "MAM",
+      "year_level": 3
+    },
+    {
+      "code": "MAM3046S",
+      "title": "Fluid Dynamics (3FD)",
+      "nqf_level": 7,
+      "semester": "S2",
+      "nqf_credits": 18,
+      "department_prefix": "MAM",
+      "year_level": 3
+    },
+    {
+      "code": "MAM3055Z",
+      "title": "Project/Internship in Applied Mathematics",
+      "nqf_level": 7,
+      "semester": "varies",
+      "nqf_credits": 0,
+      "department_prefix": "MAM",
+      "year_level": 3
+    },
+    {
+      "code": "MAM4000W",
+      "title": "Mathematics Honours",
+      "nqf_level": 8,
+      "semester": "FY",
+      "nqf_credits": 160,
+      "department_prefix": "MAM",
+      "year_level": 4
+    },
+    {
+      "code": "MAM4001W",
+      "title": "Applied Mathematics Honours",
+      "nqf_level": 8,
+      "semester": "FY",
+      "nqf_credits": 160,
+      "department_prefix": "MAM",
+      "year_level": 4
+    },
+    {
+      "code": "MAM4100W",
+      "title": "Mathematics Honours (Extended1)",
+      "nqf_level": 8,
+      "semester": "FY",
+      "nqf_credits": 80,
+      "department_prefix": "MAM",
+      "year_level": 4
+    },
+    {
+      "code": "MAM4101W",
+      "title": "Applied Mathematics Honours (Extended1)",
+      "nqf_level": 8,
+      "semester": "FY",
+      "nqf_credits": 80,
+      "department_prefix": "MAM",
+      "year_level": 4
+    },
+    {
+      "code": "MAM4110W",
+      "title": "Mathematics Honours (Extended2)",
+      "nqf_level": 8,
+      "semester": "FY",
+      "nqf_credits": 40,
+      "department_prefix": "MAM",
+      "year_level": 4
+    },
+    {
+      "code": "MAM4111W",
+      "title": "Applied Mathematics Honours (Extended2)",
+      "nqf_level": 8,
+      "semester": "FY",
+      "nqf_credits": 40,
+      "department_prefix": "MAM",
+      "year_level": 4
+    },
+    {
+      "code": "MAM5000W",
+      "title": "Mathematics Dissertation",
+      "nqf_level": 9,
+      "semester": "FY",
+      "nqf_credits": 180,
+      "department_prefix": "MAM",
+      "year_level": 5
+    },
+    {
+      "code": "MAM5001W",
+      "title": "Applied Mathematics Dissertation",
+      "nqf_level": 9,
+      "semester": "FY",
+      "nqf_credits": 180,
+      "department_prefix": "MAM",
+      "year_level": 5
+    },
+    {
+      "code": "MAM5005W",
+      "title": "Astrophysics & Space Science Minor Dissertation (NASSP)",
+      "nqf_level": 9,
+      "semester": "FY",
+      "nqf_credits": 90,
+      "department_prefix": "MAM",
+      "year_level": 5
+    },
+    {
+      "code": "MAM5019W",
+      "title": "Tertiary Mathematics Education Dissertation",
+      "nqf_level": 9,
+      "semester": "FY",
+      "nqf_credits": 180,
+      "department_prefix": "MAM",
+      "year_level": 5
+    },
+    {
+      "code": "MAM5020F",
+      "title": "Generative AI for Research: Applications & Implications",
+      "nqf_level": 9,
+      "semester": "S1",
+      "nqf_credits": 0,
+      "department_prefix": "MAM",
+      "year_level": 5
+    },
+    {
+      "code": "MAM6000W",
+      "title": "Mathematics Thesis",
+      "nqf_level": 10,
+      "semester": "FY",
+      "nqf_credits": 360,
+      "department_prefix": "MAM",
+      "year_level": 6
+    },
+    {
+      "code": "MAM6001W",
+      "title": "Applied Mathematics Thesis",
+      "nqf_level": 10,
+      "semester": "FY",
+      "nqf_credits": 360,
+      "department_prefix": "MAM",
+      "year_level": 6
+    },
+    {
+      "code": "MAM6002W",
+      "title": "Tertiary Mathematics Education Thesis",
+      "nqf_level": 10,
+      "semester": "FY",
+      "nqf_credits": 360,
+      "department_prefix": "MAM",
+      "year_level": 6
+    },
+    {
+      "code": "MCB2020F",
+      "title": "Biological Information Transfer",
+      "nqf_level": 6,
+      "semester": "S1",
+      "nqf_credits": 24,
+      "department_prefix": "MCB",
+      "year_level": 2
+    },
+    {
+      "code": "MCB2021F",
+      "title": "Molecular Bioscience",
+      "nqf_level": 6,
+      "semester": "S1",
+      "nqf_credits": 24,
+      "department_prefix": "MCB",
+      "year_level": 2
+    },
+    {
+      "code": "MCB2022S",
+      "title": "Metabolism & Bioengineering",
+      "nqf_level": 6,
+      "semester": "S2",
+      "nqf_credits": 24,
+      "department_prefix": "MCB",
+      "year_level": 2
+    },
+    {
+      "code": "MCB2023S",
+      "title": "Functional Genetics",
+      "nqf_level": 6,
+      "semester": "S2",
+      "nqf_credits": 24,
+      "department_prefix": "MCB",
+      "year_level": 2
+    },
+    {
+      "code": "MCB3012Z",
+      "title": "Research Project in Molecular & Cell Biology",
+      "nqf_level": 7,
+      "semester": "varies",
+      "nqf_credits": 0,
+      "department_prefix": "MCB",
+      "year_level": 3
+    },
+    {
+      "code": "MCB3023S",
+      "title": "Molecular Evolutionary Genetics & Development",
+      "nqf_level": 7,
+      "semester": "S2",
+      "nqf_credits": 36,
+      "department_prefix": "MCB",
+      "year_level": 3
+    },
+    {
+      "code": "MCB3024S",
+      "title": "Defence & Disease",
+      "nqf_level": 7,
+      "semester": "S2",
+      "nqf_credits": 36,
+      "department_prefix": "MCB",
+      "year_level": 3
+    },
+    {
+      "code": "MCB3025F",
+      "title": "Structural & Chemical Biology",
+      "nqf_level": 7,
+      "semester": "S1",
+      "nqf_credits": 36,
+      "department_prefix": "MCB",
+      "year_level": 3
+    },
+    {
+      "code": "MCB3026F",
+      "title": "Molecular Genetics and Genomics",
+      "nqf_level": 7,
+      "semester": "S1",
+      "nqf_credits": 36,
+      "department_prefix": "MCB",
+      "year_level": 3
+    },
+    {
+      "code": "MCB4002W",
+      "title": "Molecular & Cell Biology Honours",
+      "nqf_level": 8,
+      "semester": "FY",
+      "nqf_credits": 160,
+      "department_prefix": "MCB",
+      "year_level": 4
+    },
+    {
+      "code": "MCB5005W",
+      "title": "Molecular & Cell Biology Dissertation",
+      "nqf_level": 9,
+      "semester": "FY",
+      "nqf_credits": 180,
+      "department_prefix": "MCB",
+      "year_level": 5
+    },
+    {
+      "code": "MCB6002W",
+      "title": "Molecular & Cell Biology Thesis",
+      "nqf_level": 10,
+      "semester": "FY",
+      "nqf_credits": 360,
+      "department_prefix": "MCB",
+      "year_level": 6
+    },
+    {
+      "code": "PHY1004W",
+      "title": "Matter & Interactions",
+      "nqf_level": 5,
+      "semester": "FY",
+      "nqf_credits": 36,
+      "department_prefix": "PHY",
+      "year_level": 1
+    },
+    {
+      "code": "PHY1023H",
+      "title": "Principles of Physics",
+      "nqf_level": 5,
+      "semester": "FY",
+      "nqf_credits": 18,
+      "department_prefix": "PHY",
+      "year_level": 1
+    },
+    {
+      "code": "PHY1031F",
+      "title": "General Physics A",
+      "nqf_level": 5,
+      "semester": "S1",
+      "nqf_credits": 18,
+      "department_prefix": "PHY",
+      "year_level": 1
+    },
+    {
+      "code": "PHY1032S",
+      "title": "General Physics B",
+      "nqf_level": 5,
+      "semester": "S2",
+      "nqf_credits": 18,
+      "department_prefix": "PHY",
+      "year_level": 1
+    },
+    {
+      "code": "PHY2004W",
+      "title": "Intermediate Physics",
+      "nqf_level": 6,
+      "semester": "FY",
+      "nqf_credits": 48,
+      "department_prefix": "PHY",
+      "year_level": 2
+    },
+    {
+      "code": "PHY3004W",
+      "title": "Advanced Physics",
+      "nqf_level": 7,
+      "semester": "FY",
+      "nqf_credits": 72,
+      "department_prefix": "PHY",
+      "year_level": 3
+    },
+    {
+      "code": "PHY4000W",
+      "title": "Physics Honours",
+      "nqf_level": 8,
+      "semester": "FY",
+      "nqf_credits": 160,
+      "department_prefix": "PHY",
+      "year_level": 4
+    },
+    {
+      "code": "PHY5000W",
+      "title": "Physics Dissertation",
+      "nqf_level": 9,
+      "semester": "FY",
+      "nqf_credits": 180,
+      "department_prefix": "PHY",
+      "year_level": 5
+    },
+    {
+      "code": "PHY5001W",
+      "title": "Theoretical Physics Dissertation",
+      "nqf_level": 9,
+      "semester": "FY",
+      "nqf_credits": 180,
+      "department_prefix": "PHY",
+      "year_level": 5
+    },
+    {
+      "code": "PHY5003W",
+      "title": "Astrophysics & Space Science Minor Dissertation",
+      "nqf_level": 9,
+      "semester": "FY",
+      "nqf_credits": 90,
+      "department_prefix": "PHY",
+      "year_level": 5
+    },
+    {
+      "code": "PHY5006W",
+      "title": "Tertiary Physics Education Dissertation",
+      "nqf_level": 9,
+      "semester": "FY",
+      "nqf_credits": 180,
+      "department_prefix": "PHY",
+      "year_level": 5
+    },
+    {
+      "code": "PHY5007Z",
+      "title": "Data Science for Particle Physics",
+      "nqf_level": 9,
+      "semester": "varies",
+      "nqf_credits": 12,
+      "department_prefix": "PHY",
+      "year_level": 5
+    },
+    {
+      "code": "PHY5008W",
+      "title": "Data Science Minor Dissertation",
+      "nqf_level": 9,
+      "semester": "FY",
+      "nqf_credits": 90,
+      "department_prefix": "PHY",
+      "year_level": 5
+    },
+    {
+      "code": "PHY6000W",
+      "title": "Physics Thesis",
+      "nqf_level": 10,
+      "semester": "FY",
+      "nqf_credits": 360,
+      "department_prefix": "PHY",
+      "year_level": 6
+    },
+    {
+      "code": "PHY6001W",
+      "title": "Tertiary Physics Education Thesis",
+      "nqf_level": 10,
+      "semester": "FY",
+      "nqf_credits": 360,
+      "department_prefix": "PHY",
+      "year_level": 6
+    },
+    {
+      "code": "PTY2001S",
+      "title": "Infectious Disease and Vaccines (Faculty of Science)",
+      "nqf_level": 6,
+      "semester": "S2",
+      "is_science_course": false,
+      "offered_by_faculty": "health-sciences",
+      "nqf_credits": 24,
+      "department_prefix": "PTY",
+      "year_level": 2
+    },
+    {
+      "code": "PTY3010F",
+      "title": "Pathogenesis and Treatment of Infectious Diseases (Faculty of Science)",
+      "nqf_level": 7,
+      "semester": "S1",
+      "is_science_course": false,
+      "offered_by_faculty": "health-sciences",
+      "nqf_credits": 36,
+      "department_prefix": "PTY",
+      "year_level": 3
+    },
+    {
+      "code": "SEA2004F",
+      "title": "Principles of Oceanography",
+      "nqf_level": 6,
+      "semester": "S1",
+      "nqf_credits": 24,
+      "department_prefix": "SEA",
+      "year_level": 2
+    },
+    {
+      "code": "SEA2005S",
+      "title": "Marine Systems",
+      "nqf_level": 6,
+      "semester": "S2",
+      "nqf_credits": 24,
+      "department_prefix": "SEA",
+      "year_level": 2
+    },
+    {
+      "code": "SEA3004F",
+      "title": "Ocean & Atmosphere Dynamics",
+      "nqf_level": 7,
+      "semester": "S1",
+      "nqf_credits": 36,
+      "department_prefix": "SEA",
+      "year_level": 3
+    },
+    {
+      "code": "SEA4001W",
+      "title": "Ocean & Atmosphere Science Honours",
+      "nqf_level": 8,
+      "semester": "FY",
+      "nqf_credits": 160,
+      "department_prefix": "SEA",
+      "year_level": 4
+    },
+    {
+      "code": "SEA5000W",
+      "title": "Ocean & Atmosphere Science Dissertation",
+      "nqf_level": 9,
+      "semester": "FY",
+      "nqf_credits": 180,
+      "department_prefix": "SEA",
+      "year_level": 5
+    },
+    {
+      "code": "SEA5001W",
+      "title": "Physical Oceanography Dissertation",
+      "nqf_level": 9,
+      "semester": "FY",
+      "nqf_credits": 180,
+      "department_prefix": "SEA",
+      "year_level": 5
+    },
+    {
+      "code": "SEA5011Z",
+      "title": "Operational Oceanography",
+      "nqf_level": 9,
+      "semester": "varies",
+      "nqf_credits": 50,
+      "department_prefix": "SEA",
+      "year_level": 5
+    },
+    {
+      "code": "SEA5012W",
+      "title": "Applied Ocean Sciences Minor Dissertation",
+      "nqf_level": 9,
+      "semester": "FY",
+      "nqf_credits": 90,
+      "department_prefix": "SEA",
+      "year_level": 5
+    },
+    {
+      "code": "SEA6000W",
+      "title": "Ocean & Atmosphere Science Thesis",
+      "nqf_level": 10,
+      "semester": "FY",
+      "nqf_credits": 360,
+      "department_prefix": "SEA",
+      "year_level": 6
+    },
+    {
+      "code": "STA1000F",
+      "title": "Introductory Statistics",
+      "nqf_level": 5,
+      "semester": "S1",
+      "nqf_credits": 18,
+      "department_prefix": "STA",
+      "year_level": 1
+    },
+    {
+      "code": "STA1000L",
+      "title": "Introductory Statistics",
+      "nqf_level": 5,
+      "semester": "winter",
+      "nqf_credits": 18,
+      "department_prefix": "STA",
+      "year_level": 1
+    },
+    {
+      "code": "STA1000P",
+      "title": "Introductory Statistics",
+      "nqf_level": 5,
+      "semester": "summer",
+      "nqf_credits": 18,
+      "department_prefix": "STA",
+      "year_level": 1
+    },
+    {
+      "code": "STA1000S",
+      "title": "Introductory Statistics",
+      "nqf_level": 5,
+      "semester": "S2",
+      "nqf_credits": 18,
+      "department_prefix": "STA",
+      "year_level": 1
+    },
+    {
+      "code": "STA1006S",
+      "title": "Mathematical Statistics I",
+      "nqf_level": 5,
+      "semester": "S2",
+      "nqf_credits": 18,
+      "department_prefix": "STA",
+      "year_level": 1
+    },
+    {
+      "code": "STA1007S",
+      "title": "Introductory Statistics for Scientists",
+      "nqf_level": 5,
+      "semester": "S2",
+      "nqf_credits": 18,
+      "department_prefix": "STA",
+      "year_level": 1
+    },
+    {
+      "code": "STA2004F",
+      "title": "Statistical Theory & Inference",
+      "nqf_level": 6,
+      "semester": "S1",
+      "nqf_credits": 24,
+      "department_prefix": "STA",
+      "year_level": 2
+    },
+    {
+      "code": "STA2005S",
+      "title": "Linear Models",
+      "nqf_level": 6,
+      "semester": "S2",
+      "nqf_credits": 24,
+      "department_prefix": "STA",
+      "year_level": 2
+    },
+    {
+      "code": "STA2007F",
+      "title": "Study Design & Data Analysis for Scientists",
+      "nqf_level": 6,
+      "semester": "S1",
+      "nqf_credits": 24,
+      "department_prefix": "STA",
+      "year_level": 2
+    },
+    {
+      "code": "STA2007H",
+      "title": "Study Design & Data Analysis for Scientists",
+      "nqf_level": 6,
+      "semester": "FY",
+      "nqf_credits": 24,
+      "department_prefix": "STA",
+      "year_level": 2
+    },
+    {
+      "code": "STA2007P",
+      "title": "Study Design & Data Analysis for Scientists",
+      "nqf_level": 6,
+      "semester": "summer",
+      "nqf_credits": 24,
+      "department_prefix": "STA",
+      "year_level": 2
+    },
+    {
+      "code": "STA2007S",
+      "title": "Study Design & Data Analysis for Scientists",
+      "nqf_level": 6,
+      "semester": "S2",
+      "nqf_credits": 24,
+      "department_prefix": "STA",
+      "year_level": 2
+    },
+    {
+      "code": "STA2020F",
+      "title": "Applied Statistics",
+      "nqf_level": 6,
+      "semester": "S1",
+      "nqf_credits": 24,
+      "department_prefix": "STA",
+      "year_level": 2
+    },
+    {
+      "code": "STA2020S",
+      "title": "Applied Statistics",
+      "nqf_level": 6,
+      "semester": "S2",
+      "nqf_credits": 24,
+      "department_prefix": "STA",
+      "year_level": 2
+    },
+    {
+      "code": "STA2030S",
+      "title": "Statistical Theory",
+      "nqf_level": 6,
+      "semester": "S2",
+      "nqf_credits": 24,
+      "department_prefix": "STA",
+      "year_level": 2
+    },
+    {
+      "code": "STA3022F",
+      "title": "Applied Multivariate Data Analysis",
+      "nqf_level": 7,
+      "semester": "S1",
+      "nqf_credits": 36,
+      "department_prefix": "STA",
+      "year_level": 3
+    },
+    {
+      "code": "STA3030F",
+      "title": "Statistical Inference & Modelling",
+      "nqf_level": 7,
+      "semester": "S1",
+      "nqf_credits": 36,
+      "department_prefix": "STA",
+      "year_level": 3
+    },
+    {
+      "code": "STA3036S",
+      "title": "Operational Research Techniques",
+      "nqf_level": 7,
+      "semester": "S2",
+      "nqf_credits": 36,
+      "department_prefix": "STA",
+      "year_level": 3
+    },
+    {
+      "code": "STA3041F",
+      "title": "Stochastic Processes & Time Series",
+      "nqf_level": 7,
+      "semester": "S1",
+      "nqf_credits": 36,
+      "department_prefix": "STA",
+      "year_level": 3
+    },
+    {
+      "code": "STA3045F",
+      "title": "Advanced Stochastic Processes & Distribution Theory",
+      "nqf_level": 7,
+      "semester": "S1",
+      "nqf_credits": 36,
+      "department_prefix": "STA",
+      "year_level": 3
+    },
+    {
+      "code": "STA3047S",
+      "title": "Introduction to Machine Learning",
+      "nqf_level": 7,
+      "semester": "S2",
+      "nqf_credits": 6,
+      "department_prefix": "STA",
+      "year_level": 3
+    },
+    {
+      "code": "STA3048S",
+      "title": "Statistical Modelling & Bayesian Analysis",
+      "nqf_level": 7,
+      "semester": "S2",
+      "nqf_credits": 30,
+      "department_prefix": "STA",
+      "year_level": 3
+    },
+    {
+      "code": "STA4007W",
+      "title": "Statistics and Data Science Honours",
+      "nqf_level": 8,
+      "semester": "FY",
+      "nqf_credits": 160,
+      "department_prefix": "STA",
+      "year_level": 4
+    },
+    {
+      "code": "STA4027Z",
+      "title": "Bayesian Computational Methods",
+      "nqf_level": 8,
+      "semester": "varies",
+      "nqf_credits": 12,
+      "department_prefix": "STA",
+      "year_level": 4
+    },
+    {
+      "code": "STA4028Z",
+      "title": "Portfolio Theory",
+      "nqf_level": 8,
+      "semester": "varies",
+      "nqf_credits": 12,
+      "department_prefix": "STA",
+      "year_level": 4
+    },
+    {
+      "code": "STA4029Z",
+      "title": "Advanced Probability Theory",
+      "nqf_level": 8,
+      "semester": "varies",
+      "nqf_credits": 12,
+      "department_prefix": "STA",
+      "year_level": 4
+    },
+    {
+      "code": "STA5000W",
+      "title": "Statistics Dissertation",
+      "nqf_level": 9,
+      "semester": "FY",
+      "nqf_credits": 180,
+      "department_prefix": "STA",
+      "year_level": 5
+    },
+    {
+      "code": "STA5001W",
+      "title": "Operational Research Dissertation",
+      "nqf_level": 9,
+      "semester": "FY",
+      "nqf_credits": 180,
+      "department_prefix": "STA",
+      "year_level": 5
+    },
+    {
+      "code": "STA5004W",
+      "title": "Statistics and Data Science Minor Dissertation",
+      "nqf_level": 9,
+      "semester": "FY",
+      "nqf_credits": 90,
+      "department_prefix": "STA",
+      "year_level": 5
+    },
+    {
+      "code": "STA5010W",
+      "title": "Operational Research in Development Coursework",
+      "nqf_level": 9,
+      "semester": "FY",
+      "nqf_credits": 90,
+      "department_prefix": "STA",
+      "year_level": 5
+    },
+    {
+      "code": "STA5013W",
+      "title": "Statistical Ecology Dissertation",
+      "nqf_level": 9,
+      "semester": "FY",
+      "nqf_credits": 180,
+      "department_prefix": "STA",
+      "year_level": 5
+    },
+    {
+      "code": "STA5014X",
+      "title": "Study Design & Data Analysis for Scientists Doing Postgraduate Studies",
+      "nqf_level": 9,
+      "semester": "varies",
+      "nqf_credits": 0,
+      "department_prefix": "STA",
+      "year_level": 5
+    },
+    {
+      "code": "STA5014Z",
+      "title": "Study Design & Data Analysis for Scientists Doing Postgraduate Studies",
+      "nqf_level": 9,
+      "semester": "varies",
+      "nqf_credits": 0,
+      "department_prefix": "STA",
+      "year_level": 5
+    },
+    {
+      "code": "STA5058W",
+      "title": "Biostatistics Minor Dissertation",
+      "nqf_level": 9,
+      "semester": "FY",
+      "nqf_credits": 90,
+      "department_prefix": "STA",
+      "year_level": 5
+    },
+    {
+      "code": "STA5059Z",
+      "title": "Topics in Biostatistics A",
+      "nqf_level": 9,
+      "semester": "varies",
+      "nqf_credits": 15,
+      "department_prefix": "STA",
+      "year_level": 5
+    },
+    {
+      "code": "STA5060Z",
+      "title": "Topics in Biostatistics B",
+      "nqf_level": 9,
+      "semester": "varies",
+      "nqf_credits": 15,
+      "department_prefix": "STA",
+      "year_level": 5
+    },
+    {
+      "code": "STA5061Z",
+      "title": "Bayesian Decision Modelling",
+      "nqf_level": 9,
+      "semester": "varies",
+      "nqf_credits": 15,
+      "department_prefix": "STA",
+      "year_level": 5
+    },
+    {
+      "code": "STA5062Z",
+      "title": "Causal Modelling",
+      "nqf_level": 9,
+      "semester": "varies",
+      "nqf_credits": 15,
+      "department_prefix": "STA",
+      "year_level": 5
+    },
+    {
+      "code": "STA5063Z",
+      "title": "Design of Clinical Trials",
+      "nqf_level": 9,
+      "semester": "varies",
+      "nqf_credits": 15,
+      "department_prefix": "STA",
+      "year_level": 5
+    },
+    {
+      "code": "STA5064Z",
+      "title": "Ecological Statistics",
+      "nqf_level": 9,
+      "semester": "varies",
+      "nqf_credits": 15,
+      "department_prefix": "STA",
+      "year_level": 5
+    },
+    {
+      "code": "STA5065Z",
+      "title": "Financial Econometrics",
+      "nqf_level": 9,
+      "semester": "varies",
+      "nqf_credits": 15,
+      "department_prefix": "STA",
+      "year_level": 5
+    },
+    {
+      "code": "STA5066Z",
+      "title": "Mathematical Modelling for Infectious Diseases",
+      "nqf_level": 9,
+      "semester": "varies",
+      "nqf_credits": 15,
+      "department_prefix": "STA",
+      "year_level": 5
+    },
+    {
+      "code": "STA5067Z",
+      "title": "Longitudinal Data Analysis",
+      "nqf_level": 9,
+      "semester": "varies",
+      "nqf_credits": 15,
+      "department_prefix": "STA",
+      "year_level": 5
+    },
+    {
+      "code": "STA5068Z",
+      "title": "Machine Learning",
+      "nqf_level": 9,
+      "semester": "varies",
+      "nqf_credits": 15,
+      "department_prefix": "STA",
+      "year_level": 5
+    },
+    {
+      "code": "STA5069Z",
+      "title": "Multivariate Statistics",
+      "nqf_level": 9,
+      "semester": "varies",
+      "nqf_credits": 15,
+      "department_prefix": "STA",
+      "year_level": 5
+    },
+    {
+      "code": "STA5070Z",
+      "title": "Problem Structuring and System Dynamics",
+      "nqf_level": 9,
+      "semester": "varies",
+      "nqf_credits": 15,
+      "department_prefix": "STA",
+      "year_level": 5
+    },
+    {
+      "code": "STA5071Z",
+      "title": "Simulation and Optimisation",
+      "nqf_level": 9,
+      "semester": "varies",
+      "nqf_credits": 15,
+      "department_prefix": "STA",
+      "year_level": 5
+    },
+    {
+      "code": "STA5072Z",
+      "title": "Survival Analysis",
+      "nqf_level": 9,
+      "semester": "varies",
+      "nqf_credits": 15,
+      "department_prefix": "STA",
+      "year_level": 5
+    },
+    {
+      "code": "STA5073Z",
+      "title": "Data Science for Industry",
+      "nqf_level": 9,
+      "semester": "varies",
+      "nqf_credits": 15,
+      "department_prefix": "STA",
+      "year_level": 5
+    },
+    {
+      "code": "STA5074Z",
+      "title": "Decision Modelling for Prescriptive Analytics",
+      "nqf_level": 9,
+      "semester": "varies",
+      "nqf_credits": 12,
+      "department_prefix": "STA",
+      "year_level": 5
+    },
+    {
+      "code": "STA5075Z",
+      "title": "Statistical and High Performance Computing",
+      "nqf_level": 9,
+      "semester": "varies",
+      "nqf_credits": 12,
+      "department_prefix": "STA",
+      "year_level": 5
+    },
+    {
+      "code": "STA5076Z",
+      "title": "Supervised Learning",
+      "nqf_level": 9,
+      "semester": "varies",
+      "nqf_credits": 18,
+      "department_prefix": "STA",
+      "year_level": 5
+    },
+    {
+      "code": "STA5077Z",
+      "title": "Unsupervised Learning",
+      "nqf_level": 9,
+      "semester": "varies",
+      "nqf_credits": 12,
+      "department_prefix": "STA",
+      "year_level": 5
+    },
+    {
+      "code": "STA5078Z",
+      "title": "Stochastic Processes",
+      "nqf_level": 9,
+      "semester": "varies",
+      "nqf_credits": 15,
+      "department_prefix": "STA",
+      "year_level": 5
+    },
+    {
+      "code": "STA5079W",
+      "title": "Data Science Minor Dissertation",
+      "nqf_level": 9,
+      "semester": "FY",
+      "nqf_credits": 90,
+      "department_prefix": "STA",
+      "year_level": 5
+    },
+    {
+      "code": "STA5086Z",
+      "title": "Advanced Portfolio Theory",
+      "nqf_level": 9,
+      "semester": "varies",
+      "nqf_credits": 15,
+      "department_prefix": "STA",
+      "year_level": 5
+    },
+    {
+      "code": "STA5089F",
+      "title": "Basics of Mathematical Statistics",
+      "nqf_level": 9,
+      "semester": "S1",
+      "nqf_credits": 0,
+      "department_prefix": "STA",
+      "year_level": 5
+    },
+    {
+      "code": "STA5090Z",
+      "title": "Advanced Topics in Regression",
+      "nqf_level": 9,
+      "semester": "varies",
+      "nqf_credits": 15,
+      "department_prefix": "STA",
+      "year_level": 5
+    },
+    {
+      "code": "STA5091Z",
+      "title": "Data-Analysis for High-Frequency Trading",
+      "nqf_level": 9,
+      "semester": "varies",
+      "nqf_credits": 15,
+      "department_prefix": "STA",
+      "year_level": 5
+    },
+    {
+      "code": "STA5092Z",
+      "title": "Exploratory Data Analysis",
+      "nqf_level": 9,
+      "semester": "varies",
+      "nqf_credits": 12,
+      "department_prefix": "STA",
+      "year_level": 5
+    },
+    {
+      "code": "STA5093W",
+      "title": "Data Science Minor Dissertation",
+      "nqf_level": 9,
+      "semester": "FY",
+      "nqf_credits": 60,
+      "department_prefix": "STA",
+      "year_level": 5
+    },
+    {
+      "code": "STA6001W",
+      "title": "Statistical Sciences Thesis",
+      "nqf_level": 10,
+      "semester": "FY",
+      "nqf_credits": 360,
+      "department_prefix": "STA",
+      "year_level": 6
+    },
+    {
+      "code": "STA6002W",
+      "title": "Statistical Ecology Thesis",
+      "nqf_level": 10,
+      "semester": "FY",
+      "nqf_credits": 360,
+      "department_prefix": "STA",
+      "year_level": 6
+    }
+  ],
+  "total_courses": 424
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "FAM1000S",
+  "title": "Introduction to Film Studies",
+  "department": "film-and-media-studies",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr I-M Rijsdijk and Dr A Smit",
+  "prerequisites": {
+    "text": "None",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course offers a critical introduction to contemporary film and television. It aims to provide students with the basic vocabulary for understanding the film -making process as well as narrative forms in both film and television. The course also consider s key areas of film and television studies such as spectatorship, genre and realism, with examples drawn from both South Africa and abroad. Students are assessed through academic analysis and a creative assignment (a short film shot on a mobile phone, or a short script).",
+  "lecture_times": "6th period, Wednesday and Thursday; screening: 6th and 7th periods, Friday.",
+  "dp_requirements": "All written work must be submitted by the stipulated dates. Students who miss more than two tutorials will lose their DPs.",
+  "assessment": "Continuous assessment (essays, projects, tests, etc.) counts 100%.",
+  "is_humanities_course": true
+}

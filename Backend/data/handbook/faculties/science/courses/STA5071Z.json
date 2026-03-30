@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "STA5071Z",
+  "title": "Simulation and Optimisation",
+  "department": "statistical-sciences",
+  "credits": 15,
+  "nqf_level": 9,
+  "year_level": "Postgraduate (Master's)",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "Associate Professor S Silal",
+  "prerequisites": {
+    "text": "Acceptance into Master's programs in Statistics & Data Science, Data Science or Biostatistics, and/or statistical background as deemed sufficient by the Head of Department.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "This module is split into three sections: Simulation (Random Number Generation, Monte Carlo Methods, Statistical Analysis of Simulated Data, Variance Reduction, Bootstrap Methods, Markov Chain Monte Carlo); Fundamentals of Linear and Nonlinear Optimization (Unconstrained and Constrained Optimization, Kuhn-Tucker Duality, Convexity, Quadratic Programming, Dynamic Programming, Stochastic Programming); and Stochastic Methods in Optimization ('No Free Lunch' Theorems, Metaheuristics, Random Search, Simulated Annealing, Evolutionary and Genetic Algorithms, Partition Algorithms).",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "40% for assignment component.",
+  "assessment": "For each of the three sections: Assignments 50%, Exam 50%. A subminimum of 40% in each of the assignment and exam component is required.",
+  "is_science_course": true
+}

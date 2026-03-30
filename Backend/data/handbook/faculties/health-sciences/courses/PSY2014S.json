@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PSY2014S",
+  "title": "Cognitive Neuroscience and Abnormal Psychology",
+  "department": "psychology",
+  "credits": 20,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr S Mkabile",
+  "prerequisites": {
+    "text": "PSY1004F and PSY1005S",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "PSY1004F",
+        "PSY1005S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to introduce students to a variety of topics relevant to normal cognitive functioning as well as psychopathology. While one half of the course takes a neuroscientific approach, the other half of the course draws on psychological, sociocultural, cognitive and biological perspectives.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Completion of all coursework, attendance at all tutorials, and obtaining 3 points through the Student Research Participation Programme (SRPP).",
+  "assessment": "Coursework: 70% (assignment submissions = 40% and class test = 30%) Exam: 30%.",
+  "is_health_sciences_course": false,
+  "offered_by_faculty": "humanities"
+}

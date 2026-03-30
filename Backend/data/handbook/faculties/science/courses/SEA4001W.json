@@ -1,0 +1,31 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "SEA4001W",
+  "title": "Ocean & Atmosphere Science Honours",
+  "department": "oceanography",
+  "credits": 160,
+  "nqf_level": 8,
+  "year_level": "Postgraduate (Honours)",
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Professor I Ansorge",
+  "prerequisites": {
+    "text": "A BSc degree with a major/specialisation in Ocean & Atmosphere Science or in a related discipline. CEM1000W or equivalent is a prerequisite. Acceptance at the discretion of the Head of Department considering quality of final year results, material covered in the undergraduate curriculum, and possibly referee reports. Preference may be given to UCT graduates who meet the course entry requirements. Note: SEA4001W does not carry NQF credit value; students are concurrently registered for SEA4003W (coursework component, 112 NQF credits) and SEA4004W (research project, 48 NQF credits).",
+    "parsed": {
+      "type": "complex",
+      "codes_mentioned": [
+        "CEM1000W",
+        "SEA4001W",
+        "SEA4003W",
+        "SEA4004W"
+      ],
+      "note": "Complex prerequisite logic - see text"
+    }
+  },
+  "corequisites": [],
+  "outline": "Honours students intending careers in ocean and atmosphere science will complete a full set of modules and a research project. Honours students from Environmental & Geographical Science, Applied Mathematics, and other physical science and engineering departments are encouraged to attend selected modules. The curriculum includes lecture-tutorials, seminars and practical work in advanced oceanography, meteorology and climate, an introduction to modelling and data analysis. Practical work includes compulsory fieldwork at sea and may include dive training (class 4 diving qualification, at the student's own cost if they choose to do the dive course). Student performance in each module may be assessed by project work, seminar presentations, written assignments and examinations.",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "Not specified.",
+  "assessment": "Module assessment by submission of a research portfolio, which includes compulsory fieldtrip reports, skills examination and formal test results. A weighted average of the continuous assessment of reports and tests counts 65% of the final mark; the research project counts 35% of the final mark. The research project must be passed at 50%. Each component must be passed separately for the award of the degree.",
+  "is_science_course": true
+}

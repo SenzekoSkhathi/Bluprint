@@ -1,0 +1,561 @@
+{
+  "$schema": "handbook-course-index-v1",
+  "faculty": "law",
+  "year": 2026,
+  "total_courses": 61,
+  "courses": [
+    {
+      "code": "CML3001W",
+      "title": "Corporation Law",
+      "nqf_credits": 36,
+      "nqf_level": 7,
+      "semester": "FY",
+      "year_level": 3,
+      "department_prefix": "CML"
+    },
+    {
+      "code": "CML4004S",
+      "title": "Labour Law",
+      "nqf_credits": 18,
+      "nqf_level": 8,
+      "semester": "S2",
+      "year_level": 4,
+      "department_prefix": "CML"
+    },
+    {
+      "code": "CML4006W",
+      "title": "Commercial Transactions Law",
+      "nqf_credits": 36,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 4,
+      "department_prefix": "CML"
+    },
+    {
+      "code": "CML4401H",
+      "title": "Independent Research Option (Commercial Law)",
+      "nqf_credits": 9,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 4,
+      "department_prefix": "CML"
+    },
+    {
+      "code": "CML4501S",
+      "title": "Dispute Resolution",
+      "nqf_credits": 9,
+      "nqf_level": 8,
+      "semester": "S2",
+      "year_level": 4,
+      "department_prefix": "CML"
+    },
+    {
+      "code": "CML4504S",
+      "title": "Trade Marks and Unlawful Competition",
+      "nqf_credits": 9,
+      "nqf_level": 8,
+      "semester": "S2",
+      "year_level": 4,
+      "department_prefix": "CML"
+    },
+    {
+      "code": "CML4506F",
+      "title": "Fundamental Principles of Tax Law",
+      "nqf_credits": 9,
+      "nqf_level": 8,
+      "semester": "S1",
+      "year_level": 4,
+      "department_prefix": "CML"
+    },
+    {
+      "code": "CML4507S",
+      "title": "Statutory Tax Law of Entities and Transactions",
+      "nqf_credits": 9,
+      "nqf_level": 8,
+      "semester": "S2",
+      "year_level": 4,
+      "department_prefix": "CML"
+    },
+    {
+      "code": "CML4510F",
+      "title": "Cyberlaw",
+      "nqf_credits": 9,
+      "nqf_level": 8,
+      "semester": "S1",
+      "year_level": 4,
+      "department_prefix": "CML"
+    },
+    {
+      "code": "CML4602S",
+      "title": "Competition Law",
+      "nqf_credits": 9,
+      "nqf_level": 8,
+      "semester": "S2",
+      "year_level": 4,
+      "department_prefix": "CML"
+    },
+    {
+      "code": "CML4603S",
+      "title": "Banking Law",
+      "nqf_credits": 9,
+      "nqf_level": 8,
+      "semester": "S2",
+      "year_level": 4,
+      "department_prefix": "CML"
+    },
+    {
+      "code": "CML4606H",
+      "title": "Moot Caput",
+      "nqf_credits": 9,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 4,
+      "department_prefix": "CML"
+    },
+    {
+      "code": "CML4629S",
+      "title": "Law and Regional Integration in Africa",
+      "nqf_credits": 9,
+      "nqf_level": 8,
+      "semester": "S2",
+      "year_level": 4,
+      "department_prefix": "CML"
+    },
+    {
+      "code": "DOL3000X",
+      "title": "Moot Competition",
+      "nqf_credits": 9,
+      "nqf_level": 7,
+      "semester": "varies",
+      "year_level": 3,
+      "department_prefix": "DOL"
+    },
+    {
+      "code": "DOL3001X",
+      "title": "Community Service",
+      "nqf_credits": 0,
+      "nqf_level": 7,
+      "semester": "varies",
+      "year_level": 3,
+      "department_prefix": "DOL"
+    },
+    {
+      "code": "DOL3002X",
+      "title": "Intermediate Year Skills Component",
+      "nqf_credits": 0,
+      "nqf_level": 7,
+      "semester": "varies",
+      "year_level": 3,
+      "department_prefix": "DOL"
+    },
+    {
+      "code": "DOL4000H",
+      "title": "Integrative Assessment Moot",
+      "nqf_credits": 0,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 4,
+      "department_prefix": "DOL"
+    },
+    {
+      "code": "DOL4500F",
+      "title": "Legal Practice",
+      "nqf_credits": 9,
+      "nqf_level": 8,
+      "semester": "S1",
+      "year_level": 4,
+      "department_prefix": "DOL"
+    },
+    {
+      "code": "DOL4500S",
+      "title": "Legal Practice",
+      "nqf_credits": 9,
+      "nqf_level": 8,
+      "semester": "S2",
+      "year_level": 4,
+      "department_prefix": "DOL"
+    },
+    {
+      "code": "MAM1013F",
+      "title": "Law That Counts: Quantitative Literacy for Law",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "MAM",
+      "is_law_course": false,
+      "offered_by_faculty": "science"
+    },
+    {
+      "code": "PBL2000W",
+      "title": "Constitutional Law",
+      "nqf_credits": 36,
+      "nqf_level": 7,
+      "semester": "FY",
+      "year_level": 2,
+      "department_prefix": "PBL"
+    },
+    {
+      "code": "PBL3001F",
+      "title": "International Law",
+      "nqf_credits": 18,
+      "nqf_level": 7,
+      "semester": "S1",
+      "year_level": 3,
+      "department_prefix": "PBL"
+    },
+    {
+      "code": "PBL3801W",
+      "title": "Criminal Law",
+      "nqf_credits": 36,
+      "nqf_level": 7,
+      "semester": "FY",
+      "year_level": 3,
+      "department_prefix": "PBL"
+    },
+    {
+      "code": "PBL4001W",
+      "title": "Administrative Law",
+      "nqf_credits": 36,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 4,
+      "department_prefix": "PBL"
+    },
+    {
+      "code": "PBL4111S",
+      "title": "Public Interest Litigation",
+      "nqf_credits": 9,
+      "nqf_level": 8,
+      "semester": "S2",
+      "year_level": 4,
+      "department_prefix": "PBL"
+    },
+    {
+      "code": "PBL4401H",
+      "title": "Independent Research Option (Public Law)",
+      "nqf_credits": 9,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 4,
+      "department_prefix": "PBL"
+    },
+    {
+      "code": "PBL4402H",
+      "title": "Independent Research Option (Criminal Justice)",
+      "nqf_credits": 9,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 4,
+      "department_prefix": "PBL"
+    },
+    {
+      "code": "PBL4501F",
+      "title": "Criminology: Selected Issues",
+      "nqf_credits": 9,
+      "nqf_level": 8,
+      "semester": "S1",
+      "year_level": 4,
+      "department_prefix": "PBL"
+    },
+    {
+      "code": "PBL4502F",
+      "title": "Environmental Law",
+      "nqf_credits": 9,
+      "nqf_level": 8,
+      "semester": "S1",
+      "year_level": 4,
+      "department_prefix": "PBL"
+    },
+    {
+      "code": "PBL4504F",
+      "title": "International Criminal Law and Africa",
+      "nqf_credits": 9,
+      "nqf_level": 8,
+      "semester": "S1",
+      "year_level": 4,
+      "department_prefix": "PBL"
+    },
+    {
+      "code": "PBL4505S",
+      "title": "International Human Rights Law and the Constitution",
+      "nqf_credits": 9,
+      "nqf_level": 8,
+      "semester": "S2",
+      "year_level": 4,
+      "department_prefix": "PBL"
+    },
+    {
+      "code": "PBL4506F",
+      "title": "Refugee and Immigration Law",
+      "nqf_credits": 9,
+      "nqf_level": 8,
+      "semester": "S1",
+      "year_level": 4,
+      "department_prefix": "PBL"
+    },
+    {
+      "code": "PBL4601S",
+      "title": "Constitutional Litigation",
+      "nqf_credits": 9,
+      "nqf_level": 8,
+      "semester": "S2",
+      "year_level": 4,
+      "department_prefix": "PBL"
+    },
+    {
+      "code": "PBL4602F",
+      "title": "Criminal Justice and the Constitution",
+      "nqf_credits": 9,
+      "nqf_level": 8,
+      "semester": "S1",
+      "year_level": 4,
+      "department_prefix": "PBL"
+    },
+    {
+      "code": "PBL4604F",
+      "title": "Social Justice and the Constitution",
+      "nqf_credits": 9,
+      "nqf_level": 8,
+      "semester": "S1",
+      "year_level": 4,
+      "department_prefix": "PBL"
+    },
+    {
+      "code": "PBL4605F",
+      "title": "Women and Law",
+      "nqf_credits": 9,
+      "nqf_level": 8,
+      "semester": "S1",
+      "year_level": 4,
+      "department_prefix": "PBL"
+    },
+    {
+      "code": "PBL4606H",
+      "title": "Moot Caput",
+      "nqf_credits": 9,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 4,
+      "department_prefix": "PBL"
+    },
+    {
+      "code": "PBL4801F",
+      "title": "Law of Evidence",
+      "nqf_credits": 18,
+      "nqf_level": 8,
+      "semester": "S1",
+      "year_level": 4,
+      "department_prefix": "PBL"
+    },
+    {
+      "code": "PBL4802F",
+      "title": "Criminal Procedure",
+      "nqf_credits": 18,
+      "nqf_level": 8,
+      "semester": "S1",
+      "year_level": 4,
+      "department_prefix": "PBL"
+    },
+    {
+      "code": "PTY4008S",
+      "title": "Medicina Forensis",
+      "nqf_credits": 9,
+      "nqf_level": 8,
+      "semester": "S2",
+      "year_level": 4,
+      "department_prefix": "PTY",
+      "is_law_course": false,
+      "offered_by_faculty": "health-sciences"
+    },
+    {
+      "code": "PVL1003W",
+      "title": "Foundations of South African Law",
+      "nqf_credits": 36,
+      "nqf_level": 5,
+      "semester": "FY",
+      "year_level": 1,
+      "department_prefix": "PVL"
+    },
+    {
+      "code": "PVL1004F",
+      "title": "South African Private Law: System and Context",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "PVL"
+    },
+    {
+      "code": "PVL1008H",
+      "title": "Law of Persons and Family",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "FY",
+      "year_level": 1,
+      "department_prefix": "PVL"
+    },
+    {
+      "code": "PVL2002H",
+      "title": "Law of Property",
+      "nqf_credits": 18,
+      "nqf_level": 6,
+      "semester": "FY",
+      "year_level": 2,
+      "department_prefix": "PVL"
+    },
+    {
+      "code": "PVL2003H",
+      "title": "Law of Succession",
+      "nqf_credits": 18,
+      "nqf_level": 7,
+      "semester": "FY",
+      "year_level": 2,
+      "department_prefix": "PVL"
+    },
+    {
+      "code": "PVL3003F",
+      "title": "Law of Delict",
+      "nqf_credits": 18,
+      "nqf_level": 7,
+      "semester": "S1",
+      "year_level": 3,
+      "department_prefix": "PVL"
+    },
+    {
+      "code": "PVL3003S",
+      "title": "African Customary Law",
+      "nqf_credits": 18,
+      "nqf_level": 7,
+      "semester": "S2",
+      "year_level": 3,
+      "department_prefix": "PVL"
+    },
+    {
+      "code": "PVL3005W",
+      "title": "Law of Contract",
+      "nqf_credits": 36,
+      "nqf_level": 7,
+      "semester": "FY",
+      "year_level": 3,
+      "department_prefix": "PVL"
+    },
+    {
+      "code": "PVL3006S",
+      "title": "Jurisprudence",
+      "nqf_credits": 18,
+      "nqf_level": 7,
+      "semester": "S2",
+      "year_level": 3,
+      "department_prefix": "PVL"
+    },
+    {
+      "code": "PVL4008H",
+      "title": "Civil Procedure",
+      "nqf_credits": 18,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 4,
+      "department_prefix": "PVL"
+    },
+    {
+      "code": "PVL4401H",
+      "title": "Independent Research Option (Private Law)",
+      "nqf_credits": 9,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 4,
+      "department_prefix": "PVL"
+    },
+    {
+      "code": "PVL4504S",
+      "title": "South African Mineral Law: Theory, Context and Reform",
+      "nqf_credits": 9,
+      "nqf_level": 8,
+      "semester": "S2",
+      "year_level": 4,
+      "department_prefix": "PVL"
+    },
+    {
+      "code": "PVL4505F",
+      "title": "The Law of Cession",
+      "nqf_credits": 9,
+      "nqf_level": 8,
+      "semester": "S1",
+      "year_level": 4,
+      "department_prefix": "PVL"
+    },
+    {
+      "code": "PVL4507F",
+      "title": "Conflict of Laws",
+      "nqf_credits": 9,
+      "nqf_level": 8,
+      "semester": "S1",
+      "year_level": 4,
+      "department_prefix": "PVL"
+    },
+    {
+      "code": "PVL4511F",
+      "title": "Unjustified Enrichment",
+      "nqf_credits": 9,
+      "nqf_level": 8,
+      "semester": "S1",
+      "year_level": 4,
+      "department_prefix": "PVL"
+    },
+    {
+      "code": "PVL4512S",
+      "title": "Advanced Studies in African Customary Law",
+      "nqf_credits": 9,
+      "nqf_level": 8,
+      "semester": "S2",
+      "year_level": 4,
+      "department_prefix": "PVL"
+    },
+    {
+      "code": "PVL4513F",
+      "title": "Advanced Contract Law",
+      "nqf_credits": 9,
+      "nqf_level": 8,
+      "semester": "S1",
+      "year_level": 4,
+      "department_prefix": "PVL"
+    },
+    {
+      "code": "PVL4601S",
+      "title": "Advanced Property Law: Capita Selecta",
+      "nqf_credits": 9,
+      "nqf_level": 8,
+      "semester": "S2",
+      "year_level": 4,
+      "department_prefix": "PVL"
+    },
+    {
+      "code": "PVL4602S",
+      "title": "Civil Justice Reform",
+      "nqf_credits": 9,
+      "nqf_level": 8,
+      "semester": "S2",
+      "year_level": 4,
+      "department_prefix": "PVL"
+    },
+    {
+      "code": "PVL4606F",
+      "title": "Spatial Justice, Ubuntu and the Nomos of Apartheid",
+      "nqf_credits": 9,
+      "nqf_level": 8,
+      "semester": "S1",
+      "year_level": 4,
+      "department_prefix": "PVL"
+    },
+    {
+      "code": "PVL4609H",
+      "title": "Moot Caput",
+      "nqf_credits": 9,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 4,
+      "department_prefix": "PVL"
+    }
+  ]
+}

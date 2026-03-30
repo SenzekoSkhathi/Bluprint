@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "SEA5011Z",
+  "title": "Operational Oceanography",
+  "department": "oceanography",
+  "credits": 50,
+  "nqf_level": 9,
+  "year_level": "Postgraduate (Master's)",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "Professor M Vichi",
+  "prerequisites": {
+    "text": "A relevant Honours degree (or equivalent). Students with backgrounds in scientific and engineering disciplines are encouraged to apply. Co-requisites: BIO5012W, BIO5013Z, and a minor dissertation code chosen from those described in the handbook. This course is a component of the Applied Ocean Sciences Master's coursework (refer to BIO5012W).",
+    "parsed": {
+      "type": "and",
+      "codes": [
+        "BIO5012W",
+        "BIO5013Z"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course is comprised of modules focusing on the usage and provision of marine services that describe the ocean physical and biogeochemical state through observational and modelling components. The course covers the global ocean and coastal observing systems, the usage of ocean diagnostics and climate indicators, as well as an introduction to the major monitoring techniques for physical and biogeochemical oceanography. Qualified students will have the possibility of participating in field trips and/or research expeditions. In addition, students choose at least two elective courses from a range of modules offered in both disciplinary streams, providing the opportunity to explore new areas or look at more specific disciplinary backgrounds in ocean sciences.",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "Not specified.",
+  "assessment": "Every module is assessed independently either with a class test or individual project assignments. The syllabus and the relative weight for each module are described in a handbook available on the BIO5012W website hosted by the Marine and Antarctic Research Centre for Innovation and Sustainability (MARIS).",
+  "is_science_course": true
+}

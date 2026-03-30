@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "BIO1004S",
+  "title": "Biological Diversity",
+  "department": "biological-sciences",
+  "credits": 0,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr S Welman",
+  "prerequisites": {
+    "text": "A pass at 60% in NSC Life Sciences or Physical Sciences, or by permission of the Head of Department. Preference given to Science Faculty students. Fieldwork: A compulsory one-day excursion will be held over a weekend.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "This course aims to illustrate the diversity and complexity of living organisms, from viruses to humans. Topics include: evolution as a means of interpreting change with time; modern theories on the mechanisms of evolution; the origin of species, including humans; structure and functioning of the simplest microbial life forms; structure and life cycles of fungi; the evolution of aquatic and terrestrial plants; the diversity and adaptations of invertebrate animals; the development and adaptations of chordate groups; primate diversity and evolution; conservation and biodiversity issues in relation to South African biomes and global change. The course includes a strong practical component which further examines biodiversity and related concepts.",
+  "lecture_times": "Monday - Friday, 5th period. Tutorials: One per week, by arrangement. Practicals: One practical per week, Monday, Tuesday, Wednesday, or Thursday 14h00 - 17h00. Attendance is compulsory for all lectures and practicals.",
+  "dp_requirements": "Completion of at least 80% of deliverables (tests, practicals, tutorials, field trip report), including at least one class test, the practical test, and the field trip report; attendance of practicals and field trip; minimum average of 50% for practicals; minimum of 40% for the class record.",
+  "assessment": "Coursework 40%: Theory test 1 (7%), theory test 2 (7%), practical test (10%), practicals (10%), field trip report (group mark, 6%). Examinations 60%: One 2-hour theory examination written in November counts 40% (subminimum of 40% applies); one 1.5-hour practical examination written in November counts 20%",
+  "is_science_course": true
+}

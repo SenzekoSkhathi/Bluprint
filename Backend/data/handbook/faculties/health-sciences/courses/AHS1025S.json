@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AHS1025S",
+  "title": "Early Intervention",
+  "department": "health-and-rehabilitation-sciences",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Mrs J le Roux",
+  "prerequisites": {
+    "text": "None",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "The course aims to develop an understanding of the n eed for the speech-language therapist’s/audiologist’s role in early intervention in the South Afri can context; of risk populations; and of principles and approaches to screening, as sessment and intervention. Content includes early intervention within the primary healthcare framework; an introduction to hearing, communication and feeding difficulties in specific risk populations; specific approaches to early intervention (asset-based, family-centred); and basic assess ment and management of communica tion in children up to the age of three. Teaching and learning activities include lectures, small group discussions, literature searches and reviews and observation of interactions with young children. Themes underpinning the course are primary healthcare and contextual relevance; working in a multilingual, multicultural society; ethics and human rights; and developing agents for change. DEPARTMENTS IN THE FACULTY 89",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "For discipline specific courses in the BSc Audiology and BSc in Speech-Language Pathology programmes a minimum coursework mark of 40% is required for entrance into the examination.",
+  "assessment": "The course grade is made up of a cour sework mark (weighted 60%) and a final examination mark (weighted 40%). If a supplementary examination is awarded, it will count 40 % of the final mark, as the course work mark will still be included in the final mark",
+  "is_health_sciences_course": true
+}

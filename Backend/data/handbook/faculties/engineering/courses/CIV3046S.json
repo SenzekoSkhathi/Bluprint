@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CIV3046S",
+  "title": "Water Treatment",
+  "department": "civil-engineering",
+  "credits": 12,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr T Harding",
+  "prerequisites": {
+    "text": "CEM1008F",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "CEM1008F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to develop an understanding of potable water quality criteria. Topics include Water treatment: objectives, processes and systems. Surface water characterization: aqueous equilibria, alkalinity, acidity, pH, buffer capacity and titration curves, log-species pH diagrams of the inorganic carbon system; pH control. Aqueous-gas phase equilibrium, conversion between concentration units, aqueous-solid phase interactions, calcium carbonate saturation, using the Modified Caldwell Lawrence Diagram for 2 and 3 phase equilibrium, changes of state with dosing and water stabilization.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

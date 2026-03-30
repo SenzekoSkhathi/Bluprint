@@ -1,0 +1,32 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MEC2048S",
+  "title": "Mechanical Engineering Design",
+  "department": "mechanical-engineering",
+  "credits": 16,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr RA Govender",
+  "prerequisites": {
+    "text": "MEC1008S, MEC1005W, MEC2025F or MEC2049F, MEC2042F) or MEC2046F",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "MEC1008S",
+        "MEC1005W",
+        "MEC2025F",
+        "MEC2049F",
+        "MEC2042F",
+        "MEC2046F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to provide the foundations for graduate level mechanical engineering design. Specific knowledge areas developed are selection of simple machine elements, machine assembly design and basic manufacturing technology. Skills are developed in the use of Computer Aided Design (CAD) software, to produce 3D models of parts, compose these into assemblies with appropriate constraints and produce orthographic drawings of assemblies and parts to accepted standards, suitable for manufacture. Basic product dissection skills are developed.",
+  "lecture_times": "3 lectures and 1 tutorial per week.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "See departmental and faculty assessment rules in the 2026 EBE Faculty Handbook.",
+  "is_engineering_course": true
+}

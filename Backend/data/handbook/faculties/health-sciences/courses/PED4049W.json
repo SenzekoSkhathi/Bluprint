@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PED4049W",
+  "title": "Introduction to Child and Adolescent Health",
+  "department": "paediatrics-and-child-health",
+  "credits": 10,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Assoc Professor J Nuttall and Doctor K Reichmuth",
+  "prerequisites": {
+    "text": "Successful completion of all co urses within the preceding academic year.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "The discipline of child and adolescent health seeks to promote the health of children and adolescents, prevent illness, and minimize the consequences of illness when it does occur. This course focuses on the health issues of children and adolescents, including services for well individuals and an approach to the management of child and adolescent health problems commonly seen at a primary care level. Students are encouraged to apply the community-oriented primary care model of individual, family, community, and population factors to critically examine health issues affecting children and adolescents.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Students must fulfil all of the following: (a) Attendance at all face-to-face teaching and learning activities and (b) Completion of all online quizzes by the deadline stipulated on the course site.",
+  "assessment": "The summative assessment comprises the following: (a) in-course assessment comprising (1) case-based written assignments [35% of overall course mark]; and (2), assessment of an oral presentation and contributing to the discussion at the cross-cutting seminar [25% of the overall course mark]; and (b) an end-of-block multiple choice format examination [40% of the overall course mark]. The overall course pass ma rk is 50%. Supplement ary examinations: Students who attain 48- 49% as the overall course mark will be recommended to the FEC fo r a supplementary examination. Students who attain <48% as the ov erall course mark fail, and must repeat the co urse in full, with a full summative assessment in t he following academic year. Student s who do not meet the duly performed requirements fail and mu st repeat the course in full, with a full summative assessment in the following academic year.",
+  "is_health_sciences_course": true
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PBL4504F",
+  "title": "International Criminal Law and Africa",
+  "department": "public-law",
+  "credits": 9,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "A/Prof H Woolaver",
+  "prerequisites": {
+    "text": "All Preliminary and Intermediate Level courses to have been completed.",
+    "parsed": {
+      "type": "level_completion",
+      "levels_required": [
+        "preliminary",
+        "intermediate"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course provides students with a firm understanding of the key aspects of international criminal law, focusing on the impact and application of this body of law in the African continent. The first section covers the historical development of international criminal law, from its origins in the Nuremberg Tribunal, culminating in the establishment of the International Criminal Court. The second section examines the legal elements of the core international crimes: genocide, crimes against humanity, war crimes, and the crime of aggression. Section three provides an analysis of the modes of liability of international crimes, focusing on liability for the commission of group crimes and superior responsibility. The final section details the procedural aspects of enforcement, including jurisdiction of domestic and international courts and the issue of immunity of senior State officials.",
+  "lecture_times": "Two lectures per week.",
+  "dp_requirements": "Satisfactory attendance at weekly seminars.",
+  "assessment": "Essay (2500 words) 20%; In-class presentation 10%; Final examination 70%.",
+  "is_law_course": true
+}

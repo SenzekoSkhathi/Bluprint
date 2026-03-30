@@ -1,0 +1,32 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "APG3027Z",
+  "title": "Cadastral Survey & Registration Projects",
+  "department": "architecture-planning-geomatics",
+  "credits": 24,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "Professor J Whittal",
+  "prerequisites": {
+    "text": "APG2040F, APG2041S, APG2019X.",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "APG2040F",
+        "APG2041S",
+        "APG2019X"
+      ]
+    }
+  },
+  "corequisites": [
+    "CON2033F",
+    "APG3033W"
+  ],
+  "outline": "Course Aims: To enhance theoretical knowledge from course work with practical skills and understanding of cadastral surveying, land registration and spatial analysis. Course Content: Urban and rural cadastral farm surveys, including design, fieldwork, calc ulations, analysis, and plan DEPARTMENTS IN THE FACULTY AND COURSES OFFERED 84 preparation. This course includes 2 major projects, tutorials and a one-week camp project, which takes place during a vacation, away from the UCT campus.",
+  "lecture_times": "Thursdays, 6th to 8th period mid-semester vacation, second semester",
+  "dp_requirements": "Attendance at and completion of all assignments.",
+  "assessment": "Projects and assignments count 100%.",
+  "is_engineering_course": true
+}

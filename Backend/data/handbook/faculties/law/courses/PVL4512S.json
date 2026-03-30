@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PVL4512S",
+  "title": "Advanced Studies in African Customary Law",
+  "department": "private-law",
+  "credits": 9,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "A/Prof F Osman and N Luwaya",
+  "prerequisites": {
+    "text": "PVL3003S.",
+    "parsed": {
+      "type": "specific",
+      "codes_mentioned": [
+        "PVL3003S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The course aims to advance students' understanding of African customary law by equipping them with the skills to ascertain customary law and understand contemporary issues in the subject. The course may engage with the theoretical debates surrounding the recognition of African customary law, practical questions regarding the ascertainment and recordal of customary law, and developments in family law, traditional leadership, dispute resolution, and natural resources.",
+  "lecture_times": "Two lectures per week.",
+  "dp_requirements": "None",
+  "assessment": "Exam 70%, Course work 30%.",
+  "is_law_course": true
+}

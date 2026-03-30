@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MAM1012S",
+  "title": "Mathematics 1012",
+  "department": "mathematics",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr R Moolman",
+  "prerequisites": {
+    "text": "Pass in MAM1010F/S or MAM1110F or equivalent.",
+    "parsed": {
+      "type": "prerequisite",
+      "codes": [
+        "MAM1010F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The aim of this course is to continue the study of topics in mathematics that are of interest to Commerce students begun in MAM1010. Integral calculus, including numerical integration, introduction to ordinary differential equations, matrices and elementary linear algebra, Markov Systems, Taylor Maclaurin, and Binomial series, functions of several variables, three-dimensional space, partial derivatives and applications to optimization problems, the Simplex Method.",
+  "lecture_times": "Monday - Friday, 1st, 3rd, or 4th period.",
+  "dp_requirements": "Minimum of 30% in class tests and full attendance at workshops.",
+  "assessment": "Semester mark up to 40%. November examination 1 x 2 hour paper.",
+  "is_commerce_course": false,
+  "offered_by_faculty": "science"
+}

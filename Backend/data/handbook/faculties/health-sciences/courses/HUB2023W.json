@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "HUB2023W",
+  "title": "Biosciences for Physiotherapy II",
+  "department": "human-biology",
+  "credits": 9,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Professor T Franz",
+  "prerequisites": {
+    "text": "HUB1023S, AHS1033F or AHS1040F",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "HUB1023S",
+        "AHS1033F",
+        "AHS1040F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course builds on the co ncepts taught in HUB1022F and HUB1023S Biosciences for Physiotherapy IA and IB. The cour se content includes principles in orthopaedics; biomechanics of bone; fractures of th e femur and the pelvis; join t biomechanics; of e.g., a nkle, knee, hip and pelvis; waves and basic electricity relevant to the principles of electroth erapy; using e.g., laser, ultrasound, shortwave diathermy, interferential stimulation; gait analysis; and electrom yography. By the end of the course, students should understand joint mechanics, modes of bone fracture and the influence of forces and torques on bo nes and joints; select th e appropriate treatment modality for electrotherapy, DEPARTMENTS IN THE FACULTY 139 with an understanding of the p hysics involved; understand huma n movement and gait analysis and demonstrate an understanding of EMG as a predictor for muscle activity.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Completion of 80% of the class tests.",
+  "assessment": "For PDL mode: Contin uous assessment with a mini mum of three class tests and a minimum of four mini tests per semester. Composition of course mark: 90% cl ass tests, 10% mini tests. For standard teaching mode : The course mark contributes 60% and comprises mini tests (5%) and class tests in April, June an d September (55%). There is a three-hour written examination in November (40%). The final exam must be passed with a subminimum of 40%.",
+  "is_health_sciences_course": true
+}

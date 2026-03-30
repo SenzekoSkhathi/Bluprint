@@ -1,0 +1,30 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "APG3023W",
+  "title": "Technology III (major course)",
+  "department": "architecture-planning-geomatics",
+  "credits": 20,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Mr N Joshi",
+  "prerequisites": {
+    "text": "APG2021W",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "APG2021W"
+      ]
+    }
+  },
+  "corequisites": [
+    "APG3034W",
+    "APG3037W"
+  ],
+  "outline": "To integrate students' understanding of materials/construction with their design process, to critically and strategically work with those who will appropriately reinforce their individual designs. To extend knowledge and understanding of more advanced cons truction and more specialised materials and services to encompass larger and more complex buildings. To raise awareness of the importance of specialist information, and where and when to find this. Presentation of case studies of international buildings th at are milestones in innovative construction principles/processes and/or materials, including issues of environmental sustainability. Revisiting basic materials and investigating more advanced techniques that extend their use to larger more complex structu res. Introduction to more recent materials and technology, where and how they have been appropriately used. Students' own Studio designs are used as assignments to develop construction details and material decisions, to emphasise integration into the design process.",
+  "lecture_times": "Refer to departmental timetable",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

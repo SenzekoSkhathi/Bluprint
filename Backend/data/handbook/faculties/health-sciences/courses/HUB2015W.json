@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "HUB2015W",
+  "title": "Anatomy & Physiology II for Health & Rehab Sciences",
+  "department": "human-biology",
+  "credits": 36,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Associate Professor J Friedling and Dr Y Albertus",
+  "prerequisites": {
+    "text": "HUB1020S",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "HUB1020S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "Objective: To understand and obtain an integrative knowledge of th e human body and its systems from an anatomical and physiological perspective. Course outline: This year-long course forms the second half of a two-year progr amme covering aspects of human anatomy and general physiology. Subjects include systems phy siology such as respiratory, cardiovascular and reproductive physiology which are aligned with the anatomical teaching of these systems. Included in the syllabus is also aspects of endocrinology and nutriti on and diet. It is a full course of lectures, interactive weekly tutorials, practicals and demonstrati ons. Special emphasis is placed on neuro-anatomy and neurophysiology.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "A blended approach to ac ademic activities may be used to support and enhance face-to face-learning. Attendance at, and/or participation in all academic activities, including lectures, practical sessions, workshops and tutorials, and submission of assignments on time.",
+  "assessment": "To pass, a sub-minimum of 45% in each of the physiology and anatomy sections of the course is required. Final examinations contribute 50% (Theory 40%, Practical 10%), Tests (35%) and Practical’s (15%).",
+  "is_health_sciences_course": true
+}

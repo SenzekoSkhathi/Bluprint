@@ -1,0 +1,32 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CSC2001F",
+  "title": "Data Structures",
+  "department": "computer-science",
+  "credits": 24,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "F Meyer",
+  "prerequisites": {
+    "text": "(CSC1015F/S and CSC1016S) or (CSC1010H and CSC1011H). Note: A laptop is required for use during class sessions and after hours; minimum specifications available at https://internal.cs.uct.ac.za/teaching/laptop_requirement.html.",
+    "parsed": {
+      "type": "complex",
+      "codes_mentioned": [
+        "CSC1015F/S",
+        "CSC1016S",
+        "CSC1010H",
+        "CSC1011H"
+      ],
+      "note": "Complex prerequisite logic - see text"
+    }
+  },
+  "corequisites": [],
+  "outline": "This course builds on the first year Computer Science foundation with an emphasis on data storage and manipulation. The course covers abstract data types and assertions, recursive algorithms, tree structures such as AVL and B-trees, graph traversals, minimum spanning trees, sets, hashing and priority queues. An introduction to conceptual modelling, database design and relational database manipulation is included. Practical programming in Java in a Unix environment is an important part of the course.",
+  "lecture_times": "Monday - Friday, 2nd period. Four or five lectures per week. Practicals: One 4-hour practical per week, Monday - Friday, 14h00 - 18h00.",
+  "dp_requirements": "Minimum of 45% aggregate in practical work.",
+  "assessment": "Tests 20%; practicals and practical test 30%; exam 50%. Subminima: 45% on weighted average of theory tests and examination.",
+  "is_engineering_course": false,
+  "offered_by_faculty": "science"
+}

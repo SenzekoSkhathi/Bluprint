@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AHS4005H",
+  "title": "Clinical Speech Therapy IIIA",
+  "department": "health-and-rehabilitation-sciences",
+  "credits": 45,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "FY",
+  "semester_code": "H",
+  "convener": "K Murray DEPARTMENTS IN THE FACULTY 115",
+  "prerequisites": {
+    "text": "AHS3004H or AHS3005W; see FBD 5.13",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "AHS3004H",
+        "AHS3005W"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to enable the student to demonstrate professional conduct; to conduct independent assessment and comprehensive evidence-based management of speech, langu age, communication, feeding and swallowing in children and adults across the continuum of care (prevention, promotion, curative, rehabilitation) in a variety of contexts and levels of ca re (primary, secondary, tertiary); and to learn skills enabling the independent planning and management of service delivery at sites. Students rotate through a number of clinical blocks and sites during th e year. They learn to problem-solve, communicate effectively; engage in clinical reasoning; and to plan, implement, manage and evaluate service delivery programmes. They learn the skill of reflection; of needs analysis; of community engagement; and of competent clinic al practice. They learn that ethical practice is vital and that collaborative, client- and family-centred interventi on is key to best practic e. Teaching and learning activities include the observation and modelling of experienced clinicians, service provision, clinical practice, team-work, tutorials and workshops, and written reports. Themes underpinning the course are primary healthcare, ethics and human rights, equity and affirmation of diversity, developing agents for change, disability and burden of disease, and evidence-based practice.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Attendance at all clinic activities; co mpletion of all coursework and required documentation (e.g. ELOs and hour s) by the due dates; and profe ssional conduct. A concession to miss clinic activities with a valid reason must be approved by the course convenor. When concessions are granted students must still maintain a minimum of 80% attendance or they may be asked to repeat the course or block (see FBD 4).",
+  "assessment": "Continuous assessments during each clinical block contribute to 60% of course mark; final qualifying examination in June contributes 40% of course mark. Refer to AHS4005H clinic descriptor document for specific assessment details.",
+  "is_health_sciences_course": true
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "APG3013F",
+  "title": "Numerical Methods in Geomatics",
+  "department": "architecture-planning-geomatics",
+  "credits": 16,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr M Shoko",
+  "prerequisites": {
+    "text": "MAM2084F/S, APG2014S, APG2016W or APG2040F.",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "MAM2084F",
+        "APG2014S",
+        "APG2016W",
+        "APG2040F"
+      ]
+    }
+  },
+  "corequisites": [
+    "APG2041S"
+  ],
+  "outline": "Course Aims: To consolidate the knowledge the student acquired in the introductory course on adjustment, and provide skills and knowledge required to solve all standard adjustment problems. Course Content: Advanced least squares modelling using the paramet ric adjustment case, condition equation adjustment, survey statistics, network design, elimination of nuisance parameters, combined and general case, quasi -parametric case, parametric adjustment with condition equations for the unknowns, generalised invers es, free net adjustment and S -transformation. Programming of least squares applications.",
+  "lecture_times": "3rd period Mon-Fri. Practicals: one per week, Mon 14h00-17h00",
+  "dp_requirements": "Attendance at and completion of all assignments with a minimum average of 50%, a minimum class test average of 35%.",
+  "assessment": "Written tests count 15%, practical tests and practical assignments count 25%, examination of 3 hours counts 60% (sub-minimum 40%).",
+  "is_engineering_course": true
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "FAM3017S",
+  "title": "Screen Production III: Advanced Post-Production",
+  "department": "film-and-media-studies",
+  "credits": 48,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Associate Professor W Chuma FILM AND MEDIA STUDIES, CENTRE FOR 207",
+  "prerequisites": {
+    "text": "None (extended programme students only).",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [
+    "FAM2000F"
+  ],
+  "outline": "The purpose of this course is to augment and support its co -requisite course: FAM2000F WRITING & EDITING IN MEDIA. It aims to improve students’ performance by enhancing their grasp of key ideas and concepts, and by developing their mastery of the disciplin ary discourse. It provides additional pedagogic enrichment in the form of regular Plus Tuts that extend into Writing Hub exercises and consultations. In these tutorials, students will receive explicit support around the co - requisite course assignments and detailed feedback on their written work.",
+  "lecture_times": "Four lecture periods per week (two workshops) and a compulsory screening during 4th and 5th periods, Monday – Wednesday. Self-paced lab time and group work.",
+  "dp_requirements": "Full attendance and submission of all classwork.",
+  "assessment": "100% coursework (including practical, theoretical, individual and group work).",
+  "is_humanities_course": true
+}

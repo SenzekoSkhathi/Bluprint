@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "INF1002F",
+  "title": "Foundations of Information Systems",
+  "department": "information-systems",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr L Tekeni",
+  "prerequisites": {
+    "text": "Admission may be restricted for students other than those in Commerce. Entrance requirements include either 70% for NBT QL or at least 50% for Maths (NSC) or MAM1014F or NBT QL or MAM1022F.",
+    "parsed": {
+      "type": "nsc_requirement",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "The course provides a foundation to the use and impact of Information systems in business and society. Fundamental knowledge of information systems, their functioning and how they contribute to globalisation will be discussed. Particular focus is for students to understand the value of information, its collection, processing, storage and transmission through use of information systems in businesses, suppliers and customers. Practical exposure (linked to the theoretical themes) to data analysis tools, programming and systems development in organisations is provided.",
+  "lecture_times": "Monday, 6th OR 7th period. Tuesday 5th - 7th OR Wednesday 3rd to 7th in Alumni Labs.",
+  "dp_requirements": "Year mark greater than or equal to 45% (based on all assessments prior to the final exam). 80% participation for all practicals (tutorials and workshops).",
+  "assessment": "Coursework 65%; Final Examination 35%. Sub-minimum of 40% for the final exam.",
+  "is_commerce_course": true
+}

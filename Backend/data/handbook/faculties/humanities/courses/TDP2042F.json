@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "TDP2042F",
+  "title": "Movement II",
+  "department": "theatre-and-performance",
+  "credits": 18,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "See 2026 Humanities Faculty Handbook",
+  "prerequisites": {
+    "text": "None (extended programme and diploma students only).",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "The purpose of this course is to augment and support its co -requisite course: GLOBAL PERFORMANCES: MUTATIONS AND MIGRATIONS. It aims to improve students’ performance by enhancing their grasp of key ideas and concepts, and by developing their mastery of the disciplinary discourse. It provides additional pedagogic enrichment in the form of regular Plus Tuts that extend into Writing Hub exercises and consultations. In these tutorials, students will receive explicit support around the corequisite course assignments and detailed feedback on their written work.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "100% tutorial attendance plus successful completion of all coursework assignments.",
+  "assessment": "Coursework 100% comprising of tutorial assessments and other written work.",
+  "is_humanities_course": true
+}

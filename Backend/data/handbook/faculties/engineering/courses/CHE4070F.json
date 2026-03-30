@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CHE4070F",
+  "title": "Numerical Optimisation for Chemical Engineers",
+  "department": "chemical-engineering",
+  "credits": 16,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr RK Abrahams",
+  "prerequisites": {
+    "text": "CHE3006F, CHE3007S, CHE3008S",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "CHE3006F",
+        "CHE3007S",
+        "CHE3008S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to develop students’ knowledge of rigorous optimisation techniques and tools with application to chemical engineering problems and processes. The course content consists of : convex, concave, quadratic function interpretation, objective fu nctions, single variable optimisation: bracketing, newtons and secant methods, quadratic interpolation, multivariable optimisation: simplex, conjugate gradient concepts, indirect methods of first and second order, conjugate gradient method, newtons methods , quasi -newton, secant methods, BFGS,secant updates, non -linear programming: lagrange multipliers, conditions for a minimum(max), quadratic programming (QP), generalised reduced gradient (GRG), penalty functions, sequential quadratic programming (SQP), lin ear programming (LP), integer constraints (MINLP), formulating objective functions of processes with constraints, linearisation of models, and optimal control.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

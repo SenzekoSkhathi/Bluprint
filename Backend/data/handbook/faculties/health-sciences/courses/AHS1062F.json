@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AHS1062F",
+  "title": "Promoting Healthy Lifestyles",
+  "department": "health-and-rehabilitation-sciences",
+  "credits": 10,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Doctor N Mayat",
+  "prerequisites": {
+    "text": "Refer to the programme and departmental sections in the 2026 Health Sciences Faculty Handbook.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [
+    "AHS1064F",
+    "AHS1061F",
+    "AHS1067F"
+  ],
+  "outline": "By the end of the course, students will be able to define health promotion; identify social determinants of health; enable community participation in ac tive health promotion camp aigns; mediate between health services and families/pers ons with disabilities; adv ocate for access to education, health or community facilities; liaise with NGOs/community structures; and promote participation of persons with disabilities.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Full attendance of and part icipation in all lectur es, practical sessions, workshops and tutorials, and submission of assignments by the due dates.",
+  "assessment": "Coursework mark counts 50% and comprises assignme nts, written tests and practical tests. Exam mark counts 50% and comprises written and structured practical examinations.",
+  "is_health_sciences_course": true
+}

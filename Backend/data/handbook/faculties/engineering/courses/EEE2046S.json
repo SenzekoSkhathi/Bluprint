@@ -1,0 +1,30 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EEE2046S",
+  "title": "Signals and Systems I",
+  "department": "electrical-engineering",
+  "credits": 24,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr MY Abdul Gaffar",
+  "prerequisites": {
+    "text": "(EEE1006F and CSC1015F/S) or (EEE2042S and CSC1019F)",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "EEE1006F",
+        "CSC1015F",
+        "EEE2042S",
+        "CSC1019F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to give students a strong foundation in embedded systems by introducing them to digital system fundamentals, including: information representation, Boolean algebra, logic gate behaviour, combinational and sequential digital circuits, digital building blocks and algorithmic state machines; C programming with a focus on microcontroller applications; basic microcontroller usage, including an introduction to computer architecture, general purpose input/outputs, analogue to digital convertors, interrupts and basic timers.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

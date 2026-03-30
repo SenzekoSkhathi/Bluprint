@@ -1,0 +1,26 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PSY1004F",
+  "title": "Introduction to Psychology Part 1",
+  "department": "psychology",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "See 2026 Health Sciences Faculty Handbook",
+  "prerequisites": {
+    "text": "Refer to programme and departmental requirements in the 2026 Humanities Faculty Handbook.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course builds on the content covered in Introduction to Psychology Part 1. There is emphasis on research methods, both quantitative and qualitative methods. This course deepens students’ engagement with psychology as a scientific and interpretive discipline concerned with understanding behaviour, thought, and emotion in context. Emphasis is placed on developing a critical appreciation of different psychological inquiry and analysis approaches. Through exposure to a range of thematic areas, students build co mpetencies in research literacy, academic writi ng, and the evaluation of evidence.",
+  "lecture_times": "Tuesday to Friday 1st or 5th period.",
+  "dp_requirements": "Satisfactory completion of all assignments by the due date, attending at least 80% of classroom tutorials, submitting all statistics lab- based exercises, complete both class tests. In addition, obtain two Student Research Participation Programme (SRPP) points or equivalent.",
+  "assessment": "Coursework (term assignments and tests) counts 50%; one two-ho ur examination in November counts 50%. Students are expected to complete the Novembe r examination and all coursework before being awarded a pass in this class.",
+  "is_health_sciences_course": false,
+  "offered_by_faculty": "humanities"
+}

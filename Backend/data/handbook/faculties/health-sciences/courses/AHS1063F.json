@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AHS1063F",
+  "title": "Health, Wellness and Functional Ability Part I",
+  "department": "health-and-rehabilitation-sciences",
+  "credits": 15,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Mrs S Gabriels",
+  "prerequisites": {
+    "text": "None",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [
+    "AHS1060F",
+    "AHS1065F",
+    "AHS1066F"
+  ],
+  "outline": "Students learn to screen for impairments and provide basic interventions to improve participation of clients in the life areas of living, learning, working and socialising. By the end of the course, students will be able to discuss and describe normal development and wellness in children and adults; identify clients with selected disorders and difficulties ; demonstrate appropriate kinetic handling and positioning skills; demonstrate appropriate use of assistive devices; identify risk factors for emotional distress in carers, clients and self; apply basic counselling and support methods to carers, clients and self; recognise when referral is required; demonstrate appropriate referral patterns; and work in a multidisciplinary team. This course will prepare students for work integrated practice learning in the community and intermediate care facilities.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Full attendance of and part icipation in all lectur es, practical sessions, workshops and tutorials, and submission of assignments by the due dates.",
+  "assessment": "The final course mark is co mprised of a coursework mark weighted at 50% and the summative exam that is weighted at 50%.",
+  "is_health_sciences_course": true
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CHM5009W",
+  "title": "Otorhinolaryngology",
+  "department": "surgery",
+  "credits": 10,
+  "nqf_level": 8,
+  "year_level": 5,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Dr K Wright",
+  "prerequisites": {
+    "text": "Successful completion of all co urses within the preceding academic year.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This is a shared rotation with Dermatology and Ph armacology, during which students are placed at Red Cross War Memorial Children’ s Hospital, Groote Schuur Hospita l or New Somerset Hospital, where they join the outpatient cl inical area to observ e and participate in th e evaluation, assessment and management of commonly pres enting ENT conditions. Included in these activities will be two formal tutorials hosted by two of our sessional specialists (or available staff members in their absence). Online resources in the form of audiovisual lectures as well as a free textbook are all made available on Vula. The core curriculum focuses on common ENT conditions . Learning outcomes include demonstration of core knowledge of common paediatric and adult diseases and conditions; history- taking skills; emergency management; defining problem lists; formul ating appropriate management plans; professional behaviour and attitude; and advocacy of the rights of patients.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Students will be required to: 1) complete an otoscopy clinical examination(10% of final mark); 2) complete the Otosim simulation assessment (10% of final mark); 3) do a case presentation according to a rubric pr ovided on Vula as an example of a typical referral case from a general practitioner to as specialist (10% of final mark).",
+  "assessment": "Assessment consists of: 1. End-of-block mu ltiple choice question exam (70% of final mark); 2. In-course as sessments(30% of final mark) – otos copy exam (10%), Otosim exam (10%), case presentation (10%) The pass mark of the course is 50%. The following will be recommended to the Faculty Examinations Committee , that students who: (a) achieve 48–49% in end-of-block final mark, are required to u ndertake a supplementary examination in the failed component/s; (b) fail the course overall with a mark of 47% or less are r equired to repeat the full course in the following academic year; (c) achieve less than 50% in the computer based MCQ assessment are required to do a supplementary MCQ examination; (d) do not meet the Due Performance requirements, fail the course and are required to repeat it and its end-of-block summativ e assessment in full in the next academic year.",
+  "is_health_sciences_course": true
+}

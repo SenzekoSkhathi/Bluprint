@@ -1,0 +1,41 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "STA4007W",
+  "title": "Statistics and Data Science Honours",
+  "department": "statistical-sciences",
+  "credits": 160,
+  "nqf_level": 8,
+  "year_level": "Postgraduate (Honours)",
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Associate Professor G Distiller and Dr E Pienaar",
+  "prerequisites": {
+    "text": "Minimum requirements: (MAM1031F or MAM1004F/S or MAM1010F/S or MAM1033F) and (MAM1032S or MAM1034S), a first year semester module in Computer Science, plus one of the following: Applied Statistics stream (STA3030F + STA3036S/STA3022F) or Mathematical Statistics Stream (STA3041F, STA3043S). Applicants with ≥65% average for 3rd year Mathematical Statistics courses (first attempt) or ≥70% for Applied Statistics courses (first attempt) can be confident of admission; Applied Statistics students also need ≥60% for each of the two prerequisite courses. Students not meeting threshold levels may be considered case-by-case. Note: STA4007W does not carry NQF credit value; students are concurrently registered for STA4022W (coursework, 120 NQF credits) and STA4023W (research project, 40 NQF credits).",
+    "parsed": {
+      "type": "complex",
+      "codes_mentioned": [
+        "MAM1031F",
+        "MAM1004F/S",
+        "MAM1010F/S",
+        "MAM1033F",
+        "MAM1032S",
+        "MAM1034S",
+        "STA3030F",
+        "STA3036S/S",
+        "TA3022F",
+        "STA3041F",
+        "STA3043S",
+        "STA4007W",
+        "STA4022W",
+        "STA4023W"
+      ],
+      "note": "Complex prerequisite logic - see text"
+    }
+  },
+  "corequisites": [],
+  "outline": "This honours programme teaches students the necessary data analytical and computing skills for a career in Data Science. It covers theoretical and applied statistics, supervised and unsupervised learning, statistical computing and operations research. Core modules (81 NQF credits) give a good theoretical basis and statistical computing skills. Elective modules (39 NQF credits) expose students to practical application of quantitative methods in different areas. Supervised project work (40 NQF credits) provides training in research. Elective modules vary from year to year, but typically include Portfolio Theory, Time Series Analysis, Biostatistics, Decision Modelling, and Spatial Statistics.",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "Attendance of 85% of departmental seminars.",
+  "assessment": "Each coursework module comprises tests, assignments and a final examination; coursework weighting varies between 30-50%, final examination up to 70% of module mark. Overall programme mark is a weighted average of all coursework modules and the research project. To qualify, a student must achieve: at least 50% average across all core modules, at least 40% across all elective modules, and a minimum of 50% for both the project and the overall programme mark. Components are combined into a single final mark recorded under STA4007W, with 'PA' entered against coursework and project codes.",
+  "is_science_course": true
+}

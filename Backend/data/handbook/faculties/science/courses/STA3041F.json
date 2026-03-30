@@ -1,0 +1,34 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "STA3041F",
+  "title": "Stochastic Processes & Time Series",
+  "department": "statistical-sciences",
+  "credits": 36,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "D Katshunga",
+  "prerequisites": {
+    "text": "STA2004F, STA2005S and (MAM2010F, MAM2011F, MAM2012S and MAM2014S) strongly recommended. Note: A student cannot obtain credits for both STA3030F and STA3041F.",
+    "parsed": {
+      "type": "and",
+      "codes": [
+        "STA2004F",
+        "STA2005S",
+        "MAM2010F",
+        "MAM2011F",
+        "MAM2012S",
+        "MAM2014S",
+        "STA3030F",
+        "STA3041F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course forms part of the third-year major in Mathematical Statistics. It consists of two modules: (1) Stochastic Processes — covering the general theory underlying stochastic processes and their classifications, definitions and applications of discrete Markov chains, branching processes, discrete and continuous time counting processes, and homogeneous and non-homogeneous Poisson processes; (2) Time Series Analysis — covering global and local models of dependence, stationary ARMA processes, unit root processes, and a brief introduction to univariate Volatility models and cointegration.",
+  "lecture_times": "Five lectures per week, Monday - Friday, 1st period.",
+  "dp_requirements": "Satisfactory attendance of lectures, tutorials, practicals and tests and completion of assignments and/or class exercises as set out in course outline. Class record of at least 35%.",
+  "assessment": "Class record 30% and a 3-hour exam counting 70%. Weights will be adjusted in the case of missed assessments, as detailed in the course outline.",
+  "is_science_course": true
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "APG4001S",
+  "title": "Geodesy",
+  "department": "architecture-planning-geomatics",
+  "credits": 24,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Associate Professor P Odera",
+  "prerequisites": {
+    "text": "APG3013F, APG3016C, APG3017D, MAM2084S, STA1000S, PHY1031F, PHY1032S.",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "APG3013F",
+        "APG3016C",
+        "APG3017D",
+        "MAM2084S",
+        "STA1000S",
+        "PHY1031F",
+        "PHY1032S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "Course Aims: This course describes the objectives, concepts and methods of modern geodesy. On completion of this course the student will have a good understanding of the use of satellite positioning techniques in geodesy and will be able to design and carry out high precision GPS surveys. The student will also be able to design, adjust and analyse modern three-dimensional networks and transform data from one datum to another. The student will have a good understanding of the influence of the Earth's gravity field on geodetic methods and will know how to compute geoid models from gravity and satellite data. Course Content: Introduction to geodesy; satellite positioning in geodesy; geodetic networks; datum transformations; Earth gravity field.",
+  "lecture_times": "2nd period Mon to Fri. Practicals: one per week, Wed 6th to 8th period",
+  "dp_requirements": "Attendance at and completion of all assignments and tests with a combined minimum average of 40%.",
+  "assessment": "See departmental and faculty assessment rules in the 2026 EBE Faculty Handbook.",
+  "is_engineering_course": true
+}

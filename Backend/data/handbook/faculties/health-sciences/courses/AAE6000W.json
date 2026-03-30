@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AAE6000W",
+  "title": "Anaesthesia Part II",
+  "department": "anaesthesia-and-perioperative-medicine",
+  "credits": 10,
+  "nqf_level": 8,
+  "year_level": 6,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Doctor J Purcell-Jones",
+  "prerequisites": {
+    "text": "Successful completion of all co urses within the preceding academic year.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "Objective: The student will demonstrate knowledge of clinical anaesthesia; skills in the pre-operative, intra-operative and postoperative care of patient s necessary for safe a naesthetic practice; and professional behaviour appropriate to the pivotal role of the anaesthetist as a peri-operative physician. Course outline: Anaesthesia is formally taught during the fourth and sixth years of study. In the sixth year, a two-week course of practical clinical instruction is pres ented during the combined 4 week Anaesthesia and Forensic medicine rotation. Unde r direct supervision, students w ill be taught how to perform an anaesthetic preassessment, plan and administer ana esthesia and manage a pa tient postoperatively. Towards the end of the block, the student will be assessed on their ability to plan, perform and manage an anaesthetic. During th e rotation, the student is e xpected to complete 13 on line learning activities and prepare and discuss the manag ement of two case presentations . An interactive anaesthesia teaching day will incorpor ate case-based discussions, simulations , quizzes and pract ical sessions to enhance the student’s knowledge and skills. Core knowledge : Basic knowledge of anaesthesia techniques and equipment.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Completion and submission of two su pervised and assessed clinical cases (practical skills assessment). Completion of 13 online learning activities with a mark of greater than 74 DEPARTMENTS IN THE FACULTY 70% (repeated attempts allowed) . Completion of two case disc ussions which are prepared and presented to a supervisin g anaesthetist in theatre (knowledge and clinical reasoning assessment). A complete attendance register.",
+  "assessment": "An end-of-block (EOB) exam including si ngle best answer (SBA) and extended matching questions (EMQ). The EOB SBA and EMQ exam contributes 60% to the final anaesthesia mark. This must be passed with a minimum of 50% in order to pass the co urse. A mark of 48% or 49% for the EOB SBA and EMQ exam may qualify the student to be considered for a supplementary exam without needing to repeat the course. The marks for the two practical clinical assessments and the two case discussions contribute 40% to the final mark. This must be passed with a minimum of 50% in order the pass the block. A mark of 48% or 49% for the two practical clinical assessments and the two case discussions may qualify the student to be considered for a supplementary exam without needing to repeat the course. If a student attains a mark of 47% or less in either component, they fail and must repeat the course..",
+  "is_health_sciences_course": true
+}

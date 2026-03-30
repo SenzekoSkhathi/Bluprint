@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AHS2046F",
+  "title": "Diagnostic Audiology",
+  "department": "health-and-rehabilitation-sciences",
+  "credits": 18,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr L Petersen",
+  "prerequisites": {
+    "text": "Refer to the programme and departmental sections in the 2026 Health Sciences Faculty Handbook.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to enable students to devise an appropriate audiology case history interview; describe and discuss a comprehensive diagnos tic audiology process; describe audiology tests; and reflect on and communicate assessment outcomes to the client. Content includes case history; fundamentals of the audiology diagnostic proce ss; audiology test battery; pu re tone, speech and immittance audiometry; functional hearing loss; principles of masking; clinical reasoning; differential diagnosis; and clinical report writing. Students start to acquire the skills of jargon-free written communication, appropriate test selection, analysis and interpretation, and knowing when and how to refer. They learn that information and personal adjustment counselling are key in the empowerment of clients, and learn an appreciation of the role of th e team; they also cultivate an awar eness of professional boundaries. Teaching and learning activities in clude lectures, case studies, se lf-directed study, role-play, experiential learning, simulati ons, and group-work. Themes un derpinning course are primary healthcare and contextual relevance, disability and burden of disease, ethics and hu man rights, bio- psycho-social models of health, developing agents for change, and equity and affirmation of diversity.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "For discipline specific courses in the BSc Audiology and BSc in Speech-Language Pathology programmes a minimum coursework mark of 40% is required for entrance into the examination. 98 DEPARTMENTS IN THE FACULTY",
+  "assessment": "The course grade is made up of a cour sework mark (weighted 60%) and a final examination mark (weighted 40%). If a supplementary examination is awarded, it will count 40 % of the final mark, as the course work mark will still be included in the final mark.",
+  "is_health_sciences_course": true
+}

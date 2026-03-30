@@ -1,6 +1,8 @@
 import MainLayout from "@/components/main-layout";
+import { getPrimaryFacultySlug } from "@/constants/faculty";
 import { theme } from "@/constants/theme";
 import {
+    getHandbookMajors,
     getScienceMajors,
     type ScienceMajorCourse,
     type ScienceMajorEntry,
@@ -47,6 +49,7 @@ function countCoursesForYear(major: ScienceMajorEntry, targetYear: number) {
 }
 
 export default function Majors({ onMajorSelect }: MajorsProps) {
+  const activeFacultySlug = getPrimaryFacultySlug();
   const [majors, setMajors] = useState<ScienceMajorEntry[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -59,7 +62,9 @@ export default function Majors({ onMajorSelect }: MajorsProps) {
         setIsLoading(true);
         setError(null);
 
-        const majorsPayload = await getScienceMajors();
+        const majorsPayload = await getHandbookMajors({
+          faculty_slug: activeFacultySlug,
+        }).catch(() => getScienceMajors());
         if (!isMounted) {
           return;
         }
@@ -88,7 +93,7 @@ export default function Majors({ onMajorSelect }: MajorsProps) {
     return () => {
       isMounted = false;
     };
-  }, []);
+  }, [activeFacultySlug]);
 
   return (
     <MainLayout>

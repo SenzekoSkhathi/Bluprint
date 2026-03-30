@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "ACC1022Z",
+  "title": "Accounting for Business II",
+  "department": "accounting",
+  "credits": 9,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "F Jacobs",
+  "prerequisites": {
+    "text": "ACC1021F.",
+    "parsed": {
+      "type": "prerequisite",
+      "codes": [
+        "ACC1021F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course continues from ACC1021F and aims to provide Commerce graduates with an overview of cash flows, taxation, and governance principles.",
+  "lecture_times": "4 lectures a week, Mondays to Thursdays. Tutorials: a double-period tutorial per week.",
+  "dp_requirements": "75% course participation.",
+  "assessment": "One final exam before/after the September vacation.",
+  "is_commerce_course": true
+}

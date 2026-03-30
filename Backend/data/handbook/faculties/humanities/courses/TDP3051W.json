@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "TDP3051W",
+  "title": "Scenography III",
+  "department": "theatre-and-performance",
+  "credits": 60,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "J-L Crewe",
+  "prerequisites": {
+    "text": "Completion of T&P Studiowork 2 and placement in the Scenography concentration. THEATRE, DANCE AND PERFORMANCE STUDIES 428",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "In this project based course, students develop their understanding of scenographic practice, research and visual communicative skills, as well as the manipulation of material, visual metaphor and body as a live performance catalyst. A fieldwork component may be included as part of this course.",
+  "lecture_times": "Seminars will be timetabled departmentally each year. All meetings will be on the Hiddingh Campus",
+  "dp_requirements": "Attendance at all classes, performances and rehearsals. Completion of all projects.",
+  "assessment": "Coursework, classwork, in house performances count 50% of final mark; final practical examination counts 50% of final mark. In order to pass, students must obtain at least 50% in both of the above.",
+  "is_humanities_course": true
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "FAM2004S",
+  "title": "Audiovisual Studies",
+  "department": "film-and-media-studies",
+  "credits": 24,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Associate Professor L J Modisane",
+  "prerequisites": {
+    "text": "At least second-year status",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course examines the histories of cinemas and their social, cultural and political contexts from the silent era through to contemporary film. Important filmmakers and theorists are explored, from Soviet and German filmmaking between the wars, and the e mergence of Africa filmmaking in the 1960s to Hollywood New Wave and Dogme 95. By the end of the course, students will have gained a broad knowledge of the histories of cinemas and cinema movements, deepening their knowledge of cinema, and will have improved their analytical skills and writing abilities.",
+  "lecture_times": "7th period, Monday, Tuesday, Wednesday; weekly screenings, time and venue to be announced",
+  "dp_requirements": "All written work must be submitted by the stipulated dates. Students who miss more than two tutorials will lose their DPs.",
+  "assessment": "Continuous assessment (essays, projects, tests, etc.) counts 100%.",
+  "is_humanities_course": true
+}

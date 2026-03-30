@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "FIN1001W",
+  "title": "Art Practice 1",
+  "department": "fine-art",
+  "credits": 72,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Dr S Huigen-Conradie",
+  "prerequisites": {
+    "text": "This compulsory (core) course is open only to students registered for the BA(FA).",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This multi-disciplinary course is broad-based and introduces all disciplines, placing a strong emphasis on drawing, observation, and basic technical and compositional skills. Students will be encouraged to develop an intensive, creative, and productive wor k process and to establish cognitive skills and relationships between all aspects of their work, both creative and academic. The studiowork course consists of a series of compulsory projects in 2 and 3 -dimensional areas. Incorporated into these projects, the course consists of figure drawing and object drawing (which makes use of different drawing materials and working procedures and processes), colour theory and its application in painting, and three-dimensional work in clay, plaster, cardboard and wood. I n addition to Drawing, Painting and Sculpture, the course introduces students to the disciplines of New Media, Printmaking and Photography as well as the development of visual research methodologies. Students are evaluated by critique, mid-year assessment and an end-of-year examination.",
+  "lecture_times": "Monday to Friday, 14h00 to 17h00. Studio times: Studio times are from 09h00 to 17h00, with students breaking to attend lectures and tutorials as required by the timetable.",
+  "dp_requirements": "At least 80% attendance of studio classes and critiques, satisfactory completion of all projects.",
+  "assessment": "Mid-year coursework examination 45%, year -end coursework examination 45%, attendance & participation 10%.",
+  "is_humanities_course": true
+}

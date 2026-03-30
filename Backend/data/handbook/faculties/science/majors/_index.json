@@ -1,0 +1,219 @@
+{
+  "$schema": "handbook-major-index-v1",
+  "faculty": "science",
+  "year": 2026,
+  "count": 22,
+  "majors": [
+    {
+      "major_code": "MAM01",
+      "major_name": "Applied Mathematics",
+      "department": "mathematics-applied-mathematics",
+      "filename": "MAM01-applied-mathematics.json",
+      "mutual_exclusions_with": [],
+      "required_companion_majors": [],
+      "has_student_limit": false
+    },
+    {
+      "major_code": "STA01",
+      "major_name": "Applied Statistics",
+      "department": "statistical-sciences",
+      "filename": "STA01-applied-statistics.json",
+      "mutual_exclusions_with": [
+        "STA02",
+        "STA13"
+      ],
+      "required_companion_majors": [],
+      "has_student_limit": false
+    },
+    {
+      "major_code": "AGE01",
+      "major_name": "Archaeology",
+      "department": "archaeology",
+      "filename": "AGE01-archaeology.json",
+      "mutual_exclusions_with": [],
+      "required_companion_majors": [],
+      "has_student_limit": false
+    },
+    {
+      "major_code": "CSC08",
+      "major_name": "Artificial Intelligence",
+      "department": "computer-science",
+      "filename": "CSC08-artificial-intelligence.json",
+      "mutual_exclusions_with": [],
+      "required_companion_majors": [],
+      "has_student_limit": false
+    },
+    {
+      "major_code": "AST02",
+      "major_name": "Astrophysics",
+      "department": "astronomy",
+      "filename": "AST02-astrophysics.json",
+      "mutual_exclusions_with": [],
+      "required_companion_majors": [],
+      "has_student_limit": false
+    },
+    {
+      "major_code": "MCB01",
+      "major_name": "Biochemistry",
+      "department": "molecular-cell-biology",
+      "filename": "MCB01-biochemistry.json",
+      "mutual_exclusions_with": [],
+      "required_companion_majors": [],
+      "has_student_limit": true
+    },
+    {
+      "major_code": "BIO12",
+      "major_name": "Biology",
+      "department": "biological-sciences",
+      "filename": "BIO12-biology.json",
+      "mutual_exclusions_with": [],
+      "required_companion_majors": [],
+      "has_student_limit": false
+    },
+    {
+      "major_code": "CSC02",
+      "major_name": "Business Computing",
+      "department": "computer-science",
+      "filename": "CSC02-business-computing.json",
+      "mutual_exclusions_with": [],
+      "required_companion_majors": [
+        "CSC05"
+      ],
+      "has_student_limit": false
+    },
+    {
+      "major_code": "CEM01",
+      "major_name": "Chemistry",
+      "department": "chemistry",
+      "filename": "CEM01-chemistry.json",
+      "mutual_exclusions_with": [],
+      "required_companion_majors": [],
+      "has_student_limit": false
+    },
+    {
+      "major_code": "CSC03",
+      "major_name": "Computer Engineering",
+      "department": "computer-science",
+      "filename": "CSC03-computer-engineering.json",
+      "mutual_exclusions_with": [],
+      "required_companion_majors": [
+        "CSC05"
+      ],
+      "has_student_limit": false
+    },
+    {
+      "major_code": "CSC05",
+      "major_name": "Computer Science",
+      "department": "computer-science",
+      "filename": "CSC05-computer-science.json",
+      "mutual_exclusions_with": [],
+      "required_companion_majors": [],
+      "has_student_limit": false
+    },
+    {
+      "major_code": "EGS02",
+      "major_name": "Environmental & Geographical Science",
+      "department": "environmental-geographical-science",
+      "filename": "EGS02-environmental-geographical-science.json",
+      "mutual_exclusions_with": [],
+      "required_companion_majors": [],
+      "has_student_limit": false
+    },
+    {
+      "major_code": "MCB04",
+      "major_name": "Genetics",
+      "department": "molecular-cell-biology",
+      "filename": "MCB04-genetics.json",
+      "mutual_exclusions_with": [],
+      "required_companion_majors": [],
+      "has_student_limit": true
+    },
+    {
+      "major_code": "GEO02",
+      "major_name": "Geology",
+      "department": "geological-sciences",
+      "filename": "GEO02-geology.json",
+      "mutual_exclusions_with": [],
+      "required_companion_majors": [],
+      "has_student_limit": true
+    },
+    {
+      "major_code": "HUB17",
+      "major_name": "Human Anatomy & Physiology",
+      "department": "human-biology-faculty-of-health-sciences",
+      "filename": "HUB17-human-anatomy-physiology.json",
+      "mutual_exclusions_with": [],
+      "required_companion_majors": [],
+      "has_student_limit": true
+    },
+    {
+      "major_code": "BIO05",
+      "major_name": "Marine Biology",
+      "department": "biological-sciences",
+      "filename": "BIO05-marine-biology.json",
+      "mutual_exclusions_with": [],
+      "required_companion_majors": [],
+      "has_student_limit": false
+    },
+    {
+      "major_code": "STA02",
+      "major_name": "Mathematical Statistics",
+      "department": "statistical-sciences",
+      "filename": "STA02-mathematical-statistics.json",
+      "mutual_exclusions_with": [
+        "STA01",
+        "STA13"
+      ],
+      "required_companion_majors": [],
+      "has_student_limit": false
+    },
+    {
+      "major_code": "MAM02",
+      "major_name": "Mathematics",
+      "department": "mathematics-applied-mathematics",
+      "filename": "MAM02-mathematics.json",
+      "mutual_exclusions_with": [],
+      "required_companion_majors": [],
+      "has_student_limit": false
+    },
+    {
+      "major_code": "SEA03",
+      "major_name": "Ocean & Atmosphere Science",
+      "department": "oceanography",
+      "filename": "SEA03-ocean-atmosphere-science.json",
+      "mutual_exclusions_with": [],
+      "required_companion_majors": [],
+      "has_student_limit": false
+    },
+    {
+      "major_code": "PHY01",
+      "major_name": "Physics",
+      "department": "physics",
+      "filename": "PHY01-physics.json",
+      "mutual_exclusions_with": [],
+      "required_companion_majors": [],
+      "has_student_limit": false
+    },
+    {
+      "major_code": "BIO13",
+      "major_name": "Quantitative Biology",
+      "department": "biological-sciences",
+      "filename": "BIO13-quantitative-biology.json",
+      "mutual_exclusions_with": [],
+      "required_companion_majors": [],
+      "has_student_limit": false
+    },
+    {
+      "major_code": "STA13",
+      "major_name": "Statistics & Data Science",
+      "department": "statistical-sciences",
+      "filename": "STA13-statistics-data-science.json",
+      "mutual_exclusions_with": [
+        "STA01",
+        "STA02"
+      ],
+      "required_companion_majors": [],
+      "has_student_limit": false
+    }
+  ]
+}

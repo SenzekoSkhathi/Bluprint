@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "SWK1014F",
+  "title": "Introduction to Social Work Practice (Extended)",
+  "department": "social-development",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "TBA",
+  "prerequisites": {
+    "text": "None (extended programme students only).",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [
+    "SWK1013F"
+  ],
+  "outline": "The purpose of this course is to augment and support its co -requisite course: SWK1013F COMMUNITY CONNECTIONS. It aims to improve students' performance by enhancing their grasp of key ideas and concepts, and by developing their mastery of the disciplinary discourse. It provides additional pedagogic enrichment in the form of Plus Tuts, and online support in the form of exercises and consultations. In these tutorials and online forums, students will receive explicit support around the co-requisite course assignments and detailed feedback on their written work.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "80% tutorial attendance plus successful completion of coursework assignments.",
+  "assessment": "Coursework 100% comprising of tutorial assessment, other written work and participation.",
+  "is_humanities_course": true
+}

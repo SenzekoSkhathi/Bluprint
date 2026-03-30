@@ -1,0 +1,32 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AHS4119W",
+  "title": "Occupational Therapy Research and Practice Management",
+  "department": "health-and-rehabilitation-sciences",
+  "credits": 48,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "A/Prof P Gretschel",
+  "prerequisites": {
+    "text": "AHS3113W, AHS3107W, AHS3108W, AHS3078H, SLL1028H and SLL1048H",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "AHS3113W",
+        "AHS3107W",
+        "AHS3108W",
+        "AHS3078H",
+        "SLL1028H",
+        "SLL1048H"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "Objective: This course equips students with the knowledge, skills and attitudes required for learning through research, effective management and leadership, and a sound appreciation of OT philosophy 120 DEPARTMENTS IN THE FACULTY and ethics. At the end of this course, students can demonstrate the knowledge, sk ills and attitudes required for rigorous and ethical OT and research; ar e able to implemen t evidence-based OT interventions; appreciate relation ships between management functi ons of controlling, leading, planning and organising in OT practice contexts; describe organisational development; recognise dynamics within an organisation; and identify stra tegies for working within the limitations imposed by these dynamics. They also under stand the core principles of op erations management, financial management, project management, strategic management and marketing in OT. Course outline: Students enter with a co mpleted research proposal developed in AHS3078 H. They implement and document a research project and acquire skills in writing and presenting findings to professional and stakeholder audiences. Conten t includes organisational devel opment, practice management and service administration. Core func tions include marketing, human re sources, project and financial management and the theory of pl anning, implementing and eval uating health and development programmes across a range of public and private sectors.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "The Division of Occupational Therapy considers all academic activities important and full attendance is encouraged to ensure rich learning, engagement and competence in theory and practice. This course, however, involves a number of academic ac tivities that are designated as ‘compulsory’ in order to ensure that each stu dent has obtained a mini mum level of competence through their in-class engagement prior to sitting the final examination for the course. Participation in these designated activities is monitored and is part of the duly performed requirements of the course. The list of compulsory activities that form part of this course are av ailable in the divisional course handbook. Students who do not meet the course DP requirements will be DPR and will not be granted entry into the final examination. See Rule FBE3. Should a student, for legitimate reasons, be unable to attend or complete any of thes e compulsory activities they must apply for a concession to miss classes (CMC). The CMC must be approved by the course convenor. Rule FGD 13.1, 13.2 and 13.3 in the undergraduate handbook details the process of applying for a CMC. The conditions for approval of the CMC will include tasks that the student will need to complete to ensure that all DP requirements for the course are met in order to be granted entry to the final course examination.",
+  "assessment": "Coursework assessments contribute 50% to the final mark and comprise a group research project and a June test. The fina l examinations contribute 50% to the overall mark and comprise a policy brief and a written paper.",
+  "is_health_sciences_course": true
+}

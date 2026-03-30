@@ -1,0 +1,31 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MAM2041F",
+  "title": "Numerical Analysis (2NA)",
+  "department": "mathematics-applied-mathematics",
+  "credits": 12,
+  "nqf_level": 6,
+  "year_level": "Second Year",
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr M Hillebrand",
+  "prerequisites": {
+    "text": "MAM1031F and MAM1032S or equivalent; MAM1043H and MAM1044H.",
+    "parsed": {
+      "type": "complex",
+      "codes_mentioned": [
+        "MAM1031F",
+        "MAM1032S",
+        "MAM1043H",
+        "MAM1044H"
+      ],
+      "note": "Complex prerequisite logic - see text"
+    }
+  },
+  "corequisites": [],
+  "outline": "Topics include: non-linear equations and rates of convergence; direct and iterative methods for solving linear systems, pivoting strategies, matrix factorisation, norms, conditioning; solutions to initial-value problems including higher-order ordinary differential equations; interpolation and approximation theory, splines, discrete and continuous least squares; numerical differentiation and integration; error analysis and control.",
+  "lecture_times": "Monday - Friday, 3rd period.",
+  "dp_requirements": "A class record of 30% or more.",
+  "assessment": "Class record counts up to 50%; the balance is made up by the final examination.",
+  "is_science_course": true
+}

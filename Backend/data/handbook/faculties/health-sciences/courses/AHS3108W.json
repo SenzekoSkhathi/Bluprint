@@ -1,0 +1,31 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AHS3108W",
+  "title": "Occupational Therapy Theory and Practice in Mental Health",
+  "department": "health-and-rehabilitation-sciences",
+  "credits": 38,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Mr I Abbas and Dr O Silaule",
+  "prerequisites": {
+    "text": "AHS2043W, AHS2002W, HUB2015W, PRY2002W and PSY2013F DEPARTMENTS IN THE FACULTY 113",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "AHS2043W",
+        "AHS2002W",
+        "HUB2015W",
+        "PRY2002W",
+        "PSY2013F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "Objective: By the end of this course, students hav e knowledge about ment al health and the occupational performance implications of mental disorders; can implement an occupational therapy process with individuals and groups of mental health service users; can use and interpret standardised and non-standardised OT assessments; and can apply knowledge, skill and attitudes in client-centred, professional interactions with in dividuals who have a psychiatric illness. They also have skills in altering, adapting and creating opt imal environments that suppor t participation and occupational performance during and following an emotional crisis or mental heal th episode or when structural risks exist that impact adversely on people’s mental health. Course outline: This course focuses on promo ting mental health and well-bein g through human occupation and addresses the occupational implications of specific mental health disorders. Students develop a client- centred occupational therapy plan to assist people with mental health con cerns to participate in everyday life. They select, apply and interpret appropriate assess ment methods for psycho-social performance impairments and occ upational performance enablers and apply change modalities that address psycho-social impairments and promote peopl e’s engagement in valued life tasks and roles. They learn how policies inform mental health service delivery and their role in addressing psychiatric disability.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "The Division of Occupational Therapy considers all academic activities important and full attendance is encouraged to ensure rich learning, engagement and competence in theory and practice. This course, however, involves a number of academic activities that are designated as ‘compulsory’ in order to ensure that each stu dent has obtained a mini mum level of competence through their in-class engagement prior to sitting the final examination for the course. Participation in these designated activities is monitored and is part of the duly performed requirements of the course. The list of compulsory activities that form part of this course are av ailable in the divisional course handbook. Students who do not meet the course DP requirements will be DPR and will not be granted entry into the final examination. See Rule FBE3. Should a student, for legitimate reasons, be unable to attend or complete any of thes e compulsory activities they must apply for a concession to miss classes (CMC). The CMC must be approved by the course convenor. Rule FGD 13.1, 13.2 and 13.3 in the undergraduate handbook details the process of applying for a CMC. The conditions for approval of the CMC will include tasks that the student will need to complete to ensure that all DP requirements for the course are met in order to be granted entry to the final course examination. This course also has a practice learning component. Attendance at ALL on-site practice learning activities and practice learning tutorials is compulsory. Should students, fo r legitimate reasons, be unable to attend on-site practice learning or tutorials they must apply for a CMC and have this ap proved by the course convenor. A maximum allowance of three (3) days of absence in to tal is permitted from practice learning per block (See Rule FBE3). To be eligible to enter the final examina tion the student must obtain a combined average of 50% for the practi ce learning component (two practice learning demonstrations and two practice learning student performance reports).",
+  "assessment": "Coursework assessments contribute 60% an d comprise a range of theoretical and practice-based assessments. The final examinations contribute 40% to the final mark and comprise a written paper, and an objective standardised practical examination.",
+  "is_health_sciences_course": true
+}

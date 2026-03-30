@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MEC4128Z",
+  "title": "Final Year Engineering Project",
+  "department": "mechanical-engineering",
+  "credits": 20,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "Mr E Ismail & Dr SL George",
+  "prerequisites": {
+    "text": "AYOS 4",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "The final -year engineering project requires students to investigate a topic related to engineering beyond that explicitly taught in the curriculum. They are required to undertake an analysis of that topic, drawing on literature and/or data as appropriate, to address the engineering problem/question(s) posed. The outcome of the project will be a deeper understanding of that topic.",
+  "lecture_times": "1 lecture per week",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

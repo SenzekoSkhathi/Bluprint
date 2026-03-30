@@ -1,0 +1,31 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MAM1005H",
+  "title": "Mathematics 1005",
+  "department": "mathematics-applied-mathematics",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": "First Year",
+  "semester": "FY",
+  "semester_code": "H",
+  "convener": "Dr M Geyer",
+  "prerequisites": {
+    "text": "At least 70% in NSC Mathematics. Permission of the Dean or Head of Department required prior to registration. Note: MAM1005H + MAM1006H is equivalent to MAM1031F + MAM1032S in level, credit value and as prerequisite for other courses. The course emphasises strengthening foundational concepts and skills and carefully-paced introduction of new material.",
+    "parsed": {
+      "type": "complex",
+      "codes_mentioned": [
+        "MAM1005H",
+        "MAM1006H",
+        "MAM1031F",
+        "MAM1032S"
+      ],
+      "note": "Complex prerequisite logic - see text"
+    }
+  },
+  "corequisites": [],
+  "outline": "Similar to MAM1031F, this course introduces the fundamental ideas in calculus and related topics. It covers the topics in MAM1031F, including differential calculus of functions of one variable, but extended over the full year.",
+  "lecture_times": "Monday - Friday, 1st or 3rd period (depending on timetable). Workshops: Monday, 6th and 7th period.",
+  "dp_requirements": "Minimum of 35% for class record and very satisfactory attendance at all lectures, workshops and tutorials.",
+  "assessment": "Year mark counts up to 50%; one 2-hour examination written in October/November makes up the balance.",
+  "is_science_course": true
+}

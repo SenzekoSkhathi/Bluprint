@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "APG2019X",
+  "title": "Practical Training I",
+  "department": "architecture-planning-geomatics",
+  "credits": 0,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "varies",
+  "semester_code": "X",
+  "convener": "Associate Professor S Hull",
+  "prerequisites": {
+    "text": "None",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [
+    "APG2040F"
+  ],
+  "outline": "This course aims to consolidate knowledge and skills learnt in the course APG2040F, to equip the student with skills relating to the workplace, which may include: group work, professional communication skills, office procedures, timekeeping, logistical pla nning, organisational skills and administrative procedures. The course includes practical work of not less than 2 weeks (10 working days) duration related to surveying. Specified compulsory tasks are communicated in the course materials and could include control observations and calculations using specified equipment such as DEPARTMENTS IN THE FACULTY AND COURSES OFFERED 78 total stations and GNSS. The student is required to submit a daily work diary, signed daily by both the student and supervisor. Copies of observations and calculations are to be submitted. A signed letter from each employer on a company letterhead must acc ompany the diary. The letter should confirm the practical training duration and the range of tasks undertaken. For students in the surveying stream, this is a prerequisite for APG3017D and APG3027Z.",
+  "lecture_times": "None",
+  "dp_requirements": "Satisfactory completion determined from the following submissions: a daily diary of work signed by student and employer, copies of observations and calculations as specified in the course materials and a signed letter from the employer on a company letterhead.",
+  "assessment": "Pass/Fail determined according to whether the tasks have been duly performed.",
+  "is_engineering_course": true
+}

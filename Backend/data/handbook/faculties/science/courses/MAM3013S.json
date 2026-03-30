@@ -1,0 +1,31 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MAM3013S",
+  "title": "Topics in Algebra (3TA)",
+  "department": "mathematics-applied-mathematics",
+  "credits": 18,
+  "nqf_level": 7,
+  "year_level": "Third Year",
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr J Sanchez-Ortega",
+  "prerequisites": {
+    "text": "MAM2010F, MAM2011F, and two of MAM2012S, MAM2013S and MAM2014S.",
+    "parsed": {
+      "type": "and",
+      "codes": [
+        "MAM2010F",
+        "MAM2011F",
+        "MAM2012S",
+        "MAM2013S",
+        "MAM2014S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course provides an introduction to order and lattice theory. Topics include: lattices and order, congruences, distributivity and Boolean algebras, representation theory, naive set theory, and universal algebra.",
+  "lecture_times": "Tuesdays, Fridays and some Wednesdays in 5th period.",
+  "dp_requirements": null,
+  "assessment": null,
+  "is_science_course": true
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EEE4117F",
+  "title": "Energy Conversion II",
+  "department": "electrical-engineering",
+  "credits": 16,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr S Jayalath",
+  "prerequisites": {
+    "text": "EEE3091F",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "EEE3091F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to develop an advanced understanding of speed control of electrical machines and power electronic circuits. In particular, the analytical models of DC and AC machines are manipulated to achieve speed control of these machines. Furthermore, circuit topologies, switching patterns and waveforms of DC-DC converters and DC-AC inverters are studied.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

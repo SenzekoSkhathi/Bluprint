@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "HUB1020S",
+  "title": "Anatomy and Physiology IB",
+  "department": "human-biology",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Doctor C D’Alton",
+  "prerequisites": {
+    "text": "HUB1016F or HUB1019F",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "HUB1016F",
+        "HUB1019F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course consists of five lectures and one practical/tutorial per week. It focuses on human body systems and includes both the anatomy and physiology of the musculoskeletal system. It includes an introduction to anatomy and structure of the lower limb. It also includes an introduction to the physiology of the muscle, nervous and integumentary systems and further includes an overview of basic principles of embryology. The main aim is to integrate anatomical and physiological knowledge in order to understand the human body as a complete organism.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "A blended approach to ac ademic activities may be used to support and enhance face-to-face learning. Attendance of, and or participation in all learning activities, including lectures, practical sessions, workshops and tutorials, and submissions of as signments by the due date are required for DP. Both the anatomy and physiology components of the course require a subminimum of at least 40% to achieve DP.",
+  "assessment": "The in-course assessments comprise written and on-going practical assessments, which make up 45% of the final course mark. The final written and practical exams make up the remaining 55% of the final course mark. In order to pass HUB1020S, a final course ma rk of 50% is required. However, both the anatomy and physiology components of the cou rse must be passed with a subminimum of at least 45% in the final course mark. In addition, a subminimum of 40% needs to be achieved in the examination.",
+  "is_health_sciences_course": true
+}

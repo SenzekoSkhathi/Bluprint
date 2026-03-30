@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "FIN2026W",
+  "title": "Visual Culture Studies 2",
+  "department": "fine-art",
+  "credits": 36,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "G van der Byl",
+  "prerequisites": {
+    "text": "FIN1001W Studiowork 1",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "FIN1001W"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course is divided into four thematic projects. Within these sessions traditional, exploratory and contemporary approaches to drawing will be presented as well as an introduction to digital technologies. The focus is on developing observational, perceptual and formal sensitivity as well as encouraging creative and conceptual approaches to production through both drawing and digital means. The development of visual research methodology is emphasised.",
+  "lecture_times": "Monday to Friday, 14h00 to 17h00. Studio times: Studio times are from 09h00 to 17h00, with students breaking to attend lectures and tutorials as required by the timetable.",
+  "dp_requirements": "At least 80% attendance of studio classes and critiques, satisfactory completion of all projects.",
+  "assessment": "Mid-year coursework examination 40%, year -end coursework examination 40%. 20% year mark derived from the visual research book.",
+  "is_humanities_course": true
+}

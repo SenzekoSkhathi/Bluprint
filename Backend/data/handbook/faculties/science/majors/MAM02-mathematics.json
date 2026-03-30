@@ -1,0 +1,287 @@
+{
+  "$schema": "handbook-major-v1",
+  "major_code": "MAM02",
+  "major_name": "Mathematics",
+  "department": "mathematics-applied-mathematics",
+  "notes": "Students wishing to progress to Mathematics Honours are strongly recommended to complete MAM3006Z: Project in Mathematics. Third year requires any four courses from the list, including one or both of MAM3010F and MAM3011F.",
+  "mutual_exclusions_with": [],
+  "required_companion_majors": [],
+  "has_student_limit": false,
+  "years": [
+    {
+      "year": 1,
+      "label": "First Year Core Courses",
+      "combinations": [
+        {
+          "combination_id": "MAM02-Y1-A",
+          "description": "MAM1000W + MAM1019H",
+          "courses": [
+            {
+              "code": "MAM1000W",
+              "title": "Mathematics 1000",
+              "credits": 36,
+              "nqf_level": 5
+            },
+            {
+              "code": "MAM1019H",
+              "title": "Fundamentals of Mathematics",
+              "credits": 18,
+              "nqf_level": 5
+            }
+          ]
+        },
+        {
+          "combination_id": "MAM02-Y1-B",
+          "description": "MAM1031F + MAM1032S + MAM1019H",
+          "courses": [
+            {
+              "code": "MAM1031F",
+              "title": "Mathematics 1031",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "MAM1032S",
+              "title": "Mathematics 1032",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "MAM1019H",
+              "title": "Fundamentals of Mathematics",
+              "credits": 18,
+              "nqf_level": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "label": "Second Year Core Courses",
+      "combinations": [
+        {
+          "combination_id": "MAM02-Y2-A",
+          "description": "Fixed second year courses",
+          "courses": [
+            {
+              "code": "MAM2010F",
+              "title": "Advanced Calculus (2AC)",
+              "credits": 12,
+              "nqf_level": 6
+            },
+            {
+              "code": "MAM2011F",
+              "title": "Linear Algebra (2LA)",
+              "credits": 12,
+              "nqf_level": 6
+            },
+            {
+              "code": "MAM2013S",
+              "title": "Introductory Algebra (2IA)",
+              "credits": 12,
+              "nqf_level": 6
+            },
+            {
+              "code": "MAM2014S",
+              "title": "Real Analysis (2RA)",
+              "credits": 12,
+              "nqf_level": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "label": "Third Year Core Courses – choose four (must include MAM3010F and/or MAM3011F)",
+      "combinations": [
+        {
+          "combination_id": "MAM02-Y3-A",
+          "description": "MAM3010F + MAM3011F + MAM3012F + MAM3013S",
+          "courses": [
+            {
+              "code": "MAM3010F",
+              "title": "Metric Spaces (3MS)",
+              "credits": 18,
+              "nqf_level": 7
+            },
+            {
+              "code": "MAM3011F",
+              "title": "Modern Abstract Algebra (3AL)",
+              "credits": 18,
+              "nqf_level": 7
+            },
+            {
+              "code": "MAM3012F",
+              "title": "Discrete Mathematics (3DM)",
+              "credits": 18,
+              "nqf_level": 7
+            },
+            {
+              "code": "MAM3013S",
+              "title": "Topics in Algebra (3TA)",
+              "credits": 18,
+              "nqf_level": 7
+            }
+          ]
+        },
+        {
+          "combination_id": "MAM02-Y3-B",
+          "description": "MAM3010F + MAM3011F + MAM3012F + MAM3014S",
+          "courses": [
+            {
+              "code": "MAM3010F",
+              "title": "Metric Spaces (3MS)",
+              "credits": 18,
+              "nqf_level": 7
+            },
+            {
+              "code": "MAM3011F",
+              "title": "Modern Abstract Algebra (3AL)",
+              "credits": 18,
+              "nqf_level": 7
+            },
+            {
+              "code": "MAM3012F",
+              "title": "Discrete Mathematics (3DM)",
+              "credits": 18,
+              "nqf_level": 7
+            },
+            {
+              "code": "MAM3014S",
+              "title": "Topics in Analysis (3TN)",
+              "credits": 18,
+              "nqf_level": 7
+            }
+          ]
+        },
+        {
+          "combination_id": "MAM02-Y3-C",
+          "description": "MAM3010F + MAM3011F + MAM3012F + MAM3015S",
+          "courses": [
+            {
+              "code": "MAM3010F",
+              "title": "Metric Spaces (3MS)",
+              "credits": 18,
+              "nqf_level": 7
+            },
+            {
+              "code": "MAM3011F",
+              "title": "Modern Abstract Algebra (3AL)",
+              "credits": 18,
+              "nqf_level": 7
+            },
+            {
+              "code": "MAM3012F",
+              "title": "Discrete Mathematics (3DM)",
+              "credits": 18,
+              "nqf_level": 7
+            },
+            {
+              "code": "MAM3015S",
+              "title": "Complex Analysis (3CA)",
+              "credits": 18,
+              "nqf_level": 7
+            }
+          ]
+        },
+        {
+          "combination_id": "MAM02-Y3-D",
+          "description": "MAM3010F + MAM3011F + MAM3013S + MAM3014S",
+          "courses": [
+            {
+              "code": "MAM3010F",
+              "title": "Metric Spaces (3MS)",
+              "credits": 18,
+              "nqf_level": 7
+            },
+            {
+              "code": "MAM3011F",
+              "title": "Modern Abstract Algebra (3AL)",
+              "credits": 18,
+              "nqf_level": 7
+            },
+            {
+              "code": "MAM3013S",
+              "title": "Topics in Algebra (3TA)",
+              "credits": 18,
+              "nqf_level": 7
+            },
+            {
+              "code": "MAM3014S",
+              "title": "Topics in Analysis (3TN)",
+              "credits": 18,
+              "nqf_level": 7
+            }
+          ]
+        },
+        {
+          "combination_id": "MAM02-Y3-E",
+          "description": "MAM3010F + MAM3011F + MAM3013S + MAM3015S",
+          "courses": [
+            {
+              "code": "MAM3010F",
+              "title": "Metric Spaces (3MS)",
+              "credits": 18,
+              "nqf_level": 7
+            },
+            {
+              "code": "MAM3011F",
+              "title": "Modern Abstract Algebra (3AL)",
+              "credits": 18,
+              "nqf_level": 7
+            },
+            {
+              "code": "MAM3013S",
+              "title": "Topics in Algebra (3TA)",
+              "credits": 18,
+              "nqf_level": 7
+            },
+            {
+              "code": "MAM3015S",
+              "title": "Complex Analysis (3CA)",
+              "credits": 18,
+              "nqf_level": 7
+            }
+          ]
+        },
+        {
+          "combination_id": "MAM02-Y3-F",
+          "description": "MAM3010F + MAM3011F + MAM3014S + MAM3015S",
+          "courses": [
+            {
+              "code": "MAM3010F",
+              "title": "Metric Spaces (3MS)",
+              "credits": 18,
+              "nqf_level": 7
+            },
+            {
+              "code": "MAM3011F",
+              "title": "Modern Abstract Algebra (3AL)",
+              "credits": 18,
+              "nqf_level": 7
+            },
+            {
+              "code": "MAM3014S",
+              "title": "Topics in Analysis (3TN)",
+              "credits": 18,
+              "nqf_level": 7
+            },
+            {
+              "code": "MAM3015S",
+              "title": "Complex Analysis (3CA)",
+              "credits": 18,
+              "nqf_level": 7
+            }
+          ]
+        },
+        {
+          "combination_id": "MAM02-Y3-G",
+          "description": "MAM3010F only (+ any 3 others)",
+          "note": "MAM3010F required plus any three of: MAM3011F, MAM3012F, MAM3013S, MAM3014S, MAM3015S — representative single-MAM3010F combinations listed above; MAM3011F-only combinations follow similar pattern"
+        }
+      ]
+    }
+  ]
+}

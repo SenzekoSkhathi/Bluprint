@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AGE3006H",
+  "title": "Directed Reading & Research",
+  "department": "archaeology",
+  "credits": 36,
+  "nqf_level": 7,
+  "year_level": "Third Year",
+  "semester": "FY",
+  "semester_code": "H",
+  "convener": null,
+  "prerequisites": {
+    "text": "Only for students specialising in Archaeology, with permission of the Head of Department.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "A flexible intensive study course in a specific area customised to the needs of individual students.",
+  "lecture_times": "By arrangement",
+  "dp_requirements": "Completion of assignments.",
+  "assessment": "Assignments count 20%; a long paper counts 40%; one 3-hour examination in November counts 40%.",
+  "is_science_course": true
+}

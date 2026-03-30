@@ -1,0 +1,31 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "BUS3004S",
+  "title": "Business Administration III",
+  "department": "management-studies",
+  "credits": 24,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "N Veldsman",
+  "prerequisites": {
+    "text": "This course is restricted to students in their third year of study or higher. The course is intended for students majoring in Organisational Psychology, but students from other streams/ faculties may choose this course as an elective.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [
+    "MAM1004S",
+    "MAM1005H",
+    "MAM1004F",
+    "MAM1031F"
+  ],
+  "outline": "Objective: To introduce students to the language and methods of the area of Discrete Mathematics, and to show students how discrete mathematics can be used in modern computer science (with the focus on algorithmic applications). Course outline: This course will equip students with an understanding of how to conduct quantitative and qualitative data analysis to inform Organisational Psychology practice. Students will gain skills to critically assess and empirically analyse research findings relati ng to the management of people in organisations. Additionally, students will be able to apply this learning to make effective decisions in a business/organisational environment.",
+  "lecture_times": "Monday - Friday, 1st period",
+  "dp_requirements": "None.",
+  "assessment": "Coursework (assignments and tests) 60%, Final examination 40%.",
+  "is_humanities_course": false,
+  "offered_by_faculty": "commerce"
+}

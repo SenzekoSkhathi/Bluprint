@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AST1000S",
+  "title": "Introduction to Astronomy",
+  "department": "astronomy",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": "First Year",
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Associate Professor S-L Blyth",
+  "prerequisites": {
+    "text": "None",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "The course introduces students to the subject of Astronomy and our place in the universe from the small scales of the Earth-Sun-Moon system to the large scales of distant galaxies. It aims to provide insight into how we study astrophysical objects via EM radiation and telescopes (theory) as well as providing a high-level overview of objects in the universe, moving outwards from our solar system, to stars and stellar remnants, our galaxy and others, dark matter and cosmology, and the study of the universe at the largest scales. The course is open to all interested students as well as providing a solid introduction to those wishing to continue in astrophysics.",
+  "lecture_times": "Monday - Friday, 5th period. Practicals: One compulsory practical or tutorial per week, Wednesday, 14h00–17h00.",
+  "dp_requirements": "Satisfactory attendance at lectures and compulsory attendance at Wednesday afternoon sessions and submission of bi-weekly problem sets and poster project; class record of at least 35%.",
+  "assessment": "Class record: 50%; final examination 2 hours: 50%. Sub-minimum: 40% for final examination.",
+  "is_science_course": true
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MDN3009W",
+  "title": "Professional Communication & Project Management for Cosmetic Scientists",
+  "department": "medicine",
+  "credits": 15,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Dr N Sishi",
+  "prerequisites": {
+    "text": "(a) B Sc or equivalent with Ch emistry 3, or(b) A degree with Biochemistry 3 (with at least Chemistry 2 to be eligible for admission)",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "The aim of the course is to teach students appropriate information re trieval and processing skills as well as to equip them with the ab ility to present data and commun icate in an appropriate academic and professional manner by using a range of genres appropriate to the context of cosmetic formulation science. At the conclusion of this course, students will demonstrate the ability to use critical analysis and synthesis to independently ev aluate quantitative and qualitativ e data to engage with current research and scholarly or professi onal literature in the field to manage a project from conception to implementation to communicate and present data; and to work as part of a real-life multidisciplinary team.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "None",
+  "assessment": "The course mark contributes 100% to the final mark. The course mark includes tests (multiple choice questions, open-end ed questions, case-studies); assignments (written report or oral presentation) on topical issues; and practical reports.",
+  "is_health_sciences_course": true
+}

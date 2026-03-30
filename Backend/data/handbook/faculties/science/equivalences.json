@@ -1,0 +1,93 @@
+{
+  "$schema": "handbook-equivalences-v1",
+  "faculty": "science",
+  "year": 2026,
+  "handbook_page": 19,
+  "note": "Courses deemed by the Faculty as equivalent can be substituted as appropriate.",
+  "equivalences": [
+    {
+      "code_a": "BIO1000H",
+      "code_b": "BIO1000F",
+      "type": "full",
+      "conditions": null
+    },
+    {
+      "code_a": "CEM1009H",
+      "code_b": "CEM1000W",
+      "type": "combined",
+      "conditions": "CEM1009H + CEM1010H is equivalent to CEM1000W"
+    },
+    {
+      "code_a": "CSC1010H",
+      "code_b": ["CSC1015F", "CSC1015S"],
+      "type": "full",
+      "conditions": "CSC1010H is equivalent to either CSC1015F or CSC1015S"
+    },
+    {
+      "code_a": "CSC1011H",
+      "code_b": "CSC1016S",
+      "type": "full",
+      "conditions": null
+    },
+    {
+      "code_a": "MAM1004F",
+      "code_b": "MAM1031F",
+      "type": "conditional",
+      "conditions": "MAM1004F/S passed at 65% is equivalent to MAM1031F"
+    },
+    {
+      "code_a": "MAM1005H",
+      "code_b": "MAM1031F",
+      "type": "combined",
+      "conditions": "MAM1005H is equivalent to MAM1031/3F"
+    },
+    {
+      "code_a": "MAM1006H",
+      "code_b": "MAM1032S",
+      "type": "combined",
+      "conditions": "MAM1006H is equivalent to MAM1032/4S"
+    },
+    {
+      "code_a": "PHY1023H",
+      "code_b": "PHY1031F",
+      "type": "full",
+      "conditions": null
+    },
+    {
+      "code_a": "MAM1000W",
+      "code_b": ["MAM1031F", "MAM1032S"],
+      "type": "split",
+      "conditions": "MAM1000W is no longer offered. It was split into MAM1031F (S1) and MAM1032S (S2). Both together are equivalent to the former MAM1000W."
+    },
+    {
+      "code_a": "MAM2000W",
+      "code_b": ["MAM2010F", "MAM2011F", "MAM2013S", "MAM2014S"],
+      "type": "packaging",
+      "conditions": "MAM2000W is the combined full-year packaging of the four second-year pure mathematics semester courses."
+    },
+    {
+      "code_a": "MAM2046W",
+      "code_b": ["MAM2040F", "MAM2041F", "MAM2042S", "MAM2043S"],
+      "type": "packaging",
+      "conditions": "MAM2046W is the combined full-year packaging of the four second-year applied mathematics semester courses."
+    },
+    {
+      "code_a": "MAM3000W",
+      "code_b": ["MAM3010F", "MAM3011F", "MAM3012F", "MAM3013S", "MAM3014S", "MAM3015F"],
+      "type": "packaging",
+      "conditions": "MAM3000W is the combined full-year packaging of third-year pure mathematics semester courses (any four, including at least one of MAM3010F/S and MAM3011F/S)."
+    },
+    {
+      "code_a": "MAM3040W",
+      "code_b": ["MAM3042F", "MAM3043F", "MAM3044F", "MAM3045F", "MAM3046F"],
+      "type": "packaging",
+      "conditions": "MAM3040W is the combined full-year packaging of third-year applied mathematics semester courses (any four of the five)."
+    },
+    {
+      "code_a": "EEE2049W",
+      "code_b": ["EEE2041F", "EEE2042S"],
+      "type": "packaging",
+      "conditions": "EEE2049W is the combined full-year packaging of EEE2041F and EEE2042S."
+    }
+  ]
+}

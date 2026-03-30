@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "STA5068Z",
+  "title": "Machine Learning",
+  "department": "statistical-sciences",
+  "credits": 15,
+  "nqf_level": 9,
+  "year_level": "Postgraduate (Master's)",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "Dr E Pienaar",
+  "prerequisites": {
+    "text": "Acceptance into Master's programs in Statistics & Data Science, Data Science or Biostatistics, and/or statistical and computing background deemed sufficient by the Head of Department.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "This course serves as an overview of the field of Machine Learning. Topics covered include the fundamentals of the Machine Learning Paradigm, the Vapnik-Chervonenkis Inequality, the Bias-Variance Tradeoff, Regularization, Cross-Validation, Linear and Nonlinear Dimension Reduction, Support Vector Machines, Neural Networks, Convolutional Neural Networks, and other contemporary topics in Machine Learning.",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "40% for assignment and project component.",
+  "assessment": "Assignments making up the course mark, and two exams — one written and one computer-based. A subminimum of 40% is required for each component.",
+  "is_science_course": true
+}

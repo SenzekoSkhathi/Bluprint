@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CON1025S",
+  "title": "Property and Technology",
+  "department": "construction-economics-and-management",
+  "credits": 14,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "TBA",
+  "prerequisites": {
+    "text": "Refer to the programme and departmental sections in the 2026 EBE Faculty Handbook.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course introduces intelligent buildings (sustainability and energy use), building information modelling (BIM), smart cities (data and technological solutions for urban management), the sharing economy (shared workspaces, short -term housing rental, tra nsport), property fintech (research and information platforms, sales and leasing platforms, crowdfunding and equity raising platforms, debt and mortgage platforms), blockchain and artificial intelligence, virtual property markets, the digital divide, and technological innovations in Africa.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

@@ -1,0 +1,31 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "FTX2020F",
+  "title": "Business Finance",
+  "department": "finance-and-tax",
+  "credits": 18,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "N Jwara",
+  "prerequisites": {
+    "text": "A pass in MAM1010F/S (or an equivalent course), DP for STA1000F/S (or an equivalent course), and a prior pass or concurrent registration in ACC1021F/ACC1006F.",
+    "parsed": {
+      "type": "prerequisite",
+      "codes": [
+        "MAM1010F",
+        "STA1000S"
+      ],
+      "concurrent": [
+        "ACC1021F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "Business Finance introduces the fundamental concepts of corporate finance. The course begins with essential tools and techniques for financial management and progresses to the principles guiding investment and financing decisions in publicly listed corporations. Additionally, the course incorporates an entrepreneurial focus, equipping prospective entrepreneurs with some of the key quantitative decision-making tools for a successful business venture. NOTE: This course is NOT for students intending to major in Finance in a Commerce degree and is not a substitute for FTX2024F/S as a course entry requirement for further studies in Finance.",
+  "lecture_times": "Tuesday, Wednesday, Thursday and Friday: 15h00 - 15h45.",
+  "dp_requirements": "Minimum 40% for coursework. This includes completion of all required submissions, tests and attendance at 9 out of 10 tutorials.",
+  "assessment": "Students will be required to write two tests during the semester, each with a weight of 20%, and a final exam of 60%.",
+  "is_commerce_course": true
+}

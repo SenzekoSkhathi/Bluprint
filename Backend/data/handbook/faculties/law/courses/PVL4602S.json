@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PVL4602S",
+  "title": "Civil Justice Reform",
+  "department": "private-law",
+  "credits": 9,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Prof M Paleker",
+  "prerequisites": {
+    "text": "All Preliminary and Intermediate Level courses to have been completed. Limited to 25 students.",
+    "parsed": {
+      "type": "level_completion",
+      "levels_required": [
+        "preliminary",
+        "intermediate"
+      ],
+      "note": "Limited to 25 students"
+    }
+  },
+  "corequisites": [],
+  "outline": "The aim of the course is to consider contemporary debates in civil justice and civil justice reform and to engage with the different methods of civil dispute resolution. The course will consider the theoretical and philosophical debates around access to civil justice, with reference to s 34 of the Constitution. There will be an analysis of the strengths or weaknesses of the South African civil justice system, and how foreign jurisdictions have dealt with challenges in civil justice. Different litigation models will be studied to understand the similarities and differences in adjudication styles between civil law and common law systems.",
+  "lecture_times": "Two lectures per week. Limited to 25 students.",
+  "dp_requirements": "None",
+  "assessment": "Coursework 40%, Research Paper (5000 words) 60%.",
+  "is_law_course": true
+}

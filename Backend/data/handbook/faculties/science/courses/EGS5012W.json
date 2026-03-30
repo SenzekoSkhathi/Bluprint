@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EGS5012W",
+  "title": "Climate Change and Predictability Coursework",
+  "department": "environmental-geographical-science",
+  "credits": 0,
+  "nqf_level": 9,
+  "year_level": "Postgraduate – Masters",
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Dr M Norton",
+  "prerequisites": {
+    "text": "A relevant Honours degree (or equivalent). Students with backgrounds in scientific, planning, engineering, economic, educational, social and legal disciplines are encouraged to apply.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "This full-time taught Masters course (MSc or MPhil) is offered over 13 months beginning in January. It provides interdisciplinary training in climate change and sustainable development, with a focus on issues relevant to African development. The curriculum comprises two compulsory core courses — EGS5031F (Introduction to Climate Change & Sustainable Development) and EGS5032F/S (Climate Change Adaptation & Mitigation) — plus at least two elective courses from a range of modules allowing students to explore new areas or engage climate and development through existing disciplinary backgrounds.",
+  "lecture_times": null,
+  "dp_requirements": null,
+  "assessment": "Students must pass all coursework with a sub-minimum of 33% for each core or elective course module; an aggregate coursework mark of 50% is required. The minor dissertation component counts 50% of the degree.",
+  "is_science_course": true
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MDN4001W",
+  "title": "Medicine: Ambulatory Care",
+  "department": "medicine",
+  "credits": 20,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Dr R Gill (AmbuCare and overall convenor), Dr H Zaayman (Acute Care), Dr S Crawford- Browne (Primary Health Care), Dr R Krause (Palliative Care)",
+  "prerequisites": {
+    "text": "Successful completion of all co urses within the preceding academic year of study (MBChB year 3)",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "Medicine in the fourth year is composed of two separate courses: MDN4011W, an 8-week block of Ward Care and MDN4001W, a 4-week block of Ambulatory Care. The aim of these two courses is to build clinical skills and diagnostic reasoning. Course objectives are to build a foundation of knowledge and clinical skills that will be added to in further clinical years. Ambulatory Care is a 4-week course with two rotations. Two weeks are spent in Acute Care wher e students complete Emergency Department shifts, with clerking of acutely ill patients and attendance of Skills Laboratory simulation teaching. The remain ing two weeks are spent in AmbuCare (R apid Access Clinic) in the Medical Outpatients Department at Groot e Schuur Hospital with exposu re to the investigation and management of stable medical patients in an outpatient setting. Ambucare is based largely on PACK (Practical Approach to Care Kit) and Primary Health Care (PHC) princi ples and students are encouraged to integrate these principles into the management of the outpatients they assess. Students DEPARTMENTS IN THE FACULTY 165 also receive tutorials in Primary Health Care (P HC) and Palliative Care (P C) and are required to submit an Evidence-Based Medicine (EBM) assign ment. There are also two afternoon seminars covering ECG and CXR teaching. Assessment of this block is done through an MCQ exam covering Acute Care, Ambucare, and Palliative Care questions, as well as PHC and EBM assignments and an online PACK module and exam, in addition to a workplace assessment for AmbuCare.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "(i) Acute Care: attendance of Acute Care shifts (one of which must be a triage shift) and completion of form ative miniCEX cases, GSH Skills Lab sessions and all online SDL learning tasks as stipulated in the course manu al. (ii) Ambulatory Care : attendance of Medical Outpatient clinics with completion of differential diagnosis charts and mind-maps as stipulated in the course manual. (iii) attendance of two Palliative Care tutorials (iv) attendance of 1 Diabetic Clinic tutorial (v) completion and presentation of an Evidence-Based Medicine assignment by the due date as stipulated in the course manual. (vi) attendance of two PHC tutorials and completion of a PHC task as stipulated in the course manual. (viii) Attendance of PACK tutorials.",
+  "assessment": "(i) Theory Assessment (90%): MCQ exam from Acute Care, Ambucare and Palliative Care (65%); EBM task (10%), PHC task (10%), and PACK MCQ (5%). (ii) Workplace assessment (10%): Professionalism, Knowl edge, and Clinical Skill (PKC) asse ssment from Am buCare (10%). miniCEX assessments are only formative in nature a nd do not contribute to the overall course mark. Subminimum requirements: (i) an overall pass mark of ≥ 50 % for Ambulatory Care, (ii) MCQ pass mark of ≥ 50%, (iii) PHC must be passed with a score of ≥ 50%, (iv) PACK post-test MCQ must be passed with a score of ≥ 50%. The course convenor may reco mmend to the Faculty Examination Committee that a student be of fered a supplementary examination if they achieve a mark of ≥ 45 % but < 50 % for any of the subminimum components. If a student fails to score at least 45 % for any of the subminimum requirements, scor es < 50 % overall for the course or if the Faculty Examination Committee does not grant the supplementary examination, the student will be expected to repeat the 4-week course.",
+  "is_health_sciences_course": true
+}

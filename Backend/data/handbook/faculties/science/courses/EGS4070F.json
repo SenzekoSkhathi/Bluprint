@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EGS4070F",
+  "title": "Reading the Sea: Interdisciplinary Approaches to Coastal Studies",
+  "department": "environmental-geographical-science",
+  "credits": 30,
+  "nqf_level": 8,
+  "year_level": "Postgraduate – Honours elective",
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr M Norton",
+  "prerequisites": {
+    "text": "Acceptance for Honours or Master's specialising in EGS.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "Drawing on South Africa's rich history of marine social science, the course introduces students to the study of the ocean from an interdisciplinary perspective. Students are familiarised with the main physical and biological features of South Africa's coastline, and investigate the diversity of ways in which coastal relations, livelihoods, communities and industries are operated, maintained and regulated through policy, practice and protest. The course exposes students to an array of marine social science approaches. Each week, students are required to read two readings, with a designated rapporteur leading class discussions. One guest lecture from researchers and/or practitioners is held every 3–4 weeks.",
+  "lecture_times": null,
+  "dp_requirements": "80% attendance for class sessions. Final paper submitted, rapporteur session completed, and 2 out of 3 reflection pieces submitted.",
+  "assessment": "Reading journal 15%; class discussion 10%; reflection piece 15%; final essay 20%; exam 40%.",
+  "is_science_course": true
+}

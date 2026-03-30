@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "INF2009F",
+  "title": "Systems Analysis",
+  "department": "information-systems",
+  "credits": 18,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr A Pekane",
+  "prerequisites": {
+    "text": "INF2003F or equivalent or INF2003F as co-requisite. INF2009F is a half course designed for students intending to major in Information Systems for the BCom, BBusSci or BSc degrees.",
+    "parsed": {
+      "type": "prerequisite",
+      "codes": [
+        "INF2003F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course explores the role of the Systems Analyst in business, different approaches used in the development of information systems, and the various tools and techniques used in the specification of system requirements. It is intended to provide students with an in-depth knowledge of the systems development process, with a particular emphasis on the analysis stage of the life cycle. There is a strong practical component to the course, where students will be taught to understand and use the common tools of object-oriented systems analysis, with a particular focus on UML models.",
+  "lecture_times": "Monday to Wednesday, 4th period, Thursday: Practical workshops: Thursday 3rd & 4th periods OR 4th & 5th OR 8th & 9th.",
+  "dp_requirements": "Submitted at least 80% of the coursework (80% of individual deliverables and 80% of group work). Subminimum of 45% course year-mark.",
+  "assessment": "The final grade is derived from results of the Coursework (Formative Assessment: 40% + Summative Assessment 20%) and the Final Examination (40%). Sub-minimum of 40% for the final examination.",
+  "is_commerce_course": true
+}

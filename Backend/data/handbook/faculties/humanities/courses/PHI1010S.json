@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PHI1010S",
+  "title": "Ethics and Epistemology",
+  "department": "philosophy",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr O Mogomotsi",
+  "prerequisites": {
+    "text": "None",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course introduces students to moral philosophy and to the questions it asks. These may include: What makes an action right? Is morality relative (to one's own views or to one's culture) or is it objective? What is the relationship between religion and ethics? What is it to be a good person?",
+  "lecture_times": "Monday, Tuesday, Wednesday, 5th period.",
+  "dp_requirements": "Regular attendance at lectures and tutorials; completion of all tests, submission of all essays and assignments by due dates, and an average mark of at least 35% for the coursework.",
+  "assessment": "Coursework counts 40%; one 3-hour examination in October/November counts 60%.",
+  "is_humanities_course": true
+}

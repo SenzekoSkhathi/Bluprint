@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CSC5037W",
+  "title": "Artificial Intelligence Minor Dissertation",
+  "department": "computer-science",
+  "credits": 90,
+  "nqf_level": 9,
+  "year_level": "Postgraduate (Master's by coursework and minor dissertation)",
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Professor J Gain",
+  "prerequisites": {
+    "text": "Completion of all coursework, or permission of the convener.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "Upon successful completion of the coursework component, students will be required to register for this minor dissertation component in Artificial Intelligence and complete a suitable research project on a topic within the broad area of Artificial Intelligence under supervision of an appropriate computer science academic staff member. The research component will expose the student to research methodology, experimental design, data analysis techniques, and dissertation writing skills.",
+  "lecture_times": "Not applicable.",
+  "dp_requirements": "Not specified.",
+  "assessment": "The minor dissertation must be presented for formal examination. The coursework and minor dissertation each count 50% towards the degree; each must be passed separately for the award of the degree.",
+  "is_science_course": true
+}

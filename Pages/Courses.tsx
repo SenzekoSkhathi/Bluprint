@@ -1,4 +1,5 @@
 import MainLayout from "@/components/main-layout";
+import { getPrimaryFacultySlug } from "@/constants/faculty";
 import { theme } from "@/constants/theme";
 import {
     academicRepository,
@@ -7,6 +8,7 @@ import {
 } from "@/services/academic-repository";
 import {
     getBackendSetupHint,
+    getHandbookCourses,
     getScienceCourses,
     type ScienceCourseCatalogEntry,
 } from "@/services/backend-api";
@@ -228,6 +230,7 @@ function repairCourseTitles(
 }
 
 export default function Courses({ onCourseSelect }: CoursesProps) {
+  const activeFacultySlug = getPrimaryFacultySlug();
   const [catalog, setCatalog] = useState<Course[]>([]);
   const [activeGroup, setActiveGroup] = useState<CourseGroup>("Year 1");
   const [catalogRunId, setCatalogRunId] = useState<string | null>(null);
@@ -260,13 +263,25 @@ export default function Courses({ onCourseSelect }: CoursesProps) {
 
     const loadCoursesWithRetry = async () => {
       try {
-        return await withTimeout(getScienceCourses(), COURSE_LOAD_TIMEOUT_MS);
+        return await withTimeout(
+          getHandbookCourses({ faculty_slug: activeFacultySlug }),
+          COURSE_LOAD_TIMEOUT_MS,
+        );
       } catch (firstError) {
         // Retry once for transient cold-start/network hiccups.
         await sleep(COURSE_LOAD_RETRY_DELAY_MS);
         try {
-          return await withTimeout(getScienceCourses(), COURSE_LOAD_TIMEOUT_MS);
+          return await withTimeout(
+            getHandbookCourses({ faculty_slug: activeFacultySlug }),
+            COURSE_LOAD_TIMEOUT_MS,
+          );
         } catch {
+          if (activeFacultySlug === "science") {
+            return await withTimeout(
+              getScienceCourses(),
+              COURSE_LOAD_TIMEOUT_MS,
+            );
+          }
           throw firstError;
         }
       }
@@ -377,7 +392,7 @@ export default function Courses({ onCourseSelect }: CoursesProps) {
     return () => {
       isMounted = false;
     };
-  }, []);
+  }, [activeFacultySlug]);
 
   const visibleCourses = useMemo(
     () =>

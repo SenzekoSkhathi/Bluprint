@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "POL2038F",
+  "title": "Political Studies IIA",
+  "department": "political-studies",
+  "credits": 24,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Z Lategan",
+  "prerequisites": {
+    "text": "POL1004F and POL1005S or with special permission from the Head of Department.",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "POL1004F",
+        "POL1005S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course introduces students to the major concepts, approaches, themes and topics of inquiry in the field of comparative politics. The course is designed to relate specific theories and relevant case studies and/or empirical evidence. The first part of the course focuses on the broad theme of comparative government and the second on violent processes of political change.",
+  "lecture_times": "Monday to Thursday 6th period.",
+  "dp_requirements": "Tutorial attendance is compulsory and students who attend fewer than 85% of the tutorials will not be allowed to write the final examination. In addition, completion of all written assignments, essays and tests are a requirement for a DP. Should students f ail to hand in written assignments by due date, they will be penalised according to the grading formula of the Department. All required work for DP purposes MUST be submitted by the last day of the course.",
+  "assessment": "Coursework counts 50%; final two-hour examination counts 50%.",
+  "is_humanities_course": true
+}

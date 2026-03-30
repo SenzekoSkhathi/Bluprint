@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "ASL1300F",
+  "title": "Introduction to Language Studies",
+  "department": "african-languages-and-literatures",
+  "credits": 15,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "TBA",
+  "prerequisites": {
+    "text": "None",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course provides an introduction to the main branches of Linguistics. On completion of the course students would have covered topics such as: phonetics (the production and classification of speech sounds, the International Phonetic Alphabet, suprasegme ntals); phonology (how speech sounds are organised in language; the phoneme -allophone distinction); morphology (form –meaning pairs; morphemes and word -formation; syntax (the rules that govern the phrase, structures of language; elements of generative gramm ar); and semantics relations, semantic features; an introduction to psychological and neurobiological aspects of how humans acquire language.",
+  "lecture_times": "3rd period, Monday – Wednesday.",
+  "dp_requirements": "None.",
+  "assessment": "Continuous assessment (essays, projects, tests, etc.) counts 100%.",
+  "is_humanities_course": true
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "INF5007Z",
+  "title": "Social Issues and Professional Practice",
+  "department": "computer-science",
+  "credits": 12,
+  "nqf_level": 9,
+  "year_level": "Postgraduate (Master's specialising in IT)",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "T Chimboza",
+  "prerequisites": {
+    "text": "A non-IT honours degree, or equivalent.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "Course objectives: 1) Identify important social and human factor issues that impact professional behaviour linked to Cyber Security. 2) Research and analyse material and real-world situations that relate to social and human factor issues linked to Cyber Security. 3) Discuss and report the outcomes of investigations. 4) Provide advice and recommendations about how to tackle social and human factor issues linked to Cyber Security.",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "In order to be permitted to sit the final exam a minimum average of 40% on the coursework must be obtained.",
+  "assessment": "2 Assignments (50%) and an Exam (50%).",
+  "is_science_course": false,
+  "offered_by_faculty": "commerce"
+}

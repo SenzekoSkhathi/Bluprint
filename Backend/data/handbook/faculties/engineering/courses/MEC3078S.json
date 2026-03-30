@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MEC3078S",
+  "title": "Mechanics of Machines",
+  "department": "mechanical-engineering",
+  "credits": 8,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Professor TH Becker",
+  "prerequisites": {
+    "text": "MEC2048S (DP), MEC2047F/S",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "MEC2048S",
+        "MEC2047F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to teach students to analyse and understand the mechanics of rotating machine elements. It introduces mechanics of machines, with a particular focus on rotating elements. This includes the kinematic analysis of gear trains, energy storage in flywheels, rotating unbalance and gyroscopes. Students will learn to analyse the dynamic behaviour of common engineering components, for example gear trains, rotating machinery, flywheels and gyroscopes.",
+  "lecture_times": "2 lectures per week.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

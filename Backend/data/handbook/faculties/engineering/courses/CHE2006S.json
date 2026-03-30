@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CHE2006S",
+  "title": "Introduction to Biotechnology",
+  "department": "chemical-engineering",
+  "credits": 24,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Mr I Hajee",
+  "prerequisites": {
+    "text": "BIO1000F, CHE1006F, CHE1007S",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "BIO1000F",
+        "CHE1006F",
+        "CHE1007S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The course aims to introduce engineers to the fundamentals of biotechnology, pertinent to bioprocess engineering. This is achieved by building an understanding of the key concepts and elements of biotechnology, including molecular components, information t ransfer and metabolism; the basic DEPARTMENTS IN THE FACULTY AND COURSES OFFERED 96 concepts of applied microbiology, including microbial cell structure, microbial classification, cell division and nutritional requirements; and the basic concepts of molecular biology and genetic engineering, especially recombinant DNA technology. Using th ese, a working knowledge of microbial growth kinetics, enzymology and bioenergetics is built. Further, a working knowledge of mixed microbial culture dynamics is established. Skills are developed to enable quantitative descriptions of microbial transformat ions. Further a practical working knowledge of enzymology, microbial growth, kinetic studies and aseptic transfer are developed.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

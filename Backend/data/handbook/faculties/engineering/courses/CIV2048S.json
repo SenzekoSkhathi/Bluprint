@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CIV2048S",
+  "title": "Hydraulics I",
+  "department": "civil-engineering",
+  "credits": 15,
+  "nqf_level": 7,
+  "year_level": 2,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "T Mofokeng",
+  "prerequisites": {
+    "text": "PHY1012F (DP) and MAM1020F (DP) and CIV1011S (DP)",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "PHY1012F",
+        "MAM1020F",
+        "CIV1011S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to introduce fluid mechanics and hydraulic engineering. The topic includes fluid mechanics: fluids and fluid properties; pressure; pressure forces; basics of fluid flow; conservation of mass; conservation of energy; conservation of momentum. Hydraulics: laminar flow; turbulent flow- Reynolds; head losses in pipelines; fittings; design of pump systems; pump selection.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

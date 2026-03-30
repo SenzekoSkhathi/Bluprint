@@ -1,0 +1,30 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CHE3008S",
+  "title": "Chemical Engineering Project Management & Unit Operation Design",
+  "department": "chemical-engineering",
+  "credits": 20,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr TG Gambu",
+  "prerequisites": {
+    "text": "CHE3006F, MAM2083F/S",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "CHE3006F",
+        "MAM2083F"
+      ]
+    }
+  },
+  "corequisites": [
+    "CHE3007S"
+  ],
+  "outline": "This course aims to develop the basic concepts of project management and then requires application in a dedicated design project around a chemical process unit. Special focus is on the design of reactor and separation units and how they integrate within a process unit. The project entails 4 stages: (1) conceptual design, flowsheet development, mass and energy balances, (2) reactor design, (3) separator design, (4) process integration, optimisation and economics.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

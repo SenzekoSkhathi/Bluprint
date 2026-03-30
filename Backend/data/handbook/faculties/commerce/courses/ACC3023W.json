@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "ACC3023W",
+  "title": "Management Accounting II",
+  "department": "accounting",
+  "credits": 26,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "C de Jesus",
+  "prerequisites": {
+    "text": "ACC2022H; ACC1011S; and FTX2024 or FTX2020.",
+    "parsed": {
+      "type": "prerequisite",
+      "codes": [
+        "ACC2022H",
+        "ACC1011S",
+        "FTX2024F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "Management Accounting II focuses on the core pillars of Costing, Decision Making, and Planning and Control. The principles build on the foundations of Management Accounting I and expand on these principles further. The course is designed to enable students to go on with professional courses such as those offered by CIMA, SAICA, and ACCA.",
+  "lecture_times": "Tuesday and Wednesday 08:00; Repeat Lectures 09:00.",
+  "dp_requirements": "Attendance at and submission of a minimum of 75% of tutorials AND a weighted average of 40% for class tests AND a weighted average of 40% for assignments.",
+  "assessment": "Coursework 40%; Exam 60%.",
+  "is_commerce_course": true
+}

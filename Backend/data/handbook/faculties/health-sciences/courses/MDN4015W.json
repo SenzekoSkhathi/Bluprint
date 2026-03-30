@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MDN4015W",
+  "title": "Pharmacology and Applied Therapeutics",
+  "department": "medicine",
+  "credits": 20,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Dr T Isaacs",
+  "prerequisites": {
+    "text": "Successful completion of all co urses within the preceding academic year.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "Objective: The objective of training in pharmacology and therapeutics is to enable students to develop the skills required to pr escribe essential medicines rationa lly in the management of common conditions. Course outline: The 5 th year course is integrated through rotations in mixed specialties (dermatology, ENT, neurology and neurosurgery), and builds on the foundation of Pharmacology and Applied Therapeutics learnt in 4th year. The course focuses on applying understanding of pharmacokinetics and pharmacodynamics to the management of com mon conditions. It aims to equip st udents with the skills for critically appraising evidence and judging the risk-benefit profiles of available treatment options, and promotes rational drug prescribing to ensure optimal patient care.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "None.",
+  "assessment": "The final end of block mark includes the in-course assess ments (30%), and an end of block examination (70%).",
+  "is_health_sciences_course": true
+}

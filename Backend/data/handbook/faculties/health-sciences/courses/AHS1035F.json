@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AHS1035F",
+  "title": "Human Occupation and Development",
+  "department": "health-and-rehabilitation-sciences",
+  "credits": 22,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "MLMM Krenzer and Mrs L Richards",
+  "prerequisites": {
+    "text": "None",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "Objective: By the end of this course, st udents are able to describe t he concept of “o ccupation” and begin to understand its dimensions; discuss occ upational therapy values a nd their influence on understanding people and approaches for practice; discuss th e place of activity analysis in occupational therapy and begin to use macro activ ity analysis; discuss the experience and the doing of an occupation; describe the role that the environment plays in an occupation; describe and discuss human development in relation to the occupational human; and discuss issues of diversity in relation to the self. Course outline: This course introduces st udents to the basic conc epts that underlie occupat ional therapy principles, values and modes of practice. T hese concepts include foundational theories in the study of human occupation and developm ent. Students develop proc edural and critical thinki ng by exploring the occupational human and occupational behaviour in various contexts. By exploring art forms engaged in by people living in various se ttings, students begin to appreciate the relati onship between human occupation and the environment. Students also engage with issues of diversity th rough open and constructive dialogue that aims to facilitate an unders tanding of intergroup relations, conflict and community.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "The Division of Occupational Therapy considers all academic activities important and full attendance is encouraged to ensure rich learning, engagement and competence in theory and practice. This course, however, in volves a number of academic activities that are designated as DEPARTMENTS IN THE FACULTY 91 ‘compulsory’ in order to ensure that each student has obtained a minimum level of competence through their in-class engagement prior to sitting the final exam ination for the course. Participation in these designated activities is monitored and is part of the duly perfor med requirements of the course. The list of compulsory activi ties that form part of this cour se are available in the divisional course handbook. Students who do not meet the course DP r equirements will be DPR and will not be granted entry into the final examination. See Rule FBE3. Should a student, for legitimate reasons, be unable to attend or complete any of these compulsory activities they must apply for a concession to miss classes (CMC). The CMC must be approved by the course convenor. Rule FGD 13.1, 13.2 and 13.3 in the undergraduate ha ndbook details the process of app lying for a CMC. The conditions for approval of the CMC will include tasks that the student will need to complete to ensure that all DP Requirements for the course are met in order to be granted entry to the final course examination.",
+  "assessment": "Coursework assessments contribute 50% to the final mark . The final exam contributes 50% to the final mark and com prises a written paper. The fi nal mark is ca lculated as follows: Coursework mark (50%) and examination mark (50%).",
+  "is_health_sciences_course": true
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CON3033S",
+  "title": "Property Studies I",
+  "department": "construction-economics-and-management",
+  "credits": 14,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr R Terblanche",
+  "prerequisites": {
+    "text": "MAM1010F/S",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "MAM1010F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to develop an understanding of Investment. Topics include: characteristics of property as an investment; financial mathematics for cost engineering and property development decisions and evaluation techniques for property development and investment decision.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "FIN3011W",
+  "title": "Drawing 3",
+  "department": "fine-art",
+  "credits": 48,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "F Saptouw",
+  "prerequisites": {
+    "text": "FIN2011W Painting 2. Due to the nature of the discipline, spatial and technical limitations and Health and Safety legislation, student numbers will be limited and students’ results will be taken into consideration.",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "FIN2011W"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "First semester: Surface and medium are key components in the generation of meaning in contemporary painting. Students are expected to explore historical precedents from 20 th century modernism and postmodernism and to create works where the implications of surface and materiality in painting are primary. Students are required to expand the range of painting medium and consider using substances that might function as alternatives to paint, thereby expanding the range of paint beyond that which is commercially available. Traditional supports may be used or alternatives considered. Scale and format are also examined to encourage students to move beyond the conventions of the rectangle. After immersion into alternative media students are then engaged in ideas gen eration and conceptual responses to painting. Historically rooted in modernist minimalism and conceptualism, process work is key here. Second semester: Utilising the ideas and methods generated in the first semester students move into a self -motivated deve lopment of their own work conceived within the terrain of contemporary painting.",
+  "lecture_times": "Monday to Friday, 14h00 to 17h00. Studio times: Studio times are from 09h00 to 17h00, with students breaking to attend lectures and tutorials as required by the timetable.",
+  "dp_requirements": "At least 80% attendance of studio classes and critiques, satisfactory completion of all projects.",
+  "assessment": "Mid-year coursework examination 40%, year -end coursework examination 50%, attendance & participation 10%.",
+  "is_humanities_course": true
+}

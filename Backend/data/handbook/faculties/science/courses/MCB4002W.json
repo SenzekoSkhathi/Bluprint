@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MCB4002W",
+  "title": "Molecular & Cell Biology Honours",
+  "department": "molecular-cell-biology",
+  "credits": 160,
+  "nqf_level": 8,
+  "year_level": "Postgraduate – Honours",
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Dr T Oelgeschläger",
+  "prerequisites": {
+    "text": "BSc degree with a major in Biochemistry, Biotechnology, Genetics or Microbiology. Molecular-based courses are highly recommended. Preference may be given to UCT graduates. Entrance limited to 16 students, dependent on availability of supervisors and funding. Acceptance at the discretion of the Head of Department based on quality of senior course results and material covered in the undergraduate curriculum.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "The first part of this course consists of a ten-week techniques course including gel electrophoresis, recombinant DNA technology, PCR, sequencing, bioinformatics, gene expression, protein isolation and analysis, confocal and electron microscopy, and large data set analysis. After successful completion of the techniques course, a six-month research project on a specific topic is undertaken.",
+  "lecture_times": null,
+  "dp_requirements": "Techniques examination must be passed at 50% to continue the course.",
+  "assessment": "Two 3-hour techniques examinations written in May, and techniques course assignments, count 20%; essays count 15%; oral presentations count 20%; statistics module counts 1%; one 4-hour examination written in November counts 10%; project counts 34%. The research project must be passed at 50%. Coursework and project codes must each be passed separately for the award of the degree.",
+  "is_science_course": true
+}

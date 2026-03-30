@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PVL3005W",
+  "title": "Law of Contract",
+  "department": "private-law",
+  "credits": 36,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Prof T Naudé",
+  "prerequisites": {
+    "text": "All Preliminary Level courses to have been completed.",
+    "parsed": {
+      "type": "level_completion",
+      "levels_required": [
+        "preliminary"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The course aims to give students a thorough understanding of the general principles of the law of contract in South Africa - knowledge which is essential for mastery of many other subjects in the LLB curriculum, and for success in legal practice. All aspects of the general principles of the law of contract will be covered, including: the nature and basis of contract; formation and termination of a contract; the contents and operation of contracts; breach of contract and remedies for breach; as well as relevant provisions of the Consumer Protection Act and other legislation bearing on contracts.",
+  "lecture_times": "Seventy-two lectures and tutorials.",
+  "dp_requirements": "Please refer to the course handout and/or the intermediate year schedule.",
+  "assessment": "If essay/opinion: 20% for essay/opinion, 30% coursework, 50% exam. If no essay/opinion: 40% coursework, 60% exam.",
+  "is_law_course": true
+}

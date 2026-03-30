@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "APG2041S",
+  "title": "Applied Surveying & GISc",
+  "department": "architecture-planning-geomatics",
+  "credits": 14,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Associate Professor S Hull",
+  "prerequisites": {
+    "text": "DP for APG2040F and APG2015F",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "APG2040F",
+        "APG2015F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to consolidate and extend understanding of graphical and geospatial concepts. The course aims to further develop problem solving skills in relation to practical surveying problems, to equip students with group work skills and engender tole rance of diversity, and to further develop technical report writing skills. The course builds individual competency in the solution of integrated survey calculations. It consolidates basic surveying fieldwork, instrumentation and processing skills and knowledge from the 1-week camp in the mid-semester vacation. This camp is project-based and relies on groupwork and outcomes. The course further teaches problem solving skills in relation to practical spatial data management challenges in Geoinformation Science (GISc) through a simulated office project design to consolidate skills and knowledge. The content includes GISc project planning, needs analysis, user requirements, project layout, multi-source data acquisition and conversions, data fusion, data manipulation, data models and modelling, database modelling, design and implementation (including DBMS), GISc analysis, cartographic principles and application, system implementation and system maintenance.",
+  "lecture_times": "Friday afternoons from 14h00 – 17h00 and one week -long camp during the mid - semester break.",
+  "dp_requirements": "Attendance at and completion of all tutorials with a minimum average of 50%.",
+  "assessment": "Tutorials count 40%, Survey camp counts 30%, and the GISc project counts 30%. There is no exam. DEPARTMENTS IN THE FACULTY AND COURSES OFFERED 81",
+  "is_engineering_course": true
+}

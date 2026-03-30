@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EGS5029H",
+  "title": "Climate Change Minor Dissertation",
+  "department": "environmental-geographical-science",
+  "credits": 90,
+  "nqf_level": 9,
+  "year_level": "Postgraduate – Masters",
+  "semester": "FY",
+  "semester_code": "H",
+  "convener": "Dr M Norton",
+  "prerequisites": {
+    "text": "EGS5012W",
+    "parsed": {
+      "type": "and",
+      "codes": [
+        "EGS5012W"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The minor dissertation is based on a three- to six-month supervised research project, to be submitted at the end of January, with the possibility of extension to June the following year.",
+  "lecture_times": null,
+  "dp_requirements": null,
+  "assessment": "The minor dissertation must be presented for formal examination. Coursework and minor dissertation each count 50% towards the degree; each must be passed separately for the award of the degree.",
+  "is_science_course": true
+}

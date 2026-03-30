@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "GEO4000W",
+  "title": "Geology Honours",
+  "department": "geological-sciences",
+  "credits": 160,
+  "nqf_level": 8,
+  "year_level": "Postgraduate – Honours",
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Associate Professor J F Diener",
+  "prerequisites": {
+    "text": "A BSc degree with a major in Geology; first qualifying courses in Chemistry and Mathematics. A first qualifying course in Physics is recommended. Registrations are limited to 16; acceptance at the discretion of the Head of Department based on quality of final year results, material covered in undergraduate curriculum and referee reports. Preference given to UCT graduates.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "Students are required to take 7 compulsory modules covering: Geochemistry (including Isotope and Marine Geochemistry), Geophysics, Economic Geology, Igneous, Metamorphic and Mantle Petrology, Palaeontology, Quaternary Geology, Petroleum Geology, Sedimentary Basins, Tectonics, Geological Data Interpretation & Analysis, and Scientific Communication. In addition, each student undertakes a supervised research project (approved by the Honours course co-ordinator and Head of Department). All students are required to attend a two-week fieldtrip held during the year.",
+  "lecture_times": null,
+  "dp_requirements": null,
+  "assessment": "Modules are examined mid-year and in October (the latter includes a 3-hour General Exam). Examinations count 45%; practical and assignment work done during the year counts 30%; research project counts 25%. Sub-minima required: 40% for overall examination mark and 50% for the research project. Coursework and project codes must each be passed separately for the award of the degree.",
+  "is_science_course": true
+}

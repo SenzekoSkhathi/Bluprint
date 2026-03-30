@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "SWK4016S",
+  "title": "Social Work Practice IV: Research Report",
+  "department": "social-development",
+  "credits": 24,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr E Campbell",
+  "prerequisites": {
+    "text": "This course is only for students doing the BSW. The student must have completed SWK 4015F or with permission from the head of department.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "Students are required to conduct a limited research project under supervision. The research undertaken could be a collaborative exercise focusing on a particular social problem/condition. The various components of the report will be handed in as assignment s. The final report will not exceed 10,000 words (excluding references and appendices) and should be a typed, edited, and properly bound document.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "At least 80% attendance of supervision and research seminars; submission of all written assignments by the due dates.",
+  "assessment": "Students will be assessed continuously and graded in line with incremental learning appropriate to outcomes-based education.",
+  "is_humanities_course": true
+}

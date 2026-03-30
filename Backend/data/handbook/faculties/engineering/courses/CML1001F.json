@@ -1,0 +1,26 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CML1001F",
+  "title": "Business Law",
+  "department": "commercial-law",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "K Lehmann",
+  "prerequisites": {
+    "text": "None",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "The purpose of the course is to provide students with a general introduction to the South African legal system, with its main focus the law of contract. The course starts with an overview of the South African court structure and contemporary sources and br anches of South African law, and also introduces students to the Constitution and the impact that it continues to have on legal development. The course then provides students with a general but comprehensive introduction to the general principles of contract, focusing on formation of contracts, the content of contracts, breach of contract and remedies for breach. The course also aims to provide students with an introduction to certain specific contracts, most notably contracts of sale, lease and agency. The general principles of contract are supplemented by a consideration of legislation, in particular the provisions of the Consumer Protection Act, where relevant.",
+  "lecture_times": "The course is an intensive one, with 5 contact periods per week for the full semester.",
+  "dp_requirements": "Coursework is compulsory. If the student does not submit hand-ins or write a test the student will receive a mark of 0 for that assessment (unless granted an exemption). But the student will be able to write the exam.",
+  "assessment": "Coursework 40%; final examination 60%",
+  "is_engineering_course": false,
+  "offered_by_faculty": "law"
+}

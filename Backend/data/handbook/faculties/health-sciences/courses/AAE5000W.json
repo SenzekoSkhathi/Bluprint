@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AAE5000W",
+  "title": "Anaesthesia (Part II) for External Credit",
+  "department": "anaesthesia-and-perioperative-medicine",
+  "credits": 10,
+  "nqf_level": 8,
+  "year_level": 5,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Doctor J Purcell-Jones",
+  "prerequisites": {
+    "text": "Successful completion of all cour ses within the preceding academic year.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "Objective: The student will demonstrate knowledge of clinical anaesthesia; skills in the preoperative, intra-operative and postoperative care of patient s necessary for safe a naesthetic practice; and professional behaviour appropriate to the pivotal role of the anaesthetist as a peri-operative physician. Course outline: This is a course taken by South African students studying towards a Cuban medical degree. The course builds on the fundamental skills and knowledge acquired in AAE4003W and is a two-week course of practical clinical instruction aimed at solidifying clinical skills and decision-making necessary for the conduct of safe clinical anaesthesia and optimal perioperative patient care. Under direct supervision, students will be taught how to perform an anaesthetic preassessment, plan and administer anaesthesia and manage a patient postop eratively. Towards the end of the bl ock, the student will be assessed on their ability to plan, perform and manage an anaesthetic. During the rotation, the student is expected to complete 13 online learning activities and prepare and discu ss the management of two case presentations. An interact ive anaesthesia teaching day will incorporate case-based discussions, simulations, quizzes and practical sessions to enhance the student’s know ledge and skills. Core knowledge: Basic knowledge of anaesthesia techniques and equipment.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Completion and submission of two su pervised and assessed clinical cases (practical skills assessment). Completion of 13 online learning activities with a mark of greater than 70% (repeated attempts allowed). Completion of two case discussions (to be prepared and presented to a supervising anaesthetist in theatre) (knowledge and clinical reasoning assessment). A complete attendance register.",
+  "assessment": "An end-of-block (EOB) exam including single best answer and extended matching questions. This must be passed with a minimum of 50% in order the pass th e block. A mark of 48% or 49% for the EOB exam may qualify the student to be considered for a supplementary exam without needing to repeat the block. The EOB exam contributes 60% to the final anaesthesia mark. The marks for the two practical clinical as sessments and the two case discus sions contribute 40% to the final mark",
+  "is_health_sciences_course": true
+}

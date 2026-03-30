@@ -1,0 +1,30 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MAM4101W",
+  "title": "Applied Mathematics Honours (Extended1)",
+  "department": "mathematics-applied-mathematics",
+  "credits": 80,
+  "nqf_level": 8,
+  "year_level": "Postgraduate – Honours (Extended, Year 1 of 2)",
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Dr F Ebobisse-Bille",
+  "prerequisites": {
+    "text": "(i) 60% or higher for MAM3040W; and (ii) the average of the three marks for MAM1043H/1044H, MAM2046W and MAM3040W should be 60% or higher. Acceptance subject to individual approval by the Head of Department. Students are not allowed to repeat this course.",
+    "parsed": {
+      "type": "complex",
+      "codes_mentioned": [
+        "MAM3040W",
+        "MAM1043H",
+        "MAM2046W"
+      ],
+      "note": "Complex prerequisite logic - see text"
+    }
+  },
+  "corequisites": [],
+  "outline": "This course, together with MAM4111W and MAM4016W, covers the content of MAM4001W over two years. Students do two core modules in the first semester and two more modules in the second semester (total 80 credits).",
+  "lecture_times": null,
+  "dp_requirements": null,
+  "assessment": "As per MAM4001W.",
+  "is_science_course": true
+}

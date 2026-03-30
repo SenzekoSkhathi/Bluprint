@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "STA2005S",
+  "title": "Linear Models",
+  "department": "statistical-sciences",
+  "credits": 24,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr B Erni",
+  "prerequisites": {
+    "text": "A pass in STA2004F. MAM2011F - Linear Algebra (2LA) is strongly recommended.",
+    "parsed": {
+      "type": "prerequisite",
+      "codes": [
+        "STA2004F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course gives an introduction to statistical modelling and the theory of linear statistical models. The course has two sections: Regression and Design and analysis of experiments. Regression covers the multivariate normal distribution; quadratic forms; the linear model; maximum likelihood; estimates of parameters in the linear model; the Gauss-Markov theorem; variable selection procedures; analysis of residuals, bootstrapping; principal component analysis for dimension reduction and for regression. Design and analysis of experiments covers introduction to the basic design principles, basic experimental designs, factorial experiments, analysis of variance, introduction to random effects and repeated measures, permutation/randomization tests, nonparametric tests, bootstrapping.",
+  "lecture_times": "Five lectures per week, Monday - Friday, 1st period.",
+  "dp_requirements": "Satisfactory attendance of lectures and lab practicals and the completion of class tests, mini practical lab tests, and practical tests as set out in course outline. Class record of at least 35% and at least 35% for Practical test.",
+  "assessment": "Class record 40% and a 3-hour exam counting 60%. Weights will be adjusted in the case of missed assessments.",
+  "is_commerce_course": false,
+  "offered_by_faculty": "science"
+}

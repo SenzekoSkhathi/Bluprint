@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "ACC1011S",
+  "title": "Financial Reporting I",
+  "department": "accounting",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Associate Professor J Winfield",
+  "prerequisites": {
+    "text": "ACC1006F. Registration for a BCom Accounting, BBusSci Finance with Accounting, or Actuarial Science degree.",
+    "parsed": {
+      "type": "prerequisite",
+      "codes": [
+        "ACC1006F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "Financial Reporting 1 covers the second semester of the first-year accounting syllabus. The standard has been set to the level required for those intending to become Chartered Accountants. Financial reporting is predominantly an applied discipline based on broad conceptual principles introduced in ACC1006. Topics include: companies; property, plant and equipment; statements of cash flows; liabilities; and financial analysis. The course uses a blended learning model.",
+  "lecture_times": "Lectures on Fridays at either 13h00-13h45 or 14h00-14h45, plus a double-period tutorial per week. Optional in-person sessions Tues-Thurs.",
+  "dp_requirements": "Weighted average of 35% for class tests, having written at least one class test.",
+  "assessment": "Coursework 40%; Exam 60%. The coursework component may include participation.",
+  "is_commerce_course": true
+}

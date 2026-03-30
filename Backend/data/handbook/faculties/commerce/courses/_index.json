@@ -1,0 +1,1058 @@
+{
+  "$schema": "handbook-course-index-v1",
+  "faculty": "commerce",
+  "year": 2026,
+  "total_courses": 108,
+  "courses": [
+    {
+      "code": "ACC1006F",
+      "title": "Financial Accounting",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "ACC"
+    },
+    {
+      "code": "ACC1011S",
+      "title": "Financial Reporting I",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "ACC"
+    },
+    {
+      "code": "ACC1015S",
+      "title": "Business Acumen for Accountants",
+      "nqf_credits": 15,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "ACC"
+    },
+    {
+      "code": "ACC1021F",
+      "title": "Accounting for Business I",
+      "nqf_credits": 15,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "ACC"
+    },
+    {
+      "code": "ACC1022Z",
+      "title": "Accounting for Business II",
+      "nqf_credits": 9,
+      "nqf_level": 5,
+      "semester": "varies",
+      "year_level": 1,
+      "department_prefix": "ACC"
+    },
+    {
+      "code": "ACC2012W",
+      "title": "Financial Reporting II",
+      "nqf_credits": 36,
+      "nqf_level": 6,
+      "semester": "FY",
+      "year_level": 2,
+      "department_prefix": "ACC"
+    },
+    {
+      "code": "ACC2018H",
+      "title": "Governance, Audit and Assurance I",
+      "nqf_credits": 18,
+      "nqf_level": 6,
+      "semester": "FY",
+      "year_level": 2,
+      "department_prefix": "ACC"
+    },
+    {
+      "code": "ACC2022H",
+      "title": "Management Accounting I",
+      "nqf_credits": 18,
+      "nqf_level": 6,
+      "semester": "FY",
+      "year_level": 2,
+      "department_prefix": "ACC"
+    },
+    {
+      "code": "ACC2023H",
+      "title": "Taxation I",
+      "nqf_credits": 18,
+      "nqf_level": 6,
+      "semester": "FY",
+      "year_level": 2,
+      "department_prefix": "ACC"
+    },
+    {
+      "code": "ACC3004W",
+      "title": "Taxation II",
+      "nqf_credits": 32,
+      "nqf_level": 7,
+      "semester": "FY",
+      "year_level": 3,
+      "department_prefix": "ACC"
+    },
+    {
+      "code": "ACC3009W",
+      "title": "Financial Reporting III",
+      "nqf_credits": 36,
+      "nqf_level": 7,
+      "semester": "FY",
+      "year_level": 3,
+      "department_prefix": "ACC"
+    },
+    {
+      "code": "ACC3022W",
+      "title": "Governance, Audit and Assurance II",
+      "nqf_credits": 26,
+      "nqf_level": 7,
+      "semester": "FY",
+      "year_level": 3,
+      "department_prefix": "ACC"
+    },
+    {
+      "code": "ACC3023W",
+      "title": "Management Accounting II",
+      "nqf_credits": 26,
+      "nqf_level": 7,
+      "semester": "FY",
+      "year_level": 3,
+      "department_prefix": "ACC"
+    },
+    {
+      "code": "BUS1003H",
+      "title": "Introduction to Actuarial Science",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "FY",
+      "year_level": 1,
+      "department_prefix": "BUS"
+    },
+    {
+      "code": "BUS1036F",
+      "title": "Evidence-based Management",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "BUS"
+    },
+    {
+      "code": "BUS1036S",
+      "title": "Evidence-based Management",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "BUS"
+    },
+    {
+      "code": "BUS2010F",
+      "title": "Marketing I",
+      "nqf_credits": 18,
+      "nqf_level": 6,
+      "semester": "S1",
+      "year_level": 2,
+      "department_prefix": "BUS"
+    },
+    {
+      "code": "BUS2010S",
+      "title": "Marketing I",
+      "nqf_credits": 18,
+      "nqf_level": 6,
+      "semester": "S2",
+      "year_level": 2,
+      "department_prefix": "BUS"
+    },
+    {
+      "code": "BUS2016H",
+      "title": "Financial Mathematics",
+      "nqf_credits": 18,
+      "nqf_level": 6,
+      "semester": "FY",
+      "year_level": 2,
+      "department_prefix": "BUS"
+    },
+    {
+      "code": "BUS2033F",
+      "title": "Professional Communication",
+      "nqf_credits": 18,
+      "nqf_level": 6,
+      "semester": "S1",
+      "year_level": 2,
+      "department_prefix": "BUS"
+    },
+    {
+      "code": "BUS2033S",
+      "title": "Professional Communication",
+      "nqf_credits": 18,
+      "nqf_level": 6,
+      "semester": "S2",
+      "year_level": 2,
+      "department_prefix": "BUS"
+    },
+    {
+      "code": "BUS3018F",
+      "title": "Actuarial Science II: Models",
+      "nqf_credits": 18,
+      "nqf_level": 7,
+      "semester": "S1",
+      "year_level": 3,
+      "department_prefix": "BUS"
+    },
+    {
+      "code": "BUS3024S",
+      "title": "Actuarial Science II: Contingencies",
+      "nqf_credits": 18,
+      "nqf_level": 7,
+      "semester": "S2",
+      "year_level": 3,
+      "department_prefix": "BUS"
+    },
+    {
+      "code": "BUS3038S",
+      "title": "Introduction to Project Management",
+      "nqf_credits": 18,
+      "nqf_level": 7,
+      "semester": "S2",
+      "year_level": 3,
+      "department_prefix": "BUS"
+    },
+    {
+      "code": "BUS3039F",
+      "title": "People Management",
+      "nqf_credits": 18,
+      "nqf_level": 7,
+      "semester": "S1",
+      "year_level": 3,
+      "department_prefix": "BUS"
+    },
+    {
+      "code": "BUS4027W",
+      "title": "Actuarial Science III: Assets",
+      "nqf_credits": 54,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 4,
+      "department_prefix": "BUS"
+    },
+    {
+      "code": "BUS4028F",
+      "title": "Actuarial Science III: Financial Economics",
+      "nqf_credits": 21,
+      "nqf_level": 7,
+      "semester": "S1",
+      "year_level": 4,
+      "department_prefix": "BUS"
+    },
+    {
+      "code": "BUS4029H",
+      "title": "Actuarial Research Project",
+      "nqf_credits": 36,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 4,
+      "department_prefix": "BUS"
+    },
+    {
+      "code": "BUS4034S",
+      "title": "Professional Communication (Actuarial Science)",
+      "nqf_credits": 27,
+      "nqf_level": 8,
+      "semester": "S2",
+      "year_level": 4,
+      "department_prefix": "BUS"
+    },
+    {
+      "code": "BUS4050H",
+      "title": "Strategic Thinking",
+      "nqf_credits": 18,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 4,
+      "department_prefix": "BUS"
+    },
+    {
+      "code": "BUS4053H",
+      "title": "Quantitative Finance Project",
+      "nqf_credits": 36,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 4,
+      "department_prefix": "BUS"
+    },
+    {
+      "code": "BUS4087S",
+      "title": "Quantitative Finance Selected Topics",
+      "nqf_credits": 18,
+      "nqf_level": 8,
+      "semester": "S2",
+      "year_level": 4,
+      "department_prefix": "BUS"
+    },
+    {
+      "code": "CML1001F",
+      "title": "Business Law I",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "CML",
+      "is_commerce_course": false,
+      "offered_by_faculty": "law"
+    },
+    {
+      "code": "CML2001F",
+      "title": "Company Law",
+      "nqf_credits": 18,
+      "nqf_level": 6,
+      "semester": "S1",
+      "year_level": 2,
+      "department_prefix": "CML",
+      "is_commerce_course": false,
+      "offered_by_faculty": "law"
+    },
+    {
+      "code": "CML2010Z",
+      "title": "Business Law II",
+      "nqf_credits": 12,
+      "nqf_level": 6,
+      "semester": "varies",
+      "year_level": 2,
+      "department_prefix": "CML",
+      "is_commerce_course": false,
+      "offered_by_faculty": "law"
+    },
+    {
+      "code": "CSC1015F",
+      "title": "Computer Science 1015",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "CSC",
+      "is_commerce_course": false,
+      "offered_by_faculty": "science"
+    },
+    {
+      "code": "CSC1016S",
+      "title": "Computer Science 1016",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "CSC",
+      "is_commerce_course": false,
+      "offered_by_faculty": "science"
+    },
+    {
+      "code": "CSC2001F",
+      "title": "Computer Science 2001",
+      "nqf_credits": 24,
+      "nqf_level": 6,
+      "semester": "S1",
+      "year_level": 2,
+      "department_prefix": "CSC",
+      "is_commerce_course": false,
+      "offered_by_faculty": "science"
+    },
+    {
+      "code": "CSC2002S",
+      "title": "Computer Science 2002",
+      "nqf_credits": 24,
+      "nqf_level": 6,
+      "semester": "S2",
+      "year_level": 2,
+      "department_prefix": "CSC",
+      "is_commerce_course": false,
+      "offered_by_faculty": "science"
+    },
+    {
+      "code": "CSC2004Z",
+      "title": "Programming Assessment",
+      "nqf_credits": 0,
+      "nqf_level": 6,
+      "semester": "varies",
+      "year_level": 2,
+      "department_prefix": "CSC",
+      "is_commerce_course": false,
+      "offered_by_faculty": "science"
+    },
+    {
+      "code": "CSC3002F",
+      "title": "Computer Science 3002",
+      "nqf_credits": 36,
+      "nqf_level": 7,
+      "semester": "S1",
+      "year_level": 3,
+      "department_prefix": "CSC",
+      "is_commerce_course": false,
+      "offered_by_faculty": "science"
+    },
+    {
+      "code": "CSC3003S",
+      "title": "Computer Science 3003",
+      "nqf_credits": 36,
+      "nqf_level": 7,
+      "semester": "S2",
+      "year_level": 3,
+      "department_prefix": "CSC",
+      "is_commerce_course": false,
+      "offered_by_faculty": "science"
+    },
+    {
+      "code": "CSC4002W",
+      "title": "Computer Science Honours Project",
+      "nqf_credits": 60,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 4,
+      "department_prefix": "CSC",
+      "is_commerce_course": false,
+      "offered_by_faculty": "science"
+    },
+    {
+      "code": "CSC4019Z",
+      "title": "Research and Innovation",
+      "nqf_credits": 16,
+      "nqf_level": 8,
+      "semester": "varies",
+      "year_level": 4,
+      "department_prefix": "CSC",
+      "is_commerce_course": false,
+      "offered_by_faculty": "science"
+    },
+    {
+      "code": "CSC4020Z",
+      "title": "Functional Programming",
+      "nqf_credits": 12,
+      "nqf_level": 8,
+      "semester": "varies",
+      "year_level": 4,
+      "department_prefix": "CSC",
+      "is_commerce_course": false,
+      "offered_by_faculty": "science"
+    },
+    {
+      "code": "CSC4021Z",
+      "title": "Compilers I",
+      "nqf_credits": 12,
+      "nqf_level": 8,
+      "semester": "varies",
+      "year_level": 4,
+      "department_prefix": "CSC",
+      "is_commerce_course": false,
+      "offered_by_faculty": "science"
+    },
+    {
+      "code": "ECO1010F",
+      "title": "Microeconomics I",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "ECO"
+    },
+    {
+      "code": "ECO1011S",
+      "title": "Macroeconomics I",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "ECO"
+    },
+    {
+      "code": "ECO2003F",
+      "title": "Microeconomics II",
+      "nqf_credits": 18,
+      "nqf_level": 6,
+      "semester": "S1",
+      "year_level": 2,
+      "department_prefix": "ECO"
+    },
+    {
+      "code": "ECO2004S",
+      "title": "Macroeconomics II",
+      "nqf_credits": 18,
+      "nqf_level": 6,
+      "semester": "S2",
+      "year_level": 2,
+      "department_prefix": "ECO"
+    },
+    {
+      "code": "ECO2007S",
+      "title": "Co-operation and Competition",
+      "nqf_credits": 18,
+      "nqf_level": 6,
+      "semester": "S2",
+      "year_level": 2,
+      "department_prefix": "ECO"
+    },
+    {
+      "code": "ECO3020F",
+      "title": "Advanced Macro & Microeconomics",
+      "nqf_credits": 18,
+      "nqf_level": 7,
+      "semester": "S1",
+      "year_level": 3,
+      "department_prefix": "ECO"
+    },
+    {
+      "code": "ECO3021S",
+      "title": "Quantitative Methods in Economics",
+      "nqf_credits": 18,
+      "nqf_level": 7,
+      "semester": "S2",
+      "year_level": 3,
+      "department_prefix": "ECO"
+    },
+    {
+      "code": "ECO4006F",
+      "title": "Macroeconomics",
+      "nqf_credits": 16,
+      "nqf_level": 8,
+      "semester": "S1",
+      "year_level": 4,
+      "department_prefix": "ECO"
+    },
+    {
+      "code": "ECO4007F",
+      "title": "Microeconomics",
+      "nqf_credits": 16,
+      "nqf_level": 8,
+      "semester": "S1",
+      "year_level": 4,
+      "department_prefix": "ECO"
+    },
+    {
+      "code": "ECO4016F",
+      "title": "Econometrics",
+      "nqf_credits": 16,
+      "nqf_level": 8,
+      "semester": "S1",
+      "year_level": 4,
+      "department_prefix": "ECO"
+    },
+    {
+      "code": "ECO4021W",
+      "title": "Research and Writing I (Long Paper)",
+      "nqf_credits": 30,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 4,
+      "department_prefix": "ECO"
+    },
+    {
+      "code": "ECO4112F",
+      "title": "Mathematics and Statistics for Economists",
+      "nqf_credits": 16,
+      "nqf_level": 8,
+      "semester": "S1",
+      "year_level": 4,
+      "department_prefix": "ECO"
+    },
+    {
+      "code": "FTX2020F",
+      "title": "Business Finance",
+      "nqf_credits": 18,
+      "nqf_level": 6,
+      "semester": "S1",
+      "year_level": 2,
+      "department_prefix": "FTX"
+    },
+    {
+      "code": "FTX2024F",
+      "title": "Financial Management",
+      "nqf_credits": 18,
+      "nqf_level": 6,
+      "semester": "S1",
+      "year_level": 2,
+      "department_prefix": "FTX"
+    },
+    {
+      "code": "FTX2024S",
+      "title": "Financial Management",
+      "nqf_credits": 18,
+      "nqf_level": 6,
+      "semester": "S2",
+      "year_level": 2,
+      "department_prefix": "FTX"
+    },
+    {
+      "code": "FTX3044F",
+      "title": "Investment Management A",
+      "nqf_credits": 18,
+      "nqf_level": 7,
+      "semester": "S1",
+      "year_level": 3,
+      "department_prefix": "FTX"
+    },
+    {
+      "code": "FTX3045S",
+      "title": "Investment Management B",
+      "nqf_credits": 18,
+      "nqf_level": 7,
+      "semester": "S2",
+      "year_level": 3,
+      "department_prefix": "FTX"
+    },
+    {
+      "code": "FTX4051H",
+      "title": "Finance Research Project",
+      "nqf_credits": 36,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 4,
+      "department_prefix": "FTX"
+    },
+    {
+      "code": "FTX4056S",
+      "title": "Applied Investments",
+      "nqf_credits": 18,
+      "nqf_level": 8,
+      "semester": "S2",
+      "year_level": 4,
+      "department_prefix": "FTX"
+    },
+    {
+      "code": "FTX4057F",
+      "title": "Applied Corporate Finance",
+      "nqf_credits": 18,
+      "nqf_level": 8,
+      "semester": "S1",
+      "year_level": 4,
+      "department_prefix": "FTX"
+    },
+    {
+      "code": "FTX4086F",
+      "title": "Alternative Investments",
+      "nqf_credits": 18,
+      "nqf_level": 8,
+      "semester": "S1",
+      "year_level": 4,
+      "department_prefix": "FTX"
+    },
+    {
+      "code": "FTX4087S",
+      "title": "Topics in Banking and Treasury Management",
+      "nqf_credits": 18,
+      "nqf_level": 8,
+      "semester": "S2",
+      "year_level": 4,
+      "department_prefix": "FTX"
+    },
+    {
+      "code": "INF1002F",
+      "title": "Foundations of Information Systems",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "INF"
+    },
+    {
+      "code": "INF2003F",
+      "title": "Commercial Programming",
+      "nqf_credits": 18,
+      "nqf_level": 6,
+      "semester": "S1",
+      "year_level": 2,
+      "department_prefix": "INF"
+    },
+    {
+      "code": "INF2004F",
+      "title": "Information Technology in Business",
+      "nqf_credits": 18,
+      "nqf_level": 6,
+      "semester": "S1",
+      "year_level": 2,
+      "department_prefix": "INF"
+    },
+    {
+      "code": "INF2006F",
+      "title": "Business Intelligence and Analytics",
+      "nqf_credits": 6,
+      "nqf_level": 6,
+      "semester": "S1",
+      "year_level": 2,
+      "department_prefix": "INF"
+    },
+    {
+      "code": "INF2007F",
+      "title": "Applying Database Principles",
+      "nqf_credits": 12,
+      "nqf_level": 6,
+      "semester": "S1",
+      "year_level": 2,
+      "department_prefix": "INF"
+    },
+    {
+      "code": "INF2009F",
+      "title": "Systems Analysis",
+      "nqf_credits": 18,
+      "nqf_level": 6,
+      "semester": "S1",
+      "year_level": 2,
+      "department_prefix": "INF"
+    },
+    {
+      "code": "INF2010S",
+      "title": "IT Architecture",
+      "nqf_credits": 18,
+      "nqf_level": 7,
+      "semester": "S2",
+      "year_level": 2,
+      "department_prefix": "INF"
+    },
+    {
+      "code": "INF2011S",
+      "title": "Systems Design & Development",
+      "nqf_credits": 18,
+      "nqf_level": 7,
+      "semester": "S2",
+      "year_level": 2,
+      "department_prefix": "INF"
+    },
+    {
+      "code": "INF3003W",
+      "title": "Systems Development Project I",
+      "nqf_credits": 48,
+      "nqf_level": 7,
+      "semester": "FY",
+      "year_level": 3,
+      "department_prefix": "INF"
+    },
+    {
+      "code": "INF3012S",
+      "title": "BPM & Enterprise Systems",
+      "nqf_credits": 18,
+      "nqf_level": 7,
+      "semester": "S2",
+      "year_level": 3,
+      "department_prefix": "INF"
+    },
+    {
+      "code": "INF3014F",
+      "title": "Electronic Commerce",
+      "nqf_credits": 18,
+      "nqf_level": 7,
+      "semester": "S1",
+      "year_level": 3,
+      "department_prefix": "INF"
+    },
+    {
+      "code": "INF4024W",
+      "title": "Information Systems Research Project",
+      "nqf_credits": 60,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 4,
+      "department_prefix": "INF"
+    },
+    {
+      "code": "INF4025S",
+      "title": "Information Systems Management",
+      "nqf_credits": 20,
+      "nqf_level": 8,
+      "semester": "S2",
+      "year_level": 4,
+      "department_prefix": "INF"
+    },
+    {
+      "code": "INF4026F",
+      "title": "Application and Technical Development",
+      "nqf_credits": 20,
+      "nqf_level": 8,
+      "semester": "S1",
+      "year_level": 4,
+      "department_prefix": "INF"
+    },
+    {
+      "code": "INF4027W",
+      "title": "System Development Project II",
+      "nqf_credits": 40,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 4,
+      "department_prefix": "INF"
+    },
+    {
+      "code": "MAM1008S",
+      "title": "Introduction to Discrete Mathematics",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "MAM",
+      "is_commerce_course": false,
+      "offered_by_faculty": "science"
+    },
+    {
+      "code": "MAM1010F",
+      "title": "Mathematics 1010",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "MAM",
+      "is_commerce_course": false,
+      "offered_by_faculty": "science"
+    },
+    {
+      "code": "MAM1012S",
+      "title": "Mathematics 1012",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "MAM",
+      "is_commerce_course": false,
+      "offered_by_faculty": "science"
+    },
+    {
+      "code": "MAM1031F",
+      "title": "Mathematics 1031",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S1",
+      "year_level": 1,
+      "department_prefix": "MAM",
+      "is_commerce_course": false,
+      "offered_by_faculty": "science"
+    },
+    {
+      "code": "MAM1032S",
+      "title": "Mathematics 1032",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "MAM",
+      "is_commerce_course": false,
+      "offered_by_faculty": "science"
+    },
+    {
+      "code": "MAM2010F",
+      "title": "Advanced Calculus (2AC)",
+      "nqf_credits": 12,
+      "nqf_level": 6,
+      "semester": "S1",
+      "year_level": 2,
+      "department_prefix": "MAM",
+      "is_commerce_course": false,
+      "offered_by_faculty": "science"
+    },
+    {
+      "code": "MAM2011F",
+      "title": "Linear Algebra (2LA)",
+      "nqf_credits": 12,
+      "nqf_level": 6,
+      "semester": "S1",
+      "year_level": 2,
+      "department_prefix": "MAM",
+      "is_commerce_course": false,
+      "offered_by_faculty": "science"
+    },
+    {
+      "code": "MAM2012S",
+      "title": "Differential Equations (2DE)",
+      "nqf_credits": 12,
+      "nqf_level": 6,
+      "semester": "S2",
+      "year_level": 2,
+      "department_prefix": "MAM",
+      "is_commerce_course": false,
+      "offered_by_faculty": "science"
+    },
+    {
+      "code": "MAM2014S",
+      "title": "Real Analysis (2RA)",
+      "nqf_credits": 12,
+      "nqf_level": 6,
+      "semester": "S2",
+      "year_level": 2,
+      "department_prefix": "MAM",
+      "is_commerce_course": false,
+      "offered_by_faculty": "science"
+    },
+    {
+      "code": "PHI2043S",
+      "title": "Business Ethics",
+      "nqf_credits": 18,
+      "nqf_level": 6,
+      "semester": "S2",
+      "year_level": 2,
+      "department_prefix": "PHI",
+      "is_commerce_course": false,
+      "offered_by_faculty": "humanities"
+    },
+    {
+      "code": "STA1000S",
+      "title": "Introductory Statistics",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "STA",
+      "is_commerce_course": false,
+      "offered_by_faculty": "science"
+    },
+    {
+      "code": "STA1006S",
+      "title": "Mathematical Statistics I",
+      "nqf_credits": 18,
+      "nqf_level": 5,
+      "semester": "S2",
+      "year_level": 1,
+      "department_prefix": "STA",
+      "is_commerce_course": false,
+      "offered_by_faculty": "science"
+    },
+    {
+      "code": "STA2004F",
+      "title": "Statistical Theory & Inference",
+      "nqf_credits": 24,
+      "nqf_level": 6,
+      "semester": "S1",
+      "year_level": 2,
+      "department_prefix": "STA",
+      "is_commerce_course": false,
+      "offered_by_faculty": "science"
+    },
+    {
+      "code": "STA2005S",
+      "title": "Linear Models",
+      "nqf_credits": 24,
+      "nqf_level": 6,
+      "semester": "S2",
+      "year_level": 2,
+      "department_prefix": "STA",
+      "is_commerce_course": false,
+      "offered_by_faculty": "science"
+    },
+    {
+      "code": "STA2020F",
+      "title": "Applied Statistics",
+      "nqf_credits": 24,
+      "nqf_level": 6,
+      "semester": "S1",
+      "year_level": 2,
+      "department_prefix": "STA",
+      "is_commerce_course": false,
+      "offered_by_faculty": "science"
+    },
+    {
+      "code": "STA2020S",
+      "title": "Business Statistics",
+      "nqf_credits": 24,
+      "nqf_level": 6,
+      "semester": "S2",
+      "year_level": 2,
+      "department_prefix": "STA",
+      "is_commerce_course": false,
+      "offered_by_faculty": "science"
+    },
+    {
+      "code": "STA2030S",
+      "title": "Theory of Statistics",
+      "nqf_credits": 24,
+      "nqf_level": 6,
+      "semester": "S2",
+      "year_level": 2,
+      "department_prefix": "STA",
+      "is_commerce_course": false,
+      "offered_by_faculty": "science"
+    },
+    {
+      "code": "STA3022F",
+      "title": "Applied Multivariate Data Analysis",
+      "nqf_credits": 36,
+      "nqf_level": 7,
+      "semester": "S1",
+      "year_level": 3,
+      "department_prefix": "STA",
+      "is_commerce_course": false,
+      "offered_by_faculty": "science"
+    },
+    {
+      "code": "STA3030F",
+      "title": "Statistical Inference & Modelling",
+      "nqf_credits": 36,
+      "nqf_level": 7,
+      "semester": "S1",
+      "year_level": 3,
+      "department_prefix": "STA",
+      "is_commerce_course": false,
+      "offered_by_faculty": "science"
+    },
+    {
+      "code": "STA3036S",
+      "title": "Operational Research Techniques",
+      "nqf_credits": 36,
+      "nqf_level": 7,
+      "semester": "S2",
+      "year_level": 3,
+      "department_prefix": "STA",
+      "is_commerce_course": false,
+      "offered_by_faculty": "science"
+    },
+    {
+      "code": "STA3041F",
+      "title": "Stochastic Processes & Time Series",
+      "nqf_credits": 36,
+      "nqf_level": 7,
+      "semester": "S1",
+      "year_level": 3,
+      "department_prefix": "STA",
+      "is_commerce_course": false,
+      "offered_by_faculty": "science"
+    },
+    {
+      "code": "STA3045F",
+      "title": "Stochastic Processes and Distribution",
+      "nqf_credits": 36,
+      "nqf_level": 7,
+      "semester": "S1",
+      "year_level": 3,
+      "department_prefix": "STA",
+      "is_commerce_course": false,
+      "offered_by_faculty": "science"
+    },
+    {
+      "code": "STA3047S",
+      "title": "Introduction to Machine Learning",
+      "nqf_credits": 6,
+      "nqf_level": 7,
+      "semester": "S2",
+      "year_level": 3,
+      "department_prefix": "STA",
+      "is_commerce_course": false,
+      "offered_by_faculty": "science"
+    },
+    {
+      "code": "STA3048S",
+      "title": "Statistical Modelling and Bayesian Analysis",
+      "nqf_credits": 30,
+      "nqf_level": 7,
+      "semester": "S2",
+      "year_level": 3,
+      "department_prefix": "STA",
+      "is_commerce_course": false,
+      "offered_by_faculty": "science"
+    },
+    {
+      "code": "STA4010W",
+      "title": "Topics in Statistics & Operational Research",
+      "nqf_credits": 142,
+      "nqf_level": 8,
+      "semester": "FY",
+      "year_level": 4,
+      "department_prefix": "STA",
+      "is_commerce_course": false,
+      "offered_by_faculty": "science"
+    }
+  ]
+}

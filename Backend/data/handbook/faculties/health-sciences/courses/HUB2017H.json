@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "HUB2017H",
+  "title": "Integrated Health Systems Part 1A",
+  "department": "human-biology",
+  "credits": 57,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "FY",
+  "semester_code": "H",
+  "convener": "Doctor A Abrahams, Doctor A Bhagwandin",
+  "prerequisites": {
+    "text": "Successful completion of all co urses within the preceding academic year.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "The integrated courses HUB2017 H, PTY2000S and PTY 3009F extend across MBChB years two and three and provide the student with a detailed understanding of the normal structure and function of the human body and how these are affected when the body suffers from disease. Students learn core material in the basic sci ences (gross anatomy, embryology, histology, cell biology, medical biochemistry, molecular biology and physiology); infectious diseases (medical microbiology, virology and immunology); changes in normal structure and function caused by disease (anatomical pathology, chemical pathology and haematology); and the principles of pharmacology/therapeutics and early management. Students are also introduced to skills such as critical thinking, reading, and analysis. Emphasis is placed on psychosocial matt ers relating to each case, drawing in relevant aspects of family medicine, prim ary healthcare principles, public health, and mental well-being. Students also learn clinical skills, interpretation of data, professional values and ethics, and certain procedural skills directly relate d to the cases studied. They st udy the impact of disease on the individual, family and society, and the role of the health care services in alleviating illness. Case- based group learning is supported by lectures, practical sessions and stand-alone modules. Students learn key life skills required of an effective healthcare professi onal, including a multidisciplinary team approach. The cases all have relevance to healthcare issues regionally and nationally.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Attendance at and/or participation in all problem-based learning sessions, tutorials, and practical’s and completion and submission of all set assignments, quizzes, tasks and assessment DEPARTMENTS IN THE FACULTY 137 activities by the due dates. Pu blic Health specifically requires all exercises on Vula to be completed as part of HUB2017H and PTY2000S DP requirements.",
+  "assessment": "HUB2017H and PTY2000S are assessed together in a final examinati on at the end of second year. Students must achieve an overall pass in semesters 3 and 4 (year 2) in order to progress to year 3. Students are required to complete a series of in-course assessments and portfolio tasks during semesters 3 and 4 that contribute 60% of the total mark for the year. Learning exercises, and quizzes contribute to the portfolio mark. A summative assessment is held at the end of the year that assesses work from semesters 3 and 4 and contributes 40% of the total mark for Integrated Health Systems in year 2. Students thus receive identical marks at year end for HUB2017H and PTY2000S. In order to be considered eligible for a supplementary examination, students are required to have achieved a total mark for year two of 45- 49%, and to have passed at least one class test or the final examination. Students who are granted a supple mentary examination w ill have their results calculated using the same weightings as the original total mark for the year, and the ma rk achieved in the supplementary exam will be substituted for the final examination mark.",
+  "is_health_sciences_course": true
+}

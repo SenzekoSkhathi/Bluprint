@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "APG1005S",
+  "title": "History & Theory of Architecture II",
+  "department": "architecture-planning-geomatics",
+  "credits": 10,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Ms S Spamer",
+  "prerequisites": {
+    "text": "None",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "The course follows the chronology of major administrative and stylistic architectural shifts at the Cape until the early 20th Century and introduces theoretical readings pertinent to particular buildings, precincts and epochs. Students visit, analyse and t hen present their findings of their assigned local case studies to the class. These case studies form the basis of research for the final essay.",
+  "lecture_times": "Refer to departmental timetable",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

@@ -1,0 +1,43 @@
+{
+  "id": "dmp-opera",
+  "programme_code": "HU021",
+  "stream_code": "MUZ23",
+  "name": "Diploma in Musical Performance (Opera)",
+  "abbreviation": "DMP",
+  "nqf_level": 6,
+  "department": "South African College of Music",
+  "duration_years": 3,
+  "credits_range": "470-474",
+  "curriculum": {
+    "year_1": {
+      "core": [
+        "MUZ1110H",
+        "MUZ1111H",
+        "MUZ1500F",
+        "MUZ1501S",
+        "MUZ1700H",
+        "MUZ1440H"
+      ]
+    },
+    "year_2": {
+      "core": [
+        "MUZ2110H",
+        "MUZ2111H",
+        "MUZ2500F",
+        "MUZ2501S",
+        "MUZ2700H",
+        "MUZ2440H"
+      ]
+    },
+    "year_3": {
+      "core": [
+        "MUZ3110H",
+        "MUZ3111H",
+        "MUZ3500F",
+        "MUZ3501S",
+        "MUZ3700H",
+        "MUZ3440H"
+      ]
+    }
+  }
+}

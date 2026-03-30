@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CON2036F",
+  "title": "Property Valuation I",
+  "department": "construction-economics-and-management",
+  "credits": 14,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "TBA",
+  "prerequisites": {
+    "text": "CON1024S",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "CON1024S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to develop an understanding of basic concepts in valuation theory; evolution of value theory, value and valuation in African customary/indigenous /pre-capitalist societies; determinants of property value, the valuation process; market rese arch and analysis (sources of information, online platforms, data problems in Africa); overview of valuation approaches and methods; the market approach to valuation (sales comparison method applied to residential property, hedonic models, artificial neural networks, fuzzy logic); valuation report writing (including digital interactive reports), technology in property valuation (including automated valuation models, artificial intelligence, virtual reality); Legislative framework; International Valuation Standards",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

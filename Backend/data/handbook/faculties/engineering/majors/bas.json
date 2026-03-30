@@ -1,0 +1,53 @@
+{
+  "id": "bas",
+  "programme_code": "EB012APG01",
+  "name": "Bachelor of Architectural Studies",
+  "abbreviation": "BAS",
+  "department": "Architecture, Planning and Geomatics",
+  "duration_years": 3,
+  "minimum_credits": 376,
+  "saqa_id": 3933,
+  "curriculum": {
+    "year_1": {
+      "core": [
+        "APG1003W",
+        "APG1004F",
+        "APG1005S",
+        "APG1020W",
+        "APG1021W"
+      ],
+      "credits": 120
+    },
+    "year_2": {
+      "core": [
+        "APG2000F",
+        "APG2003S",
+        "APG2009F",
+        "APG2021W",
+        "APG2043F",
+        "APG2039W",
+        "APG2042Z",
+        "APG2027X"
+      ],
+      "credits": 128
+    },
+    "year_3": {
+      "core": [
+        "APG3000Z",
+        "APG3023W",
+        "APG3028X",
+        "APG3034Z",
+        "APG3035F",
+        "APG3036F",
+        "APG3037W",
+        "APG3041Z"
+      ],
+      "credits": 128
+    }
+  },
+  "notes": [
+    "Core courses are sequential",
+    "Theory of Structures courses (APG2009F and APG3035F) are sequential",
+    "Mandatory Fieldwork: APG1003W, APG2021W, APG1020W, APG2039W, APG3037W"
+  ]
+}

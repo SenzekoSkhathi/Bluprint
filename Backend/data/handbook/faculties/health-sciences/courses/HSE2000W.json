@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "HSE2000W",
+  "title": "Becoming a Doctor Part 1C",
+  "department": "health-sciences-education",
+  "credits": 22,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "J Muller-Stuurman",
+  "prerequisites": {
+    "text": "Registration in MBChB Year2 and ha ving successfully completed all first-year courses.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "The three Courses of the BaDr theme aims to integrate Family Medicine, Clinical Skills and Languages. The aims of the Clinical Skills (HSE 2000W) course are to: (a) Gain a theoretical understanding of and practical co mpetence in how to conduct a bi opsychosocial history, perform a general and focused clinical examination of a patient pertaining to the cardiovascular, respiratory, and abdominal systems, and perform certain non-invasive procedural skills; (b) To develop a foundation for clinical reasoning. The course draws on online modules and assi gnments and skills lab practice sessions. .",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "(a) Compulsory attendance of face-to-f ace clinical skills contact sessions; (b) Compulsory online seminars as indicated on the timetable. (c) Participate and complete all mid & end semester activities. Students to consult the online weekly pla nner that will provide detailed information regarding teaching and assessment activities.",
+  "assessment": "An integrated, Objective Stru ctured Clinical Examinatio n (OSCE) covers the three Courses of the BaDr theme, that is Clinical Skills (HSE2000W), Family Medicine (PPH2000W) and the Languages (SLL2002H ). Coursework: 40% in -course assessments, 60% end of semester assessments (MCQ and OSCE).Each of the Courses within the BaDr theme must be passed independently. A final mark of less than and equal to 45% in any of the Courses, constitutes a fail for that Course(s). If a student sc ores between 46% and 49%, they will be recommended to FEC for a supplementary examination for the failed Course(s).",
+  "is_health_sciences_course": true
+}

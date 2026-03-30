@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "APG2009F",
+  "title": "Theory of Structures I",
+  "department": "architecture-planning-geomatics",
+  "credits": 10,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "TBA",
+  "prerequisites": {
+    "text": "None",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "Understanding the concepts of load, equilibrium, bending, shear, compression, tension and torsional forces and stresses. Understand and be able to produce various structural concepts of horizontal spanning elements and vertical elements pertaining to buildings at and beyond residential scale. The concepts will show how the structure carries the loads (in all three directions), how it connects to the vertical structure and introduction to structural materials. Here vector and other relevant force diagrams are used to argue the form and material. Structural elements include roofs, suspended floors and beams and their various evolutions. Fixed and pinned connections are introduced. Arches are developed into vaults and domes.",
+  "lecture_times": "Refer to departmental timetable. DEPARTMENTS IN THE FACULTY AND COURSES OFFERED 77",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

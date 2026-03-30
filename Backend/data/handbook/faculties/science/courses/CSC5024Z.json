@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CSC5024Z",
+  "title": "Information Retrieval",
+  "department": "computer-science",
+  "credits": 12,
+  "nqf_level": 9,
+  "year_level": "Postgraduate (Master's)",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "To be advised",
+  "prerequisites": {
+    "text": "Admission into the Master's degree specialising in Computer Science, or permission from the course convener. Basic understanding of XML data required. Some background in statistics and linear algebra will be useful.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "The objective is to understand how search engines work at an algorithmic level and learn how to build and incorporate basic and specialised search engines into projects. Course content includes: Introduction to Information Retrieval; Models of Basic IR (Boolean, Vector, Probabilistic); IR evaluation and testbeds; Stemming, Stopping, Relevance Feedback; Models of Web and linked-data retrieval (Pagerank, HITS); Latent Semantic Analysis and Clustering; Multimedia IR; Cross-lingual and multilingual IR; and IR in Practice. Selected topics may include Distributed and Federated IR, Recommender Systems, NLP for IR, Sentiment Analysis, and Text Summarization.",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "None.",
+  "assessment": "Exam (take-home): 40%; Assignments: 40%; Class participation: 20%.",
+  "is_science_course": true
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EEE3093S",
+  "title": "Communication & Network Engineering",
+  "department": "electrical-engineering",
+  "credits": 16,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Associate Professor J Mwangama",
+  "prerequisites": {
+    "text": "EEE2046F/S",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "EEE2046F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to develop the understanding of Computer Networks and the Internet: Internet, network edge, network core, network performance metrics, protocol layers and service models, LAN topology, Physical media, OSI reference model and TCP/IP reference model, network standardization, computer network attacks and prevention, history of computer networking and the Internet. Application and Transport Layers: Principle of network applications, socket programming, transport layer services, multiplexing/demultiplexing, connectionless transport, connection -oriented transport (TCP), TCP congestion control and performance issues. Network Layer: Network layer design issues, forwarding and routing, virtual circuit and datagram networks, router architecture, Inter net protocol, routing algorithms, routing in the Internet, integrated and differentiated services. Data Link Layer: Data link design issues, error detection and correction, multiple access links and protocols, switched local area networks, IEEE 802 family, link virtualization, MPLS, data centre networking. Physical Layer: Baseband systems, formatting textual data, formatting analogue information, sources of corruption, pulse code modulation, quantization, baseband modulation and demodulation/detection, inter-symbol interference, equalization, bandpass modulation and demodulation/detection amplitude. Emerging Communication Networks: Fundamentals of mobile networks, fundamentals of smart grid communication networks.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CML4510F",
+  "title": "Cyberlaw",
+  "department": "commercial-law",
+  "credits": 9,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "A/Prof T Schönwetter",
+  "prerequisites": {
+    "text": "All Preliminary and Intermediate Level courses to have been completed.",
+    "parsed": {
+      "type": "level_completion",
+      "levels_required": [
+        "preliminary",
+        "intermediate"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "Given the ubiquitous nature of digital technologies, and the complex legal issues that these technologies raise, this course affects numerous areas of law and addresses the key legal issues related to digital technologies, including: electronic contracting, electronic evidence, cybercrime, data protection, consumer protection online, e-commerce & tax, electronic communications, IP in the digital realm, the liability of internet service providers, and the right to freedom of expression online. While emphasis is on South African law, the multi-jurisdictional dimension of Internet digital technologies requires that some attention is paid to other jurisdictions. The course also includes some computer skills instructions for technology tools that are available to lawyers and legal researchers.",
+  "lecture_times": "Two lectures per week.",
+  "dp_requirements": "None",
+  "assessment": "Coursework 40%, Examination 60%.",
+  "is_law_course": true
+}

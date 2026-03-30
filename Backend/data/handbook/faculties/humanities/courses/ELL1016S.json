@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "ELL1016S",
+  "title": "Introduction to Literature",
+  "department": "english-language-and-literature",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Professor B Boswell",
+  "prerequisites": {
+    "text": "None",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "As an introduction to cultural and literary studies, this course examines an array of modes of expression as we seek to understand how texts of various kinds accomplish their acts of meaning - making and persuade their readers. We will give attention to the impact of a text’s form and context in shaping its message, as well as its content. In trying to understand the rhetorical effects of any given text, we will examine examples from across a variety of genres that use words, images and even sound to engage t heir audience or readers, within a variety of historical and political contexts. Objects of study will include texts that use sound as well as words (such as contemporary ballads, performance poetry and hip hop, or contemporary adaptations of Shakespeare’s plays), visual images (such as posters in a protest action, photographs that document war and suffering, and historical maps that retraced the shape the world), and words collated and presented in particular ways on the page (such as the archived documents from the apartheid censors, the published journal of a fugitive slave, the extended prose of a stream-of-consciousness novel). By drawing on key theoretical insights into the politics of representation, we aim to develop the critical skills needed to bec ome savvy readers of contemporary culture and politics. The course aims to build upon the skills in critical reading and writing taught in ELL1013F.",
+  "lecture_times": "2nd period, Monday, Tuesday and Thursday.",
+  "dp_requirements": "All written work to be handed in and at least 75% attendance at tutorials.",
+  "assessment": "Continuous assessment (coursework essays, projects, tasks etc.) counts 60%; end -of- semester examination counts 40%.",
+  "is_humanities_course": true
+}

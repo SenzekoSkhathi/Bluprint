@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CSC4002W",
+  "title": "Computer Science Honours Project",
+  "department": "computer-science",
+  "credits": 60,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "To be advised",
+  "prerequisites": {
+    "text": "Admission to the Honours programme in Computer Science.",
+    "parsed": {
+      "type": "programme_registration",
+      "programmes": [
+        "Honours in Computer Science"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "Honours project in Computer Science. Students undertake a research project under supervision, culminating in a written report and presentation.",
+  "lecture_times": "Full year course, by arrangement with supervisor.",
+  "dp_requirements": "To be advised.",
+  "assessment": "Project report and presentation.",
+  "is_commerce_course": false,
+  "offered_by_faculty": "science"
+}

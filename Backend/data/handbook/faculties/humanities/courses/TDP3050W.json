@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "TDP3050W",
+  "title": "Applied Performance/Pedagogy III",
+  "department": "theatre-and-performance",
+  "credits": 60,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Associate Professor L Wilson",
+  "prerequisites": {
+    "text": "Completion of T&P Studiowork 2 and placement in the Applied/Pedagogy concentration.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This advanced course will further explore and develop applied performance and facilitation skills introduced in second year through practice and fieldwork in various community contexts. Some of these contexts may include schools, museums, social health and wellbeing and inclusion. Weekly practical studios and seminars, as well as written assignments, will enhance the understanding of applied performance across different sites. A fieldwork component may be included as part of this course.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Attendance at all classes, performances and rehearsals. Completion of all projects.",
+  "assessment": "Coursework, classwork, in house performances count 50% of final mark; final practical examination counts 50% of final mark. In order to pass, students must obtain at least 50% in both of the above.",
+  "is_humanities_course": true
+}

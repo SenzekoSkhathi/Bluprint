@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CHE3067S",
+  "title": "Design and Operation of Catalytic Reactors",
+  "department": "chemical-engineering",
+  "credits": 16,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Professor E van Steen",
+  "prerequisites": {
+    "text": "CHE2005W",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "CHE2005W"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The course focuses on the fundamental aspects of heterogeneously catalysed reactions with the aim to design reactors for catalytic reactors. The course will introduce Langmuir -Hinshelwood kinetics together with internal and external mass transport limitations to describe the rate of the process, from which catalytic reactors will be designed. The consequences of catalyst deactivation on the operation of catalytic reactors will be discussed with catalyst regeneration being modelled using classical solid- fluid models such as the shrinking core model.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

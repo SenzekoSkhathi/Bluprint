@@ -1,0 +1,41 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "STA2007P",
+  "title": "Study Design & Data Analysis for Scientists",
+  "department": "statistical-sciences",
+  "credits": 24,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "summer",
+  "semester_code": "P",
+  "convener": "Professor R Altwegg",
+  "prerequisites": {
+    "text": "A pass in STA1007S (preferably) or STA1000F/S or STA1006S or STA1106H or STA1100S or STA1008F/S) and (MAM1000W or MAM1031F or MAM1033F or MAM1004F/S or MAM1005H or MAM1010F/S or MAM1020F/S or MAM1110F/H). Students make use of online learning workshops.",
+    "parsed": {
+      "type": "complex",
+      "codes_mentioned": [
+        "STA1007S",
+        "STA1000F/S",
+        "STA1006S",
+        "STA1106H",
+        "STA1100S",
+        "STA1008F/S",
+        "MAM1000W",
+        "MAM1031F",
+        "MAM1033F",
+        "MAM1004F/S",
+        "MAM1005H",
+        "MAM1010F/S",
+        "MAM1020F/S",
+        "MAM1110F/H"
+      ],
+      "note": "Complex prerequisite logic - see text"
+    }
+  },
+  "corequisites": [],
+  "outline": "The course aims to equip students with practical experience and skills in analysing data and applying statistical techniques relevant to the natural sciences. Skills include designing experiments, choosing appropriate statistical methods for analysing data, visual display and statistical modelling of data, model checking, interpretation and reporting of statistical results. Topics include: introduction to statistical notation, linear regression, design and analysis of experiments, generalised linear models. Strong emphasis on practical application using R. There will be a one-day face-to-face workshop at the beginning of each semester.",
+  "lecture_times": "Blended learning format with online workshops.",
+  "dp_requirements": "Satisfactory attendance of lectures, tutorials, practicals and tests and completion of assignments and/or class exercises as set out in course outline. Class record of at least 35%.",
+  "assessment": "Class record 40% and a 2-hour exam counting 60%. Weights will be adjusted in the case of missed assessments, as detailed in the course outline.",
+  "is_science_course": true
+}

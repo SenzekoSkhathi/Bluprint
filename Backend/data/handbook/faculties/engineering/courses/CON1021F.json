@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CON1021F",
+  "title": "Property and Planning I",
+  "department": "construction-economics-and-management",
+  "credits": 14,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr E Musvoto",
+  "prerequisites": {
+    "text": "Refer to the programme and departmental sections in the 2026 EBE Faculty Handbook.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "Aims: To provide students with an understanding of the main property types and basic urban spatial structure, how and why cities grow, to introduce the main issues facing cities in a developing country context today are and to introduce how town planning has developed to try and address some of these issues. Outline: Basic property types; location theory and urban spatial structure; the reasons cities develop and the history of city development; growth drivers of cities; role that cities play in society; relationship between property development and city building; info rmality; key issues facing cities in developing countries today; history of modern town planning; different types of modern town planning.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "STA5004W",
+  "title": "Statistics and Data Science Minor Dissertation",
+  "department": "statistical-sciences",
+  "credits": 90,
+  "nqf_level": 9,
+  "year_level": "Postgraduate (Master's)",
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Dr B Erni",
+  "prerequisites": {
+    "text": "STA5003W.",
+    "parsed": {
+      "type": "and",
+      "codes": [
+        "STA5003W"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "On successful completion of the coursework component, students will undertake an individual, supervised research project on a suitable topic, the results of which are to be written up as a minor dissertation. The minor dissertation component of the Statistics and Data Science masters specialisation is a research project based on selected research in a methodological or applied field of Statistics or Data Science.",
+  "lecture_times": "Not applicable.",
+  "dp_requirements": "Not specified.",
+  "assessment": "The minor dissertation must be presented for formal examination. The coursework and minor dissertation each count 50% towards the degree; each must be passed separately for the award of the degree.",
+  "is_science_course": true
+}

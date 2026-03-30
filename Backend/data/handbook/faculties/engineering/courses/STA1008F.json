@@ -1,0 +1,33 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "STA1008F",
+  "title": "Statistics for Engineers",
+  "department": "statistical-sciences",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "A Paskaramoorthy",
+  "prerequisites": {
+    "text": "MAM1020F (or equivalent)",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "MAM1020F"
+      ]
+    }
+  },
+  "corequisites": [
+    "CHE1005W",
+    "CIV1005W",
+    "EEE1007S",
+    "MEC1005W"
+  ],
+  "outline": "This course aims to introduce engineering students to foundational statistical concepts and methods for analysing data and making informed decisions under uncertainty. Topics include probability, statistical inference, and modelling techniques relevant to engineering applications. Students will develop practical skills in data analysis using Excel, to interpret experimental results and solve simple problems relevant to an engineering context. The course emphasises statistical thinking and its role in modelling uncertainty, assessing variability, and drawing reliable conclusions from data.",
+  "lecture_times": "Monday - Thursday, 1st or 5th period",
+  "dp_requirements": "Satisfactory attendance of workshops and tests and completion of online quizzes as set out in the course outline. Class record of at least 35%.",
+  "assessment": "Class record 40% and a 2-hour exam counting 60%. Weights will be adjusted in the case of missed assessments, as detailed in the course outline.",
+  "is_engineering_course": false,
+  "offered_by_faculty": "science"
+}

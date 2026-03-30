@@ -1,0 +1,394 @@
+{
+  "summary": {
+    "faculties": [
+      {
+        "slug": "commerce",
+        "courses": 109,
+        "majors": 23
+      },
+      {
+        "slug": "engineering",
+        "courses": 245,
+        "majors": 11
+      },
+      {
+        "slug": "health-sciences",
+        "courses": 169,
+        "majors": 6
+      },
+      {
+        "slug": "humanities",
+        "courses": 212,
+        "majors": 21
+      },
+      {
+        "slug": "law",
+        "courses": 61,
+        "majors": 3
+      },
+      {
+        "slug": "science",
+        "courses": 424,
+        "majors": 22
+      }
+    ],
+    "total_courses": 1220,
+    "total_majors": 86,
+    "missing_course_reference_count": 0,
+    "alias_or_variant_course_reference_count": 16,
+    "missing_equivalence_target_count": 0,
+    "alias_or_variant_equivalence_target_count": 41,
+    "semester_suffix_mismatch_count": 0,
+    "malformed_json_count": 0
+  },
+  "missing_course_references": [],
+  "alias_or_variant_course_references": [
+    {
+      "faculty": "science",
+      "major_file": "data\\handbook\\faculties\\science\\majors\\AGE01-archaeology.json",
+      "missing_code": "MAM1000W",
+      "classification": "equivalence_required_alias"
+    },
+    {
+      "faculty": "science",
+      "major_file": "data\\handbook\\faculties\\science\\majors\\AST02-astrophysics.json",
+      "missing_code": "MAM1000W",
+      "classification": "equivalence_required_alias"
+    },
+    {
+      "faculty": "science",
+      "major_file": "data\\handbook\\faculties\\science\\majors\\BIO13-quantitative-biology.json",
+      "missing_code": "MAM1000W",
+      "classification": "equivalence_required_alias"
+    },
+    {
+      "faculty": "science",
+      "major_file": "data\\handbook\\faculties\\science\\majors\\CEM01-chemistry.json",
+      "missing_code": "MAM1000W",
+      "classification": "equivalence_required_alias"
+    },
+    {
+      "faculty": "science",
+      "major_file": "data\\handbook\\faculties\\science\\majors\\CSC02-business-computing.json",
+      "missing_code": "MAM1000W",
+      "classification": "equivalence_required_alias"
+    },
+    {
+      "faculty": "science",
+      "major_file": "data\\handbook\\faculties\\science\\majors\\CSC03-computer-engineering.json",
+      "missing_code": "MAM1000W",
+      "classification": "equivalence_required_alias"
+    },
+    {
+      "faculty": "science",
+      "major_file": "data\\handbook\\faculties\\science\\majors\\CSC05-computer-science.json",
+      "missing_code": "MAM1000W",
+      "classification": "equivalence_required_alias"
+    },
+    {
+      "faculty": "science",
+      "major_file": "data\\handbook\\faculties\\science\\majors\\EGS02-environmental-geographical-science.json",
+      "missing_code": "MAM1000W",
+      "classification": "equivalence_required_alias"
+    },
+    {
+      "faculty": "science",
+      "major_file": "data\\handbook\\faculties\\science\\majors\\GEO02-geology.json",
+      "missing_code": "MAM1000W",
+      "classification": "equivalence_required_alias"
+    },
+    {
+      "faculty": "science",
+      "major_file": "data\\handbook\\faculties\\science\\majors\\HUB17-human-anatomy-physiology.json",
+      "missing_code": "MAM1000W",
+      "classification": "equivalence_required_alias"
+    },
+    {
+      "faculty": "science",
+      "major_file": "data\\handbook\\faculties\\science\\majors\\MAM01-applied-mathematics.json",
+      "missing_code": "MAM1000W",
+      "classification": "equivalence_required_alias"
+    },
+    {
+      "faculty": "science",
+      "major_file": "data\\handbook\\faculties\\science\\majors\\MAM02-mathematics.json",
+      "missing_code": "MAM1000W",
+      "classification": "equivalence_required_alias"
+    },
+    {
+      "faculty": "science",
+      "major_file": "data\\handbook\\faculties\\science\\majors\\PHY01-physics.json",
+      "missing_code": "MAM1000W",
+      "classification": "equivalence_required_alias"
+    },
+    {
+      "faculty": "science",
+      "major_file": "data\\handbook\\faculties\\science\\majors\\SEA03-ocean-atmosphere-science.json",
+      "missing_code": "MAM1000W",
+      "classification": "equivalence_required_alias"
+    },
+    {
+      "faculty": "science",
+      "major_file": "data\\handbook\\faculties\\science\\majors\\STA01-applied-statistics.json",
+      "missing_code": "MAM1000W",
+      "classification": "equivalence_required_alias"
+    },
+    {
+      "faculty": "science",
+      "major_file": "data\\handbook\\faculties\\science\\majors\\STA02-mathematical-statistics.json",
+      "missing_code": "MAM1000W",
+      "classification": "equivalence_required_alias"
+    }
+  ],
+  "missing_equivalence_targets": [],
+  "alias_or_variant_equivalence_targets": [
+    {
+      "faculty": "commerce",
+      "equivalence_type": "unknown",
+      "missing_code": "ACC1020H",
+      "classification": "legacy_equivalence_only_code"
+    },
+    {
+      "faculty": "commerce",
+      "equivalence_type": "unknown",
+      "missing_code": "ACC1012S",
+      "classification": "legacy_equivalence_only_code"
+    },
+    {
+      "faculty": "commerce",
+      "equivalence_type": "unknown",
+      "missing_code": "ACC1020H",
+      "classification": "legacy_equivalence_only_code"
+    },
+    {
+      "faculty": "commerce",
+      "equivalence_type": "unknown",
+      "missing_code": "ACC3000H",
+      "classification": "legacy_equivalence_only_code"
+    },
+    {
+      "faculty": "commerce",
+      "equivalence_type": "unknown",
+      "missing_code": "ACC3001F",
+      "classification": "legacy_or_packaging_alias"
+    },
+    {
+      "faculty": "commerce",
+      "equivalence_type": "unknown",
+      "missing_code": "ACC3002S",
+      "classification": "legacy_or_packaging_alias"
+    },
+    {
+      "faculty": "commerce",
+      "equivalence_type": "unknown",
+      "missing_code": "ACC3020W",
+      "classification": "legacy_or_packaging_alias"
+    },
+    {
+      "faculty": "commerce",
+      "equivalence_type": "unknown",
+      "missing_code": "PHI1025F",
+      "classification": "legacy_equivalence_only_code"
+    },
+    {
+      "faculty": "commerce",
+      "equivalence_type": "unknown",
+      "missing_code": "REL1012",
+      "classification": "legacy_equivalence_only_code"
+    },
+    {
+      "faculty": "commerce",
+      "equivalence_type": "unknown",
+      "missing_code": "REL1013H",
+      "classification": "legacy_equivalence_only_code"
+    },
+    {
+      "faculty": "commerce",
+      "equivalence_type": "unknown",
+      "missing_code": "BUS2011F",
+      "classification": "legacy_equivalence_only_code"
+    },
+    {
+      "faculty": "commerce",
+      "equivalence_type": "unknown",
+      "missing_code": "BUS2035S",
+      "classification": "legacy_equivalence_only_code"
+    },
+    {
+      "faculty": "commerce",
+      "equivalence_type": "unknown",
+      "missing_code": "INF1003F",
+      "classification": "legacy_or_packaging_alias"
+    },
+    {
+      "faculty": "commerce",
+      "equivalence_type": "unknown",
+      "missing_code": "STA1100S",
+      "classification": "legacy_equivalence_only_code"
+    },
+    {
+      "faculty": "commerce",
+      "equivalence_type": "unknown",
+      "missing_code": "STA1106H",
+      "classification": "legacy_equivalence_only_code"
+    },
+    {
+      "faculty": "commerce",
+      "equivalence_type": "unknown",
+      "missing_code": "STA1106H",
+      "classification": "legacy_equivalence_only_code"
+    },
+    {
+      "faculty": "commerce",
+      "equivalence_type": "unknown",
+      "missing_code": "MAM1000W",
+      "classification": "legacy_or_packaging_alias"
+    },
+    {
+      "faculty": "commerce",
+      "equivalence_type": "unknown",
+      "missing_code": "MAM1000W",
+      "classification": "legacy_or_packaging_alias"
+    },
+    {
+      "faculty": "commerce",
+      "equivalence_type": "unknown",
+      "missing_code": "MAM1000W",
+      "classification": "legacy_or_packaging_alias"
+    },
+    {
+      "faculty": "commerce",
+      "equivalence_type": "unknown",
+      "missing_code": "MAM1000W",
+      "classification": "legacy_or_packaging_alias"
+    },
+    {
+      "faculty": "commerce",
+      "equivalence_type": "unknown",
+      "missing_code": "MAM2000W",
+      "classification": "legacy_or_packaging_alias"
+    },
+    {
+      "faculty": "commerce",
+      "equivalence_type": "unknown",
+      "missing_code": "MAM2002S",
+      "classification": "legacy_equivalence_only_code"
+    },
+    {
+      "faculty": "commerce",
+      "equivalence_type": "unknown",
+      "missing_code": "MAM2004H",
+      "classification": "legacy_equivalence_only_code"
+    },
+    {
+      "faculty": "commerce",
+      "equivalence_type": "unknown",
+      "missing_code": "MAM2000W",
+      "classification": "legacy_or_packaging_alias"
+    },
+    {
+      "faculty": "commerce",
+      "equivalence_type": "unknown",
+      "missing_code": "PHI2037F",
+      "classification": "legacy_equivalence_only_code"
+    },
+    {
+      "faculty": "commerce",
+      "equivalence_type": "unknown",
+      "missing_code": "POL2034S",
+      "classification": "legacy_equivalence_only_code"
+    },
+    {
+      "faculty": "commerce",
+      "equivalence_type": "unknown",
+      "missing_code": "POL2039F",
+      "classification": "legacy_equivalence_only_code"
+    },
+    {
+      "faculty": "commerce",
+      "equivalence_type": "unknown",
+      "missing_code": "CSC2003S",
+      "classification": "legacy_equivalence_only_code"
+    },
+    {
+      "faculty": "commerce",
+      "equivalence_type": "unknown",
+      "missing_code": "ACC1106F",
+      "classification": "legacy_equivalence_only_code"
+    },
+    {
+      "faculty": "commerce",
+      "equivalence_type": "unknown",
+      "missing_code": "ACC1111S",
+      "classification": "legacy_equivalence_only_code"
+    },
+    {
+      "faculty": "commerce",
+      "equivalence_type": "unknown",
+      "missing_code": "ACC2112W",
+      "classification": "legacy_equivalence_only_code"
+    },
+    {
+      "faculty": "commerce",
+      "equivalence_type": "unknown",
+      "missing_code": "ACC2113W",
+      "classification": "legacy_equivalence_only_code"
+    },
+    {
+      "faculty": "commerce",
+      "equivalence_type": "unknown",
+      "missing_code": "ACC2114W",
+      "classification": "legacy_equivalence_only_code"
+    },
+    {
+      "faculty": "commerce",
+      "equivalence_type": "unknown",
+      "missing_code": "ECO1110F",
+      "classification": "legacy_equivalence_only_code"
+    },
+    {
+      "faculty": "commerce",
+      "equivalence_type": "unknown",
+      "missing_code": "ECO1110S",
+      "classification": "legacy_equivalence_only_code"
+    },
+    {
+      "faculty": "commerce",
+      "equivalence_type": "unknown",
+      "missing_code": "INF1102F",
+      "classification": "legacy_equivalence_only_code"
+    },
+    {
+      "faculty": "commerce",
+      "equivalence_type": "unknown",
+      "missing_code": "MAM1110F",
+      "classification": "legacy_equivalence_only_code"
+    },
+    {
+      "faculty": "commerce",
+      "equivalence_type": "unknown",
+      "missing_code": "MAM1110H",
+      "classification": "legacy_equivalence_only_code"
+    },
+    {
+      "faculty": "commerce",
+      "equivalence_type": "unknown",
+      "missing_code": "MAM1112S",
+      "classification": "legacy_equivalence_only_code"
+    },
+    {
+      "faculty": "commerce",
+      "equivalence_type": "unknown",
+      "missing_code": "STA1100S",
+      "classification": "legacy_equivalence_only_code"
+    },
+    {
+      "faculty": "commerce",
+      "equivalence_type": "unknown",
+      "missing_code": "STA1106H",
+      "classification": "legacy_equivalence_only_code"
+    }
+  ],
+  "semester_suffix_mismatches": [],
+  "malformed_json_files": []
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "BUS2033S",
+  "title": "Professional Communication",
+  "department": "management-studies",
+  "credits": 18,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr S Rousseau",
+  "prerequisites": {
+    "text": "A pass in at least 8 courses towards the degree.",
+    "parsed": {
+      "type": "credit_count",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "The course aims to provide students with the ability to design and produce various types of persuasive business and professional documents and deliver business presentations. Students develop skills in planning and producing effective messages through practice in both verbal and visual arguments. They also develop management and communication skills for collaboration through teamwork.",
+  "lecture_times": "To be advised.",
+  "dp_requirements": "To be advised.",
+  "assessment": "Final written examination 40% (with a 35% subminimum). Coursework mark 60%.",
+  "is_commerce_course": true
+}

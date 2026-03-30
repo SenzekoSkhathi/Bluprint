@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PPH1002S",
+  "title": "Becoming a Health Professional",
+  "department": "public-health",
+  "credits": 15,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Doctor N Mapukata",
+  "prerequisites": {
+    "text": "Each student must undertake mapping of resources in their community by completing a prepopulated checklist before entry to BHP [PPH1002S]. Completing exit outcomes for the first-semester course Be coming a Professional [PPH10 01F] and completi ng a community mapping checklist will constitute the admission requirements for registering for BHP.",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "PPH1002S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "Objective: The overall aim of the course is to intro duce students to the practice of community- oriented primary care through theore tical and experiential learning. Specific objectives are to a) understand the impact of socio-economic and environmental factors on quality of an individual’s life and health, so that appropriate clinical and soci al management decisions ca n be made; b) to enable students to assess and become involved in initiatives that address socio-economic and environmental causes of ill health within communities and c) to refine teamwork skills through participation in group projects and activities. Course outline: This course builds on the knowledge and skills gained in PPH1001F Becoming a Professional. Focus is on the primary healthcare approach and disability. The course equips students to work collaboratively on a community-oriented project based on the primary healthcare principles and approach, including comprehensive health care (promotive, preventive, curative, rehabilitative and palliative care within the primary, secondary and tertiary levels of care), intersectoral collaboration, community involvement, and accessibility of and equity in healthcare. Students are DEPARTMENTS IN THE FACULTY 227 required to apply the knowledge, skills and values from PPH1001F to develop an appreciation of the contribution of all healthcare professionals to the promotion, maintenance and support of health and the healthcare of individuals, families and communities within the context of disability. The educational approach is participatory and project-based and all students are required to engage actively in the project and in facilitator-lead small learning groups. Academic, digital and information literacies are systematically integrated from the outset. The course includes a basic life support skills workshop.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Attendance of all group sessions, community and health service site visits and the life support skills workshop; completion of all assignments and assessment activities.",
+  "assessment": "Continuous, performance-base d in-course assessments provi de students with regular feedback. Those students who achiev e an average of 60% or above for these in-course assessments are not required to write the fi nal written examination. Those stu dents who average below 60% for their in-course assessments are required to write a final examination and must achieve a minimum of 50% in this examination in order to pass the course.",
+  "is_health_sciences_course": true
+}

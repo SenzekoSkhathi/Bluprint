@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "HUB1014S",
+  "title": "Anatomy of Communication Sciences",
+  "department": "human-biology",
+  "credits": 20,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Doctor K Mpolokeng",
+  "prerequisites": {
+    "text": "Refer to the programme and departmental sections in the 2026 Health Sciences Faculty Handbook.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course gives an overview of the anatomy relevant for the practice of the communication sciences. It covers the morphological anato my of the head and neck and rel evant parts of the thorax, neuro- anatomy, and the areas of embryology relating to these subjects. The course consists of five lectures and one practical per week for one semester. The practical involves the examination of pre-dissected specimens of the related body parts.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Attendance of and participation in all lectures, practical sessions, workshops and tutorials, and submission of assignments by the due date.",
+  "assessment": "The course comprises written and on-going practical assessments, which make up 45% of the course mark. The other 55% comprises marks for the final written and practical exams",
+  "is_health_sciences_course": true
+}

@@ -1,0 +1,56 @@
+{
+  "id": "llb-graduate",
+  "programme_code": "LP001",
+  "name": "Bachelor of Laws (Graduate Stream)",
+  "abbreviation": "LLB",
+  "saqa_id": 10695,
+  "nqf_level": 8,
+  "department": "Faculty of Law",
+  "duration_years": 3,
+  "total_credits": 504,
+  "stream": "graduate",
+  "entry_requirement": "Holders of an approved degree",
+  "curriculum": {
+    "year_1_preliminary": {
+      "label": "Year 1 (Preliminary Level)",
+      "core": [
+        "PVL1003W",
+        "PVL1004F",
+        "PVL1008H",
+        "PBL2000W",
+        "PVL2002H",
+        "PVL2003H"
+      ],
+      "credits": 144
+    },
+    "year_2_intermediate": {
+      "label": "Year 2 (Intermediate Level)",
+      "core": [
+        "CML3001W",
+        "PBL3001F",
+        "PBL3801W",
+        "PVL3003S",
+        "PVL3003F",
+        "PVL3005W",
+        "PVL3006S",
+        "DOL3001X",
+        "DOL3002X"
+      ],
+      "credits": 180
+    },
+    "year_3_final": {
+      "label": "Year 3 (Final Level)",
+      "core": [
+        "CML4004S",
+        "CML4006W",
+        "PBL4001W",
+        "PBL4801F",
+        "PBL4802F",
+        "PVL4008H",
+        "DOL4000H"
+      ],
+      "credits": 180,
+      "note": "Plus elective courses and research paper totalling 36 NQF credits. Minimum 36cr from electives (all 9cr each). Must include at least one seminars and research paper elective."
+    }
+  }
+}

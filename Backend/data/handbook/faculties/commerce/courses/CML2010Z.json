@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CML2010Z",
+  "title": "Business Law II",
+  "department": "commercial-law",
+  "credits": 12,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "TBA",
+  "prerequisites": {
+    "text": "Business Law I. No undergraduate student in the first year of study may register for Business Law II.",
+    "parsed": {
+      "type": "prerequisite",
+      "codes": [
+        "CML1001F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "Business Law 2 is designed to give students an understanding of commercial transactions, how they are financed, and the risks involved. The course covers insolvency, credit agreements, stokvels and the various forms of security that can be used to finance commercial transactions. By the end of the course, students should have an appreciation of the types of legal issues that commonly arise in financing transactions - how creditors can best secure themselves in the event of non-payment and ultimately the risk of insolvency and how debtors are protected under the National Credit Act. The course also covers public sector financial management.",
+  "lecture_times": "The course is an intensive one with 5 contact periods per week for 8 weeks in Semester 2.",
+  "dp_requirements": "Writing the test is compulsory. If a student does not write the test and does not get an exemption then the student will be marked absent and awarded 0 for the test.",
+  "assessment": "Coursework 30% and final examination 70%.",
+  "is_commerce_course": false,
+  "offered_by_faculty": "law"
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CSC4044Z",
+  "title": "Artificial Life",
+  "department": "computer-science",
+  "credits": 12,
+  "nqf_level": 8,
+  "year_level": "Postgraduate (Honours)",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "Associate Professor G Nitschke",
+  "prerequisites": {
+    "text": "Admission into the Honours in Computer Science, or permission from the course convener.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "Artificial life is a multi-disciplinary field of study (drawing from computer science, artificial intelligence, complex systems, evolutionary biology and chemistry), wherein researchers examine living systems, their adaptive processes and evolution. This course examines the origins of ALIFE, Cybernetics and AI: simulation and synthesis of lifelike systems, self-reproducing artificial evolution systems of digital organisms, cellular automata, swarm intelligence and stigmergy, as well as nature-inspired computation such as automated product design and evolutionary art. Course objectives include gaining an understanding of the theory and application of several selected topics via the implementation and analysis of various artificial life systems.",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "None.",
+  "assessment": "Exam: 50%; Practical Work: 50%.",
+  "is_science_course": true
+}

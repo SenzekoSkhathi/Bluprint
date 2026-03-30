@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CIV4041F",
+  "title": "Professional Practice",
+  "department": "civil-engineering",
+  "credits": 12,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Mr G Maswime / Professor P Moyo",
+  "prerequisites": {
+    "text": "Students must be potential qualifiers (i.e. anticipated final year of study).",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to prepare student engineers for the world of civil engineering through exposure to key professional issues including: the structure of the profession; engineering economics; project prioritization, the project life cycle; engineering contracts; contract management options; tender and contract documents; project planning; universal access; engineering risk management; contract administration; Health & Safety; professional ethics; and sustainability in engineering.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

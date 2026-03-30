@@ -1,0 +1,26 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "GEO1010F",
+  "title": "Geology for Engineers",
+  "department": "geological-sciences",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Associate Professor E M Bordy",
+  "prerequisites": {
+    "text": "At least 50% for NSC Geography or at least 60% for NSC Physical Science or Life Sciences.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to develop a broad understanding of how the Earth works. Over its >4.5 billion-year- long history, the Earth has been shaped by chemical, physical and biological processes. The course demonstrates why decoding the rock record of deep-time events is critical for explaining past, present and future environmental changes and the distribution of natural resources. It examines the interplay of terrestrial, marine, atmospheric, and cryospheric processes within the Earth system, with an emphasis on monitoring essential variables for understanding climate variability and change. The Earth has also sustained life over the last >3.5 billion years. Our species, Homo sapiens, is a relatively recent arrival, yet it has had, and continues to have, the grea test impact on our planet. The course reviews human evolution and how we became the dominant cause of global environmental change. The course also explores the social risks and vulnerabilities in response to the Earth’s biophysical processes and change. The course concludes with attention to the concepts of environmental hazard, risk, resilience, monitoring and adaptation.",
+  "lecture_times": "Monday - Friday, 2nd period",
+  "dp_requirements": "An average of 40% on all marked classwork and tests. Submission of 80% of weekly assignments in each of the 3 complusory sections: GEO, AGE, EGS. Attendance of the field trip is only compulsory for students majoring in Archaeology, EGS, Geology, or Oceanography.",
+  "assessment": "Final mark: Class record counting 50% and one final exam counting 50%.Class record: Weekly assignments (some face -to-face, some online) that are deadline -bound in each of the three taught sections of the course.Theory test:One face-to-face, invigilated on Upper Campus in week 5 of Term 1.Final exam: A 2 -hour written, face-to-face examination covers all material presented in the course (lectures, readings, practical assignments). Student must score a minimum of 40% in the final exam to pass the course.",
+  "is_engineering_course": false,
+  "offered_by_faculty": "science"
+}

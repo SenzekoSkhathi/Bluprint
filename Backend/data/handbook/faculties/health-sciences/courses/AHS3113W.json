@@ -1,0 +1,31 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AHS3113W",
+  "title": "Foundation Theory for Occupational Therapy Practice I",
+  "department": "health-and-rehabilitation-sciences",
+  "credits": 26,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Dr O Silaule",
+  "prerequisites": {
+    "text": "AHS2043W, AHS2002W, HUB2015W, PRY2002W and PSY2013F",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "AHS2043W",
+        "AHS2002W",
+        "HUB2015W",
+        "PRY2002W",
+        "PSY2013F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "Objective: By the end of this course, st udents will be able to understand the philosophy of client- centered practice; demonstrate competence in following the occupatio nal therapy process; demonstrate skill in selecting, im plementing and applying activity as a means and occupation as an end; understand and work effectively with diversity in context; understand profes sional and ethical use of self in relationships with individuals, groups, and other stakeholders; demonstrate an ability to 114 DEPARTMENTS IN THE FACULTY select and apply an appropriate OT practice model ma tched to the client; demonstrate skill in documenting OT plans; and demonstrate skill in using the five modes of clinical reasoning. Course outline: This course includes occupationa l therapy models and philosophy, theories of empowerment and Development and equity. Themes underpinning the cour se are primary health care and contextual relevance and developing agents for change. Teaching and learning activities include lectures, small group discussions, and class presentations.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "The Division of Occupational Therapy considers all academic activities important and full attendance is encouraged to ensure rich learning, engagement and competence in theory and practice. This course, however, involves a number of academic activities that are designated as ‘compulsory’ in order to ensure that each stu dent has obtained a mini mum level of competence through their in-class engagement prior to sitting the final examination for the course. Participation in these designated activities is monitored and is part of the duly performed requirements of the course. The list of compulsory activities that form part of this course are av ailable in the divisional course handbook. Students who do not meet the course DP requirements will be DPR and will not be granted entry into the final examination. See Rule FBE3. Should a student, for legitimate reasons, be unable to attend or complete any of thes e compulsory activities they must apply for a concession to miss classes (CMC). The CMC must be approved by the course convenor. Rule FGD 13.1, 13.2 and 13.3 in the undergraduate handbook details the process of applying for a CMC. The conditions for approval of the CMC will include tasks that the student will need to complete to ensure that all DP requirements for the course are met in order to be granted entry to the final course examination.",
+  "assessment": "Coursework assessments contribute 50% to the final mark and comprise a written paper, assignments and small group projects. The final examination contributes 50% to the overall mark and comprises a written paper.",
+  "is_health_sciences_course": true
+}

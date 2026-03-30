@@ -1,0 +1,31 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AHS3107W",
+  "title": "Occupational Therapy Theory and Practice in Physical Health",
+  "department": "health-and-rehabilitation-sciences",
+  "credits": 38,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Associate Professor A Sonday and Associate Professor H Buchanan",
+  "prerequisites": {
+    "text": "AHS2043W, AHS2002W, HUB2015W, PRY2002W and PSY2013F",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "AHS2043W",
+        "AHS2002W",
+        "HUB2015W",
+        "PRY2002W",
+        "PSY2013F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "Objective: By the end of this course, st udents are able to select, ap ply and interpret appropriate assessment methods for determining performance enablers and performance components for a range of physical health conditi ons; develop and justify a client-centered occupati onal therapy plan to address performance enablers, performance components and occupatio nal performance as appropriate; demonstrate skill in selecting, implementing and applying change. modalities (including activity as means and occupation as an end) to enable performance and remediate performance component deficits; and begin to understand how policies inform service delivery and facilitate participation of people with a range of physical health conditions at an individual level. Course outline: This course enables students to demonstrate knowledge about and skills in promoting physical health and well-being through human occupatio n, and in addressing occupation al implications of specific physical health conditions. It focuses on developing a client -centered occupational therapy plan that assists people with physical health concerns to participate in life through the everyday things that they need and want to do. Students learn to select, apply and interpret appropriate assessment methods for determining performance enablers and performance components for a range of ‘physical’ health conditions. Students develop skills in selecting, implementing and applying change modalities which enable performance and/or remediate performance component deficits. Students begin to understand how policies inform service delivery and facilitate participation of people with a range of ‘physical’ health conditions at an individual level.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "The Division of Occupational Therapy considers all academic activities important and full attendance is encouraged to ensure rich learning, engagement and competence in theory and practice. This course, however, in volves a number of academic activities that are designated as ‘compulsory’ in order to ensure that each stu dent has obtained a mini mum level of competence through their in-class engagement prior to sitting the final examination for the course. Participation in these designated activities is monitored and is part of the duly performed requirements of the course. The list of compulsory activities that form part of this course are av ailable in the divisional course handbook. Students who do not meet the course DP requirements will be DPR and will not be granted entry into the final examination. See Rule FBE3. Should a student, for legitimate reasons, be unable to attend or complete any of thes e compulsory activities they must apply for a concession to miss classes (CMC). The CMC must be approved by the course convenor. Rule FGD 13.1, 13.2 and 13.3 in the undergraduate handbook details the process of applying for a CMC. The conditions for approval of the CMC will include tasks that the student will need to complete to ensure that all DP requirements for the course are met in order to be granted entry to the final course examination. This course also has a practice learning component. Attendance at ALL on-site practice learning activities and practice learning tutorials is compulsory. Should students, fo r legitimate reasons, be unable to attend on-site practice learning or tutorials they must apply for a CMC and have this ap proved by the course convenor. A maximum allowance of three (3) days of absence in to tal is permitted from practice learning per block (See Rule FBE3). To be eligib le to enter the final exam ination the student must obtain a combined average of 50% for the practic e learning component (t wo practice learning demonstrations and two practice learning student performance reports).",
+  "assessment": "Coursework assessments contribute 60% an d comprise a range of theoretical and practice-based assessments. The final examinations contributes 40% to the final mark and comprise a written paper, and an objective standardised practical examination.",
+  "is_health_sciences_course": true
+}

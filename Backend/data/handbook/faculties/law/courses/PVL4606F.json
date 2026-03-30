@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PVL4606F",
+  "title": "Spatial Justice, Ubuntu and the Nomos of Apartheid",
+  "department": "private-law",
+  "credits": 9,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Prof AJ Barnard-Naudé",
+  "prerequisites": {
+    "text": "All Preliminary and Intermediate Level courses to have been completed. Limited to 25 students.",
+    "parsed": {
+      "type": "level_completion",
+      "levels_required": [
+        "preliminary",
+        "intermediate"
+      ],
+      "note": "Limited to 25 students"
+    }
+  },
+  "corequisites": [],
+  "outline": "The aim of the course is to introduce students to the spatial dimension of all law. The ancient Greek term for law in its concrete spatiality is 'nomos'. The course will illustrate how land-appropriation has been a fundamental dimension of the history of the nomos of the Earth as a planetary spatial order. Special attention will be given to the nomos of colonization, imperialism and apartheid. In the second part of the course, we focus on the post-apartheid spatial order and consider the continuations of, but also the breaks with, the nomos of apartheid. The Constitution, the National Development Plan and the Spatial Planning and Land Use Management Act will be critically examined. We critically consider the role of Ubuntu (as a juridical ethic) and social justice activism in the promotion and achievement of spatial justice.",
+  "lecture_times": "Two lectures per week. Limited to 25 students.",
+  "dp_requirements": "None",
+  "assessment": "Seminar presentation 40%, An essay of 4000-5000 words 60%.",
+  "is_law_course": true
+}

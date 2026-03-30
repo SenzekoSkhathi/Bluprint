@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "INF2007F",
+  "title": "Applying Database Principles",
+  "department": "information-systems",
+  "credits": 12,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Z Ruhwanya",
+  "prerequisites": {
+    "text": "INF2003F or equivalent, or INF2003F as co-requisite. Students cannot be credited for this course and CSC2001F.",
+    "parsed": {
+      "type": "prerequisite",
+      "codes": [
+        "INF2003F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The course introduces students to database concepts, advanced database design and implementation and new developments in the database field. These are core skills which I.S. professionals require throughout their careers. There is a strong practical component to the course, where students will be taught the practical aspects of designing, implementing and using databases. This course explores different database architectures and design approaches, data modelling techniques, data dictionaries, database implementation, database security and administration.",
+  "lecture_times": "Monday to Wednesday 12h00 - 12h45.",
+  "dp_requirements": "80% attendance at workshops, completion of all course deliverables and year mark of 45%.",
+  "assessment": "Coursework 60%; Final Exam 40%. Sub-minimum 45% for the final exam.",
+  "is_commerce_course": true
+}

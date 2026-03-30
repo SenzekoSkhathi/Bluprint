@@ -1,0 +1,62 @@
+{
+  "id": "bsc-speech-language-pathology",
+  "programme_code": "MB010/MB018",
+  "name": "BSc Speech-Language Pathology",
+  "abbreviation": "BSc(SLP)",
+  "department": "Health and Rehabilitation Sciences",
+  "duration_years": 4,
+  "total_nqf_credits": 622,
+  "professional_registration": "HPCSA",
+  "curriculum": {
+    "year_1": {
+      "core": [
+        "PPH1001F",
+        "PPH1002S",
+        "AHS1003F",
+        "PSY1004F",
+        "PSY1005S",
+        "HUB1014S",
+        "AHS1025S",
+        "AHS1042F",
+        "ASL1300F",
+        "ASL1301S"
+      ],
+      "credits": 176
+    },
+    "year_2": {
+      "core": [
+        "SLL1028H",
+        "AHS1054W",
+        "PSY2015F",
+        "PSY2014S",
+        "AHS2047S",
+        "AHS2106F",
+        "AHS2107F",
+        "AHS2108W",
+        "AHS2109S"
+      ],
+      "credits": 168
+    },
+    "year_3": {
+      "core": [
+        "AHS3078H",
+        "AHS3005W",
+        "AHS3071F",
+        "AHS3072S",
+        "AHS3073F",
+        "AHS3102S",
+        "AHS3103F"
+      ],
+      "credits": 144
+    },
+    "year_4": {
+      "core": [
+        "AHS4000W",
+        "AHS4067S",
+        "AHS4005H",
+        "AHS4006H"
+      ],
+      "credits": 124
+    }
+  }
+}

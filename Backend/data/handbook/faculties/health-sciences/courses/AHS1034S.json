@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AHS1034S",
+  "title": "Introduction to Applied Physiotherapy",
+  "department": "health-and-rehabilitation-sciences",
+  "credits": 22,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "TBC",
+  "prerequisites": {
+    "text": "All first semester courses in the BSc Physiotherapy programme.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [
+    "HUB1020S",
+    "HUB1023S"
+  ],
+  "outline": "Objective: At the end of this course students will be able to apply the concepts of movement as relates to basic assessment of mobility and exercise. Course outline: This course builds on the foundational concepts covered in Movement Science 1 and will consolidate the principles of application to health promotion and well-being. The course is taught through lectures, practical demonstrations and workshops, self-study sessions and tutorials. Where possible, exposure to the clinical platform is provided.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Full attendance of and participation in all lectures, practical sessions, workshops and tutorials, and submission of assignments by the due dates.",
+  "assessment": "The coursework mark is weighted 60% an d comprises post-module tasks (weighted 24%) towards the final mark); a theory test (20%); a structured practical test (16%) The final exam is weighted 40% and comprises of a written examination (25%) and a structured practical exam (15%).",
+  "is_health_sciences_course": true
+}

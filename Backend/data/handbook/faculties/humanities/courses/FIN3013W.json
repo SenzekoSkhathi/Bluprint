@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "FIN3013W",
+  "title": "Photography 3",
+  "department": "fine-art",
+  "credits": 48,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Associate Professor S Josephy",
+  "prerequisites": {
+    "text": "FIN2013W Photography 2. Due to the nature of the discipline, spatial and technical limitations and Health and Safety legislation, student numbers will be limited and students’ results will be taken into consideration.",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "FIN2013W"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This is an advanced course on the theory and practice of photography. It builds on the technical, conceptual and critical skills learnt during the second year of study. Projects encourage an exploration of the medium and emphasise the generation of ideas. Students are exposed to studio and advanced photographic lighting techniques, various format cameras and postproduction skills through specific problem-solving projects. During the second semester students work on a self -motivated project, which draws upon their previous photographic knowledge and further develops personal expression and critical understanding. Students are encouraged to explore relevant contemporary practice and theory, as well as historical examples to inform their practice. Fieldwork int roduces new technology and methodology as well as conceptual thinking in alternative environments.",
+  "lecture_times": "Monday to Friday, 14h00 to 17h00. Studio times: Studio times are from 09h00 to 17h00, with students breaking to attend lectures and tutorials as required by the timetable.",
+  "dp_requirements": "At least 80% attendance of studio classes and critiques, satisfactory completion of all projects.",
+  "assessment": "Mid-year coursework examination 40%, year -end coursework examination 50%, attendance & participation 10%.",
+  "is_humanities_course": true
+}

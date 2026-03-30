@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "TDP2010F",
+  "title": "Performance Studies II",
+  "department": "theatre-and-performance",
+  "credits": 36,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Associate Professor S Matchett",
+  "prerequisites": {
+    "text": "TDP1027F, TDP1028S, or with the approval of the Head of Department.",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "TDP1027F",
+        "TDP1028S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course widens the African frame established in first year to examine performance globally with a particular focus on the ways in which performance concepts migrate between continents and mutate in the process. Through lectures, essays, class tasks and practical applications, students learn about the relationship between performance and society, and how meaning is constructed in performance. Students will be introduced to various tools for performance analysis. A fieldwork component may be included as part of this course.",
+  "lecture_times": "Lectures Tuesday and Wednesday 3rd period; Tutorial Thursday 3rd period, Practical Thursday afternoon.",
+  "dp_requirements": "Submission of all written assignments and presentation of all performance tasks; and attendance at all practical classes. Students in the Theatre and Performance programme may not THEATRE, DANCE AND PERFORMANCE STUDIES 423 attend the Thursday practical classes when they attend professional training practical classes, which are deemed equivalent.",
+  "assessment": "Continuous assessment (essays, projects, practical tasks, class tests) counts 100%.",
+  "is_humanities_course": true
+}

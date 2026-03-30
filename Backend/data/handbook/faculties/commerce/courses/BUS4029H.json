@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "BUS4029H",
+  "title": "Actuarial Research Project",
+  "department": "management-studies",
+  "credits": 36,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "FY",
+  "semester_code": "H",
+  "convener": "Associate Professor S Mataramvura",
+  "prerequisites": {
+    "text": "Concurrent registration for BUS4028F (Actuarial Science III: Financial Economics).",
+    "parsed": {
+      "type": "concurrent_registration",
+      "codes": [
+        "BUS4028F"
+      ]
+    }
+  },
+  "corequisites": [
+    "BUS4028F"
+  ],
+  "outline": "The project course aims at equipping students with research skills, to empower students with paper writing skills and to equip students with ability to search for information online using e.g. library resources, Bloomberg and other sources. The project also aims at inculcating a sense of responsibility and discipline among students. The project process consists of a submission of proposal, a literature review, an initial draft of the final paper and the final paper.",
+  "lecture_times": "To be advised.",
+  "dp_requirements": "Passing the draft proposal by at least 4/10.",
+  "assessment": "Course work 20%; Dissertation 80%. Literature Review marked out of 10, draft proposal marked out of 10. Final draft marked out of 100. Overall mark = Literature Review Mark + Draft mark + 0.8 * Final Mark.",
+  "is_commerce_course": true
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CSC2004Z",
+  "title": "Programming Assessment",
+  "department": "computer-science",
+  "credits": 0,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "Emeritus Associate Professor S Berman",
+  "prerequisites": {
+    "text": "(CSC1015F/S and CSC1016S) or (CSC1010H and CSC1011H).",
+    "parsed": {
+      "type": "prerequisite",
+      "codes": [
+        "CSC1015F",
+        "CSC1016S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This is a required course for all students majoring in Computer Science and/or who wish to continue to any third year courses in Computer Science. It should be taken in the second year of study and will demonstrate competency in programming, which is assumed in all third year courses. It is a compulsory course in the Computer Science major CSC05. The aim is to assess and confirm mastery in fundamental programming skills before students can proceed to advanced courses.",
+  "lecture_times": "None.",
+  "dp_requirements": "None.",
+  "assessment": "Practical programming examination counts for 100%.",
+  "is_commerce_course": false,
+  "offered_by_faculty": "science"
+}

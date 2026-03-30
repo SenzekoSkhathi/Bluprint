@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "APG3033W",
+  "title": "Land & Cadastral Survey Law",
+  "department": "architecture-planning-geomatics",
+  "credits": 16,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Professor J Whittal",
+  "prerequisites": {
+    "text": "Refer to the programme and departmental sections in the 2026 EBE Faculty Handbook.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [
+    "CON2033F"
+  ],
+  "outline": "Fundamentals of Roman Dutch law, acquisition of rights in land, registration and recording of rights, cadastral systems and practical aspects of cadastral survey law. Statute and case law relating to cadastral survey, registration, planning, property holdi ng, mineral and petroleum resources development rights, communal and informal rights, and land information management in South Africa. International law and law of the sea. Delimitation and delineation of offshore rights. Post - apartheid land policies and legislation. Land reform and land delivery in the developing world.",
+  "lecture_times": "First semester. Tues 11h00 to 12h45. Assignments and seminars: First semester, Wed 14h00-17h00. Second semester Fri 12:00 – 12:45. Assignments and seminars: 14h00 – 17h00.",
+  "dp_requirements": "Attendance at and completion of all assignments with a minimum average of 50%, a minimum class test average of 40%.",
+  "assessment": "Tests count 34%, assignments count 66%. DEPARTMENTS IN THE FACULTY AND COURSES OFFERED 85",
+  "is_engineering_course": true
+}

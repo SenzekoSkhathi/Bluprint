@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AST5004Z",
+  "title": "Data Science for Astronomy",
+  "department": "astronomy",
+  "credits": 12,
+  "nqf_level": 9,
+  "year_level": "Postgraduate – Masters",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "To be advised",
+  "prerequisites": {
+    "text": "Core modules of the Master's in Data Science course.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "This course introduces students to various aspects of data intensive astrophysics, ranging from data visualisation and complex databases to advanced statistical tools for astronomical data analysis and computational astrophysics. At the core of this module are examples in modern data-intensive astrophysics derived from global data challenges around MeerKAT, the Square Kilometre Array (SKA), associated projects in radio astronomy, and other large multi-wavelength surveys. Students will be introduced to Bayesian statistics in astronomy, visualising large data cubes, optimising database operations in the presence of multi-dimensional data, data mining and discovery tools, and the role of large-scale simulations to interpret the significance of astronomical observations.",
+  "lecture_times": null,
+  "dp_requirements": "50% average for the two projects.",
+  "assessment": "Two projects: 25% each; practical 'take-home' data science examination: 50%. A sub-minimum of 50% for each of the projects and examination component is required.",
+  "is_science_course": true
+}

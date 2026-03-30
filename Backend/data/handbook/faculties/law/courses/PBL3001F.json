@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PBL3001F",
+  "title": "International Law",
+  "department": "public-law",
+  "credits": 18,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "A/Prof H Woolaver",
+  "prerequisites": {
+    "text": "All Preliminary Level courses to have been completed.",
+    "parsed": {
+      "type": "level_completion",
+      "levels_required": [
+        "preliminary"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The course addresses the following aspects of international law: introduction and sources of law; subjects and objects of international law; the relationship between international and South African law; state responsibility; peaceful settlement of disputes; the use of force; the United Nations and other key international organisations; and international criminal law.",
+  "lecture_times": "Half course, first semester.",
+  "dp_requirements": "Please refer to the course handout and/or the intermediate year schedule.",
+  "assessment": "Optional essay/opinion: 20%; Mid-course assessment: 30%; Final exam: 50% (if essay/opinion) or 70% (if no essay/opinion).",
+  "is_law_course": true
+}

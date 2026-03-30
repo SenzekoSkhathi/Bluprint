@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CSC3042F",
+  "title": "AI: Deep Learning",
+  "department": "computer-science",
+  "credits": 18,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "To be advised",
+  "prerequisites": {
+    "text": "CSC2001F, CSC2042S.",
+    "parsed": {
+      "type": "and",
+      "codes": [
+        "CSC2001F",
+        "CSC2042S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The course builds on fundamental concepts in machine learning to introduce modern practical deep neural networks. Different neural network architectures are covered, including deep feedforward networks, convolutional and recurrent neural networks, and Transformers. There is a focus on the design and implementation of scalable deep learning systems. A selection of applications from Natural Language Processing and Computer Vision are included. Finally, ethics for machine learning is introduced through a number of case studies, covering issues such as dataset and algorithmic bias.",
+  "lecture_times": "Monday - Friday, 3rd period. Practicals: One 4-hour practical per week, by arrangement.",
+  "dp_requirements": "Minimum of 45% aggregate in practical work.",
+  "assessment": "Tests 25%; practical work 25%; examinations 50%. Subminima: 45% for practicals, 45% weighted average of theory tests and examinations.",
+  "is_science_course": true
+}

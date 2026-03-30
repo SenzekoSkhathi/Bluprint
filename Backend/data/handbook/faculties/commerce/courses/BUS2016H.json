@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "BUS2016H",
+  "title": "Financial Mathematics",
+  "department": "management-studies",
+  "credits": 18,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "FY",
+  "semester_code": "H",
+  "convener": "E Gouws",
+  "prerequisites": {
+    "text": "See rule FBC3.8, FBD6, FBF3.5, FBG2.5, respectively, given Actuarial Programme of registration.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "The course aims to provide a grounding in financial mathematics and simple applications related to non-random cash flows. Lectures and tutorials will cover various aspects, including cash flow models for financial transactions, compound interest and discounting, present values and accumulations of streams of payments, nominal and effective rates, equations of value, loan schedules, project appraisal techniques, compound interest problems and index-linked securities, income and capital gains tax on fixed-interest securities, arbitrage pricing and forward contracts, basic types of assets, pricing methods, and the term structure of interest rates.",
+  "lecture_times": "To be advised.",
+  "dp_requirements": "At least 40% for coursework, 80% total tutorial attendance.",
+  "assessment": "Tutorials (groupwork) 10%; Tests 30%; Examination 60% (42% written exam; 18% Excel-based exam).",
+  "is_commerce_course": true
+}

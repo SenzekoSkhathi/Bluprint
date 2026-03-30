@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CIV3045S",
+  "title": "Transportation Planning",
+  "department": "civil-engineering",
+  "credits": 16,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Professor R Behrens/Dr O Nnene",
+  "prerequisites": {
+    "text": "None.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to develop an understanding of the causes and motivations of personal travel, the means by which movement takes place, as well as the impact personal travel, freight and transport infrastructure have on the environment, economy and society. This is done by providing a grounding in techniques for modelling, analysing and assessing (multi -modal) transport systems and their impacts. Transport policy and appraisal and fundamentals of data collection, as well as professional communication (presentation skills) are included.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

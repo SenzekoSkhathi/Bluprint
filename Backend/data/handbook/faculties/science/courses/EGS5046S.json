@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EGS5046S",
+  "title": "Water Resource Management",
+  "department": "environmental-geographical-science",
+  "credits": 23,
+  "nqf_level": 9,
+  "year_level": "Postgraduate – Masters elective",
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr D Kibirige",
+  "prerequisites": {
+    "text": "Acceptance for Honours or Master's specialising in EGS.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "The module develops a comprehensive understanding of issues and challenges in water resources management at both an urban and catchment scale, with a primary focus on the South African context. Themes include increasing demand on scarce water resources, meeting the basic social need for clean potable water, consequences of interventions and institutional arrangements in water governance, and the role of the private sector in managing water risk. Topics include water quality, monitoring and compliance; new directions in water research in South Africa; biological treatment of water; participation in water governance; and corporate water stewardship. The course includes a three-week directed reading period and a 4-day field camp. At NQF 9 level, students complete an additional literature review assignment and prepare, manage and lead a course discussion.",
+  "lecture_times": null,
+  "dp_requirements": "At least 80% attendance record and submission of all assignments.",
+  "assessment": "Assignments 50%; examination 50%.",
+  "is_science_course": true
+}

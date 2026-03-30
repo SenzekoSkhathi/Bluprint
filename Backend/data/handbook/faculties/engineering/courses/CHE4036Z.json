@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CHE4036Z",
+  "title": "Chemical Engineering Design",
+  "department": "chemical-engineering",
+  "credits": 36,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "Dr TA Franklin",
+  "prerequisites": {
+    "text": "All core third year courses, CHE4048F, CHE4049F.",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "CHE4048F",
+        "CHE4049F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course brings together many of the elements previously covered in the chemical engineering degree and is intended to be the culmination of the previous years' study. The course is structured around an open -ended design problem and includes: process ev aluation, comparison and selection; material and energy balancing; process area and/or unit operation design; plant equipment selection and specification; health, safety and environmental analysis; economic evaluation; plantwide control; utilities specification and energy integration; plant layout; and overall project evaluation. The initial phase of the course is an individual pre-feasibility study and report. This is followed by a group-based design/feasibility study in 5 or 6 member teams, which include s individual report submissions and a group oral presentation.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course. DEPARTMENTS IN THE FACULTY AND COURSES OFFERED 100",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

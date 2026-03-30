@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CEM1000W",
+  "title": "Chemistry 1000",
+  "department": "chemistry",
+  "credits": 36,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Professor G S Smith",
+  "prerequisites": {
+    "text": "Students wishing to register for CEM1000W will normally be expected to have passed NSC Physical Science with at least 60% and NSC Mathematics with at least 70%.",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "CEM1000W"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course lays the foundation of chemistry in its context as a central science for scientists and engineers working in the chemical, biological or earth sciences or in chemical engineering. Fundamental concepts in chemistry are covered to illustrate thei r application to understanding the DEPARTMENTS IN OTHER FACULTIES AND COURSES OFFERED 167 molecular nature of the world around us. Topics include microscopic and macroscopic concepts, atomic structure, chemical bonding and molecular structure, the chemistry of the elements and inorganic chemistry, chemical equilibrium, acids and bases, solubili ty, phases of matter, thermochemistry and thermodynamics, colligative properties, oxidation and reduction, electrochemistry and chemical kinetics. The course continues with an introduction to the language of organic chemistry, including structure and reactivity in organic chemistry, describing and predicting organic reactivity and the properties and reactivity of biologically important molecules. Practicals aim to develop essential manipulative and technical laboratory skills, as well as to draw links to interpreting the physical world in terms of its molecular nature. A blended approach to learning may be used where academic activities will be delivered online and face -to-face, if feasible. This will be at the discretion of the course convener.",
+  "lecture_times": "Monday to Wednesday and Friday, 2 nd or 4th period. Tutorials: Thursday 2 nd or 4 th period. Practicals: Tuesday, Thursday or Friday, 14h00 - 17h00.",
+  "dp_requirements": "Attendance and completion of practicals, tests and tutorial exercises, and at least 35% for the class record.",
+  "assessment": "Class record (comprising tests, tutorials and practicals) counts 50%; one 3 -hour examination written in November counts 50%. A subminimum of 40% is required in the final examination.",
+  "is_engineering_course": false,
+  "offered_by_faculty": "science"
+}

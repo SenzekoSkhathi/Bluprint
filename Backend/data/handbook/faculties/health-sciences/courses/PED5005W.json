@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PED5005W",
+  "title": "Caring for Children: Paediatric Surgery",
+  "department": "paediatrics-and-child-health",
+  "credits": 10,
+  "nqf_level": 8,
+  "year_level": 5,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Professor S Cox and Doctor T Siyotula DEPARTMENTS IN THE FACULTY 195",
+  "prerequisites": {
+    "text": "Successful completion of all co urses within the preceding academic year.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "Caring for Children comprises two courses (Caring for Children: Paediatric Medicine [PED5006W] and Caring for Children: Paediatric Surgery [PED5005W]) that are fully integrated and must thus be taken during the same eight-week modular block. As this course forms the theoretical basis for final year, it incorporates considerable, structured online and face-to-face teaching and learning activities. Caring for Children: Paediatric Medicine comprises two weeks of ambulatory paediatrics and four weeks of inpatient care. Students will be placed at Red Cross War Memorial Children’s Hospital, New Somerset Hospital, or Groote Schuur Hospital. Caring for Children: Paediatric Surgery comprises two weeks of exposure to paediatric surgery in- and out-patient care, and surgical theatre; it takes place at Red Cross War Memorial Childre n’s Hospital. The curriculum is composed of core topics and common presentations which studen ts address in terms of history taking, examination, and clinical reasoning; during bedside tutori als; in assembling portfolios; an d engaging with online content. Students who pass these courses will have knowledge of common core childhood medical and surgical diseases and conditions; skill at taking a history from children and their caregivers; examining children and adolescents; the ability to de fine an appropriate problem list and formul ate an appropriate management plan; awareness of basic procedures; professional behaviour and attitudes appropriate to handling children and their caregivers; and awareness of the rights of children and the doctor’s role as an advocate for child health.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Students who do not meet DP requirements (a) or (c ) above fail the course and must repeat it in full in the next academic year. Students who do not meet DP requirement (b) above must complete all quizze s by the deadline set by the course convener, faili ng which, the student’s mark will be DPR. *Any absence is only allowed with permission, subject to the Concession to Miss Classes/Academic Activities and Modular Policy SOP and rules as stated in FHS UG Handbook 8a.",
+  "assessment": "The courses PED5005W and PED5006W will be examined together in the last week of the eight-week modular block. The overall pass mark for PED5005W is 50%. The assessment comprises an MCQ/EMI-type online examination. The following will be recommended to the Faculty Examinations Committee, that students who: (a) achieve 48– 49% may be offered a supplementary examination* or (b) achieve 47% or less fail the course and must repeat it in full. For students who do not meet the DP requirements for the course, recommendations to the Faculty Examinations Committee will be accord ing to what is stated in the DP Requirements secti on above. It will be recommended to the FEC th at students who achieve 49% or less in the su pplementary exam or who do not attend or achieve 49% or less in the deferred exam must repeat the course and the end-of-block summative assessment in full in the next academic year. *All a dditional time and supplementary examinations will take place in the supplementary time period as scheduled by the Faculty of Health Sciences.",
+  "is_health_sciences_course": true
+}

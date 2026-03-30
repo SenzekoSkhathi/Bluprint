@@ -1,0 +1,50 @@
+{
+  "id": "bmus-opera",
+  "programme_code": "HB010",
+  "stream_code": "MUZ23",
+  "name": "Bachelor of Music (Opera)",
+  "abbreviation": "BMus",
+  "nqf_level": 8,
+  "department": "South African College of Music",
+  "duration_years": 4,
+  "credits_range": "498-501",
+  "curriculum": {
+    "year_1": {
+      "core": [
+        "MUZ1110H",
+        "MUZ1111H",
+        "MUZ1500F",
+        "MUZ1501S",
+        "MUZ1700H",
+        "MUZ1440H"
+      ]
+    },
+    "year_2": {
+      "core": [
+        "MUZ2110H",
+        "MUZ2111H",
+        "MUZ2500F",
+        "MUZ2501S",
+        "MUZ2700H",
+        "MUZ2440H"
+      ]
+    },
+    "year_3": {
+      "core": [
+        "MUZ3110H",
+        "MUZ3111H",
+        "MUZ3500F",
+        "MUZ3501S",
+        "MUZ3700H",
+        "MUZ3440H"
+      ]
+    },
+    "year_4": {
+      "core": [
+        "MUZ4900W",
+        "MUZ4700H",
+        "MUZ4440H"
+      ]
+    }
+  }
+}

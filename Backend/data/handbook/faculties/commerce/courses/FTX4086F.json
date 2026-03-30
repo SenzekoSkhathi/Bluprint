@@ -1,0 +1,30 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "FTX4086F",
+  "title": "Alternative Investments",
+  "department": "finance-and-tax",
+  "credits": 18,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Associate Professor F Toerien",
+  "prerequisites": {
+    "text": "A combined average of at least 60% for FTX3044F and FTX3045S with a minimum of 50% for each of these courses, and ECO2003F and ECO2004S (or) registration for the Bachelor of Commerce Honours specialising in Finance [CH001FTX05].",
+    "parsed": {
+      "type": "prerequisite",
+      "codes": [
+        "FTX3044F",
+        "FTX3045S",
+        "ECO2003F",
+        "ECO2004S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The so-called 'alternative investments' are becoming increasingly important as an investment class. This course deals with a number of specialised areas of investment finance which are not typically covered in other parts of the finance undergraduate curriculum, such as real estate investments, hedge funds, commodities and private equity. Each investment class covered in the course will be discussed as a separate module, and students will be exposed to both the theoretical and practical aspects of each. In addition to lectures, this course also includes workshops intended to make concepts and the practical application of alternative investments clearer.",
+  "lecture_times": "2 lectures per week, Tuesday, Friday, both 6th & 7th periods.",
+  "dp_requirements": "None.",
+  "assessment": "Coursework including tests and projects 40%; Final examination 60%.",
+  "is_commerce_course": true
+}

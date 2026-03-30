@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "ASL2202F",
+  "title": "Applied Sociolinguistics",
+  "department": "african-languages-and-literatures",
+  "credits": 24,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr D Jethro",
+  "prerequisites": {
+    "text": "Second-year status.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course explores African political systems and thought, from precolonial Africa through to postcolonial political systems. In so doing, the course examines the forms of African political thought that emerged across three periods: the pre -colonial; the era of colonisation and political forms of resistance against it; and the postcolonial/neo-colonial period. The course ends with current critiques of postcolonial governance, which argue that, in many important ways, decolonisation of our political systems has not yet occurred.",
+  "lecture_times": "Monday, Tuesday and Wednesday, 6th period.",
+  "dp_requirements": "None.",
+  "assessment": "Coursework 100%",
+  "is_humanities_course": true
+}

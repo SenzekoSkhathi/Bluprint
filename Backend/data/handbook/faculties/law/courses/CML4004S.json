@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CML4004S",
+  "title": "Labour Law",
+  "department": "commercial-law",
+  "credits": 18,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr C de Villiers",
+  "prerequisites": {
+    "text": "All Preliminary and Intermediate Level courses to have been completed.",
+    "parsed": {
+      "type": "level_completion",
+      "levels_required": [
+        "preliminary",
+        "intermediate"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The aims of this course are to develop an understanding of the purpose and function of labour law and the industrial relations framework, and to examine and analyse the role of the common law; basic conditions of employment; unfair dismissal; the institutions of collective bargaining and participative decision-making, statutory and non-statutory dispute resolution as well as discrimination and equity in employment.",
+  "lecture_times": "Half course, second semester.",
+  "dp_requirements": "Completion of all work required of the class and attendance at all tutorials.",
+  "assessment": "Coursework 40%, November examination 60%.",
+  "is_law_course": true
+}

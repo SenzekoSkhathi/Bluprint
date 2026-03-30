@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CEM3005W",
+  "title": "Chemistry 3005",
+  "department": "chemistry",
+  "credits": 72,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Associate Professor C Veale",
+  "prerequisites": {
+    "text": "CEM2005W, 1000-level full course in Mathematics; completion of or concurrent registration for STA1000F/S is highly recommended. Note: CEM3005W is the required course for students completing a major in Chemistry.",
+    "parsed": {
+      "type": "or",
+      "codes": [
+        "CEM2005W",
+        "STA1000F/S",
+        "CEM3005W"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This final course for the Chemistry major aims to develop understanding and integrated knowledge of the core disciplines in Chemistry. Lecture material includes topics in wave mechanics and spectroscopy, adsorption and heterogeneous catalysis, solid-state chemistry and X-ray crystallography, dynamics, inorganic reaction mechanisms, organometallic chemistry, further topics in organic structure and reactivity, organic synthesis and organic dynamic stereochemistry. The practical course covers the same topics and aims to develop integrative and interpretive skills. A further aim is to develop skills in writing within the discipline, as well as introducing students to modern research methods.",
+  "lecture_times": "Monday - Friday, 3rd period. Practicals: Wednesday and Friday, 14h00 - 17h00.",
+  "dp_requirements": "Attendance and completion of practicals, tests and tutorial exercises, and at least 50% for the class record and practical component, respectively.",
+  "assessment": "Class record (comprising class tests [20%], tutorials [5%] and practicals [25%]) counts 50%; a 3-hour June examination counts 25%; and a 3-hour November examination counts 25% towards the final mark. A subminimum aggregate of 40% across the June and November examination papers, together with at least 50% overall, is required to pass the course.",
+  "is_science_course": true
+}

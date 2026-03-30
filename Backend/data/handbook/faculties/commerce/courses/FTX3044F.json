@@ -1,0 +1,32 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "FTX3044F",
+  "title": "Investment Management A",
+  "department": "finance-and-tax",
+  "credits": 18,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Professor A Charteris",
+  "prerequisites": {
+    "text": "A pass in FTX2024F/S and passes in ACC1011S/ACC1020H/ACC1022Z, ECO1010F/S or ECO1110F/S, and ECO1011F/S.",
+    "parsed": {
+      "type": "prerequisite",
+      "codes": [
+        "FTX2024F",
+        "ACC1011S",
+        "ECO1010F",
+        "ECO1011S"
+      ]
+    }
+  },
+  "corequisites": [
+    "STA2020F"
+  ],
+  "outline": "The course seeks to provide students with a solid foundation in investment theory. The course is split into three modules namely, equities, portfolio theory and investment ethics. The equities module gives students a practical understanding of issues in the valuation and trading of equities and covers basic equity valuations and analysis. The portfolio theory module focuses on the investment decision-making framework, the notions of risk and return, and the theories of efficiency. Investment ethics exposes students to some of the ethical dilemmas of the investment profession and provides a set of guidelines within which these ethical issues can be considered.",
+  "lecture_times": "Monday, Wednesday and Friday: 11h00 - 11h45 or 12h00 - 12h45.",
+  "dp_requirements": "A minimum weighted average of 40% for all coursework and attendance at 80% of tutorials.",
+  "assessment": "Coursework (including tests and assignments) 50%; final examination 50%.",
+  "is_commerce_course": true
+}

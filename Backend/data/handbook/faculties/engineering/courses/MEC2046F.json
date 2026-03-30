@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MEC2046F",
+  "title": "Materials Science in Mechanical Engineering",
+  "department": "mechanical-engineering",
+  "credits": 12,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr SL George",
+  "prerequisites": {
+    "text": "None",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [
+    "CEM1008F"
+  ],
+  "outline": "This course includes an overview of the classification and structure-property relationships of metallic, ceramic, polymeric and composite engineering materials. Specific topics include: elastic behaviour; plastic and work-hardening behaviour of ductile materials; recovery and recrystallisation of deformed metals; microstructure, heat treatment and properties of steels; optimisation and limitations of ceramic materials; processing and manufacture of polymeric and composite materials; influence of environmental effects on the deterioration of materials. The course is concluded by applying the knowledge of material classification, structure -process-property relationships, availability, sustainability and cost, to optimum selection of materials in engineering design.",
+  "lecture_times": "4 sessions per week.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

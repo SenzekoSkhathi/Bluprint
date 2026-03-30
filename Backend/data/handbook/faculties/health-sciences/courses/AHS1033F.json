@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AHS1033F",
+  "title": "Movement Science I",
+  "department": "health-and-rehabilitation-sciences",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "TBC",
+  "prerequisites": {
+    "text": "Refer to the programme and departmental sections in the 2026 Health Sciences Faculty Handbook.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "Objective: At the end of this course, students will be able to understand the concepts of movement as it relates to the body and across the lifespan. Course outline: 90 DEPARTMENTS IN THE FACULTY This course content introduces initial concepts in Physiotherapy including basic terminology, surface anatomy, joint movement, goniom etry, human development across th e lifespan and the scientific principles associated with human movement analysis and movement assessment. This course is taught through lectures, practical demonstrations, workshops, self-study sessions and tutorials",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Full attendance of and participation in all lectures, practical sessions, workshops and tutorials.",
+  "assessment": "In-course assessment is weighted 50% and comprises assignments and post-module tests (15%) a mid-semester theory test (20%); and a structured practical test (15%). The final examination mark is weighted at 50% and co mprises a written examination (25% ) and a structured practical examination (25%). Students who fail the course may be required to register for the Fundamentals of Health Science programme or will repeat the course in the following academic year.",
+  "is_health_sciences_course": true
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "SLL1048H",
+  "title": "Afrikaans for Health and Rehabilitation Sciences",
+  "department": "language-studies",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "FY",
+  "semester_code": "H",
+  "convener": "Dr J Claassen",
+  "prerequisites": {
+    "text": "Refer to the programme and departmental sections in the 2026 Health Sciences Faculty Handbook.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "The content of the course is based on case studies covered in the streams of physiotherapy, occupational therapy and communication sciences and speech disorder s. The focus of the Afrikaans course is on communication skills, and specifically on those skills that may be required for an interaction between a healthcare professional and a client. Other skills include skill in asking questions 258 FACULTIES AND DEPARTMENTS OFFERING COURSES TO THE FACULTY and the ability to enter effectively into dialogue with a client. Th e course focuses on the unique pronunciation stylistic variants of individual clients and culture-specific words and expressions.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "At least 80% class attendance and completion of all assessments.",
+  "assessment": "Continuous assessment will occur through a blend of asyn chronous in-course and oral summative assessments. The cumulative Semester 1 and 2 marks count 50% each. The elected form of assessment will be aligned with the mode of content delivery.",
+  "is_health_sciences_course": false,
+  "offered_by_faculty": "humanities"
+}

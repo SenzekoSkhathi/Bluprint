@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CSC4022Z",
+  "title": "Compilers 2",
+  "department": "computer-science",
+  "credits": 12,
+  "nqf_level": 8,
+  "year_level": "Postgraduate (Honours)",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "To be advised",
+  "prerequisites": {
+    "text": "Admission to BSc Hons specialising in Computer Science or Information Technology.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "This course will introduce students to the inner mechanics of a modern programming language compiler or interpreter. Students will appreciate why programming languages are designed in particular ways and they will learn how to develop compilers and compiler-related tools. Course content includes: semantic analysis, activation records, intermediate code, optimisations, basic block analysis, instruction selection, liveness analysis and register allocation.",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "None.",
+  "assessment": "Final examination: 60%; Practical assignments: 40%.",
+  "is_science_course": true
+}

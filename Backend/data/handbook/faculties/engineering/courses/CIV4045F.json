@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CIV4045F",
+  "title": "Structural Design II",
+  "department": "civil-engineering",
+  "credits": 18,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Professor P Moyo",
+  "prerequisites": {
+    "text": "CIV3048F and CIV3049S (DP)",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "CIV3048F",
+        "CIV3049S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This advanced course introduces the full structural design process including conceptualisation, development of alternative schemes, sizing and detailing of structural elements. The course also aims to develop an understanding of the design of prestressed concrete elements and plastic design of steel elements. Topics include: introduction to conceptual design of structures including stability and robustness, design of pre -stressed beams, plastic analysis of steel beams and frames. The course includes a major design project.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

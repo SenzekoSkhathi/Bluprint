@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EEE3088F",
+  "title": "Electrical Engineering Design Principles",
+  "department": "electrical-engineering",
+  "credits": 8,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Professor F Nicolls",
+  "prerequisites": {
+    "text": "EEE2045F or EEE2046F/S",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "EEE2045F",
+        "EEE2046F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to equip students with the skills required to undertake efficient procedural engineering design. Various design methodologies and strategies, stages of design, and practical tools for design management, development, and evaluation are int roduced via theory and use -case lectures. The use of simulation, modeling, measurement error analysis, tests, and optimisation processes are introduced as key tools for engineering design. The course assignments are structured around both skill-specific exercises and a design project of relevance to all EE streams. The project requires students to use the methodologies and tools presented to: (i) develop a standard adherent specification, (ii) develop simulation based subsystems, (iii) integrate these su bsystems into a complete solution, and (iv) evaluate, qualify, and document the final implement solution.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

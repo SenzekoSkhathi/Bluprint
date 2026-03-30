@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "STA5066Z",
+  "title": "Mathematical Modelling for Infectious Diseases",
+  "department": "statistical-sciences",
+  "credits": 15,
+  "nqf_level": 9,
+  "year_level": "Postgraduate (Master's)",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "Professor S Silal",
+  "prerequisites": {
+    "text": "Acceptance into Master's programs in Statistics & Data Science, Data Science or Biostatistics, and/or statistical background deemed sufficient by the Head of Department.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "This course introduces students to mathematical modelling of infectious diseases. Topics include differential equation modelling, agent based modelling, computer simulation, statistical data fitting, public health modelling, and introduction to economic modelling.",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "40% for the assignment component.",
+  "assessment": "Assignments 40%. Written examination 60%. Sub-minimum of 40% for each of assignment and examination component.",
+  "is_science_course": true
+}

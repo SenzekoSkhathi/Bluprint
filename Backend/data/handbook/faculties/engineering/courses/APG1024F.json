@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "APG1024F",
+  "title": "Introduction to Geo-Spatial Sciences",
+  "department": "architecture-planning-geomatics",
+  "credits": 8,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Professor J Whittal",
+  "prerequisites": {
+    "text": "Refer to the programme and departmental sections in the 2026 EBE Faculty Handbook.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "In this first year course, students are exposed to the breadth of topics they will encounter as they progress through the degree. Students will learn about the different branches of geospatial sciences, from the traditional to the modern, including the historical development of the discipline. The course DEPARTMENTS IN THE FACULTY AND COURSES OFFERED 76 also covers the interrelationship between geospatial sciences and allied disciplines and professions, including an introduction to relevant professional bodies.",
+  "lecture_times": "Refer to departmental timetable",
+  "dp_requirements": "Attendance at and completion of all tests",
+  "assessment": "Class tests will count 52% each and exam will count 50%",
+  "is_engineering_course": true
+}

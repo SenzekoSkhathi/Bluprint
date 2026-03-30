@@ -1,0 +1,26 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MAM1020F",
+  "title": "Mathematics for Engineers I",
+  "department": "mathematics-and-applied-mathematics",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr B Mongwane",
+  "prerequisites": {
+    "text": "A pass in NSC Mathematics with at least 70%, or at least a D symbol at A-level.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "The course aims to develop a good conceptual and visual understanding of the fundamentals of the mathematics of differential and the beginning of integral calculus as applied in engineering contexts. Topics include: Functions, limits and continuity. Ration al functions, the natural exponential and logarithm functions. Radian measure and the Trigonometric functions. The rules of differentiation. DEPARTMENTS IN OTHER FACULTIES AND COURSES OFFERED 179 Curve sketching. Applications of the mean value theorem. Rates of change and optimization involving functions of a single variable. L'Hospital's rules, indeterminate forms and the squeeze theorem. Anti- differentiation. Finite series, permutations, combinat ions and the binomial theorem. The definite integral and the fundamental theorem of calculus. The substitution rule.",
+  "lecture_times": "Monday & Thursday & Friday, 1st & 2nd period; Tuesday & Wednesday, 1 st & 2nd period, 1 double-period tutorial per week, offered in each semester.",
+  "dp_requirements": "30% For class record, high tutorial attendance.",
+  "assessment": "Examination, not longer than 3 hours in June: Class record up to 40%.",
+  "is_engineering_course": false,
+  "offered_by_faculty": "science"
+}

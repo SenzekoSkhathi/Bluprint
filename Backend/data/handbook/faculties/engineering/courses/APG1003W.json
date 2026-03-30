@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "APG1003W",
+  "title": "Technology I",
+  "department": "architecture-planning-geomatics",
+  "credits": 20,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Associate Professor P Tumubweinee",
+  "prerequisites": {
+    "text": "None",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [
+    "APG1020W"
+  ],
+  "outline": "This course is an introduction to the basic principles and concepts of construction and structure with emphasis on the tectonic qualities and sustainability properties of architectural materials. Familiarity with technical terminology and technical drawing conventions are developed.",
+  "lecture_times": "Tuesday, 2nd to 8th periods (refer to departmental timetable)",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

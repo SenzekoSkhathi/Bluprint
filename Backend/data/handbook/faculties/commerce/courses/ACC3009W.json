@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "ACC3009W",
+  "title": "Financial Reporting III",
+  "department": "accounting",
+  "credits": 36,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "M Gajewski and S Gwadiso",
+  "prerequisites": {
+    "text": "Please refer to the 'Entry to CA specific courses' section of the Commerce Handbook.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "The objective of Financial Reporting III within the CA(SA) qualification process is to ensure that students display competencies related to the recording, recognition, measurement and presentation of financial and non-financial information in accordance with International Financial Reporting Standards (IFRS). It builds on the basic principles of accounting taught in Financial Reporting I and II. Particular emphasis is placed on the application of full IFRS, integration of income taxes and the application of various accounting principles in a group situation.",
+  "lecture_times": "Monday, Tuesday, Wednesday, Thursday 11:00; Repeat Lecture 12:00.",
+  "dp_requirements": "Attendance at and submission of a minimum of 75% of tutorials AND a weighted average of 40% for class tests.",
+  "assessment": "Coursework 40%; Exam 60%.",
+  "is_commerce_course": true
+}

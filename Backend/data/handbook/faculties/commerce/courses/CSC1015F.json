@@ -1,0 +1,26 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CSC1015F",
+  "title": "Computer Science 1015",
+  "department": "computer-science",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "K Prag",
+  "prerequisites": {
+    "text": "At least 70% for NSC Mathematics.",
+    "parsed": {
+      "type": "nsc_requirement",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course is an introduction to problem solving, algorithm development and programming in the Python language. It includes fundamental programming constructs and abstractions, sorting and searching techniques, and machine representations of data. The practical component covers input/output, conditionals, loops, strings, functions, arrays, lists, dictionaries, recursion, text files and exceptions in Python. Students are taught testing and debugging, as well as sorting and searching algorithms, algorithm complexity and equivalence classes. Number systems, binary arithmetic, boolean algebra and logic gates are also introduced.",
+  "lecture_times": "4th or 5th period once per week. Tutorials: One per week, replacing one lecture. Practicals: One per week, Monday to Friday, 14h00 - 16h00 or 16h00 - 18h00.",
+  "dp_requirements": "Minimum of 45% aggregate in practical work.",
+  "assessment": "Theory tests 15%; practical tests and practical assignments 25%; one 2-hour examination written in June 60%. Subminima: 45% for practicals, 45% on weighted average of theory tests and examination.",
+  "is_commerce_course": false,
+  "offered_by_faculty": "science"
+}

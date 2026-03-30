@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "ECO4007F",
+  "title": "Microeconomics",
+  "department": "economics",
+  "credits": 16,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr C Makanza",
+  "prerequisites": {
+    "text": "ECO4112F.",
+    "parsed": {
+      "type": "prerequisite",
+      "codes": [
+        "ECO4112F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course covers topics in microeconomics that are fundamental to modelling the behaviour of economic agents, markets, and strategic interactions. The course starts with the analysis of individual decision making (decision theory). It then covers individual interactions in 'markets', prior to focussing on game theory, which is the natural extension of decision theory to strategic interactions between economic agents. The course concludes by focussing on applications of game theory.",
+  "lecture_times": "To be announced.",
+  "dp_requirements": "None.",
+  "assessment": "Coursework 50%, Examination 50%. A supplementary exam will only be offered for ECO4007F during the mid-year vacation.",
+  "is_commerce_course": true
+}

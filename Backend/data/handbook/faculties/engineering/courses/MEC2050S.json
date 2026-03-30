@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MEC2050S",
+  "title": "Thermofluids I",
+  "department": "mechanical-engineering",
+  "credits": 16,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Mr C du Sart",
+  "prerequisites": {
+    "text": "CEM1008F and MAM1020F and PHY1012F",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "CEM1008F",
+        "MAM1020F",
+        "PHY1012F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to introduce students to the fundamentals of thermodynamic and fluid mechanic sciences in an integrated manner. In particular students will be introduced to fundamental concepts and definitions, as well as fluid properties and their relationships. Students will furthermore be given insight into the fundamental heat transfer mechanisms and become familiar with the four fundamental balance equations. By applying these to selected continuity problems, closed system problems, entropy problems as well as fluid statics and momentum problems, students will become familiar with the presented concepts and further their problem-solving skills.",
+  "lecture_times": "4 lectures and 2 tutorials per week.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

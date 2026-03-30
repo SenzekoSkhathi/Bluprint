@@ -1,0 +1,57 @@
+{
+  "id": "bsw",
+  "programme_code": "HB063",
+  "name": "Bachelor of Social Work",
+  "abbreviation": "BSW",
+  "nqf_level": 8,
+  "department": "Social Development (Social Work)",
+  "duration_years": 4,
+  "minimum_credits": 480,
+  "professional_registration": "South African Council for Social Service Professions (SACSSP)",
+  "curriculum": {
+    "year_1": {
+      "core": [
+        "PSY1009F",
+        "PSY1010S",
+        "SOC1001F",
+        "SOC1005S",
+        "SWK1006S",
+        "SWK1005S",
+        "SWK1013F"
+      ],
+      "credits": 98
+    },
+    "year_2": {
+      "core": [
+        "SWK2001F",
+        "SWK2060F",
+        "SWK2065S",
+        "SWK2070F",
+        "SWK2075S"
+      ],
+      "credits": 124,
+      "note": "Plus PSY/SOC electives"
+    },
+    "year_3": {
+      "core": [
+        "SWK3061F",
+        "SWK3066S",
+        "SWK3070F",
+        "SWK3075S"
+      ],
+      "credits": 132,
+      "note": "Plus PSY/SOC senior courses"
+    },
+    "year_4": {
+      "core": [
+        "SWK4015F",
+        "SWK4016S",
+        "SWK4030F",
+        "SWK4031S",
+        "SWK4032S",
+        "SWK4033F"
+      ],
+      "credits": 126
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CSC2005S",
+  "title": "Independent Research in Computer Science",
+  "department": "computer-science",
+  "credits": 24,
+  "nqf_level": 7,
+  "year_level": 2,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr J Chavula",
+  "prerequisites": {
+    "text": "Academically strong students may apply. Selection based on final results in CSC1015F, CSC1016S and CSC2001F. Places limited depending on availability of supervisors; final decision at discretion of Head of Department.",
+    "parsed": {
+      "type": "and",
+      "codes": [
+        "CSC1015F",
+        "CSC1016S",
+        "CSC2001F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course allows students to pursue a course of independent research in one of the areas of specialisation of the department under the direct supervision of one of the staff members. Students will learn research methods in Computer Science and apply these in a suitable project. They will also learn about research writing (proposal and report). Students will complete a research project and document this in a research report (mini-dissertation). An intermediate deliverable will be a project proposal and presentation to staff.",
+  "lecture_times": "Regular meetings with supervisor, by arrangement.",
+  "dp_requirements": "Not specified.",
+  "assessment": "Proposal 20%, Final research report 80%.",
+  "is_science_course": true
+}

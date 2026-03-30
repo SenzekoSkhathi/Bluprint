@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MEC3082S",
+  "title": "Mechanical Engineering Machine Element Design",
+  "department": "mechanical-engineering",
+  "credits": 16,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Associate Professor C von Klemperer",
+  "prerequisites": {
+    "text": "MEC2048S, MEC2049F",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "MEC2048S",
+        "MEC2049F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "Aims: To facilitate the development of knowledge and skills that will allow the student to address complex design problems with both creativity and rigour. This will be by performing detail design analyses of machine components and assemblies. These analyses include strength and life calculations while still ensuring the designs will perform in accordance with appropriately specified development requirements. Issues such as manufacturability and maintenance will also be considered. The communication of the engineering designs by means of design calculations, brief technical reports, and the creation of suitable engineering models and drawings for parts and assemblies. Course outline: This course aims to further develop an advanced understanding of design in the mechanical and electro -mechanical domain. Topics include: Machine component design and basic machine system design, Compilation of a basic design report with ca lculations, CAD models and drawings. Specific knowledge areas are the application of fatigu e failure theories; standard machine design for; power screws, threaded fasteners, springs, clutches, brakes, spur, helical and bevel gears, and shafts.",
+  "lecture_times": "3 lectures per week and a weekly afternoon tutorial.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

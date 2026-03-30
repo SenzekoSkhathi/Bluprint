@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EGS4001W",
+  "title": "Atmospheric Science Honours",
+  "department": "environmental-geographical-science",
+  "credits": 160,
+  "nqf_level": 8,
+  "year_level": "Postgraduate – Honours",
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Dr S Conradie",
+  "prerequisites": {
+    "text": "As for EGS4004W, with the additional requirement of at least a half-course in Mathematics or a full-course in Physics, and a senior undergraduate course in climatology or atmospheric science. Computer literacy is highly recommended.",
+    "parsed": {
+      "type": "complex",
+      "codes_mentioned": [
+        "EGS4004W"
+      ],
+      "note": "Complex prerequisite logic - see text"
+    }
+  },
+  "corequisites": [],
+  "outline": "The Atmospheric Science programme provides a 4th year of development for those interested in following a career associated with atmospheric science and climatology, or for progression to research. The focus is on practical skills and the application of theory to issues related to the climate system. The programme follows the same pattern as EGS4004W, with the constraint that three of four course modules must be from the atmospheric options and the fourth from one of the Honours-level physical science options in EGS or Oceanography. Requirements include a research project, two seminar presentations, course fieldwork, and attendance and presentation at the annual conference of the South African Society for Atmospheric Scientists.",
+  "lecture_times": null,
+  "dp_requirements": "Students must pass at least three of their coursework electives and achieve a composite pass on the coursework. Students must achieve a pass on their research project to proceed to graduation.",
+  "assessment": "Examinations follow the same structure as EGS4004W. Not all course options have formal examinations; a significant portion may be based on project tasks. Combined module results count 75% and the research project counts 25%. Project component must be passed separately for award of the degree.",
+  "is_science_course": true
+}

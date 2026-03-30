@@ -1,0 +1,23 @@
+{
+  "$schema": "handbook-equivalences-v1",
+  "faculty": "law",
+  "year": 2026,
+  "equivalences": [
+    {
+      "type": "stream_equivalence",
+      "note": "Graduate LLB (LP001), undergraduate LLB (LB002), and combined LLB all lead to the same LLB qualification. Stream determines entry point and total duration."
+    },
+    {
+      "type": "elective_types",
+      "note": "Final Level electives come in two types: (1) lectures-and-examination electives, (2) seminars-and-research-paper electives. Students must take at least one of type (2), or do an Independent Research Paper instead."
+    },
+    {
+      "type": "numeracy_requirement",
+      "options": [
+        "Pass numeracy test",
+        "Complete MAM1013F"
+      ],
+      "note": "Undergraduate LLB students must satisfy numeracy requirement via test OR MAM1013F. Test may not be attempted a second time."
+    }
+  ]
+}

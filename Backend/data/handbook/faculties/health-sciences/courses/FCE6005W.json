@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "FCE6005W",
+  "title": "Short Elective",
+  "department": "family-community-and-emergency-care",
+  "credits": 10,
+  "nqf_level": 8,
+  "year_level": 6,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Mr J Irlam",
+  "prerequisites": {
+    "text": "Student are eligible to take this course once in the fifth academic year of study (upon application to and with written permission from the Electives Convener and year 5 or MBChB years 4-6 Convener and limited to the vacation period) or in the sixth year of study.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "Objective: To provide students with an opportunity over two weeks to enhance their clinical competence and understanding of the social context of disease and health. Course outline: Students are required to undertake a self-funded clinical elective anywhere they choose. Students formulate and submit their learning objectives as motivation for their elective at least two weeks prior to the elective. Students identify a supervisor on si te at their elective to direct and supervise their elective activities and to evaluate their performance on completion.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "A completed student evaluation of the elective using the st andard template provided, as well as an evaluation form and activity form signed by the elective supervisor.",
+  "assessment": "A Pass/Not Pass assessment is made by the electives convener. No mark is awarded for the report. Students who do not pa ss (i.e. who do not submit a repo rt) will be given one opportunity to re-submit, otherwise they may be required to repeat the elective in the following year.",
+  "is_health_sciences_course": true
+}

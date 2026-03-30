@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EGS4004W",
+  "title": "Environmental & Geographical Science Honours",
+  "department": "environmental-geographical-science",
+  "credits": 160,
+  "nqf_level": 8,
+  "year_level": "Postgraduate – Honours",
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Dr P Sabela-Rikhotso",
+  "prerequisites": {
+    "text": "A BSc degree with a major in Environmental & Geographical Science or related field. Acceptance at the discretion of the Head of Department, based on quality of final year results, undergraduate curriculum and referee reports. Preference may be given to UCT graduates. Entrance limited to 30 students.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "Students complete four advanced semester modules, one of which must be a research methods module. Students complete a research methods course and then select three further modules from a range of advanced courses in Environmental and Geographical Science in Human Geography, Environmental Management or Physical Geography. Curricula must be approved by the course convener in consultation with the Head of Department. Each student also completes a research project. At the convener's discretion, students may take one course from outside the Department (in addition to the methods course) towards the degree.",
+  "lecture_times": null,
+  "dp_requirements": "Students must pass at least three of their coursework electives and achieve a composite pass on the coursework. Students must achieve a pass on their research project to proceed to graduation.",
+  "assessment": "Combined module results (examinations, project, essay, fieldwork and seminar presentation marks) count 75%; research project counts 25%. Project component must be passed separately for award of the degree.",
+  "is_science_course": true
+}

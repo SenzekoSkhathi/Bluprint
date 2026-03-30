@@ -1,0 +1,24 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PVL4511F",
+  "title": "Unjustified Enrichment",
+  "department": "private-law",
+  "credits": 9,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "I Ahmed",
+  "prerequisites": {
+    "text": "None",
+    "parsed": {
+      "type": "none"
+    }
+  },
+  "corequisites": [],
+  "outline": "Unjustified enrichment constitutes the third part — with contract and delict — of the law of obligations and is thus essential to an integrated understanding of private law. Typically seen as the last resort in the law of obligations, the law of enrichment guards against instances of imbalance where there is an unjustified patrimonial transfer and in this sense, the law of enrichment forms a part of the self-correctional norms of the law. The aim of this course is to give students a good overall knowledge of the South African law of unjustified enrichment and to explore current debates in the law of enrichment — in particular about the proper definition and analysis of the subject itself.",
+  "lecture_times": "Two lectures per week.",
+  "dp_requirements": "None",
+  "assessment": "Assignment: 25%, Class participation: 5%, Final Exam: 70%.",
+  "is_law_course": true
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MDN4017W",
+  "title": "Medicine for External Credit",
+  "department": "medicine",
+  "credits": 15,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Associate Professor S Wasserman and Dr N Vorajee",
+  "prerequisites": {
+    "text": "Refer to the programme and departmental sections in the 2026 Health Sciences Faculty Handbook.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "The course aims to provide a period of clinical training for the Nelson Mandela-Fidel Castro students to gain practical experience with a range of illnesses that are commonly managed in South Africa. The curriculum is mainly clinical presentation-based and aims to: 1) Ensure clinical and technical competence in a real-life clinical setting; 2) Ensure Guideline-based management using the Essential Drug List for district hospitals, SA Medical Formulary and Adult Primary Care or PACK; 3) Empower students to learn on their own. The student will be proficient in the following areas: 1) Clinical skills: Competently take a full history a nd conduct a complete physical examination; 2) Diagnostic reasoning: Formulate a concise clinical assessment of the patient’s problems; 3) Demonstrate an understanding of the impact of illn ess on the lives of patients and th eir families; 4) Communication skills: Conduct themselves in a professionally appropriate manner when interacting with patients, their families and all categories of healthcare workers.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "(a) Attendance of 8 Bedside Tutorials, (b) Attendance of three Pack Tutorials, (c) Complete and submit 8 Medicine portfolio cases with assessment templates by due dates, (d) Complete and submit eight MiniCE X cases by due dates, (e) At tendance of 10 Masterclasses, (f) Attendance of three ECG tutorials, (g) Attendance of 3 Clinical In takes, (h) Attendance of 3 Post Intake Ward Rounds and (j) Comple tion and submission of logbook of technical procedures by due dates.",
+  "assessment": "(a) Clinical examination (3 clinical case s to be examined): 40%, (b) Portfolio of Medicine (online examination – 3 cases): 50% Work place, Assessment: 10%, Ward Mark (5%) and MiniCEX (5%). The student must: (a) Complete all the DP requirements; (b) Complete and submit the Logbook of all the re quired procedures; (c) Ac hieve an overall pass ma rk of 50% or more, and must obtain 50% or more for each component of assessment (Clinical exam, work place assessment, portfolio exam) and must pass two of the three clinical cases. Su bject to approval by the Faculty Examinations Committee, a supplementary examination may be granted when a student has obtained a mark between 48% and 49% in only one component of assessment but has passed the others and has 168 DEPARTMENTS IN THE FACULTY obtained 50% or more overall. For students who fail two cases in the clinic al exam there are the following possibilities:(a) Pass ov erall; (b) Average mark 48-49% ; (c) Below 48% overall. For scenarios #1 and #2 th e case will be reviewed by the F aculty Examinations Committee for consideration for a supplementary clinical exam following an additio nal 2-week block of medicine. For scenario #3 the student will be required to r epeat the course. Stu dents who are granted a supplementary examination for the Portfolio component will be required to complete an additional 2 week block of medicine and find 4 new cases to add to the best 4 of their old cases (making a total again of 8 cases) prior to repeating the portfolio exam. Students who fail the course or a supplementary examination will have to repeat the course.",
+  "is_health_sciences_course": true
+}

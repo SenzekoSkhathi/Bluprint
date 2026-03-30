@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "INF3014F",
+  "title": "Electronic Commerce",
+  "department": "information-systems",
+  "credits": 18,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "G Mwalemba",
+  "prerequisites": {
+    "text": "INF2003F, INF2009F and at least 45% for INF2011S.",
+    "parsed": {
+      "type": "prerequisite",
+      "codes": [
+        "INF2003F",
+        "INF2009F",
+        "INF2011S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "INF3014F is a course for students majoring in Information Systems (IS) as well as any other student that wish to gain an understanding of electronic commerce (e-Commerce) technologies and their usage in society. The course covers both theoretical e-Commerce issues as well as the practical skills required to develop a basic e-Commerce system. The course plays a role in facilitating students' ability to constructively develop integrated knowledge on e-Commerce, including understanding of and the ability to apply and critically evaluate the key concepts, techniques and practices that form part of e-Commerce systems design, development, implementation and usage. The practical component will culminate in a project that involves developing an e-Commerce application that addresses a real business or social need.",
+  "lecture_times": "12h00-13h45 Tuesday and Wednesday and either 13h00-14h45 or 14h00-15h45 Friday.",
+  "dp_requirements": "Submission of tutorials, seminar, and project work as well as a subminimum of 45% for the year mark prior to writing the final examination.",
+  "assessment": "Coursework 70%. Exam 30%. Subminimum of 40% for the final examination.",
+  "is_commerce_course": true
+}

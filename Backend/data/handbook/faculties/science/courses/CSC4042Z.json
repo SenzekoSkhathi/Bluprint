@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CSC4042Z",
+  "title": "Answer Set Programming",
+  "department": "computer-science",
+  "credits": 12,
+  "nqf_level": 8,
+  "year_level": "Postgraduate (Honours)",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "Professor T A Meyer",
+  "prerequisites": {
+    "text": "Admission into the Honours in Computer Science, or permission from the course convener.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "This course will introduce students to the formalism of logic programming, allowing them to model and solve problems in a fragment of first order logic. The course will touch on theoretical foundations as well as implementations and applications.",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "None.",
+  "assessment": "Exam: 24-hour take-home exam, 50%; Assignments: 50%.",
+  "is_science_course": true
+}

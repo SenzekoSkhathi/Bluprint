@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-equivalences-v1",
+  "faculty": "health-sciences",
+  "year": 2026,
+  "equivalences": [
+    {
+      "type": "foundation",
+      "standard_entry": "Year 1 of standard curriculum",
+      "foundation": "HSE1001F/S",
+      "note": "Fundamentals of Health Sciences Semester Programme — students complete this before entering standard Year 1"
+    },
+    {
+      "type": "language_choice",
+      "options": [
+        "SLL1044S",
+        "SLL1041S"
+      ],
+      "note": "MBChB Year 1: Beginners Afrikaans OR Beginners isiXhosa"
+    },
+    {
+      "type": "language_choice",
+      "options": [
+        "SLL1028H",
+        "SLL1048H"
+      ],
+      "note": "Health & Rehab Sciences Year 2/3: Xhosa OR Afrikaans for Health Sciences"
+    }
+  ]
+}

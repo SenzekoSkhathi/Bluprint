@@ -1,0 +1,38 @@
+{
+  "id": "ba-screen-production",
+  "programme_code": "HB067",
+  "name": "Bachelor of Arts in Screen Production",
+  "abbreviation": "BA(Screen Production)",
+  "nqf_level": 7,
+  "department": "Centre for Film and Media Studies",
+  "duration_years": 3,
+  "minimum_credits": 375,
+  "curriculum": {
+    "year_1": {
+      "core": [
+        "FAM1000S"
+      ],
+      "credits": 120,
+      "note": "Plus 7 other 1000-level courses from Humanities departments"
+    },
+    "year_2": {
+      "core": [
+        "FAM2013F",
+        "FAM2014S",
+        "FAM2004S"
+      ],
+      "credits_range": "105-120",
+      "note": "Plus 3 electives"
+    },
+    "year_3": {
+      "core": [
+        "FAM3016F",
+        "FAM3017S",
+        "FAM3005F",
+        "FAM3003S"
+      ],
+      "credits_range": "150-180",
+      "note": "Plus 1 elective"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "FTX4056S",
+  "title": "Applied Investments",
+  "department": "finance-and-tax",
+  "credits": 18,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr A Majoni",
+  "prerequisites": {
+    "text": "A combined average of at least 60% for FTX3044F and FTX3045S with a minimum of 50% for each of these courses, and ECO2003F and ECO2004S (or) registration for the Bachelor of Commerce Honours specialising in Finance [CH001FTX05].",
+    "parsed": {
+      "type": "prerequisite",
+      "codes": [
+        "FTX3044F",
+        "FTX3045S",
+        "ECO2003F",
+        "ECO2004S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "In this course students are exposed to advanced issues in investment finance from both a practical and theoretical perspective. Students are required to understand and be able to deal with substantial uncertainty when making investment decisions, and to report on a range of practical problems which are currently encountered by finance professionals.",
+  "lecture_times": "2 lectures per week, Monday and Thursday, both 7th and 8th periods.",
+  "dp_requirements": "A minimum weighted average of at least 40% for tests and assignments as well as 100% workshop attendance.",
+  "assessment": "Coursework (including tests and assignments) 50%; final examination 50%.",
+  "is_commerce_course": true
+}

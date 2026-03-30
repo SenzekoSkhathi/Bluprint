@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "APG1004F",
+  "title": "History & Theory of Architecture I",
+  "department": "architecture-planning-geomatics",
+  "credits": 10,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Mr P Mabe",
+  "prerequisites": {
+    "text": "None",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course introduces students to architectural history and theory as understood through cultural studies. The course follows a chronology of World Architecture until the beginning of the 19th Century. This chronology is occasionally interrupted and refra med by thematic content based on contemporary theoretical issues and architecture.",
+  "lecture_times": "Refer to departmental timetable",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

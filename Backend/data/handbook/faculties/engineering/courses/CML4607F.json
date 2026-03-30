@@ -1,0 +1,26 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CML4607F",
+  "title": "Construction Law (Advanced)",
+  "department": "commercial-law",
+  "credits": 18,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "B Zungu",
+  "prerequisites": {
+    "text": "This course is only available to BSc(Eng) Electrical Engineering; BSc(Eng) Electrical and Computer Engineering and BSc(Eng) Mechatronics students.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "The course is designed to give students a general understanding of the legal issues they will face in their engineering careers and to enable them to act professionally and ethically. The course gives an overview of the South African legal system, and then provides a general but comprehensive synopsis of the law of contract, labour law, corporate governance and the various entities which can be used for conducting business and the legal implications of each. In addition students are given an introduction to intellectual property. By the end of the term students should have an appreciation of the types of issues and risks that commonly arise in the socio-legal context of engineering practice.",
+  "lecture_times": "There are 4 contact sessions per week in this intensive course.",
+  "dp_requirements": "Completion of assignment and class test is compulsory. If the student does not submit the assignment or write the test the student will receive 0 for that assessment (unless granted an exemption). But the student will be able to write the exam.",
+  "assessment": "Assignment (20%), Class test (20%), Exam (60%)",
+  "is_engineering_course": false,
+  "offered_by_faculty": "law"
+}

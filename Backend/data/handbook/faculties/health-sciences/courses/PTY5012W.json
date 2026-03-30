@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PTY5012W",
+  "title": "Forensic Medicine for External Credit",
+  "department": "pathology",
+  "credits": 10,
+  "nqf_level": 8,
+  "year_level": 5,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Doctor I Molefe",
+  "prerequisites": {
+    "text": "Refer to the programme and departmental sections in the 2026 Health Sciences Faculty Handbook.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course is four weeks in duration starting with only Wednesday afternoon lectures during the two weeks of the Anaesthesia/Forensic Medicine block, followed by 2-week full rotation in the Division of Forensic Medicine and Toxicology. The course comprises eight (8) large group face to face lecture seminars, (2) online lecture semi nars and four (4) practical tutori als at the Salt River Forensic Pathology Laboratory of at least four hours’ duration each. The core curriculum has been designed to highlight the forensic pathology and clinical forensic medicine pr oblems and topics encountered by generalist medical practitioners. St udents are expected to be ab le to complete medico-legal documentation, recognise, and co rrectly refer cases needing expert medico-legal opinions in preparation for poten tial expert testimony in criminal court cases and inquest hearings for the Department of Justice & Constitu tional development. Learning ou tcomes are based on the core knowledge and practical skills on selected topics presented in la rge group seminars, small group sessions and tutorials, as well as the four topics covered in the four tasks presented during the 2-week block.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "As a DP requirement students are expected to attend of all 4 practical sessions at the Salt River Forensic Pathology Labo ratory as stipulated in the cou rse guide, attendance of and/or participation in 60% of plenar y sessions and completion of 4 task s which comprise the in-course assessment. In addition, studen ts must achieve a subminimum of 50% in their coursework to be eligible to write the final Forensic Medicine exam.",
+  "assessment": "The final mark is made up of in-course task assignments (40%), practical skill task/procedure (10%) and the fina l written short answer questi on (SAQ) examination (50%). Competency in Forensic Medicine requires achievement of a subminimum of the 50% in the in-course, 50% in the written exam and 50% in the practical skill task/procedure.",
+  "is_health_sciences_course": true
+}

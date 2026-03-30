@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PBL3801W",
+  "title": "Criminal Law",
+  "department": "public-law",
+  "credits": 36,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "C Willis-Smith",
+  "prerequisites": {
+    "text": "All Preliminary Level courses to have been completed.",
+    "parsed": {
+      "type": "level_completion",
+      "levels_required": [
+        "preliminary"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The course covers the general principles of criminal law. Students are introduced to these principles by a brief examination of the nature of criminal law and selected specific offences, the principle of legality and the operation of the Bill of Rights on the rules of criminal law. Analysis of principles: the course focuses on (i) voluntariness of conduct (including the defence of automatism); (ii) causation; (iii) defences excluding unlawfulness (private defence, necessity, impossibility, obedience to orders, public authority and consent); (iv) capacity (including the defences of youth, insanity, intoxication, provocation and emotional stress); (v) fault in the forms of intention and negligence; (vi) common purpose, accomplice and accessory-after-the-fact liability; (vii) attempt, incitement and conspiracy. Selected specific offences: Essential elements of crimes such as murder, culpable homicide, assault, rape, theft, robbery, and fraud are considered.",
+  "lecture_times": "Whole year course.",
+  "dp_requirements": "Please refer to the course handout and/or the intermediate year schedule.",
+  "assessment": "Optional essay/opinion 20%; June test 20%; Assignment/test 10%; November examination (2hour): 50% (if essay/opinion), 70% (if no essay/opinion).",
+  "is_law_course": true
+}

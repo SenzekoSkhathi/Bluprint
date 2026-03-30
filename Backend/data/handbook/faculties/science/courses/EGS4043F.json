@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EGS4043F",
+  "title": "Climate Change Adaptation and Transformation",
+  "department": "environmental-geographical-science",
+  "credits": 30,
+  "nqf_level": 8,
+  "year_level": "Postgraduate – Honours elective",
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Professor G Ziervogel",
+  "prerequisites": {
+    "text": "Acceptance for Honours or Master's specialising in EGS.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "The central question of this course is 'Why does adaptation to climate change need to be understood from a social and governance perspective?' Climate change adaptation is explored as a means for responding to global environmental change at local, national and international scales, and from the perspective of individuals, organisations and government. The course develops understanding of the complexity of adaptation and the relationship between reducing climate risk and broader socio-economic issues; how to position adaptation in the development context and as a means of transformation; and skills to critically assess adaptation responses and identify how social and governance aspects could be strengthened.",
+  "lecture_times": null,
+  "dp_requirements": "At least 80% attendance record and submission of all assignments.",
+  "assessment": "Assignments 60%; examination 40%.",
+  "is_science_course": true
+}

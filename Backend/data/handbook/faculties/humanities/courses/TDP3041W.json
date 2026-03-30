@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "TDP3041W",
+  "title": "Dance III",
+  "department": "theatre-and-performance",
+  "credits": 60,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "J-L Crewe",
+  "prerequisites": {
+    "text": "Completion of T&P Studiowork 2 and placement in the Performance Making concentration.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This advanced course is project-based. Through a series of projects the course will introduce students to various methodologies for the creation of new work and provide opportunities for conceptualising and creating new work as part of an ensemble. The foc us of the work will be on developing performance making and staging skills. The continued development of technical performance skill will support the work on productions and/or projects. A fieldwork component may be included in this course.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Attendance at all classes, performances and rehearsals. Completion of all projects.",
+  "assessment": "Coursework, classwork and in-house performances count 50% of the final mark; final practical examination counts 50% of the final mark. In order to pass, students must obtain at least 50% in both of the above.",
+  "is_humanities_course": true
+}

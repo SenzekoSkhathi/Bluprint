@@ -1,0 +1,23 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "INF5009Z",
+  "title": "Software Engineering",
+  "department": "computer-science",
+  "credits": 12,
+  "nqf_level": 9,
+  "year_level": "Postgraduate (Master's specialising in IT)",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "D Snyman",
+  "prerequisites": {
+    "text": "A non-IT honours degree, or equivalent.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "This module aims to introduce a range of techniques within both structured and object-oriented methods, in order to enable students to analyse and design well engineered software solutions. Students will be introduced to the practical use of CASE tools in modelling and documenting analysis and design specifications. Different life cycle models will also be discussed.",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "In order to be permitted to sit the final exam a minimum average of 40% on the coursework must be obtained.",
+  "assessment": "2 Assignments (50%) and an Exam (50%).",
+  "is_science_course": false,
+  "offered_by_faculty": "commerce"
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AHS3073F",
+  "title": "Adult Dysphagia and Motor Speech",
+  "department": "health-and-rehabilitation-sciences",
+  "credits": 22,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Associate Professor S Singh",
+  "prerequisites": {
+    "text": "HUB1014S",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "HUB1014S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The aim of this course is to e nable the student to de scribe and critique the na ture, assessment, and management of swallowing and motor speech disorder s in adults. Content includes relevant neurology, anatomy, physiology, pathology, aetiology; principles and nature of clinical and objective assessments, differential diagnosis, evidenced-based management, and palliative care within an ICF framework. Skills developed include knowledge translation, critical and analytical thinking, effective communication and group-work. Values including em pathy, respect, a holistic view of individuals, appreciation of challenges to participation and inte r-professional practice are developed as key to client-centred interventions. Teaching and learning activities include lectures, case discussions, video analysis, review and critique of the literature. Throug h communal constructivis m, students devise, administer and interpret culturally and linguistically relevant ma terials (in Xhosa and Afrikaans). 108 DEPARTMENTS IN THE FACULTY Themes underpinning the course include clinical management within a multilingual and multicultural context, developing agents for change, disability and burden of dise ase, equity, and affirmation of diversity.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "For discipline specific courses in the BSc Audiology and BSc in Speech-Language Pathology programmes a minimum coursework mark of 40% is required for entrance into the examination.",
+  "assessment": "The course grade is made up of a cour sework mark (weighted 60%) and a final examination mark (weighted 40%). If a supplementary examination is awarded, it will count 40 % of the final mark, as the course work mark will still be included in the final mark.",
+  "is_health_sciences_course": true
+}

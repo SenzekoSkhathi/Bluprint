@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PVL3006S",
+  "title": "Jurisprudence",
+  "department": "private-law",
+  "credits": 18,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Prof AJ Barnard-Naudé and Dr K Moshikaro",
+  "prerequisites": {
+    "text": "All Preliminary Level courses to have been completed.",
+    "parsed": {
+      "type": "level_completion",
+      "levels_required": [
+        "preliminary"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course deals with central issues in analytical, normative, and critical and postcolonial jurisprudence. Topics that could be discussed include the following: the nature of law, the nature of adjudication, and the role of morality in each. Authors whose work could be discussed include the following: John Austin, Hans Kelsen, H L A Hart, Joseph Raz, Jules Coleman, Ronald Dworkin, John Finnis, Duncan Kennedy, Kimberlé Crenshaw, Upendra Baxi and Cornel West.",
+  "lecture_times": "Thirty-six lectures and tutorials.",
+  "dp_requirements": "Please refer to the course handout and/or the intermediate year schedule.",
+  "assessment": "Coursework 30%, November examination 70%.",
+  "is_law_course": true
+}

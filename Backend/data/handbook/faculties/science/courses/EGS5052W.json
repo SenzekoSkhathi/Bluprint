@@ -1,0 +1,30 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EGS5052W",
+  "title": "Applied Ocean Sciences Minor Dissertation",
+  "department": "environmental-geographical-science",
+  "credits": 90,
+  "nqf_level": 9,
+  "year_level": "Postgraduate – Masters",
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Professor M Vichi",
+  "prerequisites": {
+    "text": "A relevant Honours degree (or equivalent). Co-requisites: BIO5012W, BIO5013Z, BIO5014Z/SEA5011Z.",
+    "parsed": {
+      "type": "and",
+      "codes": [
+        "BIO5012W",
+        "BIO5013Z",
+        "BIO5014Z/S",
+        "EA5011Z"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The minor dissertation, which forms 50% of the overall degree, is based on a six-month supervised research project. The choice of project will be determined by the student's prior qualification and in agreement with the course conveners and supervisors. The dissertation should be submitted at the end of January, with the possibility of extension to June of the next year.",
+  "lecture_times": null,
+  "dp_requirements": null,
+  "assessment": "The minor dissertation must be presented for formal examination. Coursework and minor dissertation each count 50% towards the degree; each must be passed separately for the award of the degree.",
+  "is_science_course": true
+}

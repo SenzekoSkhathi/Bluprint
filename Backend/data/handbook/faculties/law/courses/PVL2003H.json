@@ -1,0 +1,35 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PVL2003H",
+  "title": "Law of Succession",
+  "department": "private-law",
+  "credits": 18,
+  "nqf_level": 7,
+  "year_level": 2,
+  "semester": "FY",
+  "semester_code": "H",
+  "convener": "Prof F du Toit",
+  "prerequisites": {
+    "text": "Undergraduate LLB students: concurrent registration with PBL2000W and PVL2002H. Graduate LLB students: concurrent registration with PVL1003W, PVL1004F, PVL1008H, PBL2000W and PVL2002H.",
+    "parsed": {
+      "type": "concurrent_registration",
+      "undergraduate": [
+        "PBL2000W",
+        "PVL2002H"
+      ],
+      "graduate": [
+        "PVL1003W",
+        "PVL1004F",
+        "PVL1008H",
+        "PBL2000W",
+        "PVL2002H"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The course is concerned with the consequences of death and in particular, the devolution of a person's property on death. The course considers the distinction between testate and intestate succession; the devolution under intestacy law; testamentary capacity; formalities for wills; revocation and revival of wills; capacity to inherit; freedom of testation; vesting and conditional bequests; the different kinds of testamentary vehicles and the content of wills; doctrine of collation; interpretation of wills and succession by contract. The course will also consider legal ethics in the context of the law of Succession.",
+  "lecture_times": "Thirty-six lectures.",
+  "dp_requirements": "Please refer to course handout.",
+  "assessment": "Coursework 50%, Final examination 50%.",
+  "is_law_course": true
+}

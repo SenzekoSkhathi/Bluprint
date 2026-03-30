@@ -1,0 +1,31 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CSC1019F",
+  "title": "Computer Science 1019",
+  "department": "computer-science",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "A Safla",
+  "prerequisites": {
+    "text": "(CSC1015F/S and CSC1016S) or (CSC1010H and CSC1011H)",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "CSC1015F",
+        "CSC1016S",
+        "CSC1010H",
+        "CSC1011H"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course offers an introduction to the development of algorithms and design of computer programs and provides an introduction to programming and algorithms, using the Python programming language. Topics include: basic syntax, variables, operators, comments, expressions, strings, input and output; conditional statements, if, nested ifs, if-else ladders, Boolean expressions; loops, for and while, nested loops; functions, parameters, return values; arrays and lists, multidimensional arrays and text files. The course is offered in a blended -learning format: students are provided with a set of online video lectures and contact time is in a tutorial/practical format aimed at reinforcing the principles introduced in the online lectures and giving students time t o do exercises under the supervision of tutors.",
+  "lecture_times": "Monday - Friday, 2nd period, Four or five lectures per week, Practicals: One 4 -hour practical per week, Monday - Friday, 14h00 - 18h00",
+  "dp_requirements": "45% weighted average for practical work.",
+  "assessment": "Theory tests count for 20%, practicals count for 20%, practical tests count for 10%, June examination counts for 50% of the course mark. Subminima: 45% weighted average for practical work, 45% weighted average of tests and exams.",
+  "is_engineering_course": false,
+  "offered_by_faculty": "science"
+}

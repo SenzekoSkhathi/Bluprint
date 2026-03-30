@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "BUS4028F",
+  "title": "Actuarial Science III: Financial Economics",
+  "department": "management-studies",
+  "credits": 21,
+  "nqf_level": 7,
+  "year_level": 4,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr E Maritz",
+  "prerequisites": {
+    "text": "4th year status in BBusSci (AcSci) or BBusSci (QF) - see programme rules.",
+    "parsed": {
+      "type": "year_status",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "The course covers the behaviour of financial markets, measures of investments risk, asset return models, derivative pricing and liability valuation. Topics include: the efficient markets hypothesis, utility theory, behavioural economics, measures of investment risks, mean-variance analysis, the capital asset pricing model, multi-factor models of asset returns, Brownian motion, ito calculus, stochastic models for security prices, models of the term structures of interest rates, simple models for credit risk, valuation of futures and options, ruin theory and run-off triangles.",
+  "lecture_times": "To be advised.",
+  "dp_requirements": "Completion of tutorials and tests with an average of 40%.",
+  "assessment": "Tutorials 8%; Tests 32%; 3h15min written examination 42%; 1h45min computer-based examination 18%.",
+  "is_commerce_course": true
+}

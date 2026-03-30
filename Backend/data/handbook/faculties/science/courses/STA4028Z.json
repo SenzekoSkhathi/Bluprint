@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "STA4028Z",
+  "title": "Portfolio Theory",
+  "department": "statistical-sciences",
+  "credits": 12,
+  "nqf_level": 8,
+  "year_level": "Postgraduate (Honours/Master's)",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "Associate Professor T Gebbie",
+  "prerequisites": {
+    "text": "STA3041F, STA3043S or at the discretion of the Head of Department. STA3045F is strongly recommended.",
+    "parsed": {
+      "type": "or",
+      "codes": [
+        "STA3041F",
+        "STA3043S",
+        "STA3045F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The course introduces the historical development of ideas from economics, gambling and finance with a South African perspective for portfolio control. Topics include: data-wrangling, portfolio optimisation, sequential historic back-testing and simulation in R; static mean-variance theoretical foundations of portfolio choice, asset pricing and market equilibrium; tactical and strategic portfolios; the Generalised Fundamental Law of Asset Management, the Roll Critique and a Bayesian Black-Litterman portfolio choice framework; active management and its complexities; performance attribution; indexation methods. Advanced topics may include cluster-based portfolio choice, risk-parity models and machine-learning extensions.",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "Satisfactory completion of assignments.",
+  "assessment": "Assignments and Exam.",
+  "is_science_course": true
+}

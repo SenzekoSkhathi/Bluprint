@@ -1,0 +1,58 @@
+{
+  "id": "bsc-physiotherapy",
+  "programme_code": "MB004/MB017",
+  "name": "BSc Physiotherapy",
+  "abbreviation": "BSc(Physio)",
+  "saqa_id": 3345,
+  "department": "Health and Rehabilitation Sciences",
+  "duration_years": 4,
+  "total_nqf_credits": 588,
+  "professional_registration": "HPCSA",
+  "curriculum": {
+    "year_1": {
+      "core": [
+        "PPH1001F",
+        "PSY1004F",
+        "HUB1019F",
+        "HUB1022F",
+        "AHS1033F",
+        "PPH1002S",
+        "HUB1020S",
+        "HUB1023S",
+        "AHS1034S"
+      ],
+      "credits": 142
+    },
+    "year_2": {
+      "core": [
+        "SLL1028H",
+        "AHS2002W",
+        "HUB2015W",
+        "HUB2023W",
+        "AHS2050H",
+        "AHS2052H",
+        "AHS2053H"
+      ],
+      "credits": 164
+    },
+    "year_3": {
+      "core": [
+        "AHS3069W",
+        "AHS3070H",
+        "AHS3076H",
+        "AHS3077H",
+        "AHS3078H"
+      ],
+      "credits": 150
+    },
+    "year_4": {
+      "core": [
+        "AHS4065W",
+        "AHS4066F",
+        "AHS4071F",
+        "AHS4072H"
+      ],
+      "credits": 132
+    }
+  }
+}

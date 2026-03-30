@@ -1,0 +1,46 @@
+{
+  "id": "bmus-classical",
+  "programme_code": "HB010",
+  "stream_code": "MUZ42",
+  "name": "Bachelor of Music (Classical Performance)",
+  "abbreviation": "BMus",
+  "nqf_level": 8,
+  "department": "South African College of Music",
+  "duration_years": 4,
+  "credits_range": "513-546",
+  "curriculum": {
+    "year_1": {
+      "core": [
+        "MUZ1110H",
+        "MUZ1111H",
+        "MUZ1500F",
+        "MUZ1501S"
+      ],
+      "note": "Plus instrument B1 and ensemble"
+    },
+    "year_2": {
+      "core": [
+        "MUZ2110H",
+        "MUZ2111H",
+        "MUZ2500F",
+        "MUZ2501S"
+      ],
+      "note": "Plus instrument B2 and ensemble"
+    },
+    "year_3": {
+      "core": [
+        "MUZ3110H",
+        "MUZ3111H",
+        "MUZ3500F",
+        "MUZ3501S"
+      ],
+      "note": "Plus instrument B3 and ensemble"
+    },
+    "year_4": {
+      "core": [
+        "MUZ4900W"
+      ],
+      "note": "Research report plus instrument B4 recital"
+    }
+  }
+}

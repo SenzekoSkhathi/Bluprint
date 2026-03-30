@@ -1,0 +1,32 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CSC1010H",
+  "title": "Computer Science 1010",
+  "department": "computer-science",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "FY",
+  "semester_code": "H",
+  "convener": "G Stewart",
+  "prerequisites": {
+    "text": "Permission of the Dean or Head of Department required prior to registration. Intended for students advised to transfer from CSC1015F after week 5 assessment. Equivalent to CSC1015F in level, credit value and as prerequisite for certain other courses. Note: Credit will not be given for CSC1015F/S and CSC1016S together with CSC1010H and CSC1011H.",
+    "parsed": {
+      "type": "complex",
+      "codes_mentioned": [
+        "CSC1015F",
+        "CSC1015F/S",
+        "CSC1016S",
+        "CSC1010H",
+        "CSC1011H"
+      ],
+      "note": "Complex prerequisite logic - see text"
+    }
+  },
+  "corequisites": [],
+  "outline": "This course is an introduction to problem solving, algorithm development and programming in the Python language. It includes fundamental programming constructs and abstractions, sorting and searching techniques, and machine representations of data. The practical component covers input/output, conditionals, loops, strings, functions, arrays, lists, dictionaries, recursion, text files and exceptions in Python. Students are taught testing and debugging, as well as sorting and searching algorithms, algorithm complexity and equivalence classes. Number systems, binary arithmetic, boolean algebra and logic gates are also introduced. The course places an emphasis on the strengthening of foundational concepts and skills, the carefully-paced introduction of new material, and the development of sound approaches to effective learning.",
+  "lecture_times": "Monday - Friday, 5th period. Tutorials: One per week, replacing one lecture. Practicals: One per week, Thursday, 14h00 - 17h30.",
+  "dp_requirements": "Minimum of 45% aggregate in practical work.",
+  "assessment": "Theory tests count 15%; practical tests and practical assignments count 25%; one 2-hour examination written in November counts 60%. Subminima: 45% for practicals, 45% on weighted average of theory tests and examination.",
+  "is_science_course": true
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "SWK4032S",
+  "title": "Social Work Practice IV: Field Instruction V",
+  "department": "social-development",
+  "credits": 15,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr E Campbell",
+  "prerequisites": {
+    "text": "Unless otherwise approved, for BSW students and must have fourth year status, or with permission from the Head of Department.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course introduces the students to structures, frameworks and basic tools for policy formulation and analysis. It introduces inter alia an introduction to organisational life and management through concepts of planning, decision making, organising and staffing, leadership, supervision and consultation, motivation and management control, funding strategies and financial and information management.",
+  "lecture_times": "Monday and Tuesday 8th and 9th periods.",
+  "dp_requirements": "At least 80% attendance at lectures/seminars and submission of all essays/projects/seminar materials and other required written work by the due date.",
+  "assessment": "Coursework counts 50%; November examination counts 50%.",
+  "is_humanities_course": true
+}

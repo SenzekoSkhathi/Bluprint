@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EGS4034F",
+  "title": "Interrogating Southern African Landscapes",
+  "department": "environmental-geographical-science",
+  "credits": 30,
+  "nqf_level": 8,
+  "year_level": "Postgraduate – Honours elective",
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Associate Professor S Daya",
+  "prerequisites": {
+    "text": "Acceptance for Honours or Master's specialising in EGS. Note: Enrolment to this course is by invitation only.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "South African landscapes have always been contested. In the contemporary moment of global environmental crisis and deepening social inequality, this course builds an interdisciplinary understanding of the histories, legacies and transformations playing out in particular places. Through foundational theoretical engagements and field-based activities, students explore cross-cutting social, political, economic, ecological and biophysical dynamics playing out in the context of the rapidly changing Southern African region.",
+  "lecture_times": null,
+  "dp_requirements": "At least 80% attendance record and submission of all assignments.",
+  "assessment": "Assignments 60%; examination 40%.",
+  "is_science_course": true
+}

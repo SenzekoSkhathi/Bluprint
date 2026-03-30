@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CSC5025Z",
+  "title": "Intelligent Systems",
+  "department": "computer-science",
+  "credits": 12,
+  "nqf_level": 9,
+  "year_level": "Postgraduate (Master's)",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "Associate Professor D Moodley",
+  "prerequisites": {
+    "text": "Admission into the Master's degree specialising in Computer Science or Artificial Intelligence, or permission from the course convener. A strong mathematics background.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "This course provides an introduction to designing and implementing intelligent systems using selected Artificial Intelligence techniques, including machine learning and Bayesian Artificial Intelligence. Students learn these techniques from a Computer Science perspective, specifically how to design real world intelligent systems that incorporate such AI techniques.",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "None.",
+  "assessment": "2-hour open book exam: 50%; Practical assignments: 50%.",
+  "is_science_course": true
+}

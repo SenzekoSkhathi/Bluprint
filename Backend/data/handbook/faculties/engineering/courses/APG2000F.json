@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "APG2000F",
+  "title": "History & Theory of Architecture III",
+  "department": "architecture-planning-geomatics",
+  "credits": 10,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Ms S Papanicolaou",
+  "prerequisites": {
+    "text": "None",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course focuses on architectural modernism and urbanism. The intention is to give students an insight into the culture, tradition, programmes and movements of early modern architecture, as a global as well as local practice. The aim is to develop a critical understanding of the historical period.",
+  "lecture_times": "Refer to departmental timetable",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

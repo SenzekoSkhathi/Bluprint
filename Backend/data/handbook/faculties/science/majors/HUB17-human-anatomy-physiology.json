@@ -1,0 +1,180 @@
+{
+  "$schema": "handbook-major-v1",
+  "major_code": "HUB17",
+  "major_name": "Human Anatomy & Physiology",
+  "department": "human-biology-faculty-of-health-sciences",
+  "notes": "This major has limits on the number of students accepted into second year level courses. MAM1004F/S can be replaced by MAM1031F.",
+  "mutual_exclusions_with": [],
+  "required_companion_majors": [],
+  "has_student_limit": true,
+  "years": [
+    {
+      "year": 1,
+      "label": "First Year Core Courses",
+      "combinations": [
+        {
+          "combination_id": "HUB17-Y1-A",
+          "description": "MAM1000W + STA1007S",
+          "courses": [
+            {
+              "code": "BIO1000F",
+              "title": "Cell Biology",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "BIO1004S",
+              "title": "Biological Diversity",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "CEM1000W",
+              "title": "Chemistry 1000",
+              "credits": 36,
+              "nqf_level": 5
+            },
+            {
+              "code": "MAM1000W",
+              "title": "Mathematics 1000",
+              "credits": 36,
+              "nqf_level": 5
+            },
+            {
+              "code": "STA1007S",
+              "title": "Introductory Statistics for Scientists",
+              "credits": 18,
+              "nqf_level": 5
+            }
+          ]
+        },
+        {
+          "combination_id": "HUB17-Y1-B",
+          "description": "MAM1031F + MAM1032S + STA1007S",
+          "courses": [
+            {
+              "code": "BIO1000F",
+              "title": "Cell Biology",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "BIO1004S",
+              "title": "Biological Diversity",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "CEM1000W",
+              "title": "Chemistry 1000",
+              "credits": 36,
+              "nqf_level": 5
+            },
+            {
+              "code": "MAM1031F",
+              "title": "Mathematics 1031",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "MAM1032S",
+              "title": "Mathematics 1032",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "STA1007S",
+              "title": "Introductory Statistics for Scientists",
+              "credits": 18,
+              "nqf_level": 5
+            }
+          ]
+        },
+        {
+          "combination_id": "HUB17-Y1-C",
+          "description": "MAM1004F + STA1007S",
+          "courses": [
+            {
+              "code": "BIO1000F",
+              "title": "Cell Biology",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "BIO1004S",
+              "title": "Biological Diversity",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "CEM1000W",
+              "title": "Chemistry 1000",
+              "credits": 36,
+              "nqf_level": 5
+            },
+            {
+              "code": "MAM1004F",
+              "title": "Mathematics 1004",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "STA1007S",
+              "title": "Introductory Statistics for Scientists",
+              "credits": 18,
+              "nqf_level": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "label": "Second Year Core Courses",
+      "combinations": [
+        {
+          "combination_id": "HUB17-Y2-A",
+          "description": "Fixed second year courses",
+          "courses": [
+            {
+              "code": "HUB2019F",
+              "title": "Integrated Anatomical & Physiological Sciences Part A",
+              "credits": 24,
+              "nqf_level": 6
+            },
+            {
+              "code": "HUB2021S",
+              "title": "Integrated Anatomical & Physiological Sciences Part B",
+              "credits": 24,
+              "nqf_level": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "label": "Third Year Core Courses",
+      "combinations": [
+        {
+          "combination_id": "HUB17-Y3-A",
+          "description": "Fixed third year courses",
+          "courses": [
+            {
+              "code": "HUB3006F",
+              "title": "Applied Human Biology",
+              "credits": 36,
+              "nqf_level": 7
+            },
+            {
+              "code": "HUB3007S",
+              "title": "Human Neurosciences",
+              "credits": 36,
+              "nqf_level": 7
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

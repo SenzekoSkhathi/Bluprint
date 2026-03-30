@@ -1,0 +1,32 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "BIO4001W",
+  "title": "Marine Biology Honours",
+  "department": "biological-sciences",
+  "credits": 0,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Professor A M Muasya",
+  "prerequisites": {
+    "text": "A BSc degree in Marine Biology, with a pass in STA2007 F/S/H or an equivalent 2000-level semester statistics course. Students lacking this statistical prerequisite will be required to register concurrently for STA5014Z. Enrolments limited to 12. Acceptance at the discretion of the Head of Department (quality of final year results, material covered in undergraduate curriculum, and possibly referees' reports). Note: BIO4001W does not carry a NQF credit value; students concurrently registered for BIO4004W (coursework, 88 NQF credits) and BIO4005W (research project, 72 NQF credits).",
+    "parsed": {
+      "type": "complex",
+      "codes_mentioned": [
+        "STA2007",
+        "STA5014Z",
+        "BIO4001W",
+        "BIO4004W",
+        "BIO4005W"
+      ],
+      "note": "Complex prerequisite logic - see text"
+    }
+  },
+  "corequisites": [],
+  "outline": "The Honours course is designed to enrich the student's appreciation of theory through advanced coursework, essay writing, seminars, discussion groups and fieldwork. In addition to compulsory coursework modules, students are required to choose eight elective modules, at least four of which must be marine topics, and complete an original research project.",
+  "lecture_times": null,
+  "dp_requirements": "Attendance of field camp and all lectures are required for the DP. The non-project component of the course carries a sub-minimum of 50% and the project component a sub-minimum of 50%.",
+  "assessment": "Two 3-hour examinations written in November count 20%; project and research seminar count 40%; compulsory coursework counts 20%; elective coursework counts 20%. These component parts of the course will be combined in a final overall mark reflected against BIO4001W, with PA (pass) entered against the coursework and project codes; each component must be passed separately for the award of the degree.",
+  "is_science_course": true
+}

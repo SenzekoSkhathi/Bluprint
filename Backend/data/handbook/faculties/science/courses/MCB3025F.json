@@ -1,0 +1,31 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MCB3025F",
+  "title": "Structural & Chemical Biology",
+  "department": "molecular-cell-biology",
+  "credits": 36,
+  "nqf_level": 7,
+  "year_level": "Third Year",
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr R Hurdayal",
+  "prerequisites": {
+    "text": "MCB2020F, MCB2021F and MCB2022S or MCB2023S.",
+    "parsed": {
+      "type": "complex",
+      "codes_mentioned": [
+        "MCB2020F",
+        "MCB2021F",
+        "MCB2022S",
+        "MCB2023S"
+      ],
+      "note": "Complex prerequisite logic - see text"
+    }
+  },
+  "corequisites": [],
+  "outline": "This course addresses how modern techniques of structural and chemical biology are being used to solve biological problems. It draws on multiple aspects of macromolecular biochemistry including nucleic acid structure and interactions, signalling proteins and membrane proteins, and demonstrates how this knowledge can be used in drug discovery and protein design in biotechnology. Topics include: mechanisms of reversible and irreversible enzyme inhibitors; ligand binding; protein folding; molecular basis for protein function; regulation of protein activity; cell signalling; and proteomics.",
+  "lecture_times": "Monday - Friday, 5th period.",
+  "dp_requirements": "50% average for assignments and practical reports; attendance at all practicals and tutorials.",
+  "assessment": "Tests count 40%; practicals, tutorials, essays and assignments count 10%; one 3-hour examination written in June counts 50%. A sub-minimum of 40% in the examination is required.",
+  "is_science_course": true
+}

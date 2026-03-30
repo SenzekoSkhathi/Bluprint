@@ -1,0 +1,43 @@
+{
+  "id": "dmp-jazz",
+  "programme_code": "HU021",
+  "stream_code": "MUZ07",
+  "name": "Diploma in Musical Performance (Jazz Studies)",
+  "abbreviation": "DMP",
+  "nqf_level": 6,
+  "department": "South African College of Music",
+  "duration_years": 3,
+  "credits_range": "423-514",
+  "curriculum": {
+    "year_1": {
+      "core": [
+        "MUZ1110H",
+        "MUZ1111H",
+        "MUZ1600F",
+        "MUZ1601S",
+        "MUZ1131H"
+      ],
+      "note": "Plus instrument B1"
+    },
+    "year_2": {
+      "core": [
+        "MUZ2110H",
+        "MUZ2111H",
+        "MUZ2600F",
+        "MUZ2601S",
+        "MUZ2131H"
+      ],
+      "note": "Plus instrument B2"
+    },
+    "year_3": {
+      "core": [
+        "MUZ3110H",
+        "MUZ3111H",
+        "MUZ3600F",
+        "MUZ3601S",
+        "MUZ3131H"
+      ],
+      "note": "Plus instrument B3"
+    }
+  }
+}

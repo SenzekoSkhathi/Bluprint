@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "OBS4003W",
+  "title": "Obstetrics",
+  "department": "obstetrics-and-gynaecology",
+  "credits": 30,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "JK Marcus",
+  "prerequisites": {
+    "text": "Refer to the programme and departmental sections in the 2026 Health Sciences Faculty Handbook.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "Objective: The purpose of the course is to acquaint the student with regionalised perinatal care and to develop the knowledge, skills, and attitudes to provide safe, effective and compassionate maternal care in primary and secondary perinatal care settings. Course outline: Obstetrics runs within an eight- week block using a blended learni ng approach. During this time, students acquire the kno wledge, skills and professional condu ct required for medical practice. Teaching takes place within the Maternal and Neonatal Service: Metro West, which exposes students to primary (or community-based) and secondary (hospital-based) levels of care. Practical experience for Obstetrics (and Neonatology - see PED4016W) is recorded in a logbook and includes at least 10 deliveries under supervision and caring for at least eight women in the first stage of labour. Further details are specified in the logbook. Students are encouraged to dev elop professional behaviour, as well as to develop empathic and caring attitudes through compassi on tutorials. The programme is supplemented by a seri es of online lectures , virtual and in vivo tutorial s and skills training sessions that cover topics within the discip line, as well as contributions from other disciplines, in order to provide an integrated, multidisciplinary approach to common perinatal problems. The knowledge and skills acquired during the 4th year programme fo rm the foundation of Obstetric and Neonatal medicine.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "(a) Do at least 5 calls at a secondary hospital; (b) Deliver at least 6 patients under supervision; (c) Perform at least 5 vaginal examinat ions in labour; (d) Perfo rm at least 5 abdominal examinations; (e) Care for at leas t 5 patients in the first stage of labour; (f) 3 case reports submitted via Vula portal. The cases must typed-up and must include a discussion of +-300 words with at least 3 references. One of the cases must be presented to the convenor vi a an online meeting application. (g) Analyse and interpret at leas t 5 Cardiotocograph (CTG) trac ings; (h) Record intrapartum examination findings on at least 5 partograms. Marks will not be re leased until all DP requirements are met.",
+  "assessment": "Objective Structured Clinical Examination (OSCE) when all clinical rotations have been completed. Each student must achieve a minimum mark of 50% in order to pass the course. Any student who obtains 47% or less for Obstetrics will need to repeat the full rotation. Should a student obtain a mark between 48% to 49 %, a recommendation will be made to the Faculty Examinations Committee that the student be offered a supplementary assessment on a subsequent opportunity.",
+  "is_health_sciences_course": true
+}

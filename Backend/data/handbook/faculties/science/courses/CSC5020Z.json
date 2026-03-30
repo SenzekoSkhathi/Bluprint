@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CSC5020Z",
+  "title": "Research Methods in Computer Science",
+  "department": "computer-science",
+  "credits": 18,
+  "nqf_level": 9,
+  "year_level": "Postgraduate (Master's)",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "Professor J Gain",
+  "prerequisites": {
+    "text": "Admission into the Master's degree specialising in Computer Science, or permission from the course convener.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "The objective of the Research Methods course is to introduce students to a suite of research methods from the perspective of Computer Science, that will prepare them for the minor dissertation component of the degree. Course content includes: An introduction to finding and reading research papers; Literature reviews; Writing research proposals; Problem statements, research questions, and hypotheses; Types of research within Computer Science; Research Ethics within Computer Science; Scientific and technical writing; Qualitative and quantitative research methods; Research statistics; Research planning and grant writing; Academic career planning.",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "None.",
+  "assessment": "A submitted literature review (50%) and research proposal (50%).",
+  "is_science_course": true
+}

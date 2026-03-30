@@ -1,0 +1,32 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "BUS4087S",
+  "title": "Quantitative Finance Selected Topics",
+  "department": "management-studies",
+  "credits": 18,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Associate Professor S Mataramvura",
+  "prerequisites": {
+    "text": "FTX3044F (60%) and FTX3045S (60%), ECO2003F and ECO2004S.",
+    "parsed": {
+      "type": "prerequisite",
+      "codes": [
+        "FTX3044F",
+        "FTX3045S",
+        "ECO2003F",
+        "ECO2004S"
+      ]
+    }
+  },
+  "corequisites": [
+    "BUS4050H"
+  ],
+  "outline": "This aim of this course is to cover advanced topics in the theory and practice of finance. The course covers the following areas: Asset-liability Management, Quantitative Methods, Behavioural Finance, and Corporate Finance.",
+  "lecture_times": "To be advised.",
+  "dp_requirements": "An overall average of 40% for class work.",
+  "assessment": "Class tests and tutorials 50%; Examination 50%.",
+  "is_commerce_course": true
+}

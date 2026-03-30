@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CON3032W",
+  "title": "Applied Contract Law I",
+  "department": "construction-economics-and-management",
+  "credits": 12,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "TBA",
+  "prerequisites": {
+    "text": "CML1001F or CML1004S or CML1001P",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "CML1001F",
+        "CML1004S",
+        "CML1001P"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to develop an understanding of the JBCC Principle Building Agreement; the Arbitration Act and includes case studies.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

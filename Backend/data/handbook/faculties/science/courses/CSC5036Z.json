@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CSC5036Z",
+  "title": "Virtual Reality",
+  "department": "computer-science",
+  "credits": 12,
+  "nqf_level": 9,
+  "year_level": "Postgraduate (Master's)",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "Professor J Gain",
+  "prerequisites": {
+    "text": "Admission into the Master's degree specialising in Computer Science or Artificial Intelligence, or permission from the course convener.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "Virtual Reality (VR) involves the creation of a digital replacement for the senses using devices such as head-mounted displays and haptic feedback. VR has applications in games, simulation and training. This course introduces the theoretical underpinnings and practical skills necessary for creating virtual environments. Topics covered include: Interaction in VR, navigation and locomotion in VR, simulator sickness, immersion and presence, designing VR Environments with Unity, non-visual modalities (binaural output, virtual flavour, haptics).",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "None.",
+  "assessment": "Exam: open book, 24 hours, 50%; Assignments: 50%.",
+  "is_science_course": true
+}

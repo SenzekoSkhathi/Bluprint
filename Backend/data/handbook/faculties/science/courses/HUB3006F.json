@@ -1,0 +1,32 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "HUB3006F",
+  "title": "Applied Human Biology",
+  "department": "human-biology",
+  "credits": 36,
+  "nqf_level": 7,
+  "year_level": "Third Year",
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Associate Professor DE Rae",
+  "prerequisites": {
+    "text": "HUB2019F and HUB2021S or equivalent. Alternatively, a sub-minimum of 40% average for the Physiology components of HUB2017H and PTY2000S respectively (co-requisite).",
+    "parsed": {
+      "type": "complex",
+      "codes_mentioned": [
+        "HUB2019F",
+        "HUB2021S",
+        "HUB2017H",
+        "PTY2000S"
+      ],
+      "note": "Complex prerequisite logic - see text"
+    }
+  },
+  "corequisites": [],
+  "outline": "Building on second-year content, this course provides insights into the integrated physiology of humans eating, exercising and sleeping to reduce risk for diseases of lifestyle and optimise physical performance. The four modules are: Energy Metabolism, Disease of Lifestyle, Sport and Exercise, and Sleep. Topics include: advanced mitochondrial physiology; energy metabolism; energy balance and obesity; heart disease and diabetes; nutrition and health; metabolism and physiology of sport and exercise; adaptation to exercise training; principles of exercise training; nutrition for sport; and physiology of sleep and circadian rhythms in health, disease and sport.",
+  "lecture_times": "1st period, Monday–Friday. Practicals/Tutorials: Wednesday or Thursday, 14h00–17h00.",
+  "dp_requirements": "Attendance at all practicals (including tutorials and seminar presentations held during the practical time slot); 40% average in class tests; and an average of 50% for all assignments.",
+  "assessment": "Class tests 30%; practical and tutorial assignments 20%; final examinations 50% (written theory 30% + practical 20%). Sub-minimum of 40% required for both theory and practical examinations. Supplementary examinations may be offered to students with an overall course mark of 45–49%. An oral examination may be required for selected students.",
+  "is_science_course": false,
+  "offered_by_faculty": "health-sciences"
+}

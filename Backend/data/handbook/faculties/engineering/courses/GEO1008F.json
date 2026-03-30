@@ -1,0 +1,26 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "GEO1008F",
+  "title": "Introduction to Earth and Environmental Sciences",
+  "department": "geological-sciences",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr D A Quiros",
+  "prerequisites": {
+    "text": "At least 50% for NSC Geography or at least 60% for NSC Physical Science or Life Sciences. NOTE: Preference will be given to students majoring in Archaeology, Environmental and Geographical Science, Geology or Oceanography.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course introduces students in civil engineering to the structure of planet Earth and plate tectonics of the lithosphere. Physical and chemical properties of rock forming minerals. Clay minerals, their structure and properties. Petrology of igneous, sedimentary and metamorphic rocks. Weathering and applied geomorphology. Structural geology, geomechanical classification of jointed rock masses. Field and laboratory testing techniques. Case studies of problem soils throughout South Africa and problem soils in general.",
+  "lecture_times": "Monday - Friday, 2nd period",
+  "dp_requirements": "Attendance of at least 80% of the practicals.",
+  "assessment": "June examination 3 hours 60%, year mark 40%.",
+  "is_engineering_course": false,
+  "offered_by_faculty": "science"
+}

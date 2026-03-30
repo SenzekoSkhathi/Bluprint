@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PBL4601S",
+  "title": "Constitutional Litigation",
+  "department": "public-law",
+  "credits": 9,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Judge D M Davis",
+  "prerequisites": {
+    "text": "All Preliminary and Intermediate Level courses to have been completed. Limited to 25 students.",
+    "parsed": {
+      "type": "level_completion",
+      "levels_required": [
+        "preliminary",
+        "intermediate"
+      ],
+      "note": "Limited to 25 students"
+    }
+  },
+  "corequisites": [],
+  "outline": "The object of this course is to gain greater insight into constitutional law by means of learning about litigation. The course focuses on one key area (for example in 1997 abortion was the chosen topic). The course examines key constitutional issues (eg. life, equality, privacy, dignity, bodily integrity) relevant to this issue. A study is also made of the rules of the Constitutional Court. Thereafter students are divided into legal teams and with assistance are required to prepare heads of argument as if the matter is to be heard before the Constitutional Court. The matter is then argued fully. In this way the critical principles of constitutional law and the requirements for constitutional litigation are taught.",
+  "lecture_times": "Two lectures per week. Limited to 25 students.",
+  "dp_requirements": "None",
+  "assessment": "The mark is given for group work (to be negotiated with the class) based on heads of argument and oral argument.",
+  "is_law_course": true
+}

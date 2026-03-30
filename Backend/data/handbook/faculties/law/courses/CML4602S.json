@@ -1,0 +1,30 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CML4602S",
+  "title": "Competition Law",
+  "department": "commercial-law",
+  "credits": 9,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "A/Prof B Mupangavanhu and Judge D M Davis",
+  "prerequisites": {
+    "text": "All Preliminary and Intermediate Level courses to have been completed.",
+    "parsed": {
+      "type": "level_completion",
+      "levels_required": [
+        "preliminary",
+        "intermediate"
+      ]
+    }
+  },
+  "corequisites": [
+    "Class attendance is compulsory. Class participation takes the form of both group-work and individual presentations."
+  ],
+  "outline": "In this course we examine the regulation of competition under the 'new' Competition Act 89 of 1998. The focus of the course is on the statutory regulation of competition and the underlying policy considerations which the Act aims to address. In particular, we examine the practices that firms are prohibited from engaging in under the Act, and the way in which the Act regulates the merger of firms. The content of the Act has been heavily influenced by European and American Antitrust Law and practice. Since the South African competition authorities have not yet had an opportunity to develop an extensive jurisprudence of their own, we look to comparative sources for guidance as to how the Act might come to be interpreted and applied.",
+  "lecture_times": "Two lectures per week. Limited to 25 students.",
+  "dp_requirements": "None",
+  "assessment": "Research 80% and Test 20%.",
+  "is_law_course": true
+}

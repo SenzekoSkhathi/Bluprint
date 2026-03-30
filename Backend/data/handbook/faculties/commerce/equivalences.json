@@ -1,0 +1,110 @@
+{
+  "$schema": "handbook-equivalences-v1",
+  "faculty": "commerce",
+  "year": 2026,
+  "source": "Commerce Interfaculty Course Substitutions (pp. 260-262)",
+  "equivalences": [
+    {
+      "department": "ACC",
+      "entries": [
+        {"credit_required": "ACC1021F", "completed_course": ["ACC1006F", "ACC1020H"]},
+        {"credit_required": "ACC1021Z", "completed_course": ["ACC1011S", "ACC1012S", "ACC1020H"]},
+        {"credit_required": "ACC3001F", "completed_course": "ACC3000H", "additional": "Must also complete FTX4057F AND BUS4050W"},
+        {"credit_required": "ACC3002S", "completed_course": "ACC3009W"},
+        {"credit_required": "ACC3020W", "completed_course": "ACC3009W"}
+      ]
+    },
+    {
+      "department": "BUS",
+      "entries": [
+        {"credit_required": "BUS1036F", "completed_course": ["ACC1015", "REL1012", "REL1013H", "PHI1025F", "PHI1024F", "POL1004F", "ACC1015"]},
+        {"credit_required": "BUS2010F", "completed_course": "BUS2011F", "note": "for postgraduate diploma students only"},
+        {"credit_required": "BUS2033F", "completed_course": "BUS2035S", "note": "BUS2035S will not be a course substitution for BUS2033F/S if BUS2035S is not run"}
+      ]
+    },
+    {
+      "department": "FTX",
+      "entries": [
+        {"credit_required": "FTX2020F", "completed_course": ["FTX2024F", "FTX2024S"]}
+      ]
+    },
+    {
+      "department": "INF",
+      "entries": [
+        {"credit_required": "INF1002F", "completed_course": ["CSC1015F", "CSC1010H"]},
+        {"credit_required": "INF1003F", "completed_course": ["CSC1016S", "CSC1011H"]}
+      ]
+    },
+    {
+      "department": "STA",
+      "entries": [
+        {"credit_required": "STA1000F", "completed_course": ["STA1006S", "STA1007S", "STA1106H", "STA1100S"]},
+        {"credit_required": "STA1006S", "completed_course": "STA1106H"},
+        {"credit_required": "STA2020F", "completed_course": ["STA2005S", "STA2007F", "STA2007S", "STA2007H"]},
+        {"credit_required": "STA2030S", "completed_course": "STA2004F"}
+      ]
+    },
+    {
+      "department": "MAM",
+      "entries": [
+        {"credit_required": "MAM1000W", "completed_course": "MAM1004F AND MAM1008S", "note": "student can receive a CR for MAM1000W but not a CX"},
+        {"credit_required": "MAM1000W", "completed_course": "MAM1020 + MAM1021", "note": "with an avg 60% for the above courses, a student can get a CX for MAM1000W"},
+        {"credit_required": "MAM1000W", "completed_course": "MAM1031F + MAM1032F/S"},
+        {"credit_required": "MAM1000W", "completed_course": ["MAM1005", "MAM1006H"]},
+        {"credit_required": "MAM1031F", "completed_course": "MAM1005H"},
+        {"credit_required": "MAM1032F", "completed_course": "MAM1006H"},
+        {"credit_required": "MAM1010", "completed_course": ["MAM1005", "MAM1020", "MAM1031"]},
+        {"credit_required": "MAM1010", "note": "A pass in MAM1022F AND MAM1015S may allow entry into MAM1010"},
+        {"credit_required": "MAM1012", "completed_course": ["MAM1006", "MAM1021"]},
+        {"credit_required": "MAM2000W", "completed_course": "MAM2002S + MAM2004H"},
+        {"credit_required": "MAM2000W", "completed_course": "MAM2010F + MAM2011F + MAM2012S + MAM2013S or MAM2014S"}
+      ]
+    },
+    {
+      "department": "PHI",
+      "entries": [
+        {"credit_required": "PHI1010S", "completed_course": "PHI2037F"}
+      ]
+    },
+    {
+      "department": "POL",
+      "entries": [
+        {"credit_required": "POL1005S", "completed_course": ["POL2034S", "POL2039F"]}
+      ]
+    },
+    {
+      "department": "CSC",
+      "note": "Computer Science Substitutions",
+      "entries": [
+        {"credit_required": "INF1002F", "completed_course": ["CSC1015F", "CSC1017F"]},
+        {"credit_required": "INF2003F", "completed_course": "CSC1016S"},
+        {"credit_required": "INF2007F", "completed_course": "CSC2001F"},
+        {"credit_required": "INF2010S", "completed_course": "CSC2002S", "note": "if approved - different NQF level: INF2010S level 7, CSC2002 Level 6"},
+        {"is_elective": true, "completed_course": "CSC2003S"},
+        {"is_elective": true, "completed_course": "CSC3002F"},
+        {"is_elective": true, "completed_course": "CSC3003S"}
+      ]
+    },
+    {
+      "department": "EDU",
+      "note": "EDU additions - Academic Development equivalents",
+      "entries": [
+        {"credit_required": "ACC1006F", "completed_course": "ACC1106F", "explanation": "Financial Accounting"},
+        {"credit_required": "ACC1011S", "completed_course": "ACC1111S", "explanation": "Financial Reporting I"},
+        {"credit_required": "ACC2012W", "completed_course": ["ACC2112W", "ACC2113W", "ACC2114W"],"explanation": "Financial Reporting II"},
+        {"credit_required": "ECO1010F", "completed_course": ["ECO1110F", "ECO1110S"], "explanation": "Microeconomics I"},
+        {"credit_required": "INF1002F", "completed_course": "INF1102F", "explanation": "Information Systems I"},
+        {"credit_required": "MAM1010F", "completed_course": "MAM1110F", "explanation": "Mathematics 1010"},
+        {"credit_required": "MAM1010F", "completed_course": "MAM1110H", "explanation": "Mathematics 1010"},
+        {"credit_required": "MAM1012F", "completed_course": "MAM1112S", "explanation": "Mathematics 1010"},
+        {"credit_required": "STA1000F", "completed_course": "STA1100S", "explanation": "Introductory Statistics"},
+        {"credit_required": "STA1006S", "completed_course": "STA1106H", "explanation": "Mathematical Statistics I"}
+      ]
+    }
+  ],
+  "statistics_exemption_rules": [
+    "If a student has passed STA2005S they are exempted from STA2020 or STA2007",
+    "If a student has passed STA2007 they are exempted from STA2020",
+    "If a student passed STA2020 or STA2007 they cannot be exempted from STA2005S"
+  ]
+}

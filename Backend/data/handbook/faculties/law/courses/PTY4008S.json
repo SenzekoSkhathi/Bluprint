@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PTY4008S",
+  "title": "Medicina Forensis",
+  "department": "pathology",
+  "credits": 9,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Doctor Y van der Heyde",
+  "prerequisites": {
+    "text": "None",
+    "parsed": {
+      "type": "none"
+    }
+  },
+  "corequisites": [],
+  "outline": "This course covers the South African legal system and statutory obligations of doctors and healthcare workers; introduction to human anatomy and physiology; introduction to medico-legal concepts of life and death; the changes which occur in the body after death; the mechanisms of injury and death causation; identity and disputed parenthood; sexual offences and violence against women; choice on termination of pregnancy; child abuse and other forensic aspects of paediatric forensic medicine; iatrogenic disorders; alcohol intoxication and drunken driving; drug addiction and poisoning as cause of death; pathology of head injury; anoxic mechanisms as cause of death and domestic violence.",
+  "lecture_times": "Monday double lecture from 10h00 to 11h45. Offered by Division of Forensic Medicine and Toxicology in Department of Pathology. Maximum intake is 30 students; 15 lectures.",
+  "dp_requirements": "None",
+  "assessment": "A two-hour written examination in October/November (100%). A supplementary written examination is offered in January the following year to students who have obtained 45-49%.",
+  "is_law_course": false,
+  "offered_by_faculty": "health-sciences"
+}

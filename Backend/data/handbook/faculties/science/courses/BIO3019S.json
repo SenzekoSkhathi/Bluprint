@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "BIO3019S",
+  "title": "Quantitative Biology",
+  "department": "biological-sciences",
+  "credits": 0,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Professor T A Hedderson",
+  "prerequisites": {
+    "text": "A pass or permission to write a SUPP exam in BIO2014F; approved 2000-level semester Science STA or MAM course.",
+    "parsed": {
+      "type": "or",
+      "codes": [
+        "BIO2014F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "In an era of 'big data', the ability to work with large amounts of numerical data is an important skill. Biological systems are notoriously complex across all levels of organisation and are often difficult to manipulate experimentally on meaningful temporal and spatial scales. Mathematical models provide a means of gaining insight into such systems, allowing us to disentangle complicated processes, focus on variables of interest to a particular research question, test alternative hypotheses, make predictions, and help present ideas in an unambiguous fashion. This course deals with the use, interpretation, and limits of modelling approaches in biology. In a series of modules exploring processes ranging from the behaviour of genes to understanding global scale distributions of species and communities, students will gain experience in question formulation, model development and parameterisation, interpretation of results, and model critique.",
+  "lecture_times": "Monday - Friday, 5th period. Tutorials: By arrangement. Practicals: One per week, Tuesday, 14h00 - 17h00. Attendance is compulsory for all lectures and practicals.",
+  "dp_requirements": "Completion of at least 70% of deliverables (tests, practicals, project report), including at least one class test and the project report; attendance of practicals; minimum of 40% for the class record.",
+  "assessment": "A 3-hour examination written in November, with a subminimum of 40%, will count 50% of the course. The class record, which counts for the balance, is made up as follows: practicals and project work count 35%, two class tests count 15%",
+  "is_science_course": true
+}

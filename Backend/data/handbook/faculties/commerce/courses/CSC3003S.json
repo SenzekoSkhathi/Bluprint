@@ -1,0 +1,30 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CSC3003S",
+  "title": "Computer Science 3003",
+  "department": "computer-science",
+  "credits": 36,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Associate Professor P Marais",
+  "prerequisites": {
+    "text": "CSC2001F, CSC2002S, CSC2004Z and ((MAM1004F+MAM1008S) or (MAM1000W) or (MAM1031F or equivalent)).",
+    "parsed": {
+      "type": "prerequisite",
+      "codes": [
+        "CSC2001F",
+        "CSC2002S",
+        "CSC2004Z"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course covers three topics in advanced programming: software development, functional programming and the theory of algorithms (how algorithms are categorised, interesting algorithms in each category and how to analyse their complexity).",
+  "lecture_times": "Monday - Friday, 2nd period. Practicals: Two 4-hour practicals per week, Monday - Friday, 14h00 - 18h00.",
+  "dp_requirements": "Minimum of 45% aggregate in practical work.",
+  "assessment": "Tests 20%; practical work and practical tests 30%; exams 50%. Subminima: 45% on weighted average of theory tests and examinations; 35% for the advanced computing module.",
+  "is_commerce_course": false,
+  "offered_by_faculty": "science"
+}

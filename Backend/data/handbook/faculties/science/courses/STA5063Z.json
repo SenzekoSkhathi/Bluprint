@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "STA5063Z",
+  "title": "Design of Clinical Trials",
+  "department": "statistical-sciences",
+  "credits": 15,
+  "nqf_level": 9,
+  "year_level": "Postgraduate (Master's in Biostatistics)",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "Professor F Gumedze",
+  "prerequisites": {
+    "text": "Acceptance into Master's program in Biostatistics, or statistical background deemed sufficient by the Head of Department.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "This module covers the Design of Clinical Trials. Concepts of randomisation, replication and blocking are discussed. Students are introduced to the different phases (I, II, III and IV) of trial designs. Specific designs covered include: randomised trials, dose-escalation studies, cross-over trials, PK/PD studies, designs for survival studies and multi-centre trials. The implications of specific design choices for the analysis of the data are discussed.",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "40% for the assignment component.",
+  "assessment": "Assignments 50%. Written exam 50%. Sub-minimum of 40% in each of assignment and examination component.",
+  "is_science_course": true
+}

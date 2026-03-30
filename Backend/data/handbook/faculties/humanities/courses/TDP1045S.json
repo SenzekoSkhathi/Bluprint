@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "TDP1045S",
+  "title": "Production I",
+  "department": "theatre-and-performance",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "M Rani",
+  "prerequisites": {
+    "text": "Admission to this course is prioritised for students (a) registered for the Diploma and BA in Theatre & Performance (b) majoring in Theatre & Dance Studies.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course explores the genealogies of South African performance practice (theatre and dance) up until the end of formal apartheid and the introduction of a constitutional democracy in the country in 1994. The course aims to introduce students to the orig ins and historical developments of this performance practice and the critical analytical tools with which to understand these complex developments. The course is divided into two parts: one part focusing on theatre practice and one part focusing on dance practice, but emphasis will be placed on the inevitable overlaps between the two as they manifest in an African context. The course includes a fieldwork component in the form of compulsory group theatre visits. As an introductory course, we use content that engages the diversity of students' lifeworlds and is cognizant of our African location. We employ innovative teaching and THEATRE, DANCE AND PERFORMANCE STUDIES 422 delivery methods that allow more time for active engagement and the development of critical reading and writing skills in the Humanities.",
+  "lecture_times": "Tuesday and Wednesday 3rd period. Tutorial Friday 3rd period. Practical on Tuesday afternoon.",
+  "dp_requirements": "Attendance at 80% of lectures and 100% of tutorials, practicals and theatre visits and satisfactory presentation of all assignments is compulsory for DP certificate purposes.",
+  "assessment": "Continuous assessment (essays, projects, practical tasks, class tests) counts 100%.",
+  "is_humanities_course": true
+}

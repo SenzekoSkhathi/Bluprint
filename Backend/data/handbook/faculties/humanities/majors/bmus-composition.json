@@ -1,0 +1,52 @@
+{
+  "id": "bmus-composition",
+  "programme_code": "HB010",
+  "stream_code": "MUZ45",
+  "name": "Bachelor of Music (Classical Composition)",
+  "abbreviation": "BMus",
+  "nqf_level": 8,
+  "department": "South African College of Music",
+  "duration_years": 4,
+  "credits_range": "489-510",
+  "curriculum": {
+    "year_1": {
+      "core": [
+        "MUZ1110H",
+        "MUZ1111H",
+        "MUZ1500F",
+        "MUZ1501S",
+        "MUZ1800F",
+        "MUZ1801S"
+      ],
+      "note": "Plus instrument B1"
+    },
+    "year_2": {
+      "core": [
+        "MUZ2110H",
+        "MUZ2111H",
+        "MUZ2500F",
+        "MUZ2501S",
+        "MUZ2800F",
+        "MUZ2801S"
+      ],
+      "note": "Plus instrument B2"
+    },
+    "year_3": {
+      "core": [
+        "MUZ3110H",
+        "MUZ3111H",
+        "MUZ3500F",
+        "MUZ3501S",
+        "MUZ3800F",
+        "MUZ3801S"
+      ],
+      "note": "Plus instrument B3"
+    },
+    "year_4": {
+      "core": [
+        "MUZ4800W"
+      ],
+      "note": "Composition portfolio"
+    }
+  }
+}

@@ -1,0 +1,244 @@
+{
+  "$schema": "handbook-programme-v1",
+  "programme_code": "CB004FTX04",
+  "programme_name": "Bachelor of Business Science specialising in Finance with Accounting",
+  "degree": "BBusSci",
+  "specialisation": "Finance with Accounting",
+  "faculty": "commerce",
+  "nqf_level": 8,
+  "minimum_credits": 528,
+  "duration_years": 4,
+  "department": "finance-and-tax",
+  "curriculum": [
+    {
+      "year": 1,
+      "total_credits": 159,
+      "courses": [
+        {
+          "code": "ACC1006F",
+          "title": "Financial Accounting",
+          "nqf_credits": 18,
+          "nqf_level": 5
+        },
+        {
+          "code": "ECO1010F",
+          "title": "Microeconomics I",
+          "nqf_credits": 18,
+          "nqf_level": 5
+        },
+        {
+          "code": "INF1002F",
+          "title": "Foundations of Information Systems",
+          "nqf_credits": 18,
+          "nqf_level": 5
+        },
+        {
+          "code": "MAM1010F",
+          "title": "Mathematics 1010",
+          "nqf_credits": 18,
+          "nqf_level": 5
+        },
+        {
+          "code": "ACC1011S",
+          "title": "Financial Reporting I",
+          "nqf_credits": 18,
+          "nqf_level": 5
+        },
+        {
+          "code": "ACC1015S",
+          "title": "Business Acumen for Accountants",
+          "nqf_credits": 15,
+          "nqf_level": 5
+        },
+        {
+          "code": "ECO1011S",
+          "title": "Macroeconomics I",
+          "nqf_credits": 18,
+          "nqf_level": 5
+        },
+        {
+          "code": "MAM1012S",
+          "title": "Mathematics 1012",
+          "nqf_credits": 18,
+          "nqf_level": 5
+        },
+        {
+          "code": "STA1000S",
+          "title": "Introductory Statistics",
+          "nqf_credits": 18,
+          "nqf_level": 5
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "total_credits": 180,
+      "courses": [
+        {
+          "code": "ACC2023H",
+          "title": "Taxation I",
+          "nqf_credits": 18,
+          "nqf_level": 6
+        },
+        {
+          "code": "BUS2010F",
+          "title": "Marketing I",
+          "nqf_credits": 18,
+          "nqf_level": 6
+        },
+        {
+          "code": "CML1001F",
+          "title": "Business Law I",
+          "nqf_credits": 18,
+          "nqf_level": 5
+        },
+        {
+          "code": "ECO2003F",
+          "title": "Microeconomics II",
+          "nqf_credits": 18,
+          "nqf_level": 6
+        },
+        {
+          "code": "STA2020F",
+          "title": "Applied Statistics",
+          "nqf_credits": 24,
+          "nqf_level": 6
+        },
+        {
+          "code": "ACC2022H",
+          "title": "Management Accounting I",
+          "nqf_credits": 18,
+          "nqf_level": 6
+        },
+        {
+          "code": "CML2010Z",
+          "title": "Business Law II",
+          "nqf_credits": 12,
+          "nqf_level": 6
+        },
+        {
+          "code": "ECO2004S",
+          "title": "Macroeconomics II",
+          "nqf_credits": 18,
+          "nqf_level": 6
+        },
+        {
+          "code": "FTX2024F",
+          "title": "Financial Management",
+          "nqf_credits": 18,
+          "nqf_level": 6,
+          "alternative": "FTX2024S"
+        },
+        {
+          "code": "PHI2043S",
+          "title": "Business Ethics",
+          "nqf_credits": 18,
+          "nqf_level": 6
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "total_credits": 170,
+      "courses": [
+        {
+          "code": "CML2001F",
+          "title": "Company Law",
+          "nqf_credits": 18,
+          "nqf_level": 6
+        },
+        {
+          "code": "FTX3044F",
+          "title": "Investment Management A",
+          "nqf_credits": 18,
+          "nqf_level": 7
+        },
+        {
+          "code": "INF2004F",
+          "title": "Information Technology in Business",
+          "nqf_credits": 18,
+          "nqf_level": 6
+        },
+        {
+          "code": "ACC2012W",
+          "title": "Financial Reporting II",
+          "nqf_credits": 36,
+          "nqf_level": 6
+        },
+        {
+          "code": "ACC2018H",
+          "title": "Governance, Audit and Assurance I",
+          "nqf_credits": 18,
+          "nqf_level": 6
+        },
+        {
+          "code": "ACC3023W",
+          "title": "Management Accounting II",
+          "nqf_credits": 26,
+          "nqf_level": 7
+        },
+        {
+          "code": "BUS3039F",
+          "title": "People Management",
+          "nqf_credits": 18,
+          "nqf_level": 7,
+          "alternative": "BUS3039S"
+        },
+        {
+          "code": "FTX3045S",
+          "title": "Investment Management B",
+          "nqf_credits": 18,
+          "nqf_level": 7
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "total_credits": 166,
+      "courses": [
+        {
+          "code": "FTX4057F",
+          "title": "Applied Corporate Finance",
+          "nqf_credits": 18,
+          "nqf_level": 8
+        },
+        {
+          "code": "ACC3009W",
+          "title": "Financial Reporting III",
+          "nqf_credits": 36,
+          "nqf_level": 7
+        },
+        {
+          "code": "BUS4050H",
+          "title": "Strategic Thinking",
+          "nqf_credits": 18,
+          "nqf_level": 8
+        },
+        {
+          "code": "ACC3004W",
+          "title": "Taxation II",
+          "nqf_credits": 32,
+          "nqf_level": 7
+        },
+        {
+          "code": "ACC3022W",
+          "title": "Governance, Audit and Assurance II",
+          "nqf_credits": 26,
+          "nqf_level": 7
+        },
+        {
+          "code": "FTX4087S",
+          "title": "Topics in Banking and Treasury Management",
+          "nqf_credits": 18,
+          "nqf_level": 8
+        },
+        {
+          "code": "FTX4056S",
+          "title": "Applied Investments",
+          "nqf_credits": 18,
+          "nqf_level": 8
+        }
+      ]
+    }
+  ]
+}

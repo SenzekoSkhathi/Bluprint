@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "POL1010S",
+  "title": "Introduction to Politics II (Extended)",
+  "department": "political-studies",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "S Seti",
+  "prerequisites": {
+    "text": "None (extended programme students only).",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [
+    "POL1005S"
+  ],
+  "outline": "The purpose of this course is to augment and support its co-requisite course: POL1005S Introduction to Politics B. It aims to improve students’ performance by enhancing their grasp of key ideas and concepts, and by developing their mastery of the disciplin ary discourse. It provides additional pedagogic enrichment in the form of regular Plus Tuts that extend into Writing Hub exercises and consultations. In these tutorials, students will receive explicit support around the co -requisite course assignments and detailed feedback on their written work.",
+  "lecture_times": "Tutorial times by sign-up with the department.",
+  "dp_requirements": "100% tutorial attendance plus successful completion of all coursework assignments.",
+  "assessment": "Coursework counts 100% comprising of tutorial assessments and other written work.",
+  "is_humanities_course": true
+}

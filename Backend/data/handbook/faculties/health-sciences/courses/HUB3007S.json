@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "HUB3007S",
+  "title": "Human Neurosciences",
+  "department": "human-biology",
+  "credits": 36,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr R Dangarembizi",
+  "prerequisites": {
+    "text": "HUB3006F (or approved equivalent). Exceptions are at the discretion of the convener.",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "HUB3006F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "Objective: To obtain a good grasp of core theo retical and practical concepts of human neurophysiological function. Course outline: This course is under review and the content may change as a result. This course offers theoretical and practical instructions on adva nced concepts in neuroscience, such as embryological development and repair of the nervous system, hi stological and gross anatomical appearances of the brain, electrophysiology, principles of electrical and morphological brain imaging, neuronal signalling, signal transduction in sensory, motor and autonomic nervous systems, vision and pain perception, eating disorders, mechanisms of learning and the developm ent of memory. At the end of the course, students should be able to apply knowledge gained and practical skills acquired to 140 DEPARTMENTS IN THE FACULTY solve problems in neurophysiology ; read and critically evaluate neuroscience literature; apply knowledge of human physiology in medical fields in the genera l marketplace; use acquired skills in assisting with undergraduate practical demonstrations; and teach the basics of human physiology.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Attendance at all practicals, 40% average mark for class tests and an average of 50% for all assignments.",
+  "assessment": "Class tests (30%); practicals including a ssignments/seminar pres entation (20%) and examinations (written theory and practical theory) (50%). A subminimum of 40% is required for the theory and practical examinations to pass this co urse. A subminimum of 40% is required for the theory and practical examina tion to pass this course. Suppleme ntary examinations in the form of written, practical or oral assessment, may be offered to students whose overall score is 45 - 49%. An oral examination may be required in the case of selected students.",
+  "is_health_sciences_course": true
+}

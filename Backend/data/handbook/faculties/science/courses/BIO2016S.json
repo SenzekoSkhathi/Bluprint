@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "BIO2016S",
+  "title": "Invertebrate Diversity & Functional Biology",
+  "department": "biological-sciences",
+  "credits": 0,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr L D Vorsatz",
+  "prerequisites": {
+    "text": "BIO1000F/H, BIO1004S. Includes a compulsory four-day field camp.",
+    "parsed": {
+      "type": "and",
+      "codes": [
+        "BIO1000F/H",
+        "BIO1004S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The course exposes students to the diversity of invertebrates and their functional biologies. Topics will be presented within an evolutionary framework to emphasise past and contemporary selective pressures driving diversification. Students will be exposed to key topics in functional biology across the major invertebrate groups and will include cellular to organism level processes. The course begins with an introduction to the evolution of the invertebrates and the major phyla. This leads to an exploration of invertebrate functional biology, with an emphasis on key adaptations across the aquatic–terrestrial gradient. Lectures, practicals and field trips will expose students to contemporary philosophical, methodological and conceptual approaches used in the field of invertebrate functional biology and diversity.",
+  "lecture_times": "Monday – Friday, 3rd period. Practicals: One per week, Wednesday, 14h00-17h00. Attendance is compulsory for all lectures and practicals.",
+  "dp_requirements": "Completion of at least 70% of deliverables (tests, practicals, field trip report), including at least one class test and the field trip report; attendance of practicals and field trip; minimum of 40% for the class record.",
+  "assessment": "A 3-hour examination, written in November, with a subminimum of 40%, counts for 50% of the course mark. Coursework marks will be allocated as follows: practicals count 15%, the field camp report counts 15% and two class tests count 20%",
+  "is_science_course": true
+}

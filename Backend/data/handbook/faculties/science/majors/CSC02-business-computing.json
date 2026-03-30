@@ -1,0 +1,232 @@
+{
+  "$schema": "handbook-major-v1",
+  "major_code": "CSC02",
+  "major_name": "Business Computing",
+  "department": "computer-science",
+  "notes": "Must be taken concurrently with a Computer Science major.",
+  "mutual_exclusions_with": [],
+  "required_companion_majors": [
+    "CSC05"
+  ],
+  "has_student_limit": false,
+  "years": [
+    {
+      "year": 1,
+      "label": "First Year Core Courses",
+      "combinations": [
+        {
+          "combination_id": "CSC02-Y1-A",
+          "description": "MAM1008S, MAM1000W, ACC1021F",
+          "courses": [
+            {
+              "code": "CSC1015F/S",
+              "title": "Computer Science 1015",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "CSC1016S",
+              "title": "Computer Science 1016",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "MAM1008S",
+              "title": "Introduction to Discrete Mathematics",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "MAM1000W",
+              "title": "Mathematics 1000",
+              "credits": 36,
+              "nqf_level": 5
+            },
+            {
+              "code": "ACC1021F",
+              "title": "Accounting for Business I",
+              "credits": 15,
+              "nqf_level": 5
+            }
+          ]
+        },
+        {
+          "combination_id": "CSC02-Y1-B",
+          "description": "MAM1008S, MAM1000W, FTX1005F/S",
+          "courses": [
+            {
+              "code": "CSC1015F/S",
+              "title": "Computer Science 1015",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "CSC1016S",
+              "title": "Computer Science 1016",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "MAM1008S",
+              "title": "Introduction to Discrete Mathematics",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "MAM1000W",
+              "title": "Mathematics 1000",
+              "credits": 36,
+              "nqf_level": 5
+            },
+            {
+              "code": "FTX1005F/S",
+              "title": "Managerial Finance",
+              "credits": 18,
+              "nqf_level": 5
+            }
+          ]
+        },
+        {
+          "combination_id": "CSC02-Y1-C",
+          "description": "MAM1019H, MAM1031F, ACC1021F",
+          "courses": [
+            {
+              "code": "CSC1015F/S",
+              "title": "Computer Science 1015",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "CSC1016S",
+              "title": "Computer Science 1016",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "MAM1019H",
+              "title": "Fundamentals of Mathematics",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "MAM1031F",
+              "title": "Mathematics 1031 (or equivalent)",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "ACC1021F",
+              "title": "Accounting for Business I",
+              "credits": 15,
+              "nqf_level": 5
+            }
+          ]
+        },
+        {
+          "combination_id": "CSC02-Y1-D",
+          "description": "STA100x, MAM1004F/S, FTX1005F/S",
+          "courses": [
+            {
+              "code": "CSC1015F/S",
+              "title": "Computer Science 1015",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "CSC1016S",
+              "title": "Computer Science 1016",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "STA100xF/S",
+              "title": "Any 1000-level Science STA course",
+              "credits": 18,
+              "nqf_level": 5,
+              "is_pattern": true,
+              "resolves_to": [
+                "STA1000F",
+                "STA1000S",
+                "STA1000P/L",
+                "STA1006S",
+                "STA1007S"
+              ]
+            },
+            {
+              "code": "MAM1004F/S",
+              "title": "Mathematics 1004",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "FTX1005F/S",
+              "title": "Managerial Finance",
+              "credits": 18,
+              "nqf_level": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "label": "Second Year Core Courses",
+      "combinations": [
+        {
+          "combination_id": "CSC02-Y2-A",
+          "description": "Fixed second year courses",
+          "courses": [
+            {
+              "code": "INF2009F",
+              "title": "Systems Analysis",
+              "credits": 18,
+              "nqf_level": 6
+            },
+            {
+              "code": "INF2006F",
+              "title": "Business Intelligence Analysis",
+              "credits": 6,
+              "nqf_level": 6
+            },
+            {
+              "code": "INF2011S",
+              "title": "System Design and Development",
+              "credits": 18,
+              "nqf_level": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "label": "Third Year Core Courses",
+      "combinations": [
+        {
+          "combination_id": "CSC02-Y3-A",
+          "description": "Fixed third year courses",
+          "courses": [
+            {
+              "code": "INF3011F",
+              "title": "I.T. Project Management",
+              "credits": 18,
+              "nqf_level": 7
+            },
+            {
+              "code": "INF3012S",
+              "title": "BPM and Enterprise Systems",
+              "credits": 18,
+              "nqf_level": 7
+            },
+            {
+              "code": "INF3014F",
+              "title": "Electronic Commerce",
+              "credits": 18,
+              "nqf_level": 7
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

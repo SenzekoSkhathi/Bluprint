@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CML4501S",
+  "title": "Dispute Resolution",
+  "department": "commercial-law",
+  "credits": 9,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "M Carels",
+  "prerequisites": {
+    "text": "All Preliminary and Intermediate Level courses to have been completed. Limited to 24 students; application (with motivation) to Monique Carels by 31 October.",
+    "parsed": {
+      "type": "level_completion",
+      "levels_required": [
+        "preliminary",
+        "intermediate"
+      ],
+      "note": "Limited to 24 students, application by 31 October"
+    }
+  },
+  "corequisites": [],
+  "outline": "The nature and path of conflict; approaches to managing conflict; positional and interest-based negotiation; defining the process of mediation; the stages of mediation; specialised forms of mediation; comparing adjudication and mediation, arbitration: the forms of arbitration and the defining characteristics and dispute system design.",
+  "lecture_times": "Two lectures per week.",
+  "dp_requirements": "None",
+  "assessment": "Reflective journal: 25%, Class test: 25%, May/June examination: 50%.",
+  "is_law_course": true
+}

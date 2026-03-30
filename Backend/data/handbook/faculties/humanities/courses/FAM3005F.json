@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "FAM3005F",
+  "title": "Screen Production III: Pre-Production",
+  "department": "film-and-media-studies",
+  "credits": 36,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "D Valley",
+  "prerequisites": {
+    "text": "FAM1000S, FAM2004S and FAM2013F, or at the discretion of the Head of Department",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "FAM1000S",
+        "FAM2004S",
+        "FAM2013F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "FILM AND MEDIA STUDIES, CENTRE FOR 208 The course examines contemporary issues in African cinemas, including cinema in South Africa during and after apartheid. The term “cinemas” is used as there is not a single African cinema, but a diversity of national film cultures on the continent. The cou rse will address the complex interrelationship of history, aesthetics, politics and ideology in African cinemas, as well as the cultural, social and economic forces which blend to form this vital part of world cinema.",
+  "lecture_times": "7th period, Tuesday and Wednesday; screening: 6th and 7th periods, Friday.",
+  "dp_requirements": "All written work must be submitted timeously. Students who miss more than two tutorials will lose their DPs.",
+  "assessment": "Continuous assessment (essays, projects, tests, etc.) counts 100%.",
+  "is_humanities_course": true
+}

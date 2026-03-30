@@ -1,0 +1,116 @@
+{
+  "$schema": "handbook-department-index-v1",
+  "faculty": "science",
+  "year": 2026,
+  "count": 12,
+  "departments": [
+    {
+      "slug": "archaeology",
+      "name": "Department of Archaeology",
+      "abbreviation": "AGE",
+      "location": "Beattie Building, 5 University Avenue",
+      "telephone": "(021) 650-2353",
+      "email": "lynn.cable@uct.ac.za",
+      "handbook_page": 57
+    },
+    {
+      "slug": "astronomy",
+      "name": "Department of Astronomy",
+      "abbreviation": "AST",
+      "location": "RW James Building, 9 University Avenue",
+      "telephone": "(021) 650-4437",
+      "email": "roslyn.daniels@uct.ac.za",
+      "handbook_page": 63
+    },
+    {
+      "slug": "biological-sciences",
+      "name": "Department of Biological Sciences",
+      "abbreviation": "BIO",
+      "location": "John Day Building & HW Pearson Building",
+      "telephone": "(021) 650-3604",
+      "email": "claire.khai@uct.ac.za",
+      "handbook_page": 70
+    },
+    {
+      "slug": "chemistry",
+      "name": "Department of Chemistry",
+      "abbreviation": "CEM",
+      "location": "PD Hahn Building",
+      "telephone": "(021) 650-2324",
+      "email": "deirdre.brooks@uct.ac.za",
+      "handbook_page": 88
+    },
+    {
+      "slug": "computer-science",
+      "name": "Department of Computer Science",
+      "abbreviation": "CSC",
+      "location": "Computer Science Building",
+      "telephone": "(021) 650-2663",
+      "email": "thelma.jenneker@uct.ac.za",
+      "handbook_page": 99
+    },
+    {
+      "slug": "environmental-geographical-science",
+      "name": "Department of Environmental and Geographical Science",
+      "abbreviation": "EGS",
+      "location": "EGS Building",
+      "telephone": "(021) 650-2874",
+      "email": "egssecretary@uct.ac.za",
+      "handbook_page": 128
+    },
+    {
+      "slug": "geological-sciences",
+      "name": "Department of Geological Sciences",
+      "abbreviation": "GEO",
+      "location": "Geological Sciences Building",
+      "telephone": "(021) 650-2931",
+      "email": "sci-geology@uct.ac.za",
+      "handbook_page": 151
+    },
+    {
+      "slug": "mathematics-applied-mathematics",
+      "name": "Department of Mathematics and Applied Mathematics",
+      "abbreviation": "MAM",
+      "location": "Mathematics Building",
+      "telephone": "(021) 650-3191",
+      "email": "hayley.leslie@uct.ac.za",
+      "handbook_page": 158
+    },
+    {
+      "slug": "molecular-cell-biology",
+      "name": "Department of Molecular and Cell Biology",
+      "abbreviation": "MCB",
+      "location": "Molecular Biology Building",
+      "telephone": "(021) 650-7401",
+      "email": "phindi.nkosi@uct.ac.za",
+      "handbook_page": 177
+    },
+    {
+      "slug": "oceanography",
+      "name": "Department of Oceanography",
+      "abbreviation": "SEA",
+      "location": "RW James Building",
+      "telephone": "(021) 650-3277",
+      "email": "cashifa.karriem@uct.ac.za",
+      "handbook_page": 184
+    },
+    {
+      "slug": "physics",
+      "name": "Department of Physics",
+      "abbreviation": "PHY",
+      "location": "RW James Building",
+      "telephone": "(021) 650-3326",
+      "email": "jill.patel@uct.ac.za",
+      "handbook_page": 189
+    },
+    {
+      "slug": "statistical-sciences",
+      "name": "Department of Statistical Sciences",
+      "abbreviation": "STA",
+      "location": "PD Hahn Building",
+      "telephone": "(021) 650-3221",
+      "email": "beverley.king@uct.ac.za",
+      "handbook_page": 197
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MAM3006Z",
+  "title": "Project in Mathematics",
+  "department": "mathematics-applied-mathematics",
+  "credits": 0,
+  "nqf_level": 7,
+  "year_level": "Third Year",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "Dr J Sanchez-Ortega",
+  "prerequisites": {
+    "text": "None",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "With permission from the Convenor, and subject to the availability of a suitable supervisor in the Department, students may complete a project on a topic in Mathematics. This is strongly recommended for students intending to continue to Honours in Mathematics.",
+  "lecture_times": null,
+  "dp_requirements": null,
+  "assessment": null,
+  "is_science_course": true
+}

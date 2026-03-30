@@ -1,0 +1,39 @@
+{
+  "$schema": "handbook-rules-v1",
+  "faculty": "health-sciences",
+  "year": 2026,
+  "rules": {
+    "admission": {
+      "FGU1.1": "Faculty welcomes applicants with special needs but reserves right to assess disability impact on curriculum requirements.",
+      "FGU1.2": "First-year students with conditional Matriculation Board exemption must submit proof before registering for second year."
+    },
+    "registration": {
+      "FGU2.1": "All first-year students must attend all academic orientation activities.",
+      "FGU2.2": "All students must renew registration formally each year. No retrospective registration.",
+      "FGU2.3": "Late registration incurs penalty fine."
+    },
+    "hepatitis_b": {
+      "FGU3": "Compulsory Hepatitis B immunisation by end of July of first year. Cannot register for second year without proof."
+    },
+    "professional_registration": {
+      "FGU5": "All undergraduates must register with Health Professions Council of South Africa (HPCSA)."
+    },
+    "assessment": {
+      "FGU8.1": "Continuous assessment in all prescribed courses.",
+      "FGU8.2": "Supplementary examinations at Faculty Examinations Committee discretion. Not offered if mark < 45%, failed sub-component < 48% (MBChB years 4-6), failed more than one component, or poor throughout."
+    },
+    "progression": {
+      "FGU9.3": "Student who fails courses may be required to repeat not only failed course but also other courses already passed.",
+      "FGU9.6": "Cannot register for next academic year without completing all courses of preceding year."
+    },
+    "distinction": {
+      "MBChB_basic_sciences": "Cumulative GPA >= 80% for years 1-3",
+      "MBChB_clinical_sciences": "Cumulative GPA >= 75% for years 4-6",
+      "MBChB_honours": "Overall GPA >= 75% for years 1-6",
+      "MBChB_first_class_honours": "Overall GPA >= 85% for years 1-6",
+      "BSc_Audiology_SLP": "Cumulative GPA >= 75% throughout all four years",
+      "BSc_OT": "Cumulative GPA >= 75% throughout all four years",
+      "BSc_Physio": "Cumulative GPA >= 75% throughout all four years"
+    }
+  }
+}

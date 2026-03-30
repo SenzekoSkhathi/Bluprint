@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CHE4048F",
+  "title": "Business, Society & Environment",
+  "department": "chemical-engineering",
+  "credits": 20,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Professor H von Blottnitz",
+  "prerequisites": {
+    "text": "All core third year courses.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [
+    "CHE4049F"
+  ],
+  "outline": "The course aims to provide a foundation for students to engage with their future roles as practising professionals or entrepreneurs relative to the expectations of society, and of employers. The course covers: benefit indicators, physical risk in the process industries, environmental sustainability, social impacts and license, innovation and entrepreneurship, business planning, capital and operating cost estimation, profitability assessment and engineering ethics.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

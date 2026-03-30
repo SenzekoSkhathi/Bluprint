@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "FCE2000W",
+  "title": "Becoming a Doctor Part 1A",
+  "department": "family-community-and-emergency-care",
+  "credits": 21,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Dr D Matthews, Mr J Muller-Stuurman and Dr Joel Claassen",
+  "prerequisites": {
+    "text": "Registration in MBChB II and having completed all first-year courses. 80 DEPARTMENTS IN THE FACULTY",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "Objective: To help produce an integrated health care professional who is empathic, reflective, and knowledgeable. Course outline: The BaDr (Becoming A Doctor) theme is comprised of three Courses, each of which have their own Course Codes. Becoming a Doctor part 1A- Family Medicine (FCE2000W); Becoming a Doctor part 1B- Clinical Skills (HSE2000W); and Becoming A Doctor part 1C- Languages (SLL2002H), are all integrated but separate course codes and course outlines are given in this book. The three Courses of the BaDr theme aims to integrate Family Medicine, Clinical Skills and Languages. Students learn and practise interviewing skills. They are exposed to primary, secondary, and tertiary care in both the public and private sectors. The Family Medicine Course develops underst anding of delivery of healthcare including palliative care and its management and aspects of health promotion and disease prevention. Students gain practical experience of the doctor-patient relationship, of a bio-psycho- social approach to patien t care and the consultation process within a community setting. Learning takes place in a blended learning format in small tutorial groups on-campus and online, synchronously, and asynchronously family medici ne, clinical skills, and language s. Students learn and practise interviewing skills. They are exposed to primary, secondary, and tertiary care in both the public and private sectors. The family medi cine develops understanding of de livery of healthcare including palliative care and its management and aspects of health promotion and disease prevention. Students gain practical experience of the doctor-patient relationship, of a bio-psycho- social approach to patient care and the consultation process within a community setting in small tutorial groups.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Attending all clinical skills sessions, language and comm unication activities, tutorials, and practical’s and all fa mily medicine tutorials. Completing the portfolios of learning and undergoing assessment activities. St udents may not miss more than two sessions in each of family medicine, languages, or clinical sk ills during semesters 3 to 5 without official leave of absence or a medical certificate. Attending a ll clinical skills sessions, lang uage and communication activities, tutorials, and practical’s, all fa mily medicine tutorials, and off-campus visits; completing the portfolios of learning and undergoi ng assessment activities. Student s may not miss more than two sessions in each of family medi cine, languages, or clinical skills during semesters 3 to 5 without official leave of absence or a medical certificate.",
+  "assessment": "An integrated, Objective Stru ctured Clinical Examinatio n (OSCE) covers the three Courses of the BaDr theme, that is, Family Medicine (FCE2000W), Clinical Skills (HSE2000W) and the Languages (SLL2002H). An OSCE tests practical skills, the abil ity to conduct an appropriate consultation, to communicate with patients and peers, and to communicate (in English, Afrikaans, and isiXhosa) at a level sufficient for a basic sharing of health-related information. Students also complete a portfolio of learning using a reflective model. These portfolios are assessed. In-course assessments (assignments, written assessments an d OSCEs held during and at the end of semester 3) constitute 50% of the final mark for FCE2000W, HSE2000W and SLL2002H. The OSCEs, written assessments and assignments during and at the end of semester 4 constitute 50% of the final FCE2000W,",
+  "is_health_sciences_course": true
+}

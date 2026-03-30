@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CON2020S",
+  "title": "Construction Management I",
+  "department": "construction-economics-and-management",
+  "credits": 16,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Professor A Windapo",
+  "prerequisites": {
+    "text": "CON1004W",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "CON1004W"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to develop an understanding of the principles of management and includes: the main schools of management and their history and developments; scientific management; human relations school; systems thinking; contingency theory and operations research/theory. The construction enterprise and its environment: customer profile; patterns of demand; types of service or product provided; common organisational structures; the construction firm as a complex system. The construction project and its environment; construction management processes and practices applicable to small projects. Project processes to include: the project delivery process; the production process and the traditional procurement process. Construction management practice to include site layout and management, plant management, materials management, health and safety regulation, waste management, financial management and risk management.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

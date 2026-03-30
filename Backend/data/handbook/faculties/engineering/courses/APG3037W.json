@@ -1,0 +1,30 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "APG3037W",
+  "title": "Design & Theory Studio III (Major Course)",
+  "department": "architecture-planning-geomatics",
+  "credits": 60,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Ms H Boulanger",
+  "prerequisites": {
+    "text": "APG2039W.",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "APG2039W"
+      ]
+    }
+  },
+  "corequisites": [
+    "APG3023W",
+    "APG3034W"
+  ],
+  "outline": "The course focuses on the integration of design proposals, theoretical issues, in coherent responses which cross urban, landscape and architectural scales and which are well developed in detail. The use of digital media is emphasised in terms of conceptualisation, design development, and presentation. The format of the course consists of short experimental exercises, longer projects and en -loge tests. The third quarter is spent on a major project, which provides scope for individual direction within the constraints of the course objectives.",
+  "lecture_times": "Refer to departmental timetable",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

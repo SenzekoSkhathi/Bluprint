@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "BIO5007H",
+  "title": "Conservation Biology Coursework",
+  "department": "biological-sciences",
+  "credits": 0,
+  "nqf_level": 9,
+  "year_level": 5,
+  "semester": "FY",
+  "semester_code": "H",
+  "convener": "Dr G Jamie",
+  "prerequisites": {
+    "text": "A relevant honours degree or equivalent. Students with an honours degree from another discipline may be required to register for an MPhil in Conservation Biology. Note: Students enrol for both BIO5007H and BIO5008W in their first year of registration. A programme handbook is available from the Fitzpatrick Institute's website.",
+    "parsed": {
+      "type": "complex",
+      "codes_mentioned": [
+        "BIO5007H",
+        "BIO5008W"
+      ],
+      "note": "Complex prerequisite logic - see text"
+    }
+  },
+  "corequisites": [],
+  "outline": "This course deals with the conservation and biologically sustainable use of biodiversity. It provides the education and training necessary to identify threatened species, ecosystems and ecological processes, and to develop appropriate measures to reduce the effects of threats to biodiversity. This course is intended for students concerned with both the theory and practice of conservation. The coursework consists of a series of compulsory modules that run from January to August and cover a range of fields of conservation biology: biodiversity basics, conservation ethics, population ecology and viability analysis, conservation genetics, community ecology, ecosystem/aquatic ecology, invasive species, landscape ecology and GIS, conservation planning, climate change and conservation, resource economics, societies and natural resources and, conservation leadership.",
+  "lecture_times": null,
+  "dp_requirements": null,
+  "assessment": "Each student receives a mark for each of the modules, and the modules are examined in two examinations.",
+  "is_science_course": true
+}

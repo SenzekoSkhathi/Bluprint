@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PED4017W",
+  "title": "Neonatology for External Credit",
+  "department": "paediatrics-and-child-health",
+  "credits": 7,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Doctor M Groenewald (co-convenor)",
+  "prerequisites": {
+    "text": "Successful completion of all co urses within the preceding academic year.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "Objective: To impart skills to equip the student for newborn resuscitation, newborn examination and assessment, and provision of routine care for the well and sick newborn. Course outline: Obstetrics (OBS4006W) and Ne onatology (PED4017W) are taught as an eight-week perinatal medicine block rotation. This forms part of a progre ssive spiral curriculum that runs through to the final year. Students acquire the skills and professional conduct required for neonatal medical practice. Teaching takes place within the Maternal and Neonatal Service: Metro West, which exposes students to community-based and hospital -based levels of care. Practical experience for Neonatology is recorded on a log sheet. It includes observatio n and performance under supervision of newborn examination and newborn procedures as stipulated on the log sheet, as well as assessment and care of the newborn as detailed in four neonatal case reports. Students are encouraged to develop professional behaviour, as well as to develop and become skilled in empathic and caring attitudes through perinatal bereavement seminars and tutorials. The rotation is supplemented by a series of lectures, tutorials and skills training sessions that cover topics within the discipline, as well as contributions from other disciplines, in order to provid e an integrated, multidisciplin ary approach to common neonatal problems. The neonatal knowledge and skills acquired during this course form the foundation of Neonatal Medicine.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Students must: (a) attend th e neonatal resuscitation trai ning in the Introductory and Orientation week period; (b) Complete all of the online lecture materials; (c) examine a minimum of four new-born of the mothers delivered by their clinical partners during the block (will be included in obstetric logbook); (d) Complete four neonatal case reports and provide a discussion (1 page) on only one of these 4 cases; complete and submit all case reports at the end of the three week hospital rotation on Vula (electronically); (e) attend six neonatal clinical be dside tutorials; and (f) Complete the skills logbook and subm it the hard copy of the completed ne onatal log sheet by midday on the Friday of Week 7 of the neonatal rotation; (g) Complete the two online quizzes.",
+  "assessment": "The Obstetrics (",
+  "is_health_sciences_course": true
+}

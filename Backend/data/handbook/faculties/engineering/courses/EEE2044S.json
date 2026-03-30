@@ -1,0 +1,31 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EEE2044S",
+  "title": "Introduction to Power Engineering",
+  "department": "electrical-engineering",
+  "credits": 16,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Associate Professor D Oyedokun",
+  "prerequisites": {
+    "text": "(MAM1020F/S or MAM1023F/S) and, (PHY1013F/S or PHY1015F/S) and EEE1007S",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "MAM1020F",
+        "MAM1023F",
+        "PHY1013F",
+        "PHY1015F",
+        "EEE1007S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to help students understand the basic concepts of (a) three -phase AC power generation, voltage, current and power calculations, concepts of balanced and unbalanced systems, DEPARTMENTS IN THE FACULTY AND COURSES OFFERED 131 measurement of active power by two-wattmeter method, (b) definitions and principles of simple and composite magnetic circuits, magnetic hysteresis, (c) basic principles of operation of electric machines, transformer material; (d) basic principles of operat ion, construction, operating characteristics, modelling and performance analysis of DC generators, DC motors and stepper motors, (e) single phase transformers. The course will prepare students to apply engineering and scientific knowledge in carrying out analysis, problem solving and design projects.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

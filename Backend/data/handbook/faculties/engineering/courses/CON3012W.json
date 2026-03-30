@@ -1,0 +1,31 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CON3012W",
+  "title": "Construction Technology III",
+  "department": "construction-economics-and-management",
+  "credits": 28,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Mr M Lefoka",
+  "prerequisites": {
+    "text": "CON2006W",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "CON2006W"
+      ]
+    }
+  },
+  "corequisites": [
+    "CON3031W",
+    "CON3030F",
+    "CON3043W"
+  ],
+  "outline": "DEPARTMENTS IN THE FACULTY AND COURSES OFFERED 122 This course aims to develop the understanding of Construction Technology and services appropriate to the assembly of light weight long span structures and multi -storey buildings, including: plumbing and drainage of water supply (hot and cold); drainage; wa ste disposal; electrical installation; air - conditioning systems; communication systems; lifts, hoists and escalators. Basements, soil stabilization, rock -anchoring and retaining structures. Piling and special foundations. Civil engineering construction. Sustainable technology. Theory of structures.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

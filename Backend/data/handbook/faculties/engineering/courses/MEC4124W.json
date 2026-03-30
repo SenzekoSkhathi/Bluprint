@@ -1,0 +1,30 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MEC4124W",
+  "title": "Engineering Product Design",
+  "department": "mechanical-engineering",
+  "credits": 22,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Mr A de Villiers",
+  "prerequisites": {
+    "text": "MEC3072F and MEC3073S or MEC3050W or MEC3082S",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "MEC3072F",
+        "MEC3073S",
+        "MEC3050W",
+        "MEC3082S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to teach the structured engineering product design process from concept, basic, detail design and into manufacturing, integration and testing. The course spans a full year, where students work on a given design brief individually, as well as in groups and eventually build and test the designed product. Students are assessed through the submission of individual design reports, as well as outputs in group format related to the final built product.",
+  "lecture_times": "2 lectures per week first semester and 1 per week second semester",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "ACC1006F",
+  "title": "Financial Accounting",
+  "department": "accounting",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Associate Professor J Kew",
+  "prerequisites": {
+    "text": "Registration for a BCom Accounting, BBusSci Finance with Accounting, or Actuarial Science degree.",
+    "parsed": {
+      "type": "programme_registration",
+      "programmes": [
+        "BCom Accounting",
+        "BBusSci Finance with Accounting",
+        "Actuarial Science"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "Financial Accounting is predominantly an applied discipline that is based on broad conceptual principles. The course develops an understanding of the business cycle and various decisions taken in a business. Particular emphasis is placed on recording financial transactions in accounting records and interpreting financial transactions through the application of definitions and recognition criteria as set out in the conceptual framework. Students will also be required to prepare and present basic financial statements.",
+  "lecture_times": "Tuesday, Wednesday, Thursday, Friday 13:00 - 14:00; 14:00 - 15:00",
+  "dp_requirements": "Attendance at and submission of a minimum of 70% of tutorials AND a weighted average of 35% for class tests AND an average of 35% for assignments.",
+  "assessment": "Coursework 35%; Exam 65%.",
+  "is_commerce_course": true
+}

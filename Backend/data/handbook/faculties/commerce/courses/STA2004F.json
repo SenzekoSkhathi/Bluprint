@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "STA2004F",
+  "title": "Statistical Theory & Inference",
+  "department": "statistical-sciences",
+  "credits": 24,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "M Mavuso",
+  "prerequisites": {
+    "text": "A pass in (MAM1000W or MAM1032S or MAM1034S or MAM1012S or MAM1006H) and (STA1006S or STA1106H).",
+    "parsed": {
+      "type": "prerequisite",
+      "codes": [
+        "MAM1032S",
+        "STA1006S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "STA2004F is a rigorous introduction to the foundation of the mathematical statistics and aims to provide students with a deeper understanding of the statistical concepts covered in STA1006S. The course is divided into two broad sections: (1) Distribution theory and (2) Statistical Inference. During the first part, students will learn to derive the distributions of random variables and their transformations, and explore the limiting behaviour of sequences of random variables. The last part covers the estimation of population parameters and hypothesis testing based on a sample of data.",
+  "lecture_times": "Five lectures per week, Monday to Friday, 1st period.",
+  "dp_requirements": "Satisfactory attendance of lectures, tutorials, practicals and tests and completion of assignments and/or class exercises as set out in course outline. Class record of at least 35%.",
+  "assessment": "Class record 30% and a 3-hour exam counting 70%. Weights will be adjusted in the case of missed assessments.",
+  "is_commerce_course": false,
+  "offered_by_faculty": "science"
+}

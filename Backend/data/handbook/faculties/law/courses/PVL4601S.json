@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PVL4601S",
+  "title": "Advanced Property Law: Capita Selecta",
+  "department": "private-law",
+  "credits": 9,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr G Mathiba",
+  "prerequisites": {
+    "text": "PVL2002H (Law of Property) at Preliminary B level. The course is capped at 15 students per year.",
+    "parsed": {
+      "type": "specific",
+      "codes_mentioned": [
+        "PVL2002H"
+      ],
+      "note": "At Preliminary B level, capped at 15 students"
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to deepen LLB students' understanding of key aspects of property law, particularly expropriation law by enabling them to explore and specialise in topical areas of this field of study. The course covers the following: (i) the basic theories underlying expropriation law; (ii) the legislative framework governing expropriations; (iii) the importance and influence of the constitutional property clause in respect of the legislative framework; (iv) the various stakeholders impacted by expropriations; (v) the social and political considerations that inform this area, including land reform; (vi) the procedural requirements to effect a lawful expropriation.",
+  "lecture_times": "Two lectures per week.",
+  "dp_requirements": "None",
+  "assessment": "Coursework: 30%, research paper (5000 words) 70%.",
+  "is_law_course": true
+}

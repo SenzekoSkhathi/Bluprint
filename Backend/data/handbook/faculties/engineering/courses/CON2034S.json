@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CON2034S",
+  "title": "Professionalism in the Built Environment",
+  "department": "construction-economics-and-management",
+  "credits": 12,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "T Moodley",
+  "prerequisites": {
+    "text": "Refer to the programme and departmental sections in the 2026 EBE Faculty Handbook.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to develop an understanding of being a professional; ethics; ethos of Construction and Property Studies at UCT; academic writing/ plagiarism; professional communication; professional practice in the Built Environment, including the responsibilities of the Built Environment Professionals and the professional bodies and their codes of conduct; ethical concerns in the workplace and society (corruption, racism, sexism, sexuality, environmental management and sustainable development, social inequality, poverty, unemployment); and case studies.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

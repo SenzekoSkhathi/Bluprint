@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "APG2042Z",
+  "title": "Representation II",
+  "department": "architecture-planning-geomatics",
+  "credits": 8,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "TBC",
+  "prerequisites": {
+    "text": "APG1021W",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "APG1021W"
+      ]
+    }
+  },
+  "corequisites": [
+    "APG2039W"
+  ],
+  "outline": "This second year undergraduate course develops and blends analog and digital drawing skills. Students are taken though processes to enhance their visual and technical communication skills. From conceptual drawing to architectural renders to advanced techni cal drawing, students are taught how to deepen their representation skills. The purpose is to develop a student’s ability to think through drawing.",
+  "lecture_times": "Refer to departmental timetable",
+  "dp_requirements": "80% attendance and 100% submission of all assignments",
+  "assessment": "100% on the portfolio exam",
+  "is_engineering_course": true
+}

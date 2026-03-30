@@ -1,0 +1,30 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CSC2042S",
+  "title": "Introduction to AI 2: Machine Learning",
+  "department": "computer-science",
+  "credits": 24,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr J Buys",
+  "prerequisites": {
+    "text": "CSC1015F/S, CSC1016S, MAM1031F or MAM1004F or equivalent. Note: A laptop is required.",
+    "parsed": {
+      "type": "or",
+      "codes": [
+        "CSC1015F/S",
+        "CSC1016S",
+        "MAM1031F",
+        "MAM1004F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "Machine learning is introduced as a paradigm for Artificial Intelligence. Fundamental machine learning algorithms are introduced, and students implement a subset of those using the Python programming language and modern machine learning frameworks in Python. There is a focus on problem formulation, feature representations and evaluation.",
+  "lecture_times": "Monday - Friday, 3rd period. Four lectures per week. Practicals: One 4-hour practical per week, Monday - Friday, 14h00 - 18h00.",
+  "dp_requirements": "Minimum of 45% aggregate in practical work.",
+  "assessment": "Tests 25%; practicals and practical test 25%; examination 50%. Subminima: 45% on weighted average of theory tests and examination.",
+  "is_science_course": true
+}

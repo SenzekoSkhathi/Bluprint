@@ -1,0 +1,31 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MAM3012S",
+  "title": "Discrete Mathematics (3DM)",
+  "department": "mathematics-applied-mathematics",
+  "credits": 18,
+  "nqf_level": 7,
+  "year_level": "Third Year",
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr B du Preez",
+  "prerequisites": {
+    "text": "MAM2010F, MAM2011F, and two of MAM2012S, MAM2013S and MAM2014S.",
+    "parsed": {
+      "type": "and",
+      "codes": [
+        "MAM2010F",
+        "MAM2011F",
+        "MAM2012S",
+        "MAM2013S",
+        "MAM2014S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "Graph theory, combinatorial counting, discrete probability theory, recurrences, algorithms and applications.",
+  "lecture_times": "Monday - Friday, 4th period.",
+  "dp_requirements": null,
+  "assessment": null,
+  "is_science_course": true
+}

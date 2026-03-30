@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "STA5090Z",
+  "title": "Advanced Topics in Regression",
+  "department": "statistical-sciences",
+  "credits": 15,
+  "nqf_level": 9,
+  "year_level": "Postgraduate (Master's)",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "Associate Professor A Clark",
+  "prerequisites": {
+    "text": "Acceptance into Master's programs in Statistics & Data Science, Data Science or Biostatistics, and/or statistical background deemed sufficient by the Head of Department.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "Linear regression and generalised regression and generalised methods such as shrinkage, splines, kernel smoothing methods and wavelets. Model selection and model assessment. Principal component regression, partial least squares regression, mixture models and generalised additive models.",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "Not specified.",
+  "assessment": "Assignments and/or Exam.",
+  "is_science_course": true
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EGS5023F",
+  "title": "Quantitative Research Methods for Environmental Earth Sciences",
+  "department": "environmental-geographical-science",
+  "credits": 23,
+  "nqf_level": 9,
+  "year_level": "Postgraduate – Masters elective",
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr S Conradie",
+  "prerequisites": {
+    "text": "EGS3012S or equivalent; OR at least one of a first-year Mathematics, Applied Mathematics, Physics or Computer Science course; OR at the discretion of the HOD.",
+    "parsed": {
+      "type": "or",
+      "codes": [
+        "EGS3012S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The course is focussed on quantitative spatio-temporal analysis in the Earth Sciences, particularly tools commonly used in studies of the climate system, with emphasis on practical application and understanding of value and limitations. Classes are held in the EGS computer lab using Python on Linux. Analysis techniques include: cluster analysis; time series analysis including (auto)-correlation, trend, periodograms and wavelets; frequentist hypothesis testing and probability distributions; principal component analysis (PCA/EOF); and self-organising maps (SOMs).",
+  "lecture_times": null,
+  "dp_requirements": "At least 80% attendance record and submission of all assignments.",
+  "assessment": "100% Coursework.",
+  "is_science_course": true
+}

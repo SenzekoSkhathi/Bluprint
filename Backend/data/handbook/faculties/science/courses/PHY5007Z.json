@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PHY5007Z",
+  "title": "Data Science for Particle Physics",
+  "department": "physics",
+  "credits": 12,
+  "nqf_level": 9,
+  "year_level": "Postgraduate (Master's)",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "Associate Professor J M Keaveney",
+  "prerequisites": {
+    "text": "Core modules of the Masters course in Data Science.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "This course introduces students to the important computational aspects of high-energy nuclear and particle physics research. Using examples from current research at CERN, students are introduced to: the basic principles of high-energy physics; the Grid computing model employed by the Worldwide LHC Computing Grid (WLCG); the simulation of interactions between subatomic particles and their detection; the ROOT data analysis tool used by all the large high-energy physics collaborations; signal extraction and significance estimation techniques employed by the most recent particle discoveries, including concepts like nuisance parameters and the look-elsewhere effect.",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "50% average for the two projects.",
+  "assessment": "Two projects: 25% each. Practical 'take-home' Computing examination: 50%. A sub-minimum of 50% for each of the project and examination components is required.",
+  "is_science_course": true
+}

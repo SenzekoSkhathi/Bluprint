@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "SOC1001F",
+  "title": "Introduction to Sociology I",
+  "department": "sociology",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Professor J Seekings",
+  "prerequisites": {
+    "text": "None",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "People move through life in a set of socially structured institutions like the family, education, work and eldership. How are we shaped by the society around us? What part can we play in shaping our society? How have sociologists tried to make sense of the society around us in which our everyday experience is located? What is the sociological imagination? How does it help us to go beneath surface appearances to better understand what is happening? The course introduces students to major ways in SOCIOLOGY 401 which sociologists have grappled to make sense of historically dynamic society in an increasingly globalised context.",
+  "lecture_times": "Tuesday, Wednesday, Thursday 4th or 6th period.",
+  "dp_requirements": "Completion of all written tests, essays and assignments.",
+  "assessment": "Continuous assessment (essays, projects, tests, etc.) counts 100%.",
+  "is_humanities_course": true
+}

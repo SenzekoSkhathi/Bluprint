@@ -1,10 +1,10 @@
-import { mockUsers } from "@/mocks/users";
 import {
-  getLocalAdvisorsResponse,
-  getLocalRawCourses,
-  getLocalRawMajors,
-  LOCAL_RUN_ID,
+    getLocalAdvisorsResponse,
+    getLocalRawCourses,
+    getLocalRawMajors,
+    LOCAL_RUN_ID,
 } from "@/data/science-local-data";
+import { mockUsers } from "@/mocks/users";
 import Constants from "expo-constants";
 import { Platform } from "react-native";
 
@@ -118,7 +118,6 @@ function buildMockStudentPlanResponse(
   };
 }
 
-
 function buildMockScienceCoursesResponse(
   runId?: string,
 ): ScienceCourseCatalogResponse {
@@ -148,7 +147,6 @@ function buildMockScienceCoursesResponse(
     courses,
   };
 }
-
 
 function buildMockScienceMajorsResponse(runId?: string): ScienceMajorsResponse {
   const raw = getLocalRawMajors() as ScienceMajorsResponse & {
@@ -192,6 +190,18 @@ export interface ScienceAdvisorResponse {
   answer: string;
   citations: ScienceAdvisorCitation[];
   retrieval: Record<string, unknown>;
+  requested_faculty?: string;
+  advisor_faculty?: string;
+  retrieval_faculty?: string;
+  faculty_fallback?: boolean;
+}
+
+export interface HandbookRetrievalResponse {
+  run_id: string | null;
+  chunks: Array<Record<string, unknown>>;
+  requested_faculty?: string;
+  retrieval_faculty?: string;
+  faculty_fallback?: boolean;
 }
 
 export interface ScienceAdvisorChatMessagePayload {
@@ -522,13 +532,32 @@ export interface HandbookRuleValidationIssue {
 }
 
 export interface HandbookRuleValidationResponse {
-  run_id: string;
-  handbook_title: string;
-  planner_policy: HandbookPlannerPolicy;
-  source_rules: HandbookRuleItem[];
+  run_id?: string;
+  handbook_title?: string;
+  planner_policy?: HandbookPlannerPolicy;
+  source_rules?: HandbookRuleItem[];
   focused_policy_rules?: FocusedPolicyRules;
   issues: HandbookRuleValidationIssue[];
   selected_majors?: string[];
+  selected_major_pathways?: Record<string, Record<string, string>>;
+  unknown_selected_majors?: string[];
+  target_faculty?: string;
+  data_source?: string;
+  term_credit_totals?: Record<string, number>;
+  attempt_history_count?: number;
+  plan_intent?: "snapshot" | "graduation_candidate";
+  validation_mode?: "advisory" | "strict_graduation";
+  completion_gaps?: {
+    total_credits_gap: number;
+    science_credits_gap: number;
+    level7_credits_gap: number;
+    maths_stats_requirement_met: boolean;
+  };
+  graduation_verdict?: {
+    eligible: boolean;
+    mode: "advisory" | "strict_graduation";
+    reasons: string[];
+  };
   summary: {
     blockers: number;
     warnings: number;
@@ -1105,6 +1134,24 @@ export interface BluBotStudentContext {
     nqf_level: number;
     semester: string;
   }>;
+  primary_faculty?: string;
+  cross_major_mode?: boolean;
+  cross_major_faculties?: string[];
+}
+
+export function queryHandbookRetrieval(payload: {
+  query: string;
+  top_k?: number;
+  run_id?: string;
+  faculty_slug?: string;
+}) {
+  return requestJson<HandbookRetrievalResponse>("/retrieval/handbook/query", {
+    method: "POST",
+    body: JSON.stringify({
+      ...payload,
+      faculty_slug: payload.faculty_slug ?? "science",
+    }),
+  });
 }
 
 export function askScienceAdvisor(payload: {
@@ -1114,9 +1161,28 @@ export function askScienceAdvisor(payload: {
   model_profile?: ScienceAdvisorModelProfile;
   student_context?: BluBotStudentContext;
 }) {
-  return requestJson<ScienceAdvisorResponse>("/advisor/science/ask", {
+  return askHandbookAdvisor({ ...payload, faculty_slug: "science" }).catch(() =>
+    requestJson<ScienceAdvisorResponse>("/advisor/science/ask", {
+      method: "POST",
+      body: JSON.stringify(payload),
+    }),
+  );
+}
+
+export function askHandbookAdvisor(payload: {
+  query: string;
+  top_k?: number;
+  run_id?: string;
+  model_profile?: ScienceAdvisorModelProfile;
+  student_context?: BluBotStudentContext;
+  faculty_slug?: string;
+}) {
+  return requestJson<ScienceAdvisorResponse>("/advisor/handbook/ask", {
     method: "POST",
-    body: JSON.stringify(payload),
+    body: JSON.stringify({
+      ...payload,
+      faculty_slug: payload.faculty_slug ?? "science",
+    }),
   });
 }
 
@@ -1126,6 +1192,66 @@ export function askScienceAdvisorWithUpload(payload: {
   run_id?: string;
   model_profile?: ScienceAdvisorModelProfile;
   student_context?: BluBotStudentContext;
+  attachment: UploadAttachment;
+}) {
+  return askHandbookAdvisorWithUpload({
+    ...payload,
+    faculty_slug: "science",
+  }).catch(() => {
+    const formData = new FormData();
+
+    if (payload.query?.trim()) {
+      formData.append("query", payload.query.trim());
+    }
+
+    if (payload.top_k) {
+      formData.append("top_k", String(payload.top_k));
+    }
+
+    if (payload.run_id?.trim()) {
+      formData.append("run_id", payload.run_id.trim());
+    }
+
+    if (payload.model_profile) {
+      formData.append("model_profile", payload.model_profile);
+    }
+
+    if (payload.student_context) {
+      formData.append(
+        "student_context_json",
+        JSON.stringify(payload.student_context),
+      );
+    }
+
+    const fileName = payload.attachment.name?.trim() || "upload";
+    const mimeType =
+      payload.attachment.mimeType?.trim() || "application/octet-stream";
+    const attachmentForWeb = payload.attachment.file;
+
+    if (attachmentForWeb) {
+      formData.append("file", attachmentForWeb, fileName);
+    } else {
+      formData.append("file", {
+        uri: payload.attachment.uri,
+        name: fileName,
+        type: mimeType,
+      } as any);
+    }
+
+    return requestMultipart<ScienceAdvisorResponse>(
+      "/advisor/science/ask-upload",
+      formData,
+    );
+  });
+}
+
+export function askHandbookAdvisorWithUpload(payload: {
+  query?: string;
+  top_k?: number;
+  run_id?: string;
+  model_profile?: ScienceAdvisorModelProfile;
+  student_context?: BluBotStudentContext;
+  faculty_slug?: string;
   attachment: UploadAttachment;
 }) {
   const formData = new FormData();
@@ -1147,8 +1273,13 @@ export function askScienceAdvisorWithUpload(payload: {
   }
 
   if (payload.student_context) {
-    formData.append("student_context_json", JSON.stringify(payload.student_context));
+    formData.append(
+      "student_context_json",
+      JSON.stringify(payload.student_context),
+    );
   }
+
+  formData.append("faculty_slug", payload.faculty_slug ?? "science");
 
   const fileName = payload.attachment.name?.trim() || "upload";
   const mimeType =
@@ -1166,17 +1297,33 @@ export function askScienceAdvisorWithUpload(payload: {
   }
 
   return requestMultipart<ScienceAdvisorResponse>(
-    "/advisor/science/ask-upload",
+    "/advisor/handbook/ask-upload",
     formData,
   );
 }
 
 export function getScienceAdvisorChatHistory() {
+  return getHandbookAdvisorChatHistory({ faculty_slug: "science" }).catch(() =>
+    requestJson<ScienceAdvisorChatHistoryResponse>(
+      "/advisor/science/chats/list",
+      {
+        method: "POST",
+        body: JSON.stringify({}),
+      },
+    ),
+  );
+}
+
+export function getHandbookAdvisorChatHistory(payload?: {
+  faculty_slug?: string;
+}) {
   return requestJson<ScienceAdvisorChatHistoryResponse>(
-    "/advisor/science/chats/list",
+    "/advisor/handbook/chats/list",
     {
       method: "POST",
-      body: JSON.stringify({}),
+      body: JSON.stringify({
+        faculty_slug: payload?.faculty_slug ?? "science",
+      }),
     },
   );
 }
@@ -1185,11 +1332,33 @@ export function syncScienceAdvisorChatHistory(payload: {
   current_thread_id: string | null;
   threads: ScienceAdvisorChatThreadPayload[];
 }) {
+  return syncHandbookAdvisorChatHistory({
+    ...payload,
+    faculty_slug: "science",
+  }).catch(() =>
+    requestJson<ScienceAdvisorChatHistoryResponse>(
+      "/advisor/science/chats/sync",
+      {
+        method: "POST",
+        body: JSON.stringify(payload),
+      },
+    ),
+  );
+}
+
+export function syncHandbookAdvisorChatHistory(payload: {
+  current_thread_id: string | null;
+  threads: ScienceAdvisorChatThreadPayload[];
+  faculty_slug?: string;
+}) {
   return requestJson<ScienceAdvisorChatHistoryResponse>(
-    "/advisor/science/chats/sync",
+    "/advisor/handbook/chats/sync",
     {
       method: "POST",
-      body: JSON.stringify(payload),
+      body: JSON.stringify({
+        ...payload,
+        faculty_slug: payload.faculty_slug ?? "science",
+      }),
     },
   );
 }
@@ -1198,43 +1367,124 @@ export function renameScienceAdvisorChatThread(payload: {
   thread_id: string;
   title: string;
 }) {
-  return requestJson<{ ok: boolean }>("/advisor/science/chats/rename", {
+  return renameHandbookAdvisorChatThread({
+    ...payload,
+    faculty_slug: "science",
+  }).catch(() =>
+    requestJson<{ ok: boolean }>("/advisor/science/chats/rename", {
+      method: "POST",
+      body: JSON.stringify(payload),
+    }),
+  );
+}
+
+export function renameHandbookAdvisorChatThread(payload: {
+  thread_id: string;
+  title: string;
+  faculty_slug?: string;
+}) {
+  return requestJson<{ ok: boolean }>("/advisor/handbook/chats/rename", {
     method: "POST",
-    body: JSON.stringify(payload),
+    body: JSON.stringify({
+      ...payload,
+      faculty_slug: payload.faculty_slug ?? "science",
+    }),
   });
 }
 
 export function deleteScienceAdvisorChatThread(payload: { thread_id: string }) {
-  return requestJson<{ ok: boolean }>("/advisor/science/chats/delete", {
+  return deleteHandbookAdvisorChatThread({
+    ...payload,
+    faculty_slug: "science",
+  }).catch(() =>
+    requestJson<{ ok: boolean }>("/advisor/science/chats/delete", {
+      method: "POST",
+      body: JSON.stringify(payload),
+    }),
+  );
+}
+
+export function deleteHandbookAdvisorChatThread(payload: {
+  thread_id: string;
+  faculty_slug?: string;
+}) {
+  return requestJson<{ ok: boolean }>("/advisor/handbook/chats/delete", {
     method: "POST",
-    body: JSON.stringify(payload),
+    body: JSON.stringify({
+      ...payload,
+      faculty_slug: payload.faculty_slug ?? "science",
+    }),
   });
 }
 
 export function getScienceCourses(payload?: { run_id?: string }) {
+  return getHandbookCourses({
+    faculty_slug: "science",
+    run_id: payload?.run_id,
+  }).catch(() =>
+    requestJson<
+      ScienceCourseCatalogResponse & {
+        courses: RawScienceCourseCatalogEntry[];
+      }
+    >("/courses/science/list", {
+      method: "POST",
+      body: JSON.stringify(payload ?? {}),
+    })
+      .then(normalizeScienceCourseCatalogResponse)
+      .catch(() => buildMockScienceCoursesResponse(payload?.run_id)),
+  );
+}
+
+export function getHandbookCourses(payload?: {
+  faculty_slug?: string;
+  run_id?: string;
+}) {
   return requestJson<
     ScienceCourseCatalogResponse & {
       courses: RawScienceCourseCatalogEntry[];
     }
-  >("/courses/science/list", {
+  >("/courses/handbook/list", {
     method: "POST",
-    body: JSON.stringify(payload ?? {}),
-  })
-    .then(normalizeScienceCourseCatalogResponse)
-    .catch(() => buildMockScienceCoursesResponse(payload?.run_id));
+    body: JSON.stringify({
+      faculty_slug: payload?.faculty_slug ?? "science",
+      run_id: payload?.run_id,
+    }),
+  }).then(normalizeScienceCourseCatalogResponse);
 }
 
 export function getScienceMajors(payload?: { run_id?: string }) {
+  return getHandbookMajors({
+    faculty_slug: "science",
+    run_id: payload?.run_id,
+  }).catch(() =>
+    requestJson<
+      ScienceMajorsResponse & {
+        majors: RawScienceMajorEntry[];
+      }
+    >("/majors/science/list", {
+      method: "POST",
+      body: JSON.stringify(payload ?? {}),
+    })
+      .then(normalizeScienceMajorsResponse)
+      .catch(() => buildMockScienceMajorsResponse(payload?.run_id)),
+  );
+}
+
+export function getHandbookMajors(payload?: {
+  faculty_slug?: string;
+  run_id?: string;
+}) {
   return requestJson<
     ScienceMajorsResponse & {
       majors: RawScienceMajorEntry[];
     }
-  >("/majors/science/list", {
+  >("/majors/handbook/list", {
     method: "POST",
-    body: JSON.stringify(payload ?? {}),
-  })
-    .then(normalizeScienceMajorsResponse)
-    .catch(() => buildMockScienceMajorsResponse(payload?.run_id));
+    body: JSON.stringify({
+      faculty_slug: payload?.faculty_slug ?? "science",
+      run_id: payload?.run_id,
+    }),
+  }).then(normalizeScienceMajorsResponse);
 }
 
 export function getScienceAdvisors() {
@@ -1431,11 +1681,41 @@ export function validateSciencePlanAgainstRules(payload: {
     credits: number;
   }>;
   selected_majors?: string[];
+  selected_major_pathways?: Record<string, Record<string, string>>;
+  attempt_history?: Array<{
+    code: string;
+    year?: string;
+    semester?: string;
+    passed?: boolean;
+    grade?: number;
+  }>;
+  readmission_pathway?: "auto" | "sb001" | "sb016";
+  plan_intent?: "snapshot" | "graduation_candidate";
+  validation_mode?: "advisory" | "strict_graduation";
   run_id?: string;
   handbook_title?: string;
 }) {
   return requestJson<HandbookRuleValidationResponse>(
     "/rules/science/validate-plan",
+    {
+      method: "POST",
+      body: JSON.stringify(payload),
+    },
+  );
+}
+
+export function validatePlanAgainstHandbookRules(payload: {
+  planned_courses: Array<{
+    code: string;
+    year: string;
+    semester: string;
+    credits: number;
+  }>;
+  selected_majors?: string[];
+  target_faculty?: string;
+}) {
+  return requestJson<HandbookRuleValidationResponse>(
+    "/rules/handbook/validate-plan",
     {
       method: "POST",
       body: JSON.stringify(payload),

@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "STA5010W",
+  "title": "Operational Research in Development Coursework",
+  "department": "statistical-sciences",
+  "credits": 90,
+  "nqf_level": 9,
+  "year_level": "Postgraduate (Master's)",
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Dr R G Rakotonirainy",
+  "prerequisites": {
+    "text": "A good Honours degree including a strong quantitative component (normally at least two years of Mathematics at a tertiary level). Recommendations from at least two referees able to attest to the applicant's academic abilities and suitability.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "The aim of this one-year course is to provide broad professional training in the principles and tools of operational research (OR), with particular emphasis on application in the context of development and the developing world. The OR in Development programme prepares graduates for a career applying OR to the unique problems of the developing world, such as conflicting objectives in balancing socio-economic development and corrective actions, less reliable infrastructures, and a post-colonial need for community participation in planning. The first academic year is based primarily on coursework, supplemented by group discussions and case studies, and covers the basic techniques of OR and statistics, specific developmental issues, problem structuring and decision analysis.",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "Not specified.",
+  "assessment": "Assessed through class assessments and examinations. A pass for this coursework requires an average of 50% over all modules, as well as a minimum of 50% for certain modules designated as core material.",
+  "is_science_course": true
+}

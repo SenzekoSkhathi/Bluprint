@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AGE2011S",
+  "title": "Human Evolution",
+  "department": "archaeology",
+  "credits": 24,
+  "nqf_level": 6,
+  "year_level": "Second Year",
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Professor R Ackermann",
+  "prerequisites": {
+    "text": "Any first-year Science course; or any first-year Humanities course from a related discipline such as Social Anthropology, Historical Studies, Sociology; or by permission of the Head of Department.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "This course examines the record of primate and human evolution, showing how fossil skeletons and artefacts are interpreted in terms of human behaviour and evolutionary processes. Genetic and other comparative evidence increasingly providing insight into the origin of our lineage are also considered. Questions addressed include: Why did our ancestors evolve in Africa? How did we evolve such large and complex brains? What advantage does bipedalism provide? When do humans begin to make tools? Why is human skin colour so variable? What makes humans unique? The syllabus includes practical sessions for the study of primate and human, fossil and recent skeletal material and the artefacts associated with our ancestors.",
+  "lecture_times": "Monday - Thursday, 3rd period. Practicals: One 2-hour practical per week, at times to be arranged.",
+  "dp_requirements": "Attendance at lectures and practicals and completion of assignments.",
+  "assessment": "Assignments and tests count 50%; one 3-hour examination in October/November counts 50%. A sub-minimum of 40% is required for the examination.",
+  "is_science_course": true
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "FCE6001W",
+  "title": "Long Elective",
+  "department": "family-community-and-emergency-care",
+  "credits": 19,
+  "nqf_level": 8,
+  "year_level": 6,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Mr J Irlam",
+  "prerequisites": {
+    "text": "Students are eligible to take this course once in the fifth academic year of study (upon application to an d with written permission from the Elective Conve ner and year or MBChB years 4-6 Convener and limited to the vacation period) or in the sixth year of study.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "Objective: To provide students with an opportunity over four week s to enhance their clinical competence and understanding of the social context of disease and health, and/or their skills in clinical or public health research. Course outline: Students are eligible to take this course once in the fifth academic year of study (upon application to and with written permission from the Electives Convener and year 5 or MBChB years 4-6 Convener and limited to the vacation period) or in the sixth academic year.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "An evaluation form and ac tivity form (if applicable) signed by the elective supervisor.",
+  "assessment": "A written report on the elective for 100 mark s within four weeks of the elective. A penalty of one mark per day app lies for late submission . The marking rubrics are available on the VULA Electives site. Students who fail (i.e. obtain less than 50% for the elective report) will be given 84 DEPARTMENTS IN THE FACULTY one opportunity to amend the report and re-submit, otherwise they may be required to repeat the elective in the following year.",
+  "is_health_sciences_course": true
+}

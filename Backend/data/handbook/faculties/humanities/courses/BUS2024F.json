@@ -1,0 +1,26 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "BUS2024F",
+  "title": "Business Management II",
+  "department": "management-studies",
+  "credits": 24,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Z Zungu",
+  "prerequisites": {
+    "text": "This course is restricted to students in their second year of study or higher. The course is intended for students majoring in Organisational Psychology, but students from other streams/faculties may choose this course as an elective.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "Broadly, human resource management (HRM) deals with the practices an organisation employs to manage its people so that they can best fulfil the organisation’s strategic goals. It includes the hiring, developing and retaining of employees and ensures their fair treatment. This course introduces students to HRM practices and considers how organisational psychology's understanding of human behaviour in workspaces informs these.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "None.",
+  "assessment": "Coursework (assignments and tests) 60%; Final examination 40%.",
+  "is_humanities_course": false,
+  "offered_by_faculty": "commerce"
+}

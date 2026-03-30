@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "BIO1000H",
+  "title": "Cell Biology",
+  "department": "biological-sciences",
+  "credits": 0,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "FY",
+  "semester_code": "H",
+  "convener": "Dr M Vaaltyn",
+  "prerequisites": {
+    "text": "Pass in NSC Physical Science or Life Science with at least 60%. Permission of the Dean or Head of Department required prior to registration. Intended for students advised to transfer from BIO1000F after week 5 assessment. Equivalent to BIO1000F in level, credit value and as prerequisite.",
+    "parsed": {
+      "type": "complex",
+      "codes_mentioned": [
+        "BIO1000F"
+      ],
+      "note": "Complex prerequisite logic - see text"
+    }
+  },
+  "corequisites": [],
+  "outline": "Basic biological principles and processes at a cellular level provide an essential grounding for future study in the life sciences. The structure and function of cell components is introduced, followed by an introduction to chemistry, including the structure and functions of biological macro-molecules. Cell division and the role of genetics in inheritance and the control of biological systems is then considered. This leads into an introduction to membrane physiology, metabolism and its regulation. Cellular processes that are considered in detail include the functioning of photosynthesis and cellular respiration, and how these relate to organismal physiology. Cellular communication and the immune system of animals complete the organismal physiology. Course places emphasis on strengthening foundational concepts and skills, carefully paced introduction of new material, and developing sound approaches to effective learning.",
+  "lecture_times": "Monday - Friday, 2nd period. Tutorials: One per week, by arrangement. Practicals: One afternoon per week, Friday, 14h00 - 17h00. Attendance is compulsory for all lectures and practicals.",
+  "dp_requirements": "Completion of at least 80% of deliverables (tests, practicals, tutorials), including at least one class test and at least one practical test; attendance of practicals; minimum of 40% for the class record.",
+  "assessment": "Class record counts 40% (three class tests count 27%; two practical tests count 5%; and a practical bookmark counts 8%). One 2-hour examination paper (Theory) written in November counts 40%; a subminimum of 40% is required for this paper. One 1.5-hour examination paper (Practical) in November counts 20%",
+  "is_science_course": true
+}

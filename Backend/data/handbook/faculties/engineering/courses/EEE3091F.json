@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EEE3091F",
+  "title": "Energy Conversion I",
+  "department": "electrical-engineering",
+  "credits": 16,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Professor P Barendse",
+  "prerequisites": {
+    "text": "EEE2044S",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "EEE2044S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to introduce students to the fundamentals of AC Electrical Machines and Power Electronics. Several machine types are studied, which include: induction, synchronous and other modern AC machines. The features, characteristics and performance of each machine type are studied. Uncontrolled and controlled rectifier circuits are introduced and analysed in detail. DC-DC converters are also be introduced. Topical industrial applications of AC machines and Power Electronics are also discussed.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

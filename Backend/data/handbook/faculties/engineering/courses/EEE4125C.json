@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EEE4125C",
+  "title": "New Ventures: Planning, Practice & Professionalism",
+  "department": "electrical-engineering",
+  "credits": 16,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "Q3",
+  "semester_code": "C",
+  "convener": "TBC",
+  "prerequisites": {
+    "text": "EEE3097S or EEE3098S or EEE3099S",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "EEE3097S",
+        "EEE3098S",
+        "EEE3099S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course introduces students to a range of practical and technical tools related to the planning and managing of entrepreneurial ventures. This includes the skills and knowledge to communicate professionally and ethically, manage a new business and to w ork in diverse teams. The business aspects of the course include feasibility studies; product conception and description; market assessment; industrial analysis; regulatory aspects; marketing plans; operations, development plans and management; staffing an d labour issues; financial projections; and intellectual property. The communication aspect develops professional identity alongside ethical responsibility and exposes students to a variety of persuasive professional communication formats including business proposals, posters and eportfolios culminating in a group presentation to industry professionals.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

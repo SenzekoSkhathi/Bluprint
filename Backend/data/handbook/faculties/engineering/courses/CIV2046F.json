@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CIV2046F",
+  "title": "Transportation Engineering I",
+  "department": "civil-engineering",
+  "credits": 15,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "O Nnene",
+  "prerequisites": {
+    "text": "Refer to the programme and departmental sections in the 2026 EBE Faculty Handbook.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "The objective of the course is to gain an appreciation for geometric design, pavement design, and traffic engineering. The course aims to provide students with the fundamentals of road engineering and design, as well as traffic engineering analysis and techniques for the design of roads and freeways, including road drainage, intersections, pavements and the analysis, control, and management of traffic flows (both urban roads, rural roads and highways). The course also emphasizes the need for public transport, pedestrian and cycling facilities.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course. DEPARTMENTS IN THE FACULTY AND COURSES OFFERED 109",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

@@ -1,0 +1,73 @@
+{
+  "id": "bsc-eng-civil-4yr",
+  "programme_code": "EB002CIV01",
+  "name": "Bachelor of Science in Engineering in Civil Engineering 4-year curriculum",
+  "abbreviation": "BSc(Eng)(Civil)",
+  "department": "Civil Engineering",
+  "duration_years": 4,
+  "minimum_credits": 576,
+  "saqa_id": 13974,
+  "curriculum": {
+    "year_1": {
+      "core": [
+        "CIV1013S",
+        "CIV1008F",
+        "CIV1012S",
+        "CIV1011S",
+        "MAM1020F",
+        "MAM1021S",
+        "CIV1014Z",
+        "CIV1009F",
+        "APG1023S",
+        "PHY1012F",
+        "GEO1008F"
+      ],
+      "credits": 140
+    },
+    "year_2": {
+      "core": [
+        "CIV2044F",
+        "CIV2045F",
+        "CIV2046F",
+        "CIV2047Z",
+        "CIV2048S",
+        "CIV2049Z",
+        "CIV2050Z",
+        "CIV2051S",
+        "MAM2083F",
+        "STA1008F",
+        "CSC1015S",
+        "ECO1007S"
+      ],
+      "credits": 144
+    },
+    "year_3": {
+      "core": [
+        "CIV3042F",
+        "CIV3043F",
+        "CIV3044F",
+        "CIV3045S",
+        "CIV3046S",
+        "CIV3047S",
+        "CIV3048F",
+        "CIV3049S",
+        "ECO1007S"
+      ],
+      "humanities_elective_credits": 18,
+      "credits": 152
+    },
+    "year_4": {
+      "core": [
+        "CIV4035C",
+        "CIV4041F",
+        "CIV4042F",
+        "CIV4044S",
+        "CIV4045F",
+        "CIV4046F",
+        "CIV2020X",
+        "EGS1005F"
+      ],
+      "credits": 144
+    }
+  }
+}

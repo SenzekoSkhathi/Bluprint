@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "APG4012S",
+  "title": "Geomatics Management & Professionalism",
+  "department": "architecture-planning-geomatics",
+  "credits": 24,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Mr K Singh",
+  "prerequisites": {
+    "text": "It is intended that this course is taken by students in the final year of their degree programme. Students on ASPECT may take the course in their programme year of study where timetabling permits.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to prepare students for professional practice in the private and public sector and to provide an understanding of the interaction between business practices, land policies and the Geomatics profession. Topics will include: management functions (planning, controlling, organising, decision-making), human resource management, labour legislation, financial management and management accounting, taxation, capital financing, estimating, depreciation, risk management, project planning, costing, resource allocation, project control and reporting, business communication, report writing, contract law, marketing and client relations, health and safety, professionalism, professional ethics, South African Geomatics Council (including legislation and rules), different types of professional practices, partnerships and partnership law, structuring a practice, civil service in South Africa, government structures, and parastatals, The Access to Information Act, copyright, SDI, ISO, role of international associ ations/societies in Geomatics and social responsibility will also be covered.",
+  "lecture_times": "Thursday, meridian to 9th period",
+  "dp_requirements": "Attendance at and completion of all assignments with a minimum average of 40%.",
+  "assessment": "Assignments count 40%, examination of 3 hours counts 60% (sub-minimum 40%).",
+  "is_engineering_course": true
+}

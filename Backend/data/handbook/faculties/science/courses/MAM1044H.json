@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MAM1044H",
+  "title": "Dynamics",
+  "department": "mathematics-applied-mathematics",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": "First Year",
+  "semester": "FY",
+  "semester_code": "H",
+  "convener": "Dr M Hillebrand",
+  "prerequisites": {
+    "text": "None",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "The aim of this course is to introduce the elements of mechanics. Topics include: kinematics in three dimensions; Newton's laws of motion; models of forces (friction, elastic springs, fluid resistance); conservation of energy and momentum; simple systems of particles, including a brief introduction to rigid systems; and orbital mechanics with applications to the planning of space missions to the outer planets.",
+  "lecture_times": "First semester: 2nd period Tuesday, Thursday. Second semester: 2nd period Monday, Wednesday, Friday.",
+  "dp_requirements": "A class record of 30% or more.",
+  "assessment": "Class record counts up to 50%; the balance is made up by the final examination.",
+  "is_science_course": true
+}

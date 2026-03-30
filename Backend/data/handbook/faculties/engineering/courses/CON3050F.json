@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CON3050F",
+  "title": "Property and Contract Law",
+  "department": "construction-economics-and-management",
+  "credits": 14,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr L van Schalkwyk",
+  "prerequisites": {
+    "text": "CON2033F,CML1001F/L/P or CML1004S",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "CON2033F",
+        "CML1001F",
+        "CML1004S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "A course in the application of contract law in three significant areas – sale, lease and construction. Students will build on their understanding of contracts and property law established in Business Law 1 and Real Property Law respectively. They will apply this understanding in reading and shaping sale and lease agreements and in comprehending the construction process. The course will study the common law principles that underpin sale and lease agreements in respect of immovable property and the statutory limitations on the parties’ freedom to contract in this area. In the second part of the course students will address core issues in construction law and understand how a standard construction contract manages these issues.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

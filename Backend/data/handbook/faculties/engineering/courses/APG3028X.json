@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "APG3028X",
+  "title": "Independent Research",
+  "department": "architecture-planning-geomatics",
+  "credits": 0,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "varies",
+  "semester_code": "X",
+  "convener": "TBA",
+  "prerequisites": {
+    "text": "Refer to the programme and departmental sections in the 2026 EBE Faculty Handbook.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [
+    "APG3037W"
+  ],
+  "outline": "Development of independent research initiative in the quantitative and qualitative analysis of architectural and urban programmatic requirements during a three week period in the mid-year break, resulting in the development of a brief for the major design project in studio.",
+  "lecture_times": "None",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

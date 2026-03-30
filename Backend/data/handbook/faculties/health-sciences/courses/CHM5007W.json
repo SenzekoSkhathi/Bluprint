@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CHM5007W",
+  "title": "Neurology and Neurosurgery",
+  "department": "surgery",
+  "credits": 20,
+  "nqf_level": 8,
+  "year_level": 5,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Dr S Rothemeyer (Neurosurgery) and Associate Professor S Marais (Neurology)",
+  "prerequisites": {
+    "text": "Successful completion of all co urses within the preceding academic year.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "Objective: The objective of this course is to give students an understanding of the presentation, assessment, investigation and management of common disorders of the nervous system. Course outline: This course aims to cover common entities in adult neurosurgery in a mixed rotation where teaching takes place in both discip lines. In this way, th e student develops an under standing of how patients with neurological disorders pr esent. Core learning outcomes include knowledge of common neurological diseases and conditio ns, skill in examining the nervou s system, in applying treatments and carrying out procedures specific to the specia lity and in radiologic assessment, as well as professional behaviour appropriate to clinical practice. The core curriculum comprises core clinical problems that students are able to evaluate clinically and core c linical topics they are expected to know. The latter includes content the student “m ust know” (detailed knowledge of the clinical presentation, laboratory investig ation and management of important, commo n conditions); “must recognise” (a basic understanding of the clinical features suggestive of this diagnosis, and appropriate investigations that assist in ma king the diagnosis and understanding the principles of treatment of these important conditions, all of which have serious implications if missed); and “must be aware of” (be aware of but not expected to accurately diagnose or manage). Students become familiar with rare conditions that they should refer for specialist opinion and management. 246 DEPARTMENTS IN THE FACULTY",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Minimum 75% attendance of scheduled t eaching sessions. If a student fails to meet 75% attendance, they must co mplete a concession to miss a cademic activities form and meet with the convenor to discuss reasons for not attending else risk DPR.",
+  "assessment": "Formative assessment occurs throughout the course/block. The summative assessment consists of: (a) a Participation Ca rds (15%): Each student will rece ive a card at the start of the course/block. During tutorials, clinical teaching or other interactive sessions, the lecturer will ask a series of questions (clinical or theory related) of a student, or of the gr oup where any student can volunteer to answer. Participation in the short interaction around the teaching point will be marked off on the card. Any student who does not complete this activity despite reminder will receive 0 for this. (b) a 45-question, 90-minute end-of-block MCQ examination (85%).",
+  "is_health_sciences_course": true
+}

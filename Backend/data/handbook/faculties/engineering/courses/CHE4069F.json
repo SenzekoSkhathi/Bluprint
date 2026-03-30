@@ -1,0 +1,31 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CHE4069F",
+  "title": "Mineral & Metallurgical Processing II",
+  "department": "chemical-engineering",
+  "credits": 16,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr S Burness",
+  "prerequisites": {
+    "text": "CHE3006F, CHE3007S, CHE3008S, CHE3069S, GEO2006S",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "CHE3006F",
+        "CHE3007S",
+        "CHE3008S",
+        "CHE3069S",
+        "GEO2006S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to equip students with the knowledge required to model and simulate mineral beneficiation and extractive metallurgical processes. The course will be run in 5 dedicated sessions of lectures and tutorial, covering the principles of geo -metallurgy and modelling comminution & classification, flotation, hydrometallurgy, crystallisation and precipitation processes. Simulators commonly applied to designing and optimising mineral processing circuits will be used. The modelling of hydrometallurgical flowsheets with its various unit operations is covered. Crystallisation and precipitation includes modelling concepts of supersaturation; basic mechanisms of nucleation, growth, aggregation, breakage and dissolution for crystallisation and precipitation systems as applied in metallurgical flowsheets.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

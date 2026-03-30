@@ -1,0 +1,26 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "ASL1300F",
+  "title": "Introduction to Language Studies",
+  "department": "african-languages-and-literatures",
+  "credits": 15,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "TBA",
+  "prerequisites": {
+    "text": "Refer to the programme and departmental sections in the 2026 Health Sciences Faculty Handbook.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course forms part of the (fo undational) Intervention Programme. It aims to prepare students for what they will encounter in ASL1301S when they re-enter the st andard curriculum, and will ensure that students understand th e ways in which social context aff ects all aspects of language use. The course will give students a solid grounding in key areas of sociolinguistics: language in interaction; language variation and ch ange; language and identity; langua ge contact; and multilingualism and language policy, particularly in South Africa. It helps to: pr epare students for phenomena and 252 FACULTIES AND DEPARTMENTS OFFERING COURSES TO THE FACULTY problems they are likely to encounter in their profession; assist students to learn to read and understand graphs, tables and other modes of data presentation in sociolinguis tic texts; and develop students’ ability to present their own descriptions and explanations of sociolinguistic phenomena appropriately in essays. At the end of the course students will be able to identify the attitudi nal, aspirational, and other social factors which commonly have an impact on who speaks (or writes) to whom, about what, under what circumstances, and how these factors could shape aspects of actual and desired language use among the communities and individuals with whom they will engage in their clinical training and professional work. Students draw on the work they did in the previous semester (particularly phonetics, phonology, morphology and syntax).",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Full attendance of and partic ipation in all lectures, tu torials and self-directed learning sessions.",
+  "assessment": "In-course assessment contributes 60% and comprises tutorial tasks (10%); and two tests (weighted at 25% each). The examin ation contributes 40% of the fi nal mark. Students who fail the final assessment may be allowed to register for a summer term course and write another examination in the same year.",
+  "is_health_sciences_course": false,
+  "offered_by_faculty": "humanities"
+}

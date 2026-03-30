@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CSC5032Z",
+  "title": "Networks & Internet Systems",
+  "department": "computer-science",
+  "credits": 12,
+  "nqf_level": 9,
+  "year_level": "Postgraduate (Master's)",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "Dr J Chavula",
+  "prerequisites": {
+    "text": "Admission into the Master's degree specialising in Computer Science, or permission from the course convener. Working knowledge of computer networks.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "The objective is to gain advanced understanding of techniques for traffic engineering and quality of service in the Internet architecture. Course content includes: New Network and Transport Protocols (IPv6, Mobile IP, IP Multicast, Multipath TCP, QUIC); Routing and Traffic Engineering; Traffic Engineering with Overlay Networking (MPLS/GMPLS, SDN, NFV); Internet Measurements (QoS and QoE, IP Traffic Monitoring and Analysis). Selected topics may include Cloud Infrastructure, Content Delivery Networks, Internet Access in the Developing World, and Online Data Protection.",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "None.",
+  "assessment": "Assignments: 40%; Discussion sessions: 15%; Active Participation in Class: 5%; Final Exam: 40%.",
+  "is_science_course": true
+}

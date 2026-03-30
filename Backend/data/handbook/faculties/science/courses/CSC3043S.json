@@ -1,0 +1,30 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CSC3043S",
+  "title": "AI: Reasoning in AI",
+  "department": "computer-science",
+  "credits": 18,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "To be advised",
+  "prerequisites": {
+    "text": "CSC2041F, CSC2042S, CSC2001F, CSC3042F.",
+    "parsed": {
+      "type": "and",
+      "codes": [
+        "CSC2041F",
+        "CSC2042S",
+        "CSC2001F",
+        "CSC3042F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course covers a selection of advanced topics in reasoning in Artificial Intelligence such as: reasoning through language with Large Language Models; visual reasoning with diffusion models; probabilistic reasoning with Bayesian networks; logic programming; and expert systems.",
+  "lecture_times": "Monday - Friday, 3rd period. Practicals: One 4-hour practical per week, by arrangement.",
+  "dp_requirements": "Minimum of 45% aggregate in practical work.",
+  "assessment": "Tests 25%; practical work 25%; examinations 50%. Subminima: 45% for practicals, 45% weighted average of theory tests and examinations.",
+  "is_science_course": true
+}

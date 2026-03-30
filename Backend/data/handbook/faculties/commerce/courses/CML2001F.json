@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CML2001F",
+  "title": "Company Law",
+  "department": "commercial-law",
+  "credits": 18,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr M Maphiri",
+  "prerequisites": {
+    "text": "Business Law I and no undergraduate student in his/her first year of study may register for Company Law.",
+    "parsed": {
+      "type": "prerequisite",
+      "codes": [
+        "CML1001F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The course offers an overview of the laws that govern the nature, formation, and management of partnerships, trusts, companies and close corporations with the main focus being on companies. Students are encouraged to apply the analytical abilities acquired in previous law courses and these skills are further developed. After the course students will be able to, amongst others, navigate the Companies Act 71 of 2008 and will be familiar with its core provisions and their practical impact.",
+  "lecture_times": "The course is an intensive one with 5 contact periods per week for the full semester.",
+  "dp_requirements": "Coursework is compulsory. If the student does not submit hand-ins or write a test the student will receive a mark of 0 for that assessment.",
+  "assessment": "Coursework 40%; final examination 60%.",
+  "is_commerce_course": false,
+  "offered_by_faculty": "law"
+}

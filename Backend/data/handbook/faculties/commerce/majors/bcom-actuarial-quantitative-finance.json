@@ -1,0 +1,12 @@
+{
+  "$schema": "handbook-programme-v1",
+  "programme_code": "CB019BUS09",
+  "programme_name": "Bachelor of Commerce in Actuarial Science specialising in Quantitative Finance",
+  "degree": "BCom",
+  "specialisation": "Actuarial Science - Quantitative Finance",
+  "faculty": "commerce",
+  "nqf_level": 7,
+  "minimum_credits": 440,
+  "duration_years": 3,
+  "department": "management-studies"
+}

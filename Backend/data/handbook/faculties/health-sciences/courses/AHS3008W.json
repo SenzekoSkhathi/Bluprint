@@ -1,0 +1,30 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AHS3008W",
+  "title": "Clinical Audiology II",
+  "department": "health-and-rehabilitation-sciences",
+  "credits": 30,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Mrs T Kuhn",
+  "prerequisites": {
+    "text": "AHS2046F, AHS2047S, AHS2110W and AHS2111S (see FBD5.5)",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "AHS2046F",
+        "AHS2047S",
+        "AHS2110W",
+        "AHS2111S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to enable the student to (i) assess and manage he aring impairment with paediatric and adult clients; and (ii) assess and manage central auditory function. Project Design and Management includes identificatio n, design, implementation and m onitoring and evaluation of an appropriate community-based projec t. Students acquire skills of kn owledge translation, effective written and verbal communication, operational clinic management, and clinical reasoning. They learn the need for an appreciation and respect for cultural and linguistic variability, empathy, and the need for ethical and professional practic e. They learn to embrace rehabilita tion and to own their role as a rehabilitative audiologist. Teachi ng and learning activities includ e observation of experienced clinicians, clinical practice, promotion and preve ntion activities, assessment and management of children and adults, and teamwork. Themes underpin ning the course are primary health care, ethics and human rights, equity and affi rmation of diversity, developing agents for change, disability and burden of disease, and evidence-based practice.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Attendance at all clinic activities; co mpletion of all coursework and required documentation (e.g. ELOs and hour s) by the due dates; and profe ssional conduct. A concession to miss clinic activities with a valid reason must be approved by the course convenor. When concessions are granted students must still maintain a minimum of 80% attendance or they may be asked to repeat the course or block (see FBD 4).",
+  "assessment": "Continuous assessments during each clinical block contribute 90% of the course mark; examination in November contributes 10% of the course mark. Refer to AHS3008H clinic descriptor document for specific assessment details.",
+  "is_health_sciences_course": true
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "FIN2011W",
+  "title": "Drawing 2",
+  "department": "fine-art",
+  "credits": 36,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "G van der Byl",
+  "prerequisites": {
+    "text": "FIN1001W Studiowork 1. Due to the nature of the discipline, spatial and technical limitations and Health and Safety legislation, student numbers will be limited and students’ results will be taken into consideration.",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "FIN1001W"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course provides a broad exposure to a range of painting techniques including acrylic and oil. Projects emphasise mimetic skills, the development of colour and composition, and painting in the expanded field. The course demands a conceptual engagement with contemporary painting and the genres of landscape, narrative and still life are critically addressed.",
+  "lecture_times": "Monday to Friday, 14h00 to 17h00. Studio times: Studio times are from 09h00 to 17h00, with students breaking to attend lectures and tutorials as required by the timetable.",
+  "dp_requirements": "At least 80% attendance of studio classes and critiques, satisfactory completion of all projects.",
+  "assessment": "Mid-year coursework examination 45%, year -end coursework examination 45%, attendance & participation 10%.",
+  "is_humanities_course": true
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EEE3097S",
+  "title": "Engineering Design: Electrical & Computer Engineering",
+  "department": "electrical-engineering",
+  "credits": 8,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Professor F Nicolls",
+  "prerequisites": {
+    "text": "EEE3088F",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "EEE3088F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "In this course students will be assigned a design problem relevant to the Electrical & Computer Engineering discipline within which they will need to design a system and development plan, implement a prototype of this design and evaluate the design through formal testing processes. This will provide insight to understand the intricacies of real-life complex sub system design. Students will be expected to solve it methodically using the skills they have gathered over the previous semesters of the curriculum, especially from the Design Principles course.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

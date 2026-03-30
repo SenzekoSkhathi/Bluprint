@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "STA4010W",
+  "title": "Topics in Statistics & Operational Research",
+  "department": "statistical-sciences",
+  "credits": 142,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "To be advised",
+  "prerequisites": {
+    "text": "Admission to Honours programme in Statistics or Operational Research.",
+    "parsed": {
+      "type": "programme_registration",
+      "programmes": [
+        "Honours in Statistics",
+        "Honours in Operational Research"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This is the honours wrapper course for Topics in Statistics and Operational Research. The course consists of selected topics in mathematical statistics, applied statistics, and operational research, along with a research project. Students select modules from the available offerings in consultation with the department.",
+  "lecture_times": "Full year course. To be advised.",
+  "dp_requirements": "To be advised.",
+  "assessment": "Combination of coursework, examinations and research project as specified by the department.",
+  "is_commerce_course": false,
+  "offered_by_faculty": "science"
+}

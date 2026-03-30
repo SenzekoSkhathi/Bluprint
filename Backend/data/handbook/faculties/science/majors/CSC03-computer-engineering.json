@@ -1,0 +1,188 @@
+{
+  "$schema": "handbook-major-v1",
+  "major_code": "CSC03",
+  "major_name": "Computer Engineering",
+  "department": "computer-science",
+  "notes": "Must be taken concurrently with a Computer Science major. PHY and MAM courses are not requirements of the major itself but are pre-requisites of EEE2041F.",
+  "mutual_exclusions_with": [],
+  "required_companion_majors": [
+    "CSC05"
+  ],
+  "has_student_limit": false,
+  "years": [
+    {
+      "year": 1,
+      "label": "First Year Core Courses",
+      "combinations": [
+        {
+          "combination_id": "CSC03-Y1-A",
+          "description": "MAM1000W + PHY1004W",
+          "courses": [
+            {
+              "code": "CSC1015F/S",
+              "title": "Computer Science 1015",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "CSC1016S",
+              "title": "Computer Science 1016",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "MAM1000W",
+              "title": "Mathematics 1000",
+              "credits": 36,
+              "nqf_level": 5
+            },
+            {
+              "code": "PHY1004W",
+              "title": "Matter and Interactions",
+              "credits": 36,
+              "nqf_level": 5
+            }
+          ]
+        },
+        {
+          "combination_id": "CSC03-Y1-B",
+          "description": "MAM1031F + MAM1032S + PHY1031F + PHY1032S",
+          "courses": [
+            {
+              "code": "CSC1015F/S",
+              "title": "Computer Science 1015",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "CSC1016S",
+              "title": "Computer Science 1016",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "MAM1031F",
+              "title": "Mathematics 1031",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "MAM1032S",
+              "title": "Mathematics 1032",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "PHY1031F",
+              "title": "General Physics A",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "PHY1032S",
+              "title": "General Physics B",
+              "credits": 18,
+              "nqf_level": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "label": "Second Year Core Courses",
+      "combinations": [
+        {
+          "combination_id": "CSC03-Y2-A",
+          "description": "Fixed second year courses",
+          "courses": [
+            {
+              "code": "CSC2042S",
+              "title": "AI 2: Machine Learning",
+              "credits": 24,
+              "nqf_level": 6
+            },
+            {
+              "code": "EEE2041F",
+              "title": "Introduction to Electrical Engineering & Power Utilisation",
+              "credits": 16,
+              "nqf_level": 6
+            },
+            {
+              "code": "EEE2042S",
+              "title": "Introduction to Analogue & Digital Electronics",
+              "credits": 8,
+              "nqf_level": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "label": "Third Year Core Courses",
+      "combinations": [
+        {
+          "combination_id": "CSC03-Y3-A",
+          "description": "EEE courses + CSC3024S + CSC3041F",
+          "courses": [
+            {
+              "code": "EEE2050F",
+              "title": "Embedded Systems I for Science Students",
+              "credits": 18,
+              "nqf_level": 6
+            },
+            {
+              "code": "EEE3095S",
+              "title": "Embedded Systems II for Science Students",
+              "credits": 18,
+              "nqf_level": 7
+            },
+            {
+              "code": "CSC3024S",
+              "title": "C++ Programming",
+              "credits": 18,
+              "nqf_level": 7
+            },
+            {
+              "code": "CSC3041F",
+              "title": "Automated Planning and Control",
+              "credits": 18,
+              "nqf_level": 7
+            }
+          ]
+        },
+        {
+          "combination_id": "CSC03-Y3-B",
+          "description": "EEE courses + CSC3024S + CSC3042F",
+          "courses": [
+            {
+              "code": "EEE2050F",
+              "title": "Embedded Systems I for Science Students",
+              "credits": 18,
+              "nqf_level": 6
+            },
+            {
+              "code": "EEE3095S",
+              "title": "Embedded Systems II for Science Students",
+              "credits": 18,
+              "nqf_level": 7
+            },
+            {
+              "code": "CSC3024S",
+              "title": "C++ Programming",
+              "credits": 18,
+              "nqf_level": 7
+            },
+            {
+              "code": "CSC3042F",
+              "title": "Deep Learning",
+              "credits": 18,
+              "nqf_level": 7
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

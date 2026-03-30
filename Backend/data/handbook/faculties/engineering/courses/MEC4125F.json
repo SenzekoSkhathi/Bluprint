@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MEC4125F",
+  "title": "Thermofluids IV",
+  "department": "mechanical-engineering",
+  "credits": 20,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Associate Professor WH Ho",
+  "prerequisites": {
+    "text": "MEC3080S (DP)",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "MEC3080S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The aim of this course is to introduce students to the analysis of steady-state incompressible external flows, the analysis of turbomachines with deviations from ideal theory, the properties and behaviour of gas mixtures, the fundamental principles of comb ustion and reacting flows, the fundamentals of psychrometrics and air-conditioning processes, and to provide an understanding of the various energy systems and its role in the national energy landscape. It covers: Forced and free convection over flat DEPARTMENTS IN THE FACULTY AND COURSES OFFERED 156 plates and other geometries; Application of the Euler equation and velocity triangles to turbomachines with slip factor and losses, similarity rules and performance curves of turbomachines; Behaviour of gas mixtures for temperature, concentration and pressure and the calculation of gas mixture properties; Theoretical and actual combustion processes, enthalpy of formation, first law analysis of reacting systems and adiabatic flame temperature; The concentration boundary layer, analogy between mass and heat transfer, properties of moist air and pshychrometrics applied to air -conditioning processes; Analyses of different energy systems, both thermal and non -thermal, and scenario planning in the global energy landscape.",
+  "lecture_times": "5 lectures and 2 tutorials per week",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

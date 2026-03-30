@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "DOH1017S",
+  "title": "Introduction to Business Concepts for Humanities Students",
+  "department": "academic-development-programme",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "See 2026 Humanities Faculty Handbook",
+  "prerequisites": {
+    "text": "Refer to programme and departmental requirements in the 2026 Humanities Faculty Handbook.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "The purpose of this course is to augment and support its co -requisite course: BUS1007S INTRODUCTION TO INDUSTRIAL AND ORGANISATIONAL PSYCHOLOGY. It aims to improve students’ performance by enhancing their grasp of key ideas and concepts, and by developing their mastery of the disciplinary discourse. It provides additional pedagogic enrichment in the form of regular Plus Tuts that extend into blended writing exercises and consultations. In these tutorials, students will receive explicit support around the co -requisite course assignments and detailed feedback on their written work.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "See 2026 Humanities Faculty Handbook.",
+  "assessment": "See departmental and faculty assessment rules in the 2026 Humanities Faculty Handbook.",
+  "is_humanities_course": true
+}

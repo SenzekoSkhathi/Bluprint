@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "ECO1010F",
+  "title": "Microeconomics I",
+  "department": "economics",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "R Chetty",
+  "prerequisites": {
+    "text": "Admission to degree and a pass (5) in National Senior Certificate: Mathematics.",
+    "parsed": {
+      "type": "nsc_requirement",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This is an introductory course in microeconomics, which aims to expose students to a wide variety of microeconomic concepts and theories, as well as certain practical applications of these concepts. The course starts with a short introduction of economic history, the importance of the Industrial Revolution on the development of capitalism, and the characteristics of different economic systems. Fundamental concepts in microeconomics are taught in a structured and logical way: the production possibilities frontier; gains from trade; demand, supply and equilibrium; elasticity; utility theory in the cardinal and ordinal framework; and production and cost theory. This is followed by the theory of the firm, where the focus is on pure competition, monopoly and monopolistic competition. The course finishes with an introduction to game theory.",
+  "lecture_times": "ECO1010F: Tuesday, Wednesday, Thursday & Friday 09h00 - 10h00; 10h00 - 11h00; 11h00 - 12h00; 12h00 - 13h00. Students are advised to reserve a Monday slot for tutorial sessions.",
+  "dp_requirements": "All tests/assignments/essays/projects/tutorial attendance/submissions to be completed for DP purposes. If your year mark is below 40% you will not be permitted to write the final examination.",
+  "assessment": "Coursework 50%; Exam 50%.",
+  "is_commerce_course": true
+}

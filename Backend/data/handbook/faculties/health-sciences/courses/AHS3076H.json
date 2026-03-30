@@ -1,0 +1,30 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AHS3076H",
+  "title": "Movement Science III",
+  "department": "health-and-rehabilitation-sciences",
+  "credits": 24,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "FY",
+  "semester_code": "H",
+  "convener": "Mrs H Talberg",
+  "prerequisites": {
+    "text": "AHS2052H, AHS2002W, HUB2015W, HUB2023W",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "AHS2052H",
+        "AHS2002W",
+        "HUB2015W",
+        "HUB2023W"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course covers orthopaedics and neuromusculoskeletal cond itions. The orthopaedic component covers the scope of ph ysiotherapy assessment and management of non- traumatic orthopaedic conditions of the spine and upper quarter, including rheumatological conditions, joint replacements, peripheral nerve and tendon injuries. The neuromusculoskeletal component covers the physiotherapy assessment and treatment of neuromusculoskeletal (NMS) conditions, focusing on the upper quarter and Spine. At the end of this course, students will be able to assess orthopaedic and NMS conditions of the upper quarter and spine according to the International Classification of Functioning (ICF); apply joint and soft tissue mobilizati on techniques to treat NMS conditi ons of these areas; prescribe progressive exercises to appropria tely rehabilitate both NMS and orthopaedic conditions of these areas.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Students are expected to attend and participate in 80% of all lectures and practical sessions, and all tutorials. Atten dance is monitored through the signin g of an attendance register at each session. Students are required to submit all coursework as required.",
+  "assessment": "The course will be assessed through a combination of wri tten tests (40%), two OSPEs (Term 2 OSPE 15% and final Term 4 OSPE 15%); an assignment (15%) and formative revision MCQ’s (15%) which form part of the continuous assessment process. The pass mark of the course is DEPARTMENTS IN THE FACULTY 109 50%. Students who obtain between 45-49% in the final year mark, will be eligible for a supplementary exam. If the student should obtai n a mark below 50% and fail the supplementary exam, the student will need to repeat the course the following year.",
+  "is_health_sciences_course": true
+}

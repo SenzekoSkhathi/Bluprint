@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PTY2000S",
+  "title": "Integrated Health Systems Part IB",
+  "department": "pathology",
+  "credits": 47,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Doctor J Ramesar and Doctor J Jayakumar",
+  "prerequisites": {
+    "text": "Successful completion of all co urses within the preceding academic year.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "Objective: By the end of this course, st udents will be able to: (a) Describe biological and social determinants of health acro ss diverse epidemiological and social contexts, (b) Interpret 208 DEPARTMENTS IN THE FACULTY epidemiological data and apply core concepts to real-world inf ectious disease scenarios, (c) Access and evaluate up-to-date scientific informatio n from credible sources, (d) Classify major human pathogens and compare their transmission, pathogenesis , and control strategies, (e) Explain the structure and function of the immune system, and relate immune mechanisms to protection against various pathogens, (f) Describe how vaccines work, including the immune responses they elicit, and compare vaccine strategies across diseases, (g) Apply knowledge from one in fectious disease to analyse and evaluate another, identifying similarities and differences in biology, epi demiology, or control, (h) Integrate concepts from virology, bact eriology, and immunology to propose evidence- based approaches to infecti ous disease challenges, (i) Communicate infectious disease concepts clearly and effectivel y in oral, written and graphic formats. Demonstrate collaborative skills, including effective communication, teamwork, and shared responsibility in group work. Course outline: The integrated courses HUB201 7H, PTY2000S and PTY3009F ex tend across years 2 and 3 and provide a detailed understand ing of normal structure and function of th e human body and consequences of disease. Students learn core material in the basic health sciences (gross anatomy, embryology, histology, cell biology, medical biochemistry, molecular biology and physiology) and infectious diseases (medical microbiology, virology and immunology); they study changes in normal structure and function due to di sease (anatomical pathology, chem ical pathology and haematology) and learn principles of pharmacology/therapeut ics and early m anagement. Emphasi s is placed on psycho-social matters relating to each case, drawing in relevant aspe cts of family medicine, primary healthcare, public health, and ment al well-being. Students also learn cl inical skills, interpretation of data, professional values and ethics, and procedural skills related to the cases studied. They learn about the impact of illness and disease on the individual, family and society, and the role of the healthcare services in alleviating illness. Case-based, group learning is supported by lectures, practical sessions and stand-alone modules. Students are guided to develop key life skills required fo r an effective healthcare professional, includ ing a multidisciplinary team app roach. Cases have relevance to healthcare issues regionally and nationally.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Attendance at and/or participation in all problem-based learning sessions, tutorials, and practicals and completio n and submission of all set assignme nts, quizzes, tasks and assessment activities by the due dates. Pu blic Health specifically requires all exercises on Vula to be completed as part of HUB2017H and PTY2000S DP requirements.",
+  "assessment": "HUB2017H and PTY2000S are assessed together in a final examinati on at the end of second year. Students must achieve an overall pass in semesters 3 and 4 (year 2) in order to progress to year 3. Students are required to complete a series of in-course assessments and portfolio tasks during semesters 3 and 4 that contribute 60% of the total mark for the year. Learning exercises, and quizzes contribute to the portfolio mark. A summative assessment is held at the end of the year that assesses work from semesters 3 and 4 and contributes 40% of the total mark for Integrated Health Systems in year 2. Students thus receive identical marks at year end for HUB2017H and PTY2000S. In order to be considered eligible for a supplementary examination, students are required to have achieved a total mark for year two of 45- 49%, and to have passed at least one class test or the final examination. Students who are granted a supple mentary examination w ill have their results calculated using the same weightings as the original total mark for the year, and the ma rk achieved in the supplementary exam will be substituted for the final examination mark.",
+  "is_health_sciences_course": true
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "GEO2005X",
+  "title": "Field Geology & Geological Mapping",
+  "department": "geological-sciences",
+  "credits": 24,
+  "nqf_level": 6,
+  "year_level": "Second Year",
+  "semester": "varies",
+  "semester_code": "X",
+  "convener": "Associate Professor J F Diener",
+  "prerequisites": {
+    "text": "GEO1006S; GEO2004S (co-requisite).",
+    "parsed": {
+      "type": "and",
+      "codes": [
+        "GEO1006S",
+        "GEO2004S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This is a field-based course that introduces techniques used to identify, describe and document rocks in the field and for interpreting their inter-relationships, with the view to producing geological maps, stratigraphic logs and structural sections. Techniques covered include: mineralogical and textural descriptions of rocks using a hand-lens; measurement of attitude of bedding using compass and clinometer; measurement, description and interpretation of depositional and deformational structures; stereo plots; interpretation and use of aerial photographs; identifying contact relationships; GPS positioning. Course material is taught over four separate field camps spread over two years of study.",
+  "lecture_times": "None. Course is delivered entirely through field camps.",
+  "dp_requirements": "Attendance at all field camps.",
+  "assessment": "Maps and reports count 70%; three 2-hour practical examinations in June and November count 30%.",
+  "is_science_course": true
+}

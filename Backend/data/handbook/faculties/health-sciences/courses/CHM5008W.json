@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CHM5008W",
+  "title": "Ophthalmology",
+  "department": "surgery",
+  "credits": 10,
+  "nqf_level": 8,
+  "year_level": 5,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Dr T Van der Lecq and Associate Professor C Tinley",
+  "prerequisites": {
+    "text": "Successful completion of all co urses within the preceding academic year.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course covers common entities in adult and paediatric opht halmology. Students undergo experiential learning in the outpa tient clinics at Groote Schuur Hosp ital over a 10-day period. Core learning outcomes are categorised into core know ledge; skills, including clin ical, clinical reasoning and procedural skills; and professi onal behaviour and personal attr ibutes. The core curriculum comprises core clinical problems which students are expected to be able to evaluate clinically and core clinical topics students are expected to be knowl edgeable about. Clinical topics are stratified into “must know” (have a detailed kn owledge of the clinical presen tation, limited management and appropriate referral); and “must recognise” (have a basi c understanding of th e clinical features suggestive of this diagnosis, ta ke appropriate steps in the tr eatment of the condition and an understanding which needs to be referred to an ophthalmologist). As key outcomes, students should be able to diagnose and manage common, primary care eye probl ems, recognise and initiate the treatment of emergencies and know when to refer. St udents’ mastering of a problem-orientated approach and their plan of management for every patient manifest in the necessary 30 cases that form part of each student’s portfolio.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "In order to qualify to write the end of course assessment, students must have completed the clinical component of the course to achieve a ‘Duly Performed’ certificate. The requirements include full attendance and a completed portfolio of cases as is stipulated in the course document. Attendance at all clinic and tutorial sessions is vital – students must attend all sessions and an attendance register will be ke pt. Any student missing a session without a valid reason will not be allowed to do the exam at the end of the course. If any days are missed, then the student must submit an application for a concession to miss classes. Should more than 2 days be missed, then the student will not be able to meet the DP r equirement and will need to catch up on work lost to complete the end of course exam. In this ca se, a recommendation will be made to the Faculty Examinations Committee (FEC) for the student to spend an extra week of time in ophthalmology before completing a supplementary exam. Any students not having the required number of cases to present to the portfolio exam will fail the end-of-course assessment and fail the course. A recommendation will be made to the FEC for the student to repeat the course and the end of course assessment.",
+  "assessment": "The final ophthalmology mark will be made up of the following components: a) An invigilated online MCQ exam (contributing 40%); b) An invigilated online OSCE exam (contributing 40%; c) A Portfolio exam (contributing 20%). A ny students obtaining less than 50% as a final ophthalmology mark will fail the course. In the case of students who achieve marks of 48% and 49% a recommendation will be made to the FEC that the student spends an extra week in ophthalmology DEPARTMENTS IN THE FACULTY 247 at a time to be decided before a supplementary exam. Students achieving 47% or less will be classified as an outright fail. A recommendation will be made to the FEC for them to repeat the course.",
+  "is_health_sciences_course": true
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AHS1068W",
+  "title": "Disability Information Management and Communication Systems",
+  "department": "health-and-rehabilitation-sciences",
+  "credits": 15,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Doctor I Nwanze",
+  "prerequisites": {
+    "text": "AHS1063S, AHS1065S and AHS1066S",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "AHS1063S",
+        "AHS1065S",
+        "AHS1066S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "Students learn the importance of information managem ent and how adequa te and inadequate application of the principles of record keeping affect the overall qu ality of client quality of care. Student learn skills in adult learning, group management and giving appropriate feedback depending on the audience. Students demons trate skills in communicating info rmation appropriately to clients while observing the verbal and non-verbal modes of communicatio n. Students learn how to prepare and use appropriate visual aids fo r information dissemination to th e appropriate audience. Students then learn how to search and record and use available resources in the community as support structures for the quality of care provided to clients.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Full attendance of and participation in all lectures, practical sessions, workshops and tutorials, and submission of portfolio by the due dates.",
+  "assessment": "The final course mark is comprised of the in-course mark weighted at 60% and the end- of-course mark weighted at 40%.",
+  "is_health_sciences_course": true
+}

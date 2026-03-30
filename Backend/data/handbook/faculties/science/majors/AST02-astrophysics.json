@@ -1,0 +1,168 @@
+{
+  "$schema": "handbook-major-v1",
+  "major_code": "AST02",
+  "major_name": "Astrophysics",
+  "department": "astronomy",
+  "notes": "",
+  "mutual_exclusions_with": [],
+  "required_companion_majors": [],
+  "has_student_limit": false,
+  "years": [
+    {
+      "year": 1,
+      "label": "First Year Core Courses",
+      "combinations": [
+        {
+          "combination_id": "AST02-Y1-A",
+          "description": "MAM1000W stream",
+          "courses": [
+            {
+              "code": "MAM1000W",
+              "title": "Mathematics 1000",
+              "credits": 36,
+              "nqf_level": 5
+            },
+            {
+              "code": "PHY1004W",
+              "title": "Matter & Interactions",
+              "credits": 36,
+              "nqf_level": 5
+            },
+            {
+              "code": "CSC1015F/S",
+              "title": "Computer Science 1015",
+              "credits": 18,
+              "nqf_level": 5
+            }
+          ],
+          "recommended": [
+            {
+              "code": "AST1000S",
+              "title": "Introduction to Astronomy",
+              "credits": 18,
+              "nqf_level": 5
+            }
+          ]
+        },
+        {
+          "combination_id": "AST02-Y1-B",
+          "description": "MAM1031F + MAM1032S stream",
+          "courses": [
+            {
+              "code": "MAM1031F",
+              "title": "Mathematics 1031",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "MAM1032S",
+              "title": "Mathematics 1032",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "PHY1004W",
+              "title": "Matter & Interactions",
+              "credits": 36,
+              "nqf_level": 5
+            },
+            {
+              "code": "CSC1015F/S",
+              "title": "Computer Science 1015",
+              "credits": 18,
+              "nqf_level": 5
+            }
+          ],
+          "recommended": [
+            {
+              "code": "AST1000S",
+              "title": "Introduction to Astronomy",
+              "credits": 18,
+              "nqf_level": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "label": "Second Year Core Courses",
+      "combinations": [
+        {
+          "combination_id": "AST02-Y2-A",
+          "description": "Core courses; MAM2040F and MAM2043S highly recommended",
+          "required_core": [
+            {
+              "code": "AST2002H",
+              "title": "Astrophysics",
+              "credits": 24,
+              "nqf_level": 6
+            },
+            {
+              "code": "AST2003H",
+              "title": "Astronomical Techniques",
+              "credits": 24,
+              "nqf_level": 6
+            },
+            {
+              "code": "MAM2010F",
+              "title": "Advanced Calculus (2AC)",
+              "credits": 12,
+              "nqf_level": 6
+            },
+            {
+              "code": "MAM2011F",
+              "title": "Linear Algebra (2LA)",
+              "credits": 12,
+              "nqf_level": 6
+            },
+            {
+              "code": "PHY2004W",
+              "title": "Intermediate Physics",
+              "credits": 48,
+              "nqf_level": 6
+            }
+          ],
+          "highly_recommended": [
+            {
+              "code": "MAM2040F",
+              "title": "Ordinary Differential Equations (2OD)",
+              "credits": 12,
+              "nqf_level": 6
+            },
+            {
+              "code": "MAM2043S",
+              "title": "Boundary-Value Problems (2BP)",
+              "credits": 12,
+              "nqf_level": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "label": "Third Year Core Courses",
+      "combinations": [
+        {
+          "combination_id": "AST02-Y3-A",
+          "description": "Fixed third year courses",
+          "courses": [
+            {
+              "code": "AST3002F",
+              "title": "Stellar Astrophysics",
+              "credits": 36,
+              "nqf_level": 7
+            },
+            {
+              "code": "AST3003S",
+              "title": "Galactic & Extragalactic Astrophysics",
+              "credits": 36,
+              "nqf_level": 7
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "bmus-jazz",
+  "programme_code": "HB010",
+  "stream_code": "MUZ07",
+  "name": "Bachelor of Music (Jazz Studies)",
+  "abbreviation": "BMus",
+  "nqf_level": 8,
+  "department": "South African College of Music",
+  "duration_years": 4,
+  "credits_range": "618-720",
+  "curriculum": {
+    "year_1": {
+      "core": [
+        "MUZ1110H",
+        "MUZ1111H",
+        "MUZ1600F",
+        "MUZ1601S",
+        "MUZ1131H"
+      ],
+      "note": "Plus instrument B1"
+    },
+    "year_2": {
+      "core": [
+        "MUZ2110H",
+        "MUZ2111H",
+        "MUZ2600F",
+        "MUZ2601S",
+        "MUZ2131H"
+      ],
+      "note": "Plus instrument B2"
+    },
+    "year_3": {
+      "core": [
+        "MUZ3110H",
+        "MUZ3111H",
+        "MUZ3600F",
+        "MUZ3601S",
+        "MUZ3131H"
+      ],
+      "note": "Plus instrument B3"
+    },
+    "year_4": {
+      "core": [
+        "MUZ4900W",
+        "MUZ4600F",
+        "MUZ4601S",
+        "MUZ4131H"
+      ],
+      "note": "Plus instrument B4"
+    }
+  }
+}

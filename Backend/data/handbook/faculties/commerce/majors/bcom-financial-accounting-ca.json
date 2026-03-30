@@ -1,0 +1,12 @@
+{
+  "$schema": "handbook-programme-v1",
+  "programme_code": "CB001ACC04",
+  "programme_name": "Bachelor of Commerce specialising in Financial Accounting: Chartered Accountant",
+  "degree": "BCom",
+  "specialisation": "Financial Accounting - Chartered Accountant",
+  "faculty": "commerce",
+  "nqf_level": 7,
+  "minimum_credits": 440,
+  "duration_years": 3,
+  "department": "accounting"
+}

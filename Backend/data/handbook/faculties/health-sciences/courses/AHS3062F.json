@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AHS3062F",
+  "title": "Rehabilitation Technology",
+  "department": "health-and-rehabilitation-sciences",
+  "credits": 22,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr L Petersen",
+  "prerequisites": {
+    "text": "None",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "The aim of this course is to enab le students to compare the roles of professionals and technology in the rehabilitation process, to asse ss and analyse the client’s need for rehabilitation technology, to design and discuss comprehensive management, and to debate relevant legal rights and ethical issues. Content includes the role of technology in the rehabilitation process, speech perception with hearing loss, hearing aids, frequency modu lation (FM) systems, cochlear impl ants, features of amplification DEPARTMENTS IN THE FACULTY 105 technology, and the verification and validation of technology fitting. Students acquir e the skills of linking patient factors w ith technology and effective listeni ng. They learn attitudes of client- centeredness and a respect for diversity. Teaching and learning activities include case-based learning, demonstrations, hands-on practice, and role-play. Themes underpinning the course are primary healthcare and contextual relevance, disability and the burden of dis ease, ethics and human rights, bio-psycho-social models of hea lth, developing agents for change, and equity and affirmation of diversity.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "For discipline specific courses in the BSc Audiology and BSc in Speech-Language Pathology programmes a minimum coursework mark of 40% is required for entrance into the examination.",
+  "assessment": "The course grade is made up of a cour sework mark (weighted 60%) and a final examination mark (weighted 40%). If a supplementary examination is awarded, it will count 40 % of the final mark, as the course work mark will still be included in the final mark.",
+  "is_health_sciences_course": true
+}

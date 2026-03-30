@@ -1,0 +1,34 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PHY2004W",
+  "title": "Intermediate Physics",
+  "department": "physics",
+  "credits": 48,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Dr S M Wheaton",
+  "prerequisites": {
+    "text": "PHY1004W, MAM1031F and MAM1032S (or equivalent MAM courses), CSC1015F/S. MAM2010F and MAM2011F as required co-requisites; MAM2042S and MAM2043S are highly recommended co-requisites. Note: A laptop is required.",
+    "parsed": {
+      "type": "and",
+      "codes": [
+        "PHY1004W",
+        "MAM1031F",
+        "MAM1032S",
+        "CSC1015F/S",
+        "MAM2010F",
+        "MAM2011F",
+        "MAM2042S",
+        "MAM2043S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "PHY2004W develops the foundations of a major in Physics and allows continuation to third-year Physics. The theory component features a set of intermediate topics, and the laboratory component develops both experimental and computational skills. Topics include: Mechanics (review of Newton's Laws, inertial and non-inertial frames, transformations, equations of motion for 1D systems, oscillations, resonance, non-linear systems, Euler's equation, Lagrange's equation, generalised co-ordinates and constrained systems, Hamiltonian formalism, phase space and Liouville's theorem, effective potentials, planetary motion, systems of particles, angular momentum, collisions, rigid bodies, coupled oscillators, wave equation, special relativity, relativistic mechanics); Electromagnetism (vector calculus, electrostatics, special techniques for potentials, electric fields in matter, magnetostatics, magnetic fields in matter, current, Ohm's law, circuits, electromagnetic induction, electrodynamics, Maxwell's equations); Quantum Mechanics (basic assumptions of quantum mechanics, solutions of Schrödinger's equation, properties of wave functions and operators, one-dimensional applications, angular momentum, three-dimensional applications, the hydrogen atom, approximate methods); Laboratory (practical and computational tasks in Mechanics, Electromagnetism and Quantum Mechanics).",
+  "lecture_times": "Monday - Friday, 4th period. Practicals: Monday, 14h00 - 17h00 and additional sessions (see departmental entry).",
+  "dp_requirements": "Minimum of 40% for the class record; completion of all laboratory reports and 75% of tutorial work and problem sets; attendance at all tests.",
+  "assessment": "Class record (tests, weekly problem sets and laboratory work) counts 50%; one 3-hour examination in June counts 25%; one 3-hour examination in November counts 25%. A subminimum of 40% is required in each of the two examinations.",
+  "is_science_course": true
+}

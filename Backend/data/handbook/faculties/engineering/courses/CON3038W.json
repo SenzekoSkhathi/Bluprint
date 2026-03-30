@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CON3038W",
+  "title": "Construction Management II",
+  "department": "construction-economics-and-management",
+  "credits": 28,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Dr A Filtane",
+  "prerequisites": {
+    "text": "CON2020S",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "CON2020S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to develop an understanding of production management theory and practice by considering: typical business and project objectives; the need to achieve high productivity; the impact of method and layout on production; planning for production . Techniques such as: Gantt charts; critical path networks, precedence diagrams; computer applications; short term planning systems; progress recording; and work study. Construction procurement systems. Management accounting in construction. Industry structures and development. Health, and safety issues surrounding production management.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

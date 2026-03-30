@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MDN5006W",
+  "title": "Rheumatology",
+  "department": "medicine",
+  "credits": 10,
+  "nqf_level": 8,
+  "year_level": 5,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Dr A Gcelu",
+  "prerequisites": {
+    "text": "Successful completion of all co urses within the preceding academic year.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "Rheumatology is a two-week rotation and students are placed at Groote Schuur Hospital for the entire block. During the two weeks they are exposed to a series of pa tient encounters that cover the broad scope of common conditions such as gout, fibromyalgia and osteoarthritis. The patient encounters take place mostly in the outpatient de partment and other times in the ho spital wards. This course covers the common entities in adult and paediatric rheumatolo gy. Core learning out comes comprise of knowledge of common musculoskeletal diseases and conditions; skills in examination of the musculoskeletal system; application of treatments specific to the s peciality; carrying out procedures specific to the speciality; and radiological assessme nt; as well as professional behaviour appropriate to clinical practice.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Attendance of all activities and comp letion of the following coursework requirements: Eight Rheumatology clinics; four seminars; two portfolio cases; all academic departmental activities; and nine tutorials. A student who for any reason is or has been unable to meet the above requirements by the due date must supply a reason to the convener, who has the discretion to decide whether the reason is adequate to avoid being given a DPR. Activities will need to be made up where required. Where they cannot be made up the student may have to repeat the course.",
+  "assessment": "In-course-assessment (10%); end-of-block clinical examination (30%); and an end-of- block OSCE (60%). If a student fails the course with 48% or 49% a recommendation will be made to the Faculty Examinations Committee that the student spend two weeks in rheum atology before undergoing a supplementary examination.",
+  "is_health_sciences_course": true
+}

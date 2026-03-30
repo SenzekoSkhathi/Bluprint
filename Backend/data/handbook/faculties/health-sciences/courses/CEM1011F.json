@@ -1,0 +1,26 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CEM1011F",
+  "title": "Chemistry for Medical Students",
+  "department": "chemistry",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Professor S Bourne",
+  "prerequisites": {
+    "text": "None",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This introductory course is designed to provide first year medical student s with knowledge of the fundamental aspects of chemical theory. The course also serves as a diagnostic tool to explore students' scientific knowledge and the possible need for intervention. Topics in physical and organic chemistry relevant to biochemistry, physiology, pharmacology, chemical pathology and medical microbiology are covered and have been select ed to equip students with the ba sic understanding of those key chemical principles they require for the medical programme. Lecture materi al is augmented by a practical course and weekly tutori als. The practical course seeks to expose students to a variety of laboratory techniques a nd to the methods used in the acquisition, record ing and manipulation of scientific data and expec ts students to derive inferences from such da ta. A blended approach to learning will be used where some academic activities will be delivered online and others face-to-face, where appropriate. This will be at the discretion of the course convener.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Irrespective of whether learning activities are delivered online or face-to-face, attendance and/or participation in all scheduled academ ic activities, comple tion of all set written course activities (i.e., practical reports, course tests and tutorial exercises).",
+  "assessment": "The class record counts 45% an d comprises a practical record (8%); tutorial exercises (5%); two class tests (20%); and a practical te st (12%). The final examination counts 55%. A subminimum of 45% is required in the final examination.",
+  "is_health_sciences_course": false,
+  "offered_by_faculty": "science"
+}

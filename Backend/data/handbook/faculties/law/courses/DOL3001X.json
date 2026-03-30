@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "DOL3001X",
+  "title": "Community Service",
+  "department": "deans-office-law",
+  "credits": 0,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "varies",
+  "semester_code": "X",
+  "convener": "A/Prof J Omar",
+  "prerequisites": {
+    "text": "For students who first register for the course in or after 2020, all Preliminary Level courses to have been completed.",
+    "parsed": {
+      "type": "level_completion",
+      "levels_required": [
+        "preliminary"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "It is a compulsory requirement for the LLB degree that, during the course of the degree, all law students must complete a certain number of hours of community service work. The clinical and/or field work must be legally orientated, must be offered through an approved service provider, and must provide a direct service or benefit to an underprivileged or disadvantaged or vulnerable group or person. Students will also be required to complete 18 hours of unremunerated community service through approved service providers, usually in their final year. Students register only once in their Intermediate Year, and have two years from the date of registration to complete all components.",
+  "lecture_times": "Not applicable.",
+  "dp_requirements": "None",
+  "assessment": "Coursework 100%.",
+  "is_law_course": true
+}

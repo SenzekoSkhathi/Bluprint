@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MEC3081S",
+  "title": "Manufacturing Sciences",
+  "department": "mechanical-engineering",
+  "credits": 12,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr S Gabriel",
+  "prerequisites": {
+    "text": "MEC3076F",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "MEC3076F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course presents a range of manufacturing processes used in the manufacturing environment making use of thermal, mechanical and hybrid techniques. The manufacturing processes introduced and covered are; casting, forming, material removal, abrasive assisted, polishing, hybrid, joining and rapid prototyping. The course educates students in a variety of manufacturing processes and sciences, including their typical use, limitations, capabilities and optimization. At the end of the course the students would be able to select a suitable manufacturing process to process an engineering features from a range of available processes taking into account: the complexity, reliability and lot size.",
+  "lecture_times": "3 lectures per week.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

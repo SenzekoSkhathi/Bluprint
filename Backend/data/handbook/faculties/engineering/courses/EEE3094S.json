@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EEE3094S",
+  "title": "Control Systems Engineering",
+  "department": "electrical-engineering",
+  "credits": 16,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr S Shield",
+  "prerequisites": {
+    "text": "EEE2045F and EEE2047S and MAM2084S/F DEPARTMENTS IN THE FACULTY AND COURSES OFFERED 136",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "EEE2045F",
+        "EEE2047S",
+        "MAM2084S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to develop the understanding of open and closed loop configurations, block diagrams, dynamic system modelling, transient response, steady state error criterion. System stability: Routh Hurwitz criterion, Root Locus. Frequency responses. Ny quist plots, Bode diagrams, Nichols Charts. Compensation: Lead -lag circuits, minor loops, feedforward and three -term controllers. Sensitivity functions, minimum prototype response controllers, bilinear transformation, frequency response methods. State variables, state space models and design methods. Robustness, observability controllability, stability and performance.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

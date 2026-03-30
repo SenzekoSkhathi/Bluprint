@@ -1,0 +1,34 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MAM2043S",
+  "title": "Boundary-Value Problems (2BP)",
+  "department": "mathematics-applied-mathematics",
+  "credits": 12,
+  "nqf_level": 6,
+  "year_level": "Second Year",
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr P W Adams",
+  "prerequisites": {
+    "text": "MAM1031F and MAM1032S or equivalent; MAM1043H; MAM1044H; MAM2010F; MAM2011F; and MAM2040F.",
+    "parsed": {
+      "type": "complex",
+      "codes_mentioned": [
+        "MAM1031F",
+        "MAM1032S",
+        "MAM1043H",
+        "MAM1044H",
+        "MAM2010F",
+        "MAM2011F",
+        "MAM2040F"
+      ],
+      "note": "Complex prerequisite logic - see text"
+    }
+  },
+  "corequisites": [],
+  "outline": "Topics include: homogeneous and non-homogeneous boundary-value problems; Sturm–Liouville problems; partial differential equations and their solution via separation of variables; Fourier series; Green's functions; eigenfunction expansions.",
+  "lecture_times": "Monday - Friday, 3rd period.",
+  "dp_requirements": "A class record of 30% or more; satisfactory attendance at lectures and tutorials; submission of all assigned work.",
+  "assessment": "Class record counts up to 50%; the balance is made up by the final examination.",
+  "is_science_course": true
+}

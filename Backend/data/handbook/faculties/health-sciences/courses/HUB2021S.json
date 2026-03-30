@@ -1,0 +1,26 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "HUB2021S",
+  "title": "Integrated Anatomical and Physiological Sciences Part B",
+  "department": "human-biology",
+  "credits": 24,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Associate Professor A Gwanyanya",
+  "entry_limit": 80,
+  "prerequisites": {
+    "text": "HUB2019F (or approved equivalent) and CEM1000W (or approved equivalent).",
+    "parsed": {
+      "type": "prerequisite",
+      "codes": ["HUB2019F", "CEM1000W"]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course is under review and the content may change as a result. The course integrates aspects of human physiology, anatomy and histology of organ systems, including cardiovascular, respiratory, nervous, reproductive, urinary and immune systems. The concept of integrating homeostasis and regulation forms the golden thread throughout this course. Homeostatic concepts covered include thermoregulation, acid-base balance, neural transduction, cardiac output and regulation, and respiration. Students are introduced to anthropology and to concepts of ageing and disease. In the practicals, students work in small groups using computers and specialised equipment to study the physiology of the nervous system, the electrical events in the contraction of cardiac muscle and the mechanics of the respiratory system. Students also examine human anatomical specimens of various organs and examine the histology of the organ systems. At the end of the course, students will have a thorough grounding in the physiological mechanisms of the nervous, urinary, cardiovascular, respiratory, reproductive, and immune systems. They will have an understanding of the basic anatomy and microanatomical organisation (histology) of key organs within the above bodily systems; will be able to integrate the concepts above in terms of understanding structure-function relationships, so as to understand the basic key elements that impact on the physiology of organs during ageing which leads to disease processes; and will be able to interpret data obtained from the various practicals.",
+  "lecture_times": "Lectures: Monday to Friday (08h00-08h45); Practicals: Mondays or Tuesdays (14h00-17h00).",
+  "dp_requirements": "Attendance at all practicals, 40% average in class tests and an average of 50% for all assignments.",
+  "assessment": "Class tests (30%); practicals, assignments and tutorials (20%); final examinations (50%) consisting of a written theory examination (30%) and a practical examination (20%). A subminimum of 40% is required for the theory and practical examination to pass this course. Supplementary examinations, in the form of written, practical or oral assessment, may be offered to students whose overall score is between 45% and 49%. An oral examination may be required in the case of selected students.",
+  "is_health_sciences_course": true
+}

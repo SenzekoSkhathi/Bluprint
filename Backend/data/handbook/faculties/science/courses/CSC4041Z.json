@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CSC4041Z",
+  "title": "Non-Monotonic Reasoning",
+  "department": "computer-science",
+  "credits": 12,
+  "nqf_level": 8,
+  "year_level": "Postgraduate (Honours)",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "Professor T A Meyer",
+  "prerequisites": {
+    "text": "Admission into the Honours in Computer Science, or permission from the course convener.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "This course will introduce students to the subarea of Artificial Intelligence known as Non-Monotonic Reasoning. Students will study the theoretical core of this type of reasoning and will be introduced to the state of the art in this area.",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "None.",
+  "assessment": "24-hour take-home exam, 50%; Assignments: 50%.",
+  "is_science_course": true
+}

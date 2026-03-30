@@ -1,0 +1,31 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MCB3024S",
+  "title": "Defence & Disease",
+  "department": "molecular-cell-biology",
+  "credits": 36,
+  "nqf_level": 7,
+  "year_level": "Third Year",
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr S Mbewana",
+  "prerequisites": {
+    "text": "MCB2020F, MCB2021F and MCB2022S or MCB2023S.",
+    "parsed": {
+      "type": "complex",
+      "codes_mentioned": [
+        "MCB2020F",
+        "MCB2021F",
+        "MCB2022S",
+        "MCB2023S"
+      ],
+      "note": "Complex prerequisite logic - see text"
+    }
+  },
+  "corequisites": [],
+  "outline": "This course initially examines the innate immune systems of plants, then focuses on the adaptive immune system with emphasis on three major disease challenges in South Africa: HIV, TB and malaria. Host-pathogen interactions are also discussed, with a focus on viruses and how they infect mammals. Finally, the course examines strategies to produce vaccines that enable immunity to viral infection.",
+  "lecture_times": "Monday - Friday, 5th period.",
+  "dp_requirements": "None.",
+  "assessment": "Tests count 40%; one 3-hour examination written in November counts 60%. A sub-minimum of 40% in the examination is required.",
+  "is_science_course": true
+}

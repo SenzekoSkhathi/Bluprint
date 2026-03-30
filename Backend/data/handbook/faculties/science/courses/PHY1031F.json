@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PHY1031F",
+  "title": "General Physics A",
+  "department": "physics",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr S M Wheaton",
+  "prerequisites": {
+    "text": "At least 60% for NSC Physical Science. Students assessed in week 5; if not coping, may be required to transfer to PHY1023H from week 7.",
+    "parsed": {
+      "type": "and",
+      "codes": [
+        "PHY1023H"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "PHY1031F is an algebra-based introductory course for Science students who do not intend proceeding to second-year courses in Physics. Some calculus may be used. The course includes: Mechanics (vectors, kinematics, forces, dynamics, momentum, impulse, work, energy, power, collisions, rotation, rotational dynamics, torque, angular momentum, static equilibrium, gravitation); Properties of matter (elasticity, hydrostatics, hydrodynamics); Vibrations and waves (simple harmonic motion, damped oscillations, forced oscillations, resonance, travelling waves, superposition, standing waves, sound waves, sound intensity and Doppler Effect).",
+  "lecture_times": "Monday - Friday, 3rd period. Practicals: Monday or Wednesday or Thursday, 14h00 - 17h00 (see departmental entry).",
+  "dp_requirements": "Minimum of 40% for the class record, including 50% in laboratory assessment.",
+  "assessment": "Class record (weekly problem sets, class tests and laboratory record) counts 50%; one 2-hour written examination in June counts 50%.",
+  "is_science_course": true
+}

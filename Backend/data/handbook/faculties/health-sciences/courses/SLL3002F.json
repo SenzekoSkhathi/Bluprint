@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "SLL3002F",
+  "title": "Becoming a Doctor (languages) Part IB",
+  "department": "language-studies",
+  "credits": 30,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr J Claassen",
+  "prerequisites": {
+    "text": "SLL2002H",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "SLL2002H"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The BaDr (Becoming A Doctor) them e is comprised of three course s each of which have their own course codes: Becoming a Doctor part 2A – Fam ily Medicine (FCE3000F); Becoming a Doctor part 2B – Languages (SLL3002F); and Becoming a Doctor part 2C – Cl inical Skills (HSE3000F). The courses are all integrated but se parate course codes and course outlines are gi ven in this handbook. The three courses of the BaDr theme aim to integrate Family Medicine, Clinical Skills and Languages. This course comprises “Afrikaans and Xhosa Communication Skills for Doctors” and further develops the skills learnt in the second year. Attention is given to history-taki ng within a clinical context and responses to individual speech acts. At the end of this course, students should be able to communicate with a speaker of Afrikaans or Xhosa about common everyday to pics and elicit and understand information from a patient using case-specific te rminology; and should have an awareness of some cultural issues that emanate from cross-cultural communication.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Completion of all in-course assessments. Students may not miss more than two sessions per language.",
+  "assessment": "See departmental and faculty assessment rules in the 2026 Health Sciences Faculty Handbook.",
+  "is_health_sciences_course": false,
+  "offered_by_faculty": "humanities"
+}

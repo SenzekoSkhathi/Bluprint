@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "REL1002F",
+  "title": "Encountering World Religions I",
+  "department": "religious-studies",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Professor E Porcu",
+  "prerequisites": {
+    "text": "None",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course provides an introduction to the study of religion and various religious traditions. Students are introduced to the analysis of religious symbols, myths, rituals, teachings, and practices. Special attention is given to African indigenous religious traditions, Asian religions (including e.g. Hinduism, Buddhism, Confucianism and Japanese religions) and New Religious Movements that have emerged as alternative sources of religious identity and meaning in the world.",
+  "lecture_times": "Tuesday and Thursday 2nd period plus one tutorial.",
+  "dp_requirements": "Mandatory attendance at lectures and tutorials in all sections of the course. Submission of all coursework by due dates.",
+  "assessment": "Continuous assessment (essays, projects, tests, etc.) counts 100%.",
+  "is_humanities_course": true
+}

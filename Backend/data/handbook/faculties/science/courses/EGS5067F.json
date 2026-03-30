@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EGS5067F",
+  "title": "Air Quality Monitoring, Management and Prediction",
+  "department": "environmental-geographical-science",
+  "credits": 23,
+  "nqf_level": 9,
+  "year_level": "Postgraduate – Masters elective",
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr J von Holdt",
+  "prerequisites": {
+    "text": "None",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "This course explores the current state of global air quality, with a focus on the global South and Africa. Students investigate factors and role players influencing air quality, the distribution of polluted versus clean air, and the impacts on people and the environment at different scales. Students identify an air quality issue of their choice, find and interpret relevant literature, appropriate datasets and methods, and produce results culminating in a short research report with recommendations for interventions.",
+  "lecture_times": null,
+  "dp_requirements": "At least 80% class attendance and 40% minimum in assignments.",
+  "assessment": "Literature review 10%; data analysis assignment and paper 35%; discussion piece 10%; project poster and presentation 15%; final capstone exam 30%.",
+  "is_science_course": true
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CSC4029Z",
+  "title": "Introduction to Computer Graphics",
+  "department": "computer-science",
+  "credits": 12,
+  "nqf_level": 8,
+  "year_level": "Postgraduate (Honours)",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "Associate Professor P Marais",
+  "prerequisites": {
+    "text": "Admission to BSc Hons specialising in Computer Science or Information Technology.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "This course will expose students to the foundational theory of 3D computer graphics and provide a short introduction to OpenGL and GLSL shader programming. Theory will encompass the formal description of 3D models and how these can be lit and rendered to produce a desired representation of a 3D scene. Topics include: the rendering pipeline and rasterization; 3D mesh model representation; homogeneous coordinates; modelling and viewing transformations; shading, lighting and texturing; GLSL shader programming; OpenGL/WebGL programming; advanced rendering - ray-tracing.",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "40% in the practical assignments for the course.",
+  "assessment": "Assignment (40%), Exam (60%).",
+  "is_science_course": true
+}

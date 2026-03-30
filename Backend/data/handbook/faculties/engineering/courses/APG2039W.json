@@ -1,0 +1,30 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "APG2039W",
+  "title": "Design & Theory Studio II (Major Course)",
+  "department": "architecture-planning-geomatics",
+  "credits": 60,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Ms M Ho-Tong",
+  "prerequisites": {
+    "text": "APG1020W",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "APG1020W"
+      ]
+    }
+  },
+  "corequisites": [
+    "APG2021W",
+    "APG2043F"
+  ],
+  "outline": "The course reiterates in more sophisticated form the issues explored in first year studio in order to gain familiarity with them. They are addressed within the exploration of the architecture of place making, conceived as having four cornerstones: it is or dered by experience, has tectonic quality, is eminently habitable and contributes to its urban context. An undercurrent is the study of design method and digital design techniques are introduced. Design exercises are linked to theoretical concerns DEPARTMENTS IN THE FACULTY AND COURSES OFFERED 80 related to the contemporary South African city in global context. The format of the course consists of experimental exercises, longer projects and en loge tests.",
+  "lecture_times": "Refer to departmental timetable",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

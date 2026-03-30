@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "DOL3000X",
+  "title": "Moot Competition",
+  "department": "deans-office-law",
+  "credits": 9,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "varies",
+  "semester_code": "X",
+  "convener": "TBA",
+  "prerequisites": {
+    "text": "Intermediate and final year students selected to participate in national or international moot competitions.",
+    "parsed": {
+      "type": "selection",
+      "note": "By selection for moot competitions"
+    }
+  },
+  "corequisites": [],
+  "outline": "Intermediate and final year students selected to participate in national or international moot competitions may register for this course. To complete it successfully, students must submit adequate heads of argument and participate in a national or international moot competition presided over by more than one person under the supervision of a Faculty academic member of staff. Students may be credited with 9 NQF credits and may be exempted from a seminars-and-research-paper elective (Moot Caput option) in the Final Level of the LLB.",
+  "lecture_times": "Not applicable.",
+  "dp_requirements": "None",
+  "assessment": "Heads of argument count for 100% unless the supervisor agrees to allocate a percentage of the mark to oral presentation. The percentage of the mark allocated to oral presentation shall be in the supervisor's discretion and may not exceed 50%.",
+  "is_law_course": true
+}

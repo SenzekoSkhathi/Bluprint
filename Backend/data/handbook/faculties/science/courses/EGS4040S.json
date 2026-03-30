@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EGS4040S",
+  "title": "Special Topic in Human/Environment Interactions",
+  "department": "environmental-geographical-science",
+  "credits": 30,
+  "nqf_level": 8,
+  "year_level": "Postgraduate – Honours elective",
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr S Scheba",
+  "prerequisites": {
+    "text": "Acceptance for Honours or Master's specialising in EGS.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "Issues and themes in contemporary aspects of the Human/Environmental interface will be covered. Specific attention will be given to profiling core debates in a specialist field of human or environmental geography. The course focuses on using theory while encouraging the use of case studies. Course outcomes emphasise the development of conceptual and analytical skills.",
+  "lecture_times": null,
+  "dp_requirements": "At least 80% attendance record and submission of all assignments.",
+  "assessment": "100% Coursework.",
+  "is_science_course": true
+}

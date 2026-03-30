@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MEC2000X",
+  "title": "Practical Training II",
+  "department": "mechanical-engineering",
+  "credits": 0,
+  "nqf_level": 7,
+  "year_level": 2,
+  "semester": "varies",
+  "semester_code": "X",
+  "convener": "Dr TJ Cloete",
+  "prerequisites": {
+    "text": "None",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This second opportunity for practical experience for Mechanical and Mechatronics & Mechanical Engineering students culminates in a certified employers report showing regular timekeeping and evidence of completion of suitable work in mechanical, or mechatro nic engineering practice. It and must involve work in a registered company where a student will be exposed to “engineering activities” for a minimum period of six weeks after the end of the second year of study. The six weeks do not have to be continuous, however at least one block with a given employer must be three weeks or more. DEPARTMENTS IN THE FACULTY AND COURSES OFFERED 148 The student engineer is expected to be involved with the operation and maintenance of a plant, and / or work on an engineering focused design, analysis, coding or management project in an industrial, consulting or research setting, and to apply the knowled ge gained in academic study, to the project under supervision.",
+  "lecture_times": "None",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

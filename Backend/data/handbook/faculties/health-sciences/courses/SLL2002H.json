@@ -1,0 +1,33 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "SLL2002H",
+  "title": "Becoming a Doctor Part 1B",
+  "department": "language-studies",
+  "credits": 18,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "FY",
+  "semester_code": "H",
+  "convener": "Dr J Claassen",
+  "prerequisites": {
+    "text": "SLL1044S and SLL1041S or passing the corresponding SLL1044S and SLL1041S oral proficiency tests.",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "SLL1044S",
+        "SLL1041S",
+        "SLL1044S",
+        "SLL1041S"
+      ]
+    }
+  },
+  "corequisites": [
+    "PPH2000W"
+  ],
+  "outline": "The course teaches basic Afrikaans and Xhosa comm unication skills for doctors. The content of the languages course is synchronized with the content of PPH2000W (Becoming a Doctor Part IA). The focus of the course is on communi cation skills and specifically on those skills required for a doctor- patient interaction, including skill in asking questions and in effectiv ely entering into dialogue with the patient. The course also deals with the unique pronunci ation and stylistic variants of individual patients, culture-specific words and expressions, and the possible ‘indigenisation’ of language.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Completion of all in-course assessments. Students may not miss more than two class attendance sessions per language.",
+  "assessment": "Continuous assessment will occur through a blend of asyn chronous in-course and oral summative assessments. The cumulative Semester 3 and 4 marks count 50% each. The elected form of assessment will be aligned with the mode of content delivery.",
+  "is_health_sciences_course": false,
+  "offered_by_faculty": "humanities"
+}

@@ -1,0 +1,31 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MCB3023S",
+  "title": "Molecular Evolutionary Genetics & Development",
+  "department": "molecular-cell-biology",
+  "credits": 36,
+  "nqf_level": 7,
+  "year_level": "Third Year",
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr S F Dube",
+  "prerequisites": {
+    "text": "MCB2020F, MCB2021F and MCB2022S or MCB2023S.",
+    "parsed": {
+      "type": "complex",
+      "codes_mentioned": [
+        "MCB2020F",
+        "MCB2021F",
+        "MCB2022S",
+        "MCB2023S"
+      ],
+      "note": "Complex prerequisite logic - see text"
+    }
+  },
+  "corequisites": [],
+  "outline": "This course provides advanced-level studies in the area of molecular evolutionary genetics and development. Focus is placed on understanding key experiments in these fields and on interpreting data. Topics covered include: the origins and molecular genetics of viruses; principles of mouse molecular genetics applied to limb and neural development; evo-devo (how genetic change leads to morphological diversity); and interactions between genetics, the environment and development.",
+  "lecture_times": "Monday - Friday, 4th period.",
+  "dp_requirements": "None.",
+  "assessment": "Tests count 40%; one 3-hour examination written in November counts 60%. A sub-minimum of 40% in the examination is required.",
+  "is_science_course": true
+}

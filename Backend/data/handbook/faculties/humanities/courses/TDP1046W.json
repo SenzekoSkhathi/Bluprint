@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "TDP1046W",
+  "title": "Performance Making I",
+  "department": "theatre-and-performance",
+  "credits": 36,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "TBA",
+  "prerequisites": {
+    "text": "Students registered for the BA in Theatre and Performance and Diploma in Theatre and Performance.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course introduces students to the foundational skills of performance as actors and/or dancers, and makers. This includes: THEATRE: • Voice • Movement • Improvisation • Approaches to textual interpretation • States of being • Characterisation • Scene Study Work is undertaken in English and/or Afrikaans and isiXhosa DANCE: • Fundamental principles of dance techniques • Body Conditioning • Improvisation • Voice • Repretory Study Fieldwork components may be included in the course.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "100% attendance at all practical classes, rehearsals, tutorials and performances; and completion of all written and practical assignments.",
+  "assessment": "Coursework and classwork tasks count 50% of the final mark; practical examination counts 50% of the final mark. In order to pass students must obtain at least 50% in each of the above.",
+  "is_humanities_course": true
+}

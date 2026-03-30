@@ -1,0 +1,26 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PHY1025F",
+  "title": "Physics",
+  "department": "physics",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Associate Professor S W Peterson",
+  "prerequisites": {
+    "text": "None",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "Objective: By the end of this course, st udents will be able to: (a) Describe biological and social determinants of health acro ss diverse epidemiological and social contexts, (b) Interpret epidemiological data and apply core concepts to real-world inf ectious disease scenarios, (c) Access and evaluate up-to-date scientific informatio n from credible sources, (d) Classify major human pathogens and compare their transmission, pathogenesis , and control strategies, (e) Explain the structure and function of the immune system, and relate immune mechanisms to protection against various pathogens, (f) Describe how vaccines work, including the immune responses they elicit, and compare vaccine strategies across diseases, (g) Apply knowledge from one in fectious disease to analyse and evaluate another, identifying similarities and differences in biology, epi demiology, or control, (h) Integrate concepts from virology, bact eriology, and immunology to propose evidence- based approaches to infecti ous disease challenges, (i) Communicate infectious disease concepts clearly and effectivel y in oral, written and graphic formats. Demonstrate collaborative skills, including effective communication, teamwork, and shared responsibility in group work. Course outline: The course aims to provide a found ation in physics for la ter courses in the bi ological and physical sciences in the medical curriculum. Topics covered include mathematical skills for physics; Newton's laws of translational motion, force, friction, work and energy; bodies in static equilibrium; density and pressure in fluids; fluid flow, viscosity, temperatur e, gas laws, heat and heat transfer; first law of thermodynamics, human metabolism and first law; wave motion, transverse and longitudinal waves, interference of waves; sound, ear's response to sound, Doppler effect, ultrasound and medical imaging; electric charge and field, electri c potential and potentia l difference, electric cu rrent, resistivity and simple circuits; light, reflection and refraction, thin lenses and the human eye.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Attendance of all scheduled tutorials and practical sessions; completion of all set written course activities (i.e. tutorial assignments, practical reports and course tests); and a minimum class record of 35%.",
+  "assessment": "Coursework counts 40% and co mprises three class tests (1 0% each) and a laboratory record (10%); and the final examination counts 60%.",
+  "is_health_sciences_course": false,
+  "offered_by_faculty": "science"
+}

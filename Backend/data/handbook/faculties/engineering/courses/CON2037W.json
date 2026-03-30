@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CON2037W",
+  "title": "Measurement & Design Appraisal I",
+  "department": "construction-economics-and-management",
+  "credits": 20,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Ms E Edwardes",
+  "prerequisites": {
+    "text": "CON1004W, MEC1010F",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "CON1004W",
+        "MEC1010F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to develop an understanding of the principles of measurement and the documentation thereof; and a detailed analysis of the clauses contained in the Standard System of Measuring Building Work. The practical component of the course entails the measurement, abstraction and billing of the following elements: foundations, superstructure brickwork, roofs; eaves and rainwater goods, internal and external finishes, ceilings, floors; and doors, windows and opening adjustments. The practicals introduce students to automated quantity take-off software package(s). Students measure all elements of a small residential structure.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

@@ -1,0 +1,54 @@
+{
+  "id": "bsc-occupational-therapy",
+  "programme_code": "MB003/MB016",
+  "name": "BSc Occupational Therapy",
+  "abbreviation": "BSc(OT)",
+  "saqa_id": 3497,
+  "department": "Health and Rehabilitation Sciences",
+  "duration_years": 4,
+  "total_nqf_credits": 559,
+  "professional_registration": "HPCSA",
+  "curriculum": {
+    "year_1": {
+      "core": [
+        "PPH1001F",
+        "PPH1002S",
+        "PSY1004F",
+        "PSY1005S",
+        "HUB1019F",
+        "HUB1020S",
+        "AHS1032S",
+        "AHS1035F"
+      ],
+      "credits": 144
+    },
+    "year_2": {
+      "core": [
+        "AHS2002W",
+        "PRY2002W",
+        "PSY2013F",
+        "HUB2015W",
+        "AHS2043W"
+      ],
+      "credits": 123
+    },
+    "year_3": {
+      "core": [
+        "SLL1028H",
+        "AHS3078H",
+        "AHS3107W",
+        "AHS3108W",
+        "AHS3113W"
+      ],
+      "credits": 148
+    },
+    "year_4": {
+      "core": [
+        "AHS4119W",
+        "AHS4120W",
+        "AHS4121W"
+      ],
+      "credits": 144
+    }
+  }
+}

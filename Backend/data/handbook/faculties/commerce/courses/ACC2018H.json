@@ -1,0 +1,31 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "ACC2018H",
+  "title": "Governance, Audit and Assurance I",
+  "department": "accounting",
+  "credits": 18,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "FY",
+  "semester_code": "H",
+  "convener": "M Phaswana",
+  "prerequisites": {
+    "text": "A pass in INF1002 and concurrent registration or a previous pass in ACC1015 and ACC2012W. Registration for a BCom Accounting or BBusSci Finance with Accounting degree.",
+    "parsed": {
+      "type": "prerequisite",
+      "codes": [
+        "INF1002F"
+      ],
+      "concurrent": [
+        "ACC1015S",
+        "ACC2012W"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The course builds on the foundations of Financial Accounting and Reporting, Information Systems and Business Acumen. It introduces students to the foundational principles of business cycles (systems) and internal control, where 'Governance' refers to the system by which an entity is directed and controlled and 'Internal Control' refers to the process in place to ensure the entity's objectives with regard to reliability of financial reporting, effectiveness and efficiency of operations, and compliance with applicable laws and regulations.",
+  "lecture_times": "Wednesday and Thursday 15:00; Repeat lectures 16:00.",
+  "dp_requirements": "Attendance at and submission of a minimum of 75% of tutorials in each semester AND a weighted average of 40% for class tests AND a weighted average of 40% for assignments.",
+  "assessment": "Coursework 40%; Exam 60%.",
+  "is_commerce_course": true
+}

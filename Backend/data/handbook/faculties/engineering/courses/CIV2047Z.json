@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CIV2047Z",
+  "title": "Transportation Infrastructure Project",
+  "department": "civil-engineering",
+  "credits": 4,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "O Nnene",
+  "prerequisites": {
+    "text": "Refer to the programme and departmental sections in the 2026 EBE Faculty Handbook.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This project aims to prepare students for transport infrastructure design. Students will be introduced to crucial aspects of the design of transport infrastructure including corridor selection, geometric design, intersection design, pavement design, earthworks estimation and drainage design. The design will be done in the context of land -based modes of transport such as road and rail. The students will complete their design with the Civil 3D software.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

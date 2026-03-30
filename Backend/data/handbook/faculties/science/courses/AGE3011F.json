@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AGE3011F",
+  "title": "The Roots of Recent African Identities",
+  "department": "archaeology",
+  "credits": 36,
+  "nqf_level": 7,
+  "year_level": "Third Year",
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Associate Professor A Esterhuysen",
+  "prerequisites": {
+    "text": "AGE2011S or AGE2012F, or by permission of the Head of Department.",
+    "parsed": {
+      "type": "or",
+      "codes": [
+        "AGE2011S",
+        "AGE2012F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course explores the history of Africa's people over the past 2000 years with special reference to southern Africa. Topics addressed include: Why are southern African populations so diverse? What lies behind the linguistic map we see today? What social, technological and palaeoenvironmental systems shaped the evolution of societies? Did Africa have any civilisations? Who did Africa interact with? The course discusses the archaeological record of artefacts, settlement systems, food waste, environmental contexts and human skeletons, deploying historical, material science, molecular science, anthropological and palaeoclimatic techniques to explore the heritage of the last two thousand years.",
+  "lecture_times": "Monday - Thursday, 4th period. Practicals: One 2-hour practical per week, at times to be arranged.",
+  "dp_requirements": "Attendance at lectures and practicals, completion of assignments.",
+  "assessment": "Assignments and class tests count 50% towards the final mark; one 3-hour examination written in June counts 50%. A sub-minimum of 40% is required for the examination.",
+  "is_science_course": true
+}

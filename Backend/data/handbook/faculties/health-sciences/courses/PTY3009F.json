@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PTY3009F",
+  "title": "Integrated Health Systems Part II",
+  "department": "pathology",
+  "credits": 59,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Doctor J Ramesar and Doctor J Jayakumar",
+  "prerequisites": {
+    "text": "Successful completion of all co urses within the preceding academic year.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "Objective: The course is designed to equi p students with skills to pr actice medicine according to South African medical laws and et hical rules, to complete medico -legal documentation encountered in general patient care, recognise medico-legal cases (clinical and pathological) that need referral to centres of expertise; to recognise what immediate st eps should be ta ken to prevent lo ss of evidence before referral; and to ensure preservation of any pathology and evidence before referral. Course outline: The integrated courses HUB201 7H, PTY2000S and PTY3009F ext end across year 2 and 3 and provide a detailed understand ing of normal structure and function of th e human body and consequences of disease. Students learn core ma terial in the basic sc iences (gross anatomy, embryology, histology, cell biology, medical biochemistry, molecular biology and physiology) and infectious diseases (medical microbiology, virology and immunology); they study changes in normal structure and function due to disease (anatomical pathology, chemical pathology and haematology); and learn principles of pharmacology/therapeut ics and early m anagement. Emphasi s is placed on psycho-social matters relating to each case, drawing in relevant aspe cts of family medicine, primary healthcare, public health, and ment al well-being. Students also learn cl inical skills, interpretation of data, professional values and ethics, and procedural skills related to the cases studied. They learn about the impact of illness and disease on the individual, family and society, and the role of the healthcare services in alleviating illness. Case-based, group learning is supported by lectures, practical sessions DEPARTMENTS IN THE FACULTY 209 and stand-alone modules. Students are guided to develop key life skills required fo r an effective healthcare professional, includ ing a multidisciplinary team app roach. Cases have relevance to healthcare issues regionally and nationally.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Attendance at and/or participation in all problem-based learning sessions, tutorials, stand-alone units and practical se ssions; completion and submission of all set assignments, quizzes, tasks and assessment activities by the due dates. Public Health sp ecifically requires all exercises on Vula to be completed as part of PTY3009F DP requirements.",
+  "assessment": "Assessment tasks include written papers, computerised tests, practical examinations and a portfolio of work that comprises written assi gnments, computerised EMI and MCQ tests, oral assessments and practical book work. Regular self-assessment activities provide feedback to students on their progress. In year 3, all the in-course as sessments comprise 60% of the total final mark. The final examination at the end of year 3 constitutes 40% of the total final mark. In order to be considered eligible for a supplementary examination, students are required to have achieved a total mark for year three of 45-49%, and to have passed at least one class test or the fi nal examination. If a student is granted a supplementary exam fo r PTY3009F, the duration of th e Special Study Module (SSM)",
+  "is_health_sciences_course": true
+}

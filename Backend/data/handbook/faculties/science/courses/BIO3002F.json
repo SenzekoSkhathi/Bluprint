@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "BIO3002F",
+  "title": "Marine Ecosystems",
+  "department": "biological-sciences",
+  "credits": 0,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr N Karenyi",
+  "prerequisites": {
+    "text": "A pass or permission to write a SUPP exam in BIO2014F; SEA2004F (or concurrent registration for SEA2004F). Includes a compulsory three-day field camp during first semester.",
+    "parsed": {
+      "type": "or",
+      "codes": [
+        "BIO2014F",
+        "SEA2004F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The course aims to develop and promote skills in the marine sciences in South Africa, making students familiar with global marine ecosystem structure and functioning, but with an emphasis on South African systems. Lectures, tutorials, and practicals will be aimed at developing interpretative and integrative skills built during previous courses (e.g., SEA2004F; BIO2014F; BIO1004S; BIO1000F), which cover large amounts of more basic information. A further important aim will be to develop numerical and written skills, as well as introducing students to modern research techniques and approaches.",
+  "lecture_times": "Monday - Friday, 1st period. Practicals: One per week, Wednesday, 14h00 - 17h00. Attendance is compulsory for all lectures and practicals.",
+  "dp_requirements": "Completion of at least 70% of deliverables (tests, practicals, project report), including at least one class test and the project report; attendance of practicals and field trip; minimum of 40% for the class record.",
+  "assessment": "A 3-hour examination written in June, with a sub-minimum of 40% will count for 50% of the course. Class mark will count 50% of the course mark (breakdown: 2 tests count 60% of the class mark, project write up 30% and the practicals 10%)",
+  "is_science_course": true
+}

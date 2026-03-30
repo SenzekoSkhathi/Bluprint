@@ -1,0 +1,31 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "SEA5012W",
+  "title": "Applied Ocean Sciences Minor Dissertation",
+  "department": "oceanography",
+  "credits": 90,
+  "nqf_level": 9,
+  "year_level": "Postgraduate (Master's)",
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Professor M Vichi (SEA), Dr L Gammage (BIO)",
+  "prerequisites": {
+    "text": "A relevant Honours degree (or equivalent). Students with backgrounds in scientific and engineering disciplines are encouraged to apply. Co-requisites: BIO5012W, BIO5013Z, BIO5014Z/SEA5011Z. Note: Students enrol and pay fees for the coursework codes BIO5012W, BIO5013Z, BIO5014Z/SEA5011Z. The minor dissertation course is registered either during the first year before the second term, or at the beginning of the second year.",
+    "parsed": {
+      "type": "complex",
+      "codes_mentioned": [
+        "BIO5012W",
+        "BIO5013Z",
+        "BIO5014Z/S",
+        "EA5011Z"
+      ],
+      "note": "Complex prerequisite logic - see text"
+    }
+  },
+  "corequisites": [],
+  "outline": "The minor dissertation, which forms 50% of the overall degree, is based on a six-month supervised research project. The choice of project will be determined by the student's prior qualification and in agreement with the course conveners and supervisors. The dissertation should be submitted at the end of January, with the possibility of extension to June of the next year.",
+  "lecture_times": "Not applicable.",
+  "dp_requirements": "Not specified.",
+  "assessment": "The minor dissertation must be presented for formal examination. The coursework and minor dissertation each count 50% towards the degree; each must be passed separately for the award of the degree. A distinction in the minor dissertation can be attained only if there is a distinction in the coursework component.",
+  "is_science_course": true
+}

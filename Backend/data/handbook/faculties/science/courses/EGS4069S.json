@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EGS4069S",
+  "title": "Water Resources in a Changing Climate",
+  "department": "environmental-geographical-science",
+  "credits": 30,
+  "nqf_level": 8,
+  "year_level": "Postgraduate – Honours elective",
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr D Kibirige",
+  "prerequisites": {
+    "text": "Acceptance for Honours or Master's specialising in EGS.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "This course investigates the evolving relationship between climate change, water resources and ecosystem resilience. Students critically analyse the effects of climate change on water systems and ecosystems, examine traditional and cutting-edge technological approaches to water resource management, and explore a variety of solutions including nature-based strategies, policy-driven approaches and engineered solutions. The course combines theoretical learning with practical application through face-to-face lectures, GIS and remote sensing exercises, fieldwork and interactive discussions.",
+  "lecture_times": null,
+  "dp_requirements": "At least 80% attendance of all lectures and practicals, and mandatory field trips.",
+  "assessment": "Practicals 30%; group project 20%; group presentations 10%; final exam 40%.",
+  "is_science_course": true
+}

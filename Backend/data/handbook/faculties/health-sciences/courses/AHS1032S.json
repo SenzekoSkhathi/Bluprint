@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AHS1032S",
+  "title": "Occupational Perspectives on Health and Well-being",
+  "department": "health-and-rehabilitation-sciences",
+  "credits": 20,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "MLM Krenzer and Mrs L Richards",
+  "prerequisites": {
+    "text": "AHS1035F or AHS1044F",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "AHS1035F",
+        "AHS1044F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "Objective: Students will be able to describe the link between human occupation, health and wellbeing; discuss forms of occupational risk/dysfunction focusing on environmental determinants; describe their understanding of the lived experience of a person with a disability; discuss various means of enabling occupational engagement; discuss i ssues of equity and diversity in relation to the self and begin to understand the concepts related to becoming a transformative agent; understand the role of an OT and other role-players within practice learning setti ngs; use reflection and reasoning as crucial for taking control of own learning; and learn about work-related OT practice in relation to art forms. Course outline: This course analyses and explores the relationship between what people do and their health and wellbeing. By engaging with people of different ag es in various practice le arning contexts, students gain an appreciation of how dim ensions of occupation al engagement in self- care, productivity and leisure unfold across the lifespan in relation to cultur e, context and ability. They also develop an appreciation ofthe lived experience of disability, and how dimensions of occupational engagement in self-care, productivity and leisure are affected by disability. They engage with issues of diversity and explore the role of an OT as a transformative agen t. They explore how art can serve as an income- generating activity and the role that the environment plays in facilitating or hindering people’s occupational aspirations and capabilities.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "The Division of Occupational Therapy considers all academic activities important and full attendance is encouraged to ensure rich learning, engagement and competence in theory and practice. This course, ho wever, involves a number of academic activities that are designated as ‘compulsory’ in order to ensu re that each student has obtained a minimum level of competence through their in-class engagement prior to sitting the final exam ination for the course. Participation in these designat ed activities is monitored and is part of the duly performed requirements of the course. The list of compulsory activities that form part of this course are available in the divisional course handbook. Students who do not meet the course DP requirements will be DPR and will not be granted entry in to the final examination. See Ru le FBE3. Should a student, for legitimate reasons, be unable to attend or complete any of these compulsory activities they must apply for a concession to miss classes (CMC). The CM C must be approved by th e course convenor. Rule FGD 13.1, 13.2 and 13.3 in the undergraduate handbook details the process of applying for a CMC. The conditions for approval of th e CMC will include tasks that th e student will need to complete to ensure that all DP requirement s for the course are met in order to be granted entry to the final course examination.",
+  "assessment": "Coursework assessments contribute 50% to the final mark. The final examination contributes 50% of the final mark and comprises of a written paper. The final mark is calculated as follows: Coursework mark (50%) and Examination mark (50%).",
+  "is_health_sciences_course": true
+}

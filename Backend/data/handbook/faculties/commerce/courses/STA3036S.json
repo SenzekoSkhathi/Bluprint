@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "STA3036S",
+  "title": "Operational Research Techniques",
+  "department": "statistical-sciences",
+  "credits": 36,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr R G Rakotonirainy",
+  "prerequisites": {
+    "text": "STA2020F/S or STA2005S or STA2007F/S AND MAM1032S (or equivalent). Note that students must be in their third academic year to take the course. All pre-requisite courses must be passed prior to taking the STA3036S course (and not done concurrently).",
+    "parsed": {
+      "type": "prerequisite",
+      "codes": [
+        "STA2020F",
+        "MAM1032S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course forms part of the third year major in Applied Statistics. It is an introduction to the study of Operational Research (OR) and explores fundamental quantitative techniques in the OR armamentarium with a strong focus on computer-based application. The course is intended for students in the applied statistics stream but may be taken as an elective by students in the mathematical statistics stream. Topics covered include linear and non-linear programming where students will learn to find optimal solutions by characterising problems in terms of objectives, decision variables and constraints, decision making under uncertainty through decision trees, decision rules and scenario planning, Queueing Theory simulation through modelling the operation of real world systems as they evolve over time.",
+  "lecture_times": "Monday - Thursday, 3rd period.",
+  "dp_requirements": "Satisfactory attendance of lectures, tutorials, practicals and tests and completion of assignments and/or class exercises as set out in course outline. Class record of at least 35%.",
+  "assessment": "Class record 30% and a 3-hour exam counting 70%. Weights will be adjusted in the case of missed assessments.",
+  "is_commerce_course": false,
+  "offered_by_faculty": "science"
+}

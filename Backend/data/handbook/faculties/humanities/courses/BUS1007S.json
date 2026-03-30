@@ -1,0 +1,26 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "BUS1007S",
+  "title": "Introduction to Business Management",
+  "department": "management-studies",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "B Arendse",
+  "prerequisites": {
+    "text": "This course is intended for students in the special field of Organisational Psychology, but students from other faculties may choose this course as an elective. MANAGEMENT STUDIES, SCHOOL OF 299",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course introduces students to the field of Organisational Psychology, which deals with the application of psychological theories and principles to solve problems in the workplace. It will focus on the major historical trends and research that have sha ped the discipline, as well as current and future developments in the workplace. This course will also provide students with an understanding of why individuals in organisations behave in particular ways and how organisations can influence the behaviour of their employees.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "None.",
+  "assessment": "Coursework (assignments and tests) 60%, Final examination 40%.",
+  "is_humanities_course": false,
+  "offered_by_faculty": "commerce"
+}

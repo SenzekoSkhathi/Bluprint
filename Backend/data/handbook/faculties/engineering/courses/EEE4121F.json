@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EEE4121F",
+  "title": "Mobile and Wireless Networks",
+  "department": "electrical-engineering",
+  "credits": 16,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Associate Professor O Falowo",
+  "prerequisites": {
+    "text": "EEE3093S",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "EEE3093S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to develop an understanding of mobile and fixed networks. Topics include: Wireless Network Fundamentals, Wireless and Wireline Access Technologies, Radio Resource Management, Mobility Management, Traffic and Congestion Control, QOS in Pack et Network, IP Traffic DEPARTMENTS IN THE FACULTY AND COURSES OFFERED 141 Engineering, Network Convergence, Network Services and Applications Requirements, Data Plane and Control Plane Technologies, and Performance modelling and simulation.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

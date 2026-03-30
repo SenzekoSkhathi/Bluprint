@@ -1,0 +1,48 @@
+{
+  "id": "diploma-theatre",
+  "programme_code": "HU020",
+  "name": "Diploma in Theatre and Performance",
+  "nqf_level": 6,
+  "department": "Drama (Theatre and Performance)",
+  "duration_years": 3,
+  "minimum_credits": 424,
+  "curriculum": {
+    "year_1": {
+      "core": [
+        "TDP1046W",
+        "TDP1017H",
+        "TDP1027F",
+        "TDP1045S",
+        "TDP1029F",
+        "DOH1005F"
+      ],
+      "credits": 140
+    },
+    "year_2": {
+      "core": [
+        "TDP2010F",
+        "TDP2011S",
+        "TDP2042F",
+        "TDP2013S",
+        "TDP1018H",
+        "TDP2040W"
+      ],
+      "credits": 154
+    },
+    "year_3": {
+      "core": [
+        "TDP3052W"
+      ],
+      "specialisation_choices": [
+        "TDP3043W",
+        "TDP3047W",
+        "TDP3041W",
+        "TDP3050W",
+        "TDP3051W"
+      ],
+      "specialisation_required": 1,
+      "credits": 120,
+      "note": "Choose 1 specialisation: Acting, Performance Making, Dance, Applied Performance/Pedagogy, or Scenography"
+    }
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "id": "mbchb",
+  "programme_code": "MB014/MB020",
+  "name": "Bachelor of Medicine and Bachelor of Surgery",
+  "abbreviation": "MBChB",
+  "saqa_id": 3195,
+  "department": "Medicine",
+  "duration_years": 6,
+  "total_nqf_credits": 1214,
+  "professional_registration": "Health Professions Council of South Africa (HPCSA)",
+  "post_qualification": "Two years internship and one year community service required",
+  "curriculum": {
+    "year_1": {
+      "core": [
+        "PPH1001F",
+        "PPH1002S",
+        "HUB1006F",
+        "IBS1007S",
+        "CEM1011F",
+        "PHY1025F",
+        "SLL1044S",
+        "SLL1041S"
+      ],
+      "credits": 167,
+      "note": "Language courses: Afrikaans OR isiXhosa required"
+    },
+    "year_2": {
+      "core": [
+        "HUB2017H",
+        "PTY2000S",
+        "FCE2000W",
+        "SLL2002H",
+        "HSE2000W"
+      ],
+      "credits": 165
+    },
+    "year_3": {
+      "core": [
+        "PTY3009F",
+        "FCE3000F",
+        "HSE3000F",
+        "SLL3002F",
+        "MDN3001S",
+        "MDN2001S"
+      ],
+      "credits": 198,
+      "note": "Special Study Module (SSM) assigned in third year"
+    },
+    "year_4": {
+      "core": [
+        "SLL3003W",
+        "PRY4000W",
+        "AAE4002W",
+        "OBS4003W",
+        "MDN4011W",
+        "MDN4001W",
+        "MDN4015W",
+        "PED4016W",
+        "PED4049W",
+        "PPH4056W"
+      ],
+      "credits": 220,
+      "note": "Modular block system begins"
+    },
+    "year_5": {
+      "core": [
+        "PED5005W",
+        "PED5006W",
+        "CHM5003W",
+        "MDN5003H",
+        "CHM5004H",
+        "OBS5005W",
+        "MDN5008W",
+        "MDN5006W",
+        "CHM5007W",
+        "CHM5008W",
+        "CHM5009W",
+        "CHM5010W"
+      ],
+      "credits": 210
+    },
+    "year_6": {
+      "core": [
+        "CHM6000W",
+        "MDN6000W",
+        "OBS6000W",
+        "PED6000W",
+        "PED6004W",
+        "FCE6000W",
+        "PRY6000W",
+        "AAE6000W",
+        "FCE6001W",
+        "FCE6005W",
+        "PTY6012W",
+        "HSE6004W"
+      ],
+      "credits": 254
+    }
+  },
+  "distinction_rules": {
+    "basic_sciences": "Cumulative GPA >= 80% for years 1-3",
+    "clinical_sciences": "Cumulative GPA >= 75% for years 4-6",
+    "honours": "Overall GPA >= 75% for years 1-6",
+    "first_class_honours": "Overall GPA >= 85% for years 1-6"
+  }
+}

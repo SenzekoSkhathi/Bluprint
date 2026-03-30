@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AHS1003F",
+  "title": "Speech and Hearing Science",
+  "department": "health-and-rehabilitation-sciences",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Professor L Ramma and Mr S Segoneco",
+  "prerequisites": {
+    "text": "None",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "The aim of this course is an understanding of the nature of sound, how sound is perceived by humans and how speech is produced. C ontent also includes the dimensio ns and parameters of sound; transmission of sound; analysis of sound; resonan ce; measurement of sound; range of hearing; the concept of threshold; con cepts of loudness and pitch; masking as well as binaural hearing; speech production; nature of sp eech; vocal anatomy, the vo cal tract articulators and resonators; linguistic function of speech sounds; as well as spectra and spectrograms. Skills taught include basic numeracy, the interpretation of graphs, as well as ability to rela te physical concepts of sound to speech and hearing. Students should develop an appreciation of the physical nature of sound as well as an appreciation of the fact that perc eption of sound is an individual experience. Teaching and learning activities comprise lectures; practi cal demonstrations; assigned activities, self-directed study (websites), and group discussions.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "For discipline specific courses in the BSc Audiology and BSc in Speech-Language Pathology programmes a minimum coursework mark of 40% is required for entrance into the examination.",
+  "assessment": "The course grade is made up of a cour sework mark (weighted 60%) and a final examination mark (weighted 40%). If a supplementary examination is awarded, it will count 40 % of the final mark, as the course work mark will still be included in the final mark.",
+  "is_health_sciences_course": true
+}

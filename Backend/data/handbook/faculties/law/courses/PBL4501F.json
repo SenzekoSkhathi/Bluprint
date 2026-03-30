@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PBL4501F",
+  "title": "Criminology: Selected Issues",
+  "department": "public-law",
+  "credits": 9,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr N Palmer",
+  "prerequisites": {
+    "text": "All Preliminary and Intermediate Level courses to have been completed.",
+    "parsed": {
+      "type": "level_completion",
+      "levels_required": [
+        "preliminary",
+        "intermediate"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The aim of this course is to critically engage with a select number of issues of criminological relevance to the South African society. For each of the substantive areas to be discussed we will organise our discussion around a number of key questions: What are the key features of criminological discourse on issues such as: gangs; corporate crime; environmental crimes; organised crime; state crime; gendered violence; youth violence and crime prevention etc. What are the main strategies (social, legal and administrative) for addressing the particular phenomenon? What is known about the size, shape and content of the phenomenon in South Africa? What are the main features of public/popular debate on the issue in South Africa?",
+  "lecture_times": "Two lectures per week.",
+  "dp_requirements": "Satisfactory attendance at weekly seminars.",
+  "assessment": "Class attendance, participation and hand-ins 30%; Take home exam (6 hours) 70%.",
+  "is_law_course": true
+}

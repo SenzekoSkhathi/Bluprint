@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "STA5061Z",
+  "title": "Bayesian Decision Modelling",
+  "department": "statistical-sciences",
+  "credits": 15,
+  "nqf_level": 9,
+  "year_level": "Postgraduate (Master's)",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "Associate Professor A Clark",
+  "prerequisites": {
+    "text": "Acceptance into Master's programs in Statistics & Data Science, Data Science or Biostatistics, and/or statistical background deemed sufficient by the Head of Department.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "This module develops the Bayesian approach to inference and decision making, starting from concepts of subjective probability and subjective expected utility, and moving on to structures of Bayesian modelling for inference, computational solution of such models, and representation of complex learning and decision making processes through Bayesian Networks.",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "Completion and submission of the assignment component at a satisfactory grade (40% minimum).",
+  "assessment": "Assignments 35%. Written examination 65%. A subminimum of 40% in each of the assignments and examination is required.",
+  "is_science_course": true
+}

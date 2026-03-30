@@ -1,0 +1,33 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "STA2030S",
+  "title": "Theory of Statistics",
+  "department": "statistical-sciences",
+  "credits": 24,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "S Britz",
+  "prerequisites": {
+    "text": "At least 45% for STA2020F/S or STA2007F/S/H or STA2005S or (DP mark for STA2004F with concurrent registration for STA2020S/STA2007S).",
+    "parsed": {
+      "type": "prerequisite",
+      "codes": [
+        "STA2020F"
+      ]
+    }
+  },
+  "corequisites": [
+    "MAM1032S",
+    "MAM1034S",
+    "MAM1012S",
+    "MAM1021S"
+  ],
+  "outline": "This course introduces students to Statistical Theory and Inference. It explores aspects of probability theory that are particularly relevant to statistics, including the notions of random variables, joint probability distributions, expected values and moment generating functions. The course content includes univariate distributions and moments of univariate distributions, moments of bivariate distributions, distributions of sample statistics and parameter estimation and inference.",
+  "lecture_times": "Monday - Thursday, 1st period.",
+  "dp_requirements": "Satisfactory attendance of lectures, tutorials, practicals and tests and completion of assignments and/or class exercises as set out in course outline. Class record of at least 35%.",
+  "assessment": "Class record 40% and a 3-hour exam counting 60%. Weights will be adjusted in the case of missed assessments.",
+  "is_commerce_course": false,
+  "offered_by_faculty": "science"
+}

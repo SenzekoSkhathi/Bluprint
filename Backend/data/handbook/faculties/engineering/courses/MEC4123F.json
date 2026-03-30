@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MEC4123F",
+  "title": "Engineer in Business",
+  "department": "mechanical-engineering",
+  "credits": 16,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Associate Professor B Kloot",
+  "prerequisites": {
+    "text": "MEC3083W",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "MEC3083W"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "Engineer in Business is an interdisciplinary course that aims to provide the basis for an understanding of how technology, economics and management intersect. It consists of three key modules: Operations management, Project Management and Engineering Econo mics (including New Venture Planning). The fourth module consists of a set of case studies to provide an opportunity for engagement with the principles covered in the previous modules. The course is intended to follow a typical trajectory of an engineering graduate's career. The first module deals with the engineer's role in the daily operations of an organisation such a manufacturing plant. The second module considers the role that the engineer plays in the management of projects. The third module highligh ts the importance of economic and financial concepts in relation to engineering decision -making and the role this plays in launching a new business venture. This includes consideration of aspects of a business plan and the fundamentals of a techno -economic analysis for a new product or service. To conclude the course, case studies demonstrate the principles covered in the previous modules.",
+  "lecture_times": "4 lectures and 1 tutorial per week.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

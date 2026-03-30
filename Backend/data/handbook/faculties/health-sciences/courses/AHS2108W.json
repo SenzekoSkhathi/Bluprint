@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AHS2108W",
+  "title": "Clinical Speech Therapy I",
+  "department": "health-and-rehabilitation-sciences",
+  "credits": 24,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Mrs J le Roux",
+  "prerequisites": {
+    "text": "AHS1025S; AHS2106F and AHS2107F (see FBC 5.2).",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "AHS1025S",
+        "AHS2106F",
+        "AHS2107F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to enable the student to demonstrate professional conduct; promote communication development and prevent communi cation delays in children; and assess and manage children with speech and language delays, disord ers and differences. Students have the opportunity to work with children of different ag es and within different clinical settings. Projec t Design and Management includes a needs and situation analysis; planning and implementing an appropriate project; monitor and evaluate project. St udents learn the skills of knowledge tr anslation, effective written and verbal communication, and operational clinic management. They learn the need for respectful interpersonal relationships and professionalis m and acquire an appreciation of ethical behavio ur. Teaching and learning activities include observatio n of experienced clin icians, clinical prac tice, promotion and prevention activities, and assessment and management of children. Themes underpinning the course are primary healthcare, equity and affirmation of diversity, deve loping agents for change, evidence- based practice, ethical and professional practice, and a client- and family-centred approach.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Attendance at all clinic activities; co mpletion of all coursework and required documentation (e.g. ELOs and hour s) by the due dates; and profe ssional conduct. A concession to miss clinic activities with a valid reason must be approved by the course convenor. When concessions are granted students must still maintain a minimum of 80% attendance or they may be asked to repeat the course or block (see FBD 4).",
+  "assessment": "Continuous assessments during each clinical block contributes to the final course mark. Refer to AHS2108W clinic descriptor document for specific assessment details.",
+  "is_health_sciences_course": true
+}

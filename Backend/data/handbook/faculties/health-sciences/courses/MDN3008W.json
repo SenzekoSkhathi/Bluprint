@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MDN3008W",
+  "title": "Cosmetics: Claims, Regulation and Ethics",
+  "department": "medicine",
+  "credits": 15,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Dr J van Wyk",
+  "prerequisites": {
+    "text": "(a) B Sc or equivalent with Ch emistry 3, or(b) A degree with Biochemistry 3 (with at least Chemistry 2 to be eligible for admission)",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course provides insi ght into the ethics of manufacturing, product testing an d advertising. The legislative and regulatory structures guiding the South African and global cosmetic industry are outlined. Consumer complaints and cosmetic indust ry disputes are utilised to teach the protocols exercised by the Advertising Standards Association of South Africa. Students are taught the regulatory framework within which business is conducted by th eir exposure to real-life examples and manufacturing site visits. The cour se also includes an introduction to the modern approach of life- cycle assessment and sustainable cosmetic product design.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "A minimum of 90% attendance of all lectures; a year mark of at least 50%, unless approved otherwise by the programme convener.",
+  "assessment": "The course mark contributes 70% to the final mark. A final examination contributes 30% to the final mark. The cou rse mark includes tests (multiple c hoice questions, open-ended questions, case-studies); assignments (written report or oral presentation) on topical issues; and practical reports.",
+  "is_health_sciences_course": true
+}

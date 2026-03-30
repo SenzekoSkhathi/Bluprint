@@ -1,0 +1,34 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "BUS3018F",
+  "title": "Actuarial Science II: Models",
+  "department": "management-studies",
+  "credits": 18,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "M Mdlekezi",
+  "prerequisites": {
+    "text": "BUS2016H, MAM2010F, MAM2011F, MAM2012S, MAM2014S, STA2004F, STA2005S, BUS1003H, unless course taken as part of a postgraduate degree.",
+    "parsed": {
+      "type": "prerequisite",
+      "codes": [
+        "BUS2016H",
+        "MAM2010F",
+        "MAM2011F",
+        "MAM2012S",
+        "MAM2014S",
+        "STA2004F",
+        "STA2005S",
+        "BUS1003H"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The course aims to provide students with a solid foundation in stochastic processes and survival models, and their actuarial application. Topics covered include: Principles of actuarial modelling; principles and classification of stochastic processes; definition and application of Markov chains and processes; survival models; estimation of lifetime distributions; multiple states; single and multiple decrements; transition intensities and maximum likelihood estimators; binomial model of mortality; multiple state models; process of graduation; testing crude estimates; standard tables; assurances and annuities.",
+  "lecture_times": "To be advised.",
+  "dp_requirements": "Completion and timeous submission of tutorial exercises. Writing of all class tests. An overall average of 40% for classwork.",
+  "assessment": "Tutorials and tests 40%; Examination 60%.",
+  "is_commerce_course": true
+}

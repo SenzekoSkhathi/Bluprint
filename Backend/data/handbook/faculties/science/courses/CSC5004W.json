@@ -1,0 +1,41 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CSC5004W",
+  "title": "Information Technology Minor Dissertation",
+  "department": "computer-science",
+  "credits": 90,
+  "nqf_level": 9,
+  "year_level": "Postgraduate (Master's specialising in IT)",
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Associate Professor G Nitschke",
+  "prerequisites": {
+    "text": "CSC5005H and CSC5006H, or (CSC5007Z/CSC5013Z, CSC5010Z, CSC5011Z, CSC5012Z, CSC5014Z/INF5007Z, CSC5015Z/INF5009Z, CSC5016Z/INF5008Z and CSC5017Z), or permission from the convener.",
+    "parsed": {
+      "type": "complex",
+      "codes_mentioned": [
+        "CSC5005H",
+        "CSC5006H",
+        "CSC5007Z/C",
+        "SC5013Z",
+        "CSC5010Z",
+        "CSC5011Z",
+        "CSC5012Z",
+        "CSC5014Z/I",
+        "NF5007Z",
+        "CSC5015Z/I",
+        "NF5009Z",
+        "CSC5016Z/I",
+        "NF5008Z",
+        "CSC5017Z"
+      ],
+      "note": "Complex prerequisite logic - see text"
+    }
+  },
+  "corequisites": [],
+  "outline": "Upon successful completion of the coursework component, students will be required to register for this minor dissertation course and complete a one-year research project under supervision of an appropriate computer science academic staff member.",
+  "lecture_times": "Not applicable.",
+  "dp_requirements": "Not specified.",
+  "assessment": "The minor dissertation must be presented for formal examination. The coursework and minor dissertation each count 50% towards the degree; each must be passed separately for the award of the degree.",
+  "is_science_course": true
+}

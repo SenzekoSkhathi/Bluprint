@@ -1,0 +1,174 @@
+{
+  "$schema": "handbook-major-v1",
+  "major_code": "CEM01",
+  "major_name": "Chemistry",
+  "department": "chemistry",
+  "notes": "",
+  "mutual_exclusions_with": [],
+  "required_companion_majors": [],
+  "has_student_limit": false,
+  "years": [
+    {
+      "year": 1,
+      "label": "First Year Core Courses",
+      "combinations": [
+        {
+          "combination_id": "CEM01-Y1-A",
+          "description": "MAM1000W + PHY1004W",
+          "courses": [
+            {
+              "code": "CEM1000W",
+              "title": "Chemistry 1000",
+              "credits": 36,
+              "nqf_level": 5
+            },
+            {
+              "code": "MAM1000W",
+              "title": "Mathematics 1000",
+              "credits": 36,
+              "nqf_level": 5
+            },
+            {
+              "code": "PHY1004W",
+              "title": "Matter and Interactions",
+              "credits": 36,
+              "nqf_level": 5
+            }
+          ]
+        },
+        {
+          "combination_id": "CEM01-Y1-B",
+          "description": "MAM1031F + MAM1032S + PHY1004W",
+          "courses": [
+            {
+              "code": "CEM1000W",
+              "title": "Chemistry 1000",
+              "credits": 36,
+              "nqf_level": 5
+            },
+            {
+              "code": "MAM1031F",
+              "title": "Mathematics 1031",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "MAM1032S",
+              "title": "Mathematics 1032",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "PHY1004W",
+              "title": "Matter and Interactions",
+              "credits": 36,
+              "nqf_level": 5
+            }
+          ]
+        },
+        {
+          "combination_id": "CEM01-Y1-C",
+          "description": "MAM1000W + PHY1031F + PHY1032S",
+          "courses": [
+            {
+              "code": "CEM1000W",
+              "title": "Chemistry 1000",
+              "credits": 36,
+              "nqf_level": 5
+            },
+            {
+              "code": "MAM1000W",
+              "title": "Mathematics 1000",
+              "credits": 36,
+              "nqf_level": 5
+            },
+            {
+              "code": "PHY1031F",
+              "title": "General Physics A",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "PHY1032S",
+              "title": "General Physics B",
+              "credits": 18,
+              "nqf_level": 5
+            }
+          ]
+        },
+        {
+          "combination_id": "CEM01-Y1-D",
+          "description": "MAM1031F + MAM1032S + PHY1031F + PHY1032S",
+          "courses": [
+            {
+              "code": "CEM1000W",
+              "title": "Chemistry 1000",
+              "credits": 36,
+              "nqf_level": 5
+            },
+            {
+              "code": "MAM1031F",
+              "title": "Mathematics 1031",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "MAM1032S",
+              "title": "Mathematics 1032",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "PHY1031F",
+              "title": "General Physics A",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "PHY1032S",
+              "title": "General Physics B",
+              "credits": 18,
+              "nqf_level": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "label": "Second Year Core Courses",
+      "combinations": [
+        {
+          "combination_id": "CEM01-Y2-A",
+          "description": "Fixed second year course",
+          "courses": [
+            {
+              "code": "CEM2005W",
+              "title": "Intermediate Chemistry",
+              "credits": 48,
+              "nqf_level": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "label": "Third Year Core Courses",
+      "combinations": [
+        {
+          "combination_id": "CEM01-Y3-A",
+          "description": "Fixed third year course",
+          "courses": [
+            {
+              "code": "CEM3005W",
+              "title": "Chemistry 3005",
+              "credits": 72,
+              "nqf_level": 7
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

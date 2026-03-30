@@ -1,15 +1,16 @@
+import { getPrimaryFacultySlug } from "@/constants/faculty";
 import { buildGuidanceTrustMessage } from "@/hooks/use-logged-in-user";
 import {
-  askScienceAdvisor,
-  askScienceAdvisorWithUpload,
-  deleteScienceAdvisorChatThread,
-  getBackendHealth,
-  getScienceAdvisorChatHistory,
-  renameScienceAdvisorChatThread,
-  syncScienceAdvisorChatHistory,
-  type ScienceAdvisorChatThreadPayload,
-  type ScienceAdvisorCitation,
-  type ScienceAdvisorModelProfile,
+    askHandbookAdvisor,
+    askHandbookAdvisorWithUpload,
+    deleteHandbookAdvisorChatThread,
+    getBackendHealth,
+    getHandbookAdvisorChatHistory,
+    renameHandbookAdvisorChatThread,
+    syncHandbookAdvisorChatHistory,
+    type ScienceAdvisorChatThreadPayload,
+    type ScienceAdvisorCitation,
+    type ScienceAdvisorModelProfile,
 } from "@/services/backend-api";
 import { MaterialIcons } from "@expo/vector-icons";
 import AsyncStorage from "@react-native-async-storage/async-storage";
@@ -17,23 +18,23 @@ import * as Clipboard from "expo-clipboard";
 import * as DocumentPicker from "expo-document-picker";
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import {
-  Alert,
-  Animated,
-  Easing,
-  FlatList,
-  Keyboard,
-  KeyboardAvoidingView,
-  Linking,
-  ListRenderItem,
-  Platform,
-  Pressable,
-  SafeAreaView,
-  ScrollView,
-  StyleSheet,
-  Text,
-  TextInput,
-  TouchableOpacity,
-  View,
+    Alert,
+    Animated,
+    Easing,
+    FlatList,
+    Keyboard,
+    KeyboardAvoidingView,
+    Linking,
+    ListRenderItem,
+    Platform,
+    Pressable,
+    SafeAreaView,
+    ScrollView,
+    StyleSheet,
+    Text,
+    TextInput,
+    TouchableOpacity,
+    View,
 } from "react-native";
 import { theme } from "../constants/theme";
 
@@ -985,25 +986,91 @@ function buildAdvisorContext(userContext?: BluBotProps["userContext"]) {
   ];
 
   if (userContext.completedPassed && userContext.completedPassed.length > 0) {
-    lines.push(`- Completed (passed): ${userContext.completedPassed.map((c) => c.code).join(", ")}`);
+    lines.push(
+      `- Completed (passed): ${userContext.completedPassed.map((c) => c.code).join(", ")}`,
+    );
   }
 
   if (userContext.completedFailed && userContext.completedFailed.length > 0) {
-    lines.push(`- Failed/incomplete: ${userContext.completedFailed.map((c) => c.code).join(", ")}`);
+    lines.push(
+      `- Failed/incomplete: ${userContext.completedFailed.map((c) => c.code).join(", ")}`,
+    );
   }
 
-  if (userContext.coursesInProgress && userContext.coursesInProgress.length > 0) {
-    lines.push(`- Currently registered: ${userContext.coursesInProgress.map((c) => c.code).join(", ")}`);
+  if (
+    userContext.coursesInProgress &&
+    userContext.coursesInProgress.length > 0
+  ) {
+    lines.push(
+      `- Currently registered: ${userContext.coursesInProgress.map((c) => c.code).join(", ")}`,
+    );
   }
 
   lines.push("Use this student context to tailor your advising answer.");
   return lines.join("\n");
 }
 
+function detectCrossMajorFaculties(majors: string[] | undefined): string[] {
+  const tokens = (majors ?? []).map((major) => major.toLowerCase());
+  const mapped = new Set<string>();
+
+  for (const token of tokens) {
+    if (
+      token.includes("econom") ||
+      token.includes("finance") ||
+      token.includes("account") ||
+      token.includes("commerce") ||
+      token.includes("business") ||
+      token.includes("information systems")
+    ) {
+      mapped.add("commerce");
+    }
+    if (
+      token.includes("law") ||
+      token.includes("legal") ||
+      token.includes("llb")
+    ) {
+      mapped.add("law");
+    }
+    if (
+      token.includes("engineering") ||
+      token.includes("architecture") ||
+      token.includes("built environment") ||
+      token.includes("geomatics")
+    ) {
+      mapped.add("engineering");
+    }
+    if (
+      token.includes("medicine") ||
+      token.includes("physio") ||
+      token.includes("occupational") ||
+      token.includes("audiology") ||
+      token.includes("health")
+    ) {
+      mapped.add("health-sciences");
+    }
+    if (
+      token.includes("humanities") ||
+      token.includes("politics") ||
+      token.includes("philosophy") ||
+      token.includes("psychology") ||
+      token.includes("sociology")
+    ) {
+      mapped.add("humanities");
+    }
+  }
+
+  return Array.from(mapped.values());
+}
+
 function buildStudentContextPayload(
   userContext?: BluBotProps["userContext"],
 ): import("@/services/backend-api").BluBotStudentContext | undefined {
   if (!userContext) return undefined;
+
+  const primaryFaculty = getPrimaryFacultySlug();
+  const crossMajorFaculties = detectCrossMajorFaculties(userContext.majors);
+  const crossMajorMode = crossMajorFaculties.length > 0;
 
   return {
     name: userContext.fullName,
@@ -1040,6 +1107,9 @@ function buildStudentContextPayload(
       nqf_level: c.nqfLevel,
       semester: c.semester,
     })),
+    primary_faculty: primaryFaculty,
+    cross_major_mode: crossMajorMode,
+    cross_major_faculties: crossMajorFaculties,
   };
 }
 
@@ -1057,6 +1127,7 @@ export default function BluBot({
   const [currentThreadId, setCurrentThreadId] = useState<string>(() =>
     createChatId(),
   );
+  const primaryFacultySlug = getPrimaryFacultySlug();
   const [messages, setMessages] = useState<Message[]>([]);
   const [inputValue, setInputValue] = useState<string>("");
   const [pendingByThread, setPendingByThread] = useState<
@@ -1085,6 +1156,18 @@ export default function BluBot({
   const messagesRef = useRef(messages);
   const advisorContext = buildAdvisorContext(userContext);
   const studentContextPayload = buildStudentContextPayload(userContext);
+  const crossMajorFacultyHint = useMemo(() => {
+    if (!studentContextPayload?.cross_major_mode) {
+      return "";
+    }
+    const crossFaculties = (
+      studentContextPayload.cross_major_faculties ?? []
+    ).join(", ");
+    if (!crossFaculties) {
+      return "";
+    }
+    return `Cross-major routing context: primary faculty is science; evaluate major guidance using cross-faculty pathways for ${crossFaculties}.`;
+  }, [studentContextPayload]);
   const scrollButtonOpacity = useRef(new Animated.Value(0)).current;
   const typingDot1 = useRef(new Animated.Value(0)).current;
   const typingDot2 = useRef(new Animated.Value(0)).current;
@@ -1119,9 +1202,10 @@ export default function BluBot({
     }
 
     try {
-      await syncScienceAdvisorChatHistory({
+      await syncHandbookAdvisorChatHistory({
         current_thread_id: threadId,
         threads: threads.map(toBackendChatThread),
+        faculty_slug: primaryFacultySlug,
       });
     } catch (error) {
       console.error(
@@ -1275,7 +1359,9 @@ export default function BluBot({
       try {
         if (backendChatSyncEnabled) {
           try {
-            const backendHistory = await getScienceAdvisorChatHistory();
+            const backendHistory = await getHandbookAdvisorChatHistory({
+              faculty_slug: primaryFacultySlug,
+            });
             if (!isMounted) {
               return;
             }
@@ -1569,9 +1655,10 @@ export default function BluBot({
     );
 
     if (backendChatSyncEnabled) {
-      void renameScienceAdvisorChatThread({
+      void renameHandbookAdvisorChatThread({
         thread_id: threadId,
         title: trimmed,
+        faculty_slug: primaryFacultySlug,
       }).catch((error: unknown) => {
         console.error(
           "Backend rename unavailable; keeping local rename only:",
@@ -1609,15 +1696,16 @@ export default function BluBot({
     });
 
     if (backendChatSyncEnabled) {
-      void deleteScienceAdvisorChatThread({ thread_id: threadId }).catch(
-        (error: unknown) => {
-          console.error(
-            "Backend delete unavailable; keeping local deletion only:",
-            error,
-          );
-          setBackendChatSyncEnabled(false);
-        },
-      );
+      void deleteHandbookAdvisorChatThread({
+        thread_id: threadId,
+        faculty_slug: primaryFacultySlug,
+      }).catch((error: unknown) => {
+        console.error(
+          "Backend delete unavailable; keeping local deletion only:",
+          error,
+        );
+        setBackendChatSyncEnabled(false);
+      });
     }
 
     if (renamingThreadId === threadId) {
@@ -1719,16 +1807,17 @@ export default function BluBot({
       selectedModelProfile === "fast" ? "" : advisorContext;
 
     const contextualQuery = contextForRequest
-      ? `${contextForRequest}\n\n${professionalPersonaInstruction}\n\nStudent question:\n${userPromptForAdvisor}`
-      : `${professionalPersonaInstruction}\n\nStudent question:\n${userPromptForAdvisor}`;
+      ? `${contextForRequest}\n${crossMajorFacultyHint ? `\n${crossMajorFacultyHint}` : ""}\n\n${professionalPersonaInstruction}\n\nStudent question:\n${userPromptForAdvisor}`
+      : `${crossMajorFacultyHint ? `${crossMajorFacultyHint}\n\n` : ""}${professionalPersonaInstruction}\n\nStudent question:\n${userPromptForAdvisor}`;
 
     try {
       const advisorReply = pendingUpload
-        ? await askScienceAdvisorWithUpload({
+        ? await askHandbookAdvisorWithUpload({
             query: contextualQuery,
             top_k: advisorTopK,
             model_profile: selectedModelProfile,
             student_context: studentContextPayload,
+            faculty_slug: primaryFacultySlug,
             attachment: {
               uri: pendingUpload.uri,
               name: pendingUpload.name,
@@ -1736,11 +1825,12 @@ export default function BluBot({
               file: pendingUpload.file,
             },
           })
-        : await askScienceAdvisor({
+        : await askHandbookAdvisor({
             query: contextualQuery,
             top_k: advisorTopK,
             model_profile: selectedModelProfile,
             student_context: studentContextPayload,
+            faculty_slug: primaryFacultySlug,
           });
 
       setConnectionMode("online");

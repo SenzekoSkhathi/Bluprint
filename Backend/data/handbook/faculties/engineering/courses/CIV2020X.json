@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CIV2020X",
+  "title": "Practical Experience",
+  "department": "civil-engineering",
+  "credits": 0,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "varies",
+  "semester_code": "X",
+  "convener": "Dr O Nnene",
+  "prerequisites": {
+    "text": "Refer to the programme and departmental sections in the 2026 EBE Faculty Handbook.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course requires Civil Engineering students to gain at least 6 weeks of practical experience and insight into the practice of civil engineering by working during vacations. Students are encouraged to DEPARTMENTS IN THE FACULTY AND COURSES OFFERED 108 engage in a wide variety of civil engineering work, but must ensure that adequate experience in both site work and design office practice (a minimum of three weeks in each) is achieved. This course provides the framework for gaining practical experience to supplement academic study.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

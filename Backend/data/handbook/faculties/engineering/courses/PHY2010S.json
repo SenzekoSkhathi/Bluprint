@@ -1,0 +1,34 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PHY2010S",
+  "title": "Electronics",
+  "department": "physics",
+  "credits": 24,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr D Bucher",
+  "prerequisites": {
+    "text": "PHY1012F/S and PHY1013F/S; or PHY1014F/S and PHY1015F/S. MAM2083F/S.",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "PHY1012F",
+        "PHY1013F",
+        "PHY1014F",
+        "PHY1015F",
+        "MAM2083F"
+      ]
+    }
+  },
+  "corequisites": [
+    "MAM2084F"
+  ],
+  "outline": "This course aims to develop an understanding of electromagnetism in an engineering context. Topics include: Semiconductors, energy bands in solids, charge carriers in semiconductors, diodes and transistors, Coulomb's Law, Gauss' Law. The vector differential operator; div, grad, curl. Poisson and Laplace's equations, the magnetic field, Biot-Savart Law, Ampere's Law, electric and magnetic fields in materials, and propagation in optical fibres.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Minimum of 40% for the class record; completion of all laboratory reports and 75% of tutorial work and problem sets; attendance at all tests.",
+  "assessment": "Class record (tests, weekly problem sets and laboratory work) counts 50%; 2 -hour examination in November counts 50%. There is a subminimum of 40% required for the final examination.",
+  "is_engineering_course": false,
+  "offered_by_faculty": "science"
+}

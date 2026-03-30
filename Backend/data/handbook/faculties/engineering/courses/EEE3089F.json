@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EEE3089F",
+  "title": "Electromagnetic Engineering",
+  "department": "electrical-engineering",
+  "credits": 16,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr W F Schonken",
+  "prerequisites": {
+    "text": "PHY2010S, MAM2083F/S",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "PHY2010S",
+        "MAM2083F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to introduce the electrical engineering student to the mechanism of electromagnetic radiation by antennas and the nature of fields produced by antennas. The propagation of plane waves DEPARTMENTS IN THE FACULTY AND COURSES OFFERED 134 in space and in lossy media is studied and applications are presented. One -dimensional models for TEM transmission lines are constructed. These models are often used as basic elements in design of antennas and other components. Simplification to very short lines such as power lines are discussed. A selection of conventional and modern waveguide structures are considered. Finally, an overview of computational methods for the solution of realistic electromagnetic problems are presented.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

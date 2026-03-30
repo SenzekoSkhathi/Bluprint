@@ -1,0 +1,30 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EGS2016F",
+  "title": "Geographies Across Space",
+  "department": "environmental-geographical-science",
+  "credits": 24,
+  "nqf_level": 6,
+  "year_level": "Second Year",
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Associate Professor J Battersby",
+  "prerequisites": {
+    "text": "For BSc: GEO1009F or EGS1007S or EGS1003S. For BA or BSocSci: EGS1007S or EGS1003S or Social Science Foundation course and two full first-year Humanities courses, or equivalent.",
+    "parsed": {
+      "type": "complex",
+      "codes_mentioned": [
+        "GEO1009F",
+        "EGS1007S",
+        "EGS1003S"
+      ],
+      "note": "Complex prerequisite logic - see text"
+    }
+  },
+  "corequisites": [],
+  "outline": "Environmental and geographical science is about the relationships in place and across space and time. This course focuses on spatial dimensions. Understanding the social, human, physical and biophysical interactions is critical to addressing current environmental challenges. The course introduces students to a wide range of geographical concepts through themes such as historical legacies, boundaries, conservation and environmental governance.",
+  "lecture_times": "Monday - Friday, 5th period. Practicals: One afternoon per week, Friday, 14h00–17h00, by arrangement.",
+  "dp_requirements": "Submission of all practical assignments and essay; sub-minimum of 45%.",
+  "assessment": "Two essays (10% each), two class tests (5% each), two field-based exercises (5% each), one 2-hour exam (60%). An average mark of at least 50% across all submissions is required to pass the course.",
+  "is_science_course": true
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CHE3000X",
+  "title": "Workplace Experience",
+  "department": "chemical-engineering",
+  "credits": 0,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "varies",
+  "semester_code": "X",
+  "convener": "Ms A Mentoor",
+  "prerequisites": {
+    "text": "Refer to the programme and departmental sections in the 2026 EBE Faculty Handbook.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "Chemical Engineering students shall complete a minimum of four weeks of workplace experience (before registering for the 4th year of their studies, if possible). The work can be project -based (i.e. involve the application of knowledge and skills from the 2 nd or 3rd year curriculum) and/or involve experiencing typical aspects of a (engineering) work environment (e.g. working in a team, data retrieval, industrial safety practices and standards, how meetings are run, typical day of an engineer, company/business driving-forces, management-structure of a company). The work can be completed in a formal company, NGO, local community or similar. Evidence of the work needs to be collected in a log book and signed off by a practicing engineer/supervisor/community lead er. The log book as well as a report to the satisfaction of the course convener (or a letter of confirmation that a satisfactory report has been written, if the work is confidential) shall be submitted immediately on return to campus (i.e. day of registration or first day of second semester).",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

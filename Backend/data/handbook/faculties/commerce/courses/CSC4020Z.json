@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CSC4020Z",
+  "title": "Functional Programming",
+  "department": "computer-science",
+  "credits": 12,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "Associate Professor G Nitschke",
+  "prerequisites": {
+    "text": "Admission to the Honours programme in Computer Science.",
+    "parsed": {
+      "type": "programme_registration",
+      "programmes": [
+        "Honours in Computer Science"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course covers functional programming paradigms and techniques, including higher-order functions, lambda calculus, type systems, and applications.",
+  "lecture_times": "By arrangement.",
+  "dp_requirements": "To be advised.",
+  "assessment": "Coursework and examination.",
+  "is_commerce_course": false,
+  "offered_by_faculty": "science"
+}

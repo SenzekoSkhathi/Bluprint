@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CEM5002W",
+  "title": "Computational Science Dissertation",
+  "department": "chemistry",
+  "credits": 180,
+  "nqf_level": 9,
+  "year_level": "Postgraduate (Master's)",
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Not specified",
+  "prerequisites": {
+    "text": "Not specified",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "The academic disciplines of chemistry, chemical biology and biophysics have a critical dependence on computer simulation and large scale data analysis to understand observed phenomena and advance the frontiers of disciplinary knowledge. This course aims to prepare students to undertake research in computational science as applied to chemistry, chemical biology, biophysics and chemical physics. The two streams of focus are computation and informatics. The course commences with project assignment followed by a combination of in-house and online short training (non-credit) courses in: Scientific Computing, High Performance Computing, Computational Methods for Data Analysis, Data Management, R Programming, Quantum Mechanics and Statistical Mechanics. These short training courses are designed to prepare students to successfully complete a computational science project and dissertation.",
+  "lecture_times": "Not applicable",
+  "dp_requirements": "Not specified",
+  "assessment": "Examination by dissertation.",
+  "is_science_course": true
+}

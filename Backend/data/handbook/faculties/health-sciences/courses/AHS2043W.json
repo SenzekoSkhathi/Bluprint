@@ -1,0 +1,31 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AHS2043W",
+  "title": "Occupational Therapy II",
+  "department": "health-and-rehabilitation-sciences",
+  "credits": 36,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Dr S Pillay and Mrs S Damonse DEPARTMENTS IN THE FACULTY 97",
+  "prerequisites": {
+    "text": "PSY1005S or PSY1007S, HUB1020S, AHS1035F and AHS1032S",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "PSY1005S",
+        "PSY1007S",
+        "HUB1020S",
+        "AHS1035F",
+        "AHS1032S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "Objective: At the end of the year studen ts will be able to identify, conduct, record and interpret appropriate assessments of the occupational human including sensory- motor, psycho-social and context-related dimensions. Course outline: This course focuses on the assessment of occupational performance and engagement, interests, needs and capacities in different life tasks/roles within the contexts of play, work, self-c are and leisure. Students learn occupational therapy processes and assessment techniqu es for identifying individual and collective health and occupat ional needs, interest s and capacities. Content includes various methods and approaches to a ssess occupational performance a nd engagement, occupational assessment of human beings and professional pr actice, as well as assessments of context and their impact.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "The Division of Occupational Therapy considers all academic activities important and full attendance is encouraged to ensure rich learning, engagement and competence in theory and practice. This course, however, i nvolves a number of academic acti vities that are designated as ‘compulsory’ in order to ensure that each student has obtained a minimum level of competence through their in-class engagement prior to sitting the final examination for the course. Participation in these designated activities is monitored and is part of the duly performed requirements of the course. The list of compulsory activities that form part of this course are av ailable in the divisional course handbook. Students who do not meet the course DP requirements will be DPR and will not be granted entry into the final examination. See Rule FBE3.S hould a student, for legitimate reasons, be unable to attend or complete any of these compulsory activities they must apply for a concession to miss classes (CMC). The CMC must be approved by the course convenor. Rule FGD 13.1, 13.2 and 13.3 in the undergraduate handbook details th e process of applying for a CMC. The conditions for approval of the CMC will include tasks that the stu dent will need to complete to ensure that all DP requirements for the course are met in order to be granted entry to the final course examination.",
+  "assessment": "In course assessment contributes to 60% of the course weighting and comprises of class tests, assignments, small group projects, presenta tions and practicals. End of course assessment contributes 40% of the course weighting and com prises of a written theory exam, an objective standardised practical examination and a written report.",
+  "is_health_sciences_course": true
+}

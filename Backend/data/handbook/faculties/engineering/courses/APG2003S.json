@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "APG2003S",
+  "title": "History & Theory of Architecture IV",
+  "department": "architecture-planning-geomatics",
+  "credits": 10,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Ms B Mathole",
+  "prerequisites": {
+    "text": "None",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course focuses on the period of Late Modernism, and the late 20th Century architectural and urban design movements incorporating critical regionalism, urban design and critical modern architecture that began to move away from the original tenets of ea rly modernism. The geographic sites of focus with be both in global north and south. Critical engagement will be encouraged..",
+  "lecture_times": "Refer to departmental timetable",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

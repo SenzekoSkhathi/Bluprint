@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "DOL4500F",
+  "title": "Legal Practice",
+  "department": "deans-office-law",
+  "credits": 9,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Z Essop",
+  "prerequisites": {
+    "text": "All preliminary courses must have been completed. Students must submit a registration form during October of their intermediate year at the UCT Law Clinic. Limited to 40 students per semester.",
+    "parsed": {
+      "type": "level_completion",
+      "levels_required": [
+        "preliminary"
+      ],
+      "note": "Application required, limited to 40 students per semester"
+    }
+  },
+  "corequisites": [],
+  "outline": "This course gives students an opportunity of working with live clients under the supervision of attorneys at the Law Clinic. Students attend lectures and clinics. There are two lectures per week on practical aspects of litigation. It is compulsory for students to attend all 3 clinics in the semester. Students will consult with prospective clients, assist with files by consulting with clients, drafting letters, pleadings and notices; conducting research and communicating with clients. Students will also be taught trial advocacy through simulation. Participation in this course automatically earns students community service hours credit.",
+  "lecture_times": "Two lectures per week plus three clinics.",
+  "dp_requirements": "Compulsory attendance of 3 clinics.",
+  "assessment": "Assessment 1: Legal Drafting (15%) and Oral Component (10%); Assessment 2: File Assessment (40%); Assessment 3: Mock Trial (30%); Class Activities: Practical activities conducted during lectures (5%).",
+  "is_law_course": true
+}

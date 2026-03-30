@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CON2033F",
+  "title": "Real Property Law I",
+  "department": "construction-economics-and-management",
+  "credits": 14,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr L van Schalkwyk",
+  "prerequisites": {
+    "text": "Refer to the programme and departmental sections in the 2026 EBE Faculty Handbook.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to develop an understanding of the Classification of property; accession; real rights; land rights and the Deeds Registry; Ownership (definition and nature, legal effects, limitations (common law and statutory), derivative acquisition (fro m sale, inheritance, donation), original acquisition (prescription, expropriation)); co-ownership and subdivision; servitudes; land tenure and indigenous law, traditional courts; sectional title; homeowners associations, gated villages, share block schemes; introduction to lease; and the principles of real security.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

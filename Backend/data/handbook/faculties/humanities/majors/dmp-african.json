@@ -1,0 +1,43 @@
+{
+  "id": "dmp-african",
+  "programme_code": "HU021",
+  "stream_code": "MUZ02",
+  "name": "Diploma in Musical Performance (African Music)",
+  "abbreviation": "DMP",
+  "nqf_level": 6,
+  "department": "South African College of Music",
+  "duration_years": 3,
+  "credits_range": "414-442",
+  "curriculum": {
+    "year_1": {
+      "core": [
+        "MUZ1110H",
+        "MUZ1111H",
+        "MUZ1306F",
+        "MUZ1307S",
+        "MUZ1121H"
+      ],
+      "note": "Plus instrument B1"
+    },
+    "year_2": {
+      "core": [
+        "MUZ2110H",
+        "MUZ2111H",
+        "MUZ2307F",
+        "MUZ2308S",
+        "MUZ2121H"
+      ],
+      "note": "Plus instrument B2"
+    },
+    "year_3": {
+      "core": [
+        "MUZ3110H",
+        "MUZ3111H",
+        "MUZ3306F",
+        "MUZ3307S",
+        "MUZ3121H"
+      ],
+      "note": "Plus instrument B3"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "APG3034Z",
+  "title": "Environment & Services II",
+  "department": "architecture-planning-geomatics",
+  "credits": 10,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "TBC",
+  "prerequisites": {
+    "text": "APG2038W / APG2043F",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "APG2038W",
+        "APG2043F"
+      ]
+    }
+  },
+  "corequisites": [
+    "APG3023W",
+    "APG3037W"
+  ],
+  "outline": "This course introduces sophisticated architectural strategies for passive and hybrid environmental control systems and services for medium and large scale buildings. Building energy simulation is emphasised. Students undertake analysis of best practice cas e studies. Students also independently apply sustainable design solutions to own design work.",
+  "lecture_times": "Refer to departmental timetable",
+  "dp_requirements": "80% attendance and100% submission of all assignments",
+  "assessment": "100% on the portfolio exam",
+  "is_engineering_course": true
+}

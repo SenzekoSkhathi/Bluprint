@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EGS5009W",
+  "title": "Environment, Society & Sustainability Minor Dissertation",
+  "department": "environmental-geographical-science",
+  "credits": 90,
+  "nqf_level": 9,
+  "year_level": "Postgraduate – Masters",
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Dr M Norton",
+  "prerequisites": {
+    "text": "EGS5008H",
+    "parsed": {
+      "type": "and",
+      "codes": [
+        "EGS5008H"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "Students register in the first semester of the second year and complete a suitable research proposal in consultation with an appropriate supervisor. After approval of the proposal, students undertake a research project demonstrating the application of theory to practical issues in environment, society and sustainability. The work must be submitted in the form of a minor dissertation early in the second year.",
+  "lecture_times": null,
+  "dp_requirements": null,
+  "assessment": "The minor dissertation must be presented for formal examination. Coursework and minor dissertation each count 50% towards the degree; each must be passed separately for the award of the degree.",
+  "is_science_course": true
+}

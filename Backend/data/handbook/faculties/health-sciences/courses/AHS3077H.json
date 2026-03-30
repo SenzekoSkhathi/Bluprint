@@ -1,0 +1,32 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AHS3077H",
+  "title": "Applied Physiotherapy II",
+  "department": "health-and-rehabilitation-sciences",
+  "credits": 22,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "FY",
+  "semester_code": "H",
+  "convener": "Dr M Naidoo",
+  "prerequisites": {
+    "text": "AHS2053H, AHS2002W, HUB2015W, HUB2023W",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "AHS2053H",
+        "AHS2002W",
+        "HUB2015W",
+        "HUB2023W"
+      ]
+    }
+  },
+  "corequisites": [
+    "AHS3004W"
+  ],
+  "outline": "Objective: By the end of the course, students will be able to accurately assess and effectively manage patients with neurological an d cardiopulmonary conditions, wome n’s health issues and burns according to the International Classification of Functioning framework. Course outline: Adult Neurology: Weekly throug hout the academic year. Card iopulmonary rehab ilitation: Block teaching in term 1, 2 and 3. Women’s Health: Block teaching in term 1 and 2. Burns: Block teaching in term 4. By the end of the course, students will be able to accurately asse ss and effectively manage patients with neurological and cardiopul monary conditions, women’s heal th issues according to the International Classification of Functioning frame work. This course co vers modules on adult neurology, cardiopulmonary rehabilitation, women’s health, designed to deve lop clinical reasoning and creative problem-solving skills within the South African health care context. The adult neurology module equips the student with knowledge and skills to enable ma nagement of a variety of adult neurological conditions. The cardiopulmonary rehabilitations module equips th e student with knowledge and skills to enable management of a variety of common adult and Paediatric pulmonary conditions, including adult cardiothoracic surgery and cardiopulmonary rehabilitation. The emphasis is on primary healthcare and clinical reasoning. The women’s health module equips the student with knowledge and skills to enable management of women’s health conditions, including stress incontinence, mastectomy and pelvic floor dysfunction.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Students are expected to attend and participate in 80% of all lectures, practical sessions, workshops and tutorials. Attendance is monitored through the signing of an attendance register at each session. Students are required to submit all course work as required in the different modules by the due dates.",
+  "assessment": "Coursework contributes 60% toward the fi nal mark. The coursewo rk comprises tests and assignments in Women's Heal th (6%), tests, assignments an d OSPES in Neurology (30%) and tests, OSPE's and assignments in CPR (24%). The final examination contributes 40% and consists of assignments, OSPEs and written tests in CPR, Neurology and Women’s Health",
+  "is_health_sciences_course": true
+}

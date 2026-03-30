@@ -1,0 +1,23 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "INF5008Z",
+  "title": "Systems Security",
+  "department": "computer-science",
+  "credits": 12,
+  "nqf_level": 9,
+  "year_level": "Postgraduate (Master's specialising in IT)",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "Z Ruhwanya",
+  "prerequisites": {
+    "text": "A non-IT honours degree, or equivalent.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "The course covers: Cybersecurity and impacting issues; Cyber security theories and frameworks; Real-world Cybercrime Cases; Cyber-Forensic investigations; Reporting and evidence admissibility; Strategies to address Cyber security challenges.",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "In order to be permitted to sit the final exam a minimum average of 40% on the coursework must be obtained.",
+  "assessment": "2 Assignments (50%) and an Exam (50%).",
+  "is_science_course": false,
+  "offered_by_faculty": "commerce"
+}

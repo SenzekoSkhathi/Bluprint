@@ -1,0 +1,12 @@
+{
+  "$schema": "handbook-programme-v1",
+  "programme_code": "CB001ACC08",
+  "programme_name": "Bachelor of Commerce specialising in Financial Accounting: General Accounting",
+  "degree": "BCom",
+  "specialisation": "Financial Accounting - General Accounting",
+  "faculty": "commerce",
+  "nqf_level": 7,
+  "minimum_credits": 440,
+  "duration_years": 3,
+  "department": "accounting"
+}

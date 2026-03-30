@@ -1,0 +1,30 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "INF3012S",
+  "title": "BPM & Enterprise Systems",
+  "department": "information-systems",
+  "credits": 18,
+  "nqf_level": 7,
+  "year_level": "Third Year",
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "P Tsibolane",
+  "prerequisites": {
+    "text": "A pass in INF2003F, INF2009F and INF2011S.",
+    "parsed": {
+      "type": "and",
+      "codes": [
+        "INF2003F",
+        "INF2009F",
+        "INF2011S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course examines the role, relationship and effect IT Applications have on businesses and vice versa, with a heavy emphasis on ERP systems, business processes and Business Process Management (BPM). Students are exposed to methodologies and techniques to identify, model, measure and improve processes, and introduced to technologies that can be used as part of process improvement initiatives, including ERP systems that impact business processes. A group project allows students to apply their analytical skills to improving an existing process. Students are introduced to S/4 HANA and acquire a basic working knowledge of the application.",
+  "lecture_times": "11h00–11h45 Tuesday–Friday and 10h00–10h45 Thursday and Friday.",
+  "dp_requirements": "Acceptable participation in group project; 45% for the year mark; completion and submission of 80% of workshops.",
+  "assessment": "Classwork 65% (workshops, class exercises, test and a group project); final examination 35%. Sub-minimum of 40% for the final examination.",
+  "is_science_course": false,
+  "offered_by_faculty": "commerce"
+}

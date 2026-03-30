@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "STA1000P",
+  "title": "Introductory Statistics",
+  "department": "statistical-sciences",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "summer",
+  "semester_code": "P",
+  "convener": "N Watson",
+  "prerequisites": {
+    "text": "Students should have obtained a DP for either STA1000F/S.",
+    "parsed": {
+      "type": "and",
+      "codes": [
+        "STA1000F/S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This is an introductory statistics course aimed at exposing students to principles and tools to support appropriate quantitative analysis. The aim is to produce students with a functional sense of statistics. Topics covered include: exploratory data analysis and summary statistics; probability theory; random variables; probability mass and density functions; Binomial, Poisson, Exponential, Normal and Uniform distributions; sampling distributions; confidence intervals; introduction to hypothesis testing (including tests on means, tabular data and bivariate data); determining sample sizes; simple linear regression and measures of correlation. Students are assessed on their knowledge of the topics covered and their ability to perform simple and appropriate statistical analyses using spreadsheet functions.",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "Satisfactory attendance of tests and completion of assignments and/or exercises as set out in course outline. Class record of at least 35%.",
+  "assessment": "Class record 40% and a 2-hour exam counting 60%. Weights will be adjusted in the case of missed assessments, as detailed in the course outline.",
+  "is_science_course": true
+}

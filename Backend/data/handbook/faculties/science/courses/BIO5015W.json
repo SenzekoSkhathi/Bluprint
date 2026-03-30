@@ -1,0 +1,31 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "BIO5015W",
+  "title": "Applied Ocean Sciences Minor Dissertation",
+  "department": "biological-sciences",
+  "credits": 0,
+  "nqf_level": 9,
+  "year_level": 5,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Professor M Vichi and Dr L C Gammage",
+  "prerequisites": {
+    "text": "A relevant Honours degree (or equivalent). Students with backgrounds in scientific and engineering disciplines are encouraged to apply. Co-requisites: BIO5012W, BIO5013Z, BIO5014Z/SEA5011Z. Note: The minor dissertation course will be registered either during the first year before the second term, or at the beginning of the second year. Where the minor dissertation is not submitted by the February deadline of the subsequent year, the student will be required to enrol (and pay fees) for the minor dissertation component in the subsequent year/s.",
+    "parsed": {
+      "type": "complex",
+      "codes_mentioned": [
+        "BIO5012W",
+        "BIO5013Z",
+        "BIO5014Z/S",
+        "EA5011Z"
+      ],
+      "note": "Complex prerequisite logic - see text"
+    }
+  },
+  "corequisites": [],
+  "outline": "The minor dissertation, which forms 50% of the overall degree, is based on a six-month supervised research project. The choice of project will be determined by the student's prior qualification and in agreement with the course conveners and supervisors. The dissertation should be submitted by mid-February of the following year.",
+  "lecture_times": null,
+  "dp_requirements": null,
+  "assessment": "The minor dissertation must be presented for formal examination. The coursework and minor dissertation each count 50% towards the degree; each must be passed separately for the award of the degree.",
+  "is_science_course": true
+}

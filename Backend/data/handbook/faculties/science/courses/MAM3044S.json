@@ -1,0 +1,30 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MAM3044S",
+  "title": "Functions of a Complex Variable (3CV)",
+  "department": "mathematics-applied-mathematics",
+  "credits": 18,
+  "nqf_level": 7,
+  "year_level": "Third Year",
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr P W Adams",
+  "prerequisites": {
+    "text": "MAM2040F, MAM2041F, MAM2042S and MAM2043S.",
+    "parsed": {
+      "type": "and",
+      "codes": [
+        "MAM2040F",
+        "MAM2041F",
+        "MAM2042S",
+        "MAM2043S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course introduces students to the calculus of functions of one complex variable, with special focus on applications to other disciplines (e.g. Physics). Topics include: calculus of complex functions of one variable; conformal maps; complex contour integration and the Cauchy-Goursat theorem; Taylor and Laurent series of complex functions; calculus of residues; applications of complex contour integration to real-valued integrals; principal value of an integral; multi-valued complex functions; analytic continuation; and special functions.",
+  "lecture_times": "Monday - Friday, 3rd period.",
+  "dp_requirements": "A class record of 30% or more; satisfactory attendance at lectures and tutorials; submission of all assigned work.",
+  "assessment": "Class record counts up to 50%; the balance is made up by the final examination.",
+  "is_science_course": true
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EGS2017S",
+  "title": "Geographies Across Time",
+  "department": "environmental-geographical-science",
+  "credits": 24,
+  "nqf_level": 6,
+  "year_level": "Second Year",
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "To be advised",
+  "prerequisites": {
+    "text": "For BSc: GEO1009F or EGS1007S or EGS1003S. For BA or BSocSci: EGS1007S or EGS1003S or Social Science Foundation course and two full first-year Humanities courses, or equivalent.",
+    "parsed": {
+      "type": "complex",
+      "codes_mentioned": [
+        "GEO1009F",
+        "EGS1007S",
+        "EGS1003S"
+      ],
+      "note": "Complex prerequisite logic - see text"
+    }
+  },
+  "corequisites": [],
+  "outline": "This course focuses on temporal dimensions. Interwoven social and biophysical patterns are explored with a view to informing just and sustainable transitions. Historical legacies, future forecasting, governance, climate variability and climate change are examined and understood in their contribution to current trajectories. The course engages temporal scales from geological epochs through to socio-political historical legacies and the variable lived experiences of the present. It offers critiques of northern-derived linear notions of time and scalar assumptions in global governance, and introduces students to interdisciplinary conversation through engaging geographical thought and praxis around emergent and interrelated social and biophysical patterns.",
+  "lecture_times": "Monday - Friday, 5th period. Practicals: One afternoon per week, Monday, 14h00–17h00, by arrangement.",
+  "dp_requirements": "Submission of all practical assignments and essay; sub-minimum of 45%.",
+  "assessment": "60% exam; 40% coursework (2 essays – 10% each, two class tests – 5% each, two field-based exercises – 5% each). An average mark of at least 50% across all submissions is required to pass the course.",
+  "is_science_course": true
+}

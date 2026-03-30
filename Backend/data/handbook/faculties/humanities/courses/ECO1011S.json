@@ -1,0 +1,32 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "ECO1011S",
+  "title": "Macroeconomics I",
+  "department": "economics",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "L Edwards ECONOMICS, SCHOOL OF 163",
+  "prerequisites": {
+    "text": "A minimum mark of 50% for ECO1010F/S or ECO1110F/S. ECO1010F/S may be taken concurrently with ECO1011F/S if ECO1010F/S has been previously attempted.",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "ECO1010F",
+        "ECO1110F",
+        "ECO1010F",
+        "ECO1011F",
+        "ECO1010F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course is an introductory level course in macroeconomic theory and policy. Macroeconomics studies the aggregate behaviour of the economy. The list of topics covered include gross domestic product, economic growth, unemployment, inflation, exchange rat es, balance of payments, business cycles, fiscal and monetary policy tools and objectives. The course will build on macroeconomic relationships to develop basic models explaining various interactions within the economy, providing students with a framework for understanding and interrogating the workings of the economy. The course emphasizes relevant and current issues in the context of South African economic history. We also explore South Africa’s relationship with the rest of the world.",
+  "lecture_times": "ECO1011F 15h00 – 16h00 Monday, Tuesday, Wednesday & Thursday ECO1011S 09h00 – 10h00 Tuesday, Wednesday, Thursday & Friday10h00 – 11h00 Tuesday, Wednesday, Thursday & Friday11h00 – 12h00 Tuesday, Wednesday, Thursday & Friday12h00 – 13h00 Tuesday, Wednesday, Thursday & Friday Students are advised to reserve a Monday slot for tutorial sessions.",
+  "dp_requirements": "All tests/assignments/essays/projects/tutorial attendance/submissions to be completed for DP purposes (details will be provided in the course documentation). If your year mark is below 40% you will not be permitted to write the final examination",
+  "assessment": "Coursework: 50%; Exam: 50%. The course documentation will detail the breakdown for assessment weightings and variation for exemptions and absences. Note: The ECO1011F supplementary/deferred exam will be scheduled during the last week of the mid -year vacation. If students do not write this exam they will be marked as AB and will have to retake the course. The",
+  "is_humanities_course": false,
+  "offered_by_faculty": "commerce"
+}

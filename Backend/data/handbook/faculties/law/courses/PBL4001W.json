@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PBL4001W",
+  "title": "Administrative Law",
+  "department": "public-law",
+  "credits": 36,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "N Ally",
+  "prerequisites": {
+    "text": "All Preliminary and Intermediate Level courses to have been completed.",
+    "parsed": {
+      "type": "level_completion",
+      "levels_required": [
+        "preliminary",
+        "intermediate"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course deals primarily with the legal rules surrounding the exercise of public power, both as they empower and regulate. In particular it deals with the role of courts in controlling the exercise of power, but it also looks at alternatives to judicial review as other important ways of holding public power to account. After a general introduction, an overview of administrative law, the course focuses on the sources, types and extent of administrative power, and the scope of judicial review (both in theory and practice) in a democratic state. The course takes into account the combined effect of the Constitution and legislation on administrative law. The second part of the course deals mainly on the grounds of review which have been developed by the courts, most of which are found in s 6 of the Promotion of Administrative Justice Act.",
+  "lecture_times": "Whole year course.",
+  "dp_requirements": "None",
+  "assessment": "Assessment during the year counts 40%; November examination (3 hour) 60%.",
+  "is_law_course": true
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "STA3041F",
+  "title": "Stochastic Processes & Time Series",
+  "department": "statistical-sciences",
+  "credits": 36,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "D Katshunga",
+  "prerequisites": {
+    "text": "STA2004F and STA2005S; MAM2000W or MAM2004H is strongly recommended. Recommended MAM2000W modules: MAM2011F - Linear Algebra (2LA), MAM2010F - Advanced Calculus (2AC), MAM2012S - Differential Equations (2DE) and MAM2014S - Real Analysis (2RA).",
+    "parsed": {
+      "type": "prerequisite",
+      "codes": [
+        "STA2004F",
+        "STA2005S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course forms part of the third-year major in Mathematical Statistics. It consists of two modules namely Stochastic Processes and Time Series Analysis. The Stochastic Processes module is aimed at providing introductory theory and basic applications of stochastic processes in financial modelling whilst the Time Series module introduces students to the foundations of the Box-Jenkins methodology with the intention of applying the methodology using statistical software. Details of the module content: Stochastic processes covers the general theory underlying stochastic processes and their classifications, definitions and applications of discrete Markov chains. Branching processes are examined with an emphasis on analysing probability of extinction/survival. The module also covers both discrete and continuous time counting processes. Time series analysis covers various topics including global and local models of dependence, stationary ARMA processes, unit root processes as well as a brief introduction to univariate Volatility models as well as cointegration.",
+  "lecture_times": "Five lectures per week, Monday - Friday, 1st period.",
+  "dp_requirements": "Satisfactory attendance of lectures, tutorials, practicals and tests and completion of assignments and/or class exercises as set out in course outline. Class record of at least 35%.",
+  "assessment": "Class record 30% and a 3-hour exam counting 70%. Weights will be adjusted in the case of missed assessments.",
+  "is_commerce_course": false,
+  "offered_by_faculty": "science"
+}

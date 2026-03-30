@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CSC3041F",
+  "title": "AI: Automated Planning and Control",
+  "department": "computer-science",
+  "credits": 18,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "To be advised",
+  "prerequisites": {
+    "text": "(CSC2041F or CSC2042S), CSC2001F.",
+    "parsed": {
+      "type": "or",
+      "codes": [
+        "CSC2041F",
+        "CSC2042S",
+        "CSC2001F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course provides an introduction to problem solving by searching: uninformed search, heuristic search, and adversarial search for games are covered. Introduction to reinforcement learning: Markov Decision Processes for sequential decision making, passive and active reinforcement learning, policy search and data-driven control techniques. The course also covers applications in game playing, planning in interactive environments, and robot navigation and control.",
+  "lecture_times": "Monday - Friday, 3rd period. Practicals: One 4-hour practical per week, by arrangement.",
+  "dp_requirements": "Minimum of 45% aggregate in practical work.",
+  "assessment": "Tests 25%; practical work 25%; examinations 50%. Subminima: 45% for practicals, 45% weighted average of theory tests and examinations.",
+  "is_science_course": true
+}

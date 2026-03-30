@@ -1,0 +1,31 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MAM2012S",
+  "title": "Differential Equations (2DE)",
+  "department": "mathematics",
+  "credits": 12,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "T C Van Heerden",
+  "prerequisites": {
+    "text": "MAM1031F and MAM1032S or equivalent, MAM2010F and MAM2011F.",
+    "parsed": {
+      "type": "prerequisite",
+      "codes": [
+        "MAM1031F",
+        "MAM1032S",
+        "MAM2010F",
+        "MAM2011F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "Students will study the fundamentals of differential equations, including topics from: First and second-order difference equations; Linear differential equations, constant coefficients; Laplace transforms; Nonlinear equations, phase plane analysis; Parabolic partial differential equations, separation of variables, boundary value problems; Black-Scholes equation; Stochastic differential equations. Please note that lectures alternate during the week so that students can take any of MAM2012S, MAM2013S and MAM2014S concurrently.",
+  "lecture_times": "Tuesdays, Fridays and some Wednesdays in 4th period.",
+  "dp_requirements": "To be advised.",
+  "assessment": "To be advised.",
+  "is_commerce_course": false,
+  "offered_by_faculty": "science"
+}

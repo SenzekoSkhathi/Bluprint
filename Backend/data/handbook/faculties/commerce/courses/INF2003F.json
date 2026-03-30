@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "INF2003F",
+  "title": "Commercial Programming",
+  "department": "information-systems",
+  "credits": 18,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Professor S Kabanda",
+  "prerequisites": {
+    "text": "At least 65% for INF1002F/S/N or equivalent (or at least 70% for CSC1017F).",
+    "parsed": {
+      "type": "prerequisite",
+      "codes": [
+        "INF1002F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The course focuses on integrating good programming practices through planning and developing software programs using C#. The course is practically-orientated and students should be prepared to spend time after hours to do programming exercises. Theory lectures are used to communicate course content, which includes: Data Types and Expressions, Methods and Behaviours, Creating Your Own Classes, Making Decisions, Repeating Instructions, Arrays, Introduction to Windows Programming, Advanced Object-Oriented Programming Features, and Debugging and Handling Exceptions.",
+  "lecture_times": "Monday and Tuesday and Thursday, 8th and 9th period.",
+  "dp_requirements": "Submission of 80% of quizzes and workshops. A minimum year mark of 45%.",
+  "assessment": "Coursework 80%; Summative Assessment 20%. Subminimum 40% for the summative assessment.",
+  "is_commerce_course": true
+}

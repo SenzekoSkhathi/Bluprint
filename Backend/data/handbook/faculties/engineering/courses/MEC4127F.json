@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MEC4127F",
+  "title": "Mechatronic Systems",
+  "department": "mechanical-engineering",
+  "credits": 16,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr A Pretorius",
+  "prerequisites": {
+    "text": "MEC3074F, MEC3079S, EEE2046S",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "MEC3074F",
+        "MEC3079S",
+        "EEE2046S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The aim of this course is to provide both theoretical and practical exposure to the interdisciplinary field of mechatronic systems, building on previously covered mechatronics -related courses and concepts. The course will cover a subset of the following topics: industrial control practices, systems, and networks; programmable logic controllers and associated programming languages; industrial diagrams and automation drawings; industrial safety systems; mechatronics design philosophies and architectures; proj ect specifications; testing and simulation of mechatronic systems; system identification methods; forward and inverse kinematics of robotic platforms; path planning and trajectory generation; nonlinear control techniques; constrained optimisation; computer vision; state estimation; and introduction to robotic middleware and interfacing.",
+  "lecture_times": "4 lectures per week.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course. DEPARTMENTS IN THE FACULTY AND COURSES OFFERED 157",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

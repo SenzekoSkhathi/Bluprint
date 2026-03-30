@@ -1,0 +1,31 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MCB3026F",
+  "title": "Molecular Genetics and Genomics",
+  "department": "molecular-cell-biology",
+  "credits": 36,
+  "nqf_level": 7,
+  "year_level": "Third Year",
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "C Ross",
+  "prerequisites": {
+    "text": "MCB2020F, MCB2021F and MCB2022S or MCB2023S.",
+    "parsed": {
+      "type": "complex",
+      "codes_mentioned": [
+        "MCB2020F",
+        "MCB2021F",
+        "MCB2022S",
+        "MCB2023S"
+      ],
+      "note": "Complex prerequisite logic - see text"
+    }
+  },
+  "corequisites": [],
+  "outline": "This course explores various topics in molecular genetics covering humans, plants, bacteria, viruses and mobile genetic elements (MGEs). Focus is given to understanding genetic mechanisms by studying genes, proteins, antisense RNA, sRNA and the roles they play in regulatory and biochemical processes. Topics include plasmid biology, regulation of viral lifecycles, bacterial biosynthetic pathways, human genetic disorders, transgenic plants and metagenomics. Cutting-edge tools in modern molecular biology are taught with an emphasis on data analysis and interpretation, including bioinformatics (DNA sequence analysis, assembly, annotation, databases, BLAST, primer design), phylogenetics, next-generation sequencing, RNA sequencing and genome projects.",
+  "lecture_times": "Monday - Friday, 4th period.",
+  "dp_requirements": "50% average for assignments and practical reports; attendance at all practicals and tutorials.",
+  "assessment": "Tests count 40%; practicals, tutorials, essays and assignments count 10%; one 3-hour examination written in June counts 50%. A sub-minimum of 40% in the examination is required.",
+  "is_science_course": true
+}

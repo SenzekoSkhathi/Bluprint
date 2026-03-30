@@ -1,0 +1,31 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AST3002F",
+  "title": "Stellar Astrophysics",
+  "department": "astronomy",
+  "credits": 36,
+  "nqf_level": 7,
+  "year_level": "Third Year",
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr I Monageng",
+  "prerequisites": {
+    "text": "AST2002H and AST2003H, PHY2004W, MAM2010F and MAM2011F",
+    "parsed": {
+      "type": "and",
+      "codes": [
+        "AST2002H",
+        "AST2003H",
+        "PHY2004W",
+        "MAM2010F",
+        "MAM2011F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course introduces fundamental concepts such as radiative transfer and opacity to explain the observed spectroscopic and photometric signatures of stars. Students will interpret the observed intrinsic properties of stars through a theoretical understanding of the energy production inside stars and the propagation of electromagnetic radiation from the stellar core through its interior to the stellar surface. The life cycle of stars is considered in great detail, from the collapse of an interstellar gas cloud to the end products of stellar evolution: white dwarfs, neutron stars and black holes. Includes an observational component using the modern teaching observatory on campus.",
+  "lecture_times": "Monday - Friday, 2nd period. Practicals: One practical or tutorial per week, Wednesday, 14h00–17h00.",
+  "dp_requirements": "Satisfactory attendance at lectures and tutorials; class record of at least 35%.",
+  "assessment": "Class record 50% (includes two class tests, tutorials, weekly quizzes and practicals); one 2-hour final examination 50%. Sub-minimum requirement of 40% for final examination.",
+  "is_science_course": true
+}

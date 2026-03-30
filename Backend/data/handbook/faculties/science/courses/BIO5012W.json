@@ -1,0 +1,31 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "BIO5012W",
+  "title": "Applied Ocean Sciences Coursework",
+  "department": "biological-sciences",
+  "credits": 0,
+  "nqf_level": 9,
+  "year_level": 5,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Professor M Vichi and Dr L C Gammage",
+  "prerequisites": {
+    "text": "A relevant Honours degree (or equivalent). Students with backgrounds in scientific and engineering disciplines are encouraged to apply. Co-requisites: The relevant dissertation code from those provided by the conveners. Note: BIO5012W carries 0 NQF credits and represents the overall coursework component. Students enrol for BIO5012W, BIO5013Z, and BIO5014Z/SEA5011Z. Minor dissertation registered either during the first year before the second term, or at the beginning of the second year.",
+    "parsed": {
+      "type": "complex",
+      "codes_mentioned": [
+        "BIO5012W",
+        "BIO5013Z",
+        "BIO5014Z/S",
+        "EA5011Z"
+      ],
+      "note": "Complex prerequisite logic - see text"
+    }
+  },
+  "corequisites": [],
+  "outline": "This course participates in the SAMOS programme (South African Master of Ocean Sciences), convened between the Departments of Biological Sciences and Oceanography. The code BIO5012W represents the overall coursework component and will reflect the overall coursework result. This full-time Master's degree with coursework and minor dissertation is offered over one or two years. Within the SAMOS programme the minor dissertation can be deferred to the second year. It provides interdisciplinary vocational training in applied aspects of oceanography and marine biology, designed for both recent graduates as well as those with a minimum of five years' work experience. Students will gain skills to operate in the ocean services sector, focusing on industrial activities and the science of conservation and various aspects of the Blue Economy, such as food security, water quality and recreational opportunities. The curriculum offers a choice of two streams: Applied Marine Biology (BIO5014Z) and Operational Oceanography (SEA5011Z), with a common course in Foundations of Applied Ocean Sciences (BIO5013Z). In addition, students will choose at least two elective courses, chosen from modules offered in both disciplines.",
+  "lecture_times": null,
+  "dp_requirements": null,
+  "assessment": "Students must pass all coursework components with a subminimum of 40% for the fundamental course BIO5013Z and the disciplinary courses (BIO5014Z and SEA5011Z); an aggregate coursework mark of 50% is required. A composite grade of the performance on the coursework component as a whole will be reflected against the assessment course code BIO5012W. The minor dissertation component is 50% of the degree.",
+  "is_science_course": true
+}

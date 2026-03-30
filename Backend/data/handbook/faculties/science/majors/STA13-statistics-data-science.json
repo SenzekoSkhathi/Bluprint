@@ -1,0 +1,389 @@
+{
+  "$schema": "handbook-major-v1",
+  "major_code": "STA13",
+  "major_name": "Statistics & Data Science",
+  "department": "statistical-sciences",
+  "notes": "Students choose between the Mathematical and Applied Statistics streams. Only one of STA01, STA02, STA13 can be taken towards the BSc degree. STA3047S and STA3048S must be taken together. MAM2012S, MAM2013S, MAM2014S are highly recommended alongside MAM2010F and MAM2011F.",
+  "mutual_exclusions_with": [
+    "STA01",
+    "STA02"
+  ],
+  "required_companion_majors": [],
+  "has_student_limit": false,
+  "years": [
+    {
+      "year": 1,
+      "label": "First Year Core Courses",
+      "combinations": [
+        {
+          "combination_id": "STA13-Y1-A",
+          "description": "Fixed first year courses",
+          "courses": [
+            {
+              "code": "CSC1015F/S",
+              "title": "Computer Science 1015",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "CSC1016S",
+              "title": "Computer Science 1016",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "MAM1031F",
+              "title": "Mathematics 1031 (or equivalent)",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "MAM1032S",
+              "title": "Mathematics 1032 (or equivalent)",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "STA100xF/S",
+              "title": "Any 1000-level Science STA course",
+              "credits": 18,
+              "nqf_level": 5,
+              "is_pattern": true,
+              "resolves_to": [
+                "STA1000F",
+                "STA1000S",
+                "STA1000P/L",
+                "STA1006S",
+                "STA1007S"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "label": "Second Year Core Courses",
+      "combinations": [
+        {
+          "combination_id": "STA13-Y2-A",
+          "description": "CSC2001F + CSC2002S + MAM + STA2004F + STA2005S",
+          "courses": [
+            {
+              "code": "CSC2001F",
+              "title": "Computer Science 2001",
+              "credits": 24,
+              "nqf_level": 6
+            },
+            {
+              "code": "CSC2002S",
+              "title": "Computer Science 2002",
+              "credits": 24,
+              "nqf_level": 6
+            },
+            {
+              "code": "MAM2010F",
+              "title": "Advanced Calculus (2AC)",
+              "credits": 12,
+              "nqf_level": 6
+            },
+            {
+              "code": "MAM2011F",
+              "title": "Linear Algebra (2LA)",
+              "credits": 12,
+              "nqf_level": 6
+            },
+            {
+              "code": "STA2004F",
+              "title": "Statistical Theory & Inference",
+              "credits": 24,
+              "nqf_level": 6
+            },
+            {
+              "code": "STA2005S",
+              "title": "Linear Models",
+              "credits": 24,
+              "nqf_level": 6
+            }
+          ],
+          "highly_recommended": [
+            {
+              "code": "MAM2012S/MAM2013S/MAM2014S",
+              "title": "Differential Equations / Introductory Algebra / Real Analysis",
+              "credits": 12,
+              "nqf_level": 6
+            }
+          ]
+        },
+        {
+          "combination_id": "STA13-Y2-B",
+          "description": "CSC2001F + CSC2002S + MAM + STA2004F + STA2007F/S",
+          "courses": [
+            {
+              "code": "CSC2001F",
+              "title": "Computer Science 2001",
+              "credits": 24,
+              "nqf_level": 6
+            },
+            {
+              "code": "CSC2002S",
+              "title": "Computer Science 2002",
+              "credits": 24,
+              "nqf_level": 6
+            },
+            {
+              "code": "MAM2010F",
+              "title": "Advanced Calculus (2AC)",
+              "credits": 12,
+              "nqf_level": 6
+            },
+            {
+              "code": "MAM2011F",
+              "title": "Linear Algebra (2LA)",
+              "credits": 12,
+              "nqf_level": 6
+            },
+            {
+              "code": "STA2004F",
+              "title": "Statistical Theory & Inference",
+              "credits": 24,
+              "nqf_level": 6
+            },
+            {
+              "code": "STA2007F/S",
+              "title": "Study Design & Data Analysis for Scientists",
+              "credits": 24,
+              "nqf_level": 6
+            }
+          ],
+          "highly_recommended": [
+            {
+              "code": "MAM2012S/MAM2013S/MAM2014S",
+              "title": "Differential Equations / Introductory Algebra / Real Analysis",
+              "credits": 12,
+              "nqf_level": 6
+            }
+          ]
+        },
+        {
+          "combination_id": "STA13-Y2-C",
+          "description": "CSC2001F + CSC2002S + MAM + STA2004F + STA2020F/S",
+          "courses": [
+            {
+              "code": "CSC2001F",
+              "title": "Computer Science 2001",
+              "credits": 24,
+              "nqf_level": 6
+            },
+            {
+              "code": "CSC2002S",
+              "title": "Computer Science 2002",
+              "credits": 24,
+              "nqf_level": 6
+            },
+            {
+              "code": "MAM2010F",
+              "title": "Advanced Calculus (2AC)",
+              "credits": 12,
+              "nqf_level": 6
+            },
+            {
+              "code": "MAM2011F",
+              "title": "Linear Algebra (2LA)",
+              "credits": 12,
+              "nqf_level": 6
+            },
+            {
+              "code": "STA2004F",
+              "title": "Statistical Theory & Inference",
+              "credits": 24,
+              "nqf_level": 6
+            },
+            {
+              "code": "STA2020F/S",
+              "title": "Applied Statistics",
+              "credits": 24,
+              "nqf_level": 6
+            }
+          ],
+          "highly_recommended": [
+            {
+              "code": "MAM2012S/MAM2013S/MAM2014S",
+              "title": "Differential Equations / Introductory Algebra / Real Analysis",
+              "credits": 12,
+              "nqf_level": 6
+            }
+          ]
+        },
+        {
+          "combination_id": "STA13-Y2-D",
+          "description": "CSC2001F + CSC2042S (Machine Learning) + MAM + STA2030S + STA2005S",
+          "courses": [
+            {
+              "code": "CSC2001F",
+              "title": "Computer Science 2001",
+              "credits": 24,
+              "nqf_level": 6
+            },
+            {
+              "code": "CSC2042S",
+              "title": "Introduction to AI 2: Machine Learning",
+              "credits": 24,
+              "nqf_level": 6
+            },
+            {
+              "code": "MAM2010F",
+              "title": "Advanced Calculus (2AC)",
+              "credits": 12,
+              "nqf_level": 6
+            },
+            {
+              "code": "MAM2011F",
+              "title": "Linear Algebra (2LA)",
+              "credits": 12,
+              "nqf_level": 6
+            },
+            {
+              "code": "STA2030S",
+              "title": "Statistical Theory",
+              "credits": 24,
+              "nqf_level": 6
+            },
+            {
+              "code": "STA2005S",
+              "title": "Linear Models",
+              "credits": 24,
+              "nqf_level": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "label": "Third Year Core Courses",
+      "combinations": [
+        {
+          "combination_id": "STA13-Y3-A",
+          "description": "Mathematical stream: STA3041F + STA3022F",
+          "courses": [
+            {
+              "code": "STA3041F",
+              "title": "Markov Processes & Time Series",
+              "credits": 36,
+              "nqf_level": 7
+            },
+            {
+              "code": "STA3022F",
+              "title": "Applied Multivariate Data Analysis",
+              "credits": 36,
+              "nqf_level": 7
+            }
+          ]
+        },
+        {
+          "combination_id": "STA13-Y3-B",
+          "description": "Mathematical stream: STA3041F + STA3036S",
+          "courses": [
+            {
+              "code": "STA3041F",
+              "title": "Markov Processes & Time Series",
+              "credits": 36,
+              "nqf_level": 7
+            },
+            {
+              "code": "STA3036S",
+              "title": "Operational Research Techniques",
+              "credits": 36,
+              "nqf_level": 7
+            }
+          ]
+        },
+        {
+          "combination_id": "STA13-Y3-C",
+          "description": "Mathematical stream: STA3041F + Machine Learning pair (STA3047S + STA3048S together)",
+          "courses": [
+            {
+              "code": "STA3041F",
+              "title": "Markov Processes & Time Series",
+              "credits": 36,
+              "nqf_level": 7
+            },
+            {
+              "code": "STA3047S",
+              "title": "Introduction to Machine Learning",
+              "credits": 6,
+              "nqf_level": 7
+            },
+            {
+              "code": "STA3048S",
+              "title": "Statistical Modelling and Bayesian Analysis",
+              "credits": 30,
+              "nqf_level": 7
+            }
+          ]
+        },
+        {
+          "combination_id": "STA13-Y3-D",
+          "description": "Applied stream: STA3030F + STA3022F",
+          "courses": [
+            {
+              "code": "STA3030F",
+              "title": "Statistical Inference & Modelling",
+              "credits": 36,
+              "nqf_level": 7
+            },
+            {
+              "code": "STA3022F",
+              "title": "Applied Multivariate Data Analysis",
+              "credits": 36,
+              "nqf_level": 7
+            }
+          ]
+        },
+        {
+          "combination_id": "STA13-Y3-E",
+          "description": "Applied stream: STA3030F + STA3036S",
+          "courses": [
+            {
+              "code": "STA3030F",
+              "title": "Statistical Inference & Modelling",
+              "credits": 36,
+              "nqf_level": 7
+            },
+            {
+              "code": "STA3036S",
+              "title": "Operational Research Techniques",
+              "credits": 36,
+              "nqf_level": 7
+            }
+          ]
+        },
+        {
+          "combination_id": "STA13-Y3-F",
+          "description": "Applied stream: STA3030F + Machine Learning pair (STA3047S + STA3048S together)",
+          "courses": [
+            {
+              "code": "STA3030F",
+              "title": "Statistical Inference & Modelling",
+              "credits": 36,
+              "nqf_level": 7
+            },
+            {
+              "code": "STA3047S",
+              "title": "Introduction to Machine Learning",
+              "credits": 6,
+              "nqf_level": 7
+            },
+            {
+              "code": "STA3048S",
+              "title": "Statistical Modelling and Bayesian Analysis",
+              "credits": 30,
+              "nqf_level": 7
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

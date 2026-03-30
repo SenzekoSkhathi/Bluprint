@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EEE4113F",
+  "title": "Engineering System Design",
+  "department": "electrical-engineering",
+  "credits": 16,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr S Paine",
+  "prerequisites": {
+    "text": "EEE3097S or EEE3098S or EEE3099S",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "EEE3097S",
+        "EEE3098S",
+        "EEE3099S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to consolidate prior material in the context of professional project and design work. Students working individually as well as in groups will tackle a design assignment, leading to submission of a technical report. Topics include: Various models for the stages of formal design methodologies, divergent and convergent thinking, South African industrial design case studies, context analysis (STEEPLE), idea generation, creative methods to organize thinking and planning, user requirements and sp ecifications, project clarification and scope, design standards and codes, systems engineering approach, detail aspects and checklists related to concept, embodiment and final DEPARTMENTS IN THE FACULTY AND COURSES OFFERED 139 designs, redundancy in systems, worst-case design, sensitivity analysis and cost and project life-time estimation as well as design-thinking applied to final-year projects.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

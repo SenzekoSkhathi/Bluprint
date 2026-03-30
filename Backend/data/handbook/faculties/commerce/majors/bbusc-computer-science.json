@@ -1,0 +1,208 @@
+{
+  "$schema": "handbook-programme-v1",
+  "programme_code": "CB004CSC05",
+  "programme_name": "Bachelor of Business Science specialising in Computer Science",
+  "degree": "BBusSci",
+  "specialisation": "Computer Science",
+  "faculty": "commerce",
+  "nqf_level": 8,
+  "minimum_credits": 528,
+  "duration_years": 4,
+  "department": "computer-science",
+  "curriculum": [
+    {
+      "year": 1,
+      "total_credits": 162,
+      "courses": [
+        {
+          "code": "BUS1036F",
+          "title": "Evidence-based Management",
+          "nqf_credits": 18,
+          "nqf_level": 5
+        },
+        {
+          "code": "CSC1015F",
+          "title": "Computer Science 1015",
+          "nqf_credits": 18,
+          "nqf_level": 5
+        },
+        {
+          "code": "ECO1010F",
+          "title": "Microeconomics I",
+          "nqf_credits": 18,
+          "nqf_level": 5
+        },
+        {
+          "code": "MAM1031F",
+          "title": "Mathematics 1031",
+          "nqf_credits": 18,
+          "nqf_level": 5,
+          "alternative": "MAM1004F"
+        },
+        {
+          "code": "MAM1008S",
+          "title": "Introduction to Discrete Mathematics",
+          "nqf_credits": 18,
+          "nqf_level": 5
+        },
+        {
+          "code": "CSC1016S",
+          "title": "Computer Science 1016",
+          "nqf_credits": 18,
+          "nqf_level": 5
+        },
+        {
+          "code": "ECO1011S",
+          "title": "Macroeconomics I",
+          "nqf_credits": 18,
+          "nqf_level": 5
+        },
+        {
+          "code": "STA1000S",
+          "title": "Introductory Statistics",
+          "nqf_credits": 18,
+          "nqf_level": 5
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "total_credits": 168,
+      "courses": [
+        {
+          "code": "ACC1021F",
+          "title": "Accounting for Business I",
+          "nqf_credits": 15,
+          "nqf_level": 5
+        },
+        {
+          "code": "ACC1022Z",
+          "title": "Accounting for Business II",
+          "nqf_credits": 9,
+          "nqf_level": 5
+        },
+        {
+          "code": "CSC2001F",
+          "title": "Computer Science 2001",
+          "nqf_credits": 24,
+          "nqf_level": 6
+        },
+        {
+          "code": "CML1001F",
+          "title": "Business Law I",
+          "nqf_credits": 18,
+          "nqf_level": 5
+        },
+        {
+          "code": "INF2009F",
+          "title": "Systems Analysis",
+          "nqf_credits": 18,
+          "nqf_level": 6
+        },
+        {
+          "code": "CSC2002S",
+          "title": "Computer Science 2002",
+          "nqf_credits": 24,
+          "nqf_level": 6
+        },
+        {
+          "code": "CSC2004Z",
+          "title": "Programming Assessment",
+          "nqf_credits": 0,
+          "nqf_level": 6
+        },
+        {
+          "code": "INF2011S",
+          "title": "Systems Design & Development",
+          "nqf_credits": 18,
+          "nqf_level": 7
+        },
+        {
+          "code": "PHI2043S",
+          "title": "Business Ethics",
+          "nqf_credits": 18,
+          "nqf_level": 6
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "total_credits": 144,
+      "courses": [
+        {
+          "code": "BUS3039F",
+          "title": "People Management",
+          "nqf_credits": 18,
+          "nqf_level": 7,
+          "alternative": "BUS3039S"
+        },
+        {
+          "code": "CSC3002F",
+          "title": "Computer Science 3002",
+          "nqf_credits": 36,
+          "nqf_level": 7
+        },
+        {
+          "code": "BUS3038S",
+          "title": "Introduction to Project Management",
+          "nqf_credits": 18,
+          "nqf_level": 7
+        },
+        {
+          "code": "BUS2010S",
+          "title": "Marketing I",
+          "nqf_credits": 18,
+          "nqf_level": 6
+        },
+        {
+          "code": "CSC3003S",
+          "title": "Computer Science 3003",
+          "nqf_credits": 36,
+          "nqf_level": 7
+        },
+        {
+          "code": "FTX2020F",
+          "title": "Business Finance",
+          "nqf_credits": 18,
+          "nqf_level": 6
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "total_credits": 160,
+      "courses": [
+        {
+          "code": "BUS4050H",
+          "title": "Strategic Thinking",
+          "nqf_credits": 18,
+          "nqf_level": 8
+        },
+        {
+          "code": "CSC4019Z",
+          "title": "Research and Innovation",
+          "nqf_credits": 16,
+          "nqf_level": 8
+        },
+        {
+          "code": "CSC4020Z",
+          "title": "Functional Programming",
+          "nqf_credits": 12,
+          "nqf_level": 8
+        },
+        {
+          "code": "CSC4021Z",
+          "title": "Compilers I",
+          "nqf_credits": 12,
+          "nqf_level": 8
+        },
+        {
+          "code": "CSC4002W",
+          "title": "Computer Science Honours Project",
+          "nqf_credits": 60,
+          "nqf_level": 8
+        }
+      ]
+    }
+  ]
+}

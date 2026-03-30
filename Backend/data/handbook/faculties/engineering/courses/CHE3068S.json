@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CHE3068S",
+  "title": "Bioprocess Engineering",
+  "department": "chemical-engineering",
+  "credits": 16,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Associate Professor MA Fagan-Endres",
+  "prerequisites": {
+    "text": "CHE2005W, CHE2006S",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "CHE2005W",
+        "CHE2006S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The course aims to develop an advanced understanding of the fundamental engineering science of bioprocess engineering. The course will build on an adequate understanding of life sciences to address the process requirements of microbial and enzymatic processes. The fundamentals of biokinetics and bioreactor systems will be addressed. Sterilisation, aseptic operation and clean room technology will be covered, as will downstream processing for product recovery. Study of the bioeconomy and important bioprocesses will be included, with examples drawn from those of significance to South Africa.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

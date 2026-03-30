@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PSY2013F",
+  "title": "Social and Developmental Psychology",
+  "department": "psychology",
+  "credits": 20,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr M Malinga; Associate Professor L Wild",
+  "prerequisites": {
+    "text": "PSY1004F and PSY1005S or equivalent.",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "PSY1004F",
+        "PSY1005S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course provides an introduction to two major areas of psychological research and theory. Social Psychology is taught in one half of the course. The social psychology module introduces students to some basic concepts and theories in social psychology, exposes students to current research within the field, and provides an opportunity for students to engage critically with existing theories and their relevance to the South African context. Some of the major topics covered will include race and racism, social identity and social change, intergroup contact, and social influence. Developmental psychology is taught in the other half of the course. The developmental psychology modu le focuses on understanding the changes and con tinuities that occur in chil dren from conception through adolescence. The sessions will cover central theoretical issu es and research strategies in developmental psychology, prenatal developmen t, cognitive and language development, social and emotional development, and contexts of development.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Completion of all coursework, and 80% attendance at tutorials.",
+  "assessment": "See departmental and faculty assessment rules in the 2026 Health Sciences Faculty Handbook.",
+  "is_health_sciences_course": false,
+  "offered_by_faculty": "humanities"
+}

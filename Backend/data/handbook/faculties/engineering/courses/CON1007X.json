@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CON1007X",
+  "title": "Practical Training",
+  "department": "construction-economics-and-management",
+  "credits": 0,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "varies",
+  "semester_code": "X",
+  "convener": "Ms K Le Jeune",
+  "prerequisites": {
+    "text": "Refer to the programme and departmental sections in the 2026 EBE Faculty Handbook.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This practical training takes the form of 160 hours (4 weeks) of approved experience employed in any of the built environment disciplines: construction, engineering, housing, property development and management, quantity surveying, relevant local authority , and provincial and national government departments).",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

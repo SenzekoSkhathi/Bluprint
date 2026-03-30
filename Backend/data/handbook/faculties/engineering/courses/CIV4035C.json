@@ -1,0 +1,31 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CIV4035C",
+  "title": "Design Project",
+  "department": "civil-engineering",
+  "credits": 24,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "Q3",
+  "semester_code": "C",
+  "convener": "Ms L Nolutshungu/ A Benn",
+  "prerequisites": {
+    "text": "All core Civil Engineering design (CIV) courses, including successful completion of their respective pre -requisites, as well as MAM2083F, MAM2084S, CIV2042F, EGS1005F and CIV4041F.",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "MAM2083F",
+        "MAM2084S",
+        "CIV2042F",
+        "EGS1005F",
+        "CIV4041F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to develop the competence of students to perform civil engineering planning and design of a major civil engineering project and to provide a reasonable response to the problem posed in both content and communication. This is a capstone cou rse, which requires integration and application of a wide range of knowledge and skills developed in the programme. A key requirement is that the project posed must be a complex problem, made complex by a combination of conceptual and contextual considerat ions (i.e. of engineering knowledge, as well as the context in which it is applied). DEPARTMENTS IN THE FACULTY AND COURSES OFFERED 113",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

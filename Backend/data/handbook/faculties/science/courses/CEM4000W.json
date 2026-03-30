@@ -1,0 +1,31 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CEM4000W",
+  "title": "Chemistry Honours",
+  "department": "chemistry",
+  "credits": 160,
+  "nqf_level": 8,
+  "year_level": "Postgraduate (Honours)",
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Dr S Ngubane",
+  "prerequisites": {
+    "text": "A BSc degree (or equivalent) with a major in Chemistry at a sufficiently high standard to satisfy the Head of Department. Entrance is competitive; applications considered individually taking into account the entire academic record. UCT graduates require 60% or higher in CEM3005W as the normal minimum prerequisite. Applicants from other universities must satisfy the Honours steering committee that they have covered the same topics at the equivalent level. Entrance limited to 18 students. Note: CEM4000W does not carry NQF credit value; students are concurrently registered for CEM4001W (coursework, 94 NQF credits) and CEM4002W (research project, 66 NQF credits).",
+    "parsed": {
+      "type": "complex",
+      "codes_mentioned": [
+        "CEM3005W",
+        "CEM4000W",
+        "CEM4001W",
+        "CEM4002W"
+      ],
+      "note": "Complex prerequisite logic - see text"
+    }
+  },
+  "corequisites": [],
+  "outline": "The Honours course is designed to enrich the understanding of chemical theory, while developing skills in the modern research techniques and approaches required of the professional chemist. Components include: Modern instrumental methods taught through experiential workshops and lectures covering NMR spectroscopy, X-ray methods of analysis, introduction to molecular modelling and separation methods. The coursework component provides conceptual tools required in modern inorganic, organic and physical chemistry, covering inorganic spectroscopy, organometallic chemistry, bioinorganic chemistry and catalysis; stereochemistry and FMO theory, p-block synthetic methodology, green chemistry and natural products; statistical thermodynamics, quantum chemistry, solid-state chemistry and group theory. A 4-week extended practical covering aspects of synthesis, spectroscopy and analysis is carried out in the first semester alongside the core course. A workshop on scientific writing is carried out during this period. In the second semester, after submission of a research proposal, the student engages in 10 weeks of full-time research work culminating in the presentation of a short dissertation, research poster and an oral presentation to the Department.",
+  "lecture_times": "By arrangement. Lectures, tutorials and practicals start at the end of January. Lectures and tutorials are daily in the first four periods and at other times arranged. The extended practical work occupies one afternoon per week during the first semester and all day, all week during the second semester.",
+  "dp_requirements": "Not explicitly stated; completion of all practical work, tutorial assignments, generic skills course and any other compulsory activities is required.",
+  "assessment": "Examinations count 33%, coursework 26% and the Honours research project 41%. To pass, candidates must obtain an overall average of 50%, an average of 45% for the Core Course written examinations with a subminimum of 33% on each individual Core Course paper. Candidates must also attain at least 50% for the research project, 45% for the Modern Instrumental Methods and Group Theory module, and complete all practical work, tutorial assignments, and generic skills course. Each component must be passed separately for the award of the degree.",
+  "is_science_course": true
+}

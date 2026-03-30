@@ -1,0 +1,30 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MCB3012Z",
+  "title": "Research Project in Molecular & Cell Biology",
+  "department": "molecular-cell-biology",
+  "credits": 0,
+  "nqf_level": 7,
+  "year_level": "Third Year",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "Associate Professor R Ingle",
+  "prerequisites": {
+    "text": "MCB3025F or MCB3026F (or concurrent registration in MCB3023S or MCB3024S).",
+    "parsed": {
+      "type": "or",
+      "codes": [
+        "MCB3025F",
+        "MCB3026F",
+        "MCB3023S",
+        "MCB3024S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "Groups of students select and perform a research project two afternoons per week by arrangement. The work is written up in the form of a research paper. This course replaces practical classes for all third-year second semester MCB courses. All MCB majors must complete this course during the second semester.",
+  "lecture_times": "Two afternoons per week, by arrangement.",
+  "dp_requirements": "None.",
+  "assessment": "Project counts 100%.",
+  "is_science_course": true
+}

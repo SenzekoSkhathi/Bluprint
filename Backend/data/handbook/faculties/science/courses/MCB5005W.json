@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MCB5005W",
+  "title": "Molecular & Cell Biology Dissertation",
+  "department": "molecular-cell-biology",
+  "credits": 180,
+  "nqf_level": 9,
+  "year_level": "Postgraduate – Masters",
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": null,
+  "prerequisites": {
+    "text": "None",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "This course consists of an investigation of an approved topic chosen for intensive study by the candidate, culminating in the submission of a dissertation. The dissertation shall demonstrate the successful completion of a programme of training in research methods, a thorough understanding of the scientific principles underlying the research and an appropriate acquaintance with the relevant literature. It must be clearly presented and conform to the standards of the department and faculty. The dissertation will usually consist of a report detailing the conduct and analysis of the results of research performed under the close guidance of a suitably qualified supervisor/s. It should be well-conceived, acknowledge earlier research in the field, and demonstrate the ability to undertake a substantial and informed piece of research and to collect, organise and analyse material.",
+  "lecture_times": null,
+  "dp_requirements": null,
+  "assessment": "Examination by dissertation.",
+  "is_science_course": true
+}

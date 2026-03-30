@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CML3001W",
+  "title": "Corporation Law",
+  "department": "commercial-law",
+  "credits": 36,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Dr T Thabane (semester 1) and A/Prof B Mupangavanhu (semester 2)",
+  "prerequisites": {
+    "text": "All Preliminary Level courses to have been completed.",
+    "parsed": {
+      "type": "level_completion",
+      "levels_required": [
+        "preliminary"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The course will provide an overview of the law governing various structures available for the carrying on of business and will then focus on the general principles of Company Law, the provisions of the Companies Act 71 of 2008, corporate governance and corporate law reform.",
+  "lecture_times": "Seventy-two lectures and tutorials.",
+  "dp_requirements": "Please refer to the course handout and/or the intermediate year schedule.",
+  "assessment": "Optional essay/opinion 20%, mid-year test (compulsory) 30% and examination 50% (if no essay/opinion submitted: 40% mid-year test and 60% examination).",
+  "is_law_course": true
+}

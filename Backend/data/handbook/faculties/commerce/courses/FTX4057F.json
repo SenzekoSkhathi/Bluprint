@@ -1,0 +1,30 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "FTX4057F",
+  "title": "Applied Corporate Finance",
+  "department": "finance-and-tax",
+  "credits": 18,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "To be advised",
+  "prerequisites": {
+    "text": "A combined average of at least 60% for FTX3044F and FTX3045S with a minimum of 50% for each of these courses, and ECO2003F and ECO2004S (or) registration for the Bachelor of Commerce Honours specialising in Finance [CH001FTX05].",
+    "parsed": {
+      "type": "prerequisite",
+      "codes": [
+        "FTX3044F",
+        "FTX3045S",
+        "ECO2003F",
+        "ECO2004S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course exposes students to advanced topics in corporate finance. Topics covered include capital structure theory, dividend policy, mergers and acquisitions, corporate governance, and real options analysis. The course emphasizes both theoretical frameworks and practical applications.",
+  "lecture_times": "To be advised.",
+  "dp_requirements": "To be advised.",
+  "assessment": "Coursework 40%; final examination 60%.",
+  "is_commerce_course": true
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "FTX3045S",
+  "title": "Investment Management B",
+  "department": "finance-and-tax",
+  "credits": 18,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr F Peerbhai",
+  "prerequisites": {
+    "text": "A pass in FTX2024F/S and passes in ACC1011S/ACC1022Z/ACC1020H, ECO1010F/S or ECO1110F/S, and ECO1011F/S.",
+    "parsed": {
+      "type": "prerequisite",
+      "codes": [
+        "FTX2024F",
+        "ACC1011S",
+        "ECO1010F",
+        "ECO1011S"
+      ]
+    }
+  },
+  "corequisites": [
+    "STA2020F"
+  ],
+  "outline": "The course is divided into three modules that seek to provide students with a solid foundation of investment theory and its practical application. The modules covered include Fixed Income Securities, Derivatives and Financial Risk Management, and Behavioural Finance. The Fixed Income Securities module is intended to provide a practical introduction to the valuation, analysis and management of fixed income securities. The Derivatives and Financial Risk Management module focuses on providing students with an overview in practical application of the valuation of derivative securities. The Behavioural Finance module explores the psychological biases and decision making processes that influence the investor behaviour and impacts financial markets.",
+  "lecture_times": "Monday, Wednesday and Friday: 11h00 - 11h45 or 12h00 - 12h45.",
+  "dp_requirements": "Satisfactory completion of all required assignments and tests. Sub-minimum for coursework of 40% and attendance at 80% of the tutorials.",
+  "assessment": "Coursework (including tests and assignments) 50%; final examination 50%.",
+  "is_commerce_course": true
+}

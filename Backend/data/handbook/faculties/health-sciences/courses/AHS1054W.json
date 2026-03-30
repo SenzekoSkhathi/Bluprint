@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AHS1054W",
+  "title": "South African Sign Language",
+  "department": "health-and-rehabilitation-sciences",
+  "credits": 8,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Miss F Camroodien-Surve",
+  "prerequisites": {
+    "text": "None",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "The aim of this course is to ac quire South African Sign Language (S ASL) at a basic level to obtain case history, give instructions (plus diagnostic testing), feedback and informational counselling, and to demonstrate use of appropriate communicatio n strategies for sign language. Content includes greetings, basic communication, finger-spelling and numbers, ha nd-shape, location, orientation, movement and non-manual features, production and reception of signs, dominant and passive hands, how to change the language structur e from SASL into English and E nglish into SASL, specific sign vocabulary relating to audiology and speech and language therapy, and ge neral sign vocabulary. Students learn to conduct a case history using basic sign language. They acquire an attitude of empathy and respect for multilingual and mu lticultural diversity. Teaching and learning activities include modelling, lectures, group-work, role-play, and videos/DVDs. St udents have interactions with members of the Deaf community.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "For discipline specific courses in the BSc Audiology and BSc in Speech-Language Pathology programmes a minimum coursework mark of 40% is required for entrance into the examination..",
+  "assessment": "The course grade is made up of a cour sework mark (weighted 60%) and a final examination mark (weighted 40%). If a supplementary examination is awarded, it will count 40 % of the final mark, as the course work mark will still be included in the final mark.",
+  "is_health_sciences_course": true
+}

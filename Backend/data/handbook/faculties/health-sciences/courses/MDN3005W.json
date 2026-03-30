@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MDN3005W",
+  "title": "Scientific Principles of Cosmetic Formulations",
+  "department": "medicine",
+  "credits": 30,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Dr N Sishi and Dr N Vorster",
+  "prerequisites": {
+    "text": "(a) B Sc or equivalent with Ch emistry 3, or(b) A degree with Biochemistry 3 (with at least Chemistry 2 to be eligible for admission)",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "The aim of this course is to provide the student with a fundamental knowledge and understanding of the physical chemistry at the surface of phase interfaces in a multi-pha se system such as is found in most cosmetic formulations, as well as a workin g knowledge of raw materials, their structure, reactivity, interaction, safety, and their function within a cosmetic formulation. This knowledge and understanding will equip the student to solve formulation problems and/or formulation stability issues 162 DEPARTMENTS IN THE FACULTY in real-life situations. Content in cludes a study of raw materials such as fats, oils and waxes, gums, thickeners and resins, polymers, pigments and dyes, su rfactants, preservatives and antioxidants, fragrance, extracts and oils; and pr inciples of formulation science, including colloids and interfaces, colloid stability theory, rheology, solubility parameters and polymer-plastics technology.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "A minimum of 90% attendance of all lectures; a year mark of at least 50%, unless approved otherwise by the programme convener.",
+  "assessment": "The course mark contributes 70% to the fi nal mark. The final examination contributes 30% to the final mark. The cour se mark includes tests (multiple-choice questions, open-ended questions, case-studies); assignments (written report or oral presentation) on topical issues and practical reports.",
+  "is_health_sciences_course": true
+}

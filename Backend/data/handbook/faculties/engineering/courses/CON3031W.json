@@ -1,0 +1,32 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CON3031W",
+  "title": "Measurement & Design Appraisal II",
+  "department": "construction-economics-and-management",
+  "credits": 26,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Ms E Edwardes",
+  "prerequisites": {
+    "text": "CON2006W and CON2037W",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "CON2006W",
+        "CON2037W"
+      ]
+    }
+  },
+  "corequisites": [
+    "CON3012W",
+    "CON3030F",
+    "CON3043W"
+  ],
+  "outline": "This course aims to develop the understanding of measurement and design appraisal. The theoretical aspects of the course are covered in lectures and includes detailed studies on: principles of measurement and documentation used in measurement and descriptive clauses in the Standard System of Measuring Building Work (6th ed.) The practical component of the syllabus is a progression from Measurement and Design Appraisal 1. The principles of measurement are applied to advanced projects with particular emphasis on simple framed and load -bearing multi -storey buildings by means of elemental quantification, covering: foundations; reinforced concrete structures; plumbing and drainage; architectural metalwork; structural steelwork; Specialist work; and external works . The practicals require complete computerised documentation with competence in the WinQS and/or QSPlus software package(s). Students measure all elements of a small commercial structure. DEPARTMENTS IN THE FACULTY AND COURSES OFFERED 123",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

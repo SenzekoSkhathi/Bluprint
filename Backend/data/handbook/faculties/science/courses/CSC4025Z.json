@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CSC4025Z",
+  "title": "Artificial Intelligence",
+  "department": "computer-science",
+  "credits": 12,
+  "nqf_level": 8,
+  "year_level": "Postgraduate (Honours)",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "Dr J Buys",
+  "prerequisites": {
+    "text": "Admission to BSc Hons specialising in Computer Science or Information Technology.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "This course will expose students to foundational concepts and computational techniques in modern Artificial Intelligence and their theoretical underpinnings in logic, search, optimisation and mathematical statistics. Students will also learn how to select and implement these techniques to solve various real world problems. Core topics include: problem solving, knowledge representation and reasoning, machine learning and dealing with uncertainty, with selected topics from: planning, agents and natural language processing.",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "None.",
+  "assessment": "Final examination: 60%; Practical assignments: 40%.",
+  "is_science_course": true
+}

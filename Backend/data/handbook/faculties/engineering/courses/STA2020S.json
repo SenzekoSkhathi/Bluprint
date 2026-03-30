@@ -1,0 +1,41 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "STA2020S",
+  "title": "Applied Statistics",
+  "department": "statistical-sciences",
+  "credits": 24,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "N Watson",
+  "prerequisites": {
+    "text": "A pass in STA1000F/S/P/L or STA1006S or STA1106H or STA1100S or STA1007S or STA1008F/S and MAM1000W or MAM1031F or MAM1033F or MAM1004F/S or MAM1010F/S or MAM1020F/S or MAM1110F/H or MAM1005H.",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "STA1000F",
+        "STA1006S",
+        "STA1106H",
+        "STA1100S",
+        "STA1007S",
+        "STA1008F",
+        "MAM1000W",
+        "MAM1031F",
+        "MAM1033F",
+        "MAM1004F",
+        "MAM1010F",
+        "MAM1020F",
+        "MAM1110F",
+        "MAM1005H"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course is designed to extend the student’s basic knowledge, acquired in STA1000F/S/P/L. The emphasis of the course is on applying statistical methods and modelling techniques to data rather than focusing on the mathematical rigour underpinning these m ethods. Topics covered include: Analysis of variance and experimental design; revision and extension of simple linear regression; multiple regression; logistic regression; time series analysis; and non -parametric statistics. Students will analyse data using R.",
+  "lecture_times": "Monday - Thursday, 7th period",
+  "dp_requirements": "Satisfactory attendance of lectures and lab practicals and the completion of class tests, mini practical lab tests, and practical tests as set out in course outline. Class record of at least 35% and at least 35% for Practical test.",
+  "assessment": "Class record 40% and a 3-hour exam counting 60%. Weights will be adjusted in the case of missed assessments, as detailed in the course outline.",
+  "is_engineering_course": false,
+  "offered_by_faculty": "science"
+}

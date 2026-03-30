@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MEC2045S",
+  "title": "Applied Engineering Mechanics",
+  "department": "mechanical-engineering",
+  "credits": 16,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Professor S Chung Kim Yuen",
+  "prerequisites": {
+    "text": "MEC1009F/S and MEC2023F/S or MEC2047F/S",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "MEC1009F",
+        "MEC2023F",
+        "MEC2047F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course provides an introduction to basic materials, basic stress and strain analyses, beam deflections and stress analysis, gears and gear forces, rotating unbalance, vibrations and gyroscopic motion. Students will learn how to perform kinematic analy sis of gear trains, energy storage calculations in flywheels and analyse single -degree-of-freedom models in simple free and forced vibrating systems. Students will learn to analyse rotating machinery, flywheels and gyroscopes. They will also be able to perform basic deflection and stress calculations for statically determinate beams, and understand different classes of materials and their uses in structures.",
+  "lecture_times": "4 lectures and 1 tutorial per week",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

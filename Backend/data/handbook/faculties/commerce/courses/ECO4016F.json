@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "ECO4016F",
+  "title": "Econometrics",
+  "department": "economics",
+  "credits": 16,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr C Makanza",
+  "prerequisites": {
+    "text": "ECO4112F.",
+    "parsed": {
+      "type": "prerequisite",
+      "codes": [
+        "ECO4112F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course is an introduction to econometric theory and practice. It provides the tools with which to test hypotheses and generate predictions of economic activity. The main focus is on causal inference with non-experimental data. The course has a strong lab-based component in which students work with the statistical computing package Stata. The topics covered include omitted variable bias and measurement error in regression models; panel data methods; limited dependent variables and sample selection corrections; and basic regression analysis with time series data.",
+  "lecture_times": "To be announced.",
+  "dp_requirements": "None.",
+  "assessment": "Coursework 60%; examination 40%. A supplementary exam will only be offered for ECO4016F during the mid-year vacation.",
+  "is_commerce_course": true
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "APG3035F",
+  "title": "Theory of Structures II",
+  "department": "architecture-planning-geomatics",
+  "credits": 10,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "TBA",
+  "prerequisites": {
+    "text": "APG2009F",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "APG2009F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "Understand and be able to produce various structural concepts of all vertical and horizontal spanning elements pertaining to buildings beyond the residential scale. The concepts must show how the structure carries the load (in all three directions), and the most appropriate material choice. Here vector and other relevant force diagrams are used to argue the form and material. Structural elements include bridges, large span building structures and tall buildings, etc. planar space frames, shells, girders, etc. are explored in this section.",
+  "lecture_times": "Refer to departmental timetable",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

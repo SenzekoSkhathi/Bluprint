@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "ECO3020F",
+  "title": "Advanced Macro & Microeconomics",
+  "department": "economics",
+  "credits": 18,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Associate Professor A Kerr",
+  "prerequisites": {
+    "text": "MAM1010 (or equivalent) or MAM1031F or MAM1032S, ECO2003 and ECO2004.",
+    "parsed": {
+      "type": "prerequisite",
+      "codes": [
+        "MAM1010F",
+        "ECO2003F",
+        "ECO2004S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course has two, equally weighted components: the microeconomics component and the macroeconomics component. The first 6 weeks of the course will focus on Microeconomics. This section of the course will focus on the dynamic interplay of behaviour and institutions, and the outcomes produced through their interaction. The macroeconomics component follows Stephen Williamson's Macroeconomics and employs his graphical and sectoral approach, which employs a micro foundations approach to macroeconomics. It starts by developing a basic closed economy monetary model and expands it to a full open economy monetary model.",
+  "lecture_times": "09h00 - 10h00 Monday, Tuesday, Wednesday, Thursday, Friday; 10h00 - 11h00 Monday, Tuesday, Wednesday, Thursday, Friday.",
+  "dp_requirements": "None.",
+  "assessment": "Coursework 50%; Exam 50%.",
+  "is_commerce_course": true
+}

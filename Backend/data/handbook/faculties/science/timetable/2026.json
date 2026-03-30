@@ -1,0 +1,1110 @@
+{
+  "$schema": "handbook-timetable-v1",
+  "faculty": "science",
+  "year": 2026,
+  "handbook_pages": [237, 251],
+  "lecture_periods": {
+    "1": "08h00-08h45",
+    "2": "09h00-09h45",
+    "3": "10h00-10h45",
+    "4": "11h00-11h45",
+    "5": "12h00-12h45",
+    "meridian": "13h00-13h45",
+    "6": "14h00-14h45",
+    "7": "15h00-15h45",
+    "8": "16h00-16h45",
+    "9": "17h00-17h45"
+  },
+  "practical_block": "14h00-17h00",
+  "note": "Lecture periods per day. Practicals/tutorials typically run in afternoon blocks (14h00-17h00 or 14h00-18h00). 'M to F' = Monday to Friday, 'M to Th' = Monday to Thursday, etc. Lecture period '1/3' means period 1 OR period 3 depending on stream.",
+  "courses": [
+    {
+      "code": "AGE1002S",
+      "title": "The Human Planet: Prehistory to Present",
+      "lecture_times": "5 M to Th",
+      "lecture_period": 5,
+      "semester": "S2",
+      "practicals": "By arrangement; F 5th"
+    },
+    {
+      "code": "AGE2011S",
+      "title": "Human Evolution",
+      "lecture_times": "3 M to Th",
+      "lecture_period": 3,
+      "semester": "S2",
+      "practicals": "One per week, by arrangement"
+    },
+    {
+      "code": "AGE2012F",
+      "title": "The First People",
+      "lecture_times": "3 M to Th",
+      "lecture_period": 3,
+      "semester": "S1",
+      "practicals": "One per week, by arrangement"
+    },
+    {
+      "code": "AGE3006H",
+      "title": "Directed Reading & Research",
+      "lecture_times": "By arrangement",
+      "lecture_period": null,
+      "semester": "FY",
+      "practicals": "None"
+    },
+    {
+      "code": "AGE3011F",
+      "title": "The Roots of Recent African Identity",
+      "lecture_times": "4 M to Th",
+      "lecture_period": 4,
+      "semester": "S1",
+      "practicals": "One per week, by arrangement"
+    },
+    {
+      "code": "AGE3012S",
+      "title": "Archaeologies of Dominance & Resistance in the Last 500 Years",
+      "lecture_times": "5 Tu to Th",
+      "lecture_period": 5,
+      "semester": "S2",
+      "practicals": "M and F respectively, 5th"
+    },
+    {
+      "code": "AGE3013H",
+      "title": "Archaeology in Practice",
+      "lecture_times": "See departmental entry",
+      "lecture_period": null,
+      "semester": "FY",
+      "practicals": "None"
+    },
+    {
+      "code": "AST1000S",
+      "title": "Introduction to Astronomy",
+      "lecture_times": "5 M to F",
+      "lecture_period": 5,
+      "semester": "S2",
+      "practicals": "W 14h00-17h00"
+    },
+    {
+      "code": "AST2002H",
+      "title": "Astrophysics",
+      "lecture_times": "2 M to F (Term 2 & 4)",
+      "lecture_period": 2,
+      "semester": "FY",
+      "practicals": "W 14h00-17h00"
+    },
+    {
+      "code": "AST2003H",
+      "title": "Astronomical Techniques",
+      "lecture_times": "2 M to F (Term 1 & 3)",
+      "lecture_period": 2,
+      "semester": "FY",
+      "practicals": "W 14h00-17h00"
+    },
+    {
+      "code": "AST3002F",
+      "title": "Stellar Astrophysics",
+      "lecture_times": "2 M to F",
+      "lecture_period": 2,
+      "semester": "S1",
+      "practicals": "W 14h00-17h00"
+    },
+    {
+      "code": "AST3003S",
+      "title": "Galactic & Extragalactic Astrophysics",
+      "lecture_times": "2 M to F",
+      "lecture_period": 2,
+      "semester": "S2",
+      "practicals": "W 14h00-17h00"
+    },
+    {
+      "code": "BIO1000F",
+      "title": "Cell Biology",
+      "lecture_times": "5 M to F",
+      "lecture_period": 5,
+      "semester": "S1",
+      "practicals": "One prac a week, M,Tu,W or Th 14h00-17h00"
+    },
+    {
+      "code": "BIO1000H",
+      "title": "Cell Biology",
+      "lecture_times": "2 M to F",
+      "lecture_period": 2,
+      "semester": "FY",
+      "practicals": "One prac a week, F 14h00-17h00"
+    },
+    {
+      "code": "BIO1004S",
+      "title": "Biological Diversity",
+      "lecture_times": "5 M to F",
+      "lecture_period": 5,
+      "semester": "S2",
+      "practicals": "One prac a week, M,Tu,W or Th 14h00-17h00"
+    },
+    {
+      "code": "BIO2014F",
+      "title": "Principles of Ecology & Evolution",
+      "lecture_times": "2 M to F",
+      "lecture_period": 2,
+      "semester": "S1",
+      "practicals": "M 14h00-17h00"
+    },
+    {
+      "code": "BIO2015F",
+      "title": "Vertebrate Diversity & Functional Biology",
+      "lecture_times": "3 M to F",
+      "lecture_period": 3,
+      "semester": "S1",
+      "practicals": "W 14h00-17h00"
+    },
+    {
+      "code": "BIO2016S",
+      "title": "Invertebrate Diversity & Functional Biology",
+      "lecture_times": "3 M to F",
+      "lecture_period": 3,
+      "semester": "S2",
+      "practicals": "W 14h00-17h00"
+    },
+    {
+      "code": "BIO2017S",
+      "title": "Plant Diversity & Functional Biology",
+      "lecture_times": "2 M to F",
+      "lecture_period": 2,
+      "semester": "S2",
+      "practicals": "Th 14h00-17h00"
+    },
+    {
+      "code": "BIO3002F",
+      "title": "Marine Ecosystems",
+      "lecture_times": "1 M to F",
+      "lecture_period": 1,
+      "semester": "S1",
+      "practicals": "W 14h00-17h00"
+    },
+    {
+      "code": "BIO3013F",
+      "title": "Global Change Ecology",
+      "lecture_times": "2 M to F",
+      "lecture_period": 2,
+      "semester": "S1",
+      "practicals": "M 14h00-17h00"
+    },
+    {
+      "code": "BIO3014S",
+      "title": "Conservation: Genes, Populations & Biodiversity",
+      "lecture_times": "2 M to F",
+      "lecture_period": 2,
+      "semester": "S2",
+      "practicals": "M 14h00-17h00"
+    },
+    {
+      "code": "BIO3018F",
+      "title": "Ecology and Evolution in the Field",
+      "lecture_times": "5 M to F",
+      "lecture_period": 5,
+      "semester": "S1",
+      "practicals": "By arrangement"
+    },
+    {
+      "code": "BIO3019S",
+      "title": "Quantitative Biology",
+      "lecture_times": "5 M to F",
+      "lecture_period": 5,
+      "semester": "S2",
+      "practicals": "Tu 14h00-17h00"
+    },
+    {
+      "code": "BIO3022S",
+      "title": "Science of Managing the Human Impact on the Sea",
+      "lecture_times": "3 M to F",
+      "lecture_period": 3,
+      "semester": "S2",
+      "practicals": "Th 14h00-17h00"
+    },
+    {
+      "code": "CEM1000W",
+      "title": "Chemistry 1000",
+      "lecture_times": "2 or 4 M to F",
+      "lecture_period": [2, 4],
+      "semester": "FY",
+      "practicals": "Prac: Tu or Th or F, 14h00-17h00; Tut: 2 or 4 Thu"
+    },
+    {
+      "code": "CEM1009H",
+      "title": "Chemistry 1009",
+      "lecture_times": "4 W to F",
+      "lecture_period": 4,
+      "semester": "FY",
+      "practicals": "Prac: W 14h00-17h00; Tut: 4 M, Tu"
+    },
+    {
+      "code": "CEM1010H",
+      "title": "Chemistry 1010",
+      "lecture_times": "4 M to W, F",
+      "lecture_period": 4,
+      "semester": "FY",
+      "practicals": "Prac: Wed 14h00-17h00; Tut: 4 Th"
+    },
+    {
+      "code": "CEM2005W",
+      "title": "Intermediate Chemistry",
+      "lecture_times": "3 M to F",
+      "lecture_period": 3,
+      "semester": "FY",
+      "practicals": "Prac: Th 14h00-17h00 EBE Tu 14h00-17h00; Tut: by arrangement"
+    },
+    {
+      "code": "CEM3005W",
+      "title": "Chemistry 3005",
+      "lecture_times": "3 M to F",
+      "lecture_period": 3,
+      "semester": "FY",
+      "practicals": "Two pracs per week W and F, 14h00-17h00"
+    },
+    {
+      "code": "CSC1010H",
+      "title": "Computer Science 1010",
+      "lecture_times": "5 M to F",
+      "lecture_period": 5,
+      "semester": "FY",
+      "practicals": "Th 14h00-17h30"
+    },
+    {
+      "code": "CSC1011H",
+      "title": "Computer Science 1011",
+      "lecture_times": "4 M to Th",
+      "lecture_period": 4,
+      "semester": "FY",
+      "practicals": "M 14h00-16h00"
+    },
+    {
+      "code": "CSC1015F",
+      "title": "Computer Science 1015",
+      "lecture_times": "4 or 5 M to F",
+      "lecture_period": [4, 5],
+      "semester": "S1",
+      "practicals": "M, Tu, W or Th 14h00-16h00 or 16h00-18h00"
+    },
+    {
+      "code": "CSC1015S",
+      "title": "Computer Science 1015",
+      "lecture_times": "4 or 5 M to F",
+      "lecture_period": [4, 5],
+      "semester": "S2",
+      "practicals": "M, Tu or W 14h00-17h30"
+    },
+    {
+      "code": "CSC1016S",
+      "title": "Computer Science 1016",
+      "lecture_times": "4 or 5 M to F",
+      "lecture_period": [4, 5],
+      "semester": "S2",
+      "practicals": "M, Tu or W, 14h00-16h00 or 16h00-18h00"
+    },
+    {
+      "code": "CSC2001F",
+      "title": "Computer Science 2001",
+      "lecture_times": "2 M to F",
+      "lecture_period": 2,
+      "semester": "S1",
+      "practicals": "One prac per week, M,Tu,W,Th or F 14h00-18h00"
+    },
+    {
+      "code": "CSC2002S",
+      "title": "Computer Science 2002",
+      "lecture_times": "2 M to F",
+      "lecture_period": 2,
+      "semester": "S2",
+      "practicals": "M to F 14h00-18h00"
+    },
+    {
+      "code": "CSC2041F",
+      "title": "Introduction to AI 1: Knowledge Representation",
+      "lecture_times": "3 M to F",
+      "lecture_period": 3,
+      "semester": "S1",
+      "practicals": "One prac per week, M,Tu,W,Th or F 14h00-18h00"
+    },
+    {
+      "code": "CSC2042S",
+      "title": "Introduction to AI 2: Machine Learning",
+      "lecture_times": "3 M to F",
+      "lecture_period": 3,
+      "semester": "S2",
+      "practicals": "One prac per week, M,Tu,W,Th or F 14h00-18h00"
+    },
+    {
+      "code": "CSC3002F",
+      "title": "Networks & Operating Systems",
+      "lecture_times": "2 M to F",
+      "lecture_period": 2,
+      "semester": "S1",
+      "practicals": "M to F 14h00-18h00"
+    },
+    {
+      "code": "CSC3003S",
+      "title": "Advanced Programming & Algorithms",
+      "lecture_times": "2 M to F",
+      "lecture_period": 2,
+      "semester": "S2",
+      "practicals": "M to F 14h00-18h00"
+    },
+    {
+      "code": "CSC3024S",
+      "title": "Introduction to C++ Programming",
+      "lecture_times": "3 M, Th, F",
+      "lecture_period": 3,
+      "semester": "S2",
+      "practicals": "Two 4-hour pracs per week, by arrangement"
+    },
+    {
+      "code": "EGS1007S",
+      "title": "Human & Physical Systems",
+      "lecture_times": "2 M to F",
+      "lecture_period": 2,
+      "semester": "S2",
+      "practicals": "M or Tu or Th, 14h00-17h00"
+    },
+    {
+      "code": "EGS2016F",
+      "title": "Geographies Across Space",
+      "lecture_times": "5 M to F",
+      "lecture_period": 5,
+      "semester": "S1",
+      "practicals": "F 14h00-17h00"
+    },
+    {
+      "code": "EGS2017S",
+      "title": "Geographies Across Time",
+      "lecture_times": "5 M to F",
+      "lecture_period": 5,
+      "semester": "S2",
+      "practicals": "M 14h00-17h00"
+    },
+    {
+      "code": "EGS3012S",
+      "title": "Atmospheric Science",
+      "lecture_times": "1 M to F",
+      "lecture_period": 1,
+      "semester": "S2",
+      "practicals": "Tu or W, 14h00-17h00"
+    },
+    {
+      "code": "EGS3021F",
+      "title": "Sustainability & Environment",
+      "lecture_times": "3 M to F",
+      "lecture_period": 3,
+      "semester": "S1",
+      "practicals": "W 14h00-17h00"
+    },
+    {
+      "code": "EGS3022S",
+      "title": "Geographic Thought",
+      "lecture_times": "4 M to F",
+      "lecture_period": 4,
+      "semester": "S2",
+      "practicals": "W 14h00-17h00"
+    },
+    {
+      "code": "EGS3023F",
+      "title": "Anthropocene Environments in Perspective",
+      "lecture_times": "5 M to F",
+      "lecture_period": 5,
+      "semester": "S1",
+      "practicals": "Th 14h00-17h00"
+    },
+    {
+      "code": "GEO1006S",
+      "title": "Intro to Minerals, Rocks & Structure",
+      "lecture_times": "5 M to F",
+      "lecture_period": 5,
+      "semester": "S2",
+      "practicals": "F 14h00-17h00"
+    },
+    {
+      "code": "GEO1009F",
+      "title": "Intro to Earth & Environmental Sciences",
+      "lecture_times": "2 M to F",
+      "lecture_period": 2,
+      "semester": "S1",
+      "practicals": "One prac a week, M or Tu or Th or F, 14h00-17h00"
+    },
+    {
+      "code": "GEO2001F",
+      "title": "Mineralogy & Crystallography",
+      "lecture_times": "2 M to F",
+      "lecture_period": 2,
+      "semester": "S1",
+      "practicals": "W 14h00-17h00"
+    },
+    {
+      "code": "GEO2004S",
+      "title": "Physical Geology",
+      "lecture_times": "2 M to F",
+      "lecture_period": 2,
+      "semester": "S2",
+      "practicals": "W 14h00-17h00"
+    },
+    {
+      "code": "GEO2005X",
+      "title": "Field Geology & Geological Mapping",
+      "lecture_times": "None",
+      "lecture_period": null,
+      "semester": "FY",
+      "practicals": "See departmental entry"
+    },
+    {
+      "code": "GEO3001S",
+      "title": "Stratigraphy & Economic Geology",
+      "lecture_times": "2 M to F",
+      "lecture_period": 2,
+      "semester": "S2",
+      "practicals": "Two pracs per week Tu and Th 14h00-17h00"
+    },
+    {
+      "code": "GEO3005F",
+      "title": "Petrology & Structural Geology",
+      "lecture_times": "2 M to F",
+      "lecture_period": 2,
+      "semester": "S1",
+      "practicals": "Tu and Th, 14h00-17h00"
+    },
+    {
+      "code": "HUB2019F",
+      "title": "Integrated Anatomical & Physiological Sciences A",
+      "lecture_times": "1 M to F",
+      "lecture_period": 1,
+      "semester": "S1",
+      "practicals": "M or Tu, 14h00-17h00"
+    },
+    {
+      "code": "HUB2021S",
+      "title": "Integrated Anatomical & Physiological Sciences B",
+      "lecture_times": "1 M to F",
+      "lecture_period": 1,
+      "semester": "S2",
+      "practicals": "M or Tu, 14h00-17h00"
+    },
+    {
+      "code": "HUB3006F",
+      "title": "Applied Human Biology",
+      "lecture_times": "1 M to F",
+      "lecture_period": 1,
+      "semester": "S1",
+      "practicals": "W or Th, 14h00-17h00"
+    },
+    {
+      "code": "HUB3007S",
+      "title": "Human Neurosciences",
+      "lecture_times": "1 M to F",
+      "lecture_period": 1,
+      "semester": "S2",
+      "practicals": "W or Th, 14h00-17h00"
+    },
+    {
+      "code": "MAM1031F",
+      "title": "Mathematics 1031",
+      "lecture_times": "1 or 3, M to F",
+      "lecture_period": [1, 3],
+      "semester": "S1",
+      "practicals": "By arrangement"
+    },
+    {
+      "code": "MAM1032S",
+      "title": "Mathematics 1032",
+      "lecture_times": "1 or 3, M to F",
+      "lecture_period": [1, 3],
+      "semester": "S2",
+      "practicals": "By arrangement"
+    },
+    {
+      "code": "MAM1033F",
+      "title": "Mathematics 1033",
+      "lecture_times": "1 or 3, M to F",
+      "lecture_period": [1, 3],
+      "semester": "S1",
+      "practicals": "By arrangement"
+    },
+    {
+      "code": "MAM1034S",
+      "title": "Mathematics 1034",
+      "lecture_times": "1 or 3, M to F",
+      "lecture_period": [1, 3],
+      "semester": "S2",
+      "practicals": "By arrangement"
+    },
+    {
+      "code": "MAM1004F",
+      "title": "Mathematics 1004",
+      "lecture_times": "1 M to F",
+      "lecture_period": 1,
+      "semester": "S1",
+      "practicals": "M or W, 14h00-16h00"
+    },
+    {
+      "code": "MAM1004S",
+      "title": "Mathematics 1004",
+      "lecture_times": "Meridian M to F",
+      "lecture_period": "meridian",
+      "semester": "S2",
+      "practicals": "By arrangement; M or W"
+    },
+    {
+      "code": "MAM1005H",
+      "title": "Mathematics 1005",
+      "lecture_times": "1 or 3 M to F",
+      "lecture_period": [1, 3],
+      "semester": "FY",
+      "practicals": "F 08h00-09h00, M 14h00-16h00"
+    },
+    {
+      "code": "MAM1006H",
+      "title": "Mathematics 1006",
+      "lecture_times": "1, three days per week",
+      "lecture_period": 1,
+      "semester": "FY",
+      "practicals": "1, two days per week"
+    },
+    {
+      "code": "MAM1008S",
+      "title": "Introduction to Discrete Mathematics",
+      "lecture_times": "1 or 3 M and W",
+      "lecture_period": [1, 3],
+      "semester": "S2",
+      "practicals": "By arrangement"
+    },
+    {
+      "code": "MAM1019H",
+      "title": "Fundamentals of Mathematics",
+      "lecture_times": "Meridian",
+      "lecture_period": "meridian",
+      "semester": "FY",
+      "practicals": "M, W 13h00-14h00"
+    },
+    {
+      "code": "MAM1043H",
+      "title": "Modelling & Applied Computing",
+      "lecture_times": "2 M to F",
+      "lecture_period": 2,
+      "semester": "FY",
+      "practicals": "One hour per week by arrangement"
+    },
+    {
+      "code": "MAM1044H",
+      "title": "Dynamics",
+      "lecture_times": "2 M to F",
+      "lecture_period": 2,
+      "semester": "FY",
+      "practicals": "Every second F, 14h00-16h00"
+    },
+    {
+      "code": "MAM2010F",
+      "title": "Advanced Calculus (2AC)",
+      "lecture_times": "5 Tu and F",
+      "lecture_period": 5,
+      "semester": "S1",
+      "practicals": "Th or F, 14h00-16h00"
+    },
+    {
+      "code": "MAM2011F",
+      "title": "Linear Algebra (2LA)",
+      "lecture_times": "5 M, W and Thu",
+      "lecture_period": 5,
+      "semester": "S1",
+      "practicals": "Th or F, 14h00-16h00"
+    },
+    {
+      "code": "MAM2012S",
+      "title": "Differential Equations (2DE)",
+      "lecture_times": "4 Tu, W and F",
+      "lecture_period": 4,
+      "semester": "S2",
+      "practicals": "Th or F, 14h00-16h00"
+    },
+    {
+      "code": "MAM2013S",
+      "title": "Introductory Algebra (2IA)",
+      "lecture_times": "5 Tu, W and F",
+      "lecture_period": 5,
+      "semester": "S2",
+      "practicals": "Th or F, 14h00-16h00"
+    },
+    {
+      "code": "MAM2014S",
+      "title": "Real Analysis (2RA)",
+      "lecture_times": "4 M and Thu; or 5 M, W and Thu",
+      "lecture_period": [4, 5],
+      "semester": "S2",
+      "practicals": "Th or F, 14h00-16h00"
+    },
+    {
+      "code": "MAM2040F",
+      "title": "Ordinary Differential Equations (2OD)",
+      "lecture_times": "3 M to F",
+      "lecture_period": 3,
+      "semester": "S1",
+      "practicals": "Th 14h00-16h00"
+    },
+    {
+      "code": "MAM2041F",
+      "title": "Numerical Analysis (2NA)",
+      "lecture_times": "3 M to F",
+      "lecture_period": 3,
+      "semester": "S1",
+      "practicals": "Th 14h00-16h00"
+    },
+    {
+      "code": "MAM2042S",
+      "title": "Non-Linear Dynamics (2ND)",
+      "lecture_times": "3 M to F",
+      "lecture_period": 3,
+      "semester": "S2",
+      "practicals": "Th 14h00-16h00"
+    },
+    {
+      "code": "MAM2043S",
+      "title": "Boundary-Value Problems (2BP)",
+      "lecture_times": "3 M to F",
+      "lecture_period": 3,
+      "semester": "S2",
+      "practicals": "Th 14h00-16h00"
+    },
+    {
+      "code": "MAM3010F",
+      "title": "Metric Spaces (3MS)",
+      "lecture_times": "5 M to F",
+      "lecture_period": 5,
+      "semester": "S1",
+      "practicals": "F 09h00-10h00; 14h00-15h00"
+    },
+    {
+      "code": "MAM3011F",
+      "title": "Modern Abstract Algebra (3AL)",
+      "lecture_times": "5 M to F",
+      "lecture_period": 5,
+      "semester": "S1",
+      "practicals": "Th 14h00-16h00"
+    },
+    {
+      "code": "MAM3012F",
+      "title": "Discrete Mathematics (3DM)",
+      "lecture_times": "4 M to F",
+      "lecture_period": 4,
+      "semester": "S1",
+      "practicals": "See departmental entry"
+    },
+    {
+      "code": "MAM3012S",
+      "title": "Discrete Mathematics (3DM)",
+      "lecture_times": "4 M to F",
+      "lecture_period": 4,
+      "semester": "S2",
+      "practicals": "See departmental entry"
+    },
+    {
+      "code": "MAM3013S",
+      "title": "Topics in Algebra (3TA)",
+      "lecture_times": "5 M to F",
+      "lecture_period": 5,
+      "semester": "S2",
+      "practicals": "Th 14h00-16h00"
+    },
+    {
+      "code": "MAM3014S",
+      "title": "Topics in Analysis (3TN)",
+      "lecture_times": "5 M to F",
+      "lecture_period": 5,
+      "semester": "S2",
+      "practicals": "Th 13h00-15h00"
+    },
+    {
+      "code": "MAM3015F",
+      "title": "Complex Analysis (3CA)",
+      "lecture_times": "4 M to F",
+      "lecture_period": 4,
+      "semester": "S1",
+      "practicals": "Th 13h00-14h00 or 14h00-15h00"
+    },
+    {
+      "code": "MAM3015S",
+      "title": "Complex Analysis (3CA)",
+      "lecture_times": "4 M to F",
+      "lecture_period": 4,
+      "semester": "S2",
+      "practicals": "Th 13h00-14h00 or 14h00-15h00"
+    },
+    {
+      "code": "MAM3042F",
+      "title": "Advanced Numerical Methods (3AN)",
+      "lecture_times": "3 M to F",
+      "lecture_period": 3,
+      "semester": "S1",
+      "practicals": "Th 14h00-16h00"
+    },
+    {
+      "code": "MAM3042S",
+      "title": "Advanced Numerical Methods (3AN)",
+      "lecture_times": "3 M to F",
+      "lecture_period": 3,
+      "semester": "S2",
+      "practicals": "Th 14h00-16h00"
+    },
+    {
+      "code": "MAM3043F",
+      "title": "Methods of Mathematical Physics (3MP)",
+      "lecture_times": "3 M to F",
+      "lecture_period": 3,
+      "semester": "S1",
+      "practicals": "Th 14h00-16h00"
+    },
+    {
+      "code": "MAM3043S",
+      "title": "Methods of Mathematical Physics (3MP)",
+      "lecture_times": "3 M to F",
+      "lecture_period": 3,
+      "semester": "S2",
+      "practicals": "Th 14h00-16h00"
+    },
+    {
+      "code": "MAM3044F",
+      "title": "Functions of a Complex Variable (3CV)",
+      "lecture_times": "3 M to F",
+      "lecture_period": 3,
+      "semester": "S1",
+      "practicals": "See departmental entry"
+    },
+    {
+      "code": "MAM3044S",
+      "title": "Functions of a Complex Variable (3CV)",
+      "lecture_times": "3 M to F",
+      "lecture_period": 3,
+      "semester": "S2",
+      "practicals": "See departmental entry"
+    },
+    {
+      "code": "MAM3045F",
+      "title": "Introduction to General Relativity (3GR)",
+      "lecture_times": "3 M to F",
+      "lecture_period": 3,
+      "semester": "S1",
+      "practicals": "See departmental entry"
+    },
+    {
+      "code": "MAM3045S",
+      "title": "Introduction to General Relativity (3GR)",
+      "lecture_times": "3 M to F",
+      "lecture_period": 3,
+      "semester": "S2",
+      "practicals": "See departmental entry"
+    },
+    {
+      "code": "MAM3046F",
+      "title": "Fluid Dynamics (3FD)",
+      "lecture_times": "5 M to F; Th 12h00-14h00",
+      "lecture_period": 5,
+      "semester": "S1",
+      "practicals": "Th 12h00-14h00"
+    },
+    {
+      "code": "MAM3046S",
+      "title": "Fluid Dynamics (3FD)",
+      "lecture_times": "5 M to F; Th 12h00-14h00",
+      "lecture_period": 5,
+      "semester": "S2",
+      "practicals": "Th 12h00-14h00"
+    },
+    {
+      "code": "MCB2020F",
+      "title": "Biological Information Transfer",
+      "lecture_times": "4 M to F",
+      "lecture_period": 4,
+      "semester": "S1",
+      "practicals": "Th or F 14h00-17h00"
+    },
+    {
+      "code": "MCB2021F",
+      "title": "Molecular Bioscience",
+      "lecture_times": "5 M to F",
+      "lecture_period": 5,
+      "semester": "S1",
+      "practicals": "M or Tu 14h00-17h00"
+    },
+    {
+      "code": "MCB2022S",
+      "title": "Metabolism and Bioengineering",
+      "lecture_times": "5 M to F",
+      "lecture_period": 5,
+      "semester": "S2",
+      "practicals": "M or Tu 14h00-17h00"
+    },
+    {
+      "code": "MCB2023S",
+      "title": "Functional Genetics",
+      "lecture_times": "4 M to F",
+      "lecture_period": 4,
+      "semester": "S2",
+      "practicals": "Th or F 14h00-17h00"
+    },
+    {
+      "code": "MCB3012Z",
+      "title": "Research Project in Molecular & Cell Biology",
+      "lecture_times": "None",
+      "lecture_period": null,
+      "semester": "FY",
+      "practicals": "Two afternoons per week"
+    },
+    {
+      "code": "MCB3023S",
+      "title": "Molecular Evolutionary Genetics & Development",
+      "lecture_times": "4 M to F",
+      "lecture_period": 4,
+      "semester": "S2",
+      "practicals": "One per week by arrangement"
+    },
+    {
+      "code": "MCB3024S",
+      "title": "Defence & Disease",
+      "lecture_times": "5 M to F",
+      "lecture_period": 5,
+      "semester": "S2",
+      "practicals": "One per week by arrangement"
+    },
+    {
+      "code": "MCB3025F",
+      "title": "Structural & Chemical Biology",
+      "lecture_times": "5 M to F",
+      "lecture_period": 5,
+      "semester": "S1",
+      "practicals": "M or Tu 14h00-17h00"
+    },
+    {
+      "code": "MCB3026F",
+      "title": "Molecular Genetics & Genomics",
+      "lecture_times": "4 M to F",
+      "lecture_period": 4,
+      "semester": "S1",
+      "practicals": "Th or F 14h00-17h00"
+    },
+    {
+      "code": "PHY1004W",
+      "title": "Matter & Interactions",
+      "lecture_times": "3 M to F",
+      "lecture_period": 3,
+      "semester": "FY",
+      "practicals": "Tu 14h00-17h00"
+    },
+    {
+      "code": "PHY1023H",
+      "title": "Principles of Physics A",
+      "lecture_times": "3 M to F",
+      "lecture_period": 3,
+      "semester": "FY",
+      "practicals": "Tu 14h00-17h00"
+    },
+    {
+      "code": "PHY1031F",
+      "title": "General Physics A",
+      "lecture_times": "3 M to F",
+      "lecture_period": 3,
+      "semester": "S1",
+      "practicals": "M or W or Th, 14h00-17h00"
+    },
+    {
+      "code": "PHY1032S",
+      "title": "General Physics B",
+      "lecture_times": "3 M to F",
+      "lecture_period": 3,
+      "semester": "S2",
+      "practicals": "M, W or Th 14h00-17h00"
+    },
+    {
+      "code": "PHY2004W",
+      "title": "Intermediate Physics",
+      "lecture_times": "4 M to F",
+      "lecture_period": 4,
+      "semester": "FY",
+      "practicals": "Prac M 14h00-17h00; Tut Tu 14h00-16h00"
+    },
+    {
+      "code": "PHY3004W",
+      "title": "Advanced Physics",
+      "lecture_times": "4 M to F",
+      "lecture_period": 4,
+      "semester": "FY",
+      "practicals": "Prac M 14h00-17h00; Tut Tu 14h00-16h00"
+    },
+    {
+      "code": "SEA2004F",
+      "title": "Principles of Oceanography",
+      "lecture_times": "4 M to F",
+      "lecture_period": 4,
+      "semester": "S1",
+      "practicals": "Tu 14h00-17h00"
+    },
+    {
+      "code": "SEA2005S",
+      "title": "Marine Systems",
+      "lecture_times": "4 M to F",
+      "lecture_period": 4,
+      "semester": "S2",
+      "practicals": "Tu 14h00-17h00"
+    },
+    {
+      "code": "SEA3004F",
+      "title": "Ocean & Atmosphere Dynamics",
+      "lecture_times": "3 M to F",
+      "lecture_period": 3,
+      "semester": "S1",
+      "practicals": "M 14h00-17h00"
+    },
+    {
+      "code": "STA1000F",
+      "title": "Introductory Statistics",
+      "lecture_times": "See departmental entry",
+      "lecture_period": null,
+      "semester": "S1",
+      "practicals": "One per week by arrangement"
+    },
+    {
+      "code": "STA1000S",
+      "title": "Introductory Statistics",
+      "lecture_times": "See departmental entry",
+      "lecture_period": null,
+      "semester": "S2",
+      "practicals": "One per week by arrangement"
+    },
+    {
+      "code": "STA1006S",
+      "title": "Mathematical Statistics I",
+      "lecture_times": "4 M to F",
+      "lecture_period": 4,
+      "semester": "S2",
+      "practicals": "One per week by arrangement"
+    },
+    {
+      "code": "STA1007S",
+      "title": "Introductory Statistics for Scientists",
+      "lecture_times": "1 M to F",
+      "lecture_period": 1,
+      "semester": "S2",
+      "practicals": "One per week by arrangement"
+    },
+    {
+      "code": "STA2004F",
+      "title": "Statistical Theory & Inference",
+      "lecture_times": "1 M to F",
+      "lecture_period": 1,
+      "semester": "S1",
+      "practicals": "One per week by arrangement"
+    },
+    {
+      "code": "STA2005S",
+      "title": "Linear Models",
+      "lecture_times": "1 M to F",
+      "lecture_period": 1,
+      "semester": "S2",
+      "practicals": "One per week by arrangement"
+    },
+    {
+      "code": "STA2007F",
+      "title": "Study Design & Data Analysis for Scientists",
+      "lecture_times": "See departmental entry",
+      "lecture_period": null,
+      "semester": "S1",
+      "practicals": "One per week by arrangement"
+    },
+    {
+      "code": "STA2007H",
+      "title": "Study Design & Data Analysis for Scientists",
+      "lecture_times": "See departmental entry",
+      "lecture_period": null,
+      "semester": "FY",
+      "practicals": "One per week by arrangement"
+    },
+    {
+      "code": "STA2007S",
+      "title": "Study Design & Data Analysis for Scientists",
+      "lecture_times": "See departmental entry",
+      "lecture_period": null,
+      "semester": "S2",
+      "practicals": "One per week by arrangement"
+    },
+    {
+      "code": "STA2020F",
+      "title": "Applied Statistics",
+      "lecture_times": "1 or 5 M to Th",
+      "lecture_period": [1, 5],
+      "semester": "S1",
+      "practicals": "One per week by arrangement"
+    },
+    {
+      "code": "STA2020S",
+      "title": "Applied Statistics",
+      "lecture_times": "7 M to Th (F 08h00-09h00)",
+      "lecture_period": 7,
+      "semester": "S2",
+      "practicals": null
+    },
+    {
+      "code": "STA2030S",
+      "title": "Statistical Theory",
+      "lecture_times": "1 M to Th",
+      "lecture_period": 1,
+      "semester": "S2",
+      "practicals": "By arrangement"
+    },
+    {
+      "code": "STA3022F",
+      "title": "Applied Multivariate Data Analysis",
+      "lecture_times": "4 M to Th",
+      "lecture_period": 4,
+      "semester": "S1",
+      "practicals": "By arrangement"
+    },
+    {
+      "code": "STA3030F",
+      "title": "Statistical Inference & Modelling",
+      "lecture_times": "1 M to Th",
+      "lecture_period": 1,
+      "semester": "S1",
+      "practicals": "By arrangement"
+    },
+    {
+      "code": "STA3036S",
+      "title": "Operational Research Techniques",
+      "lecture_times": "3 M to Th",
+      "lecture_period": 3,
+      "semester": "S2",
+      "practicals": "M to F"
+    },
+    {
+      "code": "STA3041F",
+      "title": "Stochastic Processes & Time Series",
+      "lecture_times": "1 M to F",
+      "lecture_period": 1,
+      "semester": "S1",
+      "practicals": "Tutorials and practicals by arrangement"
+    },
+    {
+      "code": "STA3045F",
+      "title": "Advanced Stochastic Processes & Distribution Theory",
+      "lecture_times": "2 M to F",
+      "lecture_period": 2,
+      "semester": "S1",
+      "practicals": "Two per week, by arrangement"
+    },
+    {
+      "code": "STA3047S",
+      "title": "Introduction to Machine Learning",
+      "lecture_times": "1 M to F",
+      "lecture_period": 1,
+      "semester": "S2",
+      "practicals": "Two per week by arrangement"
+    },
+    {
+      "code": "STA3048S",
+      "title": "Statistical Modelling and Bayesian Analysis",
+      "lecture_times": "1 M to F",
+      "lecture_period": 1,
+      "semester": "S2",
+      "practicals": "Two per week by arrangement"
+    }
+  ]
+}

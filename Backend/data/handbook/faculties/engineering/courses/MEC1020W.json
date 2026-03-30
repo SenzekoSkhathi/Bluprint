@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MEC1020W",
+  "title": "Introduction to Mechanical Engineering",
+  "department": "mechanical-engineering",
+  "credits": 20,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Professor M Ngoepe (Semester 1), Associate Professor C Shaw (Semester 2)",
+  "prerequisites": {
+    "text": "Refer to the programme and departmental sections in the 2026 EBE Faculty Handbook.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course provides first year students with a broad introduction to the discourse of mechanical engineering in a contemporary world through a variety of activities. Throughout the course, students will engage with classical mechanical engineering concepts, participate in experiential activities, and locate what they are learning through the use of case studies. The objectives of the course are to: Highlight the role of mathematics and science in engineering; develop academic literacies in reading, writing, and oral presentations; develop groupwork skills; provide hands-on experience in engineering activities and projects; emphasize the impact of the engineering activity; provide an awareness of professional ethics; and appreciate the multiple experiences and perspectives on the way we frame problems and negotiate solutions to them.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

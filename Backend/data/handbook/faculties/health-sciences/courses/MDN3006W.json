@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MDN3006W",
+  "title": "Cosmetic Formulation Technology",
+  "department": "medicine",
+  "credits": 30,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Dr N Sishi and Dr N Vorster",
+  "prerequisites": {
+    "text": "(a) B Sc or equivalent with Ch emistry 3, or(b) A degree with Biochemistry 3 (with at least Chemistry 2 to be eligible for admission)",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "The aim of this course is to enh ance the student’s understanding of the physical chemistry concepts learned in MDN3005W by them carrying out practical work de monstrating these concepts. The student gains hands-on experience and skills in preparing various types of cosmetic formulations and in selecting and carrying out approp riate testing protocols to determin e efficacy, safety and stability of cosmetic formulations and product packaging. Practical work in the laboratory includes properties of surfactants (including surface tension and wetting behaviour, HLB value determination); viscosity and rheology; and the preparation of formulation types, including emulsions, microemulsions, foam, dispersions and suspensions, solid forms microcapsule s, aggregates, po wders and organic formulations. Various testing protocols include pr oduct efficacy tests, such as allergy tests; toxicological tests; product assays; formulati on stability testing protoc ols; product packaging compatibility; claim substantiation; preservative challenge test, safety and product protocol; and art- work development, such as barc odes, symbols, consumer lan guage, regulato ry and export requirements; and protocols in foreign language.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "A minimum of 90% attendance of all lectures; a year mark of at least 50%, unless approved otherwise by the programme convener.",
+  "assessment": "The course mark contributes 70% to the final mark. A final examination contributes 30% to the final mark. The course ma rk includes tests (multiple-choice questions, open-ended questions, case-studies) - assignments (written report or oral presentation) on topical issues; and practical reports.",
+  "is_health_sciences_course": true
+}

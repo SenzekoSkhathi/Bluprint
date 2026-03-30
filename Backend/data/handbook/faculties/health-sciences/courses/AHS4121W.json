@@ -1,0 +1,35 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AHS4121W",
+  "title": "Occupational Therapy Practice and Service Learning",
+  "department": "health-and-rehabilitation-sciences",
+  "credits": 48,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Mrs T Mohomed and Mrs M Francke",
+  "prerequisites": {
+    "text": "AHS3113W, AHS3107W, AHS3108W, AHS3078H, SLL1028H and SLL1048H.",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "AHS3113W",
+        "AHS3107W",
+        "AHS3108W",
+        "AHS3078H",
+        "SLL1028H",
+        "SLL1048H"
+      ]
+    }
+  },
+  "corequisites": [
+    "AHS4120W",
+    "AHS4121W"
+  ],
+  "outline": "Objective: At the end of this course, t he student can identif y occupational inju stice; facilitate co- operation between government sectors; promote inclusive environments with in policy frameworks; interpret limitations in or barrie rs to occupational pe rformance; select, use an d justify conceptual frameworks and change modalities to promote play, learning and development informed by evidence- based practice; contribute to children’s development from an OT perspective; recommend enhancing opportunities for work entry/re-entry; implement a community-based OT programme or project using a developmental approach; and apply occupation-based methods that support social action. Course outline: This course applies OT learning theory and processes in direct and indirect service to individuals, groups and communities to attain health and development obje ctives through oc cupation. An OT perspective of public health and the primary healthcare approach forms the basis of practice. Students acquire skills in the design and implementation of appropriate, com prehensive OT programmes, in collaboration with role-players. Knowledge, skills and attitudes, incl uding clinical and population- based reasoning and reflection, are developed. The cou rse provides learning environments across health and socio-economic conditi ons, age groups, settings and sectors for each individual student within available resources.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "The Division of Occupational Therapy considers all academic activities important and full attendance is encouraged to ensure rich learning, engagement and competence in theory and practice. This course, however, involves a number of academic activities that are designated as ‘compulsory’ in order to ensure that each stu dent has obtained a mini mum level of competence through their in-class engagement prior to sitting the final examination for the course. Participation in these designated activities is monitored and is part of the duly performed requirements of the course. The list of compulsory activities that form part of this course are av ailable in the divisional course handbook. Students who do not meet the course DP requirements will be DPR and will not be granted entry into the final examination. See Rule FBE3. Should a student, for legitimate reasons, be unable to attend or complete any of thes e compulsory activities they must apply for a concession to miss classes (CMC). The CMC must be approved by the course convenor. Rule FGD 13.1, 13.2 and 13.3 122 DEPARTMENTS IN THE FACULTY in the undergraduate handbook details the process of applying for a CMC. The conditions for approval of the CMC will include tasks that the student will need to complete to ensure that all DP requirements for the course are met in order to be granted entry to the final course examination. This course also has a practice learning component. Attendance at ALL on-site practice learning activities and practice learning tutorials is compulsory. Should students, fo r legitimate reasons, be unable to attend on-site practice learning or tutorials they must apply for a CMC and have this ap proved by the course convenor. A maximum allowa nce of four (4) days of absence in total is permitted from practice learning per block (See Rule FBE3).",
+  "assessment": "Coursework assessments contribute 50% to the final mark and com prise various types of practical demonstrations and practice learning student performance reports. The final examination contributes 50%, to the final mark and includes a range of examinations that evaluate skills in work- related practice, community development practice and child, learning, development and play.",
+  "is_health_sciences_course": true
+}

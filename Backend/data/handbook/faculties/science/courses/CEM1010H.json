@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CEM1010H",
+  "title": "Chemistry 1010",
+  "department": "chemistry",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "FY",
+  "semester_code": "H",
+  "convener": "Dr S Douman",
+  "prerequisites": {
+    "text": "CEM1009H. Note: CEM1009H + CEM1010H is equivalent to CEM1000W in level, credit value towards the degree and as prerequisite for certain other courses. The course places an emphasis on strengthening foundational concepts and skills, the carefully-paced introduction of new material, and the development of sound approaches to effective learning.",
+    "parsed": {
+      "type": "and",
+      "codes": [
+        "CEM1009H",
+        "CEM1010H",
+        "CEM1000W"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "Topics covered at a more advanced level include microscopic and macroscopic concepts, atomic structure, chemical bonding and molecular structure, the chemistry of the elements and inorganic chemistry, chemical equilibrium, acids and bases, solubility, vapour pressure and phase diagrams, thermodynamics, colligative properties, oxidation and reduction, electrochemistry and chemical kinetics. The course includes an introduction to the language of organic chemistry, structure and reactivity in organic chemistry, describing and predicting organic reactivity and the properties and reactivity of biologically important molecules. Practicals aim to develop essential manipulative and technical laboratory skills, as well as to draw links to interpreting the physical world in terms of its molecular nature.",
+  "lecture_times": "Monday - Wednesday and Friday, 4th period. Tutorials: Thursday, 4th period. Practicals: Wednesday, 14h00 - 17h00.",
+  "dp_requirements": "Attendance and completion of practicals, tests and tutorial exercises and at least 35% for the class record.",
+  "assessment": "Class record (comprising tests, tutorials and practicals) counts 50%; one 2-hour examination written in November counts 50%. A subminimum of 40% is required in the final examination.",
+  "is_science_course": true
+}

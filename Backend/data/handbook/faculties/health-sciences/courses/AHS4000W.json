@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AHS4000W",
+  "title": "Research Report",
+  "department": "health-and-rehabilitation-sciences",
+  "credits": 30,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Associate Professor S Singh",
+  "prerequisites": {
+    "text": "Refer to the programme and departmental sections in the 2026 Health Sciences Faculty Handbook.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "Learning outcomes: By the end of this module, the student will be able to (i) critically review the research literature; (ii) conduct methodologically soun d and ethical research; (iii) analyse data and write up research results; (iv) discuss and critically evaluate research findings; (v) write up and present research. Content: Research literature on relevant topics; Application of research methodology; Data collection and analyses; Academic write-up and discussion of research findings; Research ethics. Skills: Students develop skills relate d to: teamwork; critique of th e literature; critical thinking; problem solving; interpretation of data; succinct reporting; academic writing; referencing; constructive engagement with feedback; dissemination of research findings. Teaching and learning activities: Students collaborate in small gr oups with the guidance of a research supervisor to review the research literature, conduct research; and analyse, report, discuss and present findings. Themes underpinning the course : Primary healthcare and contextual relevance; disab ility and burden of disease; ethics and human rights; bio-psycho-social models of health; developing agents for change; equity and affirmation of diversity.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Attendance of all academic activities is required. Students are required to submit all coursework by the due date.",
+  "assessment": "The final mark for the resear ch report consists of a gr oup project mark [80%] and a group presentation mark [20%] – each of which ar e weighted by an individual peer review mark. Students will need to obtain a minimum of 50% for their weighted research report mark and for their weighted presentation mark. If a student does not meet these requirements, they will need to engage with a supplementary assessment process.",
+  "is_health_sciences_course": true
+}

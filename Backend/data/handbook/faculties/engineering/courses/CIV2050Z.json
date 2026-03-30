@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CIV2050Z",
+  "title": "Structural Systems Project",
+  "department": "civil-engineering",
+  "credits": 4,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "Dr N Wolmarans",
+  "prerequisites": {
+    "text": "Refer to the programme and departmental sections in the 2026 EBE Faculty Handbook.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "The project is a practice facing project that aims to prepare students for structural design. Students will be introduced to the basic layout of a simple structure with typical structural elements and their interaction. Students will be required to use conceptual sketching skills to visualise the structure as an integrated unit of interacting structural elements. They will use this understanding to input the details of the structure into a structural engineering modelling package and conduct a basic analysis. DEPARTMENTS IN THE FACULTY AND COURSES OFFERED 110",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

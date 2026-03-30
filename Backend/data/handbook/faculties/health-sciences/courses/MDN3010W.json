@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MDN3010W",
+  "title": "Cosmetic Formulation Science Inservice Training",
+  "department": "medicine",
+  "credits": 0,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Dr N Sishi",
+  "prerequisites": {
+    "text": "Registered for Advanced Diploma in Cosmetic Formulation Science (MU003)",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "Objective: Advanced Diploma in Cosmetic Formulation Science (MU0 03) is a blended program where students spend thre e months of the academic year in an academic se tting learning scientific principles of cosmetic formulation. Students are thereafter offered in-service training which is the practical workplace learning experience of cosmetic formulation science in a workspace setting of a registered approved company to apply the know ledge gained in academic study for a period of minimum and maximum six and eight months res pectively. In-service trai ning makes up 80% of learning time. Academic study is made up of five modules with a total cr edit value of 120. The in- service training appears in the brochure advertising the program. The agreement for in-service training between the division of dermatology and students is formalized as a signed agreement. The in-service 164 DEPARTMENTS IN THE FACULTY training is a requirement for passing and graduating with the cosmetics diploma but is not registered as a module. The absence of a m odule could result in students graduating with an advanced diploma with only three months of learni ng. Hence there is a need to re gister a module called cosmetic formulation science in-service training and develop a progressi on rule around this important component of the program. Course outline: The opportunity for practical experience culminates in a certified employer’s report showing regular work attendance and time keeping and evidence of completion of suitable work in formulation science practice. The module serves to give a student practical learning experience for cosmetic formulation in a registered company where the student will be exposed to “formu lation science” activities for a minimum period of six months. The six months period could be spent at more than one company with at least one block of three months spent at one company. The cosmetic formulation science student is expected to function in product, process, and quality specification development of cosmetic products that comply with regulations for consumer safety. The experience is designed for the student to apply the knowledge gained in academic study, to work under supervision.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "None",
+  "assessment": "The student must submit a report to the course convenor or his/her assignee, which shall include a description of formula tion science work in a Research & Development laboratory of an approved company. The company will submit a report on a company letterhead indicating time spent by the student on in-service training and signed by the line manager.(1) Student to submit a report to the course convener, which shall include a description of formulation science work aligned to learning outcomes conducted in a Research & Development laboratory of an approved company. (2) Hosting company to submit a report on a company letterhead indicating regular work attendance by the student on in-service training and signed by the line manager. Progression code: PASSED (on submission of two reports). The report is submitted before writing the final October / November exam of the current year. If the report does not refl ect expected formulation science wo rk, the student will be given a chance for a resubmission. If the report is resubm itted after the student final marks for the year have been submitted, the student would mi ss the current year graduation, but will graduate following the submission of a passed report. A student that has not completed a minimum of six months in-service before the final October / November exam of the current year will write the exam and return to in- service training to complete the six months period. Thereafter the student will be required to submit the formulation science work and hosting company report, and graduate following the submission of a passed report.",
+  "is_health_sciences_course": true
+}

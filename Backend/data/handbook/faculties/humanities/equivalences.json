@@ -1,0 +1,133 @@
+{
+  "$schema": "handbook-equivalences-v1",
+  "faculty": "humanities",
+  "year": 2026,
+  "equivalences": [
+    {
+      "type": "extended_pairs",
+      "description": "Standard and extended (augmented) course pairs for BA/BSocSc extended programmes",
+      "pairs": [
+        {
+          "standard": "ASL1301S",
+          "extended": "ASL1305S",
+          "title": "Introduction to Sociolinguistics / Language Studies"
+        },
+        {
+          "standard": "BUS1007S",
+          "extended": "DOH1017S",
+          "title": "Business concepts"
+        },
+        {
+          "standard": "ELL1016S",
+          "extended": "ELL1010S",
+          "title": "Introduction to Literature"
+        },
+        {
+          "standard": "FAM1000S",
+          "extended": "FAM1010S",
+          "title": "Introduction to Film Studies"
+        },
+        {
+          "standard": "HST1013F",
+          "extended": "HST1015F",
+          "title": "Historical Studies I"
+        },
+        {
+          "standard": "PHI1010S",
+          "extended": "PHI1011S",
+          "title": "Ethics and Epistemology"
+        },
+        {
+          "standard": "POL1005S",
+          "extended": "POL1010S",
+          "title": "Introduction to Politics II"
+        },
+        {
+          "standard": "PSY1009F",
+          "extended": "PSY1006F",
+          "title": "Introduction to Psychology I"
+        },
+        {
+          "standard": "PSY1010S",
+          "extended": "PSY1007S",
+          "title": "Introduction to Psychology II"
+        },
+        {
+          "standard": "REL1002F",
+          "extended": "REL1015F",
+          "title": "Encountering World Religions I"
+        },
+        {
+          "standard": "REL1006S",
+          "extended": "REL1016S",
+          "title": "Encountering World Religions II"
+        },
+        {
+          "standard": "SOC1001F",
+          "extended": "SOC1006F",
+          "title": "Introduction to Sociology I"
+        },
+        {
+          "standard": "SOC1005S",
+          "extended": "SOC1007S",
+          "title": "Introduction to Sociology II"
+        },
+        {
+          "standard": "SWK1013F",
+          "extended": "SWK1014F",
+          "title": "Introduction to Social Work Practice"
+        },
+        {
+          "standard": "TDP1027F",
+          "extended": "TDP1029F",
+          "title": "Voice and Movement I"
+        },
+        {
+          "standard": "BUS2024F",
+          "extended": "DOH2024F",
+          "title": "Business Management II"
+        },
+        {
+          "standard": "ASL2202F",
+          "extended": "ASL2203F",
+          "title": "Applied Sociolinguistics"
+        },
+        {
+          "standard": "ELL2000F",
+          "extended": "ELL2016F",
+          "title": "English Studies IIA"
+        },
+        {
+          "standard": "BUS3003F",
+          "extended": "DOH3003F",
+          "title": "Business Administration III"
+        },
+        {
+          "standard": "BUS3004S",
+          "extended": "DOH3004S",
+          "title": "Business Administration III"
+        }
+      ]
+    },
+    {
+      "type": "fine_art_theory_alternatives",
+      "pairs": [
+        {
+          "option_a": "FIN2027F",
+          "option_b": "FIN2029F",
+          "title": "Theory of Art IIA"
+        },
+        {
+          "option_a": "FIN3026F",
+          "option_b": "FIN3028F",
+          "title": "Theory of Art IIIA"
+        },
+        {
+          "option_a": "FIN3027S",
+          "option_b": "FIN3029S",
+          "title": "Theory of Art IIIB"
+        }
+      ]
+    }
+  ]
+}

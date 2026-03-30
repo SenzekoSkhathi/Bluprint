@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MAM1033F",
+  "title": "Mathematics 1033",
+  "department": "mathematics-applied-mathematics",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": "First Year",
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr H Wiggins",
+  "prerequisites": {
+    "text": "At least 70% in NSC Mathematics.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "The aim of this course is to introduce the fundamental ideas in differential calculus, designed for students majoring in mathematical and physical sciences. A fundamental aim is for students to understand how to read, write and apply mathematics using mathematical thinking practices for clarity, consistency and depth of understanding that prepares them for MAM2000W, MAM3000W, and the mathematical requirements of their other Science courses.",
+  "lecture_times": "Five lectures per week, Monday - Friday, 1st or 3rd period.",
+  "dp_requirements": "Minimum of 30% for class tests; minimum 30% for weekly online tests; 80% attendance at tutorial sessions; 100% attendance at Mathematical Thinking workshops.",
+  "assessment": "Semester mark counts 33.3%; end-of-semester exam counts 66.6%.",
+  "is_science_course": true
+}

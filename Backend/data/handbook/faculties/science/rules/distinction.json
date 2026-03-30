@@ -1,0 +1,39 @@
+{
+  "$schema": "handbook-distinction-v1",
+  "rule_reference": "FB8",
+  "handbook_pages": [35, 36],
+  "distinction_in_major": {
+    "FB8_1a": "To obtain a distinction in a major, a student will be required to obtain first class passes in the courses listed below, except as specified in (b) and (c).",
+    "courses_by_major": {
+      "Applied Mathematics": "MAM2046W or (MAM2040F, MAM2041F, MAM2042S and MAM2043S) and MAM3040W or any four of MAM3042F/S, MAM3043F/S, MAM3044F/S, MAM3045F/S and MAM3046F/S",
+      "Applied Statistics": "STA2007H/STA2020S, STA2030S, STA3030F, STA3022F/STA3036S",
+      "Archaeology": "Four senior half-courses in Archaeology",
+      "Artificial Intelligence": "CSC2041F, CSC2042S, three of (CSC3041F, CSC3042F, CSC3043S, CSC3044S)",
+      "Astrophysics": "AST2002H, AST2003H, AST3002F, AST3003S",
+      "Biochemistry": "MCB2021F, MCB2022S, MCB3024S, MCB3025F",
+      "Biology": "BIO2014F, any one of BIO2015F/S, BIO2016S and BIO2017F/S; any two of BIO3013F, BIO3014S, BIO3018F, BIO3019S and BIO3022S",
+      "Business Computing": "INF2009F, INF2011S; any two of INF3011F, INF3012S and INF3014F",
+      "Chemistry": "CEM2005W, CEM3005W",
+      "Computer Engineering": "EEE2049W (or EEE2041F and EEE2042S), EEE2050F, EEE3095S, CSC3022F/CSC3024S",
+      "Computer Science": "CSC2001F, CSC2002S, CSC3002F, CSC3003S",
+      "Environmental & Geographical Science": "EGS2013F (or EGS2016F) and EGS2015S, any two of EGS3012S, EGS3020F, EGS3021F, EGS3022S, EGS3023F",
+      "Genetics": "MCB2020F, MCB2023S, MCB3023S, MCB3026F",
+      "Geology": "GEO2001F, GEO2004S, GEO3005F, GEO3001S",
+      "Human Anatomy & Physiology": "HUB2019F, HUB2021S, HUB3006F, HUB3007S",
+      "Marine Biology": "Any one of BIO2014F, BIO2015F/S, BIO2016S and BIO2017F/S; SEA2004F, BIO3002F, BIO3017S/BIO3022S",
+      "Mathematical Statistics": "STA2004F, STA2005S, STA3041F, STA3043S (or STA3047S and STA3048S)",
+      "Mathematics": "MAM2000W or (MAM2010F, MAM2011F, MAM2013S and MAM2014S) and MAM3000W or (any four of MAM3010F/S, MAM3011F/S, MAM3012F/S, MAM3014F/S and MAM3015F/S) including at least one of MAM3010F/S and MAM3011F/S",
+      "Ocean & Atmosphere Science": "SEA2004F, SEA2005S, SEA3004F, EGS3012S",
+      "Physics": "PHY2004W, PHY3004W",
+      "Quantitative Biology": "Any one of BIO2014F, BIO2015F/S, BIO2016S and BIO2017F/S; STA20xxF/S or MAM2046W; BIO3019S; STA30xxF/S or MAM3040W (or MAM3043F/S and any three of MAM3042F/S, MAM3044F/S, MAM3045F/S, MAM3046F/S)",
+      "Statistics & Data Science": "STA2004F or STA2030S, one of (STA2005S, STA2007F/S, STA2020F/S), STA3030F or STA3041F, one of (STA3022F, STA3036S, STA3047S and STA3048S)"
+    },
+    "FB8_1b": "If a student obtains a first and an upper second class in two 24 credit courses at second-year level, the marks shall be averaged. If this average is 75% or more, the student will be regarded as having first class passes in both courses. The same applies at third-year level with two 36 credit courses.",
+    "FB8_1c": "In special cases the Board of the Faculty may replace a first class in one of the courses listed above by a first class pass in a cognate course (which has not been used for distinction in that cognate subject)."
+  },
+  "distinction_in_degree": {
+    "FB8_2a": "Obtain a distinction in at least one major (rule FB8.1)",
+    "FB8_2b": "Obtain first class passes in at least 264 credits, including at least 192 senior credits or obtain an aggregate of at least 75% for each of six 18 credit courses and four 36 credit courses obtained in a minimum period. The minimum period will usually be three years."
+  },
+  "note": "Only passes at the first attempt (ordinary examinations in June or November and/or deferred examinations) are taken into account. Supplementary examinations are NOT counted."
+}

@@ -1,0 +1,12 @@
+{
+  "$schema": "handbook-programme-v1",
+  "programme_code": "CB004BUS07",
+  "programme_name": "Bachelor of Business Science specialising in Marketing",
+  "degree": "BBusSci",
+  "specialisation": "Marketing",
+  "faculty": "commerce",
+  "nqf_level": 8,
+  "minimum_credits": 528,
+  "duration_years": 4,
+  "department": "management-studies"
+}

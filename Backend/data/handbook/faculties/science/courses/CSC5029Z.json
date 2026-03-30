@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CSC5029Z",
+  "title": "Introduction to Image Processing and Computer Vision",
+  "department": "computer-science",
+  "credits": 12,
+  "nqf_level": 9,
+  "year_level": "Postgraduate (Master's)",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "Associate Professor P Marais",
+  "prerequisites": {
+    "text": "Admission into the Master's degree specialising in Computer Science or Artificial Intelligence, or permission from the course convener.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "To introduce students to basic concepts in computer vision and image processing, oriented towards solving real world, practical image analysis problems. Topics include: Basic Signal processing; Image Transforms and Operations; Feature Detection; Object Descriptions; Basic Segmentation and Registration; Fundamental Segmentation techniques; Machine Learning and GAs in Computer Vision. Case studies and topical papers are discussed.",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "None.",
+  "assessment": "Exam: Open Book, 2 hours. Class Record: Practical 60%, Review Questions 40%. Final Mark: Exam 40%, Class Record 60%.",
+  "is_science_course": true
+}

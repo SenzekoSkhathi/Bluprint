@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MAM2014S",
+  "title": "Real Analysis (2RA)",
+  "department": "mathematics",
+  "credits": 12,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "M Vandeyar",
+  "prerequisites": {
+    "text": "MAM1031F and MAM1032S or equivalent.",
+    "parsed": {
+      "type": "prerequisite",
+      "codes": [
+        "MAM1031F",
+        "MAM1032S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "Students will study the fundamentals of real analysis, including: Axioms of the real numbers, supremum and infimum; Countable sets; Sequences and series; Open and closed sets, compactness; Limits, continuity, differentiability; Sequences and series of functions, uniform convergence, power series; Integration. Please note that lectures alternate during the week so that students can take any of MAM2012S, MAM2013S and MAM2014S concurrently.",
+  "lecture_times": "Mondays, Thursdays and some Wednesdays in 4th and 5th period.",
+  "dp_requirements": "To be advised.",
+  "assessment": "To be advised.",
+  "is_commerce_course": false,
+  "offered_by_faculty": "science"
+}

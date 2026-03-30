@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MDN5003H",
+  "title": "Pharmacology and Applied Therapeutics",
+  "department": "medicine",
+  "credits": 20,
+  "nqf_level": 8,
+  "year_level": 5,
+  "semester": "FY",
+  "semester_code": "H",
+  "convener": "Doctor HM Gunter",
+  "prerequisites": {
+    "text": "MDN4015W",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "MDN4015W"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "Objective: By the end of this course st udents should be equipped to integr ate the risk-benefit evaluation of drugs used to treat common conditions. Students should be able to evaluate and manage patients by defining the patient’s problem, setting therapeutic objectives, selecting non-drug and drug therapy, writing a prescription, providing appropriate patient information, warnings and instructions, and monitoring efficacy and safety of drug therapy. Students should be able to critically review peer- reviewed journals, treatmen t guidelines, and prescribing of colleag ues. Students shou ld be able to discuss the pharmacological principles that underlie rational drug use. Course outline: The 5th year course is integrat ed through rotations in mixed specialities (derma tology, ENT, neurology and neurosurgery) and builds on the foundation of Clin ical Pharmacology and Applied Therapeutics learnt in the 4th year. The cour se focuses on applying an understanding of pharmacokinetics and pharmacodynamics to the management of common conditions. It aims to equip students with the skills for critic ally appraising evidence and judg ing the risk-benefit profiles of available treatment options, and promotes rational drug prescribing to ensure optimal patient care.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Completion of all in-course assignments submitted by the deadline/s as stipulated in the course manual and on the timetable; participation and equ al contribution to group work; attendance at the group presentations. A minimum of 80% of all lectures are to be attended, of which the orientation and workshops are compulsory. All requirements to be fulfilled prior to the end-of- block assessment unless approved otherwise by the course convenor in writing.",
+  "assessment": "Pass mark of ≥50% overall. The final mark is made up of in-course assessments (30% weighting) and an end-of-block examination (70% weighting). Subminimum requirement: must pass the end-of-block exam to pass the block (≥50%). Students who achieve 48-49% for the exam may be recommended to the FEC for a supplementary examination. Students who achieve <48% for the exam will be required to repeat the 8-week Therapeutics course.",
+  "is_health_sciences_course": true
+}

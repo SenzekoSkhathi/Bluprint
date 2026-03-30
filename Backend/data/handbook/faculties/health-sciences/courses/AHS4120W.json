@@ -1,0 +1,32 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AHS4120W",
+  "title": "Foundation Theory for Occupational Therapy Practice II",
+  "department": "health-and-rehabilitation-sciences",
+  "credits": 48,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "MLM Krenzer",
+  "prerequisites": {
+    "text": "AHS3113W, AHS3107W, AHS3108W AHS3078H, SLL1028H and SLL1048H",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "AHS3113W",
+        "AHS3107W",
+        "AHS3108W",
+        "AHS3078H",
+        "SLL1028H",
+        "SLL1048H"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "Objective: Clinical, population and professional reasoning are developed, as is an occupation-focused understanding of contexts in whi ch people play, learn, live, work and socialise. Students learn how the policy applies to OT practice and how OT practice can promote social inclusion and participation. They analyse health, education/ labour and social development polic ies in relation to occupational needs; influences shaping the world of work, play, learning and development; learn to appreciate the value of play as to promote development and health; learn to understand the occupational therapist’s role in promoting occupational engagement; learn to identify actions promoting occupational justice; and learn to design appropriate interventions. Course outline: The application of OT for the promotion of well-being and full participation of people with disabilities and people at risk of health and social marginalisation is explored . Disability and diversity politics, legislation and policies lay the foundation for understanding the contribution of occupational therapy to social change. Content also in cludes OT principles of promot ive, preventive, therapeutic and rehabilitative practice, as these relate to the primary healthcare philosophy.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "The Division of Occupational Therapy considers all academic activities important and full attendance is encouraged to ensure rich learning, engagement and competence in theory and practice. This course, however, involves a number of academic ac tivities that are designated as ‘compulsory’ in order to ensure that each stu dent has obtained a mini mum level of competence through their in-class engagement prior to sitting the final examination for the course. Participation in these designated activities is monitored and is part of the duly performed requirements of the course. The list of compulsory activities that form part of this course are av ailable in the divisional course handbook. Students who do not meet the course DP requirements will be DPR and will not be granted entry into the final examination. See Rule FBE3. Should a student, for legitimate reasons, be unable to attend or complete any of thes e compulsory activities they must apply for a concession to miss classes (CMC). The CMC must be approved by the course convenor. Rule FGD 13.1, 13.2 and 13.3 in the undergraduate handbook details the process of applying for a CMC. The conditions for approval of the CMC will include tasks that the student will need to complete to ensure that all DP requirements for the course are met in order to be granted entry to the final course examination.",
+  "assessment": "Coursework assessments contributes 50% to the final mark and comprise a work practice strategies assignment, a child learning development and play assignment, a community development practice assignment and a June test paper. Final as sessment contributes 50% to the course mark and comprises a written examination paper.",
+  "is_health_sciences_course": true
+}

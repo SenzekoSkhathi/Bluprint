@@ -1,0 +1,26 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "ECO2003F",
+  "title": "Microeconomics II",
+  "department": "economics",
+  "credits": 18,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "L Njozela",
+  "prerequisites": {
+    "text": "Only students who are registered in the Faculty of Humanities may register for this course or with special permission from the course convenor or head of department",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course comprises both micro- and macro-economics. Microeconomics focuses on individuals, be it individual consumers, firms or markets. The focus is on understanding the behaviour of these individual entities. Macroeconomics focuses on the economy as a whole. Rather than looking at the factors that determine an individual’s consumption decisions (i.e. his/her income, the expected utility derived from different goods and the prices of those goods), the focus in macroeconomics is on total consumption of all consumers in the economy. Similarly, the focus is not on the output decision of any individual firm, or even an industry, but on the total output of all firms in the economy as a whole.",
+  "lecture_times": "16h00 - 18h00 Monday - Thursday",
+  "dp_requirements": "All class tests and assignments/essays/projects to be completed. Attend at least 70% tutorials. Satisfactory completion and timeous submission of at least 70% of tutorials. A weighted average mark of 30% for tests, tutorials, essays and assignments. Only s tudents who have obtained DP certificates may write the final examination.",
+  "assessment": "Coursework 50%; Exam 50%. The course outline will detail the breakdown for submission weightings and variation for exemptions and absences. Note: The ECO1006F supplementary/deferred exam will be scheduled during the last week of the mid -year vacation. If students do not write this exam they will be marked as AB and will have to retake the course.",
+  "is_humanities_course": false,
+  "offered_by_faculty": "commerce"
+}

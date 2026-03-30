@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PBL4506F",
+  "title": "Refugee and Immigration Law",
+  "department": "public-law",
+  "credits": 9,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Prof F Khan",
+  "prerequisites": {
+    "text": "Successful completion of Constitutional and International Law.",
+    "parsed": {
+      "type": "specific",
+      "codes_mentioned": [
+        "PBL2000W",
+        "PBL3001F"
+      ],
+      "note": "Constitutional and International Law"
+    }
+  },
+  "corequisites": [],
+  "outline": "The course will focus primarily on the basic criteria for the attainment, denial, and withdrawal of refugee status and the rights and treatment of refugees in accordance with the South African Refugees Act (130 of 1998) and other relevant legislation and international instruments. A comprehensive analysis of the South African Refugees Act as well as the relevant sections of the Immigration Act (13 of 2002), will be undertaken. Furthermore, a review of the case-law of international, regional, and national courts will provide an understanding of how refugee law is interpreted and implemented in South Africa as well as in other jurisdictions.",
+  "lecture_times": "Two lectures per week.",
+  "dp_requirements": "None",
+  "assessment": "Two-hour written open-book class test — 40%; A 3000-word written assignment — 50%; Class attendance and participation — 10%.",
+  "is_law_course": true
+}

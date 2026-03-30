@@ -1,0 +1,26 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "ECO2007S",
+  "title": "Co-operation and Competition",
+  "department": "economics",
+  "credits": 18,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "R Chetty",
+  "prerequisites": {
+    "text": "ECO1010 or MAM1010 (or equivalent)",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This is an introductory course in game theory, the framework for analysing strategic interaction. Game theory is (among other things), the basic technology for understanding most phenomena in microeconomics and some phenomena in macroeconomics, along with many processes in political science, law, evolutionary biology, and the science of animal behaviour (ethology). In this course we will study the basic structure of the theory. All mathematics will be either self -contained within the course, or will be familiar from STA1000 or MAM1010.",
+  "lecture_times": "09h00 - 10h00 and 11h00 - 12h00; Monday, Tuesday, Wednesday, Thursday",
+  "dp_requirements": "None",
+  "assessment": "Coursework: 50%; Exam: 50%. The course outline will detail the breakdown for submission weighting and variation for exemptions and absences.",
+  "is_humanities_course": false,
+  "offered_by_faculty": "commerce"
+}

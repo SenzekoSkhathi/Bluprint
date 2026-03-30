@@ -1,0 +1,9 @@
+{
+  "$schema": "handbook-readmission-v1",
+  "pathway_code": "SB016",
+  "applies_to": "Students on Extended Degree Programme, first registered from 2023",
+  "rule_reference": "FB5.2",
+  "preceding_year_min_credits": 72,
+  "preceding_year_min_credits_note": "Unless first year of registration",
+  "data": {}
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "APG1016H",
+  "title": "Geomatics I",
+  "department": "architecture-planning-geomatics",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "FY",
+  "semester_code": "H",
+  "convener": "Associate Professor S Hull",
+  "prerequisites": {
+    "text": "None",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [
+    "CSC1015F",
+    "CSC1017F"
+  ],
+  "outline": "This course aims to introduce students to geomatics, principles of measurement science, geometry of spatial measurement, spatial data, reference systems and datums, coordinate systems, projections, spatial computations on the plane, surveying principles and instrumentation, representation of spatial data in two dimensions, interpretation of maps and plans in three dimensions, and spreadsheets.",
+  "lecture_times": "3rd period Monday, Wednesday and Friday. Assignments on alternate Mondays 14h00-17h00.",
+  "dp_requirements": "Attendance at and completion of all practicals and tutorials; all class tests must be written.",
+  "assessment": "Tests count 20%, practicals and tutorials count 30%, mid-year examination of 1 ½ hours counts 25%, end of year examination of 1 ½ hours counts 25% (subminimum 40% on the average of mid-year and end of year examinations).",
+  "is_engineering_course": true
+}

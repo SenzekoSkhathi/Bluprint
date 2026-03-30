@@ -60,3 +60,6 @@ Backend/.env
 Backend/data/raw/
 Backend/data/chunks/
 Backend/data/index/
+
+# Handbook PDFs — stored in S3, not versioned in git
+Backend/data/handbooks/

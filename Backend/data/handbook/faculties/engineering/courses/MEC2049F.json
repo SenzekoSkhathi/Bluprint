@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MEC2049F",
+  "title": "Solid Mechanics I",
+  "department": "mechanical-engineering",
+  "credits": 16,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Mr S Parker",
+  "prerequisites": {
+    "text": "MEC1009F/S, MAM1020F/S (or equivalent)",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "MEC1009F",
+        "MAM1020F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to analyse the deformation of structures loaded axially, in torsion and in bending. Combinations of these loading types will be explored with regard to stress and stress transformations. Deformation will be calculated in statically determinate and indeterminate situations. The method of DEPARTMENTS IN THE FACULTY AND COURSES OFFERED 150 solving statically indeterminate problems will include using the geometry of deformation in conjunction with static equilibrium and superposition. Strain energy, using Conservation of Energy and the Principle of Virtual Work, will be used to calculate defo rmation. The buckling of columns will also be examined.",
+  "lecture_times": "4 lectures and 1 tutorial per week.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

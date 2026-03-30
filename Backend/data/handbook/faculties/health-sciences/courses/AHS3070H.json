@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AHS3070H",
+  "title": "Becoming a Rehabilitation Professional I",
+  "department": "health-and-rehabilitation-sciences",
+  "credits": 22,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "FY",
+  "semester_code": "H",
+  "convener": "Associate Professor S Maart",
+  "prerequisites": {
+    "text": "AHS2050H",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "AHS2050H"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "In this course student’s ability to think critically about South African health challenges is developed, to enable them to embed clinical reasoning within a contextual frame when working with populations and patients. During the course students focus on the health system within South Africa, to understand the context of service deli very and, in the module. Critical Health and Humanities (CHH), students interrogate identity-based system s of privilege and powe r as well as identi fy and work with psychological cues that offer the health profession al valuable insights to the complex systems that shape health, illness and recovery.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Full attendance of and participation in all lectures, practical sessions, workshops and tutorials, and submission of assignments by the due dates.",
+  "assessment": "This course assessment will comprise of two components namely CHH and Physiotherapy in Context, each weighted at 50%. De tails pertaining to the type of assessments for each component will be provided at the beginning of the academic year. Students who obtain between 45-49% will be offered the opportunity of a supplementary examination.",
+  "is_health_sciences_course": true
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "STA5086Z",
+  "title": "Advanced Portfolio Theory",
+  "department": "statistical-sciences",
+  "credits": 15,
+  "nqf_level": 9,
+  "year_level": "Postgraduate (Master's)",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "Associate Professor T Gebbie",
+  "prerequisites": {
+    "text": "Acceptance into Master's programs in Statistics or Data Science, and/or statistical background deemed sufficient by the Head of Department.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "This course exposes students to advanced topics in portfolio theory, portfolio management and risk management. Techniques include optimisation, simulation, spectral decomposition of the covariance matrix and robust optimisation. Topics covered include: Interest rates; Equity evaluation; Portfolio risk components; risk in thinly-traded environments (SA and African case); Advanced risk measures; systematic risk; eigenvectors; tail risk measures; Active management and the Generalised Fundamental Law; Absolute and Active Portfolio optimisation; the Black-Litterman Model; the Qualitative Model; Non-parametric Models; Robust Portfolio optimisation models including Bayesian shrinkage; Rebalancing of portfolios; Advanced performance measures; Asset pricing models.",
+  "lecture_times": "Two double lectures per week.",
+  "dp_requirements": "Not specified.",
+  "assessment": "Final examination counts 60% and assignments count the remaining 40%.",
+  "is_science_course": true
+}

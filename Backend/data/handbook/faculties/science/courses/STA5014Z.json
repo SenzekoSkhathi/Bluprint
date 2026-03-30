@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "STA5014Z",
+  "title": "Study Design & Data Analysis for Scientists Doing Postgraduate Studies",
+  "department": "statistical-sciences",
+  "credits": 0,
+  "nqf_level": 9,
+  "year_level": "Postgraduate (Honours/Master's/PhD)",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "Professor R Altwegg",
+  "prerequisites": {
+    "text": "Co-registration for an honours, Master's or PhD degree in a relevant discipline such as Biology, Ocean Science, Medicine, and Engineering that involves a substantial component of quantitative training, as assessed by Head of Statistical Sciences Department. Students must have done a basic (first-year level) course in statistics.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "The course aims to equip students with practical experience and skills in analysing data using statistical techniques frequently used in the sciences. Skills include designing experiments, choosing appropriate statistical methods for visual display and statistical modelling of data, model checking, interpretation and reporting of statistical results, and understanding of limitations of statistical methods and data. Topics covered include: introduction to statistical notation, linear regression, design and analysis of experiments, generalised linear models. Strong emphasis on practical application using R. There will be a half-day face-to-face workshop at the beginning of the first semester and a half-day face-to-face workshop at the beginning of the second semester.",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "Not specified.",
+  "assessment": "Assignments and quizzes count 20%; one 2-hour examination in June or November counts 80%. A sub-minimum of 40% is required for the examination.",
+  "is_science_course": true
+}

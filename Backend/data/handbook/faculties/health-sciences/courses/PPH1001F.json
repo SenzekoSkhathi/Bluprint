@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PPH1001F",
+  "title": "Becoming a Professional",
+  "department": "public-health",
+  "credits": 15,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Mr S Toto",
+  "prerequisites": {
+    "text": "Refer to the programme and departmental sections in the 2026 Health Sciences Faculty Handbook.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [
+    "PPH1002S"
+  ],
+  "outline": "This course introduces first year students in all health science professions to professionalism and appropriate professional conduct. The course aims to promote the conduct, knowledge, attitudes and values associated with being a professional and a member of a professional team. Students learn interpersonal skills, including being non-judgemental, empathetic, ethical and respectful of human rights when working with colleagues, clients, patients and community members who may have different values and traditions. Students learn theory on interviewing and interpersonal skills which are applied in simulated and real interviews; theory related to group and social roles applied in simulated experiences to build team membership and leadership skills; and critical analysis of and reflection on professional conduct, diversity, health and human rights. The educational approach is participatory and experiential and all students are required to engage actively in facilitator-lead small learning groups. Academic, digital and information literacies are systematically integrated from the outset. The course also includes a workshop on HIV-AIDS, designed to introduce students to the relevance of HIV-AIDS issues in their private and professional lives.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Attendance of all small group learning sessions and other academic commitments, including the HIV-AIDS workshop; completion of all set assignments and assessment activities.",
+  "assessment": "Continuous, performance-base d in-course assessments provi de students with regular feedback. Those students who achiev e an average of 60% or above for these in-course assessments are not required to write the fi nal written examination. Those stu dents who average below 60% for their in-course assessments are required to write a final examination and must achieve a minimum of 50% in this examination in order to pass the course.",
+  "is_health_sciences_course": true
+}

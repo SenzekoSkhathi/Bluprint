@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AHS3075F",
+  "title": "OAEs and Electrophysiology",
+  "department": "health-and-rehabilitation-sciences",
+  "credits": 22,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "S Segoneco",
+  "prerequisites": {
+    "text": "AHS2046F",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "AHS2046F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to enable the student to justify, implement, an d interpret oto-a coustic emissions (OAEs) and electro-physiological measures in adults and children. Cont ent includes oto-acoustic emissions and auditory evoked potentials in relation to auditory anatomy and physiology, specificity and sensitivity of these tests, test parameters and set-up, analysis and inte rpretation of results, and management decisions. Students acquire skills of clinical reasoning and the effective communication of results. They learn th e need for a client-centr ed approach and respect for diversity. Teaching and learning activities include case-based learning, demonstrations, hands-on practice, and guided group- work. Themes underpinning the course are primary healthcare and contextual relevance, disability and burden of disease, ethics and human rights, bio-psycho-social models of health, developing agents for change, and equity and affirmation of diversity",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "For discipline specific courses in the BSc Audiology and BSc in Speech-Language Pathology programmes a minimum coursework mark of 40% is required for entrance into the examination.",
+  "assessment": "The course grade is made up of a cour sework mark (weighted 60%) and a final examination mark (weighted 40%). If a supplementary examination is awarded, it will count 40 % of the final mark, as the course work mark will still be included in the final mark.",
+  "is_health_sciences_course": true
+}

@@ -1,0 +1,31 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PHY1023H",
+  "title": "Principles of Physics",
+  "department": "physics",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "FY",
+  "semester_code": "H",
+  "convener": "Associate Professor D L Taylor",
+  "prerequisites": {
+    "text": "At least 60% for NSC Physical Science. Permission of the Dean or Head of Department required prior to registration. Intended for students advised to transfer from PHY1004W or PHY1031F after week 5 assessment. Note: Students passing PHY1023H may proceed into PHY1032S. Students who pass PHY1023H and then register for and pass PHY1004W will gain credit for both courses.",
+    "parsed": {
+      "type": "complex",
+      "codes_mentioned": [
+        "PHY1004W",
+        "PHY1031F",
+        "PHY1023H",
+        "PHY1032S"
+      ],
+      "note": "Complex prerequisite logic - see text"
+    }
+  },
+  "corequisites": [],
+  "outline": "PHY1023H is an algebra-based introductory course for Science students. Some calculus may be used. The course includes: Tools and skills (essential mathematical, diagrammatic and conceptual tools and skills for Physics, co-ordinate systems, vectors, rates of change, the fundamental forces, mathematical techniques and their relationship with physical phenomena); Mechanics (kinematics, forces, dynamics, momentum, impulse, work, energy, power, collisions, rotation, rotational dynamics, torque, angular momentum, static equilibrium, gravitation); Properties of matter (elasticity, hydrostatics, hydrodynamics); Vibrations and waves (simple harmonic motion, damped oscillations, forced oscillations, resonance, travelling waves, superposition, standing waves, sound waves, sound intensity and Doppler Effect).",
+  "lecture_times": "Monday - Friday, 3rd period.",
+  "dp_requirements": "Minimum of 40% for the class record, including 50% in laboratory assessment.",
+  "assessment": "Class record (weekly problem sets, class tests and laboratory record) counts 50%; one 2-hour written examination in November counts 50%.",
+  "is_science_course": true
+}

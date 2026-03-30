@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "REL1006S",
+  "title": "Encountering World Religions II",
+  "department": "religious-studies",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr L P Blond",
+  "prerequisites": {
+    "text": "None",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course begins by introducing the religions of the Ancient Near East (Egypt, Mesopotamia and Persia). Students then explore the historical foundations of Judaism, Christianity and Islam through examining the formation and development of sacred texts, techniques of interpretation, and religious practices within these three important religious traditions. By studying these religions, the course reflects on the continuity and diversity of historical traditions, social formations and religious identities in the world.",
+  "lecture_times": "Tuesday and Thursday 2nd period plus one tutorial.",
+  "dp_requirements": "Mandatory attendance at lectures and tutorials in all sections of the course. Submission of all work by due dates.",
+  "assessment": "Continuous assessment (essays, projects, tests, etc.) counts 100%.",
+  "is_humanities_course": true
+}

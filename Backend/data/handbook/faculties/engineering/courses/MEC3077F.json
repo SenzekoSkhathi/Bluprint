@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MEC3077F",
+  "title": "Thermofluids II",
+  "department": "mechanical-engineering",
+  "credits": 16,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Professor T Bello-Ochende",
+  "prerequisites": {
+    "text": "MEC2022S or MEC2050S",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "MEC2022S",
+        "MEC2050S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The aim of this course is to introduce students to the fundamentals of fluid control volumes and thermodynamic cycles, and its application in the analysis of various thermofluid components and systems. It covers: The balance equations of mass, energy (1st law), entropy (2nd law) and momentum and its application to pipes and ducts, mixing chambers, heat exchangers, pumps, compressors, turbines etc.; The heat transfer and work terms that are required as inputs to the balance equations, including specific met hods for analysing heat exchangers and turbomachinery and the concepts of reversible and irreversible work; Simplifications for one -dimensional flow, such as the Bernoulli equation; The application of the 1st and 2nd laws in the analysis of various power a nd refrigeration cycles.",
+  "lecture_times": "4 lectures and 2 tutorials per week. DEPARTMENTS IN THE FACULTY AND COURSES OFFERED 152",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

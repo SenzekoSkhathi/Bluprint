@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EEE3000X",
+  "title": "Practical Training",
+  "department": "electrical-engineering",
+  "credits": 0,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "varies",
+  "semester_code": "X",
+  "convener": "D de Maar",
+  "prerequisites": {
+    "text": "Refer to the programme and departmental sections in the 2026 EBE Faculty Handbook.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This second opportunity for the student engineer to consolidate through practical experience, culminates in a technical report and certificate showing to the satisfaction of the head of department, evidence of completion of suitable work for a minimum peri od of six weeks in engineering employment at the end of the third year. The report and certificate is to be submitted by the end of the fourth week of the term immediately following the period of employment. Students who submit evidence of having obtained suitable practical experience prior to their registration may be exempted from EEE3000X. The employer must certify that the student completed the work.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

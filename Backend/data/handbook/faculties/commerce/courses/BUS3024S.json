@@ -1,0 +1,30 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "BUS3024S",
+  "title": "Actuarial Science II: Contingencies",
+  "department": "management-studies",
+  "credits": 18,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "P Botha",
+  "prerequisites": {
+    "text": "BUS2016H, STA2004F, MAM2010F and MAM2011F.",
+    "parsed": {
+      "type": "prerequisite",
+      "codes": [
+        "BUS2016H",
+        "STA2004F",
+        "MAM2010F",
+        "MAM2011F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The course aims to provide a grounding in the mathematical techniques used to model and value cash flows dependent on death, survival, or other uncertain risks. Topics covered include: simple assurance and annuity contracts; more complex contracts with increasing benefits; derivation of formulae for means and variances of benefit payments; definition of standard actuarial symbols and the relationships, including standard life table functions (ultimate and select); calculation of net premiums and net premium provisions (both prospective and retrospective); calculation of death strain at risk, actual and expected death strains, mortality profit; calculation of gross premiums; functions involving two lives; cash flow models; discounted emerging costs; and practical application using MS Excel.",
+  "lecture_times": "To be advised.",
+  "dp_requirements": "Completion and timeous submission of tutorial exercises. Writing of all class tests. An overall average of 40% for classwork.",
+  "assessment": "Tutorials and tests 40%; Examination 60%.",
+  "is_commerce_course": true
+}

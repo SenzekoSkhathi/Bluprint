@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PVL3003F",
+  "title": "Law of Delict",
+  "department": "private-law",
+  "credits": 18,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "C Le Roith",
+  "prerequisites": {
+    "text": "All Preliminary Level courses to have been completed.",
+    "parsed": {
+      "type": "level_completion",
+      "levels_required": [
+        "preliminary"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The course deals with the general principles of the South African law of delict and their application to specific delicts. Among the topics that could be discussed are the following: fault (negligence and intent), wrongfulness, causation, remoteness, damage, contributory negligence and the apportionment of damages, self-defence, necessity, statutory authority, consent, vicarious liability, omissions, pure economic loss, emotional shock, defamation, privacy, wrongful arrest, and insult.",
+  "lecture_times": "Thirty-six lectures and tutorials.",
+  "dp_requirements": "Please refer to the course handout and/or the intermediate year schedule.",
+  "assessment": "Coursework 30%, Examination 70%.",
+  "is_law_course": true
+}

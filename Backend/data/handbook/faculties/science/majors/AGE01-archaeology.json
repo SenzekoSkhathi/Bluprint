@@ -1,0 +1,276 @@
+{
+  "$schema": "handbook-major-v1",
+  "major_code": "AGE01",
+  "major_name": "Archaeology",
+  "department": "archaeology",
+  "notes": "",
+  "mutual_exclusions_with": [],
+  "required_companion_majors": [],
+  "has_student_limit": false,
+  "years": [
+    {
+      "year": 1,
+      "label": "First Year Core Courses",
+      "combinations": [
+        {
+          "combination_id": "AGE01-Y1-A",
+          "description": "MAM1000W with STA1000F/S",
+          "courses": [
+            {
+              "code": "GEO1009F",
+              "title": "Intro to Earth and Environmental Sciences",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "AGE1002S",
+              "title": "The Human Planet: Prehistory to Present",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "MAM1000W",
+              "title": "Mathematics 1000",
+              "credits": 36,
+              "nqf_level": 5
+            },
+            {
+              "code": "STA1000F/S",
+              "title": "Introductory Statistics",
+              "credits": 18,
+              "nqf_level": 5
+            }
+          ]
+        },
+        {
+          "combination_id": "AGE01-Y1-B",
+          "description": "MAM1000W with STA1007S",
+          "courses": [
+            {
+              "code": "GEO1009F",
+              "title": "Intro to Earth and Environmental Sciences",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "AGE1002S",
+              "title": "The Human Planet: Prehistory to Present",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "MAM1000W",
+              "title": "Mathematics 1000",
+              "credits": 36,
+              "nqf_level": 5
+            },
+            {
+              "code": "STA1007S",
+              "title": "Introductory Statistics for Scientists",
+              "credits": 18,
+              "nqf_level": 5
+            }
+          ]
+        },
+        {
+          "combination_id": "AGE01-Y1-C",
+          "description": "MAM1031F + MAM1032S with STA1000F/S",
+          "courses": [
+            {
+              "code": "GEO1009F",
+              "title": "Intro to Earth and Environmental Sciences",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "AGE1002S",
+              "title": "The Human Planet: Prehistory to Present",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "MAM1031F",
+              "title": "Mathematics 1031",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "MAM1032S",
+              "title": "Mathematics 1032",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "STA1000F/S",
+              "title": "Introductory Statistics",
+              "credits": 18,
+              "nqf_level": 5
+            }
+          ]
+        },
+        {
+          "combination_id": "AGE01-Y1-D",
+          "description": "MAM1031F + MAM1032S with STA1007S",
+          "courses": [
+            {
+              "code": "GEO1009F",
+              "title": "Intro to Earth and Environmental Sciences",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "AGE1002S",
+              "title": "The Human Planet: Prehistory to Present",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "MAM1031F",
+              "title": "Mathematics 1031",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "MAM1032S",
+              "title": "Mathematics 1032",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "STA1007S",
+              "title": "Introductory Statistics for Scientists",
+              "credits": 18,
+              "nqf_level": 5
+            }
+          ]
+        },
+        {
+          "combination_id": "AGE01-Y1-E",
+          "description": "MAM1004F with STA1000F/S",
+          "courses": [
+            {
+              "code": "GEO1009F",
+              "title": "Intro to Earth and Environmental Sciences",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "AGE1002S",
+              "title": "The Human Planet: Prehistory to Present",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "MAM1004F",
+              "title": "Mathematics 1004",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "STA1000F/S",
+              "title": "Introductory Statistics",
+              "credits": 18,
+              "nqf_level": 5
+            }
+          ]
+        },
+        {
+          "combination_id": "AGE01-Y1-F",
+          "description": "MAM1004F with STA1007S",
+          "courses": [
+            {
+              "code": "GEO1009F",
+              "title": "Intro to Earth and Environmental Sciences",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "AGE1002S",
+              "title": "The Human Planet: Prehistory to Present",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "MAM1004F",
+              "title": "Mathematics 1004",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "STA1007S",
+              "title": "Introductory Statistics for Scientists",
+              "credits": 18,
+              "nqf_level": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "label": "Second Year Core Courses",
+      "combinations": [
+        {
+          "combination_id": "AGE01-Y2-A",
+          "description": "Fixed second year courses",
+          "courses": [
+            {
+              "code": "AGE2011S",
+              "title": "Human Evolution",
+              "credits": 24,
+              "nqf_level": 6
+            },
+            {
+              "code": "AGE2012F",
+              "title": "The First People",
+              "credits": 24,
+              "nqf_level": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "label": "Third Year Core Courses",
+      "combinations": [
+        {
+          "combination_id": "AGE01-Y3-A",
+          "description": "Archaeology in Practice plus Roots of Recent African Identities",
+          "courses": [
+            {
+              "code": "AGE3013H",
+              "title": "Archaeology in Practice",
+              "credits": 36,
+              "nqf_level": 7
+            },
+            {
+              "code": "AGE3011F",
+              "title": "The Roots of Recent African Identities",
+              "credits": 36,
+              "nqf_level": 7
+            }
+          ]
+        },
+        {
+          "combination_id": "AGE01-Y3-B",
+          "description": "Archaeology in Practice plus Archaeologies of Dominance and Resistance",
+          "courses": [
+            {
+              "code": "AGE3013H",
+              "title": "Archaeology in Practice",
+              "credits": 36,
+              "nqf_level": 7
+            },
+            {
+              "code": "AGE3012S",
+              "title": "Archaeologies of Dominance and Resistance in the Last-500 Years",
+              "credits": 36,
+              "nqf_level": 7
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "FIN3030W",
+  "title": "Visual Culture Studies 3",
+  "department": "fine-art",
+  "credits": 36,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Professor B Searle",
+  "prerequisites": {
+    "text": "FIN2026W and two of FIN2011W, FIN2012W, FIN2013W, FIN2024W,",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "FIN2026W",
+        "FIN2011W",
+        "FIN2012W",
+        "FIN2013W",
+        "FIN2024W"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "Course title and credit value verified from the 2026 Humanities Faculty Handbook.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "See 2026 Humanities Faculty Handbook.",
+  "assessment": "See departmental and faculty assessment rules in the 2026 Humanities Faculty Handbook.",
+  "is_humanities_course": true
+}

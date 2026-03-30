@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "APG4005F",
+  "title": "Engineering Surveying & Adjustment",
+  "department": "architecture-planning-geomatics",
+  "credits": 18,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr M Shoko",
+  "prerequisites": {
+    "text": "APG3013F, APG3017D.",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "APG3013F",
+        "APG3017D"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "Course Aims: To provide knowledge on the design and optimisation of two - and three- dimensional engineering network, precision survey techniques and deformation analysis methods. To equip the student with problem solving skills for practical applications i n precise engineering surveying and general project management. Course Content: Statistical analysis, deformation and subsidence surveys. Instrumentation and methods of precise engineering surveying, Kalman filters, engineering and industrial metrology, deformation analysis methods, case studies.",
+  "lecture_times": "2nd period Mon to Fri. Practicals: one per week, Wed 14h00-17h00.",
+  "dp_requirements": "Attendance at and completion of all assignments with a minimum average of 50%, a minimum class test average of 35%.",
+  "assessment": "Written tests count 15%, Practical Tests and practical assignments count 25%, examination of 3 hours counts 60% (sub-minimum 40%).",
+  "is_engineering_course": true
+}

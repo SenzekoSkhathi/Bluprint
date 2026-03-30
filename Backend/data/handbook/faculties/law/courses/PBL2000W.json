@@ -1,0 +1,34 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PBL2000W",
+  "title": "Constitutional Law",
+  "department": "public-law",
+  "credits": 36,
+  "nqf_level": 7,
+  "year_level": 2,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Prof P de Vos",
+  "prerequisites": {
+    "text": "Undergraduate LLB students: concurrent registration with PVL2002H. Graduate LLB students: concurrent registration with PVL1003W, PVL1004F, PVL1008H, PVL2002H, PVL2003H.",
+    "parsed": {
+      "type": "concurrent_registration",
+      "undergraduate": [
+        "PVL2002H"
+      ],
+      "graduate": [
+        "PVL1003W",
+        "PVL1004F",
+        "PVL1008H",
+        "PVL2002H",
+        "PVL2003H"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The first part of the course provides an introduction to the history of South African constitutional law and basic concepts such as democracy, legitimacy, constitutionalism, federalism, separation of powers and the rule of law. It then considers the institutional framework provided by the South African Constitution in detail. The second part of the course focuses on the protection of human rights in the Constitution. It examines the operation of the Bill of Rights and, using both SA cases and the jurisprudence of constitutional courts in other jurisdictions as well as the European Court of Human Rights, considers freedom of speech, equality and affirmative action, the protection of property rights and social and economic rights among other issues.",
+  "lecture_times": "Whole year course.",
+  "dp_requirements": "None",
+  "assessment": "November examination (3 hour) 60%; The year mark contributes the remaining 40%.",
+  "is_law_course": true
+}

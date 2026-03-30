@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "STA5089F",
+  "title": "Basics of Mathematical Statistics",
+  "department": "statistical-sciences",
+  "credits": 0,
+  "nqf_level": 9,
+  "year_level": "Postgraduate (Master's)",
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Professor F Gumedze",
+  "prerequisites": {
+    "text": "Acceptance into MPhil Mathematical Finance or another Master's program in Statistical Sciences.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "This course serves as an introduction to mathematical statistics for postgraduate students with a good mathematical background who have not studied statistics before. The course includes: probability theory, distribution theory and statistical inference including Estimation, Maximum Likelihood, Large Sample Theory, the Method of Moments, Efficiency, Hypothesis Testing, Tests for Distribution and Tests for Normality, and Confidence Intervals.",
+  "lecture_times": "Preliminary block course (24 lectures) before the start of the first semester.",
+  "dp_requirements": "None.",
+  "assessment": "One examination counting 100% of the final mark.",
+  "is_science_course": true
+}

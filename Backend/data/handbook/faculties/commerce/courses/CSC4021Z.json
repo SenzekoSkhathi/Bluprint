@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CSC4021Z",
+  "title": "Compilers I",
+  "department": "computer-science",
+  "credits": 12,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "G Stewart",
+  "prerequisites": {
+    "text": "Admission to the Honours programme in Computer Science.",
+    "parsed": {
+      "type": "programme_registration",
+      "programmes": [
+        "Honours in Computer Science"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "An introduction to compiler design and implementation, covering lexical analysis, parsing, semantic analysis, code generation, and optimization techniques.",
+  "lecture_times": "By arrangement.",
+  "dp_requirements": "To be advised.",
+  "assessment": "Coursework and examination.",
+  "is_commerce_course": false,
+  "offered_by_faculty": "science"
+}

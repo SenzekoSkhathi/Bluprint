@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MEC3074F",
+  "title": "Measurement and Actuators",
+  "department": "mechanical-engineering",
+  "credits": 8,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Mr J Hepworth",
+  "prerequisites": {
+    "text": "EEE2041F, EEE2042S",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "EEE2041F",
+        "EEE2042S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course provides an introduction to the measurement of various physical phenomena, and an introduction to the use of different types of actuators in control operations. Content will include selected topics from: measurement parameters and their associa ted considerations; electrical measurement techniques; signal conditioning; digital sampling; common transducers covering measurement of force, inertial motion, temperature, rotation, non-contact sensing; rotational actuators including, brushed and brushle ss DC motors, AC motors, servo motors and stepper motors; linear actuators including solenoids, hydraulic systems, and pneumatic systems.",
+  "lecture_times": "2 lectures per week.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "See departmental and faculty assessment rules in the 2026 EBE Faculty Handbook.",
+  "is_engineering_course": true
+}

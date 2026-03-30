@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AHS1069W",
+  "title": "Health and Functional Ability",
+  "department": "health-and-rehabilitation-sciences",
+  "credits": 30,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Ms S Gabriels",
+  "prerequisites": {
+    "text": "Refer to the programme and departmental sections in the 2026 Health Sciences Faculty Handbook.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [
+    "AHS1061S",
+    "AHS1062S",
+    "HS1067S"
+  ],
+  "outline": "Students learn to screen for impairments and provide basic interventions to improve participation of clients in the life areas of living, learning, working and socialising. By the end of the course, students will be able to discuss and describe normal development and wellness in children and adults; identify clients with selected disorders, including ment al health disorders an d related functional and participation difficulties; provide basic interventions to facilita te, communication, function and participation, demonstrate appropriate kinetic handling and positioning skills. Students will be able to demonstrate appropriate use of assistive devices; identify risk factors for emotional distress in carers, clients and self; apply basic counselling and support methods to carers, clients and self. Additionally, students will be able to recognise when referral is required; demonstrate appropriate referral patterns; and work in a multidisciplinary te am. This course will pr epare students for work integrated practice learning in the community and intermediate care facilities.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Full attendance of and participation in all lectures, practical sessions, workshops and tutorials, and submission of assignments by the due dates.",
+  "assessment": "The final course mark is comprised of the in-course mark weighted at 60% and the end- of-course mark weighted at 40%.",
+  "is_health_sciences_course": true
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EGS4067F",
+  "title": "Air Quality Monitoring, Management and Prediction",
+  "department": "environmental-geographical-science",
+  "credits": 30,
+  "nqf_level": 8,
+  "year_level": "Postgraduate – Honours elective",
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr J von Holdt",
+  "prerequisites": {
+    "text": "Acceptance for Honours or Master's specialising in EGS.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "This course explores the current state of global air quality with a focus on examples and case studies from the global South, particularly Africa. Students investigate factors and role players influencing air quality, the distribution of polluted versus clean air, and impacts on people and the environment. The module looks at different scales of exposure to poor air quality and the data and tools used to study and monitor the atmosphere at these scales. Students also examine air quality management and the current socio-economic situation in South and southern Africa, culminating in a short research report with recommendations for interventions.",
+  "lecture_times": null,
+  "dp_requirements": "At least 80% class attendance and 40% minimum in assignments.",
+  "assessment": "Assignments 60%; examination 40%.",
+  "is_science_course": true
+}

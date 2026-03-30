@@ -1,0 +1,35 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "STA1007S",
+  "title": "Introductory Statistics for Scientists",
+  "department": "statistical-sciences",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Professor R Altwegg",
+  "prerequisites": {
+    "text": "A pass in any of MAM1004F/S or MAM1005H or MAM1031F or MAM1033F. Note: A student cannot obtain credits for more than one of STA1000F/S/P/L, STA1007S, STA1006S, STA1008F/S. This course is the equivalent of STA1000S in a biological setting.",
+    "parsed": {
+      "type": "or",
+      "codes": [
+        "MAM1004F/S",
+        "MAM1005H",
+        "MAM1031F",
+        "MAM1033F",
+        "STA1000F/S",
+        "STA1007S",
+        "STA1006S",
+        "STA1008F/S",
+        "STA1000S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to provide an introduction to statistics for Science students. Topics covered include: exploratory data analysis and summary statistics; set theory; probability (conditional probabilities, independence, Bayes theorem); random variables; probability mass and density functions; Binomial, Poisson, Exponential, Normal and Uniform distributions; sampling distributions; confidence intervals; hypothesis testing (Z-test and t-test for means and difference between means, Chi-square test for independence and goodness-of-fit); meaning of p-values; determining sample size; simple linear regression and measures of correlation. Practical data analysis is taught using R.",
+  "lecture_times": "Five lectures per week, Monday - Friday, 1st period.",
+  "dp_requirements": "Satisfactory attendance of lectures, tutorials, practicals and tests and completion of assignments and/or class exercises as set out in course outline. Class record of at least 35%.",
+  "assessment": "Class record 40% and a 3-hour exam counting 60%. Weights will be adjusted in the case of missed assessments, as detailed in the course outline.",
+  "is_science_course": true
+}

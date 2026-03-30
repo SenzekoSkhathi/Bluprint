@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "STA5060Z",
+  "title": "Topics in Biostatistics B",
+  "department": "statistical-sciences",
+  "credits": 15,
+  "nqf_level": 9,
+  "year_level": "Postgraduate (Master's in Biostatistics)",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "Professor F Gumedze",
+  "prerequisites": {
+    "text": "Previous exposure to quantitative training that will enable the student to cope with the material in the chosen module plus successful completion of pre-courses deemed necessary, as assessed by Head of the Statistical Sciences Department and the module convener.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "This module allows students to register for a single module that forms part of the MSc in Biostatistics. Possible modules include Multivariate Statistics, Longitudinal Data Analysis, Survival Analysis and Design and Analysis of Experiments in the Health Sciences, Advanced Topics in Regression, Simulation and Optimisation, Machine Learning, Bayesian Decision Analysis, Infectious Disease Modelling and Structural Equation Modelling. Students will acquire skills and knowledge of statistical methodology relevant to Health Sciences Research.",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "Not specified.",
+  "assessment": "Class assignments 50%; one 3-hour examination counts 50%. A sub-minimum of 40% is required for both the examination and the class assignments.",
+  "is_science_course": true
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EGS5057S",
+  "title": "Urban Political Ecology",
+  "department": "environmental-geographical-science",
+  "credits": 23,
+  "nqf_level": 9,
+  "year_level": "Postgraduate – Masters elective",
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr S Scheba",
+  "prerequisites": {
+    "text": "Acceptance for Honours or Master's specialising in EGS.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "This course explores urbanisation dynamics with a particular interest in examining the role of political economic shifts, history, discourse and new forms of techno-management in shaping the contemporary urban environment, drawing on urban political ecology as an interdisciplinary field. The course aims to open conversations about the dynamics underlying unequal access to cities. Students are expected to read set texts in preparation for weekly, student-led seminars.",
+  "lecture_times": null,
+  "dp_requirements": "At least 80% attendance record and submission of all assignments.",
+  "assessment": "Assignments 70%; examination 30%.",
+  "is_science_course": true
+}

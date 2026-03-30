@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EEE3095S",
+  "title": "Embedded Systems II for Science Students",
+  "department": "electrical-engineering",
+  "credits": 18,
+  "nqf_level": 7,
+  "year_level": "Third Year",
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Associate Professor S Winberg",
+  "prerequisites": {
+    "text": "EEE2050F.",
+    "parsed": {
+      "type": "and",
+      "codes": [
+        "EEE2050F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course focuses on embedded systems architectures, firmware and software tool stacks, building on Embedded Systems I. Part 1 (10 credits) covers: theory and practices of design and analysis through modelling and simulation of embedded systems; embedded operating systems; and methods for modelling and simulation of computer systems, including an introduction to Linux command line and source code version control. Part 2 (6 credits) introduces Hardware Description Language (HDL) programming and computer architecture fundamentals, and tools for developing gateware and simulating HDL designs. Part 1 practicals involve using a single board computer, deploying an embedded operating system, building applications using a cross-compiler tool stack, and hardware-software interfaces, culminating in Miniproject A (IoT application). Part 2 practicals involve implementing a combination logic design and developing an HDL testbench. Computer Science students complete a more demanding Miniproject B with additional software features and performance testing.",
+  "lecture_times": "Refer to official course handout document.",
+  "dp_requirements": "Refer to the official course handout document for detailed DP requirements.",
+  "assessment": "Refer to the official course handout document for assessment criteria.",
+  "is_science_course": false,
+  "offered_by_faculty": "engineering"
+}

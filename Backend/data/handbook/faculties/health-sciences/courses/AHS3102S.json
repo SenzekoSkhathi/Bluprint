@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AHS3102S",
+  "title": "Child Language II",
+  "department": "health-and-rehabilitation-sciences",
+  "credits": 15,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Associate Professor M Harty",
+  "prerequisites": {
+    "text": "AHS2109S",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "AHS2109S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to build on basic knowledge of child la nguage acquired in AHS2106F and AHS2109S. In this course students learn to assess and manage the communication of children who have a range of special education needs such as cerebral palsy, autism spectrum disorders, and traumatic brain injury. Students learn to implem ent Augmentative and A lternative Communication (AAC) strategies to assist children to participate within the home and school context. Content includes the nature, assessment and management of child languag e difficulties linked to a range of different etiologies. Students develop clinic al reasoning skills and strategies for working with child language difficulties in a multilingual, multic ultural environment. Teaching and learning activities include lectures, small group discussions, class presentations and case discussions (video and paper). Themes underpinning the course are a multilingual, multicultur al society; provision of contextually relevant services; and developing agents for change.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "For discipline specific courses in the BSc Audiology and BSc in Speech-Language Pathology programmes a minimum coursework mark of 40% is required for entrance into the examination.",
+  "assessment": "The course grade is made up of a cour sework mark (weighted 60%) and a final examination mark (weighted 40%). If a supplementary examination is awarded, it will count 40 % of the final mark, as the course work mark will still be included in the final mark.",
+  "is_health_sciences_course": true
+}

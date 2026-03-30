@@ -1,0 +1,30 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "APG2021W",
+  "title": "Technology II (Major Course)",
+  "department": "architecture-planning-geomatics",
+  "credits": 20,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "TBA",
+  "prerequisites": {
+    "text": "APG1003W",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "APG1003W"
+      ]
+    }
+  },
+  "corequisites": [
+    "APG2038W",
+    "APG2039W"
+  ],
+  "outline": "Understanding materials, components, assembly systems, and generic details applicable to composite construction systems and small framed structures in reinforced concrete and steel. Development of an awareness of materials and construction as an informant of design at the scale of 2 - 4 storey buildings with basements, and of the link between design development and detail resolution both in precedent of architectural merit and in the students own design development work based on Studiowork projects. Understanding of 2d and 3d graphic representation of building assembly.",
+  "lecture_times": "Refer to departmental timetable",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

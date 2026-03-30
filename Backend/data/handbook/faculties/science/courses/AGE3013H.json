@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AGE3013H",
+  "title": "Archaeology in Practice",
+  "department": "archaeology",
+  "credits": 36,
+  "nqf_level": 7,
+  "year_level": "Third Year",
+  "semester": "FY",
+  "semester_code": "H",
+  "convener": "Associate Professor D Stynder",
+  "prerequisites": {
+    "text": "Students majoring in Archaeology, or by permission of the Head of Department.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "The course runs throughout the academic year. The lecture programme (campus and field) is flexible and a schedule is decided upon in consultation with participating students. The curriculum covers training in site location, excavation, field note taking, stratigraphic observation, site survey, use of GPS and total station, photography, rock art recording, processing of field observations, spreadsheet use, preliminary conservation and accessioning of materials, preliminary analyses and report writing.",
+  "lecture_times": "See departmental notice board. Field excursions required during first (March/April) and second (June/July) vacations, including a four-week residential field-school during the second vacation. Mandatory full participation in all field excursions.",
+  "dp_requirements": "Participation in all field excursions and completion of all assignments.",
+  "assessment": "Assignments 30%; research paper 20%; practical examination 25%; theory examination 25%.",
+  "is_science_course": true
+}

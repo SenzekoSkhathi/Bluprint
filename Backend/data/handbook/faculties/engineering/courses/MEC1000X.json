@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MEC1000X",
+  "title": "Practical Training I",
+  "department": "mechanical-engineering",
+  "credits": 0,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "varies",
+  "semester_code": "X",
+  "convener": "Mr EB Ismail",
+  "prerequisites": {
+    "text": "None",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This opportunity for practical experience for Electro -Mechanical and Mechanical Engineering students culminates in a certificate showing evidence of completion of suitable work in basic workshop processes during a period of at least four weeks in an approv ed industrial workshop. The practical experience should be gained in the mid -year or end of year vacation following the year of first registration in the Faculty. The evidence of completion must be submitted by 31 March of the following year. Alternatively, students may produce a certificate showing evidence of completion of an approved structured intensive two -week practical training course (e.g. at a University of Technology). Students are required to cover at least the following: welding, turning, and basic fitting.",
+  "lecture_times": "None",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

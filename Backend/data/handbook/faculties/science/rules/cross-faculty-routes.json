@@ -1,0 +1,212 @@
+{
+  "$schema": "handbook-cross-faculty-routes-v1",
+  "faculty": "science",
+  "degree_code": "BSc",
+  "year": 2026,
+  "rule_reference": ["FB7.4", "FB7.5"],
+  "description": "Structured route definitions for Science students taking coherent cross-faculty elective sequences that may align with second or third major intentions in other faculties.",
+  "global_constraints": {
+    "approval_required": true,
+    "approval_authority": ["Student Advisor", "Deputy Dean"],
+    "min_nqf_credits_per_course": 18,
+    "free_replacement_limit_credits": 72,
+    "hierarchical_sequence_required_above_credits": 72,
+    "science_for_other_faculties_exclusion_applies": true
+  },
+  "departments": [
+    {
+      "prefix": "INF",
+      "home_faculty": "commerce",
+      "route_type": "validated_from_science_handbook",
+      "status": "active",
+      "routes": [
+        {
+          "route_id": "INF_business_computing_pathway",
+          "name": "Information Systems progression",
+          "major_names": ["Information Systems"],
+          "prefixes": ["INF"],
+          "min_level7_credits": 36,
+          "target_alignment": "Business Computing-related pathway",
+          "stages": [
+            {
+              "stage": "intermediate",
+              "recommended": ["INF2009F", "INF2011S"]
+            },
+            {
+              "stage": "senior",
+              "minimum_credits": 36,
+              "choose_at_least": 2,
+              "options": ["INF3011F", "INF3012S", "INF3014F"]
+            }
+          ],
+          "notes": [
+            "Students cannot be credited for INF3011F and INF3003W.",
+            "Route should be checked against timetable and prerequisite satisfaction."
+          ]
+        }
+      ]
+    },
+    {
+      "prefix": "ACC",
+      "home_faculty": "commerce",
+      "route_type": "validated_from_commerce_programmes",
+      "status": "active",
+      "routes": [
+        {
+          "route_id": "ACC_accounting_progression",
+          "name": "Accounting progression",
+          "major_names": ["Accounting"],
+          "prefixes": ["ACC"],
+          "min_level7_credits": 36,
+          "target_alignment": "External accounting major route",
+          "stages": [
+            {
+              "stage": "foundation",
+              "recommended": ["ACC1021F", "ACC1022Z"]
+            },
+            {
+              "stage": "intermediate",
+              "recommended": ["ACC2022H", "ACC2023H"]
+            },
+            {
+              "stage": "senior",
+              "minimum_credits": 36,
+              "choose_at_least": 1,
+              "options": ["ACC3004W", "ACC3022W", "ACC3023W", "ACC3009W"]
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Route is derived from Commerce programme structures and mapped to available handbook course files."
+      ]
+    },
+    {
+      "prefix": "ECO",
+      "home_faculty": "commerce",
+      "route_type": "validated_from_commerce_programmes",
+      "status": "active",
+      "routes": [
+        {
+          "route_id": "ECO_economics_progression",
+          "name": "Economics progression",
+          "major_names": ["Economics"],
+          "prefixes": ["ECO"],
+          "min_level7_credits": 36,
+          "target_alignment": "External economics major route",
+          "stages": [
+            {
+              "stage": "foundation",
+              "recommended": ["ECO1010F", "ECO1011S"]
+            },
+            {
+              "stage": "intermediate",
+              "recommended": ["ECO2003F", "ECO2004S", "ECO2007S"]
+            },
+            {
+              "stage": "senior",
+              "minimum_credits": 36,
+              "choose_at_least": 2,
+              "options": ["ECO3020F", "ECO3021S", "ECO4006F", "ECO4007F"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "prefix": "FTX",
+      "home_faculty": "commerce",
+      "route_type": "validated_from_commerce_programmes",
+      "status": "active",
+      "routes": [
+        {
+          "route_id": "FTX_finance_progression",
+          "name": "Finance progression",
+          "major_names": ["Finance"],
+          "prefixes": ["FTX", "ECO", "ACC"],
+          "min_level7_credits": 36,
+          "target_alignment": "External finance major route",
+          "stages": [
+            {
+              "stage": "foundation",
+              "recommended": ["ACC1021F", "ECO1010F", "ECO1011S"]
+            },
+            {
+              "stage": "intermediate",
+              "recommended": ["FTX2020F", "FTX2024F", "FTX2024S"]
+            },
+            {
+              "stage": "senior",
+              "minimum_credits": 36,
+              "choose_at_least": 2,
+              "options": ["FTX3044F", "FTX3045S", "FTX4057F", "FTX4056S"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "prefix": "BUS",
+      "home_faculty": "commerce",
+      "route_type": "placeholder_needs_course_ingestion",
+      "status": "needs_data",
+      "available_science_catalogue_courses": [],
+      "notes": [
+        "BUS route definitions remain pending until validated major pathways are finalized."
+      ]
+    },
+    {
+      "prefix": "PSY",
+      "home_faculty": "humanities",
+      "route_type": "validated_from_humanities_catalogue",
+      "status": "active",
+      "routes": [
+        {
+          "route_id": "PSY_psychology_progression",
+          "name": "Psychology pathway",
+          "major_names": ["Psychology"],
+          "prefixes": ["PSY"],
+          "min_level7_credits": 0,
+          "target_alignment": "External psychology pathway",
+          "stages": [
+            {
+              "stage": "foundation",
+              "choose_at_least": 2,
+              "options": [
+                "PSY1004F",
+                "PSY1005S",
+                "PSY1006F",
+                "PSY1007S",
+                "PSY1009F",
+                "PSY1010S"
+              ]
+            }
+          ],
+          "notes": [
+            "Upper-level PSY route data is incomplete in current handbook extraction; route runs in progressive mode."
+          ]
+        }
+      ]
+    },
+
+    {
+      "prefix": "PHI",
+      "home_faculty": "humanities",
+      "route_type": "placeholder_needs_course_ingestion",
+      "status": "needs_data",
+      "available_science_catalogue_courses": [],
+      "notes": [
+        "No PHI course files are currently available in the Science catalogue snapshot.",
+        "Ingest PHI course data before enabling automated route validation."
+      ]
+    }
+  ],
+  "validation_policy": {
+    "allow_route_completion_without_faculty_approval": false,
+    "require_hierarchical_sequence_when_non_science_credits_exceed": 72,
+    "notes": [
+      "This file models route intent and sequence shape.",
+      "Final progression and graduation checks must still apply FB7.1-FB7.7 degree rules."
+    ]
+  }
+}

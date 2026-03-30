@@ -1,0 +1,30 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MAM3045S",
+  "title": "Introduction to General Relativity (3GR)",
+  "department": "mathematics-applied-mathematics",
+  "credits": 18,
+  "nqf_level": 7,
+  "year_level": "Third Year",
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr B Mongwane",
+  "prerequisites": {
+    "text": "MAM2040F, MAM2041F, MAM2042S and MAM2043S.",
+    "parsed": {
+      "type": "and",
+      "codes": [
+        "MAM2040F",
+        "MAM2041F",
+        "MAM2042S",
+        "MAM2043S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course introduces special relativity and general relativity, including: tensors; the metric tensor; symmetries; curvature; Einstein's field equations; and solutions of Minkowski space and Black Holes.",
+  "lecture_times": "Monday - Friday, 3rd period.",
+  "dp_requirements": "A class record of 30% or more.",
+  "assessment": "Class record counts up to 50%; the balance is given by the final examination.",
+  "is_science_course": true
+}

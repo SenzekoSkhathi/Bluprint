@@ -1,0 +1,31 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AST4007W",
+  "title": "Astrophysics & Space Science Honours",
+  "department": "astronomy",
+  "credits": 160,
+  "nqf_level": 8,
+  "year_level": "Postgraduate – Honours",
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "To be advised",
+  "prerequisites": {
+    "text": "AST3002F and AST3003S or PHY3004W or MAM3040W or equivalent. Candidates with an Engineering background will also be considered. Enrolments limited to 20 students. Candidates must satisfy the Steering Committee of sufficient background in Mathematics and Physics. Application must be made before 31 August of the preceding year.",
+    "parsed": {
+      "type": "complex",
+      "codes_mentioned": [
+        "AST3002F",
+        "AST3003S",
+        "PHY3004W",
+        "MAM3040W"
+      ],
+      "note": "Complex prerequisite logic - see text"
+    }
+  },
+  "corequisites": [],
+  "outline": "The Honours course in Astrophysics & Space Science consists of courses presented by distinguished South African researchers from research institutions participating in NASSP. Includes a theory component (spectroscopy, electrodynamics, general relativity, general astrophysics, galaxies, computational physics, astrophysical fluid dynamics and computational methods) and an observational techniques component (optical and infrared astronomy and radio astronomy). Students also complete a mini research project and a main research project, and attend fieldtrips to national facilities.",
+  "lecture_times": null,
+  "dp_requirements": "Satisfactory lecture attendance (minimum 50%); class record of at least 40%.",
+  "assessment": "Examinations count 40%; class record 40%; research project 20% of final result. Project component must be passed at 50%. Coursework and project codes must each be passed separately for the award of the degree.",
+  "is_science_course": true
+}

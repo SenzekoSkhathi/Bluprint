@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PED6004W",
+  "title": "Neonatal Medicine",
+  "department": "paediatrics-and-child-health",
+  "credits": 10,
+  "nqf_level": 8,
+  "year_level": 6,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Assoc Professor L Tooke",
+  "prerequisites": {
+    "text": "Successful completion of all co urses within the preceding academic year. 198 DEPARTMENTS IN THE FACULTY",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [
+    "PED6000W",
+    "PPH6005W"
+  ],
+  "outline": "This is a two-week course in neonatal medicine which, toget her with the two-week short elective course (PPH6005W), constitutes a four-week modular block. Students are placed in neonatal units at Groote Schuur, New Somerset, Mowbray Maternity or George Pr ovincial Hospital where they function as integral members of the clinical team. They partic ipate fully in the academic and clinical activities of the firm in cluding after-hours cover. Learning outcomes include demonstration of core knowledge of common neonatal diseases and conditi ons; history-taking skills; emergency management and resuscitation; defi ning problem lists; formulating appropriate management plans; performing basic procedures; professional behaviour and attitude; and advocacy of the rights of neonates. The core curriculum focuses on comm on neonatal conditions. Students attend procedure and resuscitation training and are exposed to oppo rtunities to acquire a prescribed list of necessary procedural skills.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "To qualify for the end-of-block examinat ion, students must fulfil all of the following: (a) Achieve at least 50% for the neonatal in-course assessment; (b) successfully complete the neonatal procedure and resuscitation training; (c) submit the hard copy of the completed, signed, and dated course logbook by th e deadline stipulated in the co urse handbook, an d (d) achieve a minimum of 80% attendance*. *Any absence is only allowed with permission subject to the leave of absence rules as stated in the course handbook. If a student is absent with permission for two or more working days in the two-week course, the time missed will need to be made up to attain the minimum attendance criterion; DP concession rules apply.",
+  "assessment": "Formative assessment covering all aspects of the student’s performance is given during the block. The end-of-block summative assessment comprises a neonatal in-course assessment [40% of the overall mark], a neonatal clinical case assessment [30% of the overall mark] and an oral examination [30% of the overall mark]. In addition, students must obtain an exempt pass in the exit examination on procedural competence. To pass the course, students must meet the DP requirements and achieve 50% or more overall and, in the end- of-rotation clinical case and oral assessment combined The following will be recommended to the Faculty Examinations Committee, that students who: (a) achieve 48–49% in the neonatal case and oral assessment comb ined will be offered a supplementary assessment* without having to do extra clinical time. *; (b) achieve 47% or less in the neonatal case and oral assessment will be required to do a week of extra time and a supplementary neonatal case and oral assessment combined* and (c) do not meet the Due Performance requirements fail and are required to repeat the full course and its assessment in the following academic year. It will be recommended to the Su pplementary Faculty Examinations Committee that students who achieve 49% or less in the supplementary examination or who do not attend or fail the deferred examination must repeat the full course and its end-of-block summative assessment in the next academic year. *All additional time and supplementary examinations will take place in the supplementary time period as scheduled by the University or at a time agreed to by all of the following: the Faculty of Health Sciences Undergraduate Office, th e Department of Paediatrics and Child Health, any other affected department, and the student.",
+  "is_health_sciences_course": true
+}

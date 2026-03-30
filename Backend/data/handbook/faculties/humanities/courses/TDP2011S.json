@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "TDP2011S",
+  "title": "Performance Studies II",
+  "department": "theatre-and-performance",
+  "credits": 36,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Associate Professor L Wilson",
+  "prerequisites": {
+    "text": "Students registered for the BA and Diploma in Theatre and Performance degree.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course covers methods of analysis for the study of Theatre and/or Dance and approaches to Theatre and/or Dance criticism. In lectures students will be introduced to the skills required to conduct close readings of Theatre and/or Dance works in perform ance and for producing critical writing for various media. In addition students will be required to attend one session per week in which elements of the lecture content will be engaged with practically. Fieldwork components may be included in the course.",
+  "lecture_times": "Lectures Tuesday and Wednesday 3rd period Tutorial Thursday 3rd period, Practical Thursday afternoon.",
+  "dp_requirements": "100% attendance at all practical classes, rehearsals, tutorials and performances; and completion of all written and practical assignments.",
+  "assessment": "Continuous assessment (essays, projects, practical tasks, class tests) counts 100%.",
+  "is_humanities_course": true
+}

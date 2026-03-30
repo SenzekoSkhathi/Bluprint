@@ -1,0 +1,44 @@
+{
+  "id": "bsocsc-ppe",
+  "programme_code": "HB027",
+  "name": "Bachelor of Social Science in Philosophy, Politics and Economics",
+  "abbreviation": "BSocSc(PPE)",
+  "nqf_level": 7,
+  "department": "Faculty of Humanities",
+  "duration_years": 3,
+  "minimum_credits": 413,
+  "curriculum": {
+    "year_1": {
+      "core": [
+        "ECO1010F",
+        "ECO1011S",
+        "PHI1010S",
+        "PHI1024F",
+        "POL1004F",
+        "POL1005S",
+        "STA1000S",
+        "MAM1010F"
+      ],
+      "credits": 132
+    },
+    "year_2": {
+      "core": [
+        "ECO2003F",
+        "ECO2004S",
+        "ECO2007S",
+        "PHI2041S",
+        "PHI2042F",
+        "POL2038F"
+      ],
+      "credits_range": "149-154",
+      "note": "Plus options from POL/ECO/PHI at 2000-level"
+    },
+    "year_3": {
+      "core": [
+        "ECO3025S"
+      ],
+      "credits_range": "132-168",
+      "note": "Plus options from POL/ECO at 3000-level"
+    }
+  }
+}

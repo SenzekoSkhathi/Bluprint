@@ -1,0 +1,32 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "FTX4051H",
+  "title": "Finance Research Project",
+  "department": "finance-and-tax",
+  "credits": 36,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "FY",
+  "semester_code": "H",
+  "convener": "Associate Professor A Sayed",
+  "prerequisites": {
+    "text": "A combined average of at least 60% for FTX3044F and FTX3045S with a minimum of 50% for each, and a pass in both ECO2003F and ECO2004S.",
+    "parsed": {
+      "type": "prerequisite",
+      "codes": [
+        "FTX3044F",
+        "FTX3045S",
+        "ECO2003F",
+        "ECO2004S"
+      ]
+    }
+  },
+  "corequisites": [
+    "STA3022F"
+  ],
+  "outline": "Lectures are held to impart basic knowledge and skills in order to embark on a finance-related research project. Concurrently, students are required to form a group of specified size, agree on a research topic with a supervisor, and submit a proposal. Once a proposal is accepted, the student-groups apply relevant finance research techniques to solve their finance research problem. During the course of the year, the student-groups are expected to submit a literature review and a final submission of their report. The report is expected to be in the format of a journal manuscript.",
+  "lecture_times": "Wednesday: 15h00 - 16h45.",
+  "dp_requirements": "Progress to the supervisor's satisfaction, lecture attendance and 40% average of graded submissions.",
+  "assessment": "Assessment will be based on the research project. Literature review submission 10% - 20%, final submission 80% - 90%. Exact allocation in course outline.",
+  "is_commerce_course": true
+}

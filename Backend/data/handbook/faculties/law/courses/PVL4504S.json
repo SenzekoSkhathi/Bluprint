@@ -1,0 +1,30 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PVL4504S",
+  "title": "South African Mineral Law: Theory, Context and Reform",
+  "department": "private-law",
+  "credits": 9,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Prof H Mostert",
+  "prerequisites": {
+    "text": "PVL2002H (Law of Property) at Preliminary B level.",
+    "parsed": {
+      "type": "specific",
+      "codes_mentioned": [
+        "PVL2002H"
+      ],
+      "note": "At Preliminary B level"
+    }
+  },
+  "corequisites": [
+    "PBL4001W (Administrative Law)"
+  ],
+  "outline": "In enabling the study of the theory and practice of mineral law, this course focuses on building understanding of the complexities of South African mineral law in its historical, constitutional and political setting. It introduces the topic by dealing with the origins and historical development of mineral law, and the core concepts thereof. It deals specifically with the nature and content of rights to minerals and the current regulatory framework for these rights. In doing so, it analyses critically the extent of current regulatory controls and / or lack thereof, focusing specifically on provisions dealing with social and environmental responsibility and the recording of rights to minerals. This allows students to gain a critical understanding of the practical context in which mineral law operates, and the need for reform.",
+  "lecture_times": "Two lectures per week.",
+  "dp_requirements": "None",
+  "assessment": "100% continuous assessment.",
+  "is_law_course": true
+}

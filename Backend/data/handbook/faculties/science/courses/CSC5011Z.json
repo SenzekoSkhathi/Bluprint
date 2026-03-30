@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CSC5011Z",
+  "title": "MIT: Object-Oriented Programming in Python",
+  "department": "computer-science",
+  "credits": 12,
+  "nqf_level": 9,
+  "year_level": "Postgraduate (Master's specialising in IT)",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "To be advised",
+  "prerequisites": {
+    "text": "Admission into the Master's degree specialising in IT, or permission from the course convener.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "A basic introduction to object-oriented programming in Python. Python is used as an effective means of introducing programming concepts to those who are new to programming. Students will be taught how to create simple applications in the Python language.",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "40% for assignment component.",
+  "assessment": "Final examination: 50%; Practical assignments: 50%. A sub-minimum of 40% will be required for each of the assignment and exam components of the course.",
+  "is_science_course": true
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CSC1016S",
+  "title": "Computer Science 1016",
+  "department": "computer-science",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "A Safla",
+  "prerequisites": {
+    "text": "CSC1015F (or at least 60% for CSC1017S).",
+    "parsed": {
+      "type": "and",
+      "codes": [
+        "CSC1015F",
+        "CSC1017S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course builds on the foundation of CSC1015F/CSC1010H, with a focus on object-oriented design and programming in Java, as well as introducing important considerations relating to Human Computer Interaction and interface design. The Java component of the course covers object-oriented design techniques and UML diagrams, as well as elementary data structures such as lists, stacks and queues. The practical component includes use of inheritance, polymorphism, interfaces, generics and GUI programming in Java.",
+  "lecture_times": "4th or 5th period daily. Tutorials: One per week, replacing one lecture. Practicals: One per week, Monday, Tuesday or Wednesday, 14h00 - 16h00 or 16h00 - 18h00.",
+  "dp_requirements": "Minimum of 45% aggregate in practical work.",
+  "assessment": "Theory tests count 15%; practical tests and practical assignments count 25%; one 2-hour exam written in November counts 60%. Subminima: 45% for practicals and 45% on weighted average of theory tests and examination.",
+  "is_science_course": true
+}

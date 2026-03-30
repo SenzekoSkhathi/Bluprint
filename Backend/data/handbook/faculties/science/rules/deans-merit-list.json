@@ -1,0 +1,41 @@
+{
+  "$schema": "handbook-deans-merit-list-v1",
+  "handbook_page": 255,
+  "description": "Students who obtain consistently good results may be included on the Dean's Merit List, issued annually, in recognition of academic achievements.",
+  "criteria": {
+    "general": "To qualify for the Dean's Merit List in a particular year, a student must normally:",
+    "requirements": [
+      {
+        "id": "a",
+        "text": "Have taken the equivalent of the following minimum NQF credits",
+        "standard_bsc_SB001": {
+          "first_year": 108,
+          "second_year": "120, including at least 96 senior course credits",
+          "third_year": "120, which must be at level 7"
+        },
+        "edp_SB016": {
+          "first_year": 72,
+          "second_year": 72,
+          "third_year": "120, including at least 96 senior course credits",
+          "fourth_year": "120, which must be at level 7"
+        }
+      },
+      {
+        "id": "b",
+        "text": "Have passed all courses in the year"
+      },
+      {
+        "id": "c",
+        "text": "Not be repeating courses"
+      },
+      {
+        "id": "d",
+        "text": "Have obtained a weighted average of 70% or above for the courses taken"
+      },
+      {
+        "id": "e",
+        "text": "Not have been found guilty of major academic misconduct in the year"
+      }
+    ]
+  }
+}

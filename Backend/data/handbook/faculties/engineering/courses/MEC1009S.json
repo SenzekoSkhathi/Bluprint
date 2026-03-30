@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MEC1009S",
+  "title": "Introduction to Engineering Mechanics",
+  "department": "mechanical-engineering",
+  "credits": 16,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr TJ Cloete",
+  "prerequisites": {
+    "text": "None",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to introduce students to the concepts of engineering mechanics. It develops the concept of equilibrium of particles and rigid bodies which is a required basis for solving engineering problems in mechanical engineering and cognate disciplin es. The course reviews the use of vectors for displacement, position and force. Students will learn how to represent engineering problems using free body diagrams and graphical methods. Forces considered are applied as point loads, moments and distributed loads. Internal resultant forces that occur due to axial loading, bending and torsion will be considered. Applications include statically determinate systems only: basic trusses, beams, frames and machines. Concepts of centroids, second moment of area, parallel axis theorem and mass moment of inertia are covered. Elementary solid mechanics ideas such as stress, strain and simple mechanical properties of materials are also introduced.",
+  "lecture_times": "4 lectures and 1 tutorial per week.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

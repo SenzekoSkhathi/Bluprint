@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PHY1032S",
+  "title": "Physics for Geomatics",
+  "department": "physics",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Associate Professor H W G Weigert",
+  "prerequisites": {
+    "text": "PHY1031F or PHY1023H",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "PHY1031F",
+        "PHY1023H"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "PHY1032S is an algebra-based introductory course usually taken by Science students. Some calculus may be used. The course includes the following topics: Electricity and magnetism: electric charge, electric field, Gauss’ law, electric potential, capacitance , current, current density, emf, resistance, resistivity, networks, magnetic field, Biot Savart law, Ampere’s law, electromagnetic induction, inductance, alternating currents. Thermal physics: temperature, heat, kinetic theory of gases, first and second la ws of thermodynamics. Optics: Geometrical optics, polarization, electromagnetic waves, interference, diffraction. Modern physics: atomic structure, quantum physical phenomena, wave - particle duality, X-rays, elementary nuclear physics, radioactivity.",
+  "lecture_times": "Monday - Friday, 3rd period",
+  "dp_requirements": "Minimum of 40% for the class record, including 50% in laboratory assessment.",
+  "assessment": "Class record (weekly problem sets, class tests and laboratory record) counts 50%; one 2-hour written examination in November counts 50%.",
+  "is_engineering_course": false,
+  "offered_by_faculty": "science"
+}

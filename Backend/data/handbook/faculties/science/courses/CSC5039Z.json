@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CSC5039Z",
+  "title": "Non-Monotonic Reasoning",
+  "department": "computer-science",
+  "credits": 12,
+  "nqf_level": 9,
+  "year_level": "Postgraduate (Master's)",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "Professor T A Meyer",
+  "prerequisites": {
+    "text": "Admission into the Master's degree specialising in Computer Science or Artificial Intelligence, or permission from the course convener.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "This course will introduce students to the subarea of Artificial Intelligence known as Non-Monotonic Reasoning. In addition to a brief history of the topic, students will be given a detailed introduction to at least one of the widely used approaches. Students will learn these approaches from both a theoretical and computational perspective.",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "None.",
+  "assessment": "24-hour take-home exam, 50%; Assignments: 50%.",
+  "is_science_course": true
+}

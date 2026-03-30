@@ -1,0 +1,31 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MAM1008S",
+  "title": "Introduction to Discrete Mathematics",
+  "department": "mathematics",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr I Allie",
+  "prerequisites": {
+    "text": "None.",
+    "parsed": {
+      "type": "none",
+      "codes": []
+    }
+  },
+  "corequisites": [
+    "MAM1004S",
+    "MAM1005H",
+    "MAM1004F",
+    "MAM1031F"
+  ],
+  "outline": "To introduce students to the language and methods of the area of Discrete Mathematics, and to show students how discrete mathematics can be used in modern computer science (with the focus on algorithmic applications). Topics include: sets, relations and functions; basic logic, propositional logic, truth tables, propositional inference rules and predicate logic; proof techniques; basics of counting, including counting arguments, the pigeonhole principle, permutations and combinations, solving recurrence relation; graphs and trees; discrete probability, including finite probability space, axioms of probability, conditional probability; and linear algebra, including vectors, matrices and their applications.",
+  "lecture_times": "No face-to-face lectures. The course content is delivered online.",
+  "dp_requirements": "Class Record of at least 30% and attendance at 10 or more (out of 12) tutorials.",
+  "assessment": "Class Record counts 50% and Exam counts 50%.",
+  "is_commerce_course": false,
+  "offered_by_faculty": "science"
+}

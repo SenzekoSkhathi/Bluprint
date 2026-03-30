@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EEE3090F",
+  "title": "Electronic Devices and Circuits",
+  "department": "electrical-engineering",
+  "credits": 16,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr MY Abdul Gaffar",
+  "prerequisites": {
+    "text": "EEE2045F and EEE2047S",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "EEE2045F",
+        "EEE2047S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to do the recap of fundamental concepts – resistors, capacitors, inductors, diodes, bipolar transistors, op -amps, filters Active Filters – Second order and higher order filters, standard filter responses, design of low -pass, high-pass and band-pass filters, transfer function of Sallen and Key.Op-amps – Building blocks of internal circuitry, parameters and non-ideal effects, impact of DC non-ideal effects and compensation, effect of negative feedback on input impedance, output impedance and bandwidth of op -amps, identifying circuit parameters for various applications. Practical circuits – Difference and instrumentation amplifiers, practical integrators, practical differentiators. Voltage Regulation - line & load regulation. Linear Voltage Reg ulators – series regulators, standard circuits, overcurrent protection, overvoltage protection, selection of pass transistor elements, standard integrated circuits. Oscillators - Barkhausen criteria, Phase -shift oscillators, Wein -bridge oscillators, Relaxa tion oscillators, Hartley, Colpitts & Pierce oscillators. Current Sources - BJT and FET based, Basic two -transistor, Three-transistor, Cascode, Wilson and Widlar configurations. Differential Amplifiers - Basic BJT differential pair, DC analysis, AC analysis, Common Mode Rejection Ratio, FET implementations. Linear Power Amplifiers - Class, A, B, AB, efficiency, power output constraints, heatsink design. Switched Mode Power Supplies - buck, boost, inverting, switched capacitor, gate driver circuits. Noise – Amplifier noise, noise measurements and noise sources. SPICE based simulations.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

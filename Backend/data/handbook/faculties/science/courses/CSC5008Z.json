@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CSC5008Z",
+  "title": "Data Visualisation",
+  "department": "computer-science",
+  "credits": 12,
+  "nqf_level": 9,
+  "year_level": "Postgraduate (Master's)",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "Professor M M Kuttel",
+  "prerequisites": {
+    "text": "Admission into the Master's degree specialising in Computer Science, or permission from the course convener.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "Visualisation is the graphical representation of data with the goal of improving comprehension, communication, hypothesis generation and decision making. This course aims to teach the principles of effective visualisation of large, multidimensional data sets. We cover the field of visual thinking, outlining current understanding of human perception and demonstrating how we can use this knowledge to create more effective data visualisations.",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "40% for assignment component.",
+  "assessment": "Students will be assessed with assignments (50%) and an exam (50%). A sub-minimum of 40% will be required for each of the assignment and exam components of the course.",
+  "is_science_course": true
+}

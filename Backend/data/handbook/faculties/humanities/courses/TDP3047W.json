@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "TDP3047W",
+  "title": "Performance Making III",
+  "department": "theatre-and-performance",
+  "credits": 60,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "M Rani",
+  "prerequisites": {
+    "text": "Completion of T&P Studiowork 2 and placement in the Dance Performance concentration.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This advanced course builds on and deepens the earlier broad exploration of dance performance in the first and second years and is project based. Students refine their technical, embodied and expressive skills through technique training and ensemble work w ith an interdisciplinary/Pan African approach to dance theatre in Africa. A fieldwork component may be included as part of this course.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Attendance at all classes, performances and rehearsals. Completion of all projects.",
+  "assessment": "Coursework, classwork, in house performances count 50% of final mark; final practical examination counts 50% of final mark. In order to pass, students must obtain at least 50% in both of the above.",
+  "is_humanities_course": true
+}

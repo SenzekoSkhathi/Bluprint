@@ -1,0 +1,30 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AGE2012F",
+  "title": "The First People",
+  "department": "archaeology",
+  "credits": 24,
+  "nqf_level": 6,
+  "year_level": "Second Year",
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr Y Sahle",
+  "prerequisites": {
+    "text": "Any first-year Science course; or any one of AXL1400F (was SAN1015F), AGE1002S or equivalent first-year semester; or AGE2011S; or any first-year Humanities course from cognate disciplines such as Anthropology, Historical Studies, Sociology; or by permission of the Head of Department.",
+    "parsed": {
+      "type": "or",
+      "codes": [
+        "AXL1400F",
+        "SAN1015F",
+        "AGE1002S",
+        "AGE2011S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "All humans living today have a common African origin. The first humans were hunter-gatherers, as were their descendants — our ancestors were hunter-gatherers for at least 99% of our evolutionary history. We learn about the origin and evolution of our hunter-gatherer ancestors from genetic, fossil, archaeological and ethnographic evidence. Studies of Khoesan peoples of southern Africa have contributed significantly to our understanding of such societies. The course focuses on the hunter-gatherer way of life over the past few hundreds of thousands of years. Specific topics include modern human origins, the Middle and Later Stone Age, ethnographic studies of Khoesan, the origins of pastoralism, coastal vs. arid environment adaptations, rock art and symbolic interpretation, genetics and biology, revisionism, and contemporary socio-politics and identity. Weekly practical sessions involve hands-on, problem-solving exercises with archaeological materials.",
+  "lecture_times": "Monday - Thursday, 3rd period. Practicals: One 2-hour practical per week, at times to be arranged.",
+  "dp_requirements": "Attendance at lectures and practicals, completion of assignments and participation in a one-day museum trip.",
+  "assessment": "Assignments and practical tests count 50% towards the final mark; one 3-hour examination written in June counts 50%. A sub-minimum of 40% is required for the examination.",
+  "is_science_course": true
+}

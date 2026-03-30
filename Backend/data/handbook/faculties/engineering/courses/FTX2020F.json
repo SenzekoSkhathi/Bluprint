@@ -1,0 +1,30 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "FTX2020F",
+  "title": "Business Finance",
+  "department": "finance-and-tax",
+  "credits": 18,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "N Jwara",
+  "prerequisites": {
+    "text": "A DP in MAM1010 or equivalent, or a DP in STA1001F/S or equivalent",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "STA1001F"
+      ]
+    }
+  },
+  "corequisites": [
+    "ACC1006F"
+  ],
+  "outline": "Objective: The course is designed to provide an overview of activities, decisions and techniques used to fund and manage businesses efficiently. The course also provides an introduction to investment and financial markets. Course outline: Business Finance serves as an introduction to the concepts of corporate finance. It covers the principles of corporate finance, commencing with mastery of the tools and techniques essential for financial management and proceeding to the principles underlying investment and financing decisions made by large corporations listed on a securities exchange. The course also aims to provide an entrepreneurial focus, equipping the prospective entrepreneurs with some of the quantitative decision making tools required for a successful business venture.",
+  "lecture_times": "Tuesday, Wednesday, Thursday and Friday: 15h00 -15h45.",
+  "dp_requirements": "Minimum 40% for coursework. This includes completion of all required submissions, tests and attendance of 9 out of 10 tutorials.",
+  "assessment": "Students will be required to write two tests during the semester, each with a weight of 20%, and a final exam of 60%.",
+  "is_engineering_course": false,
+  "offered_by_faculty": "commerce"
+}

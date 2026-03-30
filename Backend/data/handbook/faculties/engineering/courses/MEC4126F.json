@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MEC4126F",
+  "title": "Integrating Embedded Systems",
+  "department": "mechanical-engineering",
+  "credits": 16,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Mr J Hepworth",
+  "prerequisites": {
+    "text": "EEE2046S, MEC3074F",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "EEE2046S",
+        "MEC3074F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to bring together elements of engineering previously covered in electrical and mechanical courses, and to ensure that each student is equipped with the necessary skills to deal with the complexity that this integration brings. Skills to be developed include: Further knowledge of analogue circuitry including transistors (BJT and FET types) and H -bridges; operational amplifiers and their use in comparators, compensators, filters and level -adjusters; power sources design; PCB layout and simula tion; version control; further training in C programming for microcontrollers including algorithms, libraries, coding standards and conventions, state machines, abstraction, and embedded control. Students on this course will gain the knowledge to program a microcontroller to make use of its main peripherals, use this microcontroller to interface with electronic circuits designed to facilitate obtaining and monitoring information from various sensors and to use this information to perform measurement and control tasks.",
+  "lecture_times": "4 lectures per week",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CIV2051S",
+  "title": "Analysis of Statistically Determinate Structures",
+  "department": "civil-engineering",
+  "credits": 15,
+  "nqf_level": 7,
+  "year_level": 2,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "A Zingoni",
+  "prerequisites": {
+    "text": "DP in CIV2044F",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "CIV2044F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "In the early part, the course will aim to teach students how to determine if a structure (truss, beam or frame) is geometrically stable or not, and how to work out its degree of statical indeterminacy. Later, the course will teach students how to apply equ ilibrium conditions to analyse statically determinate structures (SDS) for external reactions and internal actions. Structures of primary interest will be trusses, beams and frames in two dimensions, though three -dimensional configurations will also be considered where appropriate. Techniques for calculating displacements in SDS will also be taught. Students will be introduced to the concept of Virtual Work and the concept of elastic stability, and taught how to apply these to the calculation of displacemen ts in SDS and the calculation of critical buckling loads of struts, respectively.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

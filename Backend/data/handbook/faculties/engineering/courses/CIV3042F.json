@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CIV3042F",
+  "title": "Geotechnical Engineering II",
+  "department": "civil-engineering",
+  "credits": 16,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Professor D Kalumba",
+  "prerequisites": {
+    "text": "CIV2039S",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "CIV2039S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course provides the basic concepts and mechanics necessary for geotechnical design. It aims to provide an understanding of the factors influencing soil strength, and to give practice in the application of this understanding by exploring the stability of slopes, retaining walls, and foundations. Geotechnical investigations are also covered.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

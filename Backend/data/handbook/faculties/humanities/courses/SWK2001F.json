@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "SWK2001F",
+  "title": "Social Policy",
+  "department": "social-development",
+  "credits": 18,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "C Bruyns",
+  "prerequisites": {
+    "text": "At least second-year status.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [
+    "SWK2001F"
+  ],
+  "outline": "The course introduces students to the evolution of social service professions in South Africa and the global, national and regional contexts within which they work. It focuses on the socio-political context created by pre- and post-democratic social policies within which social services in South Africa are now delivered. The course provides an introduction to the main policies, legislation and programmes that shape the developmental context in which social service professions now work in South Africa. It also introduces students to global and national trends that impact on social service provisions in the SOCIAL WORK AND SOCIAL DEVELOPMENT 391 South. In addition it enables students to understand the specific roles of social service professionals in promoting human wellbeing.",
+  "lecture_times": "Tuesday to Friday 5th period.",
+  "dp_requirements": "Submission of all essays, projects, seminar materials and other required written work by the due date. Attendance of lectures or seminars as indicated by the department.",
+  "assessment": "Coursework counts 50%; two-hour June examination counts 50%.",
+  "is_humanities_course": true
+}

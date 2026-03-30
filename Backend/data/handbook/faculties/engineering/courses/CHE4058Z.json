@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CHE4058Z",
+  "title": "Life Cycle Assessment",
+  "department": "chemical-engineering",
+  "credits": 8,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "Professor H von Blottnitz",
+  "prerequisites": {
+    "text": "3 years of engineering or science studies at university level",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to familiarise students with the environmental assessment tool known as Life Cycle Assessment, the history of its development, its diverse uses, the ISO norms, the science behind some of its key impact categories (beyond carbon and water), its use to support decision-making in product systems, process systems or in policy -making. Furthermore, to develop skills and insights in the important steps of goal and scope definition, inventory modelling, data quality assessment, choice of impact assessment categories, interpretation and uncertainty propagation, partly by working with LCA software and databases. Assessment is by project 50% and written final examination 50%.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PVL4008H",
+  "title": "Civil Procedure",
+  "department": "private-law",
+  "credits": 18,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "FY",
+  "semester_code": "H",
+  "convener": "Prof M Paleker",
+  "prerequisites": {
+    "text": "Successful completion of all Preliminary and Intermediate Level courses and in particular, family law, property law, contract law, and the law of delict.",
+    "parsed": {
+      "type": "level_completion",
+      "levels_required": [
+        "preliminary",
+        "intermediate"
+      ],
+      "note": "In particular family law, property law, contract law, and law of delict"
+    }
+  },
+  "corequisites": [],
+  "outline": "This aim of this course is to teach the rules and procedures that courts and litigants are obliged to follow when litigating different kinds of civil suits. The course covers the civil procedure of the High Court, the Magistrate's Court and the Small Claims Court. Topics include: Alternative dispute resolution, jurisdiction of the courts; locus standi; parties to proceedings; service of process; applications; actions; provisional sentence; matrimonial proceedings; legal drafting; and ethics. The course also covers broader access to justice issues and the impact of the Constitution on civil justice and civil justice reform.",
+  "lecture_times": "Two lectures per week.",
+  "dp_requirements": "None",
+  "assessment": "Coursework 50%, Examination 50%.",
+  "is_law_course": true
+}

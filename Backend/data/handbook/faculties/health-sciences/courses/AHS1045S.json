@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AHS1045S",
+  "title": "Basis of Hearing and Balance",
+  "department": "health-and-rehabilitation-sciences",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "TBC",
+  "prerequisites": {
+    "text": "None",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to develop an understandi ng and knowledge of the an atomy, physiology and pathology of hearing and balance underpinning aud iology diagnoses; the impact of hearing and balance difficulties; and prevention and health promotion strategies . Content includes the anatomy and physiology of hearing and balance and the patho-physiology of hearing and vestibular disorders. Students learn to appreciate that a thorough knowledge of the anatomy, physiology and pathology is fundamental to an audiology diagnosis. They acquire a holistic view of clients and appreciate the need to exercise duty of care. Teaching and learning activities include le ctures, web-based learning, case studies and group learning. Them es underpinning the course incl ude primary healthcare, the burden of disease, and a bio-psycho-social model of healthcare. 92 DEPARTMENTS IN THE FACULTY",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "For discipline specific courses in the BSc Audiology and BSc in Speech-Language Pathology programmes a minimum coursework mark of 40% is required for entrance into the examination.",
+  "assessment": "The course grade is made up of a cour sework mark (weighted 60%) and a final examination mark (weighted 40%). If a supplementary examination is awarded, it will count 40 % of the final mark, as the course work mark will still be included in the final mark.",
+  "is_health_sciences_course": true
+}

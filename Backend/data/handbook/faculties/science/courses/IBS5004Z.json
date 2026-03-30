@@ -1,0 +1,23 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "IBS5004Z",
+  "title": "Bioinformatics for High-Throughput Biology",
+  "department": "integrative-biomedical-sciences",
+  "credits": 15,
+  "nqf_level": 9,
+  "year_level": "Postgraduate – Masters",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "TBC",
+  "prerequisites": {
+    "text": "None",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "This course introduces students to bioinformatics techniques related to the processing, analysis and interpretation of high-throughput biological data. It covers the analysis of next-generation sequence data of different types (metagenomic, RNA-Seq and full genome); statistical analysis of NGS in relation to associated metadata; phylogenetic analysis of sequence data; and medical population genetics from NGS or array data. Students who complete the course will be skilled both in handling big biological datasets and in their downstream interpretation.",
+  "lecture_times": null,
+  "dp_requirements": null,
+  "assessment": null,
+  "is_science_course": false,
+  "offered_by_faculty": "health-sciences"
+}

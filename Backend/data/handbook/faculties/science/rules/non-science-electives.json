@@ -1,0 +1,42 @@
+{
+  "$schema": "handbook-non-science-electives-v1",
+  "rule_reference": "FB7.4",
+  "handbook_page": 255,
+  "description": "Courses from other Faculties may be taken as electives, subject to constraints and approval by a Student Advisor or Deputy Dean.",
+  "thresholds": {
+    "min_nqf_credits_per_course": 18,
+    "free_replacement_limit_credits": 72,
+    "free_replacement_limit_note": "Equivalent to two full Science courses (maximum 72 level 6 NQF credits). Individual courses are not summed — each must independently meet the minimum credit value.",
+    "hierarchical_sequence_required_above_credits": 72,
+    "approval_required": true,
+    "approval_authority": "Student Advisor or Deputy Dean"
+  },
+  "constraints": [
+    {
+      "id": "min_credit_value",
+      "machine_readable": true,
+      "field": "min_nqf_credits_per_course",
+      "value": 18,
+      "rule": "Only courses with an NQF credit value of 18 or more will be counted (a first year half course in the Science Faculty has an NQF credit value of 18). Courses are not summed."
+    },
+    {
+      "id": "free_replacement_limit",
+      "machine_readable": true,
+      "field": "free_replacement_limit_credits",
+      "value": 72,
+      "rule": "If the equivalent of two or less full Science courses (maximum 72 level 6 NQF credits) are replaced by courses from another Faculty, then any courses not specifically excluded by Science Faculty rules can be chosen."
+    },
+    {
+      "id": "hierarchical_sequence",
+      "machine_readable": true,
+      "field": "hierarchical_sequence_required_above_credits",
+      "value": 72,
+      "rule": "If more than two full year Science courses are replaced with electives from another Faculty, then the further electives must form part of a hierarchical sequence linked to those already completed."
+    },
+    {
+      "id": "science_for_others_exclusion",
+      "machine_readable": false,
+      "rule": "Courses taught by the Faculty of Science for other faculties are not available for students registered in Science. However, students transferring into Science from other faculties may be able to count such courses towards their Science curriculum, with the credit weighting, equivalence and conditions established by the Departments concerned."
+    }
+  ]
+}

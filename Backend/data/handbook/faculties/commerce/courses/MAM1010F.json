@@ -1,0 +1,26 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MAM1010F",
+  "title": "Mathematics 1010",
+  "department": "mathematics",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr R Moolman",
+  "prerequisites": {
+    "text": "At least 60% in NSC Mathematics. Students who do not meet the 60% NSC requirement may instead complete MAM1014F/MAM1022F followed by MAM1015S.",
+    "parsed": {
+      "type": "nsc_requirement",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "The aim of this course is to introduce topics in mathematics that are of interest to Commerce students, with applications to economics. Introductory financial mathematics including compound interest and annuities, functions, limits, differential calculus and applications of the derivative including graph sketching and Newton's Method, introduction to integral calculus and techniques of integration.",
+  "lecture_times": "Monday - Friday, 1st, 3rd, or 4th period.",
+  "dp_requirements": "Minimum of 30% in class tests and full attendance at workshops.",
+  "assessment": "Semester mark up to 40%. June examination 1 x 2 hour paper.",
+  "is_commerce_course": false,
+  "offered_by_faculty": "science"
+}

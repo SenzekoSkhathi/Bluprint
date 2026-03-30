@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EGS5041S",
+  "title": "Approaches and Issues in Physical and Environmental Sciences",
+  "department": "environmental-geographical-science",
+  "credits": 23,
+  "nqf_level": 9,
+  "year_level": "Postgraduate – Masters elective",
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr S Scheba",
+  "prerequisites": {
+    "text": "Acceptance for Honours or Master's specialising in EGS.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "Issues and themes in contemporary aspects of the Physical/Environmental interface will be covered, profiling core debates in a specialist field of physical or environmental geography. The course covers theoretical, empirical and methodological concerns and includes a fieldwork component. At NQF 9 level there is strong emphasis on the development of analytical skills, with students expected to apply these skills to a case study of their own specialist field of physical geography.",
+  "lecture_times": null,
+  "dp_requirements": "At least 80% attendance record and submission of all assignments.",
+  "assessment": "100% Coursework.",
+  "is_science_course": true
+}

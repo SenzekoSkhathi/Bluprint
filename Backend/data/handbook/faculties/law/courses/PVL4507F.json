@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PVL4507F",
+  "title": "Conflict of Laws",
+  "department": "private-law",
+  "credits": 9,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "A/Prof A Barratt",
+  "prerequisites": {
+    "text": "All Preliminary and Intermediate Level courses to have been completed.",
+    "parsed": {
+      "type": "level_completion",
+      "levels_required": [
+        "preliminary",
+        "intermediate"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course introduces the rules and principles governing conflict of laws problems. In this course we examine the general principles governing application of foreign law and focus particularly on conflict of law questions arising in the context of contract, delict, property, succession, marriage, and divorce.",
+  "lecture_times": "Two lectures per week.",
+  "dp_requirements": "None",
+  "assessment": "Coursework 30%, Final examination 70%.",
+  "is_law_course": true
+}

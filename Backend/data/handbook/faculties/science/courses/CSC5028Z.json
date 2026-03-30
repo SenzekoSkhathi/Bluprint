@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CSC5028Z",
+  "title": "Ontology Engineering",
+  "department": "computer-science",
+  "credits": 12,
+  "nqf_level": 9,
+  "year_level": "Postgraduate (Master's)",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "To be advised",
+  "prerequisites": {
+    "text": "Admission into the Master's degree specialising in Computer Science or Artificial Intelligence, or permission from the course convener. Experience in modelling (ER, UML Class diagrams) and some familiarity with logic will be helpful.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "The principal aim is to provide participants with an overview of ontology engineering — including language features, automated reasoning, and top-down and bottom-up ontology development — and a main application field being the Semantic Web. Topics covered include: Logic foundations for ontologies (Languages: Description Logics, OWL; Automated reasoning: class and instance classification, satisfiability and ontology consistency checking); Ontology development (top-down using foundational ontologies and design patterns; bottom-up exploiting legacy material such as relational databases, thesauri, text; methodologies for ontology development and maintenance).",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "None.",
+  "assessment": "Exam (closed-book but with some material provided) - 50%; Assignments - 50%.",
+  "is_science_course": true
+}

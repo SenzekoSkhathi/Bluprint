@@ -1,0 +1,235 @@
+{
+  "$schema": "handbook-programme-v1",
+  "programme_code": "CB004STA13",
+  "programme_name": "Bachelor of Business Science specialising in Statistics and Data Science",
+  "degree": "BBusSci",
+  "specialisation": "Statistics and Data Science",
+  "faculty": "commerce",
+  "nqf_level": 8,
+  "minimum_credits": 528,
+  "duration_years": 4,
+  "department": "statistical-sciences",
+  "curriculum": [
+    {
+      "year": 1,
+      "total_credits": 168,
+      "courses": [
+        {
+          "code": "ACC1021F",
+          "title": "Accounting for Business I",
+          "nqf_credits": 15,
+          "nqf_level": 5
+        },
+        {
+          "code": "ACC1022Z",
+          "title": "Accounting for Business II",
+          "nqf_credits": 9,
+          "nqf_level": 5
+        },
+        {
+          "code": "BUS1036F",
+          "title": "Evidence-based Management",
+          "nqf_credits": 18,
+          "nqf_level": 5
+        },
+        {
+          "code": "ECO1010F",
+          "title": "Microeconomics I",
+          "nqf_credits": 18,
+          "nqf_level": 5
+        },
+        {
+          "code": "CSC1015F",
+          "title": "Computer Science 1015",
+          "nqf_credits": 18,
+          "nqf_level": 5
+        },
+        {
+          "code": "MAM1031F",
+          "title": "Mathematics 1031",
+          "nqf_credits": 18,
+          "nqf_level": 5
+        },
+        {
+          "code": "MAM1032S",
+          "title": "Mathematics 1032",
+          "nqf_credits": 18,
+          "nqf_level": 5
+        },
+        {
+          "code": "CSC1016S",
+          "title": "Computer Science 1016",
+          "nqf_credits": 18,
+          "nqf_level": 5
+        },
+        {
+          "code": "ECO1011S",
+          "title": "Macroeconomics I",
+          "nqf_credits": 18,
+          "nqf_level": 5
+        },
+        {
+          "code": "STA1000S",
+          "title": "Introductory Statistics",
+          "nqf_credits": 18,
+          "nqf_level": 5,
+          "alternative": "STA1006S"
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "total_credits": 186,
+      "courses": [
+        {
+          "code": "ECO2003F",
+          "title": "Microeconomics II",
+          "nqf_credits": 18,
+          "nqf_level": 6
+        },
+        {
+          "code": "MAM2010F",
+          "title": "Advanced Calculus (2AC)",
+          "nqf_credits": 12,
+          "nqf_level": 6
+        },
+        {
+          "code": "MAM2011F",
+          "title": "Linear Algebra (2LA)",
+          "nqf_credits": 12,
+          "nqf_level": 6
+        },
+        {
+          "code": "MAM2012S",
+          "title": "Differential Equations (2DE)",
+          "nqf_credits": 12,
+          "nqf_level": 6
+        },
+        {
+          "code": "MAM2014S",
+          "title": "Real Analysis (2RA)",
+          "nqf_credits": 12,
+          "nqf_level": 6
+        },
+        {
+          "code": "PHI2043S",
+          "title": "Business Ethics",
+          "nqf_credits": 18,
+          "nqf_level": 6
+        },
+        {
+          "code": "BUS2010F",
+          "title": "Marketing I",
+          "nqf_credits": 18,
+          "nqf_level": 6
+        },
+        {
+          "code": "CML1001F",
+          "title": "Business Law I",
+          "nqf_credits": 18,
+          "nqf_level": 5,
+          "alternative": "CML1001S"
+        },
+        {
+          "code": "ECO2004S",
+          "title": "Macroeconomics II",
+          "nqf_credits": 18,
+          "nqf_level": 6
+        },
+        {
+          "code": "STA2004F",
+          "title": "Statistical Theory & Inference",
+          "nqf_credits": 24,
+          "nqf_level": 6
+        },
+        {
+          "code": "STA2005S",
+          "title": "Linear Models",
+          "nqf_credits": 24,
+          "nqf_level": 6
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "total_credits": 198,
+      "courses": [
+        {
+          "code": "FTX2020F",
+          "title": "Business Finance",
+          "nqf_credits": 18,
+          "nqf_level": 6,
+          "alternative": "FTX2024F"
+        },
+        {
+          "code": "BUS3039F",
+          "title": "People Management",
+          "nqf_credits": 18,
+          "nqf_level": 7,
+          "alternative": "BUS3039S"
+        },
+        {
+          "code": "CSC2001F",
+          "title": "Computer Science 2001",
+          "nqf_credits": 24,
+          "nqf_level": 6
+        },
+        {
+          "code": "CSC2002S",
+          "title": "Computer Science 2002",
+          "nqf_credits": 24,
+          "nqf_level": 6
+        },
+        {
+          "code": "ECO3021S",
+          "title": "Quantitative Methods in Economics",
+          "nqf_credits": 18,
+          "nqf_level": 7
+        },
+        {
+          "code": "INF2006F",
+          "title": "Business Intelligence & Analytics",
+          "nqf_credits": 6,
+          "nqf_level": 6
+        },
+        {
+          "code": "INF2007F",
+          "title": "Applying Database Principles",
+          "nqf_credits": 12,
+          "nqf_level": 6
+        },
+        {
+          "code": "STA3022F",
+          "title": "Applied Multivariate Data Analysis",
+          "nqf_credits": 36,
+          "nqf_level": 7
+        },
+        {
+          "code": "STA3045F",
+          "title": "Stochastic Processes and Distribution",
+          "nqf_credits": 36,
+          "nqf_level": 7
+        }
+      ],
+      "note": "Includes Mathematical Statistics OR Applied Statistics stream option"
+    },
+    {
+      "year": 4,
+      "total_credits": 160,
+      "courses": [
+        {
+          "code": "STA4010W",
+          "title": "Topics in Statistics & Operational Research",
+          "nqf_credits": 142,
+          "nqf_level": 8
+        },
+        {
+          "code": "BUS4050H",
+          "title": "Strategic Thinking",
+          "nqf_credits": 18,
+          "nqf_level": 8
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "BUS4027W",
+  "title": "Actuarial Science III: Assets",
+  "department": "management-studies",
+  "credits": 54,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "P Botha",
+  "prerequisites": {
+    "text": "BUS2016H, BUS3018F, BUS3024S, STA3041F, STA3043S and STA3045F.",
+    "parsed": {
+      "type": "prerequisite",
+      "codes": [
+        "BUS2016H",
+        "BUS3018F",
+        "BUS3024S",
+        "STA3041F",
+        "STA3045F"
+      ]
+    }
+  },
+  "corequisites": [
+    "BUS4028F"
+  ],
+  "outline": "The aim of this subject is to instil in successful candidates the ability to apply a wide range of key actuarial concepts in simple traditional and non-traditional situations. It comprises the following topics: How to do a professional job, Stakeholders, Client needs and customer needs and implications for other stakeholders, Managing risks, Marketing, External environment, Investment environment, Meeting investor needs, Capital, Interaction with client, Awareness of risk, Management of provisions for liabilities, Project planning and management, Input validation, Methodology and techniques, Assumption setting, Design, Expenses, Developing the cost and the price, Provisioning, Relationship between assets and liabilities, Maintaining profitability, Determining the expected results, Reporting actual results, Risk management, Asset management, Capital management, Surplus management, Mergers and acquisitions, Insolvency and closure, Options and guarantees, Monitoring, Principal terms.",
+  "lecture_times": "To be advised.",
+  "dp_requirements": "Completion and timeous submission of tutorial exercises. Sitting all class tests. An overall average of 40% for class work.",
+  "assessment": "Tutorials and Tests 50%; End of year examinations (2x 3 hours) 50%.",
+  "is_commerce_course": true
+}

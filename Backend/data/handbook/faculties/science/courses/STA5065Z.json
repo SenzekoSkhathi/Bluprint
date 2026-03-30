@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "STA5065Z",
+  "title": "Financial Econometrics",
+  "department": "statistical-sciences",
+  "credits": 15,
+  "nqf_level": 9,
+  "year_level": "Postgraduate (Master's)",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "To be advised",
+  "prerequisites": {
+    "text": "Acceptance into Master's programs in Statistics & Data Science or Data Science, and/or statistical background deemed sufficient by the Head of Department.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "This course examines from an advanced econometric and quantitative perspective: market efficiency in macro-economic markets including the JSE, bond market and short-term interest rate markets; characteristics of the JSE and its sectors; appropriate return transformations; company specific, sector specific and market wide effects; special focus on the R$ exchange rate and its effect on local markets; technical modelling of bond market (Nelson-Siegel parameterisation) and the share market (Black Scholes; derivatives).",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "40% for the assignment component.",
+  "assessment": "Assignment 30%. Examination, 3 hours, 70%. A subminimum of 40% in each of the assignment and examination components.",
+  "is_science_course": true
+}

@@ -1,0 +1,68 @@
+{
+  "id": "bsc-eng-electrical-4yr",
+  "programme_code": "EB009EEE01",
+  "name": "Bachelor of Science in Engineering in Electrical Engineering 4-year curriculum",
+  "abbreviation": "BSc(Eng)(Electrical)",
+  "department": "Electrical Engineering",
+  "duration_years": 4,
+  "minimum_credits": 560,
+  "saqa_id": 13979,
+  "curriculum": {
+    "year_1": {
+      "core": [
+        "CSC1015F",
+        "EEE1008F",
+        "MAM1020F",
+        "PHY1012F",
+        "CSC1016S",
+        "EEE1009S",
+        "MAM1021S",
+        "PHY1013S",
+        "EEE1000X"
+      ],
+      "credits": 132
+    },
+    "year_2": {
+      "core": [
+        "EEE2045F",
+        "EEE2046F",
+        "MAM2083F",
+        "MEC1003F",
+        "MEC1009F",
+        "EEE2044S",
+        "MAM2084S",
+        "PHY2010S",
+        "EEE2047S",
+        "EEE2048S"
+      ],
+      "credits": 144
+    },
+    "year_3": {
+      "core": [
+        "EEE3088F",
+        "EEE3089F",
+        "EEE3090F",
+        "EEE3091F",
+        "EEE3092F",
+        "EEE3093S",
+        "EEE3094S",
+        "EEE3098S",
+        "EEE3100S",
+        "EEE3000X"
+      ],
+      "complementary_studies_credits": 18,
+      "credits": 146
+    },
+    "year_4": {
+      "core": [
+        "EEE4113F",
+        "CML4607F",
+        "EEE4125C",
+        "EEE4124C",
+        "EEE4022S"
+      ],
+      "elective_core_credits": 48,
+      "credits": 138
+    }
+  }
+}

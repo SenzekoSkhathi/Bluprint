@@ -1,0 +1,34 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CSC3024S",
+  "title": "Introduction to C++ Programming",
+  "department": "computer-science",
+  "credits": 18,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Associate Professor P Marais",
+  "prerequisites": {
+    "text": "CSC2001F, CSC2002S, CSC2004Z and ((MAM1004F+MAM1008S) or (MAM1000W) or (MAM1031F or equivalent)).",
+    "parsed": {
+      "type": "complex",
+      "codes_mentioned": [
+        "CSC2001F",
+        "CSC2002S",
+        "CSC2004Z",
+        "MAM1004F",
+        "MAM1008S",
+        "MAM1000W",
+        "MAM1031F"
+      ],
+      "note": "Complex prerequisite logic - see text"
+    }
+  },
+  "corequisites": [],
+  "outline": "This course introduces the C++ programming language. Students are exposed to different aspects of modern C++, including pointers, stream operations, RAII, operator overloading, templates and effective use of the standard template library (STL). The course also examines the C++ memory model and shows how this works with move semantics to produce efficient code.",
+  "lecture_times": "Monday - Friday, 3rd period. Practicals: Two 4-hour practicals per week, by arrangement.",
+  "dp_requirements": "Minimum of 45% aggregate in practical work.",
+  "assessment": "20% tests; 30% practicals and practical tests; 50% final examination. Subminima: 45% practical work; 45% on weighted average of tests and final examination.",
+  "is_science_course": true
+}

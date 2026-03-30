@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "HUB1023S",
+  "title": "Biosciences for Physiotherapy IB",
+  "department": "human-biology",
+  "credits": 9,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Associate Professor T Mutsvangwa",
+  "prerequisites": {
+    "text": "HUB1022F or HSE1013F",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "HUB1022F",
+        "HSE1013F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "Objective: Physics: To equip students to analyse basi c biomechanical issues involving movement, forces, torques and stresses on the body. Chemistry: To provide students with a foundation for pharmacology, physiology and metabolism. Course outline: This course builds on the foundational concepts, terminology and science covered in Biosciences for Physiotherapy IA. The course conte nt for physical science includes centre of gravity; body-segment parameters; Hooke’s law; work, energy and power; momentum and impulse; static and dynamic systems; buoyancy; friction and stress analysis. St udents learn how to asse ss journal articles. The course content for chemistry incl udes basic organic chemistry, covering fundamental aspects of structure and bonding, acid s and bases, amines, carb ohydrates, lipids and nucleic acids. Integrated with the chemistry principles, aspects of fat and protein metabolism are covered. The course is taught through lectures, weekly tutorials and assignments. By the end of the course, students should be able to assess simple problems and determine how forces and torques affect the work, energy and power in systems; determine whether ce rtain types of loading are safe; and understand organic chemical principles and how they relate to body physiology.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Students must attend 75% of tutorials, hand-ins, an d mini tests and obtain a combined class mark of at least 40%.",
+  "assessment": "The course mark contributes 60% and consists of assignments (10%), class tests (30%) and ad hoc mini tests (20%). The examination contributes 40% and co nsists of a three-hour written paper in November. Both the physics and chemistry components must be passed with a subminimum of 40% for each component in the final examination.",
+  "is_health_sciences_course": true
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EEE3092F",
+  "title": "Signals & Systems II",
+  "department": "electrical-engineering",
+  "credits": 16,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Associate Professor A Wilkinson",
+  "prerequisites": {
+    "text": "EEE2047S, MAM2083F/S",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "EEE2047S",
+        "MAM2083F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to develop the understanding of: Random signals and processes in continuous /discrete time, probability distribution/density functions, random signals calculus (mean, variance, moment generation function), transforms of random signals, Bay esian Theorem, covariance and correlation, Central Limit theorem, Gaussian processes, random signals spectrum and bandwidth, power spectral density (PSD), Wiener -Khinchine Theorem, entropy function, estimation/filtering of random signals. Additionally this course aims to develop the understanding of: Time and frequency domain signal processing for electronic systems (carrier-wave radio and instrumentation), continuous- time Fourier theory, sampled signals and use of the discrete Fourier transform, propagation of signals and noise through linear systems, complex analytic signal representation, power calculations using PSD functions, pulse detection using correlation and the matched filter, analog carrier -wave modulation/demodulation, amplitude modulation (doub le sideband and single sideband; suppressed carrier and large carrier), heterodyning, angle modulation (frequency and phase modulation), signal- to-noise ratio calculations.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

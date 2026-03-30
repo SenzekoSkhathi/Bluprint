@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MEC2047S",
+  "title": "Engineering Dynamics",
+  "department": "mechanical-engineering",
+  "credits": 16,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Mr S Mashau",
+  "prerequisites": {
+    "text": "MAM1021F/S, PHY1012F/S and MEC1009F/S",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "MAM1021F",
+        "PHY1012F",
+        "MEC1009F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to extend the fundamental principles and formulations of Newtonian mechanics by examining the motion of particles and rigid bodies. This is achieved by considering kinematics (motion without reference to forces) and kinetics (motion with r eference to forces). Topics include rectilinear motion, curvilinear motion, relative motion, constrained motion, absolute motion, Newton's laws, work and energy, impulse and momentum, impact.",
+  "lecture_times": "4 lectures and 1 tutorial per week.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Weekly tutorial tests: 10% (30 minutes each), Class tests: 30%, Final examination: 60% (3 hours).",
+  "is_engineering_course": true
+}

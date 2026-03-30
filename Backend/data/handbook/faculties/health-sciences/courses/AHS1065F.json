@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AHS1065F",
+  "title": "Inclusive Development and Agency",
+  "department": "health-and-rehabilitation-sciences",
+  "credits": 15,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Professor T Lorenzo",
+  "prerequisites": {
+    "text": "None",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [
+    "AHS1063S",
+    "AHS1060S",
+    "AHS1066S"
+  ],
+  "outline": "By the end of this course, student s should be able to explain the concepts of disability, inclusion development, identity, agen cy and power; explain the purpose of disability rights policies; identify and negotiate factors influencing access and participation across sect ors; implement strategies to enable participation and access to services; mobilise local resources; and work with relevant experts and stakeholders.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Full attendance of and part icipation in all lectur es, practical sessions, workshops and tutorials, and submission of assignments by the due dates.",
+  "assessment": "Coursework mark counts 50% of the year mark an d comprises assignments (essay writing and oral presenta tions). The examination mark co unts 50% of th e year mark and comprises a structured practical examination.",
+  "is_health_sciences_course": true
+}

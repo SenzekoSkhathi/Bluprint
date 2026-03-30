@@ -1,0 +1,31 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PRY4001W",
+  "title": "Psychiatry for External Credit",
+  "department": "psychiatry-and-mental-health",
+  "credits": 15,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Dr Q Cossie and Dr Karjiker DEPARTMENTS IN THE FACULTY 217",
+  "prerequisites": {
+    "text": "A student will be registered to one of the following equivalent courses, to be determined by the grou p the student is allo cated to: PRY4101X, PRY4201X, PRY4301X, PRY4401X, PRY4501X",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "PRY4101X",
+        "PRY4201X",
+        "PRY4301X",
+        "PRY4401X",
+        "PRY4501X"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "Students learn about psychiatric signs, symptoms, disease classi fication, phenom enology, and the management of patients in a bio-psych-social model. They learn to take patient histories and recognize the major psychiatric conditions wh ich come into hospital. They se e the multidisciplinary team in a clinical setting and clerk clinical cases to facilitate their clinical learning. They are expected to conduct themselves in a professional manne r and engage with patien ts in a respectful and empathic manner. We have a blended learning model an d students are expected to e ngage with the online learning content.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "90% attendance of all ward rounds and clinical learning session as well as online tutorials which will be monitored by an attendance register. Comp letion and timeous submission of two portfolio cases. Should a student need to make up clinical time, and they cannot make up the time for whatever reason, then they will need to repeat the course.",
+  "assessment": "The assessment is made up of three components. 1) SAQ written paper which counts 50% of the final mark and in which the student must attain 50% to pass. 2) Portfolio which counts 30% of the final mark and for which the student must score 50% to pass. 3) Ward assessment which counts 20% of the final mark. This is assessed by the clinical team based on the student’s engagement in clinical teaching, ward rounds and tutorials. The assessment takes place in the last week of the block. The student needs to achi eve an overall mark of 50% to pass the course. There is no supplementary exam for the course. A student who fails the course will be required to repeat the course in the next calendar year and jo in the",
+  "is_health_sciences_course": true
+}

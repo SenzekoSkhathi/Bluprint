@@ -1,0 +1,378 @@
+{
+  "$schema": "handbook-major-v1",
+  "major_code": "BIO12",
+  "major_name": "Biology",
+  "department": "biological-sciences",
+  "notes": "Students wishing to progress to Biological Sciences or Marine Biology Honours must complete STA2007.",
+  "mutual_exclusions_with": [],
+  "required_companion_majors": [],
+  "has_student_limit": false,
+  "years": [
+    {
+      "year": 1,
+      "label": "First Year Core Courses",
+      "combinations": [
+        {
+          "combination_id": "BIO12-Y1-A",
+          "description": "With MAM1004F",
+          "courses": [
+            {
+              "code": "BIO1000F",
+              "title": "Cell Biology",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "BIO1004S",
+              "title": "Biological Diversity",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "CEM1000W",
+              "title": "Chemistry 1000",
+              "credits": 36,
+              "nqf_level": 5
+            },
+            {
+              "code": "MAM1004F",
+              "title": "Mathematics 1004",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "STA1007S",
+              "title": "Introductory Statistics for Scientists",
+              "credits": 18,
+              "nqf_level": 5
+            }
+          ]
+        },
+        {
+          "combination_id": "BIO12-Y1-B",
+          "description": "With MAM1031F",
+          "courses": [
+            {
+              "code": "BIO1000F",
+              "title": "Cell Biology",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "BIO1004S",
+              "title": "Biological Diversity",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "CEM1000W",
+              "title": "Chemistry 1000",
+              "credits": 36,
+              "nqf_level": 5
+            },
+            {
+              "code": "MAM1031F",
+              "title": "Mathematics 1031",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "STA1007S",
+              "title": "Introductory Statistics for Scientists",
+              "credits": 18,
+              "nqf_level": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "label": "Second Year Core Courses",
+      "combinations": [
+        {
+          "combination_id": "BIO12-Y2-A",
+          "description": "BIO2014F plus Vertebrate and Invertebrate Diversity",
+          "courses": [
+            {
+              "code": "BIO2014F",
+              "title": "Principles of Ecology & Evolution",
+              "credits": 24,
+              "nqf_level": 6
+            },
+            {
+              "code": "BIO2015F",
+              "title": "Vertebrate Diversity & Functional Biology",
+              "credits": 24,
+              "nqf_level": 6
+            },
+            {
+              "code": "BIO2016S",
+              "title": "Invertebrate Diversity & Functional Biology",
+              "credits": 24,
+              "nqf_level": 6
+            }
+          ],
+          "recommended": [
+            {
+              "code": "STA2007F/H/S",
+              "title": "Study Design & Data Analysis for Scientists",
+              "credits": 24,
+              "nqf_level": 6
+            }
+          ]
+        },
+        {
+          "combination_id": "BIO12-Y2-B",
+          "description": "BIO2014F plus Vertebrate Diversity and Plant Diversity",
+          "courses": [
+            {
+              "code": "BIO2014F",
+              "title": "Principles of Ecology & Evolution",
+              "credits": 24,
+              "nqf_level": 6
+            },
+            {
+              "code": "BIO2015F",
+              "title": "Vertebrate Diversity & Functional Biology",
+              "credits": 24,
+              "nqf_level": 6
+            },
+            {
+              "code": "BIO2017S",
+              "title": "Plant Diversity & Functional Biology",
+              "credits": 24,
+              "nqf_level": 6
+            }
+          ],
+          "recommended": [
+            {
+              "code": "STA2007F/H/S",
+              "title": "Study Design & Data Analysis for Scientists",
+              "credits": 24,
+              "nqf_level": 6
+            }
+          ]
+        },
+        {
+          "combination_id": "BIO12-Y2-C",
+          "description": "BIO2014F plus Invertebrate Diversity and Plant Diversity",
+          "courses": [
+            {
+              "code": "BIO2014F",
+              "title": "Principles of Ecology & Evolution",
+              "credits": 24,
+              "nqf_level": 6
+            },
+            {
+              "code": "BIO2016S",
+              "title": "Invertebrate Diversity & Functional Biology",
+              "credits": 24,
+              "nqf_level": 6
+            },
+            {
+              "code": "BIO2017S",
+              "title": "Plant Diversity & Functional Biology",
+              "credits": 24,
+              "nqf_level": 6
+            }
+          ],
+          "recommended": [
+            {
+              "code": "STA2007F/H/S",
+              "title": "Study Design & Data Analysis for Scientists",
+              "credits": 24,
+              "nqf_level": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "label": "Third Year Core Courses – choose two of five",
+      "combinations": [
+        {
+          "combination_id": "BIO12-Y3-A",
+          "description": "Global Change Ecology + Conservation",
+          "courses": [
+            {
+              "code": "BIO3013F",
+              "title": "Global Change Ecology",
+              "credits": 36,
+              "nqf_level": 7
+            },
+            {
+              "code": "BIO3014S",
+              "title": "Conservation: Genes, Populations & Biodiversity",
+              "credits": 36,
+              "nqf_level": 7
+            }
+          ]
+        },
+        {
+          "combination_id": "BIO12-Y3-B",
+          "description": "Global Change Ecology + Ecology & Evolution in the Field",
+          "courses": [
+            {
+              "code": "BIO3013F",
+              "title": "Global Change Ecology",
+              "credits": 36,
+              "nqf_level": 7
+            },
+            {
+              "code": "BIO3018F",
+              "title": "Ecology & Evolution in the Field",
+              "credits": 36,
+              "nqf_level": 7
+            }
+          ]
+        },
+        {
+          "combination_id": "BIO12-Y3-C",
+          "description": "Global Change Ecology + Quantitative Biology",
+          "courses": [
+            {
+              "code": "BIO3013F",
+              "title": "Global Change Ecology",
+              "credits": 36,
+              "nqf_level": 7
+            },
+            {
+              "code": "BIO3019S",
+              "title": "Quantitative Biology",
+              "credits": 36,
+              "nqf_level": 7
+            }
+          ]
+        },
+        {
+          "combination_id": "BIO12-Y3-D",
+          "description": "Global Change Ecology + People & the Sea",
+          "courses": [
+            {
+              "code": "BIO3013F",
+              "title": "Global Change Ecology",
+              "credits": 36,
+              "nqf_level": 7
+            },
+            {
+              "code": "BIO3022S",
+              "title": "People & the Sea",
+              "credits": 36,
+              "nqf_level": 7
+            }
+          ]
+        },
+        {
+          "combination_id": "BIO12-Y3-E",
+          "description": "Conservation + Ecology & Evolution in the Field",
+          "courses": [
+            {
+              "code": "BIO3014S",
+              "title": "Conservation: Genes, Populations & Biodiversity",
+              "credits": 36,
+              "nqf_level": 7
+            },
+            {
+              "code": "BIO3018F",
+              "title": "Ecology & Evolution in the Field",
+              "credits": 36,
+              "nqf_level": 7
+            }
+          ]
+        },
+        {
+          "combination_id": "BIO12-Y3-F",
+          "description": "Conservation + Quantitative Biology",
+          "courses": [
+            {
+              "code": "BIO3014S",
+              "title": "Conservation: Genes, Populations & Biodiversity",
+              "credits": 36,
+              "nqf_level": 7
+            },
+            {
+              "code": "BIO3019S",
+              "title": "Quantitative Biology",
+              "credits": 36,
+              "nqf_level": 7
+            }
+          ]
+        },
+        {
+          "combination_id": "BIO12-Y3-G",
+          "description": "Conservation + People & the Sea",
+          "courses": [
+            {
+              "code": "BIO3014S",
+              "title": "Conservation: Genes, Populations & Biodiversity",
+              "credits": 36,
+              "nqf_level": 7
+            },
+            {
+              "code": "BIO3022S",
+              "title": "People & the Sea",
+              "credits": 36,
+              "nqf_level": 7
+            }
+          ]
+        },
+        {
+          "combination_id": "BIO12-Y3-H",
+          "description": "Ecology & Evolution in the Field + Quantitative Biology",
+          "courses": [
+            {
+              "code": "BIO3018F",
+              "title": "Ecology & Evolution in the Field",
+              "credits": 36,
+              "nqf_level": 7
+            },
+            {
+              "code": "BIO3019S",
+              "title": "Quantitative Biology",
+              "credits": 36,
+              "nqf_level": 7
+            }
+          ]
+        },
+        {
+          "combination_id": "BIO12-Y3-I",
+          "description": "Ecology & Evolution in the Field + People & the Sea",
+          "courses": [
+            {
+              "code": "BIO3018F",
+              "title": "Ecology & Evolution in the Field",
+              "credits": 36,
+              "nqf_level": 7
+            },
+            {
+              "code": "BIO3022S",
+              "title": "People & the Sea",
+              "credits": 36,
+              "nqf_level": 7
+            }
+          ]
+        },
+        {
+          "combination_id": "BIO12-Y3-J",
+          "description": "Quantitative Biology + People & the Sea",
+          "courses": [
+            {
+              "code": "BIO3019S",
+              "title": "Quantitative Biology",
+              "credits": 36,
+              "nqf_level": 7
+            },
+            {
+              "code": "BIO3022S",
+              "title": "People & the Sea",
+              "credits": 36,
+              "nqf_level": 7
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "BUS4034S",
+  "title": "Professional Communication (Actuarial Science)",
+  "department": "management-studies",
+  "credits": 27,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "C Kalil",
+  "prerequisites": {
+    "text": "BUS2016H, BUS3018F and STA3041F. BUS3024S, STA3043S, STA3045F, BUS4028F.",
+    "parsed": {
+      "type": "prerequisite",
+      "codes": [
+        "BUS2016H",
+        "BUS3018F",
+        "STA3041F",
+        "BUS3024S",
+        "STA3045F",
+        "BUS4028F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The course develops theory and practice related to professional and business communication. It aims to enhance students' ability to: plan and write business and professional document types with a focus on communicating actuarial science topics to various non-specialist audiences; structure and deliver business presentations; design visual support for oral and written message; and work in teams to develop collaborative management and communication skills.",
+  "lecture_times": "To be advised.",
+  "dp_requirements": "Submission of all assignments and participation in oral presentations; attendance at all compulsory lectures and workshops.",
+  "assessment": "PCU component: semester course work and presentations (60%); 3-hour written examination [Paper 1] (40%). Students must achieve a sub-minimum of 40% for each component with an average of 50%. PCU final mark: 70%; N211 Paper 2: 30%.",
+  "is_commerce_course": true
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "APG1021W",
+  "title": "Representation I",
+  "department": "architecture-planning-geomatics",
+  "credits": 20,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Associate Professor P Tumubweinee",
+  "prerequisites": {
+    "text": "None",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [
+    "APG1003W",
+    "APG1020W"
+  ],
+  "outline": "This is a hands-on course, divided between freehand, geometric drawing and digital drawing. While the aim is to introduce techniques and disciplines, once understood these are intended to enhance creativity rather than conformity. The freehand drawing tutorials will address drawing elements such as line, tone, mass, texture, measure and proportion, in wet and dry media. The geometric drawing tutorials will address the elements of planar geometry as well as the projections and conventions useful to designers. The digital drawing, while introducing digital 2 & 3D visualisation in terms of view studies, material studies and lighting studies, will reiterate the visual and graphic understanding built up in the course.",
+  "lecture_times": "Refer to departmental timetable DEPARTMENTS IN THE FACULTY AND COURSES OFFERED 75",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

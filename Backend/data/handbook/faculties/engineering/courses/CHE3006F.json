@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CHE3006F",
+  "title": "Fundamentals of Chemical Engineering III",
+  "department": "chemical-engineering",
+  "credits": 54,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr SC Mokwatlo",
+  "prerequisites": {
+    "text": "CHE2005W, MAM2084F/S",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "CHE2005W",
+        "MAM2084F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to develop the understanding of chemical engineering theory and practice. The theory is covered in blocks and is reinforced and contextualised by theory -related tools (heuristics, flowsheeting, charts, tables), engineering practice-related tools/skills (sustainability, environment & economics, safety & health, communication, drawing and computing), practicals and project work. Detailed theory topics include: (1 – Solid-Fluid Systems) particle characterisation, motion of a particle in a flui d, sedimentation, thickening hydrocyclones and centrifugation, mixing and agitation, rheology, flow through packed beds, fluidisation, filtration; (2 – Interface Systems) Fick’s law, film mass transfer, film theory, mass transfer coefficients, correlations , overall mass transfer concept, packed bed design, mass transfer with reaction, solid-fluid reactions; (3 – Reaction Systems) residence time distribution and non -ideal reactors, non -isothermal reactor design, multiple reactions; (4 – Thermodynamic Systems) equations of state, departure functions and excess properties, fugacity, phase equilibrium, vapour -liquid equilibrium, partial molar properties, activity coefficients, azeotropes, flash calculations, liquid-liquid-equilibrium, chemical equilibrium.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course. DEPARTMENTS IN THE FACULTY AND COURSES OFFERED 97",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "DOL4000H",
+  "title": "Integrative Assessment Moot",
+  "department": "deans-office-law",
+  "credits": 0,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "FY",
+  "semester_code": "H",
+  "convener": "TBA",
+  "prerequisites": {
+    "text": "All Preliminary and Intermediate Level courses to have been completed.",
+    "parsed": {
+      "type": "level_completion",
+      "levels_required": [
+        "preliminary",
+        "intermediate"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The Integrative Assessment Moot ('IAM') is an integrative capstone LLB assessment. Its objectives are to assess students' ability to work collaboratively in pairs to identify the legal issues and apply the relevant law to a complex factual scenario or given case that integrates a variety of areas of law taught as separate compulsory courses in the LLB curriculum; prepare written Heads of Argument; present legal argument orally; and respond to oral questioning in simulated court proceedings. Students will be graded on a Pass/Fail basis by the panel of judges who adjudicated the moot concerned. The best-performing student in the Moot-Off will be awarded the Faculty Moot Prize.",
+  "lecture_times": "Takes place in the second semester.",
+  "dp_requirements": "Attendance and completion of a library training session in legal research resources.",
+  "assessment": "Examination 100%.",
+  "is_law_course": true
+}

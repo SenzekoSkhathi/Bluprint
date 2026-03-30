@@ -1,49 +1,56 @@
 import MainLayout from "@/components/main-layout";
+import {
+    getCrossMajorFacultySlugs,
+    getPrimaryFacultySlug,
+} from "@/constants/faculty";
 import { theme } from "@/constants/theme";
 import { buildGuidanceTrustMessage } from "@/hooks/use-logged-in-user";
-import { academicRepository } from "@/services/academic-repository";
-import type {
-  AutoGraduationPlan,
-  CompletedCourseRecord,
-  PlannerCourseStatus as CourseStatus,
-  InProgressCourseRecord,
-  PlannedCourse,
-  ScheduleItem,
-} from "@/types/academic";
 import { generateAutoGraduationPlans } from "@/services/academic-path-planner";
+import { academicRepository } from "@/services/academic-repository";
 import { validateAcademicPlan } from "@/services/academic-validation";
+import type {
+    AutoGraduationPlan,
+    CompletedCourseRecord,
+    PlannerCourseStatus as CourseStatus,
+    InProgressCourseRecord,
+    PlannedCourse,
+    ScheduleItem,
+} from "@/types/academic";
 import React, { useEffect, useMemo, useState } from "react";
 import {
-  Platform,
-  Pressable,
-  ScrollView,
-  StyleSheet,
-  Text,
-  TextInput,
-  View,
+    Platform,
+    Pressable,
+    ScrollView,
+    StyleSheet,
+    Text,
+    TextInput,
+    View,
 } from "react-native";
 
 const semesters = academicRepository.getPlannerSemesters();
 
 import type { CourseCatalogEntry as Course } from "@/services/academic-repository";
 import {
-  collectScienceDepartmentCourses,
-  extractScienceHandbookRules,
-  getScienceCourses,
-  getScienceMajors,
-  getStudentPlan,
-  getStudentSchedule,
-  type HandbookPlannerPolicy,
-  type HandbookRuleValidationIssue,
-  type HandbookRuleValidationResponse,
-  type ScienceMajorCombination,
-  type ScienceMajorEntry,
-  updateStudentPlan,
-  validateSciencePlanAgainstRules,
+    collectScienceDepartmentCourses,
+    extractScienceHandbookRules,
+    getHandbookCourses,
+    getHandbookMajors,
+    getScienceCourses,
+    getScienceMajors,
+    getStudentPlan,
+    getStudentSchedule,
+    type HandbookPlannerPolicy,
+    type HandbookRuleValidationIssue,
+    type HandbookRuleValidationResponse,
+    type ScienceMajorCombination,
+    type ScienceMajorEntry,
+    updateStudentPlan,
+    validatePlanAgainstHandbookRules,
+    validateSciencePlanAgainstRules,
 } from "@/services/backend-api";
 import {
-  getIssueActionHint,
-  getIssueActionTarget,
+    getIssueActionHint,
+    getIssueActionTarget,
 } from "@/services/remediation-actions";
 import { useRouter } from "expo-router";
 
@@ -193,6 +200,7 @@ export default function Planner({
   inProgressCourses: inProgressCoursesProp = [],
   plannedCourses: plannedCoursesProp = [],
 }: PlannerProps) {
+  const primaryFacultySlug = getPrimaryFacultySlug();
   const router = useRouter();
   const detectedYear = getDetectedYear(currentYearNumber);
   const [catalog, setCatalog] = useState<Course[]>([]);
@@ -207,26 +215,32 @@ export default function Planner({
       try {
         setIsLoading(true);
         setLoadError(null);
-        const baselineResponse = await getScienceCourses();
-        const departmentResponses = await Promise.allSettled(
-          TARGET_DEPARTMENTS.map((department) =>
-            collectScienceDepartmentCourses({
-              department,
-              handbook_title: TARGET_HANDBOOK,
-              run_id: baselineResponse.run_id,
-            }),
-          ),
-        );
-        const successfulResponses = departmentResponses
-          .filter((item) => item.status === "fulfilled")
-          .map((item) => (item as PromiseFulfilledResult<any>).value);
-        const mergedDepartmentCourses = successfulResponses.flatMap(
-          (response) => response.courses,
-        );
-        const sourceCourses =
-          mergedDepartmentCourses.length > 0
-            ? mergedDepartmentCourses
-            : baselineResponse.courses;
+        const baselineResponse = await getHandbookCourses({
+          faculty_slug: primaryFacultySlug,
+        }).catch(() => getScienceCourses());
+
+        let sourceCourses = baselineResponse.courses;
+        if (primaryFacultySlug === "science") {
+          const departmentResponses = await Promise.allSettled(
+            TARGET_DEPARTMENTS.map((department) =>
+              collectScienceDepartmentCourses({
+                department,
+                handbook_title: TARGET_HANDBOOK,
+                run_id: baselineResponse.run_id,
+              }),
+            ),
+          );
+          const successfulResponses = departmentResponses
+            .filter((item) => item.status === "fulfilled")
+            .map((item) => (item as PromiseFulfilledResult<any>).value);
+          const mergedDepartmentCourses = successfulResponses.flatMap(
+            (response) => response.courses,
+          );
+          sourceCourses =
+            mergedDepartmentCourses.length > 0
+              ? mergedDepartmentCourses
+              : baselineResponse.courses;
+        }
 
         const normalized = sourceCourses.map((course: any) => ({
           id: course.id,
@@ -263,7 +277,7 @@ export default function Planner({
     return () => {
       isMounted = false;
     };
-  }, []);
+  }, [primaryFacultySlug]);
   // Auto-select semester based on current month
   const getDetectedSemester = () => {
     const month = new Date().getMonth() + 1; // JS months are 0-based
@@ -294,7 +308,9 @@ export default function Planner({
         code: course.code,
         name: course.title,
         credits: course.credits,
-        year: course.year ?? `Year ${Math.min(Math.max(course.nqfLevel - 4, 1), 4)}`,
+        year:
+          course.year ??
+          `Year ${Math.min(Math.max(course.nqfLevel - 4, 1), 4)}`,
         semester:
           course.semester.toUpperCase().includes("S2") ||
           course.semester.toUpperCase().includes("SEM 2")
@@ -334,6 +350,9 @@ export default function Planner({
   const [scienceMajorsCatalog, setScienceMajorsCatalog] = useState<
     ScienceMajorEntry[]
   >([]);
+  const [manualMajorPathwayLocks, setManualMajorPathwayLocks] = useState<
+    Record<string, Record<string, string>>
+  >({});
   const [majorRulesError, setMajorRulesError] = useState<string | null>(null);
   const [scheduleItems, setScheduleItems] = useState<ScheduleItem[]>([]);
 
@@ -474,12 +493,42 @@ export default function Planner({
       };
     }
 
-    getScienceMajors()
-      .then((response) => {
+    const loadMajorCatalog = async () => {
+      const seen = new Set<string>();
+      const merged: ScienceMajorEntry[] = [];
+
+      const responses = await Promise.allSettled([
+        getHandbookMajors({ faculty_slug: primaryFacultySlug }).catch(() =>
+          getScienceMajors(),
+        ),
+        ...getCrossMajorFacultySlugs().map((facultySlug) =>
+          getHandbookMajors({ faculty_slug: facultySlug }),
+        ),
+      ]);
+
+      for (const item of responses) {
+        if (item.status !== "fulfilled") {
+          continue;
+        }
+        for (const major of item.value.majors ?? []) {
+          const key = `${major.major_code}|${major.major_name}`.toUpperCase();
+          if (seen.has(key)) {
+            continue;
+          }
+          seen.add(key);
+          merged.push(major);
+        }
+      }
+
+      return merged;
+    };
+
+    loadMajorCatalog()
+      .then((majors) => {
         if (!isMounted) {
           return;
         }
-        setScienceMajorsCatalog(response.majors ?? []);
+        setScienceMajorsCatalog(majors);
         setMajorRulesError(null);
       })
       .catch(() => {
@@ -495,7 +544,7 @@ export default function Planner({
     return () => {
       isMounted = false;
     };
-  }, [registeredMajors]);
+  }, [registeredMajors, primaryFacultySlug]);
 
   // Fetch student schedule for clash detection in the current term.
   useEffect(() => {
@@ -720,6 +769,49 @@ export default function Planner({
     return true;
   }
 
+  function cycleMajorPathwayLock(
+    majorName: string,
+    yearLabel: string,
+    options: string[],
+  ) {
+    if (options.length === 0) {
+      return;
+    }
+
+    setManualMajorPathwayLocks((prev) => {
+      const current =
+        prev[majorName]?.[yearLabel] ??
+        selectedMajorPathways[majorName]?.[yearLabel] ??
+        options[0];
+      const currentIndex = options.indexOf(current);
+      const nextValue = options[(currentIndex + 1) % options.length];
+
+      const next = { ...prev };
+      const rows = { ...(next[majorName] ?? {}) };
+      rows[yearLabel] = nextValue;
+      next[majorName] = rows;
+      return next;
+    });
+  }
+
+  function clearMajorPathwayLock(majorName: string, yearLabel: string) {
+    setManualMajorPathwayLocks((prev) => {
+      if (!prev[majorName]?.[yearLabel]) {
+        return prev;
+      }
+
+      const next = { ...prev };
+      const rows = { ...(next[majorName] ?? {}) };
+      delete rows[yearLabel];
+      if (Object.keys(rows).length === 0) {
+        delete next[majorName];
+      } else {
+        next[majorName] = rows;
+      }
+      return next;
+    });
+  }
+
   function getTermIndex(year: string, semester: string): number {
     return (getYearNumber(year) - 1) * 2 + getSemesterNumber(semester);
   }
@@ -906,6 +998,242 @@ export default function Planner({
     selectedYear,
   ]);
 
+  const autoSelectedMajorPathways = useMemo<
+    Record<string, Record<string, string>>
+  >(() => {
+    if (registeredMajors.length === 0 || scienceMajorsCatalog.length === 0) {
+      return {};
+    }
+
+    const progressionYear = Math.min(
+      Math.max(Math.trunc(currentYearNumber ?? 1), 1),
+      4,
+    );
+
+    const knownCodes = new Set<string>([
+      ...completedCourseRecords.map((course) =>
+        course.code.trim().toUpperCase(),
+      ),
+      ...inProgressCourseRecords.map((course) =>
+        course.code.trim().toUpperCase(),
+      ),
+      ...courses.map((course) => course.code.trim().toUpperCase()),
+    ]);
+
+    const locks: Record<string, Record<string, string>> = {};
+
+    registeredMajors.forEach((registeredMajor) => {
+      const majorComparable = normalizeMajorComparable(registeredMajor);
+      const matchingMajor = scienceMajorsCatalog.find((major) => {
+        const candidate = normalizeMajorComparable(major.major_name);
+        return (
+          candidate === majorComparable ||
+          candidate.includes(majorComparable) ||
+          majorComparable.includes(candidate)
+        );
+      });
+
+      if (!matchingMajor) {
+        return;
+      }
+
+      const applicableYears = matchingMajor.years
+        .filter((year) => year.year <= progressionYear)
+        .sort((a, b) => a.year - b.year);
+
+      const majorLocks: Record<string, string> = {};
+
+      applicableYears.forEach((majorYear) => {
+        if (!majorYear.combinations || majorYear.combinations.length === 0) {
+          return;
+        }
+
+        const bestCombination = [...majorYear.combinations].sort((a, b) => {
+          const aRequired = getCombinationRequiredCodes(a);
+          const bRequired = getCombinationRequiredCodes(b);
+          const aMatched = aRequired.filter((code) =>
+            isCodeSatisfied(code, knownCodes),
+          ).length;
+          const bMatched = bRequired.filter((code) =>
+            isCodeSatisfied(code, knownCodes),
+          ).length;
+
+          if (aMatched !== bMatched) {
+            return bMatched - aMatched;
+          }
+          return aRequired.length - bRequired.length;
+        })[0];
+
+        if (bestCombination?.combination_id) {
+          majorLocks[`Year ${majorYear.year}`] = bestCombination.combination_id;
+        }
+      });
+
+      if (Object.keys(majorLocks).length > 0) {
+        locks[registeredMajor] = majorLocks;
+      }
+    });
+
+    return locks;
+  }, [
+    completedCourseRecords,
+    courses,
+    currentYearNumber,
+    inProgressCourseRecords,
+    registeredMajors,
+    scienceMajorsCatalog,
+  ]);
+
+  const majorPathwayChoices = useMemo<
+    Array<{
+      majorName: string;
+      yearLabel: string;
+      options: string[];
+      selected: string;
+      source: "auto" | "manual";
+    }>
+  >(() => {
+    if (registeredMajors.length === 0 || scienceMajorsCatalog.length === 0) {
+      return [];
+    }
+
+    const progressionYear = Math.min(
+      Math.max(Math.trunc(currentYearNumber ?? 1), 1),
+      4,
+    );
+
+    const rows: Array<{
+      majorName: string;
+      yearLabel: string;
+      options: string[];
+      selected: string;
+      source: "auto" | "manual";
+    }> = [];
+
+    registeredMajors.forEach((registeredMajor) => {
+      const majorComparable = normalizeMajorComparable(registeredMajor);
+      const matchingMajor = scienceMajorsCatalog.find((major) => {
+        const candidate = normalizeMajorComparable(major.major_name);
+        return (
+          candidate === majorComparable ||
+          candidate.includes(majorComparable) ||
+          majorComparable.includes(candidate)
+        );
+      });
+
+      if (!matchingMajor) {
+        return;
+      }
+
+      matchingMajor.years
+        .filter((year) => year.year <= progressionYear)
+        .sort((a, b) => a.year - b.year)
+        .forEach((year) => {
+          const options = (year.combinations ?? [])
+            .map((combination) => combination.combination_id)
+            .filter((value): value is string =>
+              Boolean(value && value.trim().length > 0),
+            );
+
+          if (options.length === 0) {
+            return;
+          }
+
+          const yearLabel = `Year ${year.year}`;
+          const manualChoice =
+            manualMajorPathwayLocks[registeredMajor]?.[yearLabel];
+          const autoChoice =
+            autoSelectedMajorPathways[registeredMajor]?.[yearLabel] ??
+            options[0];
+          const selected =
+            manualChoice && options.includes(manualChoice)
+              ? manualChoice
+              : autoChoice;
+
+          rows.push({
+            majorName: registeredMajor,
+            yearLabel,
+            options,
+            selected,
+            source:
+              manualChoice && options.includes(manualChoice)
+                ? "manual"
+                : "auto",
+          });
+        });
+    });
+
+    return rows;
+  }, [
+    autoSelectedMajorPathways,
+    currentYearNumber,
+    manualMajorPathwayLocks,
+    registeredMajors,
+    scienceMajorsCatalog,
+  ]);
+
+  const selectedMajorPathways = useMemo<
+    Record<string, Record<string, string>>
+  >(() => {
+    const merged: Record<string, Record<string, string>> = {};
+
+    Object.entries(autoSelectedMajorPathways).forEach(([major, rows]) => {
+      merged[major] = { ...rows };
+    });
+
+    Object.entries(manualMajorPathwayLocks).forEach(([major, rows]) => {
+      if (!merged[major]) {
+        merged[major] = {};
+      }
+      Object.entries(rows).forEach(([yearLabel, combinationId]) => {
+        if (combinationId && combinationId.trim().length > 0) {
+          merged[major][yearLabel] = combinationId;
+        }
+      });
+    });
+
+    return merged;
+  }, [autoSelectedMajorPathways, manualMajorPathwayLocks]);
+
+  useEffect(() => {
+    if (majorPathwayChoices.length === 0) {
+      if (Object.keys(manualMajorPathwayLocks).length > 0) {
+        setManualMajorPathwayLocks({});
+      }
+      return;
+    }
+
+    const validByMajorYear = new Map<string, Set<string>>();
+    majorPathwayChoices.forEach((row) => {
+      validByMajorYear.set(
+        `${row.majorName}__${row.yearLabel}`,
+        new Set(row.options),
+      );
+    });
+
+    setManualMajorPathwayLocks((prev) => {
+      let changed = false;
+      const next: Record<string, Record<string, string>> = {};
+
+      Object.entries(prev).forEach(([major, rows]) => {
+        Object.entries(rows).forEach(([yearLabel, combinationId]) => {
+          const key = `${major}__${yearLabel}`;
+          const valid = validByMajorYear.get(key);
+          if (!valid || !valid.has(combinationId)) {
+            changed = true;
+            return;
+          }
+          if (!next[major]) {
+            next[major] = {};
+          }
+          next[major][yearLabel] = combinationId;
+        });
+      });
+
+      return changed ? next : prev;
+    });
+  }, [majorPathwayChoices, manualMajorPathwayLocks]);
+
   function getCurrentSemesterNumberFromDate() {
     // UCT: Semester 1 = Feb–Jun (months 2–6), Semester 2 = Jul–Nov (months 7–11).
     // Jan and Dec are treated as Semester 1 (pre-academic year / registration).
@@ -941,7 +1269,13 @@ export default function Planner({
             scheduleItems,
           })
         : null,
-    [catalog, courses, completedCourseRecords, inProgressCourseRecords, scheduleItems],
+    [
+      catalog,
+      courses,
+      completedCourseRecords,
+      inProgressCourseRecords,
+      scheduleItems,
+    ],
   );
 
   // Codes of courses the student is actively planning — excludes anything
@@ -1498,11 +1832,47 @@ export default function Planner({
             credits: course.credits,
           })),
         ];
-        const response = await validateSciencePlanAgainstRules({
-          handbook_title: TARGET_HANDBOOK,
-          planned_courses: allCoursesForValidation,
-          selected_majors: registeredMajors,
-        });
+        const attemptHistory = completedCoursesProp
+          .filter((course) => course.code && course.code.trim().length > 0)
+          .map((course) => {
+            const yearMatch = course.semester.match(/Year\s*(\d+)/i);
+            const year = yearMatch ? `Year ${yearMatch[1]}` : undefined;
+            const semester = course.semester.toUpperCase().includes("S2")
+              ? "Semester 2"
+              : course.semester.toUpperCase().includes("S1")
+                ? "Semester 1"
+                : undefined;
+
+            return {
+              code: course.code.trim().toUpperCase(),
+              year,
+              semester,
+              passed: course.passed === true,
+              grade:
+                typeof course.grade === "number" &&
+                Number.isFinite(course.grade)
+                  ? course.grade
+                  : undefined,
+            };
+          });
+        let response: HandbookRuleValidationResponse;
+        try {
+          response = await validatePlanAgainstHandbookRules({
+            target_faculty: "science",
+            planned_courses: allCoursesForValidation,
+            selected_majors: registeredMajors,
+          });
+        } catch {
+          response = await validateSciencePlanAgainstRules({
+            handbook_title: TARGET_HANDBOOK,
+            planned_courses: allCoursesForValidation,
+            selected_majors: registeredMajors,
+            selected_major_pathways: selectedMajorPathways,
+            attempt_history: attemptHistory,
+            plan_intent: "graduation_candidate",
+            validation_mode: "strict_graduation",
+          });
+        }
 
         if (!isMounted) {
           return;
@@ -1531,7 +1901,13 @@ export default function Planner({
     return () => {
       isMounted = false;
     };
-  }, [courses, fixedCourses, registeredMajors]);
+  }, [
+    courses,
+    fixedCourses,
+    registeredMajors,
+    completedCoursesProp,
+    selectedMajorPathways,
+  ]);
 
   useEffect(() => {
     if (hasUnsavedChanges) {
@@ -1736,7 +2112,9 @@ export default function Planner({
 
   function handleGeneratePlan() {
     if (catalog.length === 0) {
-      setAddError("Course catalog is still loading — please try again in a moment.");
+      setAddError(
+        "Course catalog is still loading — please try again in a moment.",
+      );
       return;
     }
     setIsGeneratingPlan(true);
@@ -1786,9 +2164,7 @@ export default function Planner({
       {showAutoPlans && autoPlans.length > 0 ? (
         <View style={styles.autoPlanPanel}>
           <View style={styles.autoPlanPanelHeader}>
-            <Text style={styles.autoPlanPanelTitle}>
-              Graduation paths
-            </Text>
+            <Text style={styles.autoPlanPanelTitle}>Graduation paths</Text>
             <Pressable onPress={() => setShowAutoPlans(false)}>
               <Text style={styles.autoPlanClose}>Dismiss</Text>
             </Pressable>
@@ -1797,10 +2173,15 @@ export default function Planner({
             <View key={plan.id} style={styles.autoPlanCard}>
               <Text style={styles.autoPlanCardTitle}>{plan.title}</Text>
               <Text style={styles.autoPlanCardMeta}>
-                {plan.estimatedTerms} semester{plan.estimatedTerms === 1 ? "" : "s"} · {plan.projectedTotalCredits} credits · Finishes {plan.projectedCompletionTerm}
+                {plan.estimatedTerms} semester
+                {plan.estimatedTerms === 1 ? "" : "s"} ·{" "}
+                {plan.projectedTotalCredits} credits · Finishes{" "}
+                {plan.projectedCompletionTerm}
               </Text>
               {plan.rationale.slice(0, 2).map((line, i) => (
-                <Text key={i} style={styles.autoPlanRationale}>· {line}</Text>
+                <Text key={i} style={styles.autoPlanRationale}>
+                  · {line}
+                </Text>
               ))}
               {plan.terms.map((term) => (
                 <View key={term.termIndex} style={styles.autoPlanTerm}>
@@ -1809,7 +2190,7 @@ export default function Planner({
                   </Text>
                   {term.courses.map((c) => (
                     <Text key={c.code} style={styles.autoPlanTermCourse}>
-                      {c.code}  {c.title}
+                      {c.code} {c.title}
                     </Text>
                   ))}
                 </View>
@@ -1919,6 +2300,55 @@ export default function Planner({
           {registeredMajors.map((major) => (
             <View key={major} style={styles.majorPill}>
               <Text style={styles.majorPillText}>{major}</Text>
+            </View>
+          ))}
+        </View>
+      ) : null}
+
+      {majorPathwayChoices.length > 0 ? (
+        <View style={styles.pathwayLockSection}>
+          <Text style={styles.pathwayLockTitle}>Pathway locks</Text>
+          <Text style={styles.pathwayLockSubtitle}>
+            Cycle a row to override the auto pathway for strict graduation
+            checks.
+          </Text>
+
+          {majorPathwayChoices.map((row) => (
+            <View
+              key={`${row.majorName}-${row.yearLabel}`}
+              style={styles.pathwayLockRow}
+            >
+              <View style={styles.pathwayLockRowHead}>
+                <Text style={styles.pathwayLockMajor}>{row.majorName}</Text>
+                <Text style={styles.pathwayLockYear}>{row.yearLabel}</Text>
+              </View>
+              <Text style={styles.pathwayLockValue}>{row.selected}</Text>
+              <View style={styles.pathwayLockActions}>
+                <Pressable
+                  onPress={() =>
+                    cycleMajorPathwayLock(
+                      row.majorName,
+                      row.yearLabel,
+                      row.options,
+                    )
+                  }
+                  style={styles.pathwayLockBtn}
+                >
+                  <Text style={styles.pathwayLockBtnText}>Switch</Text>
+                </Pressable>
+                {row.source === "manual" ? (
+                  <Pressable
+                    onPress={() =>
+                      clearMajorPathwayLock(row.majorName, row.yearLabel)
+                    }
+                    style={styles.pathwayResetBtn}
+                  >
+                    <Text style={styles.pathwayResetBtnText}>Auto</Text>
+                  </Pressable>
+                ) : (
+                  <Text style={styles.pathwayAutoTag}>Auto</Text>
+                )}
+              </View>
             </View>
           ))}
         </View>
@@ -2657,6 +3087,91 @@ const styles = StyleSheet.create({
     fontSize: 12,
     fontWeight: "600",
     color: theme.colors.deepBlue,
+  },
+
+  pathwayLockSection: {
+    backgroundColor: theme.colors.card,
+    borderRadius: theme.borderRadius.md,
+    borderWidth: 1,
+    borderColor: theme.colors.glassBorder,
+    padding: theme.spacing.md,
+    marginBottom: theme.spacing.md,
+    gap: 8,
+  },
+  pathwayLockTitle: {
+    fontSize: theme.fontSize.sm,
+    fontWeight: "700",
+    color: theme.colors.textPrimary,
+  },
+  pathwayLockSubtitle: {
+    fontSize: 12,
+    color: theme.colors.textLight,
+    marginBottom: 4,
+  },
+  pathwayLockRow: {
+    borderWidth: 1,
+    borderColor: theme.colors.gray,
+    borderRadius: theme.borderRadius.md,
+    backgroundColor: theme.colors.grayLight,
+    padding: 10,
+    gap: 6,
+  },
+  pathwayLockRowHead: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    gap: 8,
+  },
+  pathwayLockMajor: {
+    fontSize: 12,
+    fontWeight: "700",
+    color: theme.colors.textPrimary,
+    flex: 1,
+  },
+  pathwayLockYear: {
+    fontSize: 11,
+    color: theme.colors.textSecondary,
+  },
+  pathwayLockValue: {
+    fontSize: 11,
+    color: theme.colors.deepBlue,
+    fontWeight: "600",
+  },
+  pathwayLockActions: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 8,
+  },
+  pathwayLockBtn: {
+    borderWidth: 1,
+    borderColor: theme.colors.blue,
+    backgroundColor: theme.colors.babyBlue,
+    borderRadius: theme.borderRadius.md,
+    paddingHorizontal: 10,
+    paddingVertical: 6,
+  },
+  pathwayLockBtnText: {
+    fontSize: 11,
+    fontWeight: "600",
+    color: theme.colors.deepBlue,
+  },
+  pathwayResetBtn: {
+    borderWidth: 1,
+    borderColor: theme.colors.gray,
+    borderRadius: theme.borderRadius.md,
+    paddingHorizontal: 10,
+    paddingVertical: 6,
+    backgroundColor: theme.colors.white,
+  },
+  pathwayResetBtnText: {
+    fontSize: 11,
+    color: theme.colors.textSecondary,
+    fontWeight: "600",
+  },
+  pathwayAutoTag: {
+    fontSize: 11,
+    color: theme.colors.textMuted,
+    fontWeight: "600",
   },
 
   // ── Year tabs ─────────────────────────────────────────────────────────────

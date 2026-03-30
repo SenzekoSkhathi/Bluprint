@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AHS3065S",
+  "title": "Adult Rehabilitative Audiology",
+  "department": "health-and-rehabilitation-sciences",
+  "credits": 18,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "TBC",
+  "prerequisites": {
+    "text": "AHS2047S",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "AHS2047S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to enabl e students to understand the role of the rehabilitativ e audiologist, to learn about auditory dysfunction and its impact, to analyse and a pply frameworks guiding aural rehabilitation, to assess and establish candidacy for aural rehabilitation, and to design and implement aural rehabilitation plans. Conten t includes stigmatisation, self-a ssessment and quality of life, optimisation of hearing technologies , role of motivation and self-effi cacy, auditory training, audio- visual speech perception, vocat ional support, communication st rategies and management of conversational fluency, group aural rehab, musical perception and enjoyment, counselling and tinnitus management. The acquisition of the following skills is facilitated: critical thinking, adapting to cultural context, selection and administrati on of appropriate assessments, interpretation of results, clinical reasoning, and the creation of client profiles to guide manageme nt. Sensitivity to cultural and contextual diversity, respect and sensitivity to issues of disabilit y, and recognising the need for individualised management plans and being agents for cha nge are addressed. Teaching and learning activities include lectures, brainstorming and snowball, case studies, guided self-study, and role-play. Themes underpinning the course include primary healthcare and contextual relevance, disability and the burden of disease, ethics an d human rights, bio-psy cho-social models of di sability, developing agents for change, and equity and affirmation of diversity.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "For discipline specific courses in the BSc Audiology and BSc in Speech-Language Pathology programmes a minimum coursework mark of 40% is required for entrance into the examination.",
+  "assessment": "The course grade is made up of a cour sework mark (weighted 60%) and a final examination mark (weighted 40%). If a supplementary examination is awarded, it will count 40 % of the final mark, as the course work mark will still be included in the final mark.",
+  "is_health_sciences_course": true
+}

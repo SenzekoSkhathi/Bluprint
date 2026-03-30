@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CSC5042Z",
+  "title": "Natural Language Generation",
+  "department": "computer-science",
+  "credits": 12,
+  "nqf_level": 9,
+  "year_level": "Postgraduate (Master's)",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "Dr Z Mahlaza",
+  "prerequisites": {
+    "text": "Admission into the Master's degree specialising in Computer Science or Artificial Intelligence, or permission from the course convener.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "This course will introduce students to the subarea of Artificial Intelligence known as Natural Language Generation (NLG). In addition to a brief history of the topic, students will be given a detailed introduction to three approaches for building NLG systems: symbolic, statistical, and neural techniques. Students will learn these approaches from both a theoretical and computational perspective.",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "None.",
+  "assessment": "Exam: 24-hour take-home exam, 60%; Assignments: 40%.",
+  "is_science_course": true
+}

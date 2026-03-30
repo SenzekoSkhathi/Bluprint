@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "FTX2024F",
+  "title": "Financial Management",
+  "department": "finance-and-tax",
+  "credits": 18,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "A Abdulla",
+  "prerequisites": {
+    "text": "A pass in MAM1010F/S (or an equivalent course), a pass in STA1000F/S (or an equivalent course), a pass in ACC1011S or ACC1022Z.",
+    "parsed": {
+      "type": "prerequisite",
+      "codes": [
+        "MAM1010F",
+        "STA1000S",
+        "ACC1011S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course introduces financial management in a corporate environment, with two primary objectives. First, it introduces students to the financial aspects of businesses, financial markets, and the broader environment in which firms operate. Second, it equips students with the decision-making skills essential for modern financial managers.",
+  "lecture_times": "Monday to Friday: FTX2024F: 08h00 - 08h45; FTX2024S: 11h00 - 11h45 or 12h00 - 12h45.",
+  "dp_requirements": "A sub-minimum for coursework of 40% average for class tests and a minimum of 80% for tutorial submissions and tutorial attendances. These requirements will be strictly enforced.",
+  "assessment": "Tests and assignments 40%; final examination 60%.",
+  "is_commerce_course": true
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CIV3047S",
+  "title": "Urban Water Services",
+  "department": "civil-engineering",
+  "credits": 16,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr J Okedi",
+  "prerequisites": {
+    "text": "APG2026S; CIV3043F (DP) and CIV3044F (DP).",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "APG2026S",
+        "CIV3043F",
+        "CIV3044F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to develop an understanding of the design and operation of water services in urban areas (formal and informal), including: water supply and distribution; sanitation and urban drainage. DEPARTMENTS IN THE FACULTY AND COURSES OFFERED 112",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CHE3069S",
+  "title": "Mineral and Metallurgical Processing",
+  "department": "chemical-engineering",
+  "credits": 16,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Associate Professor MS Manono",
+  "prerequisites": {
+    "text": "CHE2005W",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "CHE2005W"
+      ]
+    }
+  },
+  "corequisites": [
+    "GEO2006S"
+  ],
+  "outline": "This course aims to develop an understanding of the processes involved in the beneficiation of minerals and extraction of metals. The course begins with a multimedia-based introduction to the field of mineral and metallurgical processing, from the mining o peration to environmental rehabilitation. This is followed by 5 dedicated 10 -lecture sessions to introduce the principles behind comminution and classification, flotation, hydrometallurgy, pyrometallurgy, crystallisation and precipitation. In the course of each session students will be required to perform experiments and/or analyse data in the context of pilot or bench scale operations in the respective fields and report findings through dedicated assignments.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

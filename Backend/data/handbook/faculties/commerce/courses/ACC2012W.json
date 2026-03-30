@@ -1,0 +1,33 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "ACC2012W",
+  "title": "Financial Reporting II",
+  "department": "accounting",
+  "credits": 36,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "JP Du Plessis and M Bardien",
+  "prerequisites": {
+    "text": "A minimum mark of 60% for ACC1011 within two years of first registration. Concurrent registration or a previous pass in ACC1015, ACC2022, ACC2023 and MAM1010. Registration for BCom Accounting or BBusSci Finance with Accounting degree.",
+    "parsed": {
+      "type": "prerequisite",
+      "codes": [
+        "ACC1011S"
+      ],
+      "concurrent": [
+        "ACC1015S",
+        "ACC2022H",
+        "ACC2023H",
+        "MAM1010F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course integrates knowledge from first year Financial Accounting and Financial Reporting I courses. Students should be able to prepare and present separate and group financial statements within the scope of the Conceptual Framework for Financial Reporting and a set of general purpose financial statements using the International Financial Reporting Standards (IFRS) upon completion of this course.",
+  "lecture_times": "Monday to Friday 8:00 for BBusSci and 9:00 for BCom.",
+  "dp_requirements": "Attendance at and submission of a minimum of 75% of tutorials in each semester and a weighted average of 40% for class tests and a weighted average of 40% for projects/assignments.",
+  "assessment": "Coursework 40%; Exam 60%.",
+  "is_commerce_course": true
+}

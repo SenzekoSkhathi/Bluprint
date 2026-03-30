@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EGS5045F",
+  "title": "Geomorphology",
+  "department": "environmental-geographical-science",
+  "credits": 23,
+  "nqf_level": 9,
+  "year_level": "Postgraduate – Masters elective",
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Professor F Eckardt",
+  "prerequisites": {
+    "text": "Acceptance for Honours or Master's specialising in EGS.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "The course introduces students to the theory of geomorphological systems applied to an area or topic of their choice. Students are expected to interpret landscapes, identify formative processes and events, examine environmental changes at different spatial and temporal scales, and appreciate key geomorphological concepts. At NQF 9 level, students are expected to back their literature review with data analyses (climatic or hydrological in nature), consider application of GIS and remote sensing, and convert elements of course content towards use in a publication.",
+  "lecture_times": null,
+  "dp_requirements": "At least 80% attendance record and submission of all assignments.",
+  "assessment": "Assignments 50%; examination 50%.",
+  "is_science_course": true
+}

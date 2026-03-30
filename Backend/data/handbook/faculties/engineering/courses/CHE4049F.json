@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CHE4049F",
+  "title": "Process Synthesis & Equipment Design",
+  "department": "chemical-engineering",
+  "credits": 20,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr TA Franklin",
+  "prerequisites": {
+    "text": "All core third year courses.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [
+    "CHE4048F"
+  ],
+  "outline": "The course aims to familiarise students with the design of entire chemical processes, building on but going beyond the detailed sizing of major equipment as learned in third year and minor equipment, pipe work and heat exchangers as learned in second year. It covers: process flowsheeting conventions; process flowsheet development using process synthesis theory and heuristics; chemical engineering process simulation using Aspen Plus; equipment design heuristics; process control philosophy; health, safety and environmental (HSE) reviews and plant layout.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

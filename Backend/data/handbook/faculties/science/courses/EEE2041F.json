@@ -1,0 +1,35 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EEE2041F",
+  "title": "Introduction to Electrical Engineering & Power Utilisation",
+  "department": "electrical-engineering",
+  "credits": 16,
+  "nqf_level": 6,
+  "year_level": "Second Year",
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr S Jayalath",
+  "prerequisites": {
+    "text": "PHY1013F/S (MEC), MAM1021S (MEC), PHY1004W or PHY1032S (CSC), MAM1004F (>60%) and MAM1008S (>60%) or MAM1000W (CSC).",
+    "parsed": {
+      "type": "complex",
+      "codes_mentioned": [
+        "PHY1013F/S",
+        "MAM1021S",
+        "PHY1004W",
+        "PHY1032S",
+        "MAM1004F",
+        "MAM1008S",
+        "MAM1000W"
+      ],
+      "note": "Complex prerequisite logic - see text"
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to develop an understanding of: (a) DC circuits and networks including series and parallel circuits, Kirchhoff's laws, Mesh Analysis, Superposition Theorem, Star-to-delta and Delta-to-star Transformation, Thevenin's theorem, Maximum Power Transfer theorem, DC transients in R-L and R-C circuits; (b) Fundamentals of AC including generation, waveform concepts, period, frequency, angular velocity, phase, average, peak and RMS values; (c) Single-phase AC circuits including AC through resistance, inductance and capacitance, reactance and impedance, phasors, active, reactive and apparent power, and power factor; (d) Three-phase AC systems; (e) Magnetic circuits; (f) Single-phase transformers including construction, principle of operation, EMF equation, transformation ratio, equivalent circuits, voltage regulation, losses and efficiency; (g) DC motors including principle of operation, types, speed and torque characteristics and speed control.",
+  "lecture_times": "Refer to official course handout document.",
+  "dp_requirements": "Refer to the official course handout document for detailed DP requirements.",
+  "assessment": "Refer to the official course handout document for assessment criteria.",
+  "is_science_course": false,
+  "offered_by_faculty": "engineering"
+}

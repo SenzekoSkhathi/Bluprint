@@ -1,0 +1,32 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MEC3076F",
+  "title": "Stress Analysis and Materials",
+  "department": "mechanical-engineering",
+  "credits": 16,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Professor S Chung Kim Yuen",
+  "prerequisites": {
+    "text": "MEC2046F or MEC2042F, MEC2025F or MEC2049F, MAM2083F/S (DP), MAM2084F/S (DP)",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "MEC2046F",
+        "MEC2042F",
+        "MEC2025F",
+        "MEC2049F",
+        "MAM2083F",
+        "MAM2084F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "In this course the students will be exposed to failure analysis, gaining understanding of how components are abstracted and simplified to be solved using simplified principles. Students will learn about basic material properties and material selection coupled with stress analysis. The students will develop an understanding of the different stresses a body experiences under various loading conditions with a view to assess and prev ent failures in structures. Topics will demonstrate how forces, stresses and strains are used to size components for different applications and different materials. The course content will include topics such as theories of failure due to different loading conditions and material processes, stresses in structural elements (cylinders) and strain beyond elastic limit.",
+  "lecture_times": "4 lectures per week.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CIV1008F",
+  "title": "Introduction to Civil Engineering",
+  "department": "civil-engineering",
+  "credits": 12,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr S Motala",
+  "prerequisites": {
+    "text": "Refer to the programme and departmental sections in the 2026 EBE Faculty Handbook.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "The course provides an overview of a range of disciplines within civil engineering including Geotechnical Engineering, Construction Materials, Water Treatment, Hydraulics and Water Services, and Transport Engineering. The course aims to develop the skills needed to succeed in the study and practice of Civil Engineering. Knowledge and skills are developed through hands on practicals and include introductory measuring and quantitative data presentation skills, establishing a basic level of computer literacy a nd modelling skills, and an introduction to professional communication requirements.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

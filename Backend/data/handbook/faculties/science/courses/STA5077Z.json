@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "STA5077Z",
+  "title": "Unsupervised Learning",
+  "department": "statistical-sciences",
+  "credits": 12,
+  "nqf_level": 9,
+  "year_level": "Postgraduate (Master's)",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "M Ngwenya",
+  "prerequisites": {
+    "text": "Acceptance into the Master's course in Data Science or quantitative background deemed sufficient by Head of Department.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "As part of the Master's in Data Science degree, this course familiarises students with statistical methodology for analysing relationships between variables in big data without having causal relationships with predictor and response variables. Topics covered include association rules and market basket analysis, self-organising maps, multidimensional scaling, cluster analysis, and principal component analysis.",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "Not specified.",
+  "assessment": "Assignments and Exam.",
+  "is_science_course": true
+}

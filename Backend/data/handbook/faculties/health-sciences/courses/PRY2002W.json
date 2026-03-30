@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PRY2002W",
+  "title": "Psychiatry for Occupational Therapists",
+  "department": "psychiatry-and-mental-health",
+  "credits": 14,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Dr M Karjiker and Dr C Vlotman",
+  "prerequisites": {
+    "text": "PSY1005S or PSY1007S",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "PSY1005S",
+        "PSY1007S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "Objective: To prepare OTs for professional work with people suffering from psychiatric disorders and intellectual disability. Course outline: This course aims to teach about the definitions, aetiology, clinical signs and symptoms, assessment and management, and prognosis of the major psychiatric conditions as classified in the ICD10/11 and DSMV. It is designed on the Blended Learning model. The intentions are to equip the students with a sound theoretical knowledge of psychiatric symptomatology and conditions, to enable them to recognize a condition clinically and to comprehend management pr ocedures and options, and to appreciate the role of occupational therapy in the multidisciplinary clinical management team. It also intends to foster an awareness of legal, ethical, and cultural consider ations that arise in the field of mental health, and to provide a basic knowledge of the mental healthcare service structure and available mental health resources.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Attendance at 95% of the academic connection cafes and timeous submission of the clinical case assignment. There is an electronic record of online attendance.",
+  "assessment": "Three written exams of two hours duration which count 30 % each towards the final mark. The first two exams are after eight and sixteen lectur es respectively. The third exam is at the end of the academic year. The work tested in each exam is not retested in the next exam. The clinical case assignment counts 10% towards the final mark. A student must achieve a combined mark of 50% to pass the course. There is a s upplementary exam offere d in the university appointed period for 216 DEPARTMENTS IN THE FACULTY candidates who may need it and have met all the DP re quirements for the course. There is a supplementary exam for students who qualify for it and have attained their DP.",
+  "is_health_sciences_course": true
+}

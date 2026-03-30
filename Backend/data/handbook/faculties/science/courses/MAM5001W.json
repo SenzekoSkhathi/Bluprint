@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MAM5001W",
+  "title": "Applied Mathematics Dissertation",
+  "department": "mathematics-applied-mathematics",
+  "credits": 180,
+  "nqf_level": 9,
+  "year_level": "Postgraduate – Masters",
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": null,
+  "prerequisites": {
+    "text": "None",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "The course consists of the investigation of one or two topics chosen for intensive study by the candidate and approved by the Head of Department. Examination is by dissertation; an oral examination may be required. The Department has research programmes in four particular areas of Applied Mathematics: (i) general relativity and astrophysics; (ii) mathematical modelling of biological, ecological and environmental systems; (iii) continuum mechanics, applied analysis and finite elements; and (iv) nonlinear evolution equations and non-integrable systems. Candidates are particularly encouraged to take part in one of these programmes.",
+  "lecture_times": null,
+  "dp_requirements": null,
+  "assessment": "Examination by dissertation; oral examination may also be required.",
+  "is_science_course": true
+}

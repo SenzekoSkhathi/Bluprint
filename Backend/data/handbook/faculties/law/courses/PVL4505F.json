@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PVL4505F",
+  "title": "The Law of Cession",
+  "department": "private-law",
+  "credits": 9,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr K Moshikaro and Dr R Cupido",
+  "prerequisites": {
+    "text": "All Preliminary and Intermediate Level courses to have been completed.",
+    "parsed": {
+      "type": "level_completion",
+      "levels_required": [
+        "preliminary",
+        "intermediate"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "Law graduates entering legal practice (particularly in a commercial law firm) will find themselves immediately confronted with issues relating to the transfer of personal rights by cession. Most wealth today is held in the form of personal rights or claims against other parties (including banks, employers, investment and insurance companies, pension funds and the like) and much commercial activity concerns the transfer or pledging of such rights. The course aims to familiarise students with all aspects of the law of cession — a complex and challenging subject — to prepare them for commercial legal practice.",
+  "lecture_times": "Two lectures per week.",
+  "dp_requirements": "None",
+  "assessment": "Coursework: Optional assignment 20%; Examination 100% if no optional assignment; 80% if optional assignment completed.",
+  "is_law_course": true
+}

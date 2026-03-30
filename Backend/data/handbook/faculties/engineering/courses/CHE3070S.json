@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CHE3070S",
+  "title": "Numerical Simulation for Chemical Engineers",
+  "department": "chemical-engineering",
+  "credits": 16,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Professor K Möller",
+  "prerequisites": {
+    "text": "CHE2005W",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "CHE2005W"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to develop an advanced understanding of computer arithmetic, application of similarity transforms to reaction -diffusion and rate based mass transfer; data fitting by linear leasts squares regression; application of non -linear equations tec hniques in mass and energy balances (VLE); application of ODE solvers, BVP solvers and the method of lines in reaction and mass transfer systems described by ODEs and PDEs; stiffness ratio; non -linear leasts squares estimation of model parameters with vari ance; formulate objective functions and minimisation/maximisation of process operating models; and embedded systems.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

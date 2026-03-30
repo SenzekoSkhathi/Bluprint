@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CSC5007Z",
+  "title": "Database Systems",
+  "department": "computer-science",
+  "credits": 12,
+  "nqf_level": 9,
+  "year_level": "Postgraduate (Master's)",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "Emeritus Associate Professor S Berman",
+  "prerequisites": {
+    "text": "Acceptance into the Master's degree specialising in Data Science or Information Technology.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "This course introduces students with little or no prior experience to the three cornerstone database technologies for big data: relational, NoSQL and Hadoop ecosystems. The relational part covers conceptual, logical and physical database design including ER modelling and normalisation theory, SQL coding and performance enhancement best practices. NoSQL databases for big data and semi-structured data applications are introduced across all four architectural types. The final section covers Hadoop technologies for distributed data processing such as MapReduce programming and Apache Spark. The course is presented in an online format.",
+  "lecture_times": "Online format.",
+  "dp_requirements": "40% for assignment component.",
+  "assessment": "Final examination: 50%; Practical assignments: 50%. A sub-minimum of 40% will be required for each of the assignment and exam components of the course.",
+  "is_science_course": true
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CHM5011W",
+  "title": "Surgery for External Credit",
+  "department": "surgery",
+  "credits": 19,
+  "nqf_level": 8,
+  "year_level": 5,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Dr S Burmeister",
+  "prerequisites": {
+    "text": "Refer to the programme and departmental sections in the 2026 Health Sciences Faculty Handbook.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "The course incorporates a hands-on , practical, four-week rotation du ring which students implement the clinical and managemen t components of their pr evious training. The co urse consolidates and refines clinical examination, diagnosis and management of the major symptom complexes in surgery. Students are placed within a secondary level unit based at one of Victoria, Mitchell’s Plain, Somerset or Groote Schuur Hospitals where it is felt they will have greater exposure to common general surgical conditions. They are involved in all aspects of their units’ activities, including ward rounds, patient management and academic activities. The differential dia gnosis and basic and specialised investigations are emphasised in e ach clinical situation. Students present their patients on the ward rounds, at firm meetings and th e combined x-ray conferences. Th ey accompany their patients to interventional procedures and present at least two cases per week to attendi ng consultants; this is signed off in a logbook. Students produce a portfolio of at le ast six cases which provides a starting point for case / problem based lear ning. Additional weekly inte ractive tutorials and seminars by consultant staff review core theoretical knowle dge. Students keep a lo gbook documenting their presentation of cases to consultants, and this may be reviewed during at the end-of-block assessment.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Completion of the six portfolio cases and a completed logbook of eight presented cases comprise the DP for the course. However, full attendance and participation in unit is considered compulsory.",
+  "assessment": "The end-of-block assessment comprises a clin ical, scenario-based and portfolio oral assessment (50%); a patient-based oral examination (50%);",
+  "is_health_sciences_course": true
+}

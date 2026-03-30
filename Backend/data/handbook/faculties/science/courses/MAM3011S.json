@@ -1,0 +1,32 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MAM3011S",
+  "title": "Modern Abstract Algebra (3AL)",
+  "department": "mathematics-applied-mathematics",
+  "credits": 18,
+  "nqf_level": 7,
+  "year_level": "Third Year",
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr J Sanchez-Ortega",
+  "prerequisites": {
+    "text": "MAM2010F, MAM2011F, MAM2013S and at least one of MAM2012S or MAM2014S.",
+    "parsed": {
+      "type": "complex",
+      "codes_mentioned": [
+        "MAM2010F",
+        "MAM2011F",
+        "MAM2013S",
+        "MAM2012S",
+        "MAM2014S"
+      ],
+      "note": "Complex prerequisite logic - see text"
+    }
+  },
+  "corequisites": [],
+  "outline": "This course introduces the following areas of Group Theory: the Isomorphism Theorems, p-Groups, Sylow Theory, Direct Products and finitely generated Abelian Groups.",
+  "lecture_times": "Mondays, Thursdays and some Wednesdays in 5th period.",
+  "dp_requirements": null,
+  "assessment": null,
+  "is_science_course": true
+}

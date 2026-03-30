@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AGE4000W",
+  "title": "Archaeology Honours",
+  "department": "archaeology",
+  "credits": 160,
+  "nqf_level": 8,
+  "year_level": "Postgraduate – Honours",
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Dr Y Sahle",
+  "prerequisites": {
+    "text": "A Bachelor's degree majoring in Archaeology and an acceptable academic record. Students must satisfy the Head of Department that they have adequate fieldwork experience.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "The Honours programme in Archaeology looks in depth at current issues in the discipline, both internationally and in southern Africa. Students are expected to become fully involved in the academic life of the Department, attending seminars given by staff members, research internal students and visitors. Students participate in a structured programme of lectures and tutorials and write a research dissertation. Each student must prepare a project proposal, worked out with a supervisor and approved by the Head of Department. Students must take part in one open seminar, presenting their project to the Department, and all students are required to participate in two weeks of fieldwork.",
+  "lecture_times": null,
+  "dp_requirements": null,
+  "assessment": "On average the coursework component counts 70% (including 50% from final examinations) and the research project counts 30%. A sub-minimum of 50% is required for the research project. Coursework and project codes must each be passed separately for the award of the degree.",
+  "is_science_course": true
+}

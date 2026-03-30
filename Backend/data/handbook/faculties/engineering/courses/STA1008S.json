@@ -1,0 +1,26 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "STA1008S",
+  "title": "Statistics for Engineers",
+  "department": "statistical-sciences",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "See 2026 EBE Faculty Handbook",
+  "prerequisites": {
+    "text": "Refer to the programme and departmental sections in the 2026 EBE Faculty Handbook.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "Course title and credit value verified from the 2026 EBE Faculty Handbook.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "See 2026 EBE Faculty Handbook.",
+  "assessment": "See departmental and faculty assessment rules in the 2026 EBE Faculty Handbook.",
+  "is_engineering_course": false,
+  "offered_by_faculty": "science"
+}

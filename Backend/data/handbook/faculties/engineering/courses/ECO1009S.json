@@ -1,0 +1,26 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "ECO1009S",
+  "title": "Macroeconomics I",
+  "department": "economics",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr B Malila",
+  "prerequisites": {
+    "text": "Students must be in their fourth year of study.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "Objective: To provide an introduction to biomedical engineering in particular to undergraduate students. Course outline: This course provides an introduction to the field of biomedical engineering to undergraduate students in the Faculty of Engineering and the Built Environment and others. Topics include an overview of medical technology and innovation, medical imaging, imag e processing, telemedicine and mobile health, and biomechanics of the musculoskeletal system.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "(a) Participation in all formative assessments on each module, (b) Attendance: 80% class attendance, (c) Achieving a weighted average mark of 40% on two in-class tests.",
+  "assessment": "Coursework (50%) and final exam (50%). The course documentation will detail the breakdown for assessment weightings and variation for exemptions and absences.",
+  "is_engineering_course": false,
+  "offered_by_faculty": "commerce"
+}

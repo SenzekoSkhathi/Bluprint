@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PTY6012W",
+  "title": "Forensic Medicine",
+  "department": "pathology",
+  "credits": 10,
+  "nqf_level": 8,
+  "year_level": 6,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Doctor C De Vaal",
+  "prerequisites": {
+    "text": "Successful completion of all co urses within the preceding academic year.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "Objective: The course is designed to equi p students with skills to pr actice medicine according to South African medical laws and et hical rules, to complete medico -legal documentation encountered in general patient care, recognise medico-legal cases (clinical and pathological) that need referral to centres of expertise; to recognise what immediate st eps should be ta ken to prevent lo ss of evidence before referral; and to ensure preservation of any pathology and evidence before referral. Course outline: This course is two weeks in du ration during a four-week block with Anaesthesia. It comprises a blended learning approach. The s ynchronous activities include group tutorials, practical skills lab session on the examination of sexual assault victim and prac tical autopsy demonstrations at the Forensic Pathology Laboratory of at least four ho urs’ duration each. Ther e are also task related feedback sessions. The rest of the time is spent in self-directed learning using the Vula online platform with various materials from course notes, to related videos and self-assessment quizzes with feedback mechanisms. Learning outcomes are based on the core knowledge and topics presented in pre- recorded lectures and narrated PowerPoints available on Vula, la rge tutorial sessions, small group sessions and autopsy demon strations. The learning outcomes ar e categorised broadly into core knowledge, core skills and professional/ethical behaviour. The core curriculum has been designed to highlight the forensic pathology and clinical forensic medicine pr oblems and topics encountered by generalist medical practitioners. St udents are expected to be ab le to complete medico-legal documentation, recognise, evaluate, appropriately assess and offer ex pert opinions on core subjects, in preparation for potential exper t testimony in criminal court ca ses and inquest he arings for the Department of Justice.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "As a DP requirement, students are expected to attend all practical sessions at the Forensic Pathology Laboratory as stipulated in the course guide, attendance of and/or participation in 80% of plenary sessions, completi on of five tasks and deliver a pr esentation during the attachment. The tasks and presentation comprise the in-course as sessment, as stipulated in the course guide. In addition, students must achieve a subminimum of 50% in their coursework to be legible to write the final Forensic Medicine exam. Competency in Forensic Medicine requires achievement of three aspects: a subminimum of the 50% in the in-course assessment, a subminimum of the 50% in the final examination, and passing the final exit OSCE.",
+  "assessment": "The final mark is made up of in-course assessments (40%) and the final examination (60%). The exit OSCE component forms part of the overall final MBChB clinical assessment.",
+  "is_health_sciences_course": true
+}

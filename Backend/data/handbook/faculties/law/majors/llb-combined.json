@@ -1,0 +1,14 @@
+{
+  "id": "llb-combined",
+  "name": "Bachelor of Laws (Combined Stream)",
+  "abbreviation": "LLB",
+  "saqa_id": 10695,
+  "nqf_level": 8,
+  "department": "Faculty of Law",
+  "duration_years": "5-6",
+  "stream": "combined",
+  "entry_requirement": "Complete a BA/BCom/BSocSc including law courses from Humanities or Commerce, then enter graduate LLB stream",
+  "curriculum": {
+    "note": "Combined stream students complete a first degree in Humanities or Commerce including senior law courses, then follow the graduate LLB curriculum (LP001). Subject to the rules of the Humanities or Commerce Faculty for the first degree."
+  }
+}

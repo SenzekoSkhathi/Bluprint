@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "SWK2060F",
+  "title": "Social Work Practice II: Individuals",
+  "department": "social-development",
+  "credits": 24,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "R Addinall",
+  "prerequisites": {
+    "text": "This course is only for students doing the BSW. At least second year status, or with permission from the Head of Department.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course provides students with the basic concepts, theory, processes and skills required for culturally appropriate assessment of systems and situations, based on which interventions may be designed. It builds on the introductory theoretical constructs and skills developed in previous courses. The course consists of three modules – assessment of individuals and families, assessment of groups and assessment of communities. While students are encouraged to conceptualise intervention holistically, particular knowledge and skills are relevant to the different levels of intervention",
+  "lecture_times": "Tuesday to Friday 3rd period.",
+  "dp_requirements": "At least 80% attendance at lectures/seminars, submission of all essays, projects, seminar materials and other required written work by the due date.",
+  "assessment": "Coursework counts 50%; two-hour June examination counts 50%.",
+  "is_humanities_course": true
+}

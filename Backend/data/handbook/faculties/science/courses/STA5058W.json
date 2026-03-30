@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "STA5058W",
+  "title": "Biostatistics Minor Dissertation",
+  "department": "statistical-sciences",
+  "credits": 90,
+  "nqf_level": 9,
+  "year_level": "Postgraduate (Master's in Biostatistics)",
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Professor F Gumedze",
+  "prerequisites": {
+    "text": "Successful completion of the coursework component of the Master's course in Biostatistics.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "This course presents the research component of the Master's course in Biostatistics. The research component is based on a 90 credit dissertation on a topic based on methodological or applied problems from the Health or Biological Sciences. Students may be based in a research unit from where the problem originated. On completion, students will be able to: conduct collaborative research in the health sciences; conduct independent research in statistical methodology for the health sciences; act as statistical consultants for health sciences research; and work with researchers in the biological sciences.",
+  "lecture_times": "Not applicable.",
+  "dp_requirements": "Not specified.",
+  "assessment": "The minor dissertation must be presented for formal examination. The coursework and minor dissertation each count 50% towards the degree; each must be passed separately for the award of the degree.",
+  "is_science_course": true
+}

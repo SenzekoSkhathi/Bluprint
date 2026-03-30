@@ -1,0 +1,30 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MAM3043S",
+  "title": "Methods of Mathematical Physics (3MP)",
+  "department": "mathematics-applied-mathematics",
+  "credits": 18,
+  "nqf_level": 7,
+  "year_level": "Third Year",
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "To be advised",
+  "prerequisites": {
+    "text": "MAM2040F, MAM2041F, MAM2042S and MAM2043S.",
+    "parsed": {
+      "type": "and",
+      "codes": [
+        "MAM2040F",
+        "MAM2041F",
+        "MAM2042S",
+        "MAM2043S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "Topics include: the Fourier-transform solution of linear PDEs on the line; long-term asymptotic behaviour of solutions via the methods of Laplace, stationary phase and steepest descents; nonlinear waves including the method of characteristics, the effect of dissipation, the Cole-Hopf transform for the Burgers equation and travelling fronts for the KPP equation; the effect of dispersion including KdV and nonlinear Schrödinger equation; elliptic integrals and elliptic functions; dark and bright solitons; kinks and breathers for the sine-Gordon equation; multisoliton solutions via the Hirota method and Bäcklund transformations.",
+  "lecture_times": "Monday - Friday, 3rd period.",
+  "dp_requirements": "A class record of 30% or more.",
+  "assessment": "Class record counts up to 50%; the balance is given by the final examination.",
+  "is_science_course": true
+}

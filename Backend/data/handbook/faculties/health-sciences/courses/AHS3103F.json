@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AHS3103F",
+  "title": "Voice",
+  "department": "health-and-rehabilitation-sciences",
+  "credits": 15,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "TBC",
+  "prerequisites": {
+    "text": "None",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to apply the International Classification of Functioning, disability and health (ICF) framework to voice disorders and adult dysfluency. It develops the ability to describe and critically discuss the nature and aetiology of voice disorders and adult dysf luency; imparts knowledge of the principles and methods of voice and adult dysfluency assessment; and enables students to conduct a comprehensive management of t he client with voice difficulties and adult dysfluency. Content includes laryngeal anatomy and physiology; nature, signs and symptoms of voice disorders and adult dysfluency; principles and nature of assessment; and differential diagnosis and management. Students learn skills of critical and analy tical thinking and clinical reason ing. They learn the importance of empathy and respect and of a clie nt-/caregiver-centred approach. T eaching and learning activities include lectures, case analyses an d presentations, journal article reviews, observation of multi- professional management (stroboscopy clinic), and an analysis of audio and video recordings. Themes DEPARTMENTS IN THE FACULTY 111 underpinning the course include di sability and burden of disease, ethics and human rights, and bio- psycho-social models of health.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "For discipline specific courses in the BSc Audiology and BSc in Speech-Language Pathology programmes a minimum coursework mark of 40% is required for entrance into the examination.",
+  "assessment": "The course grade is made up of a cour sework mark (weighted 60%) and a final examination mark (weighted 40%). If a supplementary examination is awarded, it will count 40 % of the final mark, as the course work mark will still be included in the final mark.",
+  "is_health_sciences_course": true
+}

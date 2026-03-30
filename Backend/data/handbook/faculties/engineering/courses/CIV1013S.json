@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CIV1013S",
+  "title": "Environmental Chemistry for Civil Engineers",
+  "department": "civil-engineering",
+  "credits": 12,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Professor D Randall",
+  "prerequisites": {
+    "text": "Refer to the programme and departmental sections in the 2026 EBE Faculty Handbook.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to introduce fundamental chemistry and environmental chemistry concepts and applications in the engineering sphere, which is a big challenge in South Africa. The course introduces the students to basic chemistry topics like the structure of the atom, chemical properties, and organic and inorganic chemistry. Furthermore, students are presented with the core areas of environmental engineering, which are water quality, air quality and Solid Waste Management and the chemistry related to these topics. This should equip the graduate with skills to identify environmental risks, the related chemical reactions and possible treatment or mitigation applications. Extra envious is to treat water standards provided to end-users.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

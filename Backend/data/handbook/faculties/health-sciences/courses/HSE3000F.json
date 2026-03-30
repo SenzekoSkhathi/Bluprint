@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "HSE3000F",
+  "title": "Becoming a Doctor Part IIC",
+  "department": "health-sciences-education",
+  "credits": 15,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Doctor S Buthelezi",
+  "prerequisites": {
+    "text": "Must have successfully complete d all MBChB second year courses including HSE2000W Becoming a Doctor: Part 1C (Clinical Skills: Blended and Contact Learning).",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "HSE2000W"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The three Courses of the BaDr theme aims to integr ate Clinical Skills Fa mily Medicine, and Languages. The aim of the course is to develop students' clinical reasoning skills towards constructing a differential diagnosis, to expand their history-taking and ex amination skills to the neurological system and to develop prof essional bedside skills through clerki ng ward patients. The course draws on classroom tutorials, bedside le arning, encounters with patients and the theoretical knowledge. Students develop a portfolio of patient cases to demonstrate clinical reasoning. The course builds on the techniques and skills learnt during BaDr1C.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "All DP requirements must be met, including compulsor y attendance of all ward tutorials, patient-linked activities, and assessments. DP requirements are stip ulated on the Clinical Skills Vula site.",
+  "assessment": "An integrated, Objective Stru ctured Clinical Examinatio n (OSCE) covers the three Courses within the BaDr theme, that is, Family Medicine (PPH3 000F), Clinical Skills (HSE3000F) and the Languages (SLL3002F). Coursework: 30% in-course asse ssment, 70% end of semester assessments. Assessments comprises of OSCE, MCQ and written reflective portfolio (marked). Each of the Courses must be passed independently. A final mark of less than and equal to 45% in any of the Courses, constitutes a fail for that Course(s). If a student scores between 46% and 49%, they will be recommended to FEC for a supplem entary examination fo r the failed Course(s). If HSE3000F is failed (which is a pre-requis ite for MDN3001S and a supplementary examination is granted, the duration of the Special Study Module (MDN2001S) period would be used for tutoring which is required for DP. The tutored supplementary examination will take place at the end of the duration of",
+  "is_health_sciences_course": true
+}

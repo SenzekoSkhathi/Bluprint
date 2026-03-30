@@ -1,0 +1,23 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "IBS5005W",
+  "title": "Data Science Minor Dissertation",
+  "department": "integrative-biomedical-sciences",
+  "credits": 90,
+  "nqf_level": 9,
+  "year_level": "Postgraduate – Masters",
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "TBC",
+  "prerequisites": {
+    "text": "None",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "The research component of the degree is based on a 90-credit dissertation. The topic of the research will be based on an analysis of large data sets from Computational Biology.",
+  "lecture_times": null,
+  "dp_requirements": null,
+  "assessment": "The minor dissertation must be presented for formal examination.",
+  "is_science_course": false,
+  "offered_by_faculty": "health-sciences"
+}

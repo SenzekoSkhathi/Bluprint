@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "TDP3043W",
+  "title": "Acting III",
+  "department": "theatre-and-performance",
+  "credits": 60,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "M Mbothwe",
+  "prerequisites": {
+    "text": "Completion of T&P Studiowork 2 and placement in the Acting concentration.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This advanced course is project -based. Through a series of projects and operating as an ensemble, students focus on the exploration of style supported by the secondary skills of voice and movement. The consolidation of individual acting strengths is a priority. A fieldwork component may be included as part of this course.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Attendance at all classes, performances and rehearsals. Completion of all projects.",
+  "assessment": "Coursework, classwork and in-house performances count 50% of the final mark; final practical examination counts 50% of the final mark. In order to pass, students must obtain at least 50% in both of the above.",
+  "is_humanities_course": true
+}

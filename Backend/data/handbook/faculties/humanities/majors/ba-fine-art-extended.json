@@ -1,0 +1,22 @@
+{
+  "id": "ba-fine-art-extended",
+  "programme_code": "HB064",
+  "name": "Bachelor of Arts in Fine Art (Extended)",
+  "abbreviation": "BA(Fine Art) Extended",
+  "nqf_level": 8,
+  "department": "Michaelis School of Fine Art",
+  "duration_years": 5,
+  "minimum_credits": 672,
+  "curriculum": {
+    "year_1": {
+      "core": [
+        "FIN1001W",
+        "FIN1008W",
+        "DOH1005F"
+      ],
+      "credits": 136,
+      "note": "Extended first year with academic development support"
+    },
+    "note": "Years 2-5 follow the regular BA(Fine Art) curriculum spread over 4 years"
+  }
+}

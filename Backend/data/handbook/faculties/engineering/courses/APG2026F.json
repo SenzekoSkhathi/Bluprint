@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "APG2026F",
+  "title": "Construction Surveying",
+  "department": "architecture-planning-geomatics",
+  "credits": 16,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Mr K Singh",
+  "prerequisites": {
+    "text": "Civil Engineering students: MAM1020F/S or MAM1023F/S. Construction Studies students: MAM1010F/S.",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "MAM1020F",
+        "MAM1023F",
+        "MAM1010F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to provide an understanding of graphical and spatial concepts and skills of plane surveying for students of the built environment, who are not intending to study higher courses in surveying. The course develops problem solving skills in relation to practical surveying problems and group work and technical report writing skills. The course includes the South African co -ordinate system; introduction to reduction of observations to a reference surface and projection to a mapping surface. Joins , polars, understanding error, traversing, theodolite and level instruments and their calibration, height determination by levelling and trigonometric heighting, distance measurement, tachaeometry and map creation and interpretation, GIS as a tool for repr esentation and analysis of spatial data, construction surveying: setting out of horizontal works and vertical alignment, calculation of volumes from plan, introduction to GPS as a data collection tool.",
+  "lecture_times": "4th period Tuesday to Friday. Practicals: one per week Monday 08h00-12h00",
+  "dp_requirements": "Attendance at and completion of all assignments with a minimum average of 40%, a minimum class test average of 40%.",
+  "assessment": "Tests count 25%, practical assignments count 25%, examination of 3 hours counts 50% (sub-minimum 40%).",
+  "is_engineering_course": true
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CSC4043Z",
+  "title": "Evolutionary Computation",
+  "department": "computer-science",
+  "credits": 12,
+  "nqf_level": 8,
+  "year_level": "Postgraduate (Honours)",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "Associate Professor G Nitschke",
+  "prerequisites": {
+    "text": "Admission into the Honours in Computer Science, or permission from the course convener.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "Evolutionary computation is a sub-field of biologically inspired artificial intelligence and general algorithmic frameworks applicable to different optimisation problems. This course examines the theory and application of several evolutionary algorithms, including: genetic algorithms, genetic programming and evolutionary strategies. Course objectives include: gaining an understanding of the algorithmic theory and implementation of various evolutionary algorithms, identifying evolutionary algorithms suitable for solving different types of problems, and how to apply such evolutionary algorithms to optimisation, machine learning, and design tasks.",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "None.",
+  "assessment": "Exam: closed book, 2 hours, 60%; Practical assignment: 40%.",
+  "is_science_course": true
+}

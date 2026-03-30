@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "MEC4108S",
+  "title": "System Design",
+  "department": "mechanical-engineering",
+  "credits": 12,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Associate Professor LJ du Plessis",
+  "prerequisites": {
+    "text": "None",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [
+    "MEC4124W",
+    "MEC4103F"
+  ],
+  "outline": "This course aims to enable students to structure and plan a high level system design and to generate system and subsystem development specifications; structuring of the development process according to the life cycle model portrayed by the V -diagram; do fu nctional decomposition and allocation to hardware; determination of the system and subsystem requirements by means of system modelling and simulation; and creation of a system verification matrix.",
+  "lecture_times": "1 lecture and 1 tutorial per week.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course. DEPARTMENTS IN THE FACULTY AND COURSES OFFERED 155",
+  "is_engineering_course": true
+}

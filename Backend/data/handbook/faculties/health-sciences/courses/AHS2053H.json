@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AHS2053H",
+  "title": "Applied Physiotherapy I",
+  "department": "health-and-rehabilitation-sciences",
+  "credits": 32,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "FY",
+  "semester_code": "H",
+  "convener": "Mrs N Edries-Khan",
+  "prerequisites": {
+    "text": "All 1st year courses.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [
+    "AHS2002W",
+    "HUB2015W",
+    "HUB2023W"
+  ],
+  "outline": "Objective: At the end of this course students shoul d be able to apply theoretical knowledge, physiotherapy practical assessme nt, treatment skills and proble m solving in ca rdiopulmonary, paediatric neurology, woman’s h ealth, and care of the older person . In addition, students should display the appropriate knowledge and skills on the use and applicatio n of Electro physical agents and Proprioceptive neuromuscular facilitation techniques Course outline: This course covers modules in p aediatric neurology, cardiopulmonary rehabilitation, electrophysical agents, woman’s health, proprioceptive neuromuscular facilitation, and care of the older person. The ICF framework tool is used in all modules in the course. The paediatric neurology component covers the foundation of neurological techniques of child developmen t and assessment, and treatment techniques used by physiotherapis ts in paediatric neurology. Th e cardiopulmonary rehabilitation component covers the theo ry, manual techniques and assistive devices required for the holistic assessment and treatment of cardiopulmonary clie nts. The emphasis is on primary healthcare and problem-solving, using the ICF. The electro-physical agent’s module includ es the theoretical and practical application of such ag ents, including the appl ication of electro-physical modalities in the management of patients. The woman’s health component focuses on the physiotherapy management 100 DEPARTMENTS IN THE FACULTY during the perinatal period. The care of the older person component covers the process of ageing and the assessment and treatment techniques used by physiotherapists in the field of gerontology.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Full attendance of and participation in all lectures, practical sessions, workshops and tutorials, and submission of assignments by the due dates.",
+  "assessment": "In course assessment contributes 65% and is made up of the following: Term 1: 7,5%; Term 2: 35% (25% theory, 10%SPE); Term 3: 17,5 % and Term 4: 5%. Assessments for coursework will include but not be limited to written tests, oral test, onli ne quizzes, grou p and individual assignments and practical tests. Specifics regarding assessment will be provided for each module within the course by the course convenor. Individual weighting that makes up the coursework mark will be provided to the student at the start of term by the course convenor. The final examination mark in Term 4 will contribute 35% (2 5% for theory and 10% SPE) for the course. T he pass mark of the course is 50%. Students who obtain between 45-49% in the final year mark , will be eligible for a supplementary exam. If the student should obtain a mark below 50% and fail the supplementary exam, the student will need to repeat the course the following year.",
+  "is_health_sciences_course": true
+}

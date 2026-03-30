@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EGS4039S",
+  "title": "Urban Food Security",
+  "department": "environmental-geographical-science",
+  "credits": 30,
+  "nqf_level": 8,
+  "year_level": "Postgraduate – Honours elective",
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Associate Professor J Battersby",
+  "prerequisites": {
+    "text": "Acceptance for Honours or Master's specialising in EGS.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "Topics include an overview of poverty and urbanization in Southern Africa; urban food security, methods and issues; urban poverty and vulnerability debates; food security and health; managing urban food systems (ecological, regulatory and fiscal dynamics).",
+  "lecture_times": null,
+  "dp_requirements": "At least 80% attendance record and submission of all assignments.",
+  "assessment": "Assignments 75%; examination 25%.",
+  "is_science_course": true
+}

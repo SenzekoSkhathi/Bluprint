@@ -1,0 +1,30 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AHS4009H",
+  "title": "Clinical Audiology IIIB",
+  "department": "health-and-rehabilitation-sciences",
+  "credits": 45,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "FY",
+  "semester_code": "H",
+  "convener": "Dr N Keeton",
+  "prerequisites": {
+    "text": "AHS3008W, AHS3065S, AHS3075S and AHS3104S (see FBC 5.14).",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "AHS3008W",
+        "AHS3065S",
+        "AHS3075S",
+        "AHS3104S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "The key focus of this clinical course is paediatric and adult asse ssment and management. Teaching takes place at a variety of clinical sites which may include secondary and tertiary hospitals, community clinics or university clinics, schools for children who are deaf/hard of hea ring, and/or occupational settings. Each student is exposed to each of the ma jor rotations, although site s may differ. Intended learning outcomes include a demonstration of prof essional conduct; and of independent assessment and the evidence-based ma nagement of adults and children with hearing and vestibular difficulties across the continuum of care (prevention, promotion, curative, rehabilitation), in a variety of contexts and levels of care (primary, secondary, tertiary). Teaching and learning activities include observation and modelling of experienced clinic ians, service-provision, clinical practice, team work, workshops and written reports. Themes underpinning the course are primary healthcare, ethics and human rights, equity and affirmation of diversity , developing agents fo r change, disability and burden of disease, and evidence-based practice.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "Minimum 80% attendance at all clinics; completion of all coursework by the due dates; and professional conduct.",
+  "assessment": "Continuous assessments during each clinical block contribute to 60% of course mark; final qualifying examination in November contributes 40% of course mark. Refer to AHS4009H clinic descriptor document for specific assessment details",
+  "is_health_sciences_course": true
+}

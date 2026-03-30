@@ -1,0 +1,40 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "STA1000F",
+  "title": "Introductory Statistics",
+  "department": "statistical-sciences",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "N Watson",
+  "prerequisites": {
+    "text": "A pass in any of MAM1004F/S or MAM1005H or MAM1031F or MAM1033F or MAM1020F/S or MAM1010F/S or MAM1110F/H. Note: STA1000F and STA1000S are identical courses offered in first and second semesters. Owing to the mathematics prerequisites, first-year students can only register for STA1000F/S on completion of the mathematics prerequisite. One lecture per week, one workshop per week and one tutorial per week. A student cannot obtain credits for more than one of STA1000F/S/P/L, STA1007S, STA1006S, STA1008F/S.",
+    "parsed": {
+      "type": "complex",
+      "codes_mentioned": [
+        "MAM1004F/S",
+        "MAM1005H",
+        "MAM1031F",
+        "MAM1033F",
+        "MAM1020F/S",
+        "MAM1010F/S",
+        "MAM1110F/H",
+        "STA1000F",
+        "STA1000S",
+        "STA1000F/S",
+        "STA1007S",
+        "STA1006S",
+        "STA1008F/S"
+      ],
+      "note": "Complex prerequisite logic - see text"
+    }
+  },
+  "corequisites": [],
+  "outline": "This is an introductory statistics course aimed at exposing students to principles and tools to support appropriate quantitative analysis. The aim is to produce students with a functional sense of statistics. Topics covered include: exploratory data analysis and summary statistics; probability theory; random variables; probability mass and density functions; Binomial, Poisson, Exponential, Normal and Uniform distributions; sampling distributions; confidence intervals; introduction to hypothesis testing (including tests on means, tabular data and bivariate data); determining sample sizes; simple linear regression and measures of correlation. The course is offered predominantly, but not exclusively, to Commerce students. Students are assessed on their knowledge of the topics covered and their ability to perform simple and appropriate statistical analyses using spreadsheet functions.",
+  "lecture_times": "One lecture per week, one workshop per week, one tutorial per week.",
+  "dp_requirements": "Satisfactory attendance of lectures, tutorials, practicals and tests and completion of assignments and/or exercises as set out in course outline. Class record of at least 35%.",
+  "assessment": "Class record 40% and a 2-hour exam counting 60%. Weights will be adjusted in the case of missed assessments, as detailed in the course outline.",
+  "is_science_course": true
+}

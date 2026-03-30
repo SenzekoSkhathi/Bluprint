@@ -1,0 +1,29 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "SEA2005S",
+  "title": "Marine Systems",
+  "department": "oceanography",
+  "credits": 24,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Associate Professor S E Fawcett",
+  "prerequisites": {
+    "text": "GEO1009F, CEM1000W, SEA2004F, or permission of the convener.",
+    "parsed": {
+      "type": "or",
+      "codes": [
+        "GEO1009F",
+        "CEM1000W",
+        "SEA2004F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "Building on the Principles of Oceanography SEA2004F course, this more advanced course covers the main ocean and atmosphere systems with a particular emphasis on their biogeochemical functioning. This includes an introduction to the major marine biogeochemical cycles, seawater carbonate chemistry, phytoplankton-nutrient interactions and growth kinetics, surface ocean-lower atmosphere interactions, and an introduction to Earth system dynamics. The physical forcings and their biogeochemical and ecosystem responses will be quantitatively illustrated for upwelling systems, oligotrophic systems, coastal systems around South Africa, and the Southern Ocean. Emphasis is placed on treating the systems in an integrative manner. Methods of data sampling and analysis, and computation of biogeochemical pools, rates and feedbacks will be covered in the tutorials and practicals.",
+  "lecture_times": "Monday - Friday, 4th period. Practicals: Tuesday, 14h00 - 17h00.",
+  "dp_requirements": "Attendance of lectures and practicals, and a class mark of at least 40%.",
+  "assessment": "Practicals, tests, and in-class activities count 60%; a final examination written in October/November counts 40%. A subminimum of 40% in the examination is required.",
+  "is_science_course": true
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PTY3010F",
+  "title": "Pathogenesis and Treatment of Infectious Diseases (Faculty of Science)",
+  "department": "pathology",
+  "credits": 36,
+  "nqf_level": 7,
+  "year_level": "Third Year",
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Doctor MR Abrahams (Division of Medical Virology) and Doctor C Moodley (Division of Medical Microbiology)",
+  "prerequisites": {
+    "text": "PTY2001S (or equivalent).",
+    "parsed": {
+      "type": "and",
+      "codes": [
+        "PTY2001S"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course provides the conceptual basis for understanding pathogenic bacteria, fungi, viruses and parasites, and particularly addresses the fundamental mechanisms of how they cause disease in humans. Topics include: how successful pathogens invade the host and escape immune defences; parts of the immune system important in resisting infection; mechanisms by which pathogens evade immune responses; antimicrobial therapy for bacterial, viral, fungal and parasitic infections; knowledge of pathogen life cycles to identify treatment targets; antimicrobial resistance mechanisms and novel approaches to combat them; and the role of antimicrobial stewardship. Through blended learning, practical sessions, field visits and interaction with experts in public health and infectious diseases, students are introduced to a variety of different career avenues.",
+  "lecture_times": "Refer to departmental notices. Includes practical sessions, field trips and tutorials.",
+  "dp_requirements": "40% average in class tests or quizzes; and an average of 50% for assignments. Attendance at all practicals, field trips and tutorials. Submission of at least 80% of assignments.",
+  "assessment": "Class record 60% (class tests and/or quizzes 20%, practical reports and tutorials 20%, assignments 20%); one 3-hour final examination written in June 40%. Supplementary examinations may be offered to students with an overall score of 45–49%.",
+  "is_science_course": false,
+  "offered_by_faculty": "health-sciences"
+}

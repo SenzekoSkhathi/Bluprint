@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CIV4042F",
+  "title": "Wastewater Treatment",
+  "department": "civil-engineering",
+  "credits": 12,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Associate Professor D Ikumi",
+  "prerequisites": {
+    "text": "CEM1008F",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "CEM1008F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to develop an advanced understanding of the objectives of wastewater treatment; wastewater test methods for organic, nitrogen and phosphorus content; physical characterization of wastewater, settleable, non -settleable and dissolved constit uents; unit operations in wastewater treatment, primary sedimentation; biodegradable and unbiodegradable organics, biological growth and death behaviour; reactor kinetics; biological process kinetic equations; the steady state activated sludge model; oxygen demand, sludge production, nutrient requirements; sewage sludge stability and disposal, and selection of sludge age.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course..",
+  "is_engineering_course": true
+}

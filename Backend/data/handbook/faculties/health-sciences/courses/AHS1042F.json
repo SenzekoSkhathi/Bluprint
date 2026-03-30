@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AHS1042F",
+  "title": "Human Communication Development",
+  "department": "health-and-rehabilitation-sciences",
+  "credits": 18,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "Dr K Abrahams",
+  "prerequisites": {
+    "text": "Refer to the programme and departmental sections in the 2026 Health Sciences Faculty Handbook.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "Objective: By the end of the course, students are able to describe th e concept of human communication and begin to unde rstand its dimensions and co mplexity; discuss speech-language pathology and audiology values and its influence on practice; describe the influencing factors that shape human communication; discuss human communication development; develop an appreciation of the nuances of communication in context. Course outline: The purpose of this course is to introduce the student to human communication across a lifespan. The course focuses on the con cepts linked to the va lues, principles and pr actices informing human communication. These concepts include theories of human communication and the factors that shape communication including biological, social, cultural, linguistic, ecological, contextual historical and political. Students develop critical thinking skills by exploring de veloping an understanding of communication in context. In addition, the student is introdu ced to developmental theory specifically communication developm ent across a lifespan and its links to the factors shaping communication. Teaching and lear ning activities include lectures, small group discussions, class presentations, critical dialoguing and observations of communication in context.",
+  "lecture_times": "See module block schedule and official class timetable.",
+  "dp_requirements": "For discipline specific courses in the BSc Audiology and BSc in Speech-Language Pathology programmes a minimum coursework mark of 40% is required for entrance into the examination.",
+  "assessment": "The course grade is made up of a cour sework mark (weighted 60%) and a final examination mark (weighted 40%). If a supplementary examination is awarded, it will count 40% of the final mark, as the course work mark will still be included in the final mark.",
+  "is_health_sciences_course": true
+}

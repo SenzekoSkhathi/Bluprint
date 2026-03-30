@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EGS5038S",
+  "title": "Climate Change & Predictability",
+  "department": "environmental-geographical-science",
+  "credits": 23,
+  "nqf_level": 9,
+  "year_level": "Postgraduate – Masters elective",
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Dr C Jack",
+  "prerequisites": {
+    "text": "Acceptance for Honours or Master's specialising in EGS.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "The course explores the theory of climate change, then goes into the question of predictability, cross-scale relationships and feedbacks in the climate system, the tools and techniques of prediction, and translation of predictions into the user community including impacts and vulnerability analyses, touching on the social dimension. At NQF 9 level students are expected to compose reports at a higher intellectual level with a more comprehensive engagement with the pertinent literature and greater commitment in oral components.",
+  "lecture_times": null,
+  "dp_requirements": "At least 80% attendance record and submission of all assignments.",
+  "assessment": "100% Coursework.",
+  "is_science_course": true
+}

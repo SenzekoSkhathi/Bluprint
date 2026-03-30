@@ -1,0 +1,27 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "FIN3012W",
+  "title": "Painting 3",
+  "department": "fine-art",
+  "credits": 48,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "FY",
+  "semester_code": "W",
+  "convener": "Associate Professor J van der Schijff",
+  "prerequisites": {
+    "text": "FIN2012W Sculpture 2. Due to the nature of the discipline, spatial and technical limitations and Health and Safety legislation, student numbers will be limited and students’ results will be taken into consideration.",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "FIN2012W"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "During the first semester advanced sculpture techniques are introduced, building on the technical, conceptual and critical skills learnt during the second year of study. These include bronze casting and contemporary three-dimensional art forms such as site -specific installation. In the second semester, students are required to work on a self-motivated project, drawing on ideas and methods developed in earlier projects to produce a coherent body of work. Students are encouraged to continue to explore relevant contemporary theory and practice, as well as historical examples to inform their practice.",
+  "lecture_times": "Monday to Friday, 14h00 to 17h00. Studio times: Studio times are from 09h00 to 17h00, with students breaking to attend lectures and tutorials as required by the timetable.",
+  "dp_requirements": "At least 80% attendance of studio classes and critiques, satisfactory completion of all projects.",
+  "assessment": "Mid-year coursework examination 40%, year -end coursework examination 50%, attendance & participation 10%.",
+  "is_humanities_course": true
+}

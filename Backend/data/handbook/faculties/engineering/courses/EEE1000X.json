@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "EEE1000X",
+  "title": "Practical Training",
+  "department": "electrical-engineering",
+  "credits": 0,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "varies",
+  "semester_code": "X",
+  "convener": "D de Maar",
+  "prerequisites": {
+    "text": "Refer to the programme and departmental sections in the 2026 EBE Faculty Handbook.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "This opportunity for practical experience culminates in a certificate showing evidence of completion of suitable work in the basic workshop processes to the satisfaction of the Head of Department, during a period of at least six weeks in an approved worksh op, either before registration or during the long vacation following the year of first registration in the faculty (due by 31 March of the following year). Alternatively students may produce a certificate showing evidence of completion of an approved structured intensive practical training course of at least 3 weeks duration.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

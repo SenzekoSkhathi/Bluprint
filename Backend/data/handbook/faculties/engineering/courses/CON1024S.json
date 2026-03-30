@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "CON1024S",
+  "title": "Property Economics I",
+  "department": "construction-economics-and-management",
+  "credits": 14,
+  "nqf_level": 5,
+  "year_level": 1,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "Mr G Goliath",
+  "prerequisites": {
+    "text": "CON1021F, ECO1010F/S",
+    "parsed": {
+      "type": "text_only",
+      "codes": [
+        "CON1021F",
+        "ECO1010F"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "This course aims to introduce the characteristics and functions of property markets, informal property markets, ‘township’ property markets, land in the history of economic thought, the pricing of land and land resources, relationship between the user; fin ancial and development markets, patterns of urban land use and land values, property markets and the competitiveness of cities, application of macro and micro economic concepts to the property sector, technology and property markets, role of property in the South African economy, researching the property market and Highest and Best use analysis.",
+  "lecture_times": "See departmental timetable and official class schedule.",
+  "dp_requirements": "Please refer to the official course handout document for detailed information regarding the DP requirements for this course.",
+  "assessment": "Please refer to the official course handout document regarding the assessment criteria for this course.",
+  "is_engineering_course": true
+}

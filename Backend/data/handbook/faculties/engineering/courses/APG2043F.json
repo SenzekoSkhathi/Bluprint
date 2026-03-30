@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "APG2043F",
+  "title": "Environment & Services I",
+  "department": "architecture-planning-geomatics",
+  "credits": 10,
+  "nqf_level": 6,
+  "year_level": 2,
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "TBC",
+  "prerequisites": {
+    "text": "Refer to the programme and departmental sections in the 2026 EBE Faculty Handbook.",
+    "parsed": {
+      "type": "see_handbook",
+      "codes": []
+    }
+  },
+  "corequisites": [
+    "APG2039W",
+    "APG2021W"
+  ],
+  "outline": "Understand materials, components, assembly systems and generic details applicable to composite construction systems and small framed structures in reinforced concrete and steel. Development of an awareness of materials and construction as an informant of design at the scale of 2 to 4 storey buildings with basements, and of the link between design development and detail resolution both in precedent of architectural merit and in the students own design development work based on Studiowork projects. Understanding of 2D and 3D graphic representation of building assembly.",
+  "lecture_times": "Refer to departmental timetable",
+  "dp_requirements": "80% attendance and 100% submission of all assignments",
+  "assessment": "100% on the portfolio exam",
+  "is_engineering_course": true
+}

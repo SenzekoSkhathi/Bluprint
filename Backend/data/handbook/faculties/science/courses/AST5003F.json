@@ -1,0 +1,31 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "AST5003F",
+  "title": "Astrophysics & Space Science Coursework (NASSP)",
+  "department": "astronomy",
+  "credits": 90,
+  "nqf_level": 9,
+  "year_level": "Postgraduate – Masters",
+  "semester": "S1",
+  "semester_code": "F",
+  "convener": "To be advised",
+  "prerequisites": {
+    "text": "Honours graduates in Astronomy and Space Science (AST4007W), Physics (PHY4000W, PHY4001W, PHY4002W) or equivalent, and Engineering. Minimum pass mark of 60% in the Honours degree. Admission subject to approval of the Steering Committee; application must be made before 30 June of the preceding year.",
+    "parsed": {
+      "type": "complex",
+      "codes_mentioned": [
+        "AST4007W",
+        "PHY4000W",
+        "PHY4001W",
+        "PHY4002W"
+      ],
+      "note": "Complex prerequisite logic - see text"
+    }
+  },
+  "corequisites": [],
+  "outline": "A selection of advanced topics presented by distinguished South African researchers from research institutions participating in NASSP. Topics vary from year to year but usually include cataclysmic variables, extragalactic astronomy, space technology, hot topics in cosmology, advanced general relativity, high energy astrophysics, observational cosmology, geomagnetism and aeronomy, plasma physics and magnetohydrodynamics.",
+  "lecture_times": null,
+  "dp_requirements": null,
+  "assessment": "On average, examinations of individual modules count 60% of the final result; marked practical work counts 40%.",
+  "is_science_course": true
+}

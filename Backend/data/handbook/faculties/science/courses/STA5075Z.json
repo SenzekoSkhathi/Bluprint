@@ -1,0 +1,22 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "STA5075Z",
+  "title": "Statistical and High Performance Computing",
+  "department": "statistical-sciences",
+  "credits": 12,
+  "nqf_level": 9,
+  "year_level": "Postgraduate (Master's)",
+  "semester": "varies",
+  "semester_code": "Z",
+  "convener": "S Salau",
+  "prerequisites": {
+    "text": "Acceptance into the Master's course in Data Science or quantitative background deemed sufficient by Head of Department.",
+    "parsed": null
+  },
+  "corequisites": [],
+  "outline": "This course aims to provide students with a foundation in statistical computing for data science. The course is divided into three sections: (1) Basic Programming — how to write computer programs to analyse data with the R Language and Environment for Statistical Computing; (2) High Performance Computing — running jobs in parallel on a remote computer cluster using a Linux command prompt; (3) Simulation and Optimisation — fundamental principles and uses of simulation and optimisation.",
+  "lecture_times": "Not specified.",
+  "dp_requirements": "None.",
+  "assessment": "Assignments and Exam.",
+  "is_science_course": true
+}

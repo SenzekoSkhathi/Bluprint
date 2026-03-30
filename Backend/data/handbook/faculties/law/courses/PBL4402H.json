@@ -1,0 +1,28 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "PBL4402H",
+  "title": "Independent Research Option (Criminal Justice)",
+  "department": "public-law",
+  "credits": 9,
+  "nqf_level": 8,
+  "year_level": 4,
+  "semester": "FY",
+  "semester_code": "H",
+  "convener": "TBA (supervised by a Faculty member)",
+  "prerequisites": {
+    "text": "All Preliminary and Intermediate Level courses to have been completed.",
+    "parsed": {
+      "type": "level_completion",
+      "levels_required": [
+        "preliminary",
+        "intermediate"
+      ]
+    }
+  },
+  "corequisites": [],
+  "outline": "A student may do an Independent Research Paper in Criminal Justice instead of the seminars and research paper elective. Students prepare their papers by working individually under the supervision of a member of the Faculty. Independent research papers should be about 8000 words in length. The final title of research to be done under individual supervision of a member of staff must be approved by registration day.",
+  "lecture_times": "Not applicable — independent research.",
+  "dp_requirements": "None",
+  "assessment": "As determined by supervisor.",
+  "is_law_course": true
+}

@@ -1,0 +1,216 @@
+{
+  "$schema": "handbook-major-v1",
+  "major_code": "BIO05",
+  "major_name": "Marine Biology",
+  "department": "biological-sciences",
+  "notes": "Students wishing to progress to Biology or Marine Biology Honours must complete STA2007S.",
+  "mutual_exclusions_with": [],
+  "required_companion_majors": [],
+  "has_student_limit": false,
+  "years": [
+    {
+      "year": 1,
+      "label": "First Year Core Courses",
+      "combinations": [
+        {
+          "combination_id": "BIO05-Y1-A",
+          "description": "MAM1004F + STA1007S",
+          "courses": [
+            {
+              "code": "BIO1000F",
+              "title": "Cell Biology",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "BIO1004S",
+              "title": "Biological Diversity",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "CEM1000W",
+              "title": "Chemistry 1000",
+              "credits": 36,
+              "nqf_level": 5
+            },
+            {
+              "code": "MAM1004F",
+              "title": "Mathematics 1004",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "STA1007S",
+              "title": "Introductory Statistics for Scientists",
+              "credits": 18,
+              "nqf_level": 5
+            }
+          ]
+        },
+        {
+          "combination_id": "BIO05-Y1-B",
+          "description": "MAM1031F + STA1007S",
+          "courses": [
+            {
+              "code": "BIO1000F",
+              "title": "Cell Biology",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "BIO1004S",
+              "title": "Biological Diversity",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "CEM1000W",
+              "title": "Chemistry 1000",
+              "credits": 36,
+              "nqf_level": 5
+            },
+            {
+              "code": "MAM1031F",
+              "title": "Mathematics 1031",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "STA1007S",
+              "title": "Introductory Statistics for Scientists",
+              "credits": 18,
+              "nqf_level": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "label": "Second Year Core Courses – choose one of three BIO electives",
+      "combinations": [
+        {
+          "combination_id": "BIO05-Y2-A",
+          "description": "With Vertebrate Diversity",
+          "courses": [
+            {
+              "code": "BIO2014F",
+              "title": "Principles of Ecology & Evolution",
+              "credits": 24,
+              "nqf_level": 6
+            },
+            {
+              "code": "SEA2004F",
+              "title": "Principles of Oceanography",
+              "credits": 24,
+              "nqf_level": 6
+            },
+            {
+              "code": "BIO2015F",
+              "title": "Vertebrate Diversity & Functional Biology",
+              "credits": 24,
+              "nqf_level": 6
+            }
+          ],
+          "recommended": [
+            {
+              "code": "STA2007F/H/S",
+              "title": "Study Design & Data Analysis for Scientists",
+              "credits": 24,
+              "nqf_level": 6
+            }
+          ]
+        },
+        {
+          "combination_id": "BIO05-Y2-B",
+          "description": "With Invertebrate Diversity",
+          "courses": [
+            {
+              "code": "BIO2014F",
+              "title": "Principles of Ecology & Evolution",
+              "credits": 24,
+              "nqf_level": 6
+            },
+            {
+              "code": "SEA2004F",
+              "title": "Principles of Oceanography",
+              "credits": 24,
+              "nqf_level": 6
+            },
+            {
+              "code": "BIO2016S",
+              "title": "Invertebrate Diversity & Functional Biology",
+              "credits": 24,
+              "nqf_level": 6
+            }
+          ],
+          "recommended": [
+            {
+              "code": "STA2007F/H/S",
+              "title": "Study Design & Data Analysis for Scientists",
+              "credits": 24,
+              "nqf_level": 6
+            }
+          ]
+        },
+        {
+          "combination_id": "BIO05-Y2-C",
+          "description": "With Plant Diversity",
+          "courses": [
+            {
+              "code": "BIO2014F",
+              "title": "Principles of Ecology & Evolution",
+              "credits": 24,
+              "nqf_level": 6
+            },
+            {
+              "code": "SEA2004F",
+              "title": "Principles of Oceanography",
+              "credits": 24,
+              "nqf_level": 6
+            },
+            {
+              "code": "BIO2017S",
+              "title": "Plant Diversity & Functional Biology",
+              "credits": 24,
+              "nqf_level": 6
+            }
+          ],
+          "recommended": [
+            {
+              "code": "STA2007F/H/S",
+              "title": "Study Design & Data Analysis for Scientists",
+              "credits": 24,
+              "nqf_level": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "label": "Third Year Core Courses",
+      "combinations": [
+        {
+          "combination_id": "BIO05-Y3-A",
+          "description": "Fixed third year courses",
+          "courses": [
+            {
+              "code": "BIO3002F",
+              "title": "Marine Ecosystems",
+              "credits": 36,
+              "nqf_level": 7
+            },
+            {
+              "code": "BIO3022S",
+              "title": "People & the Sea",
+              "credits": 36,
+              "nqf_level": 7
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

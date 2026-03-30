@@ -1,0 +1,25 @@
+{
+  "$schema": "handbook-course-v1",
+  "code": "SWK3066S",
+  "title": "Social Work Practice III: Organisations",
+  "department": "social-development",
+  "credits": 24,
+  "nqf_level": 7,
+  "year_level": 3,
+  "semester": "S2",
+  "semester_code": "S",
+  "convener": "R Addinall",
+  "prerequisites": {
+    "text": "At least 3rd year status or by discretion of the HOD.",
+    "parsed": {
+      "type": "text_only",
+      "codes": []
+    }
+  },
+  "corequisites": [],
+  "outline": "The course is intended to introduce students to selected contemporary issues and the response of social service professions to them in the South African context. A major focus is on youth in general, as they have become one of the most vulnerable population groups. The course consists of three modules and each module focuses on a specific contemporary issue.",
+  "lecture_times": "Tuesday to Friday 4th period.",
+  "dp_requirements": "Submission of all essays, projects, seminar materials and other required written work by the due date. Attendance of lectures or seminars as indicated by the department.",
+  "assessment": "Coursework counts 50%; two-hour November examination counts 50%.",
+  "is_humanities_course": true
+}
