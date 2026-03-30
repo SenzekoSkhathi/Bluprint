@@ -12,6 +12,7 @@ import { Asset } from "expo-asset";
 import * as FileSystem from "expo-file-system";
 import * as Print from "expo-print";
 import * as Sharing from "expo-sharing";
+import { Platform } from "react-native";
 
 // ─── UCT period definitions ────────────────────────────────────────────────
 
@@ -134,6 +135,12 @@ async function loadLogoBase64(): Promise<string> {
     // eslint-disable-next-line @typescript-eslint/no-require-imports
     const asset = Asset.fromModule(require("@/Public/Bluprint favicon.png"));
     await asset.downloadAsync();
+
+    // On web, localUri is already an accessible URL — use it directly
+    if (Platform.OS === "web") {
+      return asset.localUri ?? asset.uri ?? "";
+    }
+
     if (!asset.localUri) return "";
     const b64 = await FileSystem.readAsStringAsync(asset.localUri, {
       encoding: "base64" as const,
@@ -612,6 +619,25 @@ export async function downloadPlanPdf(
       ? buildTableHtml(data, logoSrc)
       : buildTimetableHtml(data, logoSrc);
 
+  if (Platform.OS === "web") {
+    // On web, expo-print falls back to window.print() which captures the
+    // current screen. Instead, open the HTML in a new tab and let the browser
+    // print/save it as PDF — this also gives the student a preview first.
+    const blob = new Blob([html], { type: "text/html;charset=utf-8" });
+    const url = URL.createObjectURL(blob);
+    const win = window.open(url, "_blank");
+    if (win) {
+      win.addEventListener("load", () => {
+        win.focus();
+        win.print();
+      });
+      // Clean up the object URL after a delay
+      setTimeout(() => URL.revokeObjectURL(url), 60_000);
+    }
+    return;
+  }
+
+  // iOS / Android — use expo-print + expo-sharing
   const { uri } = await Print.printToFileAsync({ html, base64: false });
 
   const canShare = await Sharing.isAvailableAsync();
