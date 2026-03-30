@@ -53,6 +53,14 @@ import {
     getIssueActionTarget,
 } from "@/services/remediation-actions";
 import { useRouter } from "expo-router";
+import {
+  type PdfDocType,
+  type PlanPdfData,
+  type PdfCourse,
+  type PdfYear,
+  type PdfSemester,
+  downloadPlanPdf,
+} from "@/services/plan-pdf";
 
 const TARGET_DEPARTMENTS = [
   "Archaeology",
@@ -94,6 +102,8 @@ function buildPlanSnapshot(courses: PlannedCourse[], majors: string[]): string {
 
 interface PlannerProps {
   studentNumber?: string;
+  studentName?: string;
+  degreeName?: string;
   currentYearNumber?: number;
   registeredMajors?: string[];
   completedCourses?: Array<{
@@ -210,6 +220,8 @@ function getDetectedYear(currentYearNumber?: number) {
 
 export default function Planner({
   studentNumber,
+  studentName = "Student",
+  degreeName = "BSc",
   currentYearNumber,
   registeredMajors: registeredMajorsProp = [],
   completedCourses: completedCoursesProp = [],
@@ -274,6 +286,7 @@ export default function Planner({
           convener_details: course.convener_details,
           entry_requirements: course.entry_requirements,
           outline_details: course.outline_details,
+          lecture_times: course.lecture_times,
         }));
 
         const uniqueByCode = Array.from(
@@ -1715,6 +1728,132 @@ export default function Planner({
   };
 
   const [addError, setAddError] = useState<string | null>(null);
+  const [showDownloadModal, setShowDownloadModal] = useState(false);
+  const [isGeneratingPdf, setIsGeneratingPdf] = useState(false);
+  const [pdfError, setPdfError] = useState<string | null>(null);
+
+  /** Build the structured PlanPdfData object from current Planner state. */
+  const buildPdfData = (): PlanPdfData => {
+    const calYear = new Date().getFullYear();
+    const yearNum = Number.isFinite(currentYearNumber)
+      ? Math.max(1, Math.trunc(currentYearNumber as number))
+      : 1;
+
+    // Look up lecture_times from catalog by course code
+    const catalogMap = new Map(catalog.map((c) => [c.code, c]));
+    const getLectureTimes = (code: string): string | null =>
+      catalogMap.get(code)?.lecture_times ?? null;
+
+    // Collect all courses into a year→semester structure
+    type MutableSem = { label: "Semester 1" | "Semester 2"; courses: PdfCourse[] };
+    type MutableYear = { sems: Map<number, MutableSem> };
+    const yearMap = new Map<number, MutableYear>();
+
+    const getOrAddYear = (n: number): MutableYear => {
+      if (!yearMap.has(n)) yearMap.set(n, { sems: new Map() });
+      return yearMap.get(n)!;
+    };
+    const getOrAddSem = (yr: MutableYear, s: 1 | 2): MutableSem => {
+      if (!yr.sems.has(s))
+        yr.sems.set(s, { label: `Semester ${s}`, courses: [] });
+      return yr.sems.get(s)!;
+    };
+
+    // Completed courses — semester format "Year X - Sem Y"
+    completedCoursesProp.forEach((c) => {
+      const ym = c.semester.match(/Year\s*(\d+)/i);
+      const sm = c.semester.match(/Sem(?:ester)?\s*(\d+)/i);
+      if (!ym || !sm) return;
+      const y = parseInt(ym[1], 10);
+      const s = (parseInt(sm[1], 10) as 1 | 2);
+      getOrAddSem(getOrAddYear(y), s).courses.push({
+        code: c.code,
+        name: c.title,
+        credits: c.credits,
+        status: "Completed",
+        lectureTimesRaw: getLectureTimes(c.code),
+      });
+    });
+
+    // In-progress courses — same semester format
+    inProgressCoursesProp.forEach((c) => {
+      const ym = c.semester.match(/Year\s*(\d+)/i);
+      const sm = c.semester.match(/Sem(?:ester)?\s*(\d+)/i);
+      if (!ym || !sm) return;
+      const y = parseInt(ym[1], 10);
+      const s = (parseInt(sm[1], 10) as 1 | 2);
+      getOrAddSem(getOrAddYear(y), s).courses.push({
+        code: c.code,
+        name: c.title,
+        credits: c.credits,
+        status: "In Progress",
+        lectureTimesRaw: getLectureTimes(c.code),
+      });
+    });
+
+    // User-planned courses from the planner grid
+    courses.forEach((c) => {
+      const y = getYearNumber(c.year);
+      const s = (getSemesterNumber(c.semester) as 1 | 2);
+      getOrAddSem(getOrAddYear(y), s).courses.push({
+        code: c.code,
+        name: c.name,
+        credits: c.credits,
+        status: "Planned",
+        lectureTimesRaw: getLectureTimes(c.code),
+      });
+    });
+
+    const allYearNumbers = Array.from(yearMap.keys()).sort((a, b) => a - b);
+    const pdfYears: PdfYear[] = allYearNumbers.map((y) => {
+      const calendarYear = calYear - yearNum + y;
+      const entry = yearMap.get(y)!;
+      const semesters: PdfSemester[] = ([1, 2] as const).map((s) => {
+        const sem = entry.sems.get(s);
+        return sem ?? { label: `Semester ${s}`, courses: [] };
+      });
+      const totalCredits = semesters.reduce(
+        (sum, sem) => sum + sem.courses.reduce((ss, c) => ss + c.credits, 0),
+        0,
+      );
+      return {
+        yearNumber: y,
+        calendarYear,
+        isCurrent: y === yearNum,
+        isPast: y < yearNum,
+        semesters,
+        totalCredits,
+      };
+    });
+
+    const totalCredits = pdfYears.reduce((s, y) => s + y.totalCredits, 0);
+
+    return {
+      studentName,
+      studentNumber: studentNumber ?? "—",
+      degreeName,
+      academicLevel: yearNum,
+      currentCalendarYear: calYear,
+      years: pdfYears,
+      totalCredits,
+      targetCredits: degreeRequirements.targetCredits,
+    };
+  };
+
+  const handleDownloadPdf = async (type: PdfDocType) => {
+    setPdfError(null);
+    setIsGeneratingPdf(true);
+    try {
+      const data = buildPdfData();
+      await downloadPlanPdf(type, data);
+    } catch (err) {
+      setPdfError("Failed to generate PDF. Please try again.");
+      console.error("PDF generation error:", err);
+    } finally {
+      setIsGeneratingPdf(false);
+      setShowDownloadModal(false);
+    }
+  };
 
   useEffect(() => {
     let isMounted = true;
@@ -2255,6 +2394,65 @@ export default function Planner({
         </View>
       ) : null}
 
+      {/* ── Download PDF modal ── */}
+      {showDownloadModal && (
+        <View style={styles.downloadModalOverlay}>
+          <View style={styles.downloadModal}>
+            <Text style={styles.downloadModalTitle}>Download Plan</Text>
+            <Text style={styles.downloadModalSub}>
+              Choose a format for your academic plan PDF
+            </Text>
+
+            <Pressable
+              style={[styles.downloadOption, styles.downloadOptionPrimary]}
+              onPress={() => void handleDownloadPdf("table")}
+              disabled={isGeneratingPdf}
+            >
+              <Text style={styles.downloadOptionIcon}>📋</Text>
+              <View style={styles.downloadOptionBody}>
+                <Text style={styles.downloadOptionTitle}>Year Table</Text>
+                <Text style={styles.downloadOptionDesc}>
+                  Courses organised by year and semester with credits and status
+                </Text>
+              </View>
+            </Pressable>
+
+            <Pressable
+              style={[styles.downloadOption, styles.downloadOptionPrimary]}
+              onPress={() => void handleDownloadPdf("timetable")}
+              disabled={isGeneratingPdf}
+            >
+              <Text style={styles.downloadOptionIcon}>🗓</Text>
+              <View style={styles.downloadOptionBody}>
+                <Text style={styles.downloadOptionTitle}>Weekly Timetable</Text>
+                <Text style={styles.downloadOptionDesc}>
+                  Period grid per semester — shows lecture slots and detects clashes
+                </Text>
+              </View>
+            </Pressable>
+
+            {pdfError ? (
+              <Text style={styles.downloadErrorText}>{pdfError}</Text>
+            ) : null}
+
+            {isGeneratingPdf && (
+              <Text style={styles.downloadGeneratingText}>Generating PDF…</Text>
+            )}
+
+            <Pressable
+              style={styles.downloadCancelBtn}
+              onPress={() => {
+                setShowDownloadModal(false);
+                setPdfError(null);
+              }}
+              disabled={isGeneratingPdf}
+            >
+              <Text style={styles.downloadCancelText}>Cancel</Text>
+            </Pressable>
+          </View>
+        </View>
+      )}
+
       {/* ── Sync bar ── */}
       <View style={styles.syncBar}>
         <Text style={styles.syncStatusText}>
@@ -2271,6 +2469,15 @@ export default function Planner({
           ) : null}
         </Text>
         <View style={styles.syncActions}>
+          <Pressable
+            style={styles.downloadPdfBtn}
+            onPress={() => {
+              setPdfError(null);
+              setShowDownloadModal(true);
+            }}
+          >
+            <Text style={styles.downloadPdfBtnText}>↓ PDF</Text>
+          </Pressable>
           {requiresWarningAcknowledgement ? (
             <Pressable
               onPress={acknowledgeWarnings}
@@ -3073,6 +3280,110 @@ const styles = StyleSheet.create({
     gap: theme.spacing.sm,
     alignItems: "center",
     flexWrap: "wrap",
+  },
+  downloadPdfBtn: {
+    borderRadius: theme.borderRadius.md,
+    borderWidth: 1,
+    borderColor: "#2563EB",
+    backgroundColor: "#EFF6FF",
+    paddingHorizontal: 12,
+    paddingVertical: 7,
+  },
+  downloadPdfBtnText: {
+    color: "#2563EB",
+    fontSize: theme.fontSize.sm,
+    fontWeight: "600",
+  },
+  downloadModalOverlay: {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    backgroundColor: "rgba(0,0,0,0.45)",
+    justifyContent: "center",
+    alignItems: "center",
+    zIndex: 100,
+  },
+  downloadModal: {
+    backgroundColor: "#fff",
+    borderRadius: 16,
+    padding: 24,
+    width: "88%",
+    maxWidth: 400,
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.18,
+    shadowRadius: 12,
+    elevation: 8,
+  },
+  downloadModalTitle: {
+    fontSize: 18,
+    fontWeight: "800",
+    color: "#1E3A5F",
+    marginBottom: 4,
+  },
+  downloadModalSub: {
+    fontSize: 13,
+    color: "#64748B",
+    marginBottom: 18,
+  },
+  downloadOption: {
+    flexDirection: "row",
+    alignItems: "flex-start",
+    borderRadius: 12,
+    borderWidth: 1,
+    padding: 14,
+    marginBottom: 12,
+    gap: 12,
+  },
+  downloadOptionPrimary: {
+    borderColor: "#BFDBFE",
+    backgroundColor: "#EFF6FF",
+  },
+  downloadOptionIcon: {
+    fontSize: 24,
+    marginTop: 2,
+  },
+  downloadOptionBody: {
+    flex: 1,
+  },
+  downloadOptionTitle: {
+    fontSize: 15,
+    fontWeight: "700",
+    color: "#1E3A5F",
+    marginBottom: 3,
+  },
+  downloadOptionDesc: {
+    fontSize: 12,
+    color: "#475569",
+    lineHeight: 17,
+  },
+  downloadErrorText: {
+    fontSize: 12,
+    color: "#DC2626",
+    marginBottom: 8,
+    textAlign: "center",
+  },
+  downloadGeneratingText: {
+    fontSize: 13,
+    color: "#2563EB",
+    marginBottom: 8,
+    textAlign: "center",
+    fontStyle: "italic",
+  },
+  downloadCancelBtn: {
+    borderRadius: 10,
+    borderWidth: 1,
+    borderColor: "#CBD5E1",
+    paddingVertical: 10,
+    alignItems: "center",
+    marginTop: 4,
+  },
+  downloadCancelText: {
+    fontSize: 14,
+    color: "#64748B",
+    fontWeight: "600",
   },
   saveBtnBase: {
     borderRadius: theme.borderRadius.md,

@@ -79,6 +79,8 @@ export default function PlannerScreen() {
   return (
     <Planner
       studentNumber={loggedInUser?.studentNumber}
+      studentName={loggedInUser?.name ?? mockUser?.name}
+      degreeName={loggedInUser?.degree}
       currentYearNumber={currentYearNumber}
       registeredMajors={registeredMajors}
       completedCourses={completedCourses}
