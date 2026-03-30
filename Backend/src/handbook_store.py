@@ -117,12 +117,8 @@ class HandbookStore:
         if not root.exists():
             return []
 
-        index_file = root / "_index.json"
-        if index_file.exists():
-            payload = json.loads(index_file.read_text(encoding="utf-8"))
-            if isinstance(payload, dict) and isinstance(payload.get("courses"), list):
-                return [row for row in payload["courses"] if isinstance(row, dict)]
-
+        # Prefer individual course files — they contain full details (outline,
+        # convener, lecture times, etc.).  _index.json is a summary index only.
         rows: list[dict[str, Any]] = []
         for course_file in sorted(root.glob("*.json")):
             if course_file.name.startswith("_"):
@@ -134,6 +130,20 @@ class HandbookStore:
             if not isinstance(payload, dict):
                 continue
             rows.append(payload)
+
+        if rows:
+            return rows
+
+        # Fallback: use _index.json if no individual files exist
+        index_file = root / "_index.json"
+        if index_file.exists():
+            try:
+                payload = json.loads(index_file.read_text(encoding="utf-8"))
+                if isinstance(payload, dict) and isinstance(payload.get("courses"), list):
+                    return [row for row in payload["courses"] if isinstance(row, dict)]
+            except (json.JSONDecodeError, OSError):
+                pass
+
         return rows
 
     def course_by_code(self, code: str) -> dict[str, Any] | None:
