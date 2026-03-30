@@ -88,6 +88,15 @@ interface BluBotProps {
     completedFailed?: BluBotCourse[];
     /** All courses registered for in the current academic year */
     coursesInProgress?: BluBotCourse[];
+    /** Courses in the student's saved plan (future/current academic plan) */
+    plannedCourses?: Array<{
+      code: string;
+      year: string;
+      semester: string;
+      credits: number;
+    }>;
+    /** Majors selected in the student's saved plan */
+    selectedMajors?: string[];
   };
 }
 
@@ -101,14 +110,14 @@ const BLUBOT_MODEL_OPTIONS: Array<{
   description: string;
 }> = [
   {
-    id: "fast",
-    label: "Fast",
-    description: "Quick replies",
-  },
-  {
     id: "thinking",
     label: "Thinking",
-    description: "Deeper reasoning",
+    description: "Deep analysis — recommended",
+  },
+  {
+    id: "fast",
+    label: "Fast",
+    description: "Quick replies, less detail",
   },
 ];
 
@@ -1110,6 +1119,8 @@ function buildStudentContextPayload(
     primary_faculty: primaryFaculty,
     cross_major_mode: crossMajorMode,
     cross_major_faculties: crossMajorFaculties,
+    planned_courses: userContext.plannedCourses,
+    selected_majors: userContext.selectedMajors,
   };
 }
 
@@ -1146,7 +1157,7 @@ export default function BluBot({
   );
   const [, setIsFallbackGuidance] = useState(false);
   const [selectedModelProfile, setSelectedModelProfile] =
-    useState<ScienceAdvisorModelProfile>("fast");
+    useState<ScienceAdvisorModelProfile>("thinking");
   const [isModelMenuOpen, setIsModelMenuOpen] = useState(false);
   const [selectedUpload, setSelectedUpload] =
     useState<DocumentPicker.DocumentPickerAsset | null>(null);

@@ -33,6 +33,14 @@ export function getIssueActionHint({
     return "Add the missing core requirement course to your plan.";
   }
 
+  if (category === "major-requirement") {
+    return "Add the missing required course(s) for your major to your plan.";
+  }
+
+  if (category === "graduation") {
+    return "Add more courses to your plan to meet the graduation credit requirement.";
+  }
+
   if (category === "load") {
     if (relatedTerm) {
       return `Rebalance credits in ${relatedTerm} by moving one course to another term.`;
@@ -55,10 +63,17 @@ export function getIssueActionTarget(category: string): IssueActionTarget {
     };
   }
 
-  if (category === "core-requirement") {
+  if (category === "core-requirement" || category === "major-requirement") {
     return {
-      route: "/(tabs)/handbooks",
-      label: "Open Handbooks",
+      route: "/(tabs)/majors",
+      label: "View Majors",
+    };
+  }
+
+  if (category === "graduation") {
+    return {
+      route: "/(tabs)/progress",
+      label: "View Progress",
     };
   }
 

@@ -544,6 +544,8 @@ export interface HandbookRuleValidationResponse {
   target_faculty?: string;
   data_source?: string;
   term_credit_totals?: Record<string, number>;
+  plan_credit_total?: number;
+  plan_nqf7_credits?: number;
   attempt_history_count?: number;
   plan_intent?: "snapshot" | "graduation_candidate";
   validation_mode?: "advisory" | "strict_graduation";
@@ -1137,6 +1139,14 @@ export interface BluBotStudentContext {
   primary_faculty?: string;
   cross_major_mode?: boolean;
   cross_major_faculties?: string[];
+  /** Student's saved academic plan — validator uses this for pre-flight checks */
+  planned_courses?: Array<{
+    code: string;
+    year: string;
+    semester: string;
+    credits: number;
+  }>;
+  selected_majors?: string[];
 }
 
 export function queryHandbookRetrieval(payload: {

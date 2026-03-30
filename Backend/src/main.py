@@ -260,6 +260,7 @@ def _answer_handbook_advisor(
         run_id=run_id,
         model_profile=model_profile,
         student_context=student_context,
+        faculty_slug=resolved_slug,
     )
 
     if isinstance(response, dict):

@@ -33,6 +33,86 @@ def _term_index(year: Any, semester: Any) -> int:
     return (_parse_year(year) * 10) + _parse_semester_number(semester)
 
 
+def _parse_prereq_tree(text: str) -> dict[str, Any]:
+    """Parse a prerequisite text string into a minimal AND/OR tree.
+
+    Returns a tree dict with ``type`` one of:
+      "code"   → {"type": "code", "code": "MAM1031F"}
+      "and"    → {"type": "and", "operands": [...]}
+      "or"     → {"type": "or", "operands": [...]}
+      "any"    → {"type": "any"}  (no requirements / unknown)
+    """
+    if not text:
+        return {"type": "any"}
+
+    text = re.sub(r"\s+", " ", str(text).strip())
+
+    # Split on " or " first — standard logical precedence (AND binds tighter).
+    or_segments = re.split(r"\bor\b", text, flags=re.IGNORECASE)
+
+    operands: list[dict[str, Any]] = []
+    for segment in or_segments:
+        codes = re.findall(r"[A-Z]{3,4}\d{4}[A-Z]?", segment.upper())
+        if not codes:
+            continue
+        # Within an OR segment, split by "and" to get inner AND groups.
+        and_parts = re.split(r"\band\b", segment, flags=re.IGNORECASE)
+        if len(and_parts) > 1:
+            inner_codes: list[str] = []
+            for part in and_parts:
+                inner_codes.extend(re.findall(r"[A-Z]{3,4}\d{4}[A-Z]?", part.upper()))
+            if len(inner_codes) == 1:
+                operands.append({"type": "code", "code": inner_codes[0]})
+            elif inner_codes:
+                operands.append(
+                    {"type": "and", "operands": [{"type": "code", "code": c} for c in inner_codes]}
+                )
+        else:
+            for code in codes:
+                operands.append({"type": "code", "code": code})
+
+    if not operands:
+        return {"type": "any"}
+    if len(operands) == 1:
+        return operands[0]
+    return {"type": "or", "operands": operands}
+
+
+def _eval_prereq_tree(tree: dict[str, Any], known_codes: set[str]) -> bool:
+    """Evaluate a prerequisite tree against a set of known-satisfied course codes."""
+    tree_type = tree.get("type")
+    if tree_type == "code":
+        return _is_requirement_satisfied(tree["code"], known_codes)
+    if tree_type == "and":
+        return all(_eval_prereq_tree(op, known_codes) for op in tree.get("operands", []))
+    if tree_type == "or":
+        return any(_eval_prereq_tree(op, known_codes) for op in tree.get("operands", []))
+    # "any" or unknown → no requirement
+    return True
+
+
+def _describe_prereq_tree(tree: dict[str, Any], known_codes: set[str]) -> str:
+    """Return a human-readable description of what is missing in the tree."""
+    tree_type = tree.get("type")
+    if tree_type == "code":
+        code = tree["code"]
+        if not _is_requirement_satisfied(code, known_codes):
+            return code
+        return ""
+    if tree_type == "and":
+        missing = [
+            _describe_prereq_tree(op, known_codes)
+            for op in tree.get("operands", [])
+        ]
+        missing = [m for m in missing if m]
+        return ", ".join(missing) if missing else ""
+    if tree_type == "or":
+        all_parts = [op.get("code") or _describe_prereq_tree(op, known_codes) for op in tree.get("operands", [])]
+        all_parts = [p for p in all_parts if p]
+        return f"one of [{' / '.join(all_parts)}]" if all_parts else ""
+    return ""
+
+
 def _extract_course_codes_from_value(value: Any) -> set[str]:
     if value is None:
         return set()
@@ -222,12 +302,32 @@ class HandbookValidator:
             if payload is None:
                 continue
 
-            prereq_codes = _extract_course_codes_from_value(payload.get("prerequisites"))
+            # Build prerequisite tree — uses AND/OR logic parsed from text.
+            prereq_raw = payload.get("prerequisites")
+            prereq_tree: dict[str, Any] | None = None
+            if isinstance(prereq_raw, dict):
+                prereq_text = prereq_raw.get("text") or ""
+                if prereq_text:
+                    prereq_tree = _parse_prereq_tree(prereq_text)
+                else:
+                    # Fallback: treat listed codes as AND requirements.
+                    fallback_codes = list(_extract_course_codes_from_value(prereq_raw.get("parsed")))
+                    if fallback_codes:
+                        prereq_tree = (
+                            {"type": "code", "code": fallback_codes[0]}
+                            if len(fallback_codes) == 1
+                            else {"type": "and", "operands": [{"type": "code", "code": c} for c in fallback_codes]}
+                        )
+            elif prereq_raw:
+                fallback_codes = list(_extract_course_codes_from_value(prereq_raw))
+                if fallback_codes:
+                    prereq_tree = (
+                        {"type": "code", "code": fallback_codes[0]}
+                        if len(fallback_codes) == 1
+                        else {"type": "and", "operands": [{"type": "code", "code": c} for c in fallback_codes]}
+                    )
+
             coreq_codes = _extract_course_codes_from_value(payload.get("corequisites"))
-            if isinstance(payload.get("prerequisites"), dict):
-                prereq_obj = payload.get("prerequisites")
-                prereq_codes.update(_extract_course_codes_from_value(prereq_obj.get("parsed")))
-                prereq_codes.update(_extract_course_codes_from_value(prereq_obj.get("text")))
 
             prior_codes = {
                 item["code"]
@@ -252,22 +352,18 @@ class HandbookValidator:
                 known_through_term.update(_course_code_variants(prior))
             known_through_term = _expand_known_codes_with_equivalences(known_through_term, equivalence_map)
 
-            prereq_missing = sorted(
-                required
-                for required in prereq_codes
-                if required != code and not _is_requirement_satisfied(required, known_before)
-            )
-            if prereq_missing:
+            # Evaluate the prerequisite tree (correctly handles OR/AND).
+            if prereq_tree is not None and not _eval_prereq_tree(prereq_tree, known_before):
+                missing_desc = _describe_prereq_tree(prereq_tree, known_before) or "prerequisite"
+                # Remove self-reference from missing description.
+                missing_desc = missing_desc.replace(code, "").strip(", ") or "prerequisite"
                 issues.append(
                     {
                         "id": f"handbook-val-{issue_counter}",
                         "severity": "blocker",
                         "category": "prerequisite",
                         "title": f"Prerequisites not satisfied for {code}",
-                        "message": (
-                            f"{code} is planned before prerequisite completion evidence for: "
-                            f"{', '.join(prereq_missing[:5])}."
-                        ),
+                        "message": f"{code} requires: {missing_desc}.",
                         "relatedCourseCode": code,
                     }
                 )
@@ -309,12 +405,6 @@ class HandbookValidator:
             )
             issue_counter += 1
 
-        summary = {
-            "blockers": sum(1 for issue in issues if issue.get("severity") == "blocker"),
-            "warnings": sum(1 for issue in issues if issue.get("severity") == "warning"),
-            "infos": sum(1 for issue in issues if issue.get("severity") == "info"),
-        }
-
         major_catalog = self.handbook_store.load_major_index()
         unknown_majors = []
         for major in selected_majors:
@@ -322,11 +412,195 @@ class HandbookValidator:
             if key and key not in major_catalog:
                 unknown_majors.append(major)
 
+        # ── 1A: Major requirement validation ─────────────────────────────────
+        all_plan_codes: set[str] = set()
+        for r in normalized_rows:
+            all_plan_codes.update(_course_code_variants(r["code"]))
+        all_plan_codes = _expand_known_codes_with_equivalences(all_plan_codes, equivalence_map)
+
+        for major_name in selected_majors:
+            norm_key = re.sub(r"\bmajor\b", "", re.sub(r"[^a-z0-9 ]+", "", major_name.lower())).strip()
+            norm_key_compact = re.sub(r"\s+", "", norm_key)
+
+            matched_rows = (
+                major_catalog.get(norm_key_compact)
+                or major_catalog.get(norm_key)
+            )
+            if not matched_rows:
+                # Try matching by major_code against all catalog entries
+                for rows in major_catalog.values():
+                    for row in rows:
+                        payload_code = str(
+                            row.get("payload", {}).get("major_code")
+                            or row.get("payload", {}).get("programme_code")
+                            or ""
+                        ).strip().upper()
+                        if payload_code and payload_code == major_name.strip().upper():
+                            matched_rows = [row]
+                            break
+                    if matched_rows:
+                        break
+
+            if not matched_rows:
+                continue
+
+            matched = next(
+                (r for r in matched_rows if r.get("faculty_slug") == target_faculty),
+                matched_rows[0],
+            )
+            payload = matched.get("payload", {})
+            required_core: set[str] = set()
+            optional_groups: list[tuple[int, list[str]]] = []
+
+            years_data = payload.get("years") if isinstance(payload.get("years"), list) else []
+            curriculum = payload.get("curriculum")
+
+            # Science-style: years[] with combinations
+            for year_entry in years_data:
+                if not isinstance(year_entry, dict):
+                    continue
+                for combo in year_entry.get("combinations", []):
+                    if not isinstance(combo, dict):
+                        continue
+                    for course in combo.get("required_core", []) + combo.get("courses", []):
+                        code = _normalize_code(course.get("code") if isinstance(course, dict) else course)
+                        if code:
+                            required_core.add(code)
+                    for n, group_key in [(1, "choose_one_of"), (2, "choose_two_of"), (3, "choose_three_of")]:
+                        candidates = [
+                            _normalize_code(c.get("code") if isinstance(c, dict) else c)
+                            for c in combo.get(group_key, [])
+                        ]
+                        candidates = [c for c in candidates if c]
+                        if candidates:
+                            optional_groups.append((n, candidates))
+
+            # Dict-style: curriculum = {year_1: {core: [codes]}, year_2: ...}
+            if not years_data and isinstance(curriculum, dict):
+                for year_key, year_data in curriculum.items():
+                    if not re.match(r"year[_\s]*\d+", year_key.lower()):
+                        continue
+                    if not isinstance(year_data, dict):
+                        continue
+                    for code in year_data.get("core", []):
+                        norm = _normalize_code(code)
+                        if norm:
+                            required_core.add(norm)
+
+            # Commerce-style: curriculum = [{year: 1, courses: [{code, credits}]}]
+            if not years_data and isinstance(curriculum, list):
+                for row in curriculum:
+                    if not isinstance(row, dict):
+                        continue
+                    for course in row.get("courses", []):
+                        code = _normalize_code(course.get("code") if isinstance(course, dict) else course)
+                        if code:
+                            required_core.add(code)
+
+            missing_required = sorted(
+                c for c in required_core
+                if c and not _is_requirement_satisfied(c, all_plan_codes)
+            )
+            if missing_required:
+                issues.append(
+                    {
+                        "id": f"handbook-val-{issue_counter}",
+                        "severity": "warning",
+                        "category": "major-requirement",
+                        "title": f"Missing required courses for {major_name}",
+                        "message": (
+                            f"{len(missing_required)} required course(s) for {major_name} are not in your plan: "
+                            f"{', '.join(missing_required[:8])}"
+                            f"{'…' if len(missing_required) > 8 else '.'}"
+                        ),
+                    }
+                )
+                issue_counter += 1
+
+            for min_count, candidates in optional_groups:
+                satisfied_count = sum(
+                    1 for c in candidates if _is_requirement_satisfied(c, all_plan_codes)
+                )
+                if satisfied_count < min_count:
+                    issues.append(
+                        {
+                            "id": f"handbook-val-{issue_counter}",
+                            "severity": "warning",
+                            "category": "major-requirement",
+                            "title": f"Elective requirement not met for {major_name}",
+                            "message": (
+                                f"{major_name} requires at least {min_count} of: "
+                                f"{', '.join(candidates[:6])}{'…' if len(candidates) > 6 else ''}. "
+                                f"Currently {satisfied_count} satisfied."
+                            ),
+                        }
+                    )
+                    issue_counter += 1
+
+        # ── 1B: Graduation readiness — credits and NQF7 ──────────────────────
+        GRADUATION_TOTAL_CREDITS = 360
+        GRADUATION_NQF7_MIN = 120
+
+        total_plan_credits = sum(r["credits"] for r in normalized_rows)
+        nqf7_credits = 0
+        for row in normalized_rows:
+            course_payload = self.handbook_store.course_by_code(row["code"])
+            if course_payload:
+                nqf = course_payload.get("nqf_level")
+                try:
+                    if int(nqf) >= 7:
+                        nqf7_credits += row["credits"]
+                except (TypeError, ValueError):
+                    pass
+
+        if total_plan_credits > 0 and total_plan_credits < GRADUATION_TOTAL_CREDITS:
+            gap = GRADUATION_TOTAL_CREDITS - total_plan_credits
+            issues.append(
+                {
+                    "id": f"handbook-val-{issue_counter}",
+                    "severity": "warning",
+                    "category": "graduation",
+                    "title": "Total credits below graduation requirement",
+                    "message": (
+                        f"Your plan has {total_plan_credits} credits. "
+                        f"Graduation requires {GRADUATION_TOTAL_CREDITS}. "
+                        f"You are {gap} credits short."
+                    ),
+                }
+            )
+            issue_counter += 1
+
+        if total_plan_credits > 0 and nqf7_credits < GRADUATION_NQF7_MIN:
+            gap = GRADUATION_NQF7_MIN - nqf7_credits
+            issues.append(
+                {
+                    "id": f"handbook-val-{issue_counter}",
+                    "severity": "warning",
+                    "category": "graduation",
+                    "title": "NQF Level 7 credits below minimum",
+                    "message": (
+                        f"Your plan has {nqf7_credits} NQF Level 7 credits. "
+                        f"Graduation requires at least {GRADUATION_NQF7_MIN}. "
+                        f"You need {gap} more Level 7 credits."
+                    ),
+                }
+            )
+            issue_counter += 1
+
+        # Recompute summary after all checks
+        summary = {
+            "blockers": sum(1 for issue in issues if issue.get("severity") == "blocker"),
+            "warnings": sum(1 for issue in issues if issue.get("severity") == "warning"),
+            "infos": sum(1 for issue in issues if issue.get("severity") == "info"),
+        }
+
         return {
             "target_faculty": target_faculty,
             "selected_majors": selected_majors,
             "unknown_selected_majors": unknown_majors,
             "term_credit_totals": term_credit_totals,
+            "plan_credit_total": total_plan_credits,
+            "plan_nqf7_credits": nqf7_credits,
             "issues": issues,
             "summary": summary,
             "data_source": "structured_handbook_json",

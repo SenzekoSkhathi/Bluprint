@@ -1361,6 +1361,18 @@ export default function Planner({
     ],
   );
 
+  // Degree-level issues (major requirements + graduation credits) shown in a
+  // dedicated section, not filtered by selected year or course code.
+  const degreeRequirementIssues = useMemo(
+    () =>
+      (handbookRuleValidation?.issues ?? []).filter(
+        (issue) =>
+          issue.category === "major-requirement" ||
+          issue.category === "graduation",
+      ),
+    [handbookRuleValidation],
+  );
+
   const getTermLabel = (year: string, semester: string) => {
     const yearNumber = year.match(/\d+/)?.[0] ?? "1";
     const semesterNumber = semester.match(/\d+/)?.[0] ?? "1";
@@ -2703,6 +2715,36 @@ export default function Planner({
         </View>
       ) : null}
 
+      {/* ── Degree Requirements ── */}
+      {hasPlannerInputs && degreeRequirementIssues.length > 0 ? (
+        <View style={styles.degreeReqSection}>
+          <Text style={styles.issuesSectionTitle}>Degree Requirements</Text>
+          {degreeRequirementIssues.map((issue) => (
+            <View key={issue.id} style={styles.degreeReqRow}>
+              <View style={styles.issueDot} />
+              <View style={styles.issueBody}>
+                <Text style={styles.issueTitle}>{issue.title}</Text>
+                <Text style={styles.issueMsg}>{issue.message}</Text>
+                <Pressable
+                  onPress={() =>
+                    router.push(
+                      getIssueActionTarget(issue.category).route as any,
+                    )
+                  }
+                >
+                  <Text style={styles.issueAction}>
+                    {getIssueActionHint({
+                      category: issue.category,
+                    })}{" "}
+                    →
+                  </Text>
+                </Pressable>
+              </View>
+            </View>
+          ))}
+        </View>
+      ) : null}
+
       {/* ── Issues list ── */}
       {hasPlannerInputs &&
       (yearValidationIssues.length > 0 || yearHandbookRuleIssues.length > 0) ? (
@@ -3631,6 +3673,20 @@ const styles = StyleSheet.create({
   },
 
   // ── Issues list ───────────────────────────────────────────────────────────
+  degreeReqSection: {
+    marginBottom: theme.spacing.md,
+  },
+  degreeReqRow: {
+    flexDirection: "row",
+    alignItems: "flex-start",
+    gap: 10,
+    padding: theme.spacing.sm,
+    borderRadius: theme.borderRadius.md,
+    borderWidth: 1,
+    borderColor: "#C8D8F0",
+    backgroundColor: "#EEF4FF",
+    marginBottom: 6,
+  },
   issuesSection: {
     marginBottom: theme.spacing.md,
   },

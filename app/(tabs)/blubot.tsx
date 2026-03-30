@@ -3,7 +3,7 @@ import { useLoggedInUser } from "@/hooks/use-logged-in-user";
 import React from "react";
 
 export default function BluBotScreen() {
-  const { loggedInUser, mockUser } = useLoggedInUser();
+  const { loggedInUser, mockUser, savedPlan } = useLoggedInUser();
   const firstName = loggedInUser?.name.split(" ")[0] ?? "Student";
 
   const userContext = loggedInUser
@@ -25,6 +25,8 @@ export default function BluBotScreen() {
         completedPassed: mockUser?.completedCourses.passed ?? [],
         completedFailed: mockUser?.completedCourses.failed ?? [],
         coursesInProgress: mockUser?.coursesInProgress ?? [],
+        plannedCourses: savedPlan?.planned_courses,
+        selectedMajors: savedPlan?.selected_majors,
       }
     : undefined;
 
