@@ -1363,8 +1363,7 @@ export default function Planner({
               : false;
           }
           return false;
-        })
-        .slice(0, 5),
+        }),
     [validationReport, plannedCourseCodes],
   );
 
@@ -1398,8 +1397,7 @@ export default function Planner({
           }
           // Generic (no course/term reference) — only show if there are planned courses
           return plannedCourseCodes.size > 0;
-        })
-        .slice(0, 5),
+        }),
     [
       handbookRuleValidation,
       plannedCourseCodes,
@@ -1495,9 +1493,10 @@ export default function Planner({
       (validationReport?.issues ?? []).filter(
         (i) =>
           i.severity === "blocker" &&
-          (!i.relatedCourseCode ||
-            plannedCourseCodes.has(i.relatedCourseCode)) &&
-          (!i.relatedCourseCode || !fixedCourseCodes.has(i.relatedCourseCode)),
+          (i.relatedCourseCode
+            ? plannedCourseCodes.has(i.relatedCourseCode) &&
+              !fixedCourseCodes.has(i.relatedCourseCode)
+            : Boolean(i.relatedTerm)),
       ).length,
     [validationReport, plannedCourseCodes, fixedCourseCodes],
   );
@@ -1506,9 +1505,10 @@ export default function Planner({
       (validationReport?.issues ?? []).filter(
         (i) =>
           i.severity === "warning" &&
-          (!i.relatedCourseCode ||
-            plannedCourseCodes.has(i.relatedCourseCode)) &&
-          (!i.relatedCourseCode || !fixedCourseCodes.has(i.relatedCourseCode)),
+          (i.relatedCourseCode
+            ? plannedCourseCodes.has(i.relatedCourseCode) &&
+              !fixedCourseCodes.has(i.relatedCourseCode)
+            : Boolean(i.relatedTerm)),
       ).length,
     [validationReport, plannedCourseCodes, fixedCourseCodes],
   );
@@ -1616,7 +1616,12 @@ export default function Planner({
   const saveGatePriorityIssues = useMemo(() => {
     const localIssues = (validationReport?.issues ?? [])
       .filter(
-        (issue) => issue.severity === "blocker" || issue.severity === "warning",
+        (issue) =>
+          (issue.severity === "blocker" || issue.severity === "warning") &&
+          (issue.relatedCourseCode
+            ? plannedCourseCodes.has(issue.relatedCourseCode) &&
+              !fixedCourseCodes.has(issue.relatedCourseCode)
+            : Boolean(issue.relatedTerm)),
       )
       .map((issue) => ({
         id: `local-${issue.id}`,
@@ -1654,15 +1659,13 @@ export default function Planner({
         }),
       }));
 
-    return [...localIssues, ...handbookIssues]
-      .sort((a, b) => {
-        if (a.severity === b.severity) {
-          return a.title.localeCompare(b.title);
-        }
-        return a.severity === "blocker" ? -1 : 1;
-      })
-      .slice(0, 5);
-  }, [handbookSaveIssues, validationReport]);
+    return [...localIssues, ...handbookIssues].sort((a, b) => {
+      if (a.severity === b.severity) {
+        return a.title.localeCompare(b.title);
+      }
+      return a.severity === "blocker" ? -1 : 1;
+    });
+  }, [handbookSaveIssues, plannedCourseCodes, fixedCourseCodes, validationReport]);
 
   const plannerTrustMessage = useMemo(
     () =>
