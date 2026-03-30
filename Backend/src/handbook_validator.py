@@ -450,30 +450,112 @@ class HandbookValidator:
             )
             payload = matched.get("payload", {})
             required_core: set[str] = set()
-            optional_groups: list[tuple[int, list[str]]] = []
 
             years_data = payload.get("years") if isinstance(payload.get("years"), list) else []
             curriculum = payload.get("curriculum")
 
-            # Science-style: years[] with combinations
-            for year_entry in years_data:
-                if not isinstance(year_entry, dict):
-                    continue
-                for combo in year_entry.get("combinations", []):
-                    if not isinstance(combo, dict):
+            # Science-style: years[] with combinations[]
+            # A year is satisfied if ALL courses in at least ONE combination are in the plan.
+            # If no combination is fully satisfied, report missing from the best-matching combo
+            # (highest ratio of satisfied courses) — but only warn when ratio > 0 (year started).
+            if years_data:
+                for year_entry in years_data:
+                    if not isinstance(year_entry, dict):
                         continue
-                    for course in combo.get("required_core", []) + combo.get("courses", []):
-                        code = _normalize_code(course.get("code") if isinstance(course, dict) else course)
-                        if code:
-                            required_core.add(code)
+                    combinations = year_entry.get("combinations", [])
+                    if not combinations:
+                        continue
+
+                    best_combo: dict | None = None
+                    best_ratio: float = -1.0
+                    year_satisfied = False
+
+                    for combo in combinations:
+                        if not isinstance(combo, dict):
+                            continue
+                        combo_courses = [
+                            _normalize_code(c.get("code") if isinstance(c, dict) else c)
+                            for c in combo.get("required_core", []) + combo.get("courses", [])
+                        ]
+                        combo_courses = [c for c in combo_courses if c]
+                        if not combo_courses:
+                            continue
+
+                        satisfied = sum(
+                            1 for c in combo_courses
+                            if _is_requirement_satisfied(c, all_plan_codes)
+                        )
+                        ratio = satisfied / len(combo_courses)
+
+                        if ratio == 1.0:
+                            year_satisfied = True
+                            best_combo = combo
+                            best_ratio = ratio
+                            break
+
+                        if ratio > best_ratio:
+                            best_ratio = ratio
+                            best_combo = combo
+
+                    if year_satisfied or best_ratio <= 0.0 or best_combo is None:
+                        # Year fully covered, or student hasn't started this year — skip
+                        continue
+
+                    # Student has partial overlap — report missing from best-matching combo
+                    best_courses = [
+                        _normalize_code(c.get("code") if isinstance(c, dict) else c)
+                        for c in best_combo.get("required_core", []) + best_combo.get("courses", [])
+                    ]
+                    missing_from_best = sorted(
+                        c for c in best_courses
+                        if c and not _is_requirement_satisfied(c, all_plan_codes)
+                    )
+                    if missing_from_best:
+                        combo_id = best_combo.get("combination_id", "")
+                        combo_desc = best_combo.get("description", combo_id)
+                        year_label = year_entry.get("label", f"Year {year_entry.get('year', '?')}")
+                        issues.append(
+                            {
+                                "id": f"handbook-val-{issue_counter}",
+                                "severity": "warning",
+                                "category": "major-requirement",
+                                "title": f"Incomplete combination for {major_name} — {year_label}",
+                                "message": (
+                                    f"Closest pathway: {combo_desc}. "
+                                    f"Missing: {', '.join(missing_from_best[:8])}"
+                                    f"{'…' if len(missing_from_best) > 8 else '.'}"
+                                ),
+                            }
+                        )
+                        issue_counter += 1
+
+                    # Check optional elective groups only within the best-matching combo
                     for n, group_key in [(1, "choose_one_of"), (2, "choose_two_of"), (3, "choose_three_of")]:
                         candidates = [
                             _normalize_code(c.get("code") if isinstance(c, dict) else c)
-                            for c in combo.get(group_key, [])
+                            for c in best_combo.get(group_key, [])
                         ]
                         candidates = [c for c in candidates if c]
-                        if candidates:
-                            optional_groups.append((n, candidates))
+                        if not candidates:
+                            continue
+                        satisfied_count = sum(
+                            1 for c in candidates if _is_requirement_satisfied(c, all_plan_codes)
+                        )
+                        if satisfied_count < n:
+                            issues.append(
+                                {
+                                    "id": f"handbook-val-{issue_counter}",
+                                    "severity": "warning",
+                                    "category": "major-requirement",
+                                    "title": f"Elective requirement not met for {major_name}",
+                                    "message": (
+                                        f"{major_name} requires at least {n} of: "
+                                        f"{', '.join(candidates[:6])}{'…' if len(candidates) > 6 else ''}. "
+                                        f"Currently {satisfied_count} satisfied."
+                                    ),
+                                }
+                            )
+                            issue_counter += 1
 
             # Dict-style: curriculum = {year_1: {core: [codes]}, year_2: ...}
             if not years_data and isinstance(curriculum, dict):
@@ -497,41 +579,23 @@ class HandbookValidator:
                         if code:
                             required_core.add(code)
 
-            missing_required = sorted(
-                c for c in required_core
-                if c and not _is_requirement_satisfied(c, all_plan_codes)
-            )
-            if missing_required:
-                issues.append(
-                    {
-                        "id": f"handbook-val-{issue_counter}",
-                        "severity": "warning",
-                        "category": "major-requirement",
-                        "title": f"Missing required courses for {major_name}",
-                        "message": (
-                            f"{len(missing_required)} required course(s) for {major_name} are not in your plan: "
-                            f"{', '.join(missing_required[:8])}"
-                            f"{'…' if len(missing_required) > 8 else '.'}"
-                        ),
-                    }
+            # Flat required_core check (Dict-style and Commerce-style only)
+            if required_core:
+                missing_required = sorted(
+                    c for c in required_core
+                    if c and not _is_requirement_satisfied(c, all_plan_codes)
                 )
-                issue_counter += 1
-
-            for min_count, candidates in optional_groups:
-                satisfied_count = sum(
-                    1 for c in candidates if _is_requirement_satisfied(c, all_plan_codes)
-                )
-                if satisfied_count < min_count:
+                if missing_required:
                     issues.append(
                         {
                             "id": f"handbook-val-{issue_counter}",
                             "severity": "warning",
                             "category": "major-requirement",
-                            "title": f"Elective requirement not met for {major_name}",
+                            "title": f"Missing required courses for {major_name}",
                             "message": (
-                                f"{major_name} requires at least {min_count} of: "
-                                f"{', '.join(candidates[:6])}{'…' if len(candidates) > 6 else ''}. "
-                                f"Currently {satisfied_count} satisfied."
+                                f"{len(missing_required)} required course(s) for {major_name} are not in your plan: "
+                                f"{', '.join(missing_required[:8])}"
+                                f"{'…' if len(missing_required) > 8 else '.'}"
                             ),
                         }
                     )
