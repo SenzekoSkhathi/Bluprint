@@ -464,7 +464,7 @@ class ScienceAdvisor:
         self,
         model_profile: Literal["fast", "thinking"] | None = None,
     ) -> str:
-        if model_profile == "fast":
+        if model_profile in  ("fast", "thinking"):
             # gemini-2.5-flash: optimised for speed, minimal reasoning budget.
             return self.settings.gemini_fast_model
         # Default (None) and "thinking" both use gemini-2.5-pro for deeper reasoning.

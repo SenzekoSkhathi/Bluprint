@@ -1,16 +1,16 @@
 import { getPrimaryFacultySlug } from "@/constants/faculty";
 import { buildGuidanceTrustMessage } from "@/hooks/use-logged-in-user";
 import {
-    askHandbookAdvisor,
-    askHandbookAdvisorWithUpload,
-    deleteHandbookAdvisorChatThread,
-    getBackendHealth,
-    getHandbookAdvisorChatHistory,
-    renameHandbookAdvisorChatThread,
-    syncHandbookAdvisorChatHistory,
-    type ScienceAdvisorChatThreadPayload,
-    type ScienceAdvisorCitation,
-    type ScienceAdvisorModelProfile,
+  askHandbookAdvisor,
+  askHandbookAdvisorWithUpload,
+  deleteHandbookAdvisorChatThread,
+  getBackendHealth,
+  getHandbookAdvisorChatHistory,
+  renameHandbookAdvisorChatThread,
+  syncHandbookAdvisorChatHistory,
+  type ScienceAdvisorChatThreadPayload,
+  type ScienceAdvisorCitation,
+  type ScienceAdvisorModelProfile,
 } from "@/services/backend-api";
 import { MaterialIcons } from "@expo/vector-icons";
 import AsyncStorage from "@react-native-async-storage/async-storage";
@@ -18,23 +18,23 @@ import * as Clipboard from "expo-clipboard";
 import * as DocumentPicker from "expo-document-picker";
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import {
-    Alert,
-    Animated,
-    Easing,
-    FlatList,
-    Keyboard,
-    KeyboardAvoidingView,
-    Linking,
-    ListRenderItem,
-    Platform,
-    Pressable,
-    SafeAreaView,
-    ScrollView,
-    StyleSheet,
-    Text,
-    TextInput,
-    TouchableOpacity,
-    View,
+  Alert,
+  Animated,
+  Easing,
+  FlatList,
+  Keyboard,
+  KeyboardAvoidingView,
+  Linking,
+  ListRenderItem,
+  Platform,
+  Pressable,
+  SafeAreaView,
+  ScrollView,
+  StyleSheet,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  View,
 } from "react-native";
 import { theme } from "../constants/theme";
 
@@ -110,14 +110,14 @@ const BLUBOT_MODEL_OPTIONS: Array<{
   description: string;
 }> = [
   {
-    id: "thinking",
-    label: "Thinking",
-    description: "Deep analysis — recommended",
-  },
-  {
     id: "fast",
     label: "Fast",
     description: "Quick replies, less detail",
+  },
+  {
+    id: "thinking",
+    label: "Thinking",
+    description: "Deep analysis — recommended",
   },
 ];
 
