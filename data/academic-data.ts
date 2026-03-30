@@ -363,12 +363,12 @@ export const majorCombinations: MajorCombination[] = [
   // ── Computer Science ──────────────────────────────────────
   {
     id: "CSC05-Y1-A", major: "Computer Science", year: 1,
-    requiredCourseCodes: ["CSC1015F", "MAM1000W", "CSC1016S"],
+    requiredCourseCodes: ["CSC1015F", "MAM1031F", "MAM1032S", "CSC1016S"],
     suggestedElectiveCodes: ["MAM1019H", "STA1007S"],
   },
   {
     id: "CSC05-Y1-B", major: "Computer Science", year: 1,
-    requiredCourseCodes: ["CSC1015F", "MAM1000W"],
+    requiredCourseCodes: ["CSC1015F", "MAM1031F", "MAM1032S"],
     suggestedElectiveCodes: ["MAM1004F", "INF1002F"],
   },
   {
@@ -431,7 +431,7 @@ export const majorCombinations: MajorCombination[] = [
   // ── Physics ───────────────────────────────────────────────
   {
     id: "PHY01-Y1-A", major: "Physics", year: 1,
-    requiredCourseCodes: ["MAM1000W", "PHY1004W"],
+    requiredCourseCodes: ["MAM1031F", "MAM1032S", "PHY1004W"],
     suggestedElectiveCodes: ["CSC1015F", "AST1000S"],
   },
   {
@@ -452,7 +452,7 @@ export const majorCombinations: MajorCombination[] = [
   // ── Astrophysics ──────────────────────────────────────────
   {
     id: "AST02-Y1-A", major: "Astrophysics", year: 1,
-    requiredCourseCodes: ["PHY1004W", "MAM1000W"],
+    requiredCourseCodes: ["PHY1004W", "MAM1031F", "MAM1032S"],
     suggestedElectiveCodes: ["AST1000S", "CSC1015F"],
   },
   {
@@ -473,7 +473,7 @@ export const majorCombinations: MajorCombination[] = [
   // ── Applied Statistics ────────────────────────────────────
   {
     id: "STA01-Y1-A", major: "Applied Statistics", year: 1,
-    requiredCourseCodes: ["MAM1000W", "STA1000F", "STA1007S"],
+    requiredCourseCodes: ["MAM1031F", "MAM1032S", "STA1000F", "STA1007S"],
     suggestedElectiveCodes: ["CSC1015F"],
   },
   {

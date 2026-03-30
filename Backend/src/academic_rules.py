@@ -636,6 +636,7 @@ class ScienceHandbookRulesService:
         deterministic_result = self.handbook_validator.validate_plan(
             planned_courses=planned_courses,
             selected_majors=selected_majors,
+            selected_major_pathways=selected_major_pathways,
             target_faculty="science",
         )
 

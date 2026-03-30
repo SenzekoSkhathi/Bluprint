@@ -254,6 +254,7 @@ class HandbookValidator:
         planned_courses: list[dict[str, Any]],
         *,
         selected_majors: list[str] | None = None,
+        selected_major_pathways: dict[str, dict[str, str]] | None = None,
         target_faculty: str = "science",
     ) -> dict[str, Any]:
         issues: list[dict[str, Any]] = []
@@ -513,6 +514,12 @@ class HandbookValidator:
             # A year is satisfied if ALL courses in at least ONE combination are in the plan.
             # If no combination is fully satisfied, report missing from the best-matching combo
             # (highest ratio of satisfied courses) — but only warn when ratio > 0 (year started).
+            # If the student has locked a specific combination via pathway locks, only that
+            # combination is evaluated (no best-match search).
+            pathways_for_major: dict[str, str] = (
+                (selected_major_pathways or {}).get(major_name, {})
+            )
+
             if years_data:
                 for year_entry in years_data:
                     if not isinstance(year_entry, dict):
@@ -521,42 +528,69 @@ class HandbookValidator:
                     if not combinations:
                         continue
 
+                    year_num = year_entry.get("year", "")
+                    year_key = f"Year {year_num}" if year_num else ""
+                    locked_combo_id = pathways_for_major.get(year_key, "").strip() if year_key else ""
+
                     best_combo: dict | None = None
                     best_ratio: float = -1.0
                     year_satisfied = False
 
-                    for combo in combinations:
-                        if not isinstance(combo, dict):
-                            continue
-                        combo_courses = [
-                            _normalize_code(c.get("code") if isinstance(c, dict) else c)
-                            for c in combo.get("required_core", []) + combo.get("courses", [])
-                        ]
-                        combo_courses = [c for c in combo_courses if c]
-                        if not combo_courses:
-                            continue
-
-                        satisfied = sum(
-                            1 for c in combo_courses
-                            if _is_requirement_satisfied(c, all_plan_codes, pattern_map)
+                    # If a pathway lock is active, only evaluate that combination
+                    if locked_combo_id:
+                        locked_combo = next(
+                            (c for c in combinations
+                             if isinstance(c, dict) and c.get("combination_id") == locked_combo_id),
+                            None,
                         )
-                        ratio = satisfied / len(combo_courses)
+                        if locked_combo:
+                            combo_courses = [
+                                _normalize_code(c.get("code") if isinstance(c, dict) else c)
+                                for c in locked_combo.get("required_core", []) + locked_combo.get("courses", [])
+                            ]
+                            combo_courses = [c for c in combo_courses if c]
+                            if combo_courses:
+                                satisfied = sum(
+                                    1 for c in combo_courses
+                                    if _is_requirement_satisfied(c, all_plan_codes, pattern_map)
+                                )
+                                ratio = satisfied / len(combo_courses)
+                                best_combo = locked_combo
+                                best_ratio = ratio
+                                year_satisfied = ratio == 1.0
+                    else:
+                        for combo in combinations:
+                            if not isinstance(combo, dict):
+                                continue
+                            combo_courses = [
+                                _normalize_code(c.get("code") if isinstance(c, dict) else c)
+                                for c in combo.get("required_core", []) + combo.get("courses", [])
+                            ]
+                            combo_courses = [c for c in combo_courses if c]
+                            if not combo_courses:
+                                continue
 
-                        if ratio == 1.0:
-                            year_satisfied = True
-                            best_combo = combo
-                            best_ratio = ratio
-                            break
+                            satisfied = sum(
+                                1 for c in combo_courses
+                                if _is_requirement_satisfied(c, all_plan_codes, pattern_map)
+                            )
+                            ratio = satisfied / len(combo_courses)
 
-                        if ratio > best_ratio:
-                            best_ratio = ratio
-                            best_combo = combo
+                            if ratio == 1.0:
+                                year_satisfied = True
+                                best_combo = combo
+                                best_ratio = ratio
+                                break
+
+                            if ratio > best_ratio:
+                                best_ratio = ratio
+                                best_combo = combo
 
                     if year_satisfied or best_ratio <= 0.0 or best_combo is None:
                         # Year fully covered, or student hasn't started this year — skip
                         continue
 
-                    # Student has partial overlap — report missing from best-matching combo
+                    # Student has partial overlap — report missing from active combo
                     best_courses = [
                         _normalize_code(c.get("code") if isinstance(c, dict) else c)
                         for c in best_combo.get("required_core", []) + best_combo.get("courses", [])

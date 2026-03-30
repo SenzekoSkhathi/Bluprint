@@ -170,7 +170,22 @@ export function generateAutoGraduationPlans(
     existingCompletedCodes.add(course.code),
   );
 
-  const unresolvedCoreCodes = input.requirements.coreCourseCodes.filter(
+  // Collect required courses from the student's major combinations.
+  // studentCombinationIds holds major names (e.g. "Computer Science"), so
+  // match by combination.major rather than combination.id.
+  const majorCoreCodes = new Set<string>(input.requirements.coreCourseCodes);
+  if (input.majorCombinations && input.studentCombinationIds) {
+    const registeredMajorNames = new Set(
+      input.studentCombinationIds.map((n) => n.trim().toLowerCase()),
+    );
+    input.majorCombinations.forEach((combo) => {
+      if (registeredMajorNames.has(combo.major.trim().toLowerCase())) {
+        combo.requiredCourseCodes.forEach((code) => majorCoreCodes.add(code));
+      }
+    });
+  }
+
+  const unresolvedCoreCodes = Array.from(majorCoreCodes).filter(
     (code) => !existingCompletedCodes.has(code),
   );
 
@@ -313,8 +328,13 @@ export function generateAutoGraduationPlans(
 
       if (input.studentCombinationIds && input.majorCombinations) {
         input.studentCombinationIds.forEach((combId) => {
+          // combId may be a combination ID (e.g. "CSC05-Y1-A") or a major name
+          // (e.g. "Computer Science") — match either way
           const comb = input.majorCombinations!.find(
-            (c) => c.id === combId && c.year === yr,
+            (c) =>
+              c.year === yr &&
+              (c.id === combId ||
+                c.major.trim().toLowerCase() === combId.trim().toLowerCase()),
           );
           if (!comb) return;
 
