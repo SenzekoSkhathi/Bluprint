@@ -668,6 +668,13 @@ export default function Planner({
     [courses, fixedCourses, selectedYear],
   );
 
+  // Set of IDs from user-added planned courses — used to determine whether
+  // a chip in the grid should show a remove button (fixedCourses cannot be removed).
+  const plannedCourseIdSet = useMemo(
+    () => new Set(courses.map((c) => c.id)),
+    [courses],
+  );
+
   // Helper to determine if user is postgrad (simple check: currentYearNumber > 4)
   const isPostgrad = (currentYearNumber ?? 1) > 4;
 
@@ -1252,6 +1259,17 @@ export default function Planner({
     return targetIndex < currentIndex;
   }
 
+  function isCurrentTerm(year: string, semester: string): boolean {
+    const yearNum = Number.isFinite(currentYearNumber)
+      ? Math.max(1, Math.trunc(currentYearNumber as number))
+      : 1;
+    const semNum = getCurrentSemesterNumberFromDate();
+    const currentIndex = (yearNum - 1) * 2 + semNum;
+    const targetIndex =
+      (getYearNumber(year) - 1) * 2 + getSemesterNumber(semester);
+    return targetIndex === currentIndex;
+  }
+
   const validationReport = useMemo(
     () =>
       hasPlannerCourses ||
@@ -1648,27 +1666,19 @@ export default function Planner({
   );
 
   const getAutoStatus = (year: string, semester: string): CourseStatus => {
-    const inProgressCourse = courses.find(
-      (course) => course.status === "In Progress",
-    );
-    const currentYearNumber = inProgressCourse
-      ? getYearNumber(inProgressCourse.year)
-      : getYearNumber(selectedYear);
-    const currentSemesterNumber = getCurrentSemesterNumberFromDate();
-
+    // Use the currentYearNumber prop directly — the student's actual academic
+    // year level. Do NOT fall back to selectedYear (the tab the user is
+    // viewing), which caused future-year semesters to be tagged "In Progress".
+    const yearNum = Number.isFinite(currentYearNumber)
+      ? Math.max(1, Math.trunc(currentYearNumber as number))
+      : 1;
+    const semNum = getCurrentSemesterNumberFromDate();
     const targetTermIndex =
       (getYearNumber(year) - 1) * 2 + getSemesterNumber(semester);
-    const currentTermIndex =
-      (currentYearNumber - 1) * 2 + currentSemesterNumber;
+    const currentTermIndex = (yearNum - 1) * 2 + semNum;
 
-    if (targetTermIndex < currentTermIndex) {
-      return "Completed";
-    }
-
-    if (targetTermIndex === currentTermIndex) {
-      return "In Progress";
-    }
-
+    if (targetTermIndex < currentTermIndex) return "Completed";
+    if (targetTermIndex === currentTermIndex) return "In Progress";
     return "Planned";
   };
 
@@ -1710,6 +1720,10 @@ export default function Planner({
     }
     if (isPastTerm(selectedYear, selectedSemester)) {
       setAddError("Courses cannot be added to a past semester.");
+      return;
+    }
+    if (isCurrentTerm(selectedYear, selectedSemester)) {
+      setAddError("Current-semester courses are already tracked as in progress.");
       return;
     }
     if (!canAddCourseToTerm(selectedCourse, selectedYear, selectedSemester)) {
@@ -1803,11 +1817,8 @@ export default function Planner({
   };
 
   const removeCourse = (id: string) => {
-    const courseToRemove = courses.find((c) => c.id === id);
-    // Only allow removal of "Planned" courses; "Completed" and "In Progress" are locked
-    if (!courseToRemove || courseToRemove.status !== "Planned") {
-      return;
-    }
+    // fixedCourses (completed/in-progress from student records) are never in
+    // the `courses` array, so any ID found here is a user-added planned course.
     setCourses((prev) => prev.filter((course) => course.id !== id));
   };
 
@@ -2236,38 +2247,38 @@ export default function Planner({
               <Text style={styles.saveBtnWarnText}>Acknowledge warnings</Text>
             </Pressable>
           ) : null}
-          {studentNumber ? (
-            <Pressable
-              onPress={() => void savePlan()}
-              disabled={
+          <Pressable
+            onPress={() => void savePlan()}
+            disabled={
+              !studentNumber ||
+              isSavingPlan ||
+              isHandbookValidationLoading ||
+              isSaveBlocked ||
+              requiresWarningAcknowledgement ||
+              !hasUnsavedChanges
+            }
+            style={[
+              styles.saveBtnBase,
+              studentNumber && saveBtnVariant === "blocked" && styles.saveBtnBlocked,
+              studentNumber && saveBtnVariant === "ready" && styles.saveBtnReady,
+              (!studentNumber || saveBtnVariant === "idle") && styles.saveBtnIdle,
+              (!studentNumber ||
                 isSavingPlan ||
                 isHandbookValidationLoading ||
-                isSaveBlocked ||
-                requiresWarningAcknowledgement ||
-                !hasUnsavedChanges
-              }
+                !hasUnsavedChanges) &&
+                styles.saveBtnDisabled,
+            ]}
+          >
+            <Text
               style={[
-                styles.saveBtnBase,
-                saveBtnVariant === "blocked" && styles.saveBtnBlocked,
-                saveBtnVariant === "ready" && styles.saveBtnReady,
-                saveBtnVariant === "idle" && styles.saveBtnIdle,
-                (isSavingPlan ||
-                  isHandbookValidationLoading ||
-                  !hasUnsavedChanges) &&
-                  styles.saveBtnDisabled,
+                styles.saveBtnText,
+                studentNumber && saveBtnVariant === "blocked" && styles.saveBtnBlockedText,
+                studentNumber && saveBtnVariant === "ready" && styles.saveBtnReadyText,
               ]}
             >
-              <Text
-                style={[
-                  styles.saveBtnText,
-                  saveBtnVariant === "blocked" && styles.saveBtnBlockedText,
-                  saveBtnVariant === "ready" && styles.saveBtnReadyText,
-                ]}
-              >
-                {saveBtnLabel}
-              </Text>
-            </Pressable>
-          ) : null}
+              {!studentNumber ? "Log in to save" : saveBtnLabel}
+            </Text>
+          </Pressable>
         </View>
       </View>
 
@@ -2458,7 +2469,7 @@ export default function Planner({
                         <Text style={styles.chipCredits}>
                           {course.credits} cr
                         </Text>
-                        {course.status === "Planned" ? (
+                        {plannedCourseIdSet.has(course.id) ? (
                           <Pressable
                             onPress={() => removeCourse(course.id)}
                             style={styles.chipRemove}
@@ -2478,6 +2489,10 @@ export default function Planner({
                 {isPastTerm(selectedYear, sem) ? (
                   <Text style={styles.pastTermText}>
                     Past semester — locked
+                  </Text>
+                ) : isCurrentTerm(selectedYear, sem) ? (
+                  <Text style={styles.pastTermText}>
+                    Current semester — in progress
                   </Text>
                 ) : (
                   <Pressable
