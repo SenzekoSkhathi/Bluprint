@@ -327,7 +327,7 @@ def _build_handbook_courses_response(store: HandbookStore, faculty_slug: str) ->
                 "code": code,
                 "title": title,
                 "group": course_group,
-                "credits": int(row.get("credits", 0) or 0),
+                "credits": int(row.get("credits") or row.get("nqf_credits") or 0),
                 "nqf_level": int(row.get("nqf_level", 0) or 0),
                 "semester": str(row.get("semester") or "Not specified").strip() or "Not specified",
                 "department": department,
@@ -416,6 +416,41 @@ def _build_handbook_majors_response(store: HandbookStore, faculty_slug: str) -> 
                     }
                 )
             years = normalized_years
+        elif not years and isinstance(curriculum, dict):
+            import re as _re
+            normalized_years_dict: list[dict[str, Any]] = []
+            for year_key in sorted(curriculum.keys()):
+                m = _re.match(r"year[_\s]*(\d+)", year_key.lower())
+                if not m:
+                    continue
+                year_num = int(m.group(1))
+                year_data = curriculum[year_key]
+                if not isinstance(year_data, dict):
+                    continue
+                core_codes = year_data.get("core") if isinstance(year_data.get("core"), list) else []
+                courses_raw = [
+                    {"code": c, "title": c, "credits": 0, "nqf_level": 0}
+                    for c in core_codes
+                    if isinstance(c, str)
+                ]
+                normalized_years_dict.append(
+                    {
+                        "year": year_num,
+                        "label": str(year_data.get("label") or f"Year {year_num}").strip(),
+                        "combinations": [
+                            {
+                                "combination_id": f"{major_code}-Y{year_num}-A",
+                                "description": "Programme curriculum pathway",
+                                "courses": courses_raw,
+                                "required_core": [],
+                                "choose_one_of": [],
+                                "choose_two_of": [],
+                                "choose_three_of": [],
+                            }
+                        ],
+                    }
+                )
+            years = normalized_years_dict
 
         majors.append(
             {
