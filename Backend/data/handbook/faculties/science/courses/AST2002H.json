@@ -10,12 +10,11 @@
   "semester_code": "H",
   "convener": "Dr L Marchetti",
   "prerequisites": {
-    "text": "PHY1004W, MAM1000W or both MAM1031F & MAM1032S (or equivalent), CSC1015F/S",
+    "text": "PHY1004W, MAM1031F and MAM1032S (or equivalent), CSC1015F/S",
     "parsed": {
       "type": "or",
       "codes": [
         "PHY1004W",
-        "MAM1000W",
         "MAM1031F",
         "MAM1032S",
         "CSC1015F/S"

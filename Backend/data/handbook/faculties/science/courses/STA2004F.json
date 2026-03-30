@@ -10,11 +10,11 @@
   "semester_code": "F",
   "convener": "M Mavuso",
   "prerequisites": {
-    "text": "A pass in (MAM1000W or MAM1032S or MAM1034S or MAM1012S or MAM1006H) and STA1006S or STA1106H. Note: A student cannot obtain credits for both STA2004F and STA2030S. Intended for students studying Mathematical Statistics or Actuarial Science.",
+    "text": "A pass in (MAM1031F and MAM1032S or MAM1032S or MAM1034S or MAM1012S or MAM1006H) and STA1006S or STA1106H. Note: A student cannot obtain credits for both STA2004F and STA2030S. Intended for students studying Mathematical Statistics or Actuarial Science.",
     "parsed": {
       "type": "complex",
       "codes_mentioned": [
-        "MAM1000W",
+        "MAM1031F",
         "MAM1032S",
         "MAM1034S",
         "MAM1012S",

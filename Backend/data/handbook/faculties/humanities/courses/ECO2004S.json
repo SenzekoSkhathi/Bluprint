@@ -10,7 +10,7 @@
   "semester_code": "S",
   "convener": "C Mlatsheni",
   "prerequisites": {
-    "text": "ECO1010, ECO1011 and MAM1010 (or an equivalent) or MAM1031F or MAM1032S. A student will be permitted to take ECO2004S without having passed ECO2003F, although it is desirable to pass ECO2003F prior to taking ECO2004S. If a student gets at least 40% for MAM1000W they will be allowed to register for ECO2004S.",
+    "text": "ECO1010, ECO1011 and MAM1010 (or an equivalent) or MAM1031F or MAM1032S. A student will be permitted to take ECO2004S without having passed ECO2003F, although it is desirable to pass ECO2003F prior to taking ECO2004S. If a student gets at least 40% for MAM1031F and MAM1032S they will be allowed to register for ECO2004S.",
     "parsed": {
       "type": "text_only",
       "codes": [
@@ -20,7 +20,6 @@
         "ECO2003F",
         "ECO2003F",
         "ECO2004S",
-        "MAM1000W",
         "ECO2004S"
       ]
     }

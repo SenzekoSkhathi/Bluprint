@@ -10,7 +10,7 @@
   "semester_code": "F",
   "convener": "M Mavuso",
   "prerequisites": {
-    "text": "A pass in (MAM1000W or MAM1032S or MAM1034S or MAM1012S or MAM1006H) and (STA1006S or STA1106H).",
+    "text": "A pass in (MAM1031F and MAM1032S or MAM1032S or MAM1034S or MAM1012S or MAM1006H) and (STA1006S or STA1106H).",
     "parsed": {
       "type": "prerequisite",
       "codes": [

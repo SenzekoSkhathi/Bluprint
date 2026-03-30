@@ -10,11 +10,10 @@
   "semester_code": "W",
   "convener": "Professor A Buffler",
   "prerequisites": {
-    "text": "At least 60% for NSC Physical Science. MAM1000W or both MAM1031F & MAM1032S (or equivalent) and CSC1015F & CSC1015S (or equivalent) must have been passed or be taken concurrently. Students assessed in week 5; if not coping, may be required to transfer to PHY1031F or PHY1023H from week 7. Note: A laptop is required. Credit will not be given for both PHY1023H and PHY1031F; credit can be given for both PHY1023H and PHY1004W.",
+    "text": "At least 60% for NSC Physical Science. MAM1031F and MAM1032S (or equivalent) and CSC1015F & CSC1015S (or equivalent) must have been passed or be taken concurrently. Students assessed in week 5; if not coping, may be required to transfer to PHY1031F or PHY1023H from week 7. Note: A laptop is required. Credit will not be given for both PHY1023H and PHY1031F; credit can be given for both PHY1023H and PHY1004W.",
     "parsed": {
       "type": "complex",
       "codes_mentioned": [
-        "MAM1000W",
         "MAM1031F",
         "MAM1032S",
         "CSC1015F",

@@ -10,7 +10,7 @@
   "semester_code": "F",
   "convener": "Dr S Jayalath",
   "prerequisites": {
-    "text": "PHY1013F/S (MEC), MAM1021S (MEC), PHY1004W or PHY1032S (CSC), MAM1004F (>60%) and MAM1008S (>60%) or MAM1000W (CSC).",
+    "text": "PHY1013F/S (MEC), MAM1021S (MEC), PHY1004W or PHY1032S (CSC), MAM1004F (>60%) and MAM1008S (>60%) or MAM1031F and MAM1032S (CSC).",
     "parsed": {
       "type": "complex",
       "codes_mentioned": [
@@ -20,7 +20,8 @@
         "PHY1032S",
         "MAM1004F",
         "MAM1008S",
-        "MAM1000W"
+        "MAM1031F",
+        "MAM1032S"
       ],
       "note": "Complex prerequisite logic - see text"
     }

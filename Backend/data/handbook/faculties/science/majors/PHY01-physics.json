@@ -14,12 +14,18 @@
       "combinations": [
         {
           "combination_id": "PHY01-Y1-A",
-          "description": "MAM1000W + PHY1004W + CSC1015F/S",
+          "description": "MAM1031F + MAM1032S + PHY1004W + CSC1015F/S",
           "courses": [
             {
-              "code": "MAM1000W",
-              "title": "Mathematics 1000",
-              "credits": 36,
+              "code": "MAM1031F",
+              "title": "Mathematics 1A",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "MAM1032S",
+              "title": "Mathematics 1B",
+              "credits": 18,
               "nqf_level": 5
             },
             {

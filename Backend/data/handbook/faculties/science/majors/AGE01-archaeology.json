@@ -14,7 +14,7 @@
       "combinations": [
         {
           "combination_id": "AGE01-Y1-A",
-          "description": "MAM1000W with STA1000F/S",
+          "description": "MAM1031F + MAM1032S with STA1000F/S",
           "courses": [
             {
               "code": "GEO1009F",
@@ -29,9 +29,15 @@
               "nqf_level": 5
             },
             {
-              "code": "MAM1000W",
-              "title": "Mathematics 1000",
-              "credits": 36,
+              "code": "MAM1031F",
+              "title": "Mathematics 1A",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "MAM1032S",
+              "title": "Mathematics 1B",
+              "credits": 18,
               "nqf_level": 5
             },
             {
@@ -44,7 +50,7 @@
         },
         {
           "combination_id": "AGE01-Y1-B",
-          "description": "MAM1000W with STA1007S",
+          "description": "MAM1031F + MAM1032S with STA1007S",
           "courses": [
             {
               "code": "GEO1009F",
@@ -59,9 +65,15 @@
               "nqf_level": 5
             },
             {
-              "code": "MAM1000W",
-              "title": "Mathematics 1000",
-              "credits": 36,
+              "code": "MAM1031F",
+              "title": "Mathematics 1A",
+              "credits": 18,
+              "nqf_level": 5
+            },
+            {
+              "code": "MAM1032S",
+              "title": "Mathematics 1B",
+              "credits": 18,
               "nqf_level": 5
             },
             {

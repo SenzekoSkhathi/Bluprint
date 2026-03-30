@@ -10,7 +10,7 @@
   "semester_code": "H",
   "convener": "Professor P A Woudt",
   "prerequisites": {
-    "text": "{'pre_requisites': 'PHY1004W and MAM1000W or both MAM1031F & MAM1032S (or equivalent); or PHY1023H and MAM1005H; CSC1015F/S', 'co_requisites': 'PHY1004W and MAM1006H'}",
+    "text": "{'pre_requisites': 'PHY1004W and MAM1031F and MAM1032S (or equivalent); or PHY1023H and MAM1005H; CSC1015F/S', 'co_requisites': 'PHY1004W and MAM1006H'}",
     "parsed": null
   },
   "corequisites": [],

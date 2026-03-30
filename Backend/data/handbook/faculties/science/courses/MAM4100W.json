@@ -10,12 +10,13 @@
   "semester_code": "W",
   "convener": "Dr F Ebobisse-Bille",
   "prerequisites": {
-    "text": "(i) 60% or higher for MAM3000W; and (ii) the average of the four marks for MAM1000W, MAM1019H, MAM2000W and MAM3000W should be 60% or higher. Acceptance subject to individual approval by the Head of Department. Students are not allowed to repeat this course.",
+    "text": "(i) 60% or higher for MAM3000W; and (ii) the average of the four marks for MAM1031F/MAM1032S, MAM1019H, MAM2000W and MAM3000W should be 60% or higher. Acceptance subject to individual approval by the Head of Department. Students are not allowed to repeat this course.",
     "parsed": {
       "type": "complex",
       "codes_mentioned": [
         "MAM3000W",
-        "MAM1000W",
+        "MAM1031F",
+        "MAM1032S",
         "MAM1019H",
         "MAM2000W"
       ],

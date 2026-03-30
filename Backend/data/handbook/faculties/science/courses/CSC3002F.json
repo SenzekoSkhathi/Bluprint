@@ -10,7 +10,7 @@
   "semester_code": "F",
   "convener": "Associate Professor P Marais",
   "prerequisites": {
-    "text": "CSC2001F, CSC2002S, CSC2004Z and ((MAM1004F+MAM1008S) or (MAM1000W) or (MAM1031F or equivalent)). Note: A laptop is required.",
+    "text": "CSC2001F, CSC2002S, CSC2004Z and ((MAM1004F+MAM1008S) or (MAM1031F and MAM1032S) or (MAM1031F or equivalent)). Note: A laptop is required.",
     "parsed": {
       "type": "complex",
       "codes_mentioned": [
@@ -19,8 +19,8 @@
         "CSC2004Z",
         "MAM1004F",
         "MAM1008S",
-        "MAM1000W",
-        "MAM1031F"
+        "MAM1031F",
+        "MAM1032S"
       ],
       "note": "Complex prerequisite logic - see text"
     }

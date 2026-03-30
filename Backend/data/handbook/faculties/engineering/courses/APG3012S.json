@@ -10,11 +10,12 @@
   "semester_code": "S",
   "convener": "Dr S Mphuthi",
   "prerequisites": {
-    "text": "MAM1000W or MAM1021F/S, STA1000S, CSC1015F or CSC1017F, APG2014S, APG2015F; APG2016W or APG2040F.",
+    "text": "MAM1031F and MAM1032S or MAM1021F/S, STA1000S, CSC1015F or CSC1017F, APG2014S, APG2015F; APG2016W or APG2040F.",
     "parsed": {
       "type": "text_only",
       "codes": [
-        "MAM1000W",
+        "MAM1031F",
+        "MAM1032S",
         "MAM1021F",
         "STA1000S",
         "CSC1015F",

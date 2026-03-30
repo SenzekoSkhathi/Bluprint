@@ -10,7 +10,7 @@
   "semester_code": "S",
   "convener": "Professor W Burgers and Associate Professor S Hadebe",
   "prerequisites": {
-    "text": "BIO1000F, CEM1000W, MAM1004F and STA1007S or MAM1000W (or equivalent).",
+    "text": "BIO1000F, CEM1000W, MAM1004F and STA1007S or MAM1031F and MAM1032S (or equivalent).",
     "parsed": {
       "type": "complex",
       "codes_mentioned": [
@@ -18,7 +18,8 @@
         "CEM1000W",
         "MAM1004F",
         "STA1007S",
-        "MAM1000W"
+        "MAM1031F",
+        "MAM1032S"
       ],
       "note": "Complex prerequisite logic - see text"
     }

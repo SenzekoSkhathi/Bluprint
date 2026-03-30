@@ -10,7 +10,7 @@
   "semester_code": "S",
   "convener": "TBC",
   "prerequisites": {
-    "text": "MAM1021F/S (MEC), PHY1013F/S (MEC), PHY1004W or PHY1032S (CSC), MAM1004F (>60%) and MAM1008S (>60%) or MAM1000W (CSC); DP for EEE2041F.",
+    "text": "MAM1021F/S (MEC), PHY1013F/S (MEC), PHY1004W or PHY1032S (CSC), MAM1004F (>60%) and MAM1008S (>60%) or MAM1031F and MAM1032S (CSC); DP for EEE2041F.",
     "parsed": {
       "type": "complex",
       "codes_mentioned": [
@@ -20,7 +20,8 @@
         "PHY1032S",
         "MAM1004F",
         "MAM1008S",
-        "MAM1000W",
+        "MAM1031F",
+        "MAM1032S",
         "EEE2041F"
       ],
       "note": "Complex prerequisite logic - see text"

@@ -35,7 +35,7 @@ const MAX_DAILY_SCHEDULE_HOURS = 6;
  *   "CSC1015F and CSC1016S"       → [["CSC1015F"], ["CSC1016S"]]   (both required)
  *   "STA1006S or STA1007S"        → [["STA1006S", "STA1007S"]]     (either satisfies)
  *   "CSC1015F/CSC1016S"           → [["CSC1015F", "CSC1016S"]]     (slash = or)
- *   "CSC1015F, CSC1016S, MAM1000W"→ [["CSC1015F"],["CSC1016S"],["MAM1000W"]]
+ *   "CSC1015F, CSC1016S, MAM1031F"→ [["CSC1015F"],["CSC1016S"],["MAM1031F"]]
  */
 function parsePrerequisiteGroups(text: string): string[][] {
   if (!text || /^none$/i.test(text.trim())) return [];
