@@ -396,13 +396,31 @@ export function validateAcademicPlan({
   };
 
   plannedCourses.forEach((course) => {
-    addTermCredits(termFromPlannedCourse(course), course.credits);
+    const term = termFromPlannedCourse(course);
+    addTermCredits(term, course.credits);
+    // FY (W/H suffix) courses run across both semesters of the year.
+    // Count their credits toward the paired semester so the load check catches
+    // over-enrolment in both S1 and S2 when a full-year course is present.
+    const entry = catalogByCode.get(course.code);
+    if (entry?.semester === "FY") {
+      const yearNum = parseYearNumber(course.year);
+      const semNum = parseSemesterNumber(course.semester);
+      addTermCredits(formatTermLabel(yearNum, semNum === 1 ? 2 : 1), course.credits);
+    }
   });
   completedCourses.forEach((course) => {
     addTermCredits(termFromRecordSemester(course.semester), course.credits);
   });
   inProgressCourses.forEach((course) => {
-    addTermCredits(termFromRecordSemester(course.semester), course.credits);
+    const term = termFromRecordSemester(course.semester);
+    addTermCredits(term, course.credits);
+    // FY in-progress courses (e.g. PHY1004W) also occupy S2 — count there too.
+    const entry = catalogByCode.get(course.code);
+    if (entry?.semester === "FY") {
+      const yearMatch = term.match(/Year\s*(\d+)/i);
+      const yearNum = yearMatch ? Number(yearMatch[1]) : 1;
+      addTermCredits(formatTermLabel(yearNum, 2), course.credits);
+    }
   });
 
   // ── NQF-weighted load per term (planned courses only) ───────────────────
@@ -415,6 +433,16 @@ export function validateAcademicPlan({
       term,
       (termWeightedLoadMap.get(term) ?? 0) + course.credits * w,
     );
+    // FY planned courses also weight the paired semester.
+    if (entry?.semester === "FY") {
+      const yearNum = parseYearNumber(course.year);
+      const semNum = parseSemesterNumber(course.semester);
+      const pairedTerm = formatTermLabel(yearNum, semNum === 1 ? 2 : 1);
+      termWeightedLoadMap.set(
+        pairedTerm,
+        (termWeightedLoadMap.get(pairedTerm) ?? 0) + course.credits * w,
+      );
+    }
   });
 
   termCreditMap.forEach((credits, term) => {
@@ -538,8 +566,28 @@ export function validateAcademicPlan({
       termCourseEntries.get(term)!.push({ code, slots });
     };
 
-    plannedCourses.forEach((c) => addEntry(c.code, termFromPlannedCourse(c)));
-    inProgressCourses.forEach((c) => addEntry(c.code, termFromRecordSemester(c.semester)));
+    plannedCourses.forEach((c) => {
+      const term = termFromPlannedCourse(c);
+      addEntry(c.code, term);
+      // FY planned courses run in both semesters — check clashes in S2 as well.
+      const entry = catalogByCode.get(c.code);
+      if (entry?.semester === "FY") {
+        const yearNum = parseYearNumber(c.year);
+        const semNum = parseSemesterNumber(c.semester);
+        addEntry(c.code, formatTermLabel(yearNum, semNum === 1 ? 2 : 1));
+      }
+    });
+    inProgressCourses.forEach((c) => {
+      const term = termFromRecordSemester(c.semester);
+      addEntry(c.code, term);
+      // FY in-progress courses also clash-check in S2.
+      const entry = catalogByCode.get(c.code);
+      if (entry?.semester === "FY") {
+        const yearMatch = term.match(/Year\s*(\d+)/i);
+        const yearNum = yearMatch ? Number(yearMatch[1]) : 1;
+        addEntry(c.code, formatTermLabel(yearNum, 2));
+      }
+    });
 
     termCourseEntries.forEach((entries, term) => {
       // Build slot map: "Monday-5" → [courseA, courseB, …]

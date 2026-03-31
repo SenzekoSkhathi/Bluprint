@@ -254,7 +254,8 @@ export function generateAutoGraduationPlans(
       const eligibleCourses = Array.from(remainingCoreCodes)
         .map((code) => catalogByCode.get(code))
         .filter((course): course is CourseCatalogEntry => Boolean(course))
-        .filter((course) => course.semester === semesterName)
+        // "FY" (W/H suffix) courses run all year — place them in Semester 1 of their year.
+        .filter((course) => course.semester === semesterName || (course.semester === "FY" && semesterName === "Semester 1"))
         .filter((course) => {
           const prereqs = parseCourseCodes(course.prerequisites);
           return prereqs.every((prereq) => satisfiedCodes.has(prereq));
@@ -354,7 +355,8 @@ export function generateAutoGraduationPlans(
       const electiveCandidates = Array.from(availableElectiveCodes)
         .map((code) => catalogByCode.get(code))
         .filter((course): course is CourseCatalogEntry => Boolean(course))
-        .filter((c) => c.semester === semesterName)
+        // FY courses are eligible in Semester 1 (they start then and run all year).
+        .filter((c) => c.semester === semesterName || (c.semester === "FY" && semesterName === "Semester 1"))
         .filter((c) => {
           const prereqs = parseCourseCodes(c.prerequisites);
           return prereqs.every((p) => satisfiedCodes.has(p));
