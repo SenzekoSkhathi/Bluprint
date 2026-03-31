@@ -9,6 +9,7 @@ import type {
     ScheduleItem,
     ValidationIssue,
 } from "@/types/academic";
+import { parseLectureTimes, UCT_PERIOD_TIMES } from "@/services/lecture-times-parser";
 
 interface AcademicValidationInput {
   catalog: CourseCatalogEntry[];
@@ -520,6 +521,86 @@ export function validateAcademicPlan({
       }),
     );
   });
+
+  // ── Lecture-time clash detection ──────────────────────────────────────────
+  // Groups planned + in-progress courses by term, parses lecture_times from
+  // the catalog, and flags any period×day slot occupied by two or more courses.
+  // Courses without parseable times generate an "unconfirmed" info notice only
+  // when there IS at least one real clash in the same term (to avoid noise).
+  {
+    type CourseEntry = { code: string; slots: ReturnType<typeof parseLectureTimes> };
+    const termCourseEntries = new Map<string, CourseEntry[]>();
+
+    const addEntry = (code: string, term: string) => {
+      const entry = catalogByCode.get(code);
+      const slots = parseLectureTimes(entry?.lecture_times);
+      if (!termCourseEntries.has(term)) termCourseEntries.set(term, []);
+      termCourseEntries.get(term)!.push({ code, slots });
+    };
+
+    plannedCourses.forEach((c) => addEntry(c.code, termFromPlannedCourse(c)));
+    inProgressCourses.forEach((c) => addEntry(c.code, termFromRecordSemester(c.semester)));
+
+    termCourseEntries.forEach((entries, term) => {
+      // Build slot map: "Monday-5" → [courseA, courseB, …]
+      const slotMap = new Map<string, string[]>();
+      entries.forEach(({ code, slots }) => {
+        slots.forEach(({ day, period }) => {
+          const key = `${day}-${period}`;
+          if (!slotMap.has(key)) slotMap.set(key, []);
+          slotMap.get(key)!.push(code);
+        });
+      });
+
+      // Report clashes (blocker) — deduplicate pair reporting
+      const reportedPairs = new Set<string>();
+      let hasConfirmedClash = false;
+
+      slotMap.forEach((codes, slotKey) => {
+        if (codes.length < 2) return;
+        hasConfirmedClash = true;
+        const [day, periodStr] = slotKey.split("-");
+        const period = parseInt(periodStr, 10);
+        const timeLabel = UCT_PERIOD_TIMES[period] ?? `Period ${period}`;
+
+        for (let i = 0; i < codes.length; i++) {
+          for (let j = i + 1; j < codes.length; j++) {
+            const pair = [codes[i], codes[j]].sort().join("|");
+            if (reportedPairs.has(pair)) continue;
+            reportedPairs.add(pair);
+
+            issues.push(
+              buildIssue(nextId(), {
+                severity: "blocker",
+                category: "schedule",
+                title: `Timetable clash: ${codes[i]} and ${codes[j]}`,
+                message: `${codes[i]} and ${codes[j]} are both scheduled on ${day} Period ${period} (${timeLabel}) in ${term}. Move one course to a different semester.`,
+                relatedTerm: term,
+              }),
+            );
+          }
+        }
+      });
+
+      // If there is a confirmed clash, also flag courses with no time data
+      // so the student knows to verify manually.
+      if (hasConfirmedClash) {
+        entries
+          .filter(({ slots }) => slots.length === 0)
+          .forEach(({ code }) => {
+            issues.push(
+              buildIssue(nextId(), {
+                severity: "info",
+                category: "schedule",
+                title: `Lecture time unconfirmed — ${code}`,
+                message: `${code} has no parseable lecture time in the handbook. Verify manually that it does not clash with other courses in ${term}.`,
+                relatedTerm: term,
+              }),
+            );
+          });
+      }
+    });
+  }
 
   const scheduleByDay = new Map<string, ScheduleItem[]>();
   scheduleItems.forEach((item) => {

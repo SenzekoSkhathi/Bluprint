@@ -13,28 +13,17 @@ import * as FileSystem from "expo-file-system";
 import * as Print from "expo-print";
 import * as Sharing from "expo-sharing";
 import { Platform } from "react-native";
+import {
+  parseLectureTimes,
+  UCT_PERIOD_TIMES,
+  FULL_DAYS,
+  SHORT_DAYS,
+  type LectureSlot,
+} from "@/services/lecture-times-parser";
 
-// ─── UCT period definitions ────────────────────────────────────────────────
+// ─── UCT period definitions (re-exported alias for HTML templates) ──────────
 
-const UCT_PERIODS: Record<number, string> = {
-  1: "08:00–09:00",
-  2: "09:00–10:00",
-  3: "10:00–11:00",
-  4: "11:00–12:00",
-  5: "14:00–15:00",
-  6: "15:00–16:00",
-  7: "16:00–17:00",
-  8: "17:00–18:00",
-};
-
-const FULL_DAYS = [
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-] as const;
-const SHORT_DAYS = ["Mon", "Tue", "Wed", "Thu", "Fri"] as const;
+const UCT_PERIODS = UCT_PERIOD_TIMES;
 
 // ─── Types ─────────────────────────────────────────────────────────────────
 
@@ -73,60 +62,7 @@ export interface PlanPdfData {
   targetCredits: number;
 }
 
-// ─── Lecture-times parser ──────────────────────────────────────────────────
-
-interface TimeSlot {
-  day: string;
-  period: number;
-}
-
-/**
- * Best-effort parser for UCT free-text lecture_times strings.
- * Handles patterns like:
- *   "Monday - Friday, 5th period"
- *   "Tuesday, Thursday, 2nd period. Tutorials: ..."
- *   "Monday - Thursday, 5th period. Practicals: Friday, 5th period."
- */
-function parseLectureTimes(raw: string | null | undefined): TimeSlot[] {
-  if (!raw) return [];
-
-  // Only take the main lecture segment (drop Tutorials/Practicals/Labs)
-  const mainPart = raw.split(/(?:Tutorials?|Practicals?|Labs?):/i)[0];
-
-  // Extract period number (1st … 8th)
-  const periodMatch = mainPart.match(/(\d)\s*(?:st|nd|rd|th)?\s*period/i);
-  if (!periodMatch) return [];
-  const period = parseInt(periodMatch[1], 10);
-  if (period < 1 || period > 8) return [];
-
-  const slots: TimeSlot[] = [];
-
-  // "Monday - Friday" or "Monday – Thursday" style ranges
-  const rangeMatch = mainPart.match(/(\b\w+day)\s*[-–]\s*(\b\w+day)/i);
-  if (rangeMatch) {
-    const startIdx = FULL_DAYS.findIndex(
-      (d) => d.toLowerCase() === rangeMatch[1].toLowerCase(),
-    );
-    const endIdx = FULL_DAYS.findIndex(
-      (d) => d.toLowerCase() === rangeMatch[2].toLowerCase(),
-    );
-    if (startIdx !== -1 && endIdx !== -1) {
-      for (let i = startIdx; i <= endIdx; i++) {
-        slots.push({ day: FULL_DAYS[i], period });
-      }
-      return slots;
-    }
-  }
-
-  // Comma-separated or individual day mentions
-  FULL_DAYS.forEach((day) => {
-    if (new RegExp(`\\b${day}\\b`, "i").test(mainPart)) {
-      slots.push({ day, period });
-    }
-  });
-
-  return slots;
-}
+// LectureSlot is imported from lecture-times-parser
 
 // ─── Logo loader ───────────────────────────────────────────────────────────
 
@@ -368,7 +304,6 @@ function buildTableHtml(data: PlanPdfData, logoSrc: string): string {
 // ─── TIMETABLE document ────────────────────────────────────────────────────
 
 interface TimetableGrid {
-  // grid[period][dayIndex] = list of courses in that slot
   slots: Map<number, Map<number, PdfCourse[]>>;
   usedPeriods: number[];
   unscheduled: PdfCourse[];
