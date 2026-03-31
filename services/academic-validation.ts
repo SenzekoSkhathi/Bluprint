@@ -556,13 +556,18 @@ export function validateAcademicPlan({
   // Courses without parseable times generate an "unconfirmed" info notice only
   // when there IS at least one real clash in the same term (to avoid noise).
   //
-  // Co-schedulable exemptions: pairs of Year 2 Mathematics courses that the
-  // UCT handbook explicitly states can be taken concurrently because lectures
-  // are arranged so they do not clash. Any pair where BOTH codes are in this
-  // set is exempt from clash reporting.
-  // Handbook note (MAM2040F): "This course can be taken in conjunction with
-  // MAM2041F as lectures are arranged so that this is possible."
-  const MAM_COSCHEDULABLE = new Set([
+  // Co-schedulable exemptions: courses the UCT handbook explicitly states can
+  // be taken concurrently because lectures are arranged so they do not clash.
+  // Any pair where BOTH codes are in this set is exempt from clash reporting.
+  //
+  // MAM Year 2 — handbook note (MAM2040F): "This course can be taken in
+  // conjunction with MAM2041F as lectures are arranged so that this is possible."
+  //
+  // CSC Year 3 — all period-3 CS electives (CSC3041F, CSC3042F, CSC3043S,
+  // CSC3044S, CSC3024S) share the same period slot by design; students in
+  // the AI and CS majors routinely take two or more of these concurrently.
+  const HANDBOOK_COSCHEDULABLE = new Set([
+    // MAM Year 2
     "MAM2000W",
     "MAM2004F",
     "MAM2005S",
@@ -578,6 +583,12 @@ export function validateAcademicPlan({
     "MAM2041F",
     "MAM2046F",
     "MAM2047S",
+    // CSC Year 3 (period-3 electives)
+    "CSC3024S",
+    "CSC3041F",
+    "CSC3042F",
+    "CSC3043S",
+    "CSC3044S",
   ]);
   {
     type CourseEntry = { code: string; slots: ReturnType<typeof parseLectureTimes> };
@@ -633,7 +644,7 @@ export function validateAcademicPlan({
         // Check if any non-exempt pair exists before marking as confirmed clash.
         const hasNonExemptPair = codes.some((a, i) =>
           codes.slice(i + 1).some(
-            (b) => !(MAM_COSCHEDULABLE.has(a) && MAM_COSCHEDULABLE.has(b)),
+            (b) => !(HANDBOOK_COSCHEDULABLE.has(a) && HANDBOOK_COSCHEDULABLE.has(b)),
           ),
         );
         if (hasNonExemptPair) hasConfirmedClash = true;
@@ -649,7 +660,7 @@ export function validateAcademicPlan({
 
             // Exempt pairs where both courses are in the MAM Year 2 co-schedulable
             // set — the handbook explicitly arranges their lectures to avoid clashes.
-            if (MAM_COSCHEDULABLE.has(codes[i]) && MAM_COSCHEDULABLE.has(codes[j])) {
+            if (HANDBOOK_COSCHEDULABLE.has(codes[i]) && HANDBOOK_COSCHEDULABLE.has(codes[j])) {
               continue;
             }
 
