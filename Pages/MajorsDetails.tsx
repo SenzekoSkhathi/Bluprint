@@ -37,9 +37,24 @@ function renderCourseList(title: string, courses: ScienceMajorCourse[]) {
     <View style={styles.detailBlock}>
       <Text style={styles.blockTitle}>{title}</Text>
       {courses.map((course) => (
-        <Text key={`${title}-${course.code}`} style={styles.courseLine}>
-          {course.code}: {course.title}
-        </Text>
+        <View key={`${title}-${course.code}`} style={styles.courseRow}>
+          <View style={styles.courseInfo}>
+            <Text style={styles.courseCode}>{course.code}</Text>
+            <Text style={styles.courseTitle}>{course.title}</Text>
+          </View>
+          <View style={styles.courseBadges}>
+            {course.credits > 0 ? (
+              <View style={styles.creditBadge}>
+                <Text style={styles.badgeText}>{course.credits} cr</Text>
+              </View>
+            ) : null}
+            {course.nqf_level > 0 ? (
+              <View style={styles.nqfBadge}>
+                <Text style={styles.badgeText}>NQF {course.nqf_level}</Text>
+              </View>
+            ) : null}
+          </View>
+        </View>
       ))}
     </View>
   );
@@ -251,10 +266,48 @@ const styles = StyleSheet.create({
     color: theme.colors.textLight,
     lineHeight: 20,
   },
-  courseLine: {
+  courseRow: {
+    flexDirection: "row",
+    alignItems: "flex-start",
+    justifyContent: "space-between",
+    marginBottom: 6,
+    gap: 8,
+  },
+  courseInfo: {
+    flex: 1,
+  },
+  courseCode: {
     fontSize: theme.fontSize.sm,
+    fontWeight: "700",
     color: theme.colors.textPrimary,
-    marginBottom: 4,
+  },
+  courseTitle: {
+    fontSize: theme.fontSize.sm,
+    color: theme.colors.textSecondary,
+    lineHeight: 18,
+  },
+  courseBadges: {
+    flexDirection: "row",
+    gap: 4,
+    alignItems: "center",
+    flexShrink: 0,
+  },
+  creditBadge: {
+    backgroundColor: theme.colors.blue,
+    borderRadius: 4,
+    paddingHorizontal: 6,
+    paddingVertical: 2,
+  },
+  nqfBadge: {
+    backgroundColor: theme.colors.darkBlue,
+    borderRadius: 4,
+    paddingHorizontal: 6,
+    paddingVertical: 2,
+  },
+  badgeText: {
+    fontSize: 11,
+    fontWeight: "700",
+    color: "#fff",
   },
   combinationCard: {
     backgroundColor: theme.colors.white,
