@@ -56,6 +56,48 @@ function parseCourseCodes(text: string): string[] {
   return matches ? Array.from(new Set(matches)) : [];
 }
 
+/**
+ * For each required course, counts how many OTHER required courses list it
+ * as a prerequisite. A higher score means the course is more foundational
+ * and should be scheduled earlier to unlock the most future progress.
+ */
+function computeUnlockScores(
+  requiredCodes: string[],
+  catalogByCode: Map<string, CourseCatalogEntry>,
+): Map<string, number> {
+  const scores = new Map<string, number>(requiredCodes.map((c) => [c, 0]));
+  requiredCodes.forEach((code) => {
+    const entry = catalogByCode.get(code);
+    if (!entry) return;
+    parseCourseCodes(entry.prerequisites).forEach((prereq) => {
+      if (scores.has(prereq)) scores.set(prereq, (scores.get(prereq) ?? 0) + 1);
+    });
+  });
+  return scores;
+}
+
+/**
+ * Collects all suggested elective codes from the student's registered
+ * major combinations, excluding any already satisfied codes.
+ */
+function collectSuggestedElectives(
+  input: AutoPlannerInput,
+  satisfiedCodes: Set<string>,
+): Set<string> {
+  const result = new Set<string>();
+  if (!input.majorCombinations || !input.studentCombinationIds) return result;
+  const registeredNames = new Set(
+    input.studentCombinationIds.map((n) => n.trim().toLowerCase()),
+  );
+  input.majorCombinations.forEach((combo) => {
+    if (!registeredNames.has(combo.major.trim().toLowerCase())) return;
+    combo.suggestedElectiveCodes.forEach((code) => {
+      if (!satisfiedCodes.has(code)) result.add(code);
+    });
+  });
+  return result;
+}
+
 function parseYearNumber(value: string): number {
   const match = value.match(/\d+/);
   return match ? Number(match[0]) : 1;
@@ -196,6 +238,9 @@ export function generateAutoGraduationPlans(
 
   const startTermIndex = getNextStartingTermIndex(input);
 
+  // Pre-compute unlock scores once (shared across all profiles)
+  const unlockScores = computeUnlockScores(unresolvedCoreCodes, catalogByCode);
+
   const plans = OBJECTIVE_PROFILES.map((profile) => {
     const termPlans: AutoPlannedTerm[] = [];
     const satisfiedCodes = new Set(existingCompletedCodes);
@@ -215,12 +260,19 @@ export function generateAutoGraduationPlans(
           return prereqs.every((prereq) => satisfiedCodes.has(prereq));
         })
         .sort((a, b) => {
+          // 1. Higher unlock score first — prioritise foundational courses
+          //    that unblock the most future required courses.
+          const unlockDiff =
+            (unlockScores.get(b.code) ?? 0) -
+            (unlockScores.get(a.code) ?? 0);
+          if (unlockDiff !== 0) return unlockDiff;
+          // 2. Fewer existing prerequisites first — simpler/earlier courses
+          //    should be taken before more advanced ones.
           const prereqDiff =
-            parseCourseCodes(b.prerequisites).length -
-            parseCourseCodes(a.prerequisites).length;
-          if (prereqDiff !== 0) {
-            return prereqDiff;
-          }
+            parseCourseCodes(a.prerequisites).length -
+            parseCourseCodes(b.prerequisites).length;
+          if (prereqDiff !== 0) return prereqDiff;
+          // 3. Higher credits first — maximise progress per term.
           return b.credits - a.credits;
         });
 
@@ -285,29 +337,102 @@ export function generateAutoGraduationPlans(
       input.requirements.targetCredits - projectedTotalCredits,
     );
 
-    while (electiveShortfall > 0 && termPlans.length < 12) {
-      const termIndex = startTermIndex + termPlans.length;
-      const creditsToAllocate = Math.min(
-        profile.termCreditTarget,
-        electiveShortfall,
-      );
-      const electiveCourse: AutoPlannedCourse = {
-        code: "ELECTIVE-BLOCK",
-        title: "Elective / General Requirement Credits",
-        credits: creditsToAllocate,
-        reason: "Fills remaining credits toward graduation target.",
-      };
+    // Collect suggested electives from the student's combinations for
+    // real course filling (avoids generic ELECTIVE-BLOCK placeholders).
+    const availableElectiveCodes = collectSuggestedElectives(
+      input,
+      satisfiedCodes,
+    );
+
+    let electiveLoopTermIndex = startTermIndex + termPlans.length;
+    while (electiveShortfall > 0 && termPlans.length < 12 && electiveLoopTermIndex <= 24) {
+      const termIndex = electiveLoopTermIndex;
+      const semesterName = semesterNameFromTermIndex(termIndex);
+      const termLabel = toTermLabel(termIndex);
+
+      // Find real electives available this semester with prerequisites met
+      const electiveCandidates = Array.from(availableElectiveCodes)
+        .map((code) => catalogByCode.get(code))
+        .filter((course): course is CourseCatalogEntry => Boolean(course))
+        .filter((c) => c.semester === semesterName)
+        .filter((c) => {
+          const prereqs = parseCourseCodes(c.prerequisites);
+          return prereqs.every((p) => satisfiedCodes.has(p));
+        })
+        .sort((a, b) => b.credits - a.credits);
+
+      if (electiveCandidates.length === 0) {
+        // No real electives available this term — use a placeholder
+        const creditsToAllocate = Math.min(
+          profile.termCreditTarget,
+          electiveShortfall,
+        );
+        termPlans.push({
+          termIndex,
+          termLabel,
+          semester: semesterName,
+          totalCredits: creditsToAllocate,
+          courses: [{
+            code: "ELECTIVE-BLOCK",
+            title: "Elective / General Requirement Credits",
+            credits: creditsToAllocate,
+            reason: "No suggested electives available this semester — choose with your advisor.",
+          }],
+        });
+        projectedTotalCredits += creditsToAllocate;
+        electiveShortfall -= creditsToAllocate;
+        electiveLoopTermIndex += 1;
+        continue;
+      }
+
+      const selected: AutoPlannedCourse[] = [];
+      let selectedCredits = 0;
+
+      electiveCandidates.forEach((course) => {
+        const wouldBe = selectedCredits + course.credits;
+        if (
+          selectedCredits < profile.preferredMinTermCredits ||
+          wouldBe <= Math.min(profile.termCreditTarget, electiveShortfall)
+        ) {
+          selected.push(
+            toAutoCourse(
+              course,
+              `Suggested elective — available ${semesterName} with prerequisites satisfied.`,
+            ),
+          );
+          selectedCredits += course.credits;
+          satisfiedCodes.add(course.code);
+          availableElectiveCodes.delete(course.code);
+        }
+      });
+
+      if (selected.length === 0) {
+        // All candidates exceed target credit budget — take the smallest
+        const smallest = [...electiveCandidates].sort(
+          (a, b) => a.credits - b.credits,
+        )[0];
+        selected.push(
+          toAutoCourse(
+            smallest,
+            `Suggested elective — fits ${semesterName}.`,
+          ),
+        );
+        selectedCredits = smallest.credits;
+        satisfiedCodes.add(smallest.code);
+        availableElectiveCodes.delete(smallest.code);
+      }
 
       termPlans.push({
         termIndex,
-        termLabel: toTermLabel(termIndex),
-        semester: semesterNameFromTermIndex(termIndex),
-        totalCredits: creditsToAllocate,
-        courses: [electiveCourse],
+        termLabel,
+        semester: semesterName,
+        totalCredits: selectedCredits,
+        courses: selected,
       });
 
-      projectedTotalCredits += creditsToAllocate;
-      electiveShortfall -= creditsToAllocate;
+      projectedTotalCredits += selectedCredits;
+      electiveShortfall -= selectedCredits;
+      electiveLoopTermIndex += 1;
     }
 
     // ── Year-by-year breakdown with elective suggestions ──────────────────

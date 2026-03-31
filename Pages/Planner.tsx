@@ -61,6 +61,11 @@ import {
   type PdfSemester,
   downloadPlanPdf,
 } from "@/services/plan-pdf";
+import {
+  computeCourseRisks,
+  computeDpRequirements,
+  type RiskLevel,
+} from "@/services/risk-engine";
 
 const TARGET_DEPARTMENTS = [
   "Archaeology",
@@ -1356,6 +1361,31 @@ export default function Planner({
   const fixedCourseCodes = useMemo(
     () => new Set(fixedCourses.map((c) => c.code)),
     [fixedCourses],
+  );
+
+  // ── Risk engine ───────────────────────────────────────────────────────────
+  // Computes grade-aware risk annotations for every planned course.
+  const riskMap = useMemo(
+    () =>
+      computeCourseRisks({
+        plannedCourses: courses.filter((c) => c.status === "Planned"),
+        completedCourses: completedCoursesProp.map((c) => ({
+          code: c.code,
+          grade: c.grade,
+        })),
+        catalog,
+      }),
+    [courses, completedCoursesProp, catalog],
+  );
+
+  // DP requirement annotations for planned courses.
+  const dpMap = useMemo(
+    () =>
+      computeDpRequirements(
+        courses.filter((c) => c.status === "Planned"),
+        catalog,
+      ),
+    [courses, catalog],
   );
 
   // Issues are only shown for courses the student is actively planning.
@@ -2700,6 +2730,9 @@ export default function Planner({
               ) : (
                 semCourses.map((course) => {
                   const variant = getCourseChipVariant(course);
+                  const risk = riskMap.get(course.code);
+                  const dp = dpMap.get(course.code);
+                  const riskLevel: RiskLevel = risk?.level ?? "none";
                   return (
                     <View
                       key={course.id}
@@ -2724,6 +2757,31 @@ export default function Planner({
                         <Text style={styles.chipName} numberOfLines={2}>
                           {course.name}
                         </Text>
+                        {/* Risk badge — only shown on planned courses with risk */}
+                        {riskLevel !== "none" && course.status === "Planned" && (
+                          <View
+                            style={[
+                              styles.riskBadge,
+                              riskLevel === "high" && styles.riskBadgeHigh,
+                              riskLevel === "medium" && styles.riskBadgeMedium,
+                              riskLevel === "low" && styles.riskBadgeLow,
+                            ]}
+                          >
+                            <Text style={styles.riskBadgeText}>
+                              {riskLevel === "high"
+                                ? "⚠ High risk"
+                                : riskLevel === "medium"
+                                  ? "⚠ At risk"
+                                  : "· Review prereqs"}
+                            </Text>
+                          </View>
+                        )}
+                        {/* DP requirement badge */}
+                        {dp && course.status === "Planned" && (
+                          <View style={styles.dpBadge}>
+                            <Text style={styles.dpBadgeText}>DP req</Text>
+                          </View>
+                        )}
                       </View>
                       <View style={styles.chipRight}>
                         <Text style={styles.chipCredits}>
@@ -3136,6 +3194,74 @@ export default function Planner({
           ) : null}
         </View>
       ) : null}
+
+      {/* ── Risk & DP summary panel ── */}
+      {(() => {
+        const riskEntries = Array.from(riskMap.entries()).filter(
+          ([, ann]) => ann.level !== "none",
+        );
+        const dpEntries = Array.from(dpMap.entries());
+        if (riskEntries.length === 0 && dpEntries.length === 0) return null;
+        return (
+          <View style={styles.riskPanel}>
+            <Text style={styles.riskPanelTitle}>Academic Risk Summary</Text>
+            <Text style={styles.riskPanelSub}>
+              Based on your grades in prerequisite courses
+            </Text>
+
+            {riskEntries.map(([code, ann]) => (
+              <View
+                key={code}
+                style={[
+                  styles.riskRow,
+                  ann.level === "high" && styles.riskRowHigh,
+                  ann.level === "medium" && styles.riskRowMedium,
+                  ann.level === "low" && styles.riskRowLow,
+                ]}
+              >
+                <View style={styles.riskRowHeader}>
+                  <Text style={styles.riskRowCode}>{code}</Text>
+                  <View
+                    style={[
+                      styles.riskLevelPill,
+                      ann.level === "high" && styles.riskLevelPillHigh,
+                      ann.level === "medium" && styles.riskLevelPillMedium,
+                      ann.level === "low" && styles.riskLevelPillLow,
+                    ]}
+                  >
+                    <Text style={styles.riskLevelText}>
+                      {ann.level === "high"
+                        ? "High Risk"
+                        : ann.level === "medium"
+                          ? "At Risk"
+                          : "Low Risk"}
+                    </Text>
+                  </View>
+                </View>
+                {ann.reasons.map((reason, i) => (
+                  <Text key={i} style={styles.riskReason}>
+                    • {reason}
+                  </Text>
+                ))}
+              </View>
+            ))}
+
+            {dpEntries.length > 0 && (
+              <>
+                <Text style={styles.riskPanelDpHeading}>
+                  DP Requirements (Duly Performed)
+                </Text>
+                {dpEntries.map(([code, dp]) => (
+                  <View key={code} style={styles.dpRow}>
+                    <Text style={styles.dpRowCode}>{code}</Text>
+                    <Text style={styles.dpRowText}>{dp.text}</Text>
+                  </View>
+                ))}
+              </>
+            )}
+          </View>
+        );
+      })()}
     </MainLayout>
   );
 }
@@ -4150,5 +4276,131 @@ const styles = StyleSheet.create({
     color: theme.colors.textSecondary,
     marginTop: 4,
     lineHeight: 18,
+  },
+
+  // ── Risk badges (on course chips) ─────────────────────────────────────────
+  riskBadge: {
+    borderRadius: 3,
+    paddingHorizontal: 4,
+    paddingVertical: 1,
+    marginTop: 3,
+    alignSelf: "flex-start",
+  },
+  riskBadgeHigh: { backgroundColor: "#FEE2E2" },
+  riskBadgeMedium: { backgroundColor: "#FFEDD5" },
+  riskBadgeLow: { backgroundColor: "#FEF9C3" },
+  riskBadgeText: {
+    fontSize: 9,
+    fontWeight: "700",
+    color: "#78350F",
+  },
+  dpBadge: {
+    borderRadius: 3,
+    paddingHorizontal: 4,
+    paddingVertical: 1,
+    marginTop: 2,
+    alignSelf: "flex-start",
+    backgroundColor: "#EDE9FE",
+  },
+  dpBadgeText: {
+    fontSize: 9,
+    fontWeight: "600",
+    color: "#5B21B6",
+  },
+
+  // ── Risk & DP summary panel ────────────────────────────────────────────────
+  riskPanel: {
+    margin: theme.spacing.md,
+    marginTop: 0,
+    backgroundColor: "#FFFBEB",
+    borderRadius: 12,
+    padding: 16,
+    borderWidth: 1,
+    borderColor: "#FDE68A",
+  },
+  riskPanelTitle: {
+    fontSize: 15,
+    fontWeight: "800",
+    color: "#78350F",
+    marginBottom: 2,
+  },
+  riskPanelSub: {
+    fontSize: 12,
+    color: "#92400E",
+    marginBottom: 12,
+  },
+  riskRow: {
+    borderRadius: 8,
+    padding: 10,
+    marginBottom: 8,
+    borderLeftWidth: 3,
+  },
+  riskRowHigh: {
+    backgroundColor: "#FEF2F2",
+    borderLeftColor: "#DC2626",
+  },
+  riskRowMedium: {
+    backgroundColor: "#FFF7ED",
+    borderLeftColor: "#EA580C",
+  },
+  riskRowLow: {
+    backgroundColor: "#FEFCE8",
+    borderLeftColor: "#CA8A04",
+  },
+  riskRowHeader: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 8,
+    marginBottom: 4,
+  },
+  riskRowCode: {
+    fontSize: 13,
+    fontWeight: "800",
+    color: "#1E3A5F",
+  },
+  riskLevelPill: {
+    borderRadius: 10,
+    paddingHorizontal: 8,
+    paddingVertical: 2,
+  },
+  riskLevelPillHigh: { backgroundColor: "#FEE2E2" },
+  riskLevelPillMedium: { backgroundColor: "#FFEDD5" },
+  riskLevelPillLow: { backgroundColor: "#FEF9C3" },
+  riskLevelText: {
+    fontSize: 11,
+    fontWeight: "700",
+    color: "#78350F",
+  },
+  riskReason: {
+    fontSize: 12,
+    color: "#44403C",
+    lineHeight: 17,
+    marginTop: 2,
+  },
+  riskPanelDpHeading: {
+    fontSize: 13,
+    fontWeight: "700",
+    color: "#5B21B6",
+    marginTop: 12,
+    marginBottom: 6,
+  },
+  dpRow: {
+    backgroundColor: "#F5F3FF",
+    borderRadius: 8,
+    padding: 10,
+    marginBottom: 6,
+    borderLeftWidth: 3,
+    borderLeftColor: "#7C3AED",
+  },
+  dpRowCode: {
+    fontSize: 12,
+    fontWeight: "800",
+    color: "#4C1D95",
+    marginBottom: 2,
+  },
+  dpRowText: {
+    fontSize: 12,
+    color: "#374151",
+    lineHeight: 17,
   },
 });

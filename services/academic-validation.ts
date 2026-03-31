@@ -25,6 +25,43 @@ const MIN_TERM_CREDITS = 30;
 const MAX_TERM_CREDITS = 72;
 const MAX_DAILY_SCHEDULE_HOURS = 6;
 
+// NQF difficulty multipliers: a Year-3 (NQF 7) course is significantly
+// harder than a Year-1 (NQF 5) course for the same credit count.
+const NQF_WEIGHT: Record<number, number> = {
+  5: 1.0,
+  6: 1.3,
+  7: 1.6,
+  8: 2.0,
+};
+function nqfWeight(level: number | undefined): number {
+  return NQF_WEIGHT[level ?? 6] ?? 1.0;
+}
+// Weighted load threshold: warn if a term's NQF-weighted credits significantly
+// exceed a balanced semester of mid-level courses.
+const MAX_WEIGHTED_TERM_LOAD = MAX_TERM_CREDITS * 1.15; // ≈ 83
+
+// Co-requisite patterns: language in prerequisite text that indicates a
+// course must be taken concurrently (same semester).
+const COREQ_PATTERNS = [
+  /concurrently\s+with\s+([A-Z]{3,4}\d{4}[A-Z]?)/gi,
+  /co-?requisite[:\s]+([A-Z]{3,4}\d{4}[A-Z]?)/gi,
+  /simultaneously\s+with\s+([A-Z]{3,4}\d{4}[A-Z]?)/gi,
+  /at\s+the\s+same\s+time\s+as\s+([A-Z]{3,4}\d{4}[A-Z]?)/gi,
+];
+
+function parseCorequisiteCodes(text: string): string[] {
+  if (!text) return [];
+  const codes: string[] = [];
+  COREQ_PATTERNS.forEach((pattern) => {
+    pattern.lastIndex = 0;
+    let match: RegExpExecArray | null;
+    while ((match = pattern.exec(text)) !== null) {
+      codes.push(match[1]);
+    }
+  });
+  return Array.from(new Set(codes));
+}
+
 /**
  * Parse prerequisite text into OR-groups that are AND-connected.
  * Returns string[][] where each inner array is an OR group:
@@ -367,6 +404,18 @@ export function validateAcademicPlan({
     addTermCredits(termFromRecordSemester(course.semester), course.credits);
   });
 
+  // ── NQF-weighted load per term (planned courses only) ───────────────────
+  const termWeightedLoadMap = new Map<string, number>();
+  plannedCourses.forEach((course) => {
+    const entry = catalogByCode.get(course.code);
+    const w = nqfWeight(entry?.nqf_level);
+    const term = termFromPlannedCourse(course);
+    termWeightedLoadMap.set(
+      term,
+      (termWeightedLoadMap.get(term) ?? 0) + course.credits * w,
+    );
+  });
+
   termCreditMap.forEach((credits, term) => {
     if (credits < MIN_TERM_CREDITS) {
       issues.push(
@@ -391,6 +440,85 @@ export function validateAcademicPlan({
         }),
       );
     }
+
+    // NQF-weighted difficulty warning (planned terms only)
+    const weightedLoad = termWeightedLoadMap.get(term);
+    if (
+      weightedLoad !== undefined &&
+      weightedLoad > MAX_WEIGHTED_TERM_LOAD &&
+      credits <= MAX_TERM_CREDITS // raw load is fine — this is a difficulty flag
+    ) {
+      issues.push(
+        buildIssue(nextId(), {
+          severity: "warning",
+          category: "load",
+          title: `High difficulty load in ${term}`,
+          message: `${term} has a weighted difficulty score of ${Math.round(weightedLoad)} (raw credits: ${credits}). Several advanced-level (NQF 7) courses in the same term significantly increases difficulty — consider spreading them across semesters.`,
+          relatedTerm: term,
+        }),
+      );
+    }
+  });
+
+  // ── Co-requisite validation ───────────────────────────────────────────────
+  // Checks for language like "concurrently with X" in prerequisites and
+  // verifies that X is in the same semester as the planned course.
+  plannedCourses.forEach((plannedCourse) => {
+    const catalogEntry = catalogByCode.get(plannedCourse.code);
+    if (!catalogEntry) return;
+
+    const coreqCodes = parseCorequisiteCodes(catalogEntry.prerequisites);
+    if (coreqCodes.length === 0) return;
+
+    const targetTerm = getPlannedTermIndex(plannedCourse);
+
+    coreqCodes.forEach((coreqCode) => {
+      // Check if the co-req is in the same term
+      const plannedTerm = plannedTermByCode.get(coreqCode);
+      const inProgressTerm = inProgressTermByCode.get(coreqCode);
+      const completedTerm = completedTermByCode.get(coreqCode);
+
+      const isSameTerm =
+        (plannedTerm !== undefined && plannedTerm === targetTerm) ||
+        (inProgressTerm !== undefined && inProgressTerm === targetTerm);
+      const isAlreadyDone = completedTerm !== undefined;
+
+      if (!isSameTerm && !isAlreadyDone) {
+        const isInPlan =
+          plannedTerm !== undefined || inProgressTerm !== undefined;
+        issues.push(
+          buildIssue(nextId(), {
+            severity: isInPlan ? "warning" : "blocker",
+            category: "prerequisite",
+            title: `Co-requisite not in same semester: ${plannedCourse.code}`,
+            message: isInPlan
+              ? `${plannedCourse.code} requires ${coreqCode} to be taken in the same semester, but ${coreqCode} is scheduled in a different term.`
+              : `${plannedCourse.code} requires ${coreqCode} to be taken concurrently, but ${coreqCode} is not in your plan.`,
+            relatedCourseCode: plannedCourse.code,
+            relatedTerm: termFromPlannedCourse(plannedCourse),
+          }),
+        );
+      }
+    });
+  });
+
+  // ── DP requirement surfacing ──────────────────────────────────────────────
+  // For each planned course that has a DP (duly performed) requirement,
+  // surface it as an info issue so the student is aware before enrolling.
+  plannedCourses.forEach((plannedCourse) => {
+    const catalogEntry = catalogByCode.get(plannedCourse.code);
+    if (!catalogEntry?.dp_requirements) return;
+
+    issues.push(
+      buildIssue(nextId(), {
+        severity: "info",
+        category: "prerequisite",
+        title: `DP requirement — ${plannedCourse.code}`,
+        message: `${plannedCourse.code}: ${catalogEntry.dp_requirements}`,
+        relatedCourseCode: plannedCourse.code,
+        relatedTerm: termFromPlannedCourse(plannedCourse),
+      }),
+    );
   });
 
   const scheduleByDay = new Map<string, ScheduleItem[]>();
