@@ -1403,7 +1403,7 @@ const thaboPassed: Course[] = [
     title: "General Physics B",
     credits: 18,
     nqfLevel: 5,
-    semester: "FY 2025",
+    semester: "S2 2025",
     grade: 54,
     passed: true,
   },
