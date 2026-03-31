@@ -555,6 +555,30 @@ export function validateAcademicPlan({
   // the catalog, and flags any period×day slot occupied by two or more courses.
   // Courses without parseable times generate an "unconfirmed" info notice only
   // when there IS at least one real clash in the same term (to avoid noise).
+  //
+  // Co-schedulable exemptions: pairs of Year 2 Mathematics courses that the
+  // UCT handbook explicitly states can be taken concurrently because lectures
+  // are arranged so they do not clash. Any pair where BOTH codes are in this
+  // set is exempt from clash reporting.
+  // Handbook note (MAM2040F): "This course can be taken in conjunction with
+  // MAM2041F as lectures are arranged so that this is possible."
+  const MAM_COSCHEDULABLE = new Set([
+    "MAM2000W",
+    "MAM2004F",
+    "MAM2005S",
+    "MAM2010F",
+    "MAM2011F",
+    "MAM2012F",
+    "MAM2013S",
+    "MAM2014S",
+    "MAM2015F",
+    "MAM2020F",
+    "MAM2021S",
+    "MAM2040F",
+    "MAM2041F",
+    "MAM2046F",
+    "MAM2047S",
+  ]);
   {
     type CourseEntry = { code: string; slots: ReturnType<typeof parseLectureTimes> };
     const termCourseEntries = new Map<string, CourseEntry[]>();
@@ -606,7 +630,13 @@ export function validateAcademicPlan({
 
       slotMap.forEach((codes, slotKey) => {
         if (codes.length < 2) return;
-        hasConfirmedClash = true;
+        // Check if any non-exempt pair exists before marking as confirmed clash.
+        const hasNonExemptPair = codes.some((a, i) =>
+          codes.slice(i + 1).some(
+            (b) => !(MAM_COSCHEDULABLE.has(a) && MAM_COSCHEDULABLE.has(b)),
+          ),
+        );
+        if (hasNonExemptPair) hasConfirmedClash = true;
         const [day, periodStr] = slotKey.split("-");
         const period = parseInt(periodStr, 10);
         const timeLabel = UCT_PERIOD_TIMES[period] ?? `Period ${period}`;
@@ -616,6 +646,12 @@ export function validateAcademicPlan({
             const pair = [codes[i], codes[j]].sort().join("|");
             if (reportedPairs.has(pair)) continue;
             reportedPairs.add(pair);
+
+            // Exempt pairs where both courses are in the MAM Year 2 co-schedulable
+            // set — the handbook explicitly arranges their lectures to avoid clashes.
+            if (MAM_COSCHEDULABLE.has(codes[i]) && MAM_COSCHEDULABLE.has(codes[j])) {
+              continue;
+            }
 
             issues.push(
               buildIssue(nextId(), {
