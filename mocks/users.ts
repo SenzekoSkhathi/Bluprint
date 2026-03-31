@@ -1327,6 +1327,1002 @@ const luyandaInProgress: Course[] = [
 // in-progress = 48 NQF7 | forecast = 258 < 360 (needs Y4) | NQF7 forecast = 48 < 120 ALERT
 
 // ─────────────────────────────────────────────────────────────
+// USER 13 — Thabo Nkosi
+// BSc Applied Mathematics | Year 2 | MAM02-Y1-A + MAM02-Y2-A
+// SCENARIO: Passing (Average) — just clearing every course 50–55%, on track
+// Y1 earned 72 ✓ (exactly) | Y2 forecast 156 > 144 ✓ | No alerts
+// ─────────────────────────────────────────────────────────────
+const thaboPassed: Course[] = [
+  // Year 1 — 2024 | S1: 36, S2: 36 — within FB3
+  {
+    code: "MAM1031F",
+    title: "Mathematics 1031F",
+    credits: 18,
+    nqfLevel: 5,
+    semester: "S1 2024",
+    grade: 55,
+    passed: true,
+  },
+  {
+    code: "STA1000F",
+    title: "Introductory Statistics 1000F",
+    credits: 18,
+    nqfLevel: 5,
+    semester: "S1 2024",
+    grade: 52,
+    passed: true,
+  },
+  {
+    code: "MAM1032S",
+    title: "Mathematics 1032S",
+    credits: 18,
+    nqfLevel: 5,
+    semester: "S2 2024",
+    grade: 53,
+    passed: true,
+  },
+  {
+    code: "MAM1008S",
+    title: "Introduction to Discrete Mathematics",
+    credits: 18,
+    nqfLevel: 5,
+    semester: "S2 2024",
+    grade: 51,
+    passed: true,
+  },
+];
+// earned = 72 ✓ (exactly meets Y1 milestone, all grades 51–55%)
+const thaboFailed: Course[] = [];
+const thaboInProgress: Course[] = [
+  // Year 2 — 2025 | S1: 48, S2: 36 — within FB3
+  {
+    code: "MAM2010F",
+    title: "Real Analysis 2010F",
+    credits: 12,
+    nqfLevel: 6,
+    semester: "S1 2025",
+  },
+  {
+    code: "MAM2011F",
+    title: "Linear Algebra 2011F",
+    credits: 12,
+    nqfLevel: 6,
+    semester: "S1 2025",
+  },
+  {
+    code: "STA2004F",
+    title: "Statistical Theory and Inference",
+    credits: 24,
+    nqfLevel: 6,
+    semester: "S1 2025",
+  },
+  {
+    code: "MAM2040F",
+    title: "Ordinary Differential Equations 2040F",
+    credits: 12,
+    nqfLevel: 6,
+    semester: "S2 2025",
+  },
+  {
+    code: "STA2005S",
+    title: "Linear Models 2005S",
+    credits: 24,
+    nqfLevel: 6,
+    semester: "S2 2025",
+  },
+];
+// in-progress = 84 | forecast = 156 > 144 ✓
+
+// ─────────────────────────────────────────────────────────────
+// USER 14 — Aisha Osman
+// BSc Computer Science and Artificial Intelligence | Year 3
+// SCENARIO: Passing (Extreme distinctions) — 80–88% across the board
+// Y1 earned 72 ✓ | Y2 earned 120 → total 192 > 144 ✓
+// Y3 forecast 318 > 228 ✓ | NQF7 forecast 126 ≥ 120 ✓
+// ─────────────────────────────────────────────────────────────
+const aishaPassed: Course[] = [
+  // Year 1 — 2023 | S1: 36, S2: 36 — within FB3
+  {
+    code: "CSC1015F",
+    title: "Computer Science 1015F",
+    credits: 18,
+    nqfLevel: 5,
+    semester: "S1 2023",
+    grade: 88,
+    passed: true,
+  },
+  {
+    code: "MAM1031F",
+    title: "Mathematics 1031F",
+    credits: 18,
+    nqfLevel: 5,
+    semester: "S1 2023",
+    grade: 85,
+    passed: true,
+  },
+  {
+    code: "CSC1016S",
+    title: "Computer Science 1016S",
+    credits: 18,
+    nqfLevel: 5,
+    semester: "S2 2023",
+    grade: 82,
+    passed: true,
+  },
+  {
+    code: "MAM1032S",
+    title: "Mathematics 1032S",
+    credits: 18,
+    nqfLevel: 5,
+    semester: "S2 2023",
+    grade: 80,
+    passed: true,
+  },
+  // Year 2 — 2024 | S1: 72 (exactly), S2: 48 — within FB3
+  {
+    code: "CSC2001F",
+    title: "Computer Science 2001F",
+    credits: 24,
+    nqfLevel: 6,
+    semester: "S1 2024",
+    grade: 86,
+    passed: true,
+  },
+  {
+    code: "CSC2041F",
+    title: "AI 1: Knowledge Representation",
+    credits: 24,
+    nqfLevel: 6,
+    semester: "S1 2024",
+    grade: 84,
+    passed: true,
+  },
+  {
+    code: "MAM2010F",
+    title: "Real Analysis 2010F",
+    credits: 12,
+    nqfLevel: 6,
+    semester: "S1 2024",
+    grade: 79,
+    passed: true,
+  },
+  {
+    code: "MAM2011F",
+    title: "Linear Algebra 2011F",
+    credits: 12,
+    nqfLevel: 6,
+    semester: "S1 2024",
+    grade: 81,
+    passed: true,
+  },
+  {
+    code: "CSC2042S",
+    title: "AI 2: Machine Learning",
+    credits: 24,
+    nqfLevel: 6,
+    semester: "S2 2024",
+    grade: 88,
+    passed: true,
+  },
+  {
+    code: "CSC2002S",
+    title: "Computer Science 2002S",
+    credits: 24,
+    nqfLevel: 6,
+    semester: "S2 2024",
+    grade: 85,
+    passed: true,
+  },
+];
+// earned = 192 (Y1:72 + Y2:120) > 144 ✓ | NQF7 earned = 0
+const aishaFailed: Course[] = [];
+const aishaInProgress: Course[] = [
+  // Year 3 — 2025 | S1: 54, S2: 72 (exactly) — within FB3
+  {
+    code: "CSC3002F",
+    title: "Networks and Operating Systems",
+    credits: 36,
+    nqfLevel: 7,
+    semester: "S1 2025",
+  },
+  {
+    code: "CSC3041F",
+    title: "Automated Planning and Control",
+    credits: 18,
+    nqfLevel: 7,
+    semester: "S1 2025",
+  },
+  {
+    code: "CSC3003S",
+    title: "Advanced Programming and Algorithms",
+    credits: 36,
+    nqfLevel: 7,
+    semester: "S2 2025",
+  },
+  {
+    code: "CSC3043S",
+    title: "Reasoning in AI",
+    credits: 18,
+    nqfLevel: 7,
+    semester: "S2 2025",
+  },
+  {
+    code: "MAM3010F",
+    title: "Metric Spaces 3010F",
+    credits: 18,
+    nqfLevel: 7,
+    semester: "S2 2025",
+  },
+];
+// in-progress = 126 NQF7 | forecast = 318 > 228 ✓ | NQF7 forecast = 126 ✓
+
+// ─────────────────────────────────────────────────────────────
+// USER 15 — Musa Shabalala
+// BSc Biology and Chemistry | Year 2 | BIO12-Y1-A + CEM01-Y1-A + BIO12-Y2-A
+// SCENARIO: Failing (Average) — passes a few, fails a few, no clear pattern
+// Y1 earned 54 < 72 (FB5.1 ALERT!) | Prereq violation: MCB2020F needs CEM1000W
+// forecast 126 < 144 (Y2 ALERT!)
+// ─────────────────────────────────────────────────────────────
+const musaPassed: Course[] = [
+  // Year 1 — 2024 | S1: 36, S2: 18 — within FB3
+  {
+    code: "BIO1000F",
+    title: "Cell Biology 1000F",
+    credits: 18,
+    nqfLevel: 5,
+    semester: "S1 2024",
+    grade: 63,
+    passed: true,
+  },
+  {
+    code: "MAM1031F",
+    title: "Mathematics 1031F",
+    credits: 18,
+    nqfLevel: 5,
+    semester: "S1 2024",
+    grade: 58,
+    passed: true,
+  },
+  {
+    code: "STA1007S",
+    title: "Introductory Statistics for Scientists",
+    credits: 18,
+    nqfLevel: 5,
+    semester: "S2 2024",
+    grade: 55,
+    passed: true,
+  },
+];
+// earned = 54 < 72 (below Y1 milestone — FB5.1 alert)
+const musaFailed: Course[] = [
+  {
+    code: "CEM1000W",
+    title: "Chemistry 1000W",
+    credits: 36,
+    nqfLevel: 5,
+    semester: "FY 2024",
+    grade: 47,
+    passed: false,
+  },
+  {
+    code: "BIO1004S",
+    title: "Biological Diversity 1004S",
+    credits: 18,
+    nqfLevel: 5,
+    semester: "S2 2024",
+    grade: 42,
+    passed: false,
+  },
+];
+const musaInProgress: Course[] = [
+  // Year 2 — 2025 | S1: 48, S2: 24 — within FB3
+  // MCB2020F requires CEM1000W (failed) → PREREQ VIOLATION
+  {
+    code: "BIO2014F",
+    title: "Principles of Ecology and Evolution",
+    credits: 24,
+    nqfLevel: 6,
+    semester: "S1 2025",
+  },
+  {
+    code: "MCB2020F",
+    title: "Biological Information Transfer",
+    credits: 24,
+    nqfLevel: 6,
+    semester: "S1 2025",
+  },
+  {
+    code: "BIO2016S",
+    title: "Vertebrate Physiology and Anatomy",
+    credits: 24,
+    nqfLevel: 6,
+    semester: "S2 2025",
+  },
+];
+// in-progress = 72 | forecast = 126 < 144 (Y2 ALERT!) | Prereq violation on MCB2020F
+
+// ─────────────────────────────────────────────────────────────
+// USER 16 — Lungelo Sithole
+// BSc Mathematical Sciences | Year 2 | MAM02-Y1-A + STA01-Y1-A
+// SCENARIO: Failing (Extreme) — near academic exclusion
+// Y1: 54 science + 12 commerce = 66 < 72 (CREDIT SHORTFALL WARNING)
+// Failed CEM1000W (36cr, 29%) + STA1007S (18cr, 39%) in Y1
+// Y2 in-progress only 48cr (retake + 1 course) → forecast 114 << 144 (CRITICAL)
+// ─────────────────────────────────────────────────────────────
+const lungeloPassed: Course[] = [
+  // Year 1 — 2024 | Science: 54cr | Commerce elective: 12cr | Total: 66 < 72
+  {
+    code: "MAM1031F",
+    title: "Mathematics 1031F",
+    credits: 18,
+    nqfLevel: 5,
+    semester: "S1 2024",
+    grade: 51,
+    passed: true,
+  },
+  {
+    code: "STA1000F",
+    title: "Introductory Statistics 1000F",
+    credits: 18,
+    nqfLevel: 5,
+    semester: "S1 2024",
+    grade: 53,
+    passed: true,
+  },
+  {
+    code: "ECO1010F",
+    title: "Introduction to Microeconomics",
+    credits: 12,
+    nqfLevel: 5,
+    semester: "S1 2024",
+    grade: 58,
+    passed: true,
+  },
+  {
+    code: "MAM1032S",
+    title: "Mathematics 1032S",
+    credits: 18,
+    nqfLevel: 5,
+    semester: "S2 2024",
+    grade: 50,
+    passed: true,
+  },
+];
+// Science earned = 54 | Commerce earned = 12 | Total = 66 < 72 → CREDIT SHORTFALL WARNING
+const lungeloFailed: Course[] = [
+  {
+    code: "CEM1000W",
+    title: "Chemistry 1000W",
+    credits: 36,
+    nqfLevel: 5,
+    semester: "FY 2024",
+    grade: 29,
+    passed: false,
+  },
+  {
+    code: "STA1007S",
+    title: "Introductory Statistics for Scientists",
+    credits: 18,
+    nqfLevel: 5,
+    semester: "S2 2024",
+    grade: 39,
+    passed: false,
+  },
+];
+const lungeloInProgress: Course[] = [
+  // Year 2 — 2025 | FY retake + 1 course | Near-exclusion load
+  {
+    code: "CEM1000W",
+    title: "Chemistry 1000W (retake)",
+    credits: 36,
+    nqfLevel: 5,
+    semester: "FY 2025",
+  },
+  {
+    code: "MAM2010F",
+    title: "Real Analysis 2010F",
+    credits: 12,
+    nqfLevel: 6,
+    semester: "S1 2025",
+  },
+];
+// in-progress = 48 | forecast = 114 << 144 (NEAR EXCLUSION — CRITICAL ALERT!)
+
+// ─────────────────────────────────────────────────────────────
+// USER 17 — Zanele Moyo
+// BSc Physics, Mathematics, and Statistics | Year 3
+// SCENARIO: Triple Major (Passing) — mixed: some average (50–65%), some distinction (79–88%)
+// Y1 earned 108 ✓ | Y2 earned 132 → total 240 > 144 ✓
+// Y3 forecast 372 > 228 ✓ | NQF7 forecast 132 ≥ 120 ✓
+// ─────────────────────────────────────────────────────────────
+const zanelePassed: Course[] = [
+  // Year 1 — 2023 | S1: 54 (FY split ≈18 + 18 + 18), S2: 54 — within FB3
+  {
+    code: "PHY1004W",
+    title: "Physics 1004W",
+    credits: 36,
+    nqfLevel: 5,
+    semester: "FY 2023",
+    grade: 72,
+    passed: true,
+  },
+  {
+    code: "MAM1031F",
+    title: "Mathematics 1031F",
+    credits: 18,
+    nqfLevel: 5,
+    semester: "S1 2023",
+    grade: 68,
+    passed: true,
+  },
+  {
+    code: "STA1000F",
+    title: "Introductory Statistics 1000F",
+    credits: 18,
+    nqfLevel: 5,
+    semester: "S1 2023",
+    grade: 85,
+    passed: true,
+  },
+  {
+    code: "MAM1032S",
+    title: "Mathematics 1032S",
+    credits: 18,
+    nqfLevel: 5,
+    semester: "S2 2023",
+    grade: 54,
+    passed: true,
+  },
+  {
+    code: "STA1007S",
+    title: "Introductory Statistics for Scientists",
+    credits: 18,
+    nqfLevel: 5,
+    semester: "S2 2023",
+    grade: 63,
+    passed: true,
+  },
+  // Year 2 — 2024 | S1: 72 (exactly), S2: 60 — within FB3
+  {
+    code: "PHY2004W",
+    title: "Intermediate Physics 2004W",
+    credits: 48,
+    nqfLevel: 6,
+    semester: "FY 2024",
+    grade: 65,
+    passed: true,
+  },
+  {
+    code: "MAM2010F",
+    title: "Real Analysis 2010F",
+    credits: 12,
+    nqfLevel: 6,
+    semester: "S1 2024",
+    grade: 79,
+    passed: true,
+  },
+  {
+    code: "MAM2011F",
+    title: "Linear Algebra 2011F",
+    credits: 12,
+    nqfLevel: 6,
+    semester: "S1 2024",
+    grade: 58,
+    passed: true,
+  },
+  {
+    code: "STA2004F",
+    title: "Statistical Theory and Inference",
+    credits: 24,
+    nqfLevel: 6,
+    semester: "S1 2024",
+    grade: 88,
+    passed: true,
+  },
+  {
+    code: "MAM2040F",
+    title: "Ordinary Differential Equations 2040F",
+    credits: 12,
+    nqfLevel: 6,
+    semester: "S2 2024",
+    grade: 52,
+    passed: true,
+  },
+  {
+    code: "STA2005S",
+    title: "Linear Models 2005S",
+    credits: 24,
+    nqfLevel: 6,
+    semester: "S2 2024",
+    grade: 71,
+    passed: true,
+  },
+];
+// earned = 240 (Y1:108 + Y2:132) > 144 ✓ | NQF7 earned = 0
+const zaneleFailed: Course[] = [];
+const zaneleInProgress: Course[] = [
+  // Year 3 — 2025 | S1: 60, S2: 72 (exactly) — within FB3
+  {
+    code: "PHY3004W",
+    title: "Advanced Physics 3004W",
+    credits: 48,
+    nqfLevel: 7,
+    semester: "FY 2025",
+  },
+  {
+    code: "STA3041F",
+    title: "Markov Processes and Time Series",
+    credits: 36,
+    nqfLevel: 7,
+    semester: "S1 2025",
+  },
+  {
+    code: "STA3047S",
+    title: "Introduction to Machine Learning",
+    credits: 6,
+    nqfLevel: 7,
+    semester: "S2 2025",
+  },
+  {
+    code: "MAM3010F",
+    title: "Metric Spaces 3010F",
+    credits: 18,
+    nqfLevel: 7,
+    semester: "S2 2025",
+  },
+  {
+    code: "STA3022F",
+    title: "Applied Multivariate Analysis 3022F",
+    credits: 24,
+    nqfLevel: 7,
+    semester: "S2 2025",
+  },
+];
+// in-progress = 132 NQF7 | forecast = 372 > 228 ✓ | NQF7 forecast = 132 ✓
+
+// ─────────────────────────────────────────────────────────────
+// USER 18 — Ruan van der Berg
+// BSc Computer Science, Physics, and Mathematics | Year 3
+// SCENARIO: Triple Major (Failing) — passes some, fails some, no clear balance
+// Y1 earned 54 < 72 (FB5.1 ALERT!) | Y2 earned 36 → total 90 < 144 (ALERT!)
+// Y3 forecast 192 < 228 (Y3 ALERT!) | NQF7 forecast 102 < 120 (FB7.2 ALERT!)
+// Prereq violation: PHY3004W needs PHY2004W (failed Y2)
+// ─────────────────────────────────────────────────────────────
+const ruanPassed: Course[] = [
+  // Year 1 — 2023 | S1: 36, S2: 18 — partial load
+  {
+    code: "CSC1015F",
+    title: "Computer Science 1015F",
+    credits: 18,
+    nqfLevel: 5,
+    semester: "S1 2023",
+    grade: 63,
+    passed: true,
+  },
+  {
+    code: "MAM1031F",
+    title: "Mathematics 1031F",
+    credits: 18,
+    nqfLevel: 5,
+    semester: "S1 2023",
+    grade: 55,
+    passed: true,
+  },
+  {
+    code: "MAM1032S",
+    title: "Mathematics 1032S",
+    credits: 18,
+    nqfLevel: 5,
+    semester: "S2 2023",
+    grade: 51,
+    passed: true,
+  },
+  // Year 2 — 2024
+  {
+    code: "CSC2001F",
+    title: "Computer Science 2001F",
+    credits: 24,
+    nqfLevel: 6,
+    semester: "S1 2024",
+    grade: 58,
+    passed: true,
+  },
+  {
+    code: "MAM2010F",
+    title: "Real Analysis 2010F",
+    credits: 12,
+    nqfLevel: 6,
+    semester: "S1 2024",
+    grade: 52,
+    passed: true,
+  },
+];
+// earned = 90 (Y1:54 + Y2:36) | Y1 < 72 (ALERT!) | total < 144 (ALERT!)
+const ruanFailed: Course[] = [
+  // Year 1 failures
+  {
+    code: "PHY1004W",
+    title: "Physics 1004W",
+    credits: 36,
+    nqfLevel: 5,
+    semester: "FY 2023",
+    grade: 44,
+    passed: false,
+  },
+  {
+    code: "CSC1016S",
+    title: "Computer Science 1016S",
+    credits: 18,
+    nqfLevel: 5,
+    semester: "S2 2023",
+    grade: 42,
+    passed: false,
+  },
+  // Year 2 failures
+  {
+    code: "PHY2004W",
+    title: "Intermediate Physics 2004W",
+    credits: 48,
+    nqfLevel: 6,
+    semester: "FY 2024",
+    grade: 41,
+    passed: false,
+  },
+  {
+    code: "MAM2011F",
+    title: "Linear Algebra 2011F",
+    credits: 12,
+    nqfLevel: 6,
+    semester: "S1 2024",
+    grade: 43,
+    passed: false,
+  },
+  {
+    code: "CSC2042S",
+    title: "AI 2: Machine Learning",
+    credits: 24,
+    nqfLevel: 6,
+    semester: "S2 2024",
+    grade: 46,
+    passed: false,
+  },
+];
+const ruanInProgress: Course[] = [
+  // Year 3 — 2025 | S1: 60, S2: 42 — within FB3
+  // PHY3004W PREREQ VIOLATION: requires PHY2004W (failed Y2)
+  {
+    code: "CSC3002F",
+    title: "Networks and Operating Systems",
+    credits: 36,
+    nqfLevel: 7,
+    semester: "S1 2025",
+  },
+  {
+    code: "PHY3004W",
+    title: "Advanced Physics 3004W",
+    credits: 48,
+    nqfLevel: 7,
+    semester: "FY 2025",
+  },
+  {
+    code: "MAM3010F",
+    title: "Metric Spaces 3010F",
+    credits: 18,
+    nqfLevel: 7,
+    semester: "S2 2025",
+  },
+];
+// in-progress = 102 NQF7 | forecast = 192 < 228 (ALERT!) | NQF7 = 102 < 120 (ALERT!)
+
+// ─────────────────────────────────────────────────────────────
+// USER 19 — Thandiwe Radebe
+// BSc Extended Degree Programme: Mathematical Sciences | Year 2 (EDP)
+// SCENARIO: EDP Passing — half-load Y1, second half in progress; on EDP track
+// Y1 (EDP) earned 36 | Y2 (EDP) in-progress 36 | forecast = 72 (EDP track ✓)
+// Standard Y2 milestone = 144 — below expected (normal for EDP)
+// ─────────────────────────────────────────────────────────────
+const thandiwe19Passed: Course[] = [
+  // EDP Year 1 — 2024 | Half load: only S1 courses
+  {
+    code: "MAM1031F",
+    title: "Mathematics 1031F",
+    credits: 18,
+    nqfLevel: 5,
+    semester: "S1 2024",
+    grade: 63,
+    passed: true,
+  },
+  {
+    code: "STA1000F",
+    title: "Introductory Statistics 1000F",
+    credits: 18,
+    nqfLevel: 5,
+    semester: "S1 2024",
+    grade: 60,
+    passed: true,
+  },
+];
+// earned = 36 (EDP design: half Y1 load in year 1)
+const thandiwe19Failed: Course[] = [];
+const thandiwe19InProgress: Course[] = [
+  // EDP Year 2 — 2025 | Second half of Y1 content
+  {
+    code: "MAM1032S",
+    title: "Mathematics 1032S",
+    credits: 18,
+    nqfLevel: 5,
+    semester: "S2 2025",
+  },
+  {
+    code: "STA1007S",
+    title: "Introductory Statistics for Scientists",
+    credits: 18,
+    nqfLevel: 5,
+    semester: "S2 2025",
+  },
+];
+// in-progress = 36 | forecast = 72 (EDP Year 2 on track ✓ | below standard Y2 milestone 144)
+
+// ─────────────────────────────────────────────────────────────
+// USER 20 — Siphamandla Gumbi
+// BSc Extended Degree Programme: Mathematical Sciences | Year 2 (EDP)
+// SCENARIO: EDP Failing — failed a course in EDP Year 1, retaking in Year 2
+// Y1 (EDP) earned 18 | Y2 in-progress 36 (retake + 1 new) | forecast = 54 < 72 (ALERT!)
+// ─────────────────────────────────────────────────────────────
+const siphamandlaPassed: Course[] = [
+  // EDP Year 1 — 2024 | Only 1 of 2 courses passed
+  {
+    code: "MAM1031F",
+    title: "Mathematics 1031F",
+    credits: 18,
+    nqfLevel: 5,
+    semester: "S1 2024",
+    grade: 55,
+    passed: true,
+  },
+];
+// earned = 18 (well below EDP Year 1 expected 36)
+const siphamandlaFailed: Course[] = [
+  {
+    code: "STA1000F",
+    title: "Introductory Statistics 1000F",
+    credits: 18,
+    nqfLevel: 5,
+    semester: "S1 2024",
+    grade: 43,
+    passed: false,
+  },
+];
+const siphamandlaInProgress: Course[] = [
+  // EDP Year 2 — 2025 | Retaking STA1000F + continuing with MAM1032S
+  {
+    code: "STA1000F",
+    title: "Introductory Statistics 1000F (retake)",
+    credits: 18,
+    nqfLevel: 5,
+    semester: "S1 2025",
+  },
+  {
+    code: "MAM1032S",
+    title: "Mathematics 1032S",
+    credits: 18,
+    nqfLevel: 5,
+    semester: "S2 2025",
+  },
+];
+// in-progress = 36 | forecast = 54 < 72 (CRITICAL — below Y1 milestone even for EDP!)
+
+// ─────────────────────────────────────────────────────────────
+// USER 21 — Yusuf Davids
+// BSc Statistics and Economics | Year 2 | STA01-Y1-A + ECO01-Y1-A + STA01-Y2-A + ECO01-Y2-A
+// SCENARIO: Cross Faculty Double Major — 1 Science (Statistics), 1 Commerce (Economics)
+// Y1 earned 96 > 72 ✓ (mix of STA/MAM science + ECO commerce courses)
+// Y2 forecast 180 > 144 ✓ | No alerts — on track
+// ─────────────────────────────────────────────────────────────
+const yusufPassed: Course[] = [
+  // Year 1 — 2024 | Science + Commerce mix | S1: 48, S2: 48 — within FB3
+  {
+    code: "STA1000F",
+    title: "Introductory Statistics 1000F",
+    credits: 18,
+    nqfLevel: 5,
+    semester: "S1 2024",
+    grade: 71,
+    passed: true,
+  },
+  {
+    code: "MAM1031F",
+    title: "Mathematics 1031F",
+    credits: 18,
+    nqfLevel: 5,
+    semester: "S1 2024",
+    grade: 67,
+    passed: true,
+  },
+  {
+    code: "ECO1010F",
+    title: "Introduction to Microeconomics",
+    credits: 12,
+    nqfLevel: 5,
+    semester: "S1 2024",
+    grade: 69,
+    passed: true,
+  },
+  {
+    code: "STA1007S",
+    title: "Introductory Statistics for Scientists",
+    credits: 18,
+    nqfLevel: 5,
+    semester: "S2 2024",
+    grade: 73,
+    passed: true,
+  },
+  {
+    code: "MAM1032S",
+    title: "Mathematics 1032S",
+    credits: 18,
+    nqfLevel: 5,
+    semester: "S2 2024",
+    grade: 65,
+    passed: true,
+  },
+  {
+    code: "ECO1011S",
+    title: "Introduction to Macroeconomics",
+    credits: 12,
+    nqfLevel: 5,
+    semester: "S2 2024",
+    grade: 66,
+    passed: true,
+  },
+];
+// earned = 96 > 72 ✓ | Cross-faculty: 72cr Science + 24cr Commerce
+const yusufFailed: Course[] = [];
+const yusufInProgress: Course[] = [
+  // Year 2 — 2025 | Science + Commerce mix | S1: 48, S2: 36 — within FB3
+  {
+    code: "STA2004F",
+    title: "Statistical Theory and Inference",
+    credits: 24,
+    nqfLevel: 6,
+    semester: "S1 2025",
+  },
+  {
+    code: "MAM2010F",
+    title: "Real Analysis 2010F",
+    credits: 12,
+    nqfLevel: 6,
+    semester: "S1 2025",
+  },
+  {
+    code: "ECO2002F",
+    title: "Intermediate Microeconomics",
+    credits: 12,
+    nqfLevel: 6,
+    semester: "S1 2025",
+  },
+  {
+    code: "STA2005S",
+    title: "Linear Models 2005S",
+    credits: 24,
+    nqfLevel: 6,
+    semester: "S2 2025",
+  },
+  {
+    code: "ECO2003S",
+    title: "Intermediate Macroeconomics",
+    credits: 12,
+    nqfLevel: 6,
+    semester: "S2 2025",
+  },
+];
+// in-progress = 84 | forecast = 180 > 144 ✓
+
+// ─────────────────────────────────────────────────────────────
+// USER 22 — Mbali Khumalo
+// BSc Statistics and Data Science | Year 2 | STA13-Y1-A + STA13-Y2-A
+// SCENARIO: Switched from BCom Actuarial Science (Y1) to BSc SDS (Y2)
+// Y1 courses include BCom courses (ECO, ACC) + transferable science (MAM, STA)
+// Failed ECO1011S in Y1 | Y2 now doing BSc curriculum (incl. CSC1015F catch-up)
+// Y1 earned 81 > 72 ✓ | Y2 forecast 159 > 144 ✓
+// ─────────────────────────────────────────────────────────────
+const mbaliPassed: Course[] = [
+  // Year 1 — 2024 | Was registered in BCom Actuarial Science
+  // Transferable to BSc: MAM1031F, STA1000F, MAM1032S
+  // Commerce-only (may not count to science degree): ECO1010F, ACC1021F
+  {
+    code: "MAM1031F",
+    title: "Mathematics 1031F",
+    credits: 18,
+    nqfLevel: 5,
+    semester: "S1 2024",
+    grade: 74,
+    passed: true,
+  },
+  {
+    code: "STA1000F",
+    title: "Introductory Statistics 1000F",
+    credits: 18,
+    nqfLevel: 5,
+    semester: "S1 2024",
+    grade: 69,
+    passed: true,
+  },
+  {
+    code: "ECO1010F",
+    title: "Introduction to Microeconomics",
+    credits: 12,
+    nqfLevel: 5,
+    semester: "S1 2024",
+    grade: 71,
+    passed: true,
+  },
+  {
+    code: "ACC1021F",
+    title: "Accounting for Business I",
+    credits: 15,
+    nqfLevel: 5,
+    semester: "S1 2024",
+    grade: 65,
+    passed: true,
+  },
+  {
+    code: "MAM1032S",
+    title: "Mathematics 1032S",
+    credits: 18,
+    nqfLevel: 5,
+    semester: "S2 2024",
+    grade: 70,
+    passed: true,
+  },
+];
+// earned = 81 > 72 ✓ | Mix of science-compatible + commerce-only courses
+const mbaliFailed: Course[] = [
+  {
+    code: "ECO1011S",
+    title: "Introduction to Macroeconomics",
+    credits: 12,
+    nqfLevel: 5,
+    semester: "S2 2024",
+    grade: 43,
+    passed: false,
+  },
+];
+const mbaliInProgress: Course[] = [
+  // Year 2 — 2025 | Now in BSc SDS — catching up on science prerequisites
+  // CSC1015F: needed for BSc but was not required in BCom, doing it now
+  {
+    code: "CSC1015F",
+    title: "Computer Science 1015F",
+    credits: 18,
+    nqfLevel: 5,
+    semester: "S1 2025",
+  },
+  {
+    code: "STA2004F",
+    title: "Statistical Theory and Inference",
+    credits: 24,
+    nqfLevel: 6,
+    semester: "S1 2025",
+  },
+  {
+    code: "STA2005S",
+    title: "Linear Models 2005S",
+    credits: 24,
+    nqfLevel: 6,
+    semester: "S2 2025",
+  },
+  {
+    code: "MAM2010F",
+    title: "Real Analysis 2010F",
+    credits: 12,
+    nqfLevel: 6,
+    semester: "S2 2025",
+  },
+];
+// in-progress = 78 | forecast = 159 > 144 ✓
+
+// ─────────────────────────────────────────────────────────────
 // ASSEMBLE MOCK USERS
 // ─────────────────────────────────────────────────────────────
 export const mockUsers: MockUser[] = [
@@ -1552,38 +2548,193 @@ export const mockUsers: MockUser[] = [
       luyandaInProgress,
     ),
   },
+  // ── New users 13–22 ──────────────────────────────────────────
+  {
+    name: "Thabo Nkosi",
+    studentNumber: "NKITHA013",
+    password: "Thabo@UCT13",
+    degree: "BSc Applied Mathematics",
+    year: 2,
+    majors: ["Mathematics"],
+    combinationIds: ["MAM02-Y1-A", "MAM02-Y2-A"],
+    completedCourses: { passed: thaboPassed, failed: thaboFailed },
+    coursesInProgress: thaboInProgress,
+    academicProgress: computeProgress(2, thaboPassed, thaboFailed, thaboInProgress),
+  },
+  {
+    name: "Aisha Osman",
+    studentNumber: "OSMAIS014",
+    password: "Aisha@UCT14",
+    degree: "BSc Computer Science and Artificial Intelligence",
+    year: 3,
+    majors: ["Computer Science", "Artificial Intelligence"],
+    combinationIds: [
+      "CSC05-Y1-A", "CSC08-Y1-A",
+      "CSC05-Y2-A", "CSC08-Y2-A",
+      "CSC05-Y3-A", "CSC08-Y3-A",
+    ],
+    completedCourses: { passed: aishaPassed, failed: aishaFailed },
+    coursesInProgress: aishaInProgress,
+    academicProgress: computeProgress(3, aishaPassed, aishaFailed, aishaInProgress),
+  },
+  {
+    name: "Musa Shabalala",
+    studentNumber: "SHBMUS015",
+    password: "Musa@UCT15",
+    degree: "BSc Biology and Chemistry",
+    year: 2,
+    majors: ["Biology", "Chemistry"],
+    combinationIds: ["BIO12-Y1-A", "CEM01-Y1-A", "BIO12-Y2-A"],
+    completedCourses: { passed: musaPassed, failed: musaFailed },
+    coursesInProgress: musaInProgress,
+    academicProgress: computeProgress(2, musaPassed, musaFailed, musaInProgress),
+  },
+  {
+    name: "Lungelo Sithole",
+    studentNumber: "STHLUN016",
+    password: "Lungelo@UCT16",
+    degree: "BSc Mathematical Sciences",
+    year: 2,
+    majors: ["Mathematics", "Applied Statistics"],
+    combinationIds: ["MAM02-Y1-A", "STA01-Y1-A"],
+    completedCourses: { passed: lungeloPassed, failed: lungeloFailed },
+    coursesInProgress: lungeloInProgress,
+    academicProgress: computeProgress(2, lungeloPassed, lungeloFailed, lungeloInProgress),
+  },
+  {
+    name: "Zanele Moyo",
+    studentNumber: "MOYZAN017",
+    password: "Zanele@UCT17",
+    degree: "BSc Physics, Mathematics, and Statistics",
+    year: 3,
+    majors: ["Physics", "Mathematics", "Applied Statistics"],
+    combinationIds: [
+      "PHY01-Y1-A", "MAM02-Y1-A", "STA01-Y1-A",
+      "PHY01-Y2-A", "MAM02-Y2-A", "STA01-Y2-A",
+      "PHY01-Y3-A", "MAM02-Y3-A", "STA01-Y3-A",
+    ],
+    completedCourses: { passed: zanelePassed, failed: zaneleFailed },
+    coursesInProgress: zaneleInProgress,
+    academicProgress: computeProgress(3, zanelePassed, zaneleFailed, zaneleInProgress),
+  },
+  {
+    name: "Ruan van der Berg",
+    studentNumber: "VDBRUN018",
+    password: "Ruan@UCT18",
+    degree: "BSc Computer Science, Physics, and Mathematics",
+    year: 3,
+    majors: ["Computer Science", "Physics", "Mathematics"],
+    combinationIds: [
+      "CSC05-Y1-A", "PHY01-Y1-A", "MAM02-Y1-A",
+      "CSC05-Y2-A", "PHY01-Y2-A", "MAM02-Y2-A",
+      "CSC05-Y3-A", "PHY01-Y3-A", "MAM02-Y3-A",
+    ],
+    completedCourses: { passed: ruanPassed, failed: ruanFailed },
+    coursesInProgress: ruanInProgress,
+    academicProgress: computeProgress(3, ruanPassed, ruanFailed, ruanInProgress),
+  },
+  {
+    name: "Thandiwe Radebe",
+    studentNumber: "RDBTHN019",
+    password: "Thandiwe@UCT19",
+    degree: "BSc Extended Degree Programme: Mathematical Sciences",
+    year: 2,
+    majors: ["Mathematics", "Applied Statistics"],
+    combinationIds: ["EDP01-Y1-A", "EDP01-Y2-A"],
+    completedCourses: { passed: thandiwe19Passed, failed: thandiwe19Failed },
+    coursesInProgress: thandiwe19InProgress,
+    academicProgress: computeProgress(2, thandiwe19Passed, thandiwe19Failed, thandiwe19InProgress),
+  },
+  {
+    name: "Siphamandla Gumbi",
+    studentNumber: "GMBSIP020",
+    password: "Siphamandla@UCT20",
+    degree: "BSc Extended Degree Programme: Mathematical Sciences",
+    year: 2,
+    majors: ["Mathematics", "Applied Statistics"],
+    combinationIds: ["EDP01-Y1-A", "EDP01-Y2-A"],
+    completedCourses: { passed: siphamandlaPassed, failed: siphamandlaFailed },
+    coursesInProgress: siphamandlaInProgress,
+    academicProgress: computeProgress(2, siphamandlaPassed, siphamandlaFailed, siphamandlaInProgress),
+  },
+  {
+    name: "Yusuf Davids",
+    studentNumber: "DAVYUS021",
+    password: "Yusuf@UCT21",
+    degree: "BSc Statistics and Economics",
+    year: 2,
+    majors: ["Applied Statistics", "Economics"],
+    combinationIds: ["STA01-Y1-A", "ECO01-Y1-A", "STA01-Y2-A", "ECO01-Y2-A"],
+    completedCourses: { passed: yusufPassed, failed: yusufFailed },
+    coursesInProgress: yusufInProgress,
+    academicProgress: computeProgress(2, yusufPassed, yusufFailed, yusufInProgress),
+  },
+  {
+    name: "Mbali Khumalo",
+    studentNumber: "KHUMBL022",
+    password: "Mbali@UCT22",
+    degree: "BSc Statistics and Data Science",
+    year: 2,
+    majors: ["Statistics & Data Science"],
+    combinationIds: ["STA13-Y1-A", "STA13-Y2-A"],
+    // Note: Y1 courses include BCom Actuarial Science courses (ECO, ACC) from faculty switch
+    completedCourses: { passed: mbaliPassed, failed: mbaliFailed },
+    coursesInProgress: mbaliInProgress,
+    academicProgress: computeProgress(2, mbaliPassed, mbaliFailed, mbaliInProgress),
+  },
 ];
 
 // ─────────────────────────────────────────────────────────────
 // SCENARIO COVERAGE SUMMARY
 // ─────────────────────────────────────────────────────────────
 //
-// User       | Yr | Alerts triggered                                    | Test purpose
-// ───────────┼────┼─────────────────────────────────────────────────────┼──────────────────────────────────────
-// Skhathi    |  2 | None                                                | Happy path — baseline, all green
-// Nikhar     |  2 | Y1 milestone fail + prereq violation (MCB2020F)    | Broken prereq chain + credit deficit
-// Jordan     |  3 | None (high achiever, NQF7 ✓)                       | Triple major, complex load validation
-// Thando     |  3 | NQF7 shortfall (forecast 84 < 120)                 | FB7.2 NQF-level requirement check
-// Nosihle    |  1 | None (forecast = milestone exactly)                 | New student onboarding, zero history
-// Amara      |  4 | None (graduation eligible, forecast = 360)          | Degree completion + NQF7 satisfied
-// Keanu      |  2 | Retake in-progress (STA1000F)                      | Failed course retake workflow
-// Priya      |  1 | None (S1 done, mid-year S2 state)                  | S2-only in-progress exception logic
-// Sipho      |  2 | Y1 milestone fail + S1 overload 78 > 72 (FB3!)     | FB3 credit cap violation detection
-// Lerato     |  2 | Y2 forecast 132 < 144 (milestone at risk)          | Under-enrolled, milestone warning
-// Fatima     |  2 | Y1 earned 36 << 72 + forecast 102 << 144 (CRIT)   | Readmission risk, worst-case scenario
-// Luyanda    |  3 | NQF7 shortfall (forecast 48 < 120) + needs Y4      | NQF7 deficit + graduation delay
+// User          | Yr | Alerts triggered                                       | Test purpose
+// ──────────────┼────┼────────────────────────────────────────────────────────┼──────────────────────────────────────
+// Skhathi       |  2 | None                                                   | Happy path — baseline, all green
+// Nikhar        |  2 | Y1 milestone fail + prereq violation (MCB2020F)        | Broken prereq chain + credit deficit
+// Jordan        |  3 | None (high achiever, NQF7 ✓)                           | Triple major, complex load validation
+// Thando        |  3 | NQF7 shortfall (forecast 84 < 120)                     | FB7.2 NQF-level requirement check
+// Nosihle       |  1 | None (forecast = milestone exactly)                    | New student onboarding, zero history
+// Amara         |  4 | None (graduation eligible, forecast = 360)             | Degree completion + NQF7 satisfied
+// Keanu         |  2 | Retake in-progress (STA1000F)                          | Failed course retake workflow
+// Priya         |  1 | None (S1 done, mid-year S2 state)                      | S2-only in-progress exception logic
+// Sipho         |  2 | Y1 milestone fail + S1 overload 78 > 72 (FB3!)         | FB3 credit cap violation detection
+// Lerato        |  2 | Y2 forecast 132 < 144 (milestone at risk)              | Under-enrolled, milestone warning
+// Fatima        |  2 | Y1 earned 36 << 72 + forecast 102 << 144 (CRIT)        | Readmission risk, worst-case scenario
+// ── New users (13–22) ──────────────────────────────────────────────────────────────────────────────────────────────
+// Thabo         |  2 | None — forecast 156 > 144 ✓                            | Passing avg (50–55%), just clearing
+// Aisha         |  3 | None — NQF7 126 ✓, forecast 318 ✓                      | Passing distinctions (80–88%) throughout
+// Musa          |  2 | Y1 milestone fail + prereq violation (MCB2020F)        | Failing avg — mixed passes and fails
+// Lungelo       |  2 | Credit shortfall Y1 (66 < 72) + forecast 114 << 144    | Failing extreme — near exclusion, science+commerce Y1
+// Zanele        |  3 | None — NQF7 132 ✓, forecast 372 ✓                      | Triple major passing — mixed avg/distinction
+// Ruan          |  3 | Y1+Y2 milestones fail + Y3 forecast < 228 + NQF7 < 120 | Triple major failing — cascading failures
+// Thandiwe      |  2 | Y2 forecast 72 < 144 (expected for EDP)                | EDP passing — half-load Y1, on EDP schedule
+// Siphamandla   |  2 | Forecast 54 < 72 (CRIT even for EDP)                   | EDP failing — failed Y1 course, retaking
+// Yusuf         |  2 | None — forecast 180 > 144 ✓                            | Cross-faculty double major (Science + Commerce)
+// Mbali         |  2 | None — forecast 159 > 144 ✓                            | Faculty switch BCom Actuarial → BSc SDS
+// Luyanda      |  3 | NQF7 shortfall (forecast 48 < 120) + needs Y4          | NQF7 deficit + graduation delay
 //
 // Credit math verification:
-//   Skhathi  | earned 141 | in-progress 120 | forecast 261 | NQF7 forecast   0
-//   Nikhar   | earned  54 | in-progress  72 | forecast 126 | NQF7 forecast   0
-//   Jordan   | earned 204 | in-progress 126 | forecast 330 | NQF7 forecast 126
-//   Thando   | earned 168 | in-progress  84 | forecast 252 | NQF7 forecast  84
-//   Nosihle  | earned   0 | in-progress  72 | forecast  72 | NQF7 forecast   0
-//   Amara    | earned 324 | in-progress  36 | forecast 360 | NQF7 forecast 162
-//   Keanu    | earned  72 | in-progress  78 | forecast 150 | NQF7 forecast   0
-//   Priya    | earned  36 | in-progress  54 | forecast  90 | NQF7 forecast   0
-//   Sipho    | earned  54 | in-progress  78 | forecast 132 | NQF7 forecast   0
-//   Lerato   | earned  72 | in-progress  60 | forecast 132 | NQF7 forecast   0
-//   Fatima   | earned  36 | in-progress  66 | forecast 102 | NQF7 forecast   0
-//   Luyanda  | earned 210 | in-progress  48 | forecast 258 | NQF7 forecast  48
+//   Skhathi      | earned 141 | in-progress 120 | forecast 261 | NQF7 forecast   0
+//   Nikhar       | earned  54 | in-progress  72 | forecast 126 | NQF7 forecast   0
+//   Jordan       | earned 204 | in-progress 126 | forecast 330 | NQF7 forecast 126
+//   Thando       | earned 168 | in-progress  84 | forecast 252 | NQF7 forecast  84
+//   Nosihle      | earned   0 | in-progress  72 | forecast  72 | NQF7 forecast   0
+//   Amara        | earned 324 | in-progress  36 | forecast 360 | NQF7 forecast 162
+//   Keanu        | earned  72 | in-progress  78 | forecast 150 | NQF7 forecast   0
+//   Priya        | earned  36 | in-progress  54 | forecast  90 | NQF7 forecast   0
+//   Sipho        | earned  54 | in-progress  78 | forecast 132 | NQF7 forecast   0
+//   Lerato       | earned  72 | in-progress  60 | forecast 132 | NQF7 forecast   0
+//   Fatima       | earned  36 | in-progress  66 | forecast 102 | NQF7 forecast   0
+//   Luyanda      | earned 210 | in-progress  48 | forecast 258 | NQF7 forecast  48
+//   Thabo        | earned  72 | in-progress  84 | forecast 156 | NQF7 forecast   0
+//   Aisha        | earned 192 | in-progress 126 | forecast 318 | NQF7 forecast 126
+//   Musa         | earned  54 | in-progress  72 | forecast 126 | NQF7 forecast   0
+//   Lungelo      | earned  66 | in-progress  48 | forecast 114 | NQF7 forecast   0
+//   Zanele       | earned 240 | in-progress 132 | forecast 372 | NQF7 forecast 132
+//   Ruan         | earned  90 | in-progress 102 | forecast 192 | NQF7 forecast 102
+//   Thandiwe     | earned  36 | in-progress  36 | forecast  72 | NQF7 forecast   0
+//   Siphamandla  | earned  18 | in-progress  36 | forecast  54 | NQF7 forecast   0
+//   Yusuf        | earned  96 | in-progress  84 | forecast 180 | NQF7 forecast   0
+//   Mbali        | earned  81 | in-progress  78 | forecast 159 | NQF7 forecast   0
 // ─────────────────────────────────────────────────────────────
