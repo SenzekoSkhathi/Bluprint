@@ -117,7 +117,9 @@ interface BluBotProps {
 const FALLBACK_NOTICE_ID = "backend-fallback-notice";
 const ADVISOR_ESCALATION_NOTE =
   "If this still feels unclear, it would be worth checking with your student advisor so you have the final word.";
-const BLUBOT_CHAT_STORAGE_KEY = "blubot-chat-history-v1";
+function bluBotStorageKey(studentNumber: string): string {
+  return `blubot-chat-history-v1-${studentNumber}`;
+}
 const BLUBOT_MODEL_OPTIONS: Array<{
   id: ScienceAdvisorModelProfile;
   label: string;
@@ -1405,7 +1407,13 @@ export default function BluBot({
   }, [messages]);
 
   useEffect(() => {
+    // Wait until we know which student is logged in before restoring their history.
+    if (!userContext?.studentNumber) {
+      return;
+    }
+
     let isMounted = true;
+    const studentStorageKey = bluBotStorageKey(userContext.studentNumber);
 
     const restoreChats = async () => {
       try {
@@ -1443,7 +1451,7 @@ export default function BluBot({
           }
         }
 
-        const raw = await AsyncStorage.getItem(BLUBOT_CHAT_STORAGE_KEY);
+        const raw = await AsyncStorage.getItem(studentStorageKey);
         if (!raw || !isMounted) {
           return;
         }
@@ -1475,10 +1483,14 @@ export default function BluBot({
     return () => {
       isMounted = false;
     };
-  }, []);
+  }, [userContext?.studentNumber]);
 
   useEffect(() => {
     if (!hasRestoredChats) {
+      return;
+    }
+
+    if (!userContext?.studentNumber) {
       return;
     }
 
@@ -1489,7 +1501,7 @@ export default function BluBot({
           recentChats: recentChats.map(serializeChatThread),
         };
         await AsyncStorage.setItem(
-          BLUBOT_CHAT_STORAGE_KEY,
+          bluBotStorageKey(userContext.studentNumber),
           JSON.stringify(payload),
         );
       } catch (error) {
@@ -1498,7 +1510,7 @@ export default function BluBot({
     };
 
     void persistChats();
-  }, [currentThreadId, hasRestoredChats, recentChats]);
+  }, [currentThreadId, hasRestoredChats, recentChats, userContext?.studentNumber]);
 
   useEffect(() => {
     if (!hasRestoredChats) {
