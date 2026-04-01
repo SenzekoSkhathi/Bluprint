@@ -145,6 +145,64 @@ def _format_course_for_context(course: dict[str, Any]) -> str:
     return "\n".join(lines)
 
 
+def _format_course_entry(c: Any) -> str:
+    """Return a display string for a course entry (dict or plain code string).
+
+    Handles is_pattern entries by appending the resolves_to alternatives so
+    BluBot knows e.g. 'STA100xF/S' means any of STA1000F/STA1000S/STA1006S/STA1007S.
+    """
+    if not isinstance(c, dict):
+        return str(c)
+    code = c.get("code", "")
+    if c.get("is_pattern") and c.get("resolves_to"):
+        resolved = ", ".join(
+            (r.get("code", r) if isinstance(r, dict) else str(r))
+            for r in c["resolves_to"][:6]
+        )
+        return f"{code} (i.e. one of: {resolved})"
+    return code
+
+
+def _format_combo(combo: dict[str, Any], indent: str = "  ") -> list[str]:
+    """Format a single curriculum combination into display lines."""
+    out: list[str] = []
+    all_courses = combo.get("courses", [])
+    codes = [_format_course_entry(c) for c in all_courses[:12] if c]
+    if codes:
+        out.append(f"{indent}Courses: {', '.join(codes)}")
+
+    # Standard elective choice groups
+    choose_groups = [
+        ("choose_one_of",   "Choose 1 of"),
+        ("choose_two_of",   "Choose 2 of"),
+        ("choose_three_of", "Choose 3 of"),
+    ]
+    for field, label_prefix in choose_groups:
+        electives = combo.get(field, [])
+        if electives:
+            el_codes = [_format_course_entry(e) for e in electives[:8]]
+            out.append(f"{indent}{label_prefix}: {', '.join(el_codes)}")
+
+    # Highly-recommended courses within a combination
+    highly_rec = combo.get("highly_recommended", [])
+    if highly_rec:
+        rec_codes = [_format_course_entry(r) for r in highly_rec[:6]]
+        out.append(f"{indent}Highly recommended: {', '.join(rec_codes)}")
+
+    # Recommended courses
+    rec = combo.get("recommended", [])
+    if rec:
+        rec_codes = [_format_course_entry(r) for r in rec[:6]]
+        out.append(f"{indent}Recommended: {', '.join(rec_codes)}")
+
+    # BIO13-style stream / custom instruction fields
+    instruction = combo.get("instruction", "")
+    if instruction:
+        out.append(f"{indent}Note: {instruction}")
+
+    return out
+
+
 def _format_major_for_context(entry: dict[str, Any]) -> str:
     payload = entry.get("payload", {})
     title = entry.get("title") or payload.get("major_name") or payload.get("specialisation") or "?"
@@ -154,6 +212,20 @@ def _format_major_for_context(entry: dict[str, Any]) -> str:
     min_credits = payload.get("minimum_credits") or payload.get("total_credits")
     if min_credits:
         lines.append(f"Minimum credits: {min_credits}")
+
+    # Surface hard constraints immediately so BluBot can't miss them
+    mutual_excl = payload.get("mutual_exclusions_with", [])
+    if mutual_excl:
+        lines.append(
+            f"MUTUAL EXCLUSION: Cannot be taken alongside major(s): {', '.join(mutual_excl)}"
+        )
+    companion_req = payload.get("required_companion_majors", [])
+    if companion_req:
+        lines.append(
+            f"REQUIRED COMPANION: Must be taken concurrently with major(s): {', '.join(companion_req)}"
+        )
+    if payload.get("has_student_limit"):
+        lines.append("ENROLLMENT LIMIT: Limited intake at Year 2 — check with department.")
 
     notes = payload.get("notes", "")
     if notes:
@@ -166,64 +238,34 @@ def _format_major_for_context(entry: dict[str, Any]) -> str:
         for year_data in years_list[:4]:
             year_num = year_data.get("year") or year_data.get("year_number", "?")
             year_label = year_data.get("label") or f"Year {year_num}"
+            year_note = year_data.get("note", "") or year_data.get("instruction", "")
             combos: list[dict[str, Any]] = year_data.get("combinations", [])
             if not combos:
                 continue
 
             if len(combos) == 1:
-                # Only one option — emit it directly without "Option" labelling
+                # Only one valid path — emit it directly
                 combo = combos[0]
-                all_courses = combo.get("courses", [])
-                codes = [
-                    (c.get("code", "") if isinstance(c, dict) else str(c))
-                    for c in all_courses[:10]
-                    if c
-                ]
-                if codes:
-                    lines.append(f"{year_label}: {', '.join(codes)}")
-                choose_groups = [
-                    ("choose_one_of", "Choose 1 of"),
-                    ("choose_two_of", "Choose 2 of"),
-                    ("choose_three_of", "Choose 3 of"),
-                ]
-                for field, label_prefix in choose_groups:
-                    electives = combo.get(field, [])
-                    if electives:
-                        el_codes = [
-                            (e.get("code", "") if isinstance(e, dict) else str(e))
-                            for e in electives[:8]
-                        ]
-                        lines.append(f"  {label_prefix}: {', '.join(el_codes)}")
+                combo_desc = combo.get("description", "")
+                header = f"{year_label}"
+                if combo_desc:
+                    header += f" ({combo_desc})"
+                lines.append(f"{header}:")
+                lines.extend(_format_combo(combo, indent="  "))
             else:
-                # Multiple combinations — these are valid ALTERNATIVES the student may choose from.
-                # Show ALL of them so BluBot knows which courses are substitutable.
+                # Multiple combinations — valid ALTERNATIVES the student may choose from
                 lines.append(f"{year_label} — choose ONE of the following combinations:")
                 for idx, combo in enumerate(combos, start=1):
                     combo_desc = combo.get("description", "")
-                    all_courses = combo.get("courses", [])
-                    codes = [
-                        (c.get("code", "") if isinstance(c, dict) else str(c))
-                        for c in all_courses[:10]
-                        if c
-                    ]
                     combo_label = f"  Option {idx}"
                     if combo_desc:
                         combo_label += f" ({combo_desc})"
-                    if codes:
-                        lines.append(f"{combo_label}: {', '.join(codes)}")
-                    choose_groups = [
-                        ("choose_one_of", "Choose 1 of"),
-                        ("choose_two_of", "Choose 2 of"),
-                        ("choose_three_of", "Choose 3 of"),
-                    ]
-                    for field, label_prefix in choose_groups:
-                        electives = combo.get(field, [])
-                        if electives:
-                            el_codes = [
-                                (e.get("code", "") if isinstance(e, dict) else str(e))
-                                for e in electives[:8]
-                            ]
-                            lines.append(f"    {label_prefix}: {', '.join(el_codes)}")
+                    lines.append(f"{combo_label}:")
+                    lines.extend(_format_combo(combo, indent="    "))
+
+            if year_note:
+                lines.append(f"  ↳ {year_note}")
+
     elif isinstance(curriculum, dict):
         for key in sorted(curriculum.keys()):
             if re.match(r"year", key, re.IGNORECASE):
@@ -237,15 +279,11 @@ def _format_major_for_context(entry: dict[str, Any]) -> str:
         for item in curriculum[:5]:
             if not isinstance(item, dict):
                 continue
-            year_label = item.get("year") or item.get("level") or ""
+            year_label_val = item.get("year") or item.get("level") or ""
             courses_here = item.get("courses", [])[:10]
-            codes = [
-                (c.get("code", "") if isinstance(c, dict) else str(c))
-                for c in courses_here
-                if c
-            ]
+            codes = [_format_course_entry(c) for c in courses_here if c]
             if codes:
-                lines.append(f"Year {year_label}: {', '.join(codes)}")
+                lines.append(f"Year {year_label_val}: {', '.join(codes)}")
 
     return "\n".join(lines)
 
@@ -304,13 +342,29 @@ class ScienceAdvisor:
         major_index = self._validator.handbook_store.load_major_index()
         scored: list[tuple[float, dict[str, Any]]] = []
 
+        def _word_matches(key_word: str, text: str) -> bool:
+            """Match a key word against text, tolerating common abbreviations.
+
+            E.g. "statistics" matches "stats", "mathematics" matches "maths"/"math",
+            "computer" matches "comp" / "cs".
+            """
+            if key_word in text:
+                return True
+            # Prefix match for 5+ char words (e.g. "statistic" prefix of "statistics")
+            if len(key_word) >= 5 and text.find(key_word[:5]) >= 0:
+                return True
+            return False
+
+        q_lower = question_text.lower()
+        h_lower = history_text.lower() if history_text else ""
+
         for key, entries in major_index.items():
             key_words = [w for w in re.split(r"\W+", key) if len(w) >= 3]
             if not key_words:
                 continue
             # Score against current question (full weight) and history (half weight)
-            question_hits = sum(1 for w in key_words if w in question_text.lower())
-            history_hits = sum(1 for w in key_words if history_text and w in history_text.lower())
+            question_hits = sum(1 for w in key_words if _word_matches(w, q_lower))
+            history_hits = sum(1 for w in key_words if h_lower and _word_matches(w, h_lower))
             raw_score = (question_hits + 0.5 * history_hits) / len(key_words)
             if raw_score < 0.4:
                 continue
@@ -896,8 +950,13 @@ class ScienceAdvisor:
                 f"You are BluBot, UCT {faculty_label} Faculty's academic advisor. "
                 "Be warm, direct, and practical — no stiff assistant phrases. "
                 "Answer clearly and completely. Never cut your response off before finishing. "
-                "Name missing prerequisites explicitly. "
-                "If uncertain, say so in one clear line."
+                "Name missing prerequisites explicitly.\n\n"
+                "CRITICAL — USE THE HANDBOOK DATA:\n"
+                "The [Major: ...] and [Course: ...] blocks in the context are OFFICIAL UCT curriculum data. "
+                "If the answer is visible there, state it directly. "
+                "NEVER say 'I don't have handbook details', 'consult the handbook', or 'I can't confirm' "
+                "when the structured data above already contains the answer. "
+                "If genuinely uncertain, say so in one clear line."
             )
         else:
             # Thinking mode: deep, thorough, conversational.
@@ -938,15 +997,26 @@ class ScienceAdvisor:
                 "You speak like a knowledgeable friend — warm, specific, and direct. "
                 "Never introduce yourself, restate the question, or use stiff assistant phrases. "
                 "Get straight to the answer.\n\n"
+                "CRITICAL — USE THE HANDBOOK DATA:\n"
+                "The [Major: ...] and [Course: ...] blocks in the context are OFFICIAL UCT curriculum data "
+                "extracted directly from the Science Handbook. "
+                "When a course code, major name, or course combination appears in those blocks, you HAVE "
+                "that information — treat it as ground truth. "
+                "NEVER say 'I don't have handbook details', 'consult the handbook', 'I can't confirm', "
+                "or 'without specific handbook details' when the structured data above already contains "
+                "the answer. Answer directly from the data provided.\n\n"
                 "Core guidelines:\n"
                 "- Always cross-reference the student's FULL course history (passed, failed, in-progress) "
                 "against handbook prerequisites before drawing any conclusion.\n"
+                "- When a major shows multiple combinations per year, those are VALID ALTERNATIVES — "
+                "explain the options clearly and which best fits the student's situation.\n"
                 "- Treat every STUDENT PLAN VALIDATION blocker as confirmed fact — address relevant ones.\n"
                 "- Apply policy rules (readmission, progression, credit requirements) where applicable.\n"
                 "- Give concrete, practical next steps — not just observations.\n"
                 "- Name every missing prerequisite explicitly by course code.\n"
                 "- Maintain full continuity across the conversation — never lose track of what was discussed.\n"
-                "- If genuinely uncertain, say so plainly and suggest the student confirm with their faculty office.\n"
+                "- If genuinely uncertain after reviewing all context, say so plainly and suggest the "
+                "student confirm with their faculty office.\n"
                 "- Never cut your response off mid-thought. Complete every point fully before stopping."
                 + proactive_note
                 + borderline_note
@@ -1153,13 +1223,19 @@ class ScienceAdvisor:
         student_section = f"{student_block}\n\n" if student_block else ""
         validation_section = f"{validation_block}\n\n" if validation_block else ""
 
-        # Build system instruction (same logic as answer())
+        # Build system instruction (mirrors answer() — keep in sync)
         if model_profile == "fast":
             system_instruction = (
                 f"You are BluBot, UCT {faculty_label} Faculty's academic advisor. "
                 "Be warm, direct, and practical — no stiff assistant phrases. "
                 "Answer clearly and completely. Never cut your response off before finishing. "
-                "Name missing prerequisites explicitly. If uncertain, say so in one clear line."
+                "Name missing prerequisites explicitly.\n\n"
+                "CRITICAL — USE THE HANDBOOK DATA:\n"
+                "The [Major: ...] and [Course: ...] blocks in the context are OFFICIAL UCT curriculum data. "
+                "If the answer is visible there, state it directly. "
+                "NEVER say 'I don't have handbook details', 'consult the handbook', 'I can't confirm' "
+                "when the structured data above already contains the answer. "
+                "If genuinely uncertain, say so in one clear line."
             )
         else:
             proactive_note = ""
@@ -1191,8 +1267,18 @@ class ScienceAdvisor:
                 "You speak like a knowledgeable friend — warm, specific, and direct. "
                 "Never introduce yourself, restate the question, or use stiff assistant phrases. "
                 "Get straight to the answer.\n\n"
+                "CRITICAL — USE THE HANDBOOK DATA:\n"
+                "The [Major: ...] and [Course: ...] blocks in the context are OFFICIAL UCT curriculum data "
+                "extracted directly from the Science Handbook. "
+                "When a course code, major name, or course combination appears in those blocks, you HAVE "
+                "that information — treat it as ground truth. "
+                "NEVER say 'I don't have handbook details', 'consult the handbook', 'I can't confirm', "
+                "or 'without specific handbook details' when the structured data above already contains "
+                "the answer. Answer directly from the data provided.\n\n"
                 "Core guidelines:\n"
                 "- Always cross-reference the student's FULL course history against handbook prerequisites.\n"
+                "- When a major shows multiple combinations per year, those are VALID ALTERNATIVES — "
+                "explain the options clearly.\n"
                 "- Treat every STUDENT PLAN VALIDATION blocker as confirmed fact.\n"
                 "- Give concrete, practical next steps — not just observations.\n"
                 "- Name every missing prerequisite explicitly by course code.\n"

@@ -157,12 +157,25 @@ class HandbookStore:
                 for payload in self.list_courses(slug):
                     if not isinstance(payload, dict):
                         continue
-                    course_code = _normalize_code(payload.get("code"))
+                    raw_code = payload.get("code") or ""
+                    course_code = _normalize_code(raw_code)
                     if not course_code:
                         continue
                     record = dict(payload)
                     record.setdefault("faculty_slug", slug)
+                    # Index under the canonical code (e.g. "STA2020F/S")
                     self._course_by_code_cache[course_code] = record
+                    # Also index under every individual variant so that
+                    # "STA2020F" and "STA2020S" both resolve to this record.
+                    # Codes like "STA2020F/S/H" or "STA1000F/S/P/L" use
+                    # slashes to list multiple offering periods.
+                    base_match = re.match(r"^([A-Z]{3,4}\d{4})", course_code)
+                    if base_match and "/" in course_code:
+                        base = base_match.group(1)
+                        for part in re.split(r"[/,]", course_code[len(base):]):
+                            variant = (base + part.strip()).upper()
+                            if variant and variant not in self._course_by_code_cache:
+                                self._course_by_code_cache[variant] = record
 
         hit = self._course_by_code_cache.get(normalized)
         return dict(hit) if isinstance(hit, dict) else None
