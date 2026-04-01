@@ -337,21 +337,25 @@ export default function Planner({
 
   const seededPlannerCourses = useMemo<PlannedCourse[]>(
     () =>
-      plannedCoursesProp.map((course, index) => ({
-        id: `seed-planned-${index}-${course.code}`,
-        code: course.code,
-        name: course.title,
-        credits: course.credits,
-        year:
-          course.year ??
-          `Year ${Math.min(Math.max(course.nqfLevel - 4, 1), 4)}`,
-        semester:
-          course.semester.toUpperCase().includes("S2") ||
-          course.semester.toUpperCase().includes("SEM 2")
-            ? "Semester 2"
-            : "Semester 1",
-        status: "Planned",
-      })),
+      plannedCoursesProp.map((course, index) => {
+        const rawSem = course.semester.toUpperCase().trim();
+        const isWholeYear = rawSem === "H" || rawSem === "W";
+        return {
+          id: `seed-planned-${index}-${course.code}`,
+          code: course.code,
+          name: course.title,
+          credits: course.credits,
+          year:
+            course.year ??
+            `Year ${Math.min(Math.max(course.nqfLevel - 4, 1), 4)}`,
+          semester:
+            rawSem.includes("S2") || rawSem.includes("SEM 2")
+              ? "Semester 2"
+              : "Semester 1",
+          semesterCode: isWholeYear ? rawSem : undefined,
+          status: "Planned" as const,
+        };
+      }),
     [plannedCoursesProp],
   );
 
@@ -1981,6 +1985,8 @@ export default function Planner({
       return;
     }
 
+    const rawSemCode = getCourseSemesterCode(selectedCourse).toUpperCase();
+    const isWholeYear = rawSemCode === "H" || rawSemCode === "W";
     const newCourse: PlannedCourse = {
       id: `${Date.now()}`,
       code: courseCode,
@@ -1988,6 +1994,7 @@ export default function Planner({
       credits: selectedCourse.credits,
       year: selectedYear,
       semester: selectedSemester,
+      semesterCode: isWholeYear ? rawSemCode : undefined,
       status: getAutoStatus(selectedYear, selectedSemester),
     };
     setCourses((prev) => [newCourse, ...prev]);
@@ -2709,7 +2716,10 @@ export default function Planner({
       {/* ── Semester grid ── */}
       <View style={styles.semGrid}>
         {(["Semester 1", "Semester 2"] as const).map((sem) => {
-          const semCourses = yearCourses.filter((c) => c.semester === sem);
+          // Whole-year courses (H/W) are rendered below the grid, not inside a column
+          const semCourses = yearCourses.filter(
+            (c) => c.semester === sem && !c.semesterCode,
+          );
           const semCredits = semCourses.reduce((s, c) => s + c.credits, 0);
           const isOver = semCredits > maxTermCredits;
           const isPickingSem = selectedSemester === sem;
@@ -2832,6 +2842,96 @@ export default function Planner({
           );
         })}
       </View>
+
+      {/* ── Whole-year courses (H / W semester codes) ── */}
+      {yearCourses.some((c) => c.semesterCode) && (
+        <View style={styles.wholeYearRow}>
+          <View style={styles.wholeYearHeader}>
+            <Text style={styles.wholeYearLabel}>Full Year</Text>
+            <Text style={styles.wholeYearSub}>
+              {yearCourses
+                .filter((c) => c.semesterCode)
+                .reduce((s, c) => s + c.credits, 0)}{" "}
+              cr
+            </Text>
+          </View>
+          <View style={styles.wholeYearChips}>
+            {yearCourses
+              .filter((c) => c.semesterCode)
+              .map((course) => {
+                const variant = getCourseChipVariant(course);
+                const risk = riskMap.get(course.code);
+                const dp = dpMap.get(course.code);
+                const riskLevel: RiskLevel = risk?.level ?? "none";
+                return (
+                  <View
+                    key={course.id}
+                    style={[
+                      styles.courseChip,
+                      styles.wholeYearChip,
+                      variant === "blocker" && styles.courseChipBlocker,
+                      variant === "warning" && styles.courseChipWarning,
+                      variant === "completed" && styles.courseChipCompleted,
+                      variant === "inProgress" && styles.courseChipInProgress,
+                    ]}
+                  >
+                    <View style={styles.chipLeft}>
+                      <Text
+                        style={[
+                          styles.chipCode,
+                          variant === "blocker" && styles.chipCodeBlocker,
+                          variant === "warning" && styles.chipCodeWarning,
+                        ]}
+                      >
+                        {course.code}
+                      </Text>
+                      <Text style={styles.chipName} numberOfLines={2}>
+                        {course.name}
+                      </Text>
+                      {riskLevel !== "none" && course.status === "Planned" && (
+                        <View
+                          style={[
+                            styles.riskBadge,
+                            riskLevel === "high" && styles.riskBadgeHigh,
+                            riskLevel === "medium" && styles.riskBadgeMedium,
+                            riskLevel === "low" && styles.riskBadgeLow,
+                          ]}
+                        >
+                          <Text style={styles.riskBadgeText}>
+                            {riskLevel === "high"
+                              ? "⚠ High risk"
+                              : riskLevel === "medium"
+                                ? "⚠ At risk"
+                                : "· Review prereqs"}
+                          </Text>
+                        </View>
+                      )}
+                      {dp && course.status === "Planned" && (
+                        <View style={styles.dpBadge}>
+                          <Text style={styles.dpBadgeText}>DP req</Text>
+                        </View>
+                      )}
+                    </View>
+                    <View style={styles.chipRight}>
+                      <Text style={styles.chipCredits}>
+                        {course.credits} cr
+                      </Text>
+                      {plannedCourseIdSet.has(course.id) ? (
+                        <Pressable
+                          onPress={() => removeCourse(course.id)}
+                          style={styles.chipRemove}
+                          hitSlop={8}
+                        >
+                          <Text style={styles.chipRemoveText}>×</Text>
+                        </Pressable>
+                      ) : null}
+                    </View>
+                  </View>
+                );
+              })}
+          </View>
+        </View>
+      )}
 
       {/* ── Course picker (shown when open) ── */}
       {isCourseDropdownOpen ? (
@@ -3804,7 +3904,41 @@ const styles = StyleSheet.create({
   semGrid: {
     flexDirection: Platform.OS === "web" ? "row" : "column",
     gap: theme.spacing.sm,
+    marginBottom: theme.spacing.sm,
+  },
+  wholeYearRow: {
+    backgroundColor: theme.colors.card,
+    borderRadius: theme.borderRadius.lg,
+    borderWidth: 1,
+    borderColor: theme.colors.babyBlue,
+    borderStyle: "dashed",
+    padding: theme.spacing.md,
     marginBottom: theme.spacing.md,
+  },
+  wholeYearHeader: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    marginBottom: theme.spacing.sm,
+  },
+  wholeYearLabel: {
+    fontSize: theme.fontSize.sm,
+    fontWeight: "600",
+    color: theme.colors.babyBlue,
+    textTransform: "uppercase",
+    letterSpacing: 0.6,
+  },
+  wholeYearSub: {
+    fontSize: theme.fontSize.sm,
+    color: theme.colors.textSecondary,
+  },
+  wholeYearChips: {
+    flexDirection: Platform.OS === "web" ? "row" : "column",
+    flexWrap: "wrap",
+    gap: theme.spacing.sm,
+  },
+  wholeYearChip: {
+    flex: Platform.OS === "web" ? undefined : undefined,
   },
   semCol: {
     flex: 1,

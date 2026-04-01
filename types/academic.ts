@@ -36,6 +36,8 @@ export interface PlannedCourse {
   credits: number;
   year: string;
   semester: string;
+  /** Original semester code when it's a whole-year course — "H" or "W" */
+  semesterCode?: string;
   status: PlannerCourseStatus;
 }
 
