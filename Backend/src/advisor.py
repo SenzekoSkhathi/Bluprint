@@ -303,14 +303,22 @@ class ScienceAdvisor:
         query: str,
         faculty_slug: str,
         conversation_history: list[dict] | None = None,
-    ) -> str:
+    ) -> tuple[str, dict[str, list[str]]]:
         """Look up courses and majors directly from handbook JSON files.
+
+        Returns:
+            (context_str, metadata) where metadata = {
+                "courses": [<code>, ...],   # course codes actually resolved
+                "majors":  [<title>, ...],  # major names actually matched
+            }
 
         This bypasses the vector retriever for known course codes and major
         names, giving the model precise structured data from the source files
         instead of fuzzy PDF chunk matches.
         """
         sections: list[str] = []
+        found_courses: list[str] = []
+        found_majors: list[str] = []
 
         # 1. Course code lookup (from the raw query text, not just student question)
         codes = list(dict.fromkeys(re.findall(r"\b[A-Z]{3,4}\d{4}[A-Z]?\b", query.upper())))
@@ -318,6 +326,7 @@ class ScienceAdvisor:
             course = self._validator.handbook_store.course_by_code(code)
             if course:
                 sections.append(_format_course_for_context(course))
+                found_courses.append(code)
 
         # 2. Major / degree name lookup
         # Build the search text from the current question PLUS recent conversation turns
@@ -335,9 +344,6 @@ class ScienceAdvisor:
             history_text = " ".join(
                 str(t.get("text", "")) for t in recent_turns if t.get("text")
             )
-
-        # Search text: current question first (higher weight), then history
-        search_text = f"{question_text} {history_text}".lower()
 
         major_index = self._validator.handbook_store.load_major_index()
         scored: list[tuple[float, dict[str, Any]]] = []
@@ -381,8 +387,9 @@ class ScienceAdvisor:
             if title not in added_titles:
                 sections.append(_format_major_for_context(entry))
                 added_titles.add(title)
+                found_majors.append(title)
 
-        return "\n\n".join(sections)
+        return "\n\n".join(sections), {"courses": found_courses, "majors": found_majors}
 
     def _build_context(self, hits: list[dict]) -> str:
         blocks: list[str] = []
@@ -872,7 +879,7 @@ class ScienceAdvisor:
         intent = _classify_query_intent(query, conversation_history)
 
         # ── Direct handbook context (always fetched — supplements vector search) ─
-        direct_context = self._build_handbook_direct_context(query, faculty_slug, conversation_history)
+        direct_context, _lookup_meta = self._build_handbook_direct_context(query, faculty_slug, conversation_history)
 
         # ── Vector retrieval (used alongside direct context) ──────────────────
         effective_top_k = self._resolve_top_k(top_k, model_profile)
@@ -1182,29 +1189,20 @@ class ScienceAdvisor:
 
         intent = _classify_query_intent(query, conversation_history)
 
-        yield _status("Looking Through The Handbook...")
+        direct_context, lookup_meta = self._build_handbook_direct_context(query, faculty_slug, conversation_history)
 
-        direct_context = self._build_handbook_direct_context(query, faculty_slug, conversation_history)
-
-        # Emit a more specific status if we matched a major or course from the query
-        course_codes = re.findall(r"\b[A-Z]{3,4}\d{4}[A-Z]?\b", query.upper())
-        major_name_match = re.search(
-            r"(applied statistics|mathematical statistics|statistics.*data science|"
-            r"computer science|artificial intelligence|applied mathematics|mathematics|"
-            r"physics|chemistry|biology|marine biology|quantitative biology|"
-            r"astrophysics|geology|biochemistry|genetics|archaeology|"
-            r"environmental.*science|geographical science|ocean.*science|"
-            r"anatomy|physiology|business computing|computer engineering)",
-            query,
-            re.IGNORECASE,
-        )
-        if course_codes:
-            yield _status(f"Reading {course_codes[0]} Course Details...")
-        elif major_name_match:
-            major_title = major_name_match.group(1).title()
-            yield _status(f"Looking at {major_title} Major...")
+        # Emit what was actually found — no hardcoded topic guessing
+        found_courses = lookup_meta.get("courses", [])
+        found_majors = lookup_meta.get("majors", [])
+        if found_courses and found_majors:
+            yield _status(f"Reading {found_courses[0]} · Looking at {found_majors[0]} Major...")
+        elif found_courses:
+            suffix = ", ".join(found_courses[:3])
+            yield _status(f"Reading {suffix} Course Description{'s' if len(found_courses) > 1 else ''}...")
+        elif found_majors:
+            yield _status(f"Looking at {' & '.join(found_majors)} Major{'s' if len(found_majors) > 1 else ''}...")
         else:
-            yield _status("Searching Relevant Sections...")
+            yield _status("Searching The Handbook...")
 
         effective_top_k = self._resolve_top_k(top_k, model_profile)
         retrieval = self.retriever.search(
@@ -1215,6 +1213,16 @@ class ScienceAdvisor:
         )
         _MIN_SCORE = 0.45
         hits = [h for h in retrieval.get("hits", []) if float(h.get("score", 0)) >= _MIN_SCORE]
+
+        # Show the titles of the top retrieved sections so the user can see what's being read
+        if hits:
+            top_titles = list(dict.fromkeys(
+                h.get("title", "").split("—")[0].strip()
+                for h in hits[:3]
+                if h.get("title")
+            ))
+            if top_titles:
+                yield _status(f"Reading: {' · '.join(top_titles[:2])}...")
 
         if self._include_policy_context(model_profile):
             yield _status("Checking Faculty Rules...")
