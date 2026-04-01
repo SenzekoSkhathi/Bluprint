@@ -57,6 +57,38 @@ function parseCourseCodes(text: string): string[] {
 }
 
 /**
+ * Returns true if `code` is considered satisfied by anything in `knownCodes`.
+ * Handles slash-notation in both directions:
+ *   - Required "CSC1015F/S" → satisfied by completed "CSC1015F" or "CSC1015S"
+ *   - Required "CSC1015F"   → satisfied by scheduled "CSC1015F/S" in knownCodes
+ */
+function isSatisfied(code: string, knownCodes: Set<string>): boolean {
+  if (knownCodes.has(code)) return true;
+
+  // Forward: slash-notation required code → check each suffix variant
+  if (code.includes("/")) {
+    const compoundStart = code.search(/[A-Z](?:\/[A-Z])+$/);
+    if (compoundStart !== -1) {
+      const base = code.slice(0, compoundStart);
+      const suffixes = code.slice(compoundStart).split("/");
+      if (suffixes.some((s) => knownCodes.has(`${base}${s}`))) return true;
+    }
+  }
+
+  // Reverse: exact required code → check if a slash-notation entry covers it
+  for (const known of knownCodes) {
+    if (!known.includes("/")) continue;
+    const compoundStart = known.search(/[A-Z](?:\/[A-Z])+$/);
+    if (compoundStart === -1) continue;
+    const base = known.slice(0, compoundStart);
+    const suffixes = known.slice(compoundStart).split("/");
+    if (suffixes.some((s) => `${base}${s}` === code)) return true;
+  }
+
+  return false;
+}
+
+/**
  * For each required course, counts how many OTHER required courses list it
  * as a prerequisite. A higher score means the course is more foundational
  * and should be scheduled earlier to unlock the most future progress.
@@ -92,7 +124,7 @@ function collectSuggestedElectives(
   input.majorCombinations.forEach((combo) => {
     if (!registeredNames.has(combo.major.trim().toLowerCase())) return;
     combo.suggestedElectiveCodes.forEach((code) => {
-      if (!satisfiedCodes.has(code)) result.add(code);
+      if (!isSatisfied(code, satisfiedCodes)) result.add(code);
     });
   });
   return result;
@@ -228,7 +260,7 @@ export function generateAutoGraduationPlans(
   }
 
   const unresolvedCoreCodes = Array.from(majorCoreCodes).filter(
-    (code) => !existingCompletedCodes.has(code),
+    (code) => !isSatisfied(code, existingCompletedCodes),
   );
 
   const currentCredits =
@@ -258,7 +290,12 @@ export function generateAutoGraduationPlans(
         .filter((course) => course.semester === semesterName || (course.semester === "FY" && semesterName === "Semester 1"))
         .filter((course) => {
           const prereqs = parseCourseCodes(course.prerequisites);
-          return prereqs.every((prereq) => satisfiedCodes.has(prereq));
+          if (prereqs.length === 0) return true;
+          // Prerequisites text may contain OR alternatives (inflating the parsed code
+          // list). Allow the course if at most half the extracted codes are unsatisfied
+          // so that students who completed one valid alternative still qualify.
+          const unsatisfied = prereqs.filter((p) => !isSatisfied(p, satisfiedCodes)).length;
+          return unsatisfied <= Math.floor(prereqs.length / 2);
         })
         .sort((a, b) => {
           // 1. Higher unlock score first — prioritise foundational courses
@@ -359,7 +396,9 @@ export function generateAutoGraduationPlans(
         .filter((c) => c.semester === semesterName || (c.semester === "FY" && semesterName === "Semester 1"))
         .filter((c) => {
           const prereqs = parseCourseCodes(c.prerequisites);
-          return prereqs.every((p) => satisfiedCodes.has(p));
+          if (prereqs.length === 0) return true;
+          const unsatisfied = prereqs.filter((p) => !isSatisfied(p, satisfiedCodes)).length;
+          return unsatisfied <= Math.floor(prereqs.length / 2);
         })
         .sort((a, b) => b.credits - a.credits);
 
@@ -466,7 +505,7 @@ export function generateAutoGraduationPlans(
           if (!comb) return;
 
           comb.suggestedElectiveCodes.forEach((code) => {
-            if (satisfiedCodes.has(code)) return;
+            if (isSatisfied(code, satisfiedCodes)) return;
             if (seenElectives.has(code)) return;
             const entry = catalogByCode.get(code);
             if (!entry) return;
