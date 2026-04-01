@@ -1428,6 +1428,7 @@ export function getScienceAdvisorChatHistory() {
 
 export function getHandbookAdvisorChatHistory(payload?: {
   faculty_slug?: string;
+  student_number?: string;
 }) {
   return requestJson<ScienceAdvisorChatHistoryResponse>(
     "/advisor/handbook/chats/list",
@@ -1435,6 +1436,7 @@ export function getHandbookAdvisorChatHistory(payload?: {
       method: "POST",
       body: JSON.stringify({
         faculty_slug: payload?.faculty_slug ?? "science",
+        student_number: payload?.student_number,
       }),
     },
   );
@@ -1462,6 +1464,7 @@ export function syncHandbookAdvisorChatHistory(payload: {
   current_thread_id: string | null;
   threads: ScienceAdvisorChatThreadPayload[];
   faculty_slug?: string;
+  student_number?: string;
 }) {
   return requestJson<ScienceAdvisorChatHistoryResponse>(
     "/advisor/handbook/chats/sync",
@@ -1494,6 +1497,7 @@ export function renameHandbookAdvisorChatThread(payload: {
   thread_id: string;
   title: string;
   faculty_slug?: string;
+  student_number?: string;
 }) {
   return requestJson<{ ok: boolean }>("/advisor/handbook/chats/rename", {
     method: "POST",
@@ -1519,6 +1523,7 @@ export function deleteScienceAdvisorChatThread(payload: { thread_id: string }) {
 export function deleteHandbookAdvisorChatThread(payload: {
   thread_id: string;
   faculty_slug?: string;
+  student_number?: string;
 }) {
   return requestJson<{ ok: boolean }>("/advisor/handbook/chats/delete", {
     method: "POST",

@@ -1260,6 +1260,7 @@ export default function BluBot({
         current_thread_id: threadId,
         threads: threads.map(toBackendChatThread),
         faculty_slug: primaryFacultySlug,
+        student_number: userContext?.studentNumber,
       });
     } catch (error) {
       console.error(
@@ -1426,6 +1427,7 @@ export default function BluBot({
           try {
             const backendHistory = await getHandbookAdvisorChatHistory({
               faculty_slug: primaryFacultySlug,
+              student_number: userContext?.studentNumber,
             });
             if (!isMounted) {
               return;
@@ -1709,6 +1711,7 @@ export default function BluBot({
         thread_id: threadId,
         title: trimmed,
         faculty_slug: primaryFacultySlug,
+        student_number: userContext?.studentNumber,
       }).catch((error: unknown) => {
         console.error(
           "Backend rename unavailable; keeping local rename only:",
@@ -1749,6 +1752,7 @@ export default function BluBot({
       void deleteHandbookAdvisorChatThread({
         thread_id: threadId,
         faculty_slug: primaryFacultySlug,
+        student_number: userContext?.studentNumber,
       }).catch((error: unknown) => {
         console.error(
           "Backend delete unavailable; keeping local deletion only:",

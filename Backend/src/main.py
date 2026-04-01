@@ -95,6 +95,7 @@ class HandbookAdvisorRequest(BaseModel):
 
 class AdvisorChatListRequest(BaseModel):
     faculty_slug: str = Field(default="science", min_length=2)
+    student_number: str | None = None
 
 
 class AdvisorChatMessageInput(BaseModel):
@@ -117,17 +118,20 @@ class AdvisorChatSyncRequest(BaseModel):
     current_thread_id: str | None = None
     threads: list[AdvisorChatThreadInput] = Field(default_factory=list)
     faculty_slug: str = Field(default="science", min_length=2)
+    student_number: str | None = None
 
 
 class AdvisorChatRenameRequest(BaseModel):
     thread_id: str = Field(min_length=1)
     title: str = Field(min_length=1)
     faculty_slug: str = Field(default="science", min_length=2)
+    student_number: str | None = None
 
 
 class AdvisorChatDeleteRequest(BaseModel):
     thread_id: str = Field(min_length=1)
     faculty_slug: str = Field(default="science", min_length=2)
+    student_number: str | None = None
 
 
 class CourseCatalogRequest(BaseModel):
@@ -208,8 +212,10 @@ def _resolve_chat_faculty(requested: str | None) -> str:
     return normalized if normalized in allowed else "science"
 
 
-def _chat_history_path(faculty_slug: str) -> Path:
+def _chat_history_path(faculty_slug: str, student_number: str | None = None) -> Path:
     chats_dir = settings.resolved_data_dir / "advisor-chats"
+    if student_number:
+        chats_dir = chats_dir / student_number.strip().upper()
     chats_dir.mkdir(parents=True, exist_ok=True)
     return chats_dir / f"{faculty_slug}.json"
 
@@ -221,8 +227,8 @@ def _default_chat_payload() -> dict[str, Any]:
     }
 
 
-def _load_chat_payload(faculty_slug: str) -> dict[str, Any]:
-    path = _chat_history_path(faculty_slug)
+def _load_chat_payload(faculty_slug: str, student_number: str | None = None) -> dict[str, Any]:
+    path = _chat_history_path(faculty_slug, student_number)
     if not path.exists():
         return _default_chat_payload()
     try:
@@ -242,14 +248,14 @@ def _load_chat_payload(faculty_slug: str) -> dict[str, Any]:
     }
 
 
-def _save_chat_payload(faculty_slug: str, payload: dict[str, Any]) -> dict[str, Any]:
+def _save_chat_payload(faculty_slug: str, payload: dict[str, Any], student_number: str | None = None) -> dict[str, Any]:
     safe_payload = {
         "current_thread_id": payload.get("current_thread_id")
         if isinstance(payload.get("current_thread_id"), str)
         else None,
         "threads": payload.get("threads") if isinstance(payload.get("threads"), list) else [],
     }
-    path = _chat_history_path(faculty_slug)
+    path = _chat_history_path(faculty_slug, student_number)
     path.write_text(json.dumps(safe_payload, ensure_ascii=True, indent=2), encoding="utf-8")
     return safe_payload
 
@@ -1221,7 +1227,7 @@ async def ask_handbook_advisor_with_upload(
 @app.post("/advisor/handbook/chats/list")
 def list_handbook_advisor_chats(request: AdvisorChatListRequest) -> dict:
     faculty_slug = _resolve_chat_faculty(request.faculty_slug)
-    return _load_chat_payload(faculty_slug)
+    return _load_chat_payload(faculty_slug, request.student_number)
 
 
 @app.post("/advisor/handbook/chats/sync")
@@ -1231,13 +1237,13 @@ def sync_handbook_advisor_chats(request: AdvisorChatSyncRequest) -> dict:
         "current_thread_id": request.current_thread_id,
         "threads": [thread.model_dump() for thread in request.threads],
     }
-    return _save_chat_payload(faculty_slug, payload)
+    return _save_chat_payload(faculty_slug, payload, request.student_number)
 
 
 @app.post("/advisor/handbook/chats/rename")
 def rename_handbook_advisor_chat_thread(request: AdvisorChatRenameRequest) -> dict:
     faculty_slug = _resolve_chat_faculty(request.faculty_slug)
-    payload = _load_chat_payload(faculty_slug)
+    payload = _load_chat_payload(faculty_slug, request.student_number)
     renamed = False
     for row in payload.get("threads", []):
         if not isinstance(row, dict):
@@ -1249,14 +1255,14 @@ def rename_handbook_advisor_chat_thread(request: AdvisorChatRenameRequest) -> di
         renamed = True
         break
 
-    _save_chat_payload(faculty_slug, payload)
+    _save_chat_payload(faculty_slug, payload, request.student_number)
     return {"ok": renamed}
 
 
 @app.post("/advisor/handbook/chats/delete")
 def delete_handbook_advisor_chat_thread(request: AdvisorChatDeleteRequest) -> dict:
     faculty_slug = _resolve_chat_faculty(request.faculty_slug)
-    payload = _load_chat_payload(faculty_slug)
+    payload = _load_chat_payload(faculty_slug, request.student_number)
 
     original_threads = payload.get("threads", [])
     filtered_threads = [
@@ -1269,7 +1275,7 @@ def delete_handbook_advisor_chat_thread(request: AdvisorChatDeleteRequest) -> di
     if payload.get("current_thread_id") == request.thread_id:
         payload["current_thread_id"] = None
 
-    _save_chat_payload(faculty_slug, payload)
+    _save_chat_payload(faculty_slug, payload, request.student_number)
     return {"ok": deleted}
 
 
