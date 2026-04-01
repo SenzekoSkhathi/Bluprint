@@ -1202,7 +1202,7 @@ export default function BluBot({
   );
   const [, setIsFallbackGuidance] = useState(false);
   const [selectedModelProfile, setSelectedModelProfile] =
-    useState<ScienceAdvisorModelProfile>("thinking");
+    useState<ScienceAdvisorModelProfile>("fast");
   const [isModelMenuOpen, setIsModelMenuOpen] = useState(false);
   const [selectedUpload, setSelectedUpload] =
     useState<DocumentPicker.DocumentPickerAsset | null>(null);
