@@ -1328,7 +1328,7 @@ const luyandaInProgress: Course[] = [
 
 // ─────────────────────────────────────────────────────────────
 // USER 13 — Thabo Nkosi
-// BSc Applied Mathematics | Year 2 | MAM02-Y1-A + MAM02-Y2-A
+// BSc Applied Mathematics | Year 2 | MAM01-Y1-A + MAM01-Y2-A
 // SCENARIO: Passing (Average) — just clearing every course 50–55%, on track
 // Y1 earned 72 ✓ (exactly) | Y2 forecast 156 > 144 ✓ | No alerts
 // ─────────────────────────────────────────────────────────────
@@ -2688,8 +2688,8 @@ export const mockUsers: MockUser[] = [
     password: "Thabo@UCT13",
     degree: "BSc Applied Mathematics",
     year: 2,
-    majors: ["Mathematics"],
-    combinationIds: ["MAM02-Y1-A", "MAM02-Y2-A"],
+    majors: ["Applied Mathematics"],
+    combinationIds: ["MAM01-Y1-A", "MAM01-Y2-A"],
     completedCourses: { passed: thaboPassed, failed: thaboFailed },
     coursesInProgress: thaboInProgress,
     academicProgress: computeProgress(
