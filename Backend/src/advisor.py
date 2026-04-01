@@ -1172,10 +1172,39 @@ class ScienceAdvisor:
         # We reuse the same context/prompt building logic by calling answer()
         # except we intercept just before generate_content.
 
+        def _status(text: str) -> str:
+            return f"data: {json.dumps({'type': 'status', 'text': text})}\n\n"
+
         # ── Shared setup (mirrors answer()) ──────────────────────────────────
         faculty_label = _FACULTY_LABELS.get(faculty_slug, faculty_slug.title())
+
+        yield _status("Thinking...")
+
         intent = _classify_query_intent(query, conversation_history)
+
+        yield _status("Looking Through The Handbook...")
+
         direct_context = self._build_handbook_direct_context(query, faculty_slug, conversation_history)
+
+        # Emit a more specific status if we matched a major or course from the query
+        course_codes = re.findall(r"\b[A-Z]{3,4}\d{4}[A-Z]?\b", query.upper())
+        major_name_match = re.search(
+            r"(applied statistics|mathematical statistics|statistics.*data science|"
+            r"computer science|artificial intelligence|applied mathematics|mathematics|"
+            r"physics|chemistry|biology|marine biology|quantitative biology|"
+            r"astrophysics|geology|biochemistry|genetics|archaeology|"
+            r"environmental.*science|geographical science|ocean.*science|"
+            r"anatomy|physiology|business computing|computer engineering)",
+            query,
+            re.IGNORECASE,
+        )
+        if course_codes:
+            yield _status(f"Reading {course_codes[0]} Course Details...")
+        elif major_name_match:
+            major_title = major_name_match.group(1).title()
+            yield _status(f"Looking at {major_title} Major...")
+        else:
+            yield _status("Searching Relevant Sections...")
 
         effective_top_k = self._resolve_top_k(top_k, model_profile)
         retrieval = self.retriever.search(
@@ -1188,6 +1217,7 @@ class ScienceAdvisor:
         hits = [h for h in retrieval.get("hits", []) if float(h.get("score", 0)) >= _MIN_SCORE]
 
         if self._include_policy_context(model_profile):
+            yield _status("Checking Faculty Rules...")
             policy_context, policy_citations = self._build_policy_context(
                 run_id=retrieval.get("run_id"), faculty_slug=faculty_slug
             )
@@ -1196,6 +1226,7 @@ class ScienceAdvisor:
 
         ctx = student_context or {}
         if intent == "personal":
+            yield _status("Reviewing Your Academic Profile...")
             student_block = self._build_student_context_block(ctx)
             raw_planned = ctx.get("planned_courses") or []
             raw_majors = ctx.get("selected_majors") or []
@@ -1209,6 +1240,8 @@ class ScienceAdvisor:
         else:
             student_block = ""
             validation_block = ""
+
+        yield _status("Preparing Response...")
 
         handbook_sections: list[str] = []
         if direct_context:

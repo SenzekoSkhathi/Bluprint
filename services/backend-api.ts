@@ -1203,6 +1203,7 @@ export function askHandbookAdvisor(payload: {
 }
 
 export interface BluBotStreamCallbacks {
+  onStatus?: (text: string) => void;
   onToken: (text: string) => void;
   onDone: (meta: { citations: unknown[]; intent: string; run_id?: string }) => void;
   onError: (message: string) => void;
@@ -1266,7 +1267,7 @@ export async function askHandbookAdvisorStream(
 
         try {
           const event = JSON.parse(raw) as {
-            type: "token" | "done" | "error";
+            type: "status" | "token" | "done" | "error";
             text?: string;
             citations?: unknown[];
             intent?: string;
@@ -1274,7 +1275,9 @@ export async function askHandbookAdvisorStream(
             message?: string;
           };
 
-          if (event.type === "token" && event.text) {
+          if (event.type === "status" && event.text) {
+            callbacks.onStatus?.(event.text);
+          } else if (event.type === "token" && event.text) {
             callbacks.onToken(event.text);
           } else if (event.type === "done") {
             callbacks.onDone({

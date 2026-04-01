@@ -1222,10 +1222,8 @@ export default function BluBot({
     }
     return `Cross-major routing context: primary faculty is science; evaluate major guidance using cross-faculty pathways for ${crossFaculties}.`;
   }, [studentContextPayload]);
+  const [streamStatus, setStreamStatus] = useState<string>("");
   const scrollButtonOpacity = useRef(new Animated.Value(0)).current;
-  const typingDot1 = useRef(new Animated.Value(0)).current;
-  const typingDot2 = useRef(new Animated.Value(0)).current;
-  const typingDot3 = useRef(new Animated.Value(0)).current;
   const spinValue = useRef(new Animated.Value(0)).current;
   const activeThreadPendingCount = pendingByThread[currentThreadId] ?? 0;
   const isLoading = activeThreadPendingCount > 0;
@@ -1902,19 +1900,20 @@ export default function BluBot({
         let accumulatedText = "";
         let streamedCitations: ScienceAdvisorCitation[] = [];
         let streamErrored = false;
+        let firstTokenReceived = false;
 
-        // Insert an empty placeholder so the user sees the bot "thinking".
-        const placeholderMessage: Message = {
-          id: pendingBotMessageId,
-          text: "…",
-          sender: "bot",
-          timestamp: new Date(),
-        };
-        upsertMessageInThread(targetThreadId, placeholderMessage);
+        setStreamStatus("Thinking...");
 
         await new Promise<void>((resolve) => {
           const callbacks: BluBotStreamCallbacks = {
+            onStatus(text) {
+              setStreamStatus(text);
+            },
             onToken(token) {
+              if (!firstTokenReceived) {
+                firstTokenReceived = true;
+                setStreamStatus("");
+              }
               accumulatedText += token;
               upsertMessageInThread(targetThreadId, {
                 id: pendingBotMessageId,
@@ -1925,11 +1924,13 @@ export default function BluBot({
             },
             onDone(meta) {
               streamedCitations = (meta.citations ?? []) as ScienceAdvisorCitation[];
+              setStreamStatus("");
               resolve();
             },
             onError(message) {
               streamErrored = true;
               accumulatedText = message;
+              setStreamStatus("");
               resolve();
             },
           };
@@ -2011,6 +2012,7 @@ export default function BluBot({
       }
     } finally {
       adjustPendingForThread(targetThreadId, -1);
+      setStreamStatus("");
     }
   };
 
@@ -2141,7 +2143,7 @@ export default function BluBot({
 
     return (
       <View style={styles.messageContainer}>
-        <View style={styles.messageRow}>
+        <View style={[styles.messageRow, { alignItems: "center" }]}>
           <View style={styles.botAvatarSpinWrap}>
             <Animated.View
               style={[
@@ -2157,6 +2159,11 @@ export default function BluBot({
               />
             </View>
           </View>
+          {streamStatus ? (
+            <View style={styles.streamStatusWrap}>
+              <Text style={styles.streamStatusText}>{streamStatus}</Text>
+            </View>
+          ) : null}
         </View>
       </View>
     );
@@ -3599,6 +3606,16 @@ const styles = StyleSheet.create({
     height: 40,
     justifyContent: "center",
     alignItems: "center",
+    flexShrink: 0,
+  },
+  streamStatusWrap: {
+    marginLeft: 10,
+    justifyContent: "center",
+  },
+  streamStatusText: {
+    fontSize: 13,
+    color: theme.colors.textMuted,
+    fontStyle: "italic",
   },
   botAvatarSpinRing: {
     position: "absolute",
