@@ -640,6 +640,58 @@ class ScienceAdvisor:
     ) -> bool:
         return model_profile != "fast"
 
+    def _generate_status_labels(
+        self,
+        query: str,
+        intent: str,
+        found_courses: list[str],
+        found_majors: list[str],
+    ) -> list[str]:
+        """Ask Gemini to generate 3 contextual loading status phrases for this query.
+
+        Uses the fast model with zero thinking budget so the call is cheap and quick.
+        Falls back to an empty list on any error — callers use smart heuristic fallbacks.
+        """
+        hints: list[str] = []
+        if found_courses:
+            hints.append(f"courses mentioned: {', '.join(found_courses[:2])}")
+        if found_majors:
+            hints.append(f"majors mentioned: {', '.join(found_majors[:2])}")
+        hint_str = f" ({'; '.join(hints)})" if hints else ""
+
+        prompt = (
+            f'Student query{hint_str}: "{query[:200]}"\n'
+            f"Query type: {intent}\n\n"
+            "Generate 3 short loading status messages for an AI academic advisor answering this query. "
+            "Rules: 3-6 words each, action-oriented, end with '...', specific to what is actually being "
+            "checked or read for THIS query — not generic phrases like 'Checking Faculty Rules...' or "
+            "'Preparing Response...' unless nothing more specific applies. "
+            "Return ONLY a JSON array of 3 strings, no other text."
+        )
+        try:
+            response = self.client.models.generate_content(
+                model=self._resolve_model(None),
+                contents=prompt,
+                config={
+                    "temperature": 0.4,
+                    "max_output_tokens": 80,
+                    "thinking_config": {"thinking_budget": 0},
+                },
+            )
+            raw = response.text.strip()
+            if raw.startswith("```"):
+                raw = re.sub(r"^```[a-z]*\n?", "", raw).rstrip("`").strip()
+            labels = json.loads(raw)
+            if isinstance(labels, list) and len(labels) >= 2:
+                return [
+                    (s.strip() if s.strip().endswith("...") else s.strip() + "...")
+                    for s in labels[:3]
+                    if isinstance(s, str) and s.strip()
+                ]
+        except Exception:
+            pass
+        return []
+
     def _build_generation_config(
         self,
         model_profile: Literal["fast", "thinking"] | None,
@@ -1191,18 +1243,33 @@ class ScienceAdvisor:
 
         direct_context, lookup_meta = self._build_handbook_direct_context(query, faculty_slug, conversation_history)
 
-        # Emit what was actually found — no hardcoded topic guessing
         found_courses = lookup_meta.get("courses", [])
         found_majors = lookup_meta.get("majors", [])
+
+        # Ask the model to generate contextual status labels for this specific query.
+        # This runs after direct-context lookup so we already know which courses/majors
+        # are involved, giving the LLM enough signal to produce accurate labels.
+        ai_labels = self._generate_status_labels(query, intent, found_courses, found_majors)
+        _label_idx = 0
+
+        def _next_label(fallback: str) -> str:
+            nonlocal _label_idx
+            if _label_idx < len(ai_labels):
+                label = ai_labels[_label_idx]
+                _label_idx += 1
+                return label
+            return fallback
+
+        # Status 1 — what context was located
         if found_courses and found_majors:
-            yield _status(f"Reading {found_courses[0]} · Looking at {found_majors[0]} Major...")
+            fb1 = f"Reading {found_courses[0]} · {found_majors[0]} Major..."
         elif found_courses:
-            suffix = ", ".join(found_courses[:3])
-            yield _status(f"Reading {suffix} Course Description{'s' if len(found_courses) > 1 else ''}...")
+            fb1 = f"Reading {', '.join(found_courses[:3])} Description{'s' if len(found_courses) > 1 else ''}..."
         elif found_majors:
-            yield _status(f"Looking at {' & '.join(found_majors)} Major{'s' if len(found_majors) > 1 else ''}...")
+            fb1 = f"Looking at {' & '.join(found_majors)} Major{'s' if len(found_majors) > 1 else ''}..."
         else:
-            yield _status("Searching The Handbook...")
+            fb1 = "Searching The Handbook..."
+        yield _status(_next_label(fb1))
 
         effective_top_k = self._resolve_top_k(top_k, model_profile)
         retrieval = self.retriever.search(
@@ -1225,7 +1292,18 @@ class ScienceAdvisor:
                 yield _status(f"Reading: {' · '.join(top_titles[:2])}...")
 
         if self._include_policy_context(model_profile):
-            yield _status("Checking Faculty Rules...")
+            # Status 2 — policy/rules check, specific to what was asked
+            if found_courses and found_majors:
+                fb2 = f"Checking {found_majors[0]} Rules for {found_courses[0]}..."
+            elif found_majors:
+                fb2 = f"Checking {found_majors[0]} Requirements..."
+            elif found_courses:
+                fb2 = f"Checking Prerequisites for {found_courses[0]}..."
+            elif intent == "personal":
+                fb2 = "Cross-checking Your Degree Rules..."
+            else:
+                fb2 = "Reviewing Faculty Policies..."
+            yield _status(_next_label(fb2))
             policy_context, policy_citations = self._build_policy_context(
                 run_id=retrieval.get("run_id"), faculty_slug=faculty_slug
             )
@@ -1234,7 +1312,14 @@ class ScienceAdvisor:
 
         ctx = student_context or {}
         if intent == "personal":
-            yield _status("Reviewing Your Academic Profile...")
+            # Status 3 — personal profile check, specific to what was asked
+            if found_courses:
+                fb3 = f"Checking Your {found_courses[0]} Eligibility..."
+            elif found_majors:
+                fb3 = f"Reviewing Your {found_majors[0]} Progress..."
+            else:
+                fb3 = "Reviewing Your Academic Profile..."
+            yield _status(_next_label(fb3))
             student_block = self._build_student_context_block(ctx)
             raw_planned = ctx.get("planned_courses") or []
             raw_majors = ctx.get("selected_majors") or []
@@ -1249,7 +1334,14 @@ class ScienceAdvisor:
             student_block = ""
             validation_block = ""
 
-        yield _status("Preparing Response...")
+        # Final status before token streaming
+        if intent == "personal":
+            fb_final = "Putting It Together For You..."
+        elif found_courses or found_majors:
+            fb_final = "Compiling Your Answer..."
+        else:
+            fb_final = "Preparing Response..."
+        yield _status(_next_label(fb_final))
 
         handbook_sections: list[str] = []
         if direct_context:
