@@ -339,7 +339,12 @@ export default function Planner({
     () =>
       plannedCoursesProp.map((course, index) => {
         const rawSem = course.semester.toUpperCase().trim();
-        const isWholeYear = rawSem === "H" || rawSem === "W";
+        const wholeYear =
+          rawSem === "H" || rawSem === "W"
+            ? rawSem
+            : rawSem.startsWith("FY") || rawSem.includes("FULL YEAR")
+              ? "H"
+              : /([HW])\d*$/.exec(course.code.toUpperCase())?.[1];
         return {
           id: `seed-planned-${index}-${course.code}`,
           code: course.code,
@@ -352,7 +357,7 @@ export default function Planner({
             rawSem.includes("S2") || rawSem.includes("SEM 2")
               ? "Semester 2"
               : "Semester 1",
-          semesterCode: isWholeYear ? rawSem : undefined,
+          semesterCode: wholeYear ?? undefined,
           status: "Planned" as const,
         };
       }),
@@ -653,6 +658,20 @@ export default function Planner({
         ? "Semester 2"
         : "Semester 1";
 
+    const wholeYearCode = (sem: string, code?: string): string | undefined => {
+      const raw = sem.toUpperCase().trim();
+      // Explicit semester code
+      if (raw === "H" || raw === "W") return raw;
+      // "FY" = Full Year (used in mock/backend data)
+      if (raw.startsWith("FY") || raw.includes("FULL YEAR")) return "H";
+      // Fall back to the UCT course code suffix (e.g. MAM1043H, MAM1000W)
+      if (code) {
+        const suffix = code.toUpperCase().match(/([HW])\d*$/);
+        if (suffix) return suffix[1];
+      }
+      return undefined;
+    };
+
     const yearFromSemester = (sem: string): string => {
       const m = sem.match(/Year\s*(\d+)/i);
       return m ? `Year ${m[1]}` : "Year 1";
@@ -665,6 +684,7 @@ export default function Planner({
       credits: r.credits,
       year: yearFromSemester(r.semester),
       semester: normSem(r.semester),
+      semesterCode: wholeYearCode(r.semester, r.code),
       status: "Completed" as CourseStatus,
     }));
 
@@ -675,6 +695,7 @@ export default function Planner({
       credits: r.credits,
       year: yearFromSemester(r.semester),
       semester: normSem(r.semester),
+      semesterCode: wholeYearCode(r.semester, r.code),
       status: "In Progress" as CourseStatus,
     }));
 
@@ -3933,12 +3954,14 @@ const styles = StyleSheet.create({
     color: theme.colors.textSecondary,
   },
   wholeYearChips: {
-    flexDirection: Platform.OS === "web" ? "row" : "column",
-    flexWrap: "wrap",
-    gap: theme.spacing.sm,
+    flexDirection: "column",
+    gap: 4,
   },
   wholeYearChip: {
-    flex: Platform.OS === "web" ? undefined : undefined,
+    width: "100%",
+    paddingVertical: 5,
+    alignItems: "center",
+    marginBottom: 0,
   },
   semCol: {
     flex: 1,
