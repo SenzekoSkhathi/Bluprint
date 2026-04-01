@@ -146,6 +146,41 @@ interface MajorRequirementGap {
   recommendedSemester?: string;
 }
 
+/**
+ * Converts handbook semester labels into the canonical values the planner
+ * expects: "Semester 1", "Semester 2", or "FY".
+ *
+ * Courses offered in both semesters ("First or Second Semester (F/S)") are
+ * mapped to "FY" so the planner can schedule them in whichever term fits.
+ */
+function normalizeSemesterLabel(raw: string): string {
+  const s = (raw ?? "").trim().toLowerCase();
+
+  // Both semesters / flexible offering → treat as full-year so planner can use either term
+  if (
+    s.includes("first or second") ||
+    s.includes("first semester, second semester") ||
+    s.includes("f/s")
+  ) return "FY";
+
+  // First Semester
+  if (s.startsWith("first semester") || s === "semester 1" || /semester\s*1/.test(s)) return "Semester 1";
+
+  // Second Semester
+  if (s.startsWith("second semester") || s === "semester 2" || /semester\s*2/.test(s)) return "Semester 2";
+
+  // Full year / half year
+  if (
+    s === "fy" ||
+    s.startsWith("full year") ||
+    s.startsWith("year course") ||
+    s.startsWith("second half") ||
+    s.startsWith("preliminary block")
+  ) return "FY";
+
+  return raw;
+}
+
 function normalizeMajorComparable(value: string): string {
   return value
     .toLowerCase()
@@ -376,7 +411,7 @@ export default function Planner({
           group: course.group,
           credits: course.credits,
           nqf_level: course.nqf_level,
-          semester: course.semester,
+          semester: normalizeSemesterLabel(course.semester ?? ""),
           department: course.department,
           delivery: course.delivery,
           prerequisites: course.prerequisites,
