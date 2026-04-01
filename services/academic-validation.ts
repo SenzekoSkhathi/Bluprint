@@ -556,18 +556,25 @@ export function validateAcademicPlan({
   // Courses without parseable times generate an "unconfirmed" info notice only
   // when there IS at least one real clash in the same term (to avoid noise).
   //
-  // Co-schedulable exemptions: courses the UCT handbook explicitly states can
-  // be taken concurrently because lectures are arranged so they do not clash.
-  // Any pair where BOTH codes are in this set is exempt from clash reporting.
+  // Co-schedulable exemptions — two sources:
   //
-  // MAM Year 2 — handbook note (MAM2040F): "This course can be taken in
-  // conjunction with MAM2041F as lectures are arranged so that this is possible."
+  // 1. HANDBOOK_COSCHEDULABLE hardcoded set: courses the handbook explicitly
+  //    states can be taken concurrently.
   //
-  // CSC Year 3 — all period-3 CS electives (CSC3041F, CSC3042F, CSC3043S,
-  // CSC3044S, CSC3024S) share the same period slot by design; students in
-  // the AI and CS majors routinely take two or more of these concurrently.
+  // 2. AUTOMATIC split-credit detection: UCT structures companion courses so
+  //    each carries half the credits of a standard semester course for that
+  //    year level, and their lectures are timetabled to not overlap:
+  //      NQF5 (Y1): standard 18cr → companion pair each 9cr
+  //      NQF6 (Y2): standard 24cr → companion pair each 12cr
+  //      NQF7 (Y3+): standard 36cr → companion pair each 18cr
+  //    Any two courses in the same semester with the same NQF level whose
+  //    individual credits exactly equal half the standard for that level are
+  //    treated as intentional companions and exempt from clash reporting.
+  //    Example: MAM2042S (12cr, NQF6) + MAM2043S (12cr, NQF6) → exempt.
+  //    Example: CSC3041F (18cr, NQF7) + CSC3042F (18cr, NQF7) → exempt.
+
   const HANDBOOK_COSCHEDULABLE = new Set([
-    // MAM Year 2
+    // MAM Year 2 — explicitly co-schedulable per handbook notes
     "MAM2000W",
     "MAM2004F",
     "MAM2005S",
@@ -583,13 +590,43 @@ export function validateAcademicPlan({
     "MAM2041F",
     "MAM2046F",
     "MAM2047S",
-    // CSC Year 3 (period-3 electives)
+    // CSC Year 3 (period-3 electives — shared slot by design)
     "CSC3024S",
     "CSC3041F",
     "CSC3042F",
     "CSC3043S",
     "CSC3044S",
   ]);
+
+  // Standard semester credits by NQF level — used for auto split-credit detection.
+  const NQF_STANDARD_CREDITS: Record<number, number> = {
+    5: 18, // Year 1
+    6: 24, // Year 2
+    7: 36, // Year 3+
+    8: 36, // Honours/postgrad
+  };
+
+  /**
+   * Returns true when two courses sharing a lecture slot are intentional
+   * split-credit companions — i.e. each carries exactly half the standard
+   * semester credits for their NQF level, meaning the handbook timetabled
+   * them to run concurrently on purpose.
+   */
+  function isSplitCreditCompanion(codeA: string, codeB: string): boolean {
+    const entryA = catalogByCode.get(codeA);
+    const entryB = catalogByCode.get(codeB);
+    if (!entryA || !entryB) return false;
+
+    const nqfA = entryA.nqf_level;
+    const nqfB = entryB.nqf_level;
+    if (!nqfA || !nqfB || nqfA !== nqfB) return false;
+
+    const standard = NQF_STANDARD_CREDITS[nqfA];
+    if (!standard) return false;
+
+    const half = standard / 2;
+    return entryA.credits === half && entryB.credits === half;
+  }
   {
     type CourseEntry = { code: string; slots: ReturnType<typeof parseLectureTimes> };
     const termCourseEntries = new Map<string, CourseEntry[]>();
@@ -644,7 +681,9 @@ export function validateAcademicPlan({
         // Check if any non-exempt pair exists before marking as confirmed clash.
         const hasNonExemptPair = codes.some((a, i) =>
           codes.slice(i + 1).some(
-            (b) => !(HANDBOOK_COSCHEDULABLE.has(a) && HANDBOOK_COSCHEDULABLE.has(b)),
+            (b) =>
+              !(HANDBOOK_COSCHEDULABLE.has(a) && HANDBOOK_COSCHEDULABLE.has(b)) &&
+              !isSplitCreditCompanion(a, b),
           ),
         );
         if (hasNonExemptPair) hasConfirmedClash = true;
@@ -658,9 +697,13 @@ export function validateAcademicPlan({
             if (reportedPairs.has(pair)) continue;
             reportedPairs.add(pair);
 
-            // Exempt pairs where both courses are in the MAM Year 2 co-schedulable
-            // set — the handbook explicitly arranges their lectures to avoid clashes.
-            if (HANDBOOK_COSCHEDULABLE.has(codes[i]) && HANDBOOK_COSCHEDULABLE.has(codes[j])) {
+            // Exempt pairs that are explicitly co-schedulable per the handbook,
+            // or are auto-detected split-credit companions (each = half the
+            // standard semester credits for their NQF level).
+            if (
+              (HANDBOOK_COSCHEDULABLE.has(codes[i]) && HANDBOOK_COSCHEDULABLE.has(codes[j])) ||
+              isSplitCreditCompanion(codes[i], codes[j])
+            ) {
               continue;
             }
 
