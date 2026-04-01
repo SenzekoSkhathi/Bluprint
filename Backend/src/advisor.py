@@ -155,15 +155,23 @@ def _format_major_for_context(entry: dict[str, Any]) -> str:
     if min_credits:
         lines.append(f"Minimum credits: {min_credits}")
 
+    notes = payload.get("notes", "")
+    if notes:
+        lines.append(f"Notes: {notes}")
+
     years_list: list[dict[str, Any]] = payload.get("years", [])
     curriculum = payload.get("curriculum")
 
     if years_list:
         for year_data in years_list[:4]:
             year_num = year_data.get("year") or year_data.get("year_number", "?")
-            label = year_data.get("label") or f"Year {year_num}"
+            year_label = year_data.get("label") or f"Year {year_num}"
             combos: list[dict[str, Any]] = year_data.get("combinations", [])
-            if combos:
+            if not combos:
+                continue
+
+            if len(combos) == 1:
+                # Only one option — emit it directly without "Option" labelling
                 combo = combos[0]
                 all_courses = combo.get("courses", [])
                 codes = [
@@ -172,7 +180,7 @@ def _format_major_for_context(entry: dict[str, Any]) -> str:
                     if c
                 ]
                 if codes:
-                    lines.append(f"{label}: {', '.join(codes)}")
+                    lines.append(f"{year_label}: {', '.join(codes)}")
                 choose_groups = [
                     ("choose_one_of", "Choose 1 of"),
                     ("choose_two_of", "Choose 2 of"),
@@ -186,6 +194,36 @@ def _format_major_for_context(entry: dict[str, Any]) -> str:
                             for e in electives[:8]
                         ]
                         lines.append(f"  {label_prefix}: {', '.join(el_codes)}")
+            else:
+                # Multiple combinations — these are valid ALTERNATIVES the student may choose from.
+                # Show ALL of them so BluBot knows which courses are substitutable.
+                lines.append(f"{year_label} — choose ONE of the following combinations:")
+                for idx, combo in enumerate(combos, start=1):
+                    combo_desc = combo.get("description", "")
+                    all_courses = combo.get("courses", [])
+                    codes = [
+                        (c.get("code", "") if isinstance(c, dict) else str(c))
+                        for c in all_courses[:10]
+                        if c
+                    ]
+                    combo_label = f"  Option {idx}"
+                    if combo_desc:
+                        combo_label += f" ({combo_desc})"
+                    if codes:
+                        lines.append(f"{combo_label}: {', '.join(codes)}")
+                    choose_groups = [
+                        ("choose_one_of", "Choose 1 of"),
+                        ("choose_two_of", "Choose 2 of"),
+                        ("choose_three_of", "Choose 3 of"),
+                    ]
+                    for field, label_prefix in choose_groups:
+                        electives = combo.get(field, [])
+                        if electives:
+                            el_codes = [
+                                (e.get("code", "") if isinstance(e, dict) else str(e))
+                                for e in electives[:8]
+                            ]
+                            lines.append(f"    {label_prefix}: {', '.join(el_codes)}")
     elif isinstance(curriculum, dict):
         for key in sorted(curriculum.keys()):
             if re.match(r"year", key, re.IGNORECASE):
@@ -222,7 +260,12 @@ class ScienceAdvisor:
         _store = HandbookStore(Path(settings.resolved_data_dir))
         self._validator = HandbookValidator(_store)
 
-    def _build_handbook_direct_context(self, query: str, faculty_slug: str) -> str:
+    def _build_handbook_direct_context(
+        self,
+        query: str,
+        faculty_slug: str,
+        conversation_history: list[dict] | None = None,
+    ) -> str:
         """Look up courses and majors directly from handbook JSON files.
 
         This bypasses the vector retriever for known course codes and major
@@ -239,11 +282,24 @@ class ScienceAdvisor:
                 sections.append(_format_course_for_context(course))
 
         # 2. Major / degree name lookup
+        # Build the search text from the current question PLUS recent conversation turns
+        # so that follow-up questions like "can I take X instead?" still trigger the
+        # major lookup even when the student doesn't repeat the major name.
         question_match = re.search(
             r"Student question:\s*(.+)$", query, re.DOTALL | re.IGNORECASE
         )
         question_text = question_match.group(1).strip() if question_match else query
-        question_lower = question_text.lower()
+
+        # Append the last few conversation turns to give major-name context to follow-ups.
+        history_text = ""
+        if conversation_history:
+            recent_turns = conversation_history[-6:]  # last 3 back-and-forths
+            history_text = " ".join(
+                str(t.get("text", "")) for t in recent_turns if t.get("text")
+            )
+
+        # Search text: current question first (higher weight), then history
+        search_text = f"{question_text} {history_text}".lower()
 
         major_index = self._validator.handbook_store.load_major_index()
         scored: list[tuple[float, dict[str, Any]]] = []
@@ -252,15 +308,17 @@ class ScienceAdvisor:
             key_words = [w for w in re.split(r"\W+", key) if len(w) >= 3]
             if not key_words:
                 continue
-            hit_count = sum(1 for w in key_words if w in question_lower)
-            score = hit_count / len(key_words)
-            if score < 0.5:
+            # Score against current question (full weight) and history (half weight)
+            question_hits = sum(1 for w in key_words if w in question_text.lower())
+            history_hits = sum(1 for w in key_words if history_text and w in history_text.lower())
+            raw_score = (question_hits + 0.5 * history_hits) / len(key_words)
+            if raw_score < 0.4:
                 continue
             for entry in entries:
                 entry_faculty = entry.get("faculty_slug", "")
                 # Prefer the active faculty but allow cross-faculty if score is high.
                 weight = 1.0 if entry_faculty == faculty_slug else 0.7
-                scored.append((score * weight, entry))
+                scored.append((raw_score * weight, entry))
 
         scored.sort(key=lambda x: x[0], reverse=True)
         added_titles: set[str] = set()
@@ -760,7 +818,7 @@ class ScienceAdvisor:
         intent = _classify_query_intent(query, conversation_history)
 
         # ── Direct handbook context (always fetched — supplements vector search) ─
-        direct_context = self._build_handbook_direct_context(query, faculty_slug)
+        direct_context = self._build_handbook_direct_context(query, faculty_slug, conversation_history)
 
         # ── Vector retrieval (used alongside direct context) ──────────────────
         effective_top_k = self._resolve_top_k(top_k, model_profile)
@@ -1047,7 +1105,7 @@ class ScienceAdvisor:
         # ── Shared setup (mirrors answer()) ──────────────────────────────────
         faculty_label = _FACULTY_LABELS.get(faculty_slug, faculty_slug.title())
         intent = _classify_query_intent(query, conversation_history)
-        direct_context = self._build_handbook_direct_context(query, faculty_slug)
+        direct_context = self._build_handbook_direct_context(query, faculty_slug, conversation_history)
 
         effective_top_k = self._resolve_top_k(top_k, model_profile)
         retrieval = self.retriever.search(
