@@ -1533,9 +1533,18 @@ export default function Planner({
 
   // Only issues for planned courses count toward the save gate / banners.
   // Completed, in-progress, and past-semester courses are advisor-approved.
+  // Degree-level issues (major-requirement, graduation) are excluded here
+  // because they are already rendered in their own dedicated section via
+  // degreeRequirementIssues — counting them here too inflates the banner total.
   const handbookSaveIssues = useMemo<HandbookRuleValidationIssue[]>(
     () =>
       (handbookRuleValidation?.issues ?? []).filter((issue) => {
+        // Exclude degree-level issues — they live in their own UI section
+        if (
+          issue.category === "major-requirement" ||
+          issue.category === "graduation"
+        )
+          return false;
         if (
           issue.relatedCourseCode &&
           fixedCourseCodes.has(issue.relatedCourseCode)
@@ -1551,7 +1560,9 @@ export default function Planner({
           if (tYear && tSem && isPastTerm(tYear.trim(), tSem.trim()))
             return false;
         }
-        return true;
+        // Only count if it's scoped to a course or term — generic issues
+        // with no scope would be uncountable phantom entries in the banner.
+        return Boolean(issue.relatedCourseCode || issue.relatedTerm);
       }),
     [handbookRuleValidation, fixedCourseCodes, plannedCourseCodes],
   );
@@ -2582,7 +2593,10 @@ export default function Planner({
       </View>
 
       {/* ── Top-level blocker / warning banners ── */}
-      {totalBlockerCount > 0 && (
+      {/* Suppress counts while handbook check is still running — local issues
+          resolve instantly but handbook issues arrive async, so showing a
+          partial count would be misleading. */}
+      {!isHandbookValidationLoading && totalBlockerCount > 0 && (
         <View style={[styles.issueBanner, styles.issueBannerBlocker]}>
           <View style={[styles.issueDot, styles.issueDotBlocker]} />
           <Text style={styles.issueBannerText}>
@@ -2593,7 +2607,7 @@ export default function Planner({
           </Text>
         </View>
       )}
-      {totalBlockerCount === 0 && totalWarningCount > 0 && (
+      {!isHandbookValidationLoading && totalBlockerCount === 0 && totalWarningCount > 0 && (
         <View style={[styles.issueBanner, styles.issueBannerWarn]}>
           <View style={[styles.issueDot, styles.issueDotWarn]} />
           <Text style={[styles.issueBannerText, styles.issueBannerWarnText]}>
@@ -2604,7 +2618,8 @@ export default function Planner({
           </Text>
         </View>
       )}
-      {totalBlockerCount === 0 &&
+      {!isHandbookValidationLoading &&
+        totalBlockerCount === 0 &&
         totalWarningCount === 0 &&
         hasPlannerCourses && (
           <View style={[styles.issueBanner, styles.issueBannerOk]}>
