@@ -13,6 +13,7 @@ import type {
     CompletedCourseRecord,
     PlannerCourseStatus as CourseStatus,
     InProgressCourseRecord,
+    MajorCombination,
     PlannedCourse,
     ScheduleItem,
 } from "@/types/academic";
@@ -211,6 +212,38 @@ function getCombinationRequiredCodes(
   // Prefer explicit required_core when available. Fallback to courses list.
   const source = fromRequiredCore.length > 0 ? fromRequiredCore : fromCourses;
   return Array.from(new Set(source.filter((code) => code.length > 0)));
+}
+
+function buildLiveMajorCombinations(
+  entries: ScienceMajorEntry[],
+): MajorCombination[] {
+  const result: MajorCombination[] = [];
+  for (const entry of entries) {
+    for (const yearData of entry.years) {
+      for (const combo of yearData.combinations) {
+        const requiredCodes = getCombinationRequiredCodes(combo);
+        const electiveCodes = Array.from(
+          new Set(
+            [
+              ...combo.choose_one_of,
+              ...combo.choose_two_of,
+              ...combo.choose_three_of,
+            ]
+              .map((c) => c.code.trim().toUpperCase())
+              .filter((c) => c.length > 0),
+          ),
+        );
+        result.push({
+          id: combo.combination_id || `${entry.major_code}-Y${yearData.year}`,
+          major: entry.major_name,
+          year: yearData.year,
+          requiredCourseCodes: requiredCodes,
+          suggestedElectiveCodes: electiveCodes,
+        });
+      }
+    }
+  }
+  return result;
 }
 
 function getDetectedYear(currentYearNumber?: number) {
@@ -1439,6 +1472,14 @@ export default function Planner({
     () =>
       (handbookRuleValidation?.issues ?? [])
         .filter((issue) => {
+          // Degree-level issues have their own dedicated section — exclude here
+          // to avoid double-display (which would make visible count > banner count).
+          if (
+            issue.category === "major-requirement" ||
+            issue.category === "graduation"
+          ) {
+            return false;
+          }
           // Suppress issues for advisor-approved (fixed) courses
           if (
             issue.relatedCourseCode &&
@@ -1461,16 +1502,19 @@ export default function Planner({
             ) {
               return false;
             }
-            return issue.relatedTerm.startsWith(selectedYear);
+            // Show issues from ALL years — not just selectedYear. This keeps
+            // the displayed list consistent with the global banner count.
+            return true;
           }
-          // Generic (no course/term reference) — only show if there are planned courses
-          return plannedCourseCodes.size > 0;
+          // Issues with a planned course code but no term — show them
+          if (issue.relatedCourseCode) return true;
+          // Generic issues with no scope — exclude (nothing to show them against)
+          return false;
         }),
     [
       handbookRuleValidation,
       plannedCourseCodes,
       fixedCourseCodes,
-      selectedYear,
     ],
   );
 
@@ -1533,18 +1577,9 @@ export default function Planner({
 
   // Only issues for planned courses count toward the save gate / banners.
   // Completed, in-progress, and past-semester courses are advisor-approved.
-  // Degree-level issues (major-requirement, graduation) are excluded here
-  // because they are already rendered in their own dedicated section via
-  // degreeRequirementIssues — counting them here too inflates the banner total.
   const handbookSaveIssues = useMemo<HandbookRuleValidationIssue[]>(
     () =>
       (handbookRuleValidation?.issues ?? []).filter((issue) => {
-        // Exclude degree-level issues — they live in their own UI section
-        if (
-          issue.category === "major-requirement" ||
-          issue.category === "graduation"
-        )
-          return false;
         if (
           issue.relatedCourseCode &&
           fixedCourseCodes.has(issue.relatedCourseCode)
@@ -1560,9 +1595,7 @@ export default function Planner({
           if (tYear && tSem && isPastTerm(tYear.trim(), tSem.trim()))
             return false;
         }
-        // Only count if it's scoped to a course or term — generic issues
-        // with no scope would be uncountable phantom entries in the banner.
-        return Boolean(issue.relatedCourseCode || issue.relatedTerm);
+        return true;
       }),
     [handbookRuleValidation, fixedCourseCodes, plannedCourseCodes],
   );
@@ -2381,13 +2414,18 @@ export default function Planner({
       return;
     }
     setIsGeneratingPlan(true);
+    const liveCombinations = buildLiveMajorCombinations(scienceMajorsCatalog);
+    const majorCombinationsToUse =
+      liveCombinations.length > 0
+        ? liveCombinations
+        : academicRepository.getMajorCombinations();
     const plans = generateAutoGraduationPlans({
       catalog,
       requirements: degreeRequirements,
       completedCourses: completedCourseRecords,
       inProgressCourses: inProgressCourseRecords,
       plannedCourses: courses,
-      majorCombinations: academicRepository.getMajorCombinations(),
+      majorCombinations: majorCombinationsToUse,
       studentCombinationIds: registeredMajors,
     });
     setAutoPlans(plans);
@@ -3221,7 +3259,7 @@ export default function Planner({
       (yearValidationIssues.length > 0 || yearHandbookRuleIssues.length > 0) ? (
         <View style={styles.issuesSection}>
           <Text style={styles.issuesSectionTitle}>
-            Issues for {selectedYear}
+            Issues
           </Text>
 
           {yearValidationIssues.map((issue) => (
