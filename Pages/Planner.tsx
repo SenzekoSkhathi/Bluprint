@@ -214,25 +214,86 @@ function getCombinationRequiredCodes(
   return Array.from(new Set(source.filter((code) => code.length > 0)));
 }
 
+/**
+ * Resolves a potentially ambiguous course code (slash-notation or X-pattern)
+ * to the concrete catalog codes that actually exist. Returns up to one variant
+ * per suffix so the planner can look them up directly.
+ *
+ * Examples:
+ *   "CSC1015F/S" + catalog{"CSC1015F","CSC1015S"} → ["CSC1015F","CSC1015S"]
+ *   "STA100XF/S" + catalog{"STA1000F","STA1007S"} → ["STA1000F","STA1007S"]
+ *   "CSC2001F"   + catalog{"CSC2001F"}             → ["CSC2001F"]
+ */
+function resolveCodeAgainstCatalog(
+  raw: string,
+  catalogCodes: Set<string>,
+): string[] {
+  const code = raw.trim().toUpperCase();
+  if (catalogCodes.has(code)) return [code];
+
+  // X-pattern wildcard (e.g. "STA100XF/S")
+  if (code.includes("X")) {
+    const xm = code.match(/^([A-Z]{3,4})([0-9X]{4})([A-Z](?:\/[A-Z])*)$/);
+    if (xm && xm[2].includes("X")) {
+      const digitPattern = xm[2].replace(/X/g, "[0-9]");
+      const suffixes = xm[3].split("/");
+      const re = new RegExp(
+        `^${xm[1]}${digitPattern}(${suffixes.join("|")})$`,
+      );
+      const matches = Array.from(catalogCodes).filter((k) => re.test(k));
+      if (matches.length > 0) return matches;
+    }
+  }
+
+  // Slash-notation (e.g. "CSC1015F/S" → try "CSC1015F" and "CSC1015S")
+  if (code.includes("/")) {
+    const compoundStart = code.search(/[A-Z](?:\/[A-Z])+$/);
+    if (compoundStart !== -1) {
+      const base = code.slice(0, compoundStart);
+      const suffixes = code.slice(compoundStart).split("/");
+      const resolved = suffixes
+        .map((s) => `${base}${s}`)
+        .filter((c) => catalogCodes.has(c));
+      if (resolved.length > 0) return resolved;
+    }
+  }
+
+  // No catalog match found — return the raw code so it shows as unresolved
+  return [code];
+}
+
 function buildLiveMajorCombinations(
   entries: ScienceMajorEntry[],
+  catalogCodes: Set<string>,
 ): MajorCombination[] {
   const result: MajorCombination[] = [];
   for (const entry of entries) {
     for (const yearData of entry.years) {
       for (const combo of yearData.combinations) {
-        const requiredCodes = getCombinationRequiredCodes(combo);
-        const electiveCodes = Array.from(
+        const rawRequired = getCombinationRequiredCodes(combo);
+        const requiredCodes = Array.from(
           new Set(
-            [
-              ...combo.choose_one_of,
-              ...combo.choose_two_of,
-              ...combo.choose_three_of,
-            ]
-              .map((c) => c.code.trim().toUpperCase())
-              .filter((c) => c.length > 0),
+            rawRequired.flatMap((c) =>
+              resolveCodeAgainstCatalog(c, catalogCodes),
+            ),
           ),
         );
+
+        const rawElectives = [
+          ...combo.choose_one_of,
+          ...combo.choose_two_of,
+          ...combo.choose_three_of,
+        ]
+          .map((c) => c.code.trim().toUpperCase())
+          .filter((c) => c.length > 0);
+        const electiveCodes = Array.from(
+          new Set(
+            rawElectives.flatMap((c) =>
+              resolveCodeAgainstCatalog(c, catalogCodes),
+            ),
+          ),
+        );
+
         result.push({
           id: combo.combination_id || `${entry.major_code}-Y${yearData.year}`,
           major: entry.major_name,
@@ -2413,8 +2474,18 @@ export default function Planner({
       );
       return;
     }
+    if (registeredMajors.length > 0 && scienceMajorsCatalog.length === 0) {
+      setAddError(
+        "Major pathway data is still loading — please try again in a moment.",
+      );
+      return;
+    }
     setIsGeneratingPlan(true);
-    const liveCombinations = buildLiveMajorCombinations(scienceMajorsCatalog);
+    const catalogCodes = new Set(catalog.map((c) => c.code.trim().toUpperCase()));
+    const liveCombinations = buildLiveMajorCombinations(
+      scienceMajorsCatalog,
+      catalogCodes,
+    );
     const majorCombinationsToUse =
       liveCombinations.length > 0
         ? liveCombinations
