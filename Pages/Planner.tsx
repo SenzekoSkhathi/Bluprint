@@ -2369,18 +2369,29 @@ export default function Planner({
               Design and validate your degree year by year.
             </Text>
           </View>
-          <Pressable
-            onPress={handleGeneratePlan}
-            disabled={isGeneratingPlan}
-            style={[
-              styles.generatePlanBtn,
-              isGeneratingPlan && styles.generatePlanBtnDisabled,
-            ]}
-          >
-            <Text style={styles.generatePlanBtnText}>
-              {isGeneratingPlan ? "Generating…" : "Generate my plan"}
-            </Text>
-          </Pressable>
+          <View style={styles.headerBtns}>
+            <Pressable
+              style={styles.downloadPlanBtn}
+              onPress={() => {
+                setPdfError(null);
+                setShowDownloadModal(true);
+              }}
+            >
+              <Text style={styles.downloadPlanBtnText}>Download Plan</Text>
+            </Pressable>
+            <Pressable
+              onPress={handleGeneratePlan}
+              disabled={isGeneratingPlan}
+              style={[
+                styles.generatePlanBtn,
+                isGeneratingPlan && styles.generatePlanBtnDisabled,
+              ]}
+            >
+              <Text style={styles.generatePlanBtnText}>
+                {isGeneratingPlan ? "Generating…" : "Generate my plan"}
+              </Text>
+            </Pressable>
+          </View>
         </View>
       </View>
 
@@ -2499,15 +2510,6 @@ export default function Planner({
           ) : null}
         </Text>
         <View style={styles.syncActions}>
-          <Pressable
-            style={styles.downloadPdfBtn}
-            onPress={() => {
-              setPdfError(null);
-              setShowDownloadModal(true);
-            }}
-          >
-            <Text style={styles.downloadPdfBtnText}>↓ PDF</Text>
-          </Pressable>
           {requiresWarningAcknowledgement ? (
             <Pressable
               onPress={acknowledgeWarnings}
@@ -3407,18 +3409,25 @@ const styles = StyleSheet.create({
     alignItems: "center",
     flexWrap: "wrap",
   },
-  downloadPdfBtn: {
+  headerBtns: {
+    flexDirection: "row",
+    alignItems: "flex-start",
+    gap: theme.spacing.sm,
+    flexShrink: 0,
+  },
+  downloadPlanBtn: {
+    paddingHorizontal: 12,
+    paddingVertical: 8,
     borderRadius: theme.borderRadius.md,
     borderWidth: 1,
-    borderColor: "#2563EB",
-    backgroundColor: "#EFF6FF",
-    paddingHorizontal: 12,
-    paddingVertical: 7,
+    borderColor: theme.colors.deepBlue,
+    flexShrink: 0,
+    alignSelf: "flex-start",
   },
-  downloadPdfBtnText: {
-    color: "#2563EB",
-    fontSize: theme.fontSize.sm,
+  downloadPlanBtnText: {
+    fontSize: 12,
     fontWeight: "600",
+    color: theme.colors.deepBlue,
   },
   downloadModalOverlay: {
     position: "absolute",
