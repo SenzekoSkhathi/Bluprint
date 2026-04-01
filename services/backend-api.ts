@@ -1098,6 +1098,11 @@ export type ScienceAdvisorModelProfile = "fast" | "thinking";
  * cross-reference their course history against handbook prerequisites and
  * give personalised, accurate guidance rather than generic handbook recitation.
  */
+export interface BluBotConversationTurn {
+  role: "user" | "assistant";
+  text: string;
+}
+
 export interface BluBotStudentContext {
   name?: string;
   student_number?: string;
@@ -1186,6 +1191,7 @@ export function askHandbookAdvisor(payload: {
   model_profile?: ScienceAdvisorModelProfile;
   student_context?: BluBotStudentContext;
   faculty_slug?: string;
+  conversation_history?: BluBotConversationTurn[];
 }) {
   return requestJson<ScienceAdvisorResponse>("/advisor/handbook/ask", {
     method: "POST",
@@ -1194,6 +1200,99 @@ export function askHandbookAdvisor(payload: {
       faculty_slug: payload.faculty_slug ?? "science",
     }),
   });
+}
+
+export interface BluBotStreamCallbacks {
+  onToken: (text: string) => void;
+  onDone: (meta: { citations: unknown[]; intent: string; run_id?: string }) => void;
+  onError: (message: string) => void;
+}
+
+export async function askHandbookAdvisorStream(
+  payload: {
+    query: string;
+    top_k?: number;
+    run_id?: string;
+    model_profile?: ScienceAdvisorModelProfile;
+    student_context?: BluBotStudentContext;
+    faculty_slug?: string;
+    conversation_history?: BluBotConversationTurn[];
+  },
+  callbacks: BluBotStreamCallbacks,
+  signal?: AbortSignal,
+): Promise<void> {
+  const baseUrl = getBackendBaseUrl();
+  const url = `${baseUrl}/advisor/handbook/ask-stream`;
+
+  let response: Response;
+  try {
+    response = await fetch(url, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        ...payload,
+        faculty_slug: payload.faculty_slug ?? "science",
+      }),
+      signal,
+    });
+  } catch (err) {
+    callbacks.onError(err instanceof Error ? err.message : "Network error");
+    return;
+  }
+
+  if (!response.ok || !response.body) {
+    callbacks.onError(`Request failed: ${response.status} ${response.statusText}`);
+    return;
+  }
+
+  const reader = response.body.getReader();
+  const decoder = new TextDecoder();
+  let buffer = "";
+
+  try {
+    while (true) {
+      const { done, value } = await reader.read();
+      if (done) break;
+
+      buffer += decoder.decode(value, { stream: true });
+
+      const lines = buffer.split("\n");
+      buffer = lines.pop() ?? "";
+
+      for (const line of lines) {
+        if (!line.startsWith("data: ")) continue;
+        const raw = line.slice(6).trim();
+        if (!raw) continue;
+
+        try {
+          const event = JSON.parse(raw) as {
+            type: "token" | "done" | "error";
+            text?: string;
+            citations?: unknown[];
+            intent?: string;
+            run_id?: string;
+            message?: string;
+          };
+
+          if (event.type === "token" && event.text) {
+            callbacks.onToken(event.text);
+          } else if (event.type === "done") {
+            callbacks.onDone({
+              citations: event.citations ?? [],
+              intent: event.intent ?? "general",
+              run_id: event.run_id,
+            });
+          } else if (event.type === "error") {
+            callbacks.onError(event.message ?? "Unknown error");
+          }
+        } catch {
+          // malformed SSE line — skip
+        }
+      }
+    }
+  } finally {
+    reader.releaseLock();
+  }
 }
 
 export function askScienceAdvisorWithUpload(payload: {

@@ -1,7 +1,8 @@
 import json
 import re
+from collections.abc import Iterator
 from pathlib import Path
-from typing import Any, Literal
+from typing import Any, Iterator, Literal
 
 from google import genai
 
@@ -34,13 +35,17 @@ _FACULTY_LABELS: dict[str, str] = {
 # ---------------------------------------------------------------------------
 
 
-def _classify_query_intent(query: str) -> str:
+def _classify_query_intent(query: str, conversation_history: list[dict] | None = None) -> str:
     """Return 'personal', 'lookup', or 'general' based on the student's question.
 
     • 'personal'  – student is asking about their own situation (eligibility,
                     plan, credits, "can I…", "am I…", etc.)
     • 'lookup'    – student is asking about a named course or major
     • 'general'   – general handbook question that doesn't need their history
+
+    When conversation_history is present the classifier also checks the most
+    recent assistant turn for topic continuity — a short follow-up like "what
+    about the second one?" inherits intent from the previous exchange.
     """
     # Extract just the student question if it follows the embedded marker.
     question_match = re.search(
@@ -55,13 +60,25 @@ def _classify_query_intent(query: str) -> str:
         r"\bdo i\b",
         r"\bwill i\b",
         r"\bshould i\b",
-        r"\bmy (course|major|degree|plan|credit|progress|program|mark|result|subject|module)\b",
+        r"\bwould i\b",
+        r"\bmy (course|major|degree|plan|credit|progress|program|mark|result|subject|module|year|semester|gpa)\b",
         r"\bam i eligible\b",
-        r"\bi (need|want|plan|have|passed|failed|took|am taking|didn.t|registered)\b",
+        r"\bi (need|want|plan|have|passed|failed|took|am taking|didn.t|registered|qualify|applied)\b",
         r"\bmy academic\b",
         r"\bmy student\b",
         r"\bfor me\b",
         r"\bmy situation\b",
+        r"\beligible\b",
+        r"\bqualify\b",
+        r"\bon track\b",
+        r"\bmy plan\b",
+        r"\bmy progress\b",
+        r"\bnext year\b",
+        r"\bnext semester\b",
+        r"\bregister\b",
+        r"\benroll\b",
+        r"\bwhich (course|major|subject)s? (should|can|do|must) i\b",
+        r"\bhow many credits (do|have) i\b",
     ]
     for pattern in personal_patterns:
         if re.search(pattern, text_lower):
@@ -70,6 +87,25 @@ def _classify_query_intent(query: str) -> str:
     # Named course code → lookup
     if re.search(r"\b[A-Z]{3,4}\d{4}[A-Z]?\b", text.upper()):
         return "lookup"
+
+    # Short follow-up questions (≤12 words) inherit the intent from the most
+    # recent conversation turn so "what about that one?" stays personal/lookup
+    # rather than being misclassified as general.
+    word_count = len(text.split())
+    if word_count <= 12 and conversation_history:
+        # Find the most recent assistant reply intent signal in history.
+        for turn in reversed(conversation_history):
+            if turn.get("role") == "assistant":
+                prev_text = turn.get("text", "").lower()
+                # If the previous bot reply discussed a specific course or the
+                # student's personal situation, inherit that context.
+                if re.search(r"\b[A-Z]{3,4}\d{4}[A-Z]?\b", prev_text.upper()):
+                    return "lookup"
+                if any(kw in prev_text for kw in ("your plan", "you have", "you passed", "you failed",
+                                                    "you need", "you can", "you're", "you are",
+                                                    "credits", "prerequisite", "eligible")):
+                    return "personal"
+                break
 
     return "general"
 
@@ -464,11 +500,9 @@ class ScienceAdvisor:
         self,
         model_profile: Literal["fast", "thinking"] | None = None,
     ) -> str:
-        if model_profile in  ("fast", "thinking"):
-            # gemini-2.5-flash: optimised for speed, minimal reasoning budget.
-            return self.settings.gemini_fast_model
-        # Default (None) and "thinking" both use gemini-2.5-pro for deeper reasoning.
-        return self.settings.gemini_thinking_model
+        # Both fast and thinking use gemini-2.5-flash.
+        # Thinking mode uses a much higher thinking_budget for deeper reasoning.
+        return self.settings.gemini_fast_model
 
     def _resolve_top_k(
         self,
@@ -477,9 +511,9 @@ class ScienceAdvisor:
     ) -> int:
         if model_profile == "fast":
             # Fast mode keeps retrieval narrow to reduce context size and latency.
-            return max(1, min(top_k, 2))
-        # Thinking and default: allow more retrieved chunks.
-        return max(6, top_k)
+            return max(1, min(top_k, 3))
+        # Thinking and default: allow more retrieved chunks for richer context.
+        return max(8, top_k)
 
     def _include_policy_context(
         self,
@@ -492,18 +526,20 @@ class ScienceAdvisor:
         model_profile: Literal["fast", "thinking"] | None,
     ) -> dict[str, Any]:
         if model_profile == "fast":
-            # gemini-2.5-flash: short output, no thinking budget for speed.
+            # Fast: short replies, no reasoning — best for simple handbook lookups.
             return {
-                "temperature": 0.2,
-                "max_output_tokens": 256,
+                "temperature": 0.3,
+                "max_output_tokens": 1024,
                 "thinking_config": {"thinking_budget": 0},
             }
 
-        # Default (None) and "thinking": gemini-2.5-pro with extended reasoning.
+        # Thinking / default: gemini-2.5-flash with deep reasoning budget.
+        # Higher budget = more thorough internal reasoning before responding.
+        # Long max_output_tokens prevents responses from being cut off mid-sentence.
         return {
-            "temperature": 0.1,
-            "max_output_tokens": 800,
-            "thinking_config": {"thinking_budget": 3000},
+            "temperature": 0.3,
+            "max_output_tokens": 8192,
+            "thinking_config": {"thinking_budget": 15000},
         }
 
     def _build_student_context_block(self, student_context: dict) -> str:
@@ -512,6 +548,11 @@ class ScienceAdvisor:
         This is the intelligence core: Gemini will use this to answer questions
         like "can I take X?" or "am I on track?" with full knowledge of the
         student's actual history — not just generic handbook rules.
+
+        Grade-aware risk annotations are automatically computed and surfaced:
+        - Courses passed with < 55% are flagged as BORDERLINE PASS — dependent
+          courses may be harder, and progression risk should be highlighted.
+        - Failed courses are tracked so prereq chains can be checked.
         """
         if not student_context:
             return ""
@@ -564,26 +605,74 @@ class ScienceAdvisor:
             status = " — ON TRACK" if on_track else (" — BEHIND MILESTONE" if on_track is False else "")
             lines.append(f"Milestone: {milestone_label}{status}")
 
-        # Completed — passed
+        # Grade-aware academic standing
+        # Build a grade map for fast lookup (code → numeric grade).
         completed_passed: list[dict] = student_context.get("completed_passed", [])
+        completed_failed: list[dict] = student_context.get("completed_failed", [])
+
+        grade_map: dict[str, float] = {}
+        for c in completed_passed:
+            g = c.get("grade")
+            if g is not None:
+                try:
+                    grade_map[c.get("code", "")] = float(g)
+                except (ValueError, TypeError):
+                    pass
+
+        # Borderline passes: passed but ≤ 54% — at risk for dependent courses.
+        borderline_passes = [
+            c for c in completed_passed
+            if grade_map.get(c.get("code", ""), 100) <= 54
+        ]
+        # Solid passes: ≥ 75% — can be cited as strengths.
+        strong_passes = [
+            c for c in completed_passed
+            if grade_map.get(c.get("code", ""), 0) >= 75
+        ]
+
+        if borderline_passes:
+            lines.append(
+                f"\n⚠ BORDERLINE PASSES ({len(borderline_passes)} courses — passed ≤54%, "
+                "may struggle in dependent courses):"
+            )
+            for c in borderline_passes:
+                g = grade_map.get(c.get("code", ""), None)
+                g_str = f"{g:.0f}%" if g is not None else "?"
+                lines.append(f"  {c.get('code', '?')} | {c.get('title', '')} | {g_str}")
+
+        # Completed — passed (full list)
         if completed_passed:
             lines.append(f"\nCompleted courses — passed ({len(completed_passed)} courses):")
             for c in completed_passed[:40]:
-                grade_str = f" | {c.get('grade')}%" if c.get("grade") is not None else ""
+                g = grade_map.get(c.get("code", ""), None)
+                grade_str = f" | {g:.0f}%" if g is not None else ""
+                risk_flag = " ⚠BORDERLINE" if c.get("code") in {bp.get("code") for bp in borderline_passes} else ""
+                strong_flag = " ★" if c.get("code") in {sp.get("code") for sp in strong_passes} else ""
                 lines.append(
                     f"  {c.get('code', '?')} | {c.get('title', '')} | {c.get('credits', 0)} cr"
-                    f" | NQF{c.get('nqf_level', '?')} | {c.get('semester', '')}{grade_str}"
+                    f" | NQF{c.get('nqf_level', '?')} | {c.get('semester', '')}{grade_str}{risk_flag}{strong_flag}"
                 )
 
         # Completed — failed
-        completed_failed: list[dict] = student_context.get("completed_failed", [])
         if completed_failed:
             lines.append(f"\nFailed / incomplete ({len(completed_failed)} courses):")
             for c in completed_failed[:10]:
-                grade_str = f" | {c.get('grade')}%" if c.get("grade") is not None else ""
+                g = c.get("grade")
+                grade_str = f" | {float(g):.0f}%" if g is not None else ""
                 lines.append(
                     f"  {c.get('code', '?')} | {c.get('title', '')} | {c.get('credits', 0)} cr{grade_str}"
                 )
+
+        # Computed GPA / average (if grade data present)
+        all_grades = list(grade_map.values())
+        if all_grades:
+            avg = sum(all_grades) / len(all_grades)
+            academic_standing = (
+                "Good standing" if avg >= 65
+                else "Satisfactory" if avg >= 55
+                else "At academic risk"
+            )
+            lines.append(f"\nAcademic standing: {academic_standing} | Avg grade: {avg:.1f}%")
 
         # In progress
         in_progress: list[dict] = student_context.get("courses_in_progress", [])
@@ -659,6 +748,7 @@ class ScienceAdvisor:
         model_profile: Literal["fast", "thinking"] | None = None,
         student_context: dict | None = None,
         faculty_slug: str = "science",
+        conversation_history: list[dict] | None = None,
     ) -> dict:
         faculty_label = _FACULTY_LABELS.get(faculty_slug, faculty_slug.title())
 
@@ -666,7 +756,8 @@ class ScienceAdvisor:
         # 'general'  → handbook information question (no student history needed)
         # 'lookup'   → specific course or major detail
         # 'personal' → student's own situation (needs history + validation)
-        intent = _classify_query_intent(query)
+        # Pass conversation_history so short follow-ups inherit prior intent.
+        intent = _classify_query_intent(query, conversation_history)
 
         # ── Direct handbook context (always fetched — supplements vector search) ─
         direct_context = self._build_handbook_direct_context(query, faculty_slug)
@@ -692,7 +783,7 @@ class ScienceAdvisor:
         else:
             policy_context, policy_citations = "", []
 
-        # ── Student context & plan validation (only for personal queries) ────
+        # ── Student context & plan validation (personal queries always; others for awareness) ──
         ctx = student_context or {}
         if intent == "personal":
             student_block = self._build_student_context_block(ctx)
@@ -703,6 +794,11 @@ class ScienceAdvisor:
                 if raw_planned
                 else ""
             )
+        elif ctx:
+            # For non-personal queries, still include a compact identity summary
+            # so BluBot knows who it's talking to and can reference their situation.
+            student_block = self._build_student_context_block(ctx)
+            validation_block = ""
         else:
             student_block = ""
             validation_block = ""
@@ -734,75 +830,137 @@ class ScienceAdvisor:
         student_section = f"{student_block}\n\n" if student_block else ""
         validation_section = f"{validation_block}\n\n" if validation_block else ""
 
-        # ── Build prompt based on model profile AND intent ────────────────────
-        # General / lookup: answer from handbook facts, invite follow-up.
-        # Personal: cross-reference student history, give personalised guidance.
-
+        # ── Build system instruction (role-level, not part of conversation turns) ──
+        # The system instruction tells the model WHO it is and HOW to behave.
+        # Context blocks (student profile, handbook data) go in the first user turn.
         if model_profile == "fast":
-            if intent == "personal":
-                prompt = (
-                    f"You are BluBot, UCT {faculty_label} Faculty's academic advisor. "
-                    "Be warm, direct, and practical — no stiff assistant phrases. "
-                    "The student is asking about their own situation. "
-                    "Check their course history against the handbook before answering. "
-                    "Answer in 3-5 bullet points. Name missing prerequisites explicitly. "
-                    "If uncertain, say so in one clear line.\n\n"
-                    f"{student_section}"
-                    f"{validation_section}"
-                    f"Student query:\n{query}\n\n"
-                    f"Handbook data:\n{handbook_context}"
-                )
-            else:
-                prompt = (
-                    f"You are BluBot, UCT {faculty_label} Faculty's academic advisor. "
-                    "Be warm, direct, and practical — no stiff assistant phrases. "
-                    "Answer this handbook question concisely in 3-5 bullet points. "
-                    "Use only the structured handbook data provided.\n\n"
-                    f"Student query:\n{query}\n\n"
-                    f"Handbook data:\n{handbook_context}"
-                )
+            system_instruction = (
+                f"You are BluBot, UCT {faculty_label} Faculty's academic advisor. "
+                "Be warm, direct, and practical — no stiff assistant phrases. "
+                "Answer clearly and completely. Never cut your response off before finishing. "
+                "Name missing prerequisites explicitly. "
+                "If uncertain, say so in one clear line."
+            )
         else:
-            # Thinking / default (gemini-2.5-pro with reasoning budget)
-            if intent == "personal":
-                prompt = (
-                    f"You are BluBot, UCT {faculty_label} Faculty's academic advisor. "
-                    "Be warm, conversational, and specific — speak like a knowledgeable friend, not a policy document. "
-                    "Do not restate the question or introduce yourself. Get straight to the answer.\n\n"
-                    "The student is asking about their own situation. Follow these steps:\n"
-                    "1. Check the student's course history against handbook prerequisites.\n"
-                    "2. If a STUDENT PLAN VALIDATION block is present, treat blockers as confirmed — address relevant ones.\n"
-                    "3. Apply policy constraints when the question involves readmission, progression, or credits.\n"
-                    "4. Give clear, practical next steps.\n"
-                    "5. Name any missing prerequisites explicitly.\n"
-                    "6. If uncertain about something, say so plainly.\n\n"
-                    f"{student_section}"
-                    f"{validation_section}"
-                    f"Student query:\n{query}\n\n"
-                    f"Handbook data:\n{handbook_context}"
+            # Thinking mode: deep, thorough, conversational.
+            # Proactive insight: if there are plan blockers or borderline grades,
+            # BluBot should volunteer relevant warnings even when not directly asked —
+            # a real advisor wouldn't stay silent about a registration blocker.
+            proactive_note = ""
+            ctx_check = student_context or {}
+            raw_planned = ctx_check.get("planned_courses") or []
+            if raw_planned and validation_block:
+                proactive_note = (
+                    "\n- PROACTIVE AWARENESS: If the student's PLAN VALIDATION block contains "
+                    "blockers or serious warnings that are directly relevant to their question "
+                    "(even if they didn't ask about it), mention them naturally — e.g. "
+                    "'By the way, I noticed your plan has a missing prerequisite for X...' "
+                    "A real advisor wouldn't stay silent about a registration blocker."
                 )
-            elif intent == "lookup":
-                prompt = (
-                    f"You are BluBot, UCT {faculty_label} Faculty's academic advisor. "
-                    "Be warm and clear — no stiff assistant phrases. "
-                    "The student is asking about a specific course or programme. "
-                    "Present the key details clearly from the structured handbook data provided. "
-                    "After answering, briefly invite the student to ask a follow-up if they want to know "
-                    "whether they're eligible or how it fits their plan.\n\n"
-                    f"Student query:\n{query}\n\n"
-                    f"Handbook data:\n{handbook_context}"
+            borderline_note = ""
+            passed_courses = ctx_check.get("completed_passed", [])
+            borderline_codes = []
+            for c in passed_courses:
+                g = c.get("grade")
+                try:
+                    if g is not None and float(g) <= 54:
+                        borderline_codes.append(c.get("code", ""))
+                except (ValueError, TypeError):
+                    pass
+            if borderline_codes:
+                borderline_note = (
+                    f"\n- GRADE RISK AWARENESS: The student passed {', '.join(borderline_codes[:5])} "
+                    "with ≤54% (borderline). When answering questions about follow-on courses that "
+                    "depend on these, flag the grade risk proactively — e.g. "
+                    "'You passed X but with a borderline mark; the follow-on course is significantly harder.'"
                 )
-            else:
-                # General information question
-                prompt = (
-                    f"You are BluBot, UCT {faculty_label} Faculty's academic advisor. "
-                    "Be warm, friendly, and direct — speak like a knowledgeable friend. "
-                    "Do not restate the question or introduce yourself. "
-                    "Answer this general handbook question clearly from the data provided. "
-                    "After giving the answer, ask one short friendly follow-up — for example whether "
-                    "the student is personally interested in this programme so you can check how it fits their profile.\n\n"
-                    f"Student query:\n{query}\n\n"
-                    f"Handbook data:\n{handbook_context}"
-                )
+
+            system_instruction = (
+                f"You are BluBot, UCT {faculty_label} Faculty's academic advisor. "
+                "You speak like a knowledgeable friend — warm, specific, and direct. "
+                "Never introduce yourself, restate the question, or use stiff assistant phrases. "
+                "Get straight to the answer.\n\n"
+                "Core guidelines:\n"
+                "- Always cross-reference the student's FULL course history (passed, failed, in-progress) "
+                "against handbook prerequisites before drawing any conclusion.\n"
+                "- Treat every STUDENT PLAN VALIDATION blocker as confirmed fact — address relevant ones.\n"
+                "- Apply policy rules (readmission, progression, credit requirements) where applicable.\n"
+                "- Give concrete, practical next steps — not just observations.\n"
+                "- Name every missing prerequisite explicitly by course code.\n"
+                "- Maintain full continuity across the conversation — never lose track of what was discussed.\n"
+                "- If genuinely uncertain, say so plainly and suggest the student confirm with their faculty office.\n"
+                "- Never cut your response off mid-thought. Complete every point fully before stopping."
+                + proactive_note
+                + borderline_note
+            )
+
+        # ── Build the context block that anchors every conversation ──────────
+        # This goes in a preamble user turn so Gemini's multi-turn system sees
+        # the handbook + student data as established context, not part of the query.
+        context_parts: list[str] = []
+        if student_section:
+            context_parts.append(student_section.strip())
+        if validation_section:
+            context_parts.append(validation_section.strip())
+        if handbook_context:
+            context_parts.append(f"Handbook data:\n{handbook_context}")
+
+        context_preamble = "\n\n".join(context_parts)
+
+        # ── Build native multi-turn contents array ────────────────────────────
+        # Structure:
+        #   [context preamble turn (user)]
+        #   [ack turn (model)]          ← keeps Gemini's turn alternation valid
+        #   [history turn 1 (user)]
+        #   [history turn 1 reply (model)]
+        #   ...
+        #   [current question (user)]   ← this is what the model answers next
+        #
+        # Using proper role-alternated turns gives the model genuine multi-turn
+        # understanding instead of just a text dump injected into a single prompt.
+        contents: list[dict[str, Any]] = []
+
+        if context_preamble:
+            contents.append({"role": "user", "parts": [{"text": context_preamble}]})
+            contents.append({
+                "role": "model",
+                "parts": [{"text": "Understood. I have your academic profile and the handbook context. What's your question?"}],
+            })
+
+        # Inject real conversation history as alternating user/model turns.
+        if conversation_history:
+            for turn in conversation_history[-10:]:
+                role = turn.get("role", "")
+                text = str(turn.get("text", "")).strip()
+                if not text:
+                    continue
+                gemini_role = "user" if role == "user" else "model"
+                # Avoid consecutive same-role turns — Gemini requires strict alternation.
+                if contents and contents[-1]["role"] == gemini_role:
+                    # Merge with the previous turn's text.
+                    contents[-1]["parts"][0]["text"] += f"\n{text}"
+                else:
+                    contents.append({"role": gemini_role, "parts": [{"text": text}]})
+
+        # Extract the clean student question (strip any injected persona/context wrapping).
+        clean_question_match = re.search(
+            r"Student question:\s*(.+)$", query, re.DOTALL | re.IGNORECASE
+        )
+        clean_question = clean_question_match.group(1).strip() if clean_question_match else query
+
+        # Ensure last turn before our question is model (required for alternation).
+        if contents and contents[-1]["role"] == "user":
+            contents.append({
+                "role": "model",
+                "parts": [{"text": "Got it, go ahead."}],
+            })
+
+        contents.append({"role": "user", "parts": [{"text": clean_question}]})
+
+        # If no context preamble and no history, fall back to a single-turn prompt
+        # so we always have at least one turn.
+        if not contents:
+            contents = [{"role": "user", "parts": [{"text": clean_question}]}]
 
         resolved_model = self._resolve_model(model_profile)
         generation_config = self._build_generation_config(model_profile)
@@ -810,13 +968,23 @@ class ScienceAdvisor:
         try:
             response = self.client.models.generate_content(
                 model=resolved_model,
-                contents=prompt,
-                config=generation_config,
+                contents=contents,
+                config={
+                    **generation_config,
+                    "system_instruction": system_instruction,
+                },
             )
         except Exception:
+            # Fallback: retry without system_instruction in case the model/SDK
+            # version doesn't support it in config — pack it into the first turn.
+            fallback_contents = [
+                {"role": "user", "parts": [{"text": f"{system_instruction}\n\n{context_preamble}"}]},
+                {"role": "model", "parts": [{"text": "Understood."}]},
+            ] + contents[2:]  # skip the original context preamble turns
             response = self.client.models.generate_content(
                 model=resolved_model,
-                contents=prompt,
+                contents=fallback_contents,
+                config=generation_config,
             )
 
         citations = [
@@ -849,3 +1017,198 @@ class ScienceAdvisor:
             "citations": citations,
             "retrieval": retrieval,
         }
+
+    def answer_stream(
+        self,
+        query: str,
+        run_id: str | None = None,
+        top_k: int = 5,
+        model_profile: Literal["fast", "thinking"] | None = None,
+        student_context: dict | None = None,
+        faculty_slug: str = "science",
+        conversation_history: list[dict] | None = None,
+    ) -> Iterator[str]:
+        """Stream the advisor response as Server-Sent Events (SSE).
+
+        Yields lines in SSE format:
+          data: {"type": "token", "text": "...chunk..."}\n\n
+          data: {"type": "done", "citations": [...], "intent": "..."}\n\n
+          data: {"type": "error", "message": "..."}\n\n
+
+        The full answer() pipeline (context building, retrieval, prompt
+        construction) runs synchronously before streaming begins; only the
+        Gemini token emission is streamed.
+        """
+        # Run the full non-streaming path to get the complete response,
+        # but use generate_content_stream so we can yield tokens as they arrive.
+        # We reuse the same context/prompt building logic by calling answer()
+        # except we intercept just before generate_content.
+
+        # ── Shared setup (mirrors answer()) ──────────────────────────────────
+        faculty_label = _FACULTY_LABELS.get(faculty_slug, faculty_slug.title())
+        intent = _classify_query_intent(query, conversation_history)
+        direct_context = self._build_handbook_direct_context(query, faculty_slug)
+
+        effective_top_k = self._resolve_top_k(top_k, model_profile)
+        retrieval = self.retriever.search(
+            query=query,
+            run_id=run_id,
+            top_k=effective_top_k,
+            fast_mode=model_profile == "fast",
+        )
+        _MIN_SCORE = 0.45
+        hits = [h for h in retrieval.get("hits", []) if float(h.get("score", 0)) >= _MIN_SCORE]
+
+        if self._include_policy_context(model_profile):
+            policy_context, policy_citations = self._build_policy_context(
+                run_id=retrieval.get("run_id"), faculty_slug=faculty_slug
+            )
+        else:
+            policy_context, policy_citations = "", []
+
+        ctx = student_context or {}
+        if intent == "personal":
+            student_block = self._build_student_context_block(ctx)
+            raw_planned = ctx.get("planned_courses") or []
+            raw_majors = ctx.get("selected_majors") or []
+            validation_block = (
+                self._build_validation_context(raw_planned, raw_majors, faculty_slug)
+                if raw_planned else ""
+            )
+        elif ctx:
+            student_block = self._build_student_context_block(ctx)
+            validation_block = ""
+        else:
+            student_block = ""
+            validation_block = ""
+
+        handbook_sections: list[str] = []
+        if direct_context:
+            handbook_sections.append(f"Structured handbook data:\n{direct_context}")
+        if policy_context:
+            handbook_sections.append(f"Policy constraints:\n{policy_context}")
+        retrieved_block = self._build_context(hits)
+        if retrieved_block:
+            handbook_sections.append(f"Additional retrieved context:\n{retrieved_block}")
+        handbook_context = "\n\n".join(handbook_sections)
+
+        student_section = f"{student_block}\n\n" if student_block else ""
+        validation_section = f"{validation_block}\n\n" if validation_block else ""
+
+        # Build system instruction (same logic as answer())
+        if model_profile == "fast":
+            system_instruction = (
+                f"You are BluBot, UCT {faculty_label} Faculty's academic advisor. "
+                "Be warm, direct, and practical — no stiff assistant phrases. "
+                "Answer clearly and completely. Never cut your response off before finishing. "
+                "Name missing prerequisites explicitly. If uncertain, say so in one clear line."
+            )
+        else:
+            proactive_note = ""
+            raw_planned_s = ctx.get("planned_courses") or []
+            if raw_planned_s and validation_block:
+                proactive_note = (
+                    "\n- PROACTIVE AWARENESS: If the student's PLAN VALIDATION block contains "
+                    "blockers or serious warnings that are directly relevant to their question "
+                    "(even if they didn't ask about it), mention them naturally. "
+                    "A real advisor wouldn't stay silent about a registration blocker."
+                )
+            borderline_note = ""
+            passed_courses = ctx.get("completed_passed", [])
+            borderline_codes: list[str] = []
+            for c in passed_courses:
+                g = c.get("grade")
+                try:
+                    if g is not None and float(g) <= 54:
+                        borderline_codes.append(c.get("code", ""))
+                except (ValueError, TypeError):
+                    pass
+            if borderline_codes:
+                borderline_note = (
+                    f"\n- GRADE RISK AWARENESS: The student passed {', '.join(borderline_codes[:5])} "
+                    "with ≤54% (borderline). Flag the grade risk proactively on dependent courses."
+                )
+            system_instruction = (
+                f"You are BluBot, UCT {faculty_label} Faculty's academic advisor. "
+                "You speak like a knowledgeable friend — warm, specific, and direct. "
+                "Never introduce yourself, restate the question, or use stiff assistant phrases. "
+                "Get straight to the answer.\n\n"
+                "Core guidelines:\n"
+                "- Always cross-reference the student's FULL course history against handbook prerequisites.\n"
+                "- Treat every STUDENT PLAN VALIDATION blocker as confirmed fact.\n"
+                "- Give concrete, practical next steps — not just observations.\n"
+                "- Name every missing prerequisite explicitly by course code.\n"
+                "- Maintain full continuity across the conversation.\n"
+                "- Never cut your response off mid-thought. Complete every point fully."
+                + proactive_note + borderline_note
+            )
+
+        context_parts: list[str] = []
+        if student_section:
+            context_parts.append(student_section.strip())
+        if validation_section:
+            context_parts.append(validation_section.strip())
+        if handbook_context:
+            context_parts.append(f"Handbook data:\n{handbook_context}")
+        context_preamble = "\n\n".join(context_parts)
+
+        contents: list[dict[str, Any]] = []
+        if context_preamble:
+            contents.append({"role": "user", "parts": [{"text": context_preamble}]})
+            contents.append({
+                "role": "model",
+                "parts": [{"text": "Understood. I have your academic profile and the handbook context. What's your question?"}],
+            })
+
+        if conversation_history:
+            for turn in conversation_history[-10:]:
+                role = turn.get("role", "")
+                text = str(turn.get("text", "")).strip()
+                if not text:
+                    continue
+                gemini_role = "user" if role == "user" else "model"
+                if contents and contents[-1]["role"] == gemini_role:
+                    contents[-1]["parts"][0]["text"] += f"\n{text}"
+                else:
+                    contents.append({"role": gemini_role, "parts": [{"text": text}]})
+
+        clean_question_match = re.search(
+            r"Student question:\s*(.+)$", query, re.DOTALL | re.IGNORECASE
+        )
+        clean_question = clean_question_match.group(1).strip() if clean_question_match else query
+
+        if contents and contents[-1]["role"] == "user":
+            contents.append({"role": "model", "parts": [{"text": "Got it, go ahead."}]})
+        contents.append({"role": "user", "parts": [{"text": clean_question}]})
+        if not contents:
+            contents = [{"role": "user", "parts": [{"text": clean_question}]}]
+
+        resolved_model = self._resolve_model(model_profile)
+        generation_config = self._build_generation_config(model_profile)
+
+        citations = [
+            {"source": idx + 1, "title": h.get("title", ""), "s3_key": h.get("s3_key", ""), "score": h.get("score", 0.0)}
+            for idx, h in enumerate(hits)
+        ]
+        policy_start = len(citations)
+        citations.extend(
+            {"source": policy_start + idx + 1, "title": c.get("title", ""), "s3_key": c.get("s3_key", ""), "score": c.get("score", 0.0)}
+            for idx, c in enumerate(policy_citations)
+        )
+
+        # ── Stream tokens ─────────────────────────────────────────────────────
+        try:
+            stream = self.client.models.generate_content_stream(
+                model=resolved_model,
+                contents=contents,
+                config={**generation_config, "system_instruction": system_instruction},
+            )
+            for chunk in stream:
+                text = getattr(chunk, "text", None) or ""
+                if text:
+                    yield f"data: {json.dumps({'type': 'token', 'text': text})}\n\n"
+        except Exception as exc:
+            yield f"data: {json.dumps({'type': 'error', 'message': str(exc)})}\n\n"
+            return
+
+        yield f"data: {json.dumps({'type': 'done', 'citations': citations, 'intent': intent, 'run_id': retrieval.get('run_id')})}\n\n"

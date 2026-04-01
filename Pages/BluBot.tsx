@@ -2,12 +2,14 @@ import { getPrimaryFacultySlug } from "@/constants/faculty";
 import { buildGuidanceTrustMessage } from "@/hooks/use-logged-in-user";
 import {
   askHandbookAdvisor,
+  askHandbookAdvisorStream,
   askHandbookAdvisorWithUpload,
   deleteHandbookAdvisorChatThread,
   getBackendHealth,
   getHandbookAdvisorChatHistory,
   renameHandbookAdvisorChatThread,
   syncHandbookAdvisorChatHistory,
+  type BluBotStreamCallbacks,
   type ScienceAdvisorChatThreadPayload,
   type ScienceAdvisorCitation,
   type ScienceAdvisorModelProfile,
@@ -68,6 +70,16 @@ interface BluBotCourse {
   passed?: boolean;
 }
 
+interface BluBotValidationSummary {
+  blockers: number;
+  warnings: number;
+  infos: number;
+  projectedCredits: number;
+  creditShortfall: number;
+  /** Top blockers — passed so BluBot is aware of plan issues without re-running validation */
+  topIssues: Array<{ severity: string; category: string; title: string; message: string }>;
+}
+
 interface BluBotProps {
   firstName?: string;
   userContext?: {
@@ -98,6 +110,8 @@ interface BluBotProps {
     /** Majors selected in the student's saved plan */
     selectedMajors?: string[];
   };
+  /** Live validation summary from the planner — gives BluBot awareness of plan issues */
+  validationSummary?: BluBotValidationSummary;
 }
 
 const FALLBACK_NOTICE_ID = "backend-fallback-notice";
@@ -970,7 +984,10 @@ function getUserFacingAdvisorError(error: unknown) {
   };
 }
 
-function buildAdvisorContext(userContext?: BluBotProps["userContext"]) {
+function buildAdvisorContext(
+  userContext?: BluBotProps["userContext"],
+  validationSummary?: BluBotValidationSummary,
+) {
   if (!userContext) {
     return "";
   }
@@ -1013,6 +1030,31 @@ function buildAdvisorContext(userContext?: BluBotProps["userContext"]) {
     lines.push(
       `- Currently registered: ${userContext.coursesInProgress.map((c) => c.code).join(", ")}`,
     );
+  }
+
+  if (userContext.plannedCourses && userContext.plannedCourses.length > 0) {
+    lines.push(
+      `- Planned courses: ${userContext.plannedCourses.map((c) => `${c.code} (${c.year} ${c.semester})`).join(", ")}`,
+    );
+  }
+
+  // Append live validation summary so BluBot is aware of plan issues
+  // across all app sections — not just what's mentioned in the current query.
+  if (validationSummary) {
+    lines.push("");
+    lines.push("Live plan validation (from Planner):");
+    lines.push(
+      `- Blockers: ${validationSummary.blockers} | Warnings: ${validationSummary.warnings}`,
+    );
+    lines.push(
+      `- Projected credits: ${validationSummary.projectedCredits} | Credit shortfall: ${validationSummary.creditShortfall}`,
+    );
+    if (validationSummary.topIssues.length > 0) {
+      lines.push("- Active issues:");
+      validationSummary.topIssues.slice(0, 5).forEach((issue) => {
+        lines.push(`  [${issue.severity}/${issue.category}] ${issue.title}: ${issue.message}`);
+      });
+    }
   }
 
   lines.push("Use this student context to tailor your advising answer.");
@@ -1127,6 +1169,7 @@ function buildStudentContextPayload(
 export default function BluBot({
   firstName = "Student",
   userContext,
+  validationSummary,
 }: BluBotProps) {
   const isWeb = Platform.OS === "web";
 
@@ -1165,7 +1208,7 @@ export default function BluBot({
   const flatListRef = useRef<FlatList<Message>>(null);
   const currentThreadIdRef = useRef(currentThreadId);
   const messagesRef = useRef(messages);
-  const advisorContext = buildAdvisorContext(userContext);
+  const advisorContext = buildAdvisorContext(userContext, validationSummary);
   const studentContextPayload = buildStudentContextPayload(userContext);
   const crossMajorFacultyHint = useMemo(() => {
     if (!studentContextPayload?.cross_major_mode) {
@@ -1368,6 +1411,11 @@ export default function BluBot({
 
     const restoreChats = async () => {
       try {
+        // Always start BluBot on a fresh thread — previous conversations are
+        // accessible via the sidebar but the active view is always a new chat.
+        // This prevents BluBot from picking up mid-conversation state on entry.
+        const freshThreadId = createChatId();
+
         if (backendChatSyncEnabled) {
           try {
             const backendHistory = await getHandbookAdvisorChatHistory({
@@ -1383,19 +1431,9 @@ export default function BluBot({
 
             if (backendThreads.length > 0) {
               setRecentChats(backendThreads);
-
-              const preferredThread = backendThreads.find(
-                (thread) => thread.id === backendHistory.current_thread_id,
-              );
-              const activeThread = preferredThread ?? backendThreads[0];
-
-              if (activeThread) {
-                setCurrentThreadId(activeThread.id);
-                setMessages(
-                  activeThread.messages.map((message) => ({ ...message })),
-                );
-              }
-
+              // Use a fresh thread — sidebar shows history but active is new.
+              setCurrentThreadId(freshThreadId);
+              setMessages([]);
               return;
             }
           } catch (error) {
@@ -1422,18 +1460,9 @@ export default function BluBot({
         }
 
         setRecentChats(restoredChats);
-
-        const preferredThreadId = parsed.currentThreadId;
-        const preferredThread = restoredChats.find(
-          (thread) => thread.id === preferredThreadId,
-        );
-        const fallbackThread = restoredChats[0];
-        const activeThread = preferredThread ?? fallbackThread;
-
-        if (activeThread) {
-          setCurrentThreadId(activeThread.id);
-          setMessages(activeThread.messages.map((message) => ({ ...message })));
-        }
+        // Always open on a fresh thread even when restoring from local storage.
+        setCurrentThreadId(freshThreadId);
+        setMessages([]);
       } catch (error) {
         console.error("Failed to restore BluBot chats:", error);
       } finally {
@@ -1812,57 +1841,137 @@ export default function BluBot({
         ? trimmedInput
         : "Please analyze the uploaded attachment in context.";
 
-    const professionalPersonaInstruction = `Persona: You are BluBot in warm, human academic-advisor mode. Speak naturally and helpfully. Get straight to the answer. Do not explain who you are, do not restate the user's question, and do not use stiff assistant phrases. Do not greet the user unless they greet first. Keep the tone friendly, clear, and engaging. Give practical next steps when useful. If confidence is low, say so plainly and suggest checking with a student advisor. ${buildToneInstruction(responseTone)}`;
-    const advisorTopK = selectedModelProfile === "fast" ? 3 : 6;
-    const contextForRequest =
-      selectedModelProfile === "fast" ? "" : advisorContext;
+    const professionalPersonaInstruction = `Persona: You are BluBot in warm, human academic-advisor mode. Speak naturally and helpfully. Get straight to the answer. Do not explain who you are, do not restate the user's question, and do not use stiff assistant phrases. Do not greet the user unless they greet first. Keep the tone friendly, clear, and engaging. Give practical next steps when useful. If confidence is low, say so plainly and suggest checking with a student advisor. Never cut your response off before finishing — complete every point fully. ${buildToneInstruction(responseTone)}`;
+    const advisorTopK = selectedModelProfile === "fast" ? 3 : 8;
+    // Always include advisor context — fast mode no longer strips the student
+    // profile. The backend already handles what to include per intent.
+    const contextForRequest = advisorContext;
 
     const contextualQuery = contextForRequest
       ? `${contextForRequest}\n${crossMajorFacultyHint ? `\n${crossMajorFacultyHint}` : ""}\n\n${professionalPersonaInstruction}\n\nStudent question:\n${userPromptForAdvisor}`
       : `${crossMajorFacultyHint ? `${crossMajorFacultyHint}\n\n` : ""}${professionalPersonaInstruction}\n\nStudent question:\n${userPromptForAdvisor}`;
 
+    // Build conversation history from the current thread — last 10 visible turns.
+    // Exclude system messages and the message we just appended (the current user question).
+    const recentHistory = messagesRef.current
+      .filter((m) => m.sender === "user" || m.sender === "bot")
+      .slice(-11, -1) // last 10 before the current message
+      .map((m) => ({
+        role: (m.sender === "user" ? "user" : "assistant") as "user" | "assistant",
+        text: m.text,
+      }));
+
     try {
-      const advisorReply = pendingUpload
-        ? await askHandbookAdvisorWithUpload({
-            query: contextualQuery,
-            top_k: advisorTopK,
-            model_profile: selectedModelProfile,
-            student_context: studentContextPayload,
-            faculty_slug: primaryFacultySlug,
-            attachment: {
-              uri: pendingUpload.uri,
-              name: pendingUpload.name,
-              mimeType: pendingUpload.mimeType,
-              file: pendingUpload.file,
+      if (pendingUpload) {
+        // File uploads don't support streaming — fall back to one-shot request.
+        const advisorReply = await askHandbookAdvisorWithUpload({
+          query: contextualQuery,
+          top_k: advisorTopK,
+          model_profile: selectedModelProfile,
+          student_context: studentContextPayload,
+          faculty_slug: primaryFacultySlug,
+          attachment: {
+            uri: pendingUpload.uri,
+            name: pendingUpload.name,
+            mimeType: pendingUpload.mimeType,
+            file: pendingUpload.file,
+          },
+        });
+
+        setConnectionMode("online");
+        setLastBackendSyncedAt(new Date().toISOString());
+        setIsFallbackGuidance(false);
+
+        const botMessage: Message = {
+          id: pendingBotMessageId,
+          text: polishAdvisorReply(
+            addAdvisorEscalationIfNeeded(
+              formatAdvisorResponse(advisorReply.answer, advisorReply.citations),
+            ),
+            firstName,
+            responseTone,
+            mirrorsGreeting,
+          ),
+          sender: "bot",
+          timestamp: new Date(),
+        };
+
+        upsertMessageInThread(targetThreadId, botMessage);
+      } else {
+        // Streaming path — tokens arrive progressively for a live-typing feel.
+        let accumulatedText = "";
+        let streamedCitations: ScienceAdvisorCitation[] = [];
+        let streamErrored = false;
+
+        // Insert an empty placeholder so the user sees the bot "thinking".
+        const placeholderMessage: Message = {
+          id: pendingBotMessageId,
+          text: "…",
+          sender: "bot",
+          timestamp: new Date(),
+        };
+        upsertMessageInThread(targetThreadId, placeholderMessage);
+
+        await new Promise<void>((resolve) => {
+          const callbacks: BluBotStreamCallbacks = {
+            onToken(token) {
+              accumulatedText += token;
+              upsertMessageInThread(targetThreadId, {
+                id: pendingBotMessageId,
+                text: accumulatedText,
+                sender: "bot",
+                timestamp: new Date(),
+              });
             },
-          })
-        : await askHandbookAdvisor({
-            query: contextualQuery,
-            top_k: advisorTopK,
-            model_profile: selectedModelProfile,
-            student_context: studentContextPayload,
-            faculty_slug: primaryFacultySlug,
-          });
+            onDone(meta) {
+              streamedCitations = (meta.citations ?? []) as ScienceAdvisorCitation[];
+              resolve();
+            },
+            onError(message) {
+              streamErrored = true;
+              accumulatedText = message;
+              resolve();
+            },
+          };
 
-      setConnectionMode("online");
-      setLastBackendSyncedAt(new Date().toISOString());
-      setIsFallbackGuidance(false);
+          void askHandbookAdvisorStream(
+            {
+              query: contextualQuery,
+              top_k: advisorTopK,
+              model_profile: selectedModelProfile,
+              student_context: studentContextPayload,
+              faculty_slug: primaryFacultySlug,
+              conversation_history: recentHistory.length > 0 ? recentHistory : undefined,
+            },
+            callbacks,
+          );
+        });
 
-      const botMessage: Message = {
-        id: pendingBotMessageId,
-        text: polishAdvisorReply(
+        if (streamErrored) {
+          throw new Error(accumulatedText);
+        }
+
+        setConnectionMode("online");
+        setLastBackendSyncedAt(new Date().toISOString());
+        setIsFallbackGuidance(false);
+
+        // Polish the final accumulated text the same way as the one-shot path.
+        const finalText = polishAdvisorReply(
           addAdvisorEscalationIfNeeded(
-            formatAdvisorResponse(advisorReply.answer, advisorReply.citations),
+            formatAdvisorResponse(accumulatedText, streamedCitations),
           ),
           firstName,
           responseTone,
           mirrorsGreeting,
-        ),
-        sender: "bot",
-        timestamp: new Date(),
-      };
+        );
 
-      upsertMessageInThread(targetThreadId, botMessage);
+        upsertMessageInThread(targetThreadId, {
+          id: pendingBotMessageId,
+          text: finalText,
+          sender: "bot",
+          timestamp: new Date(),
+        });
+      }
     } catch (error) {
       console.error("Backend advisor request failed:", error);
 

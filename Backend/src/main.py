@@ -1,5 +1,6 @@
-from fastapi import FastAPI, File, Form, HTTPException, UploadFile
+from fastapi import FastAPI, File, Form, HTTPException, Request, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import StreamingResponse
 from pydantic import BaseModel, Field
 from io import BytesIO
 import boto3
@@ -10,7 +11,7 @@ import json
 from pathlib import Path
 import re
 from pypdf import PdfReader
-from typing import Any, Literal
+from typing import Any, Iterator, Literal
 
 from src.advisor import ScienceAdvisor
 from src.academic_rules import ScienceHandbookRulesService
@@ -63,6 +64,11 @@ class HandbookRetrievalRequest(BaseModel):
     faculty_slug: str = Field(default="science", min_length=2)
 
 
+class ConversationTurnInput(BaseModel):
+    role: Literal["user", "assistant"]
+    text: str
+
+
 class AdvisorRequest(BaseModel):
     query: str = Field(min_length=1)
     top_k: int = Field(default=5, ge=1, le=20)
@@ -72,6 +78,8 @@ class AdvisorRequest(BaseModel):
     # When present, BluBot cross-references their course history against
     # handbook prerequisites to give personalised, accurate guidance.
     student_context: dict | None = None
+    # Recent conversation turns for multi-turn context.
+    conversation_history: list[ConversationTurnInput] | None = None
 
 
 class HandbookAdvisorRequest(BaseModel):
@@ -81,6 +89,8 @@ class HandbookAdvisorRequest(BaseModel):
     model_profile: Literal["fast", "thinking"] | None = None
     student_context: dict | None = None
     faculty_slug: str = Field(default="science", min_length=2)
+    # Recent conversation turns for multi-turn context.
+    conversation_history: list[ConversationTurnInput] | None = None
 
 
 class AdvisorChatListRequest(BaseModel):
@@ -252,6 +262,7 @@ def _answer_handbook_advisor(
     model_profile: Literal["fast", "thinking"] | None,
     student_context: dict | None,
     faculty_slug: str,
+    conversation_history: list | None = None,
 ) -> dict:
     requested_slug, resolved_slug, used_fallback = _resolve_advisor_faculty(faculty_slug)
     response = science_advisor.answer(
@@ -261,6 +272,7 @@ def _answer_handbook_advisor(
         model_profile=model_profile,
         student_context=student_context,
         faculty_slug=resolved_slug,
+        conversation_history=conversation_history,
     )
 
     if isinstance(response, dict):
@@ -1058,6 +1070,7 @@ def query_handbook_retrieval(request: HandbookRetrievalRequest) -> dict:
 @app.post("/advisor/science/ask")
 def ask_science_advisor(request: AdvisorRequest) -> dict:
     try:
+        history = [t.model_dump() for t in request.conversation_history] if request.conversation_history else None
         return _answer_handbook_advisor(
             query=request.query,
             top_k=request.top_k,
@@ -1065,6 +1078,7 @@ def ask_science_advisor(request: AdvisorRequest) -> dict:
             model_profile=request.model_profile,
             student_context=request.student_context,
             faculty_slug="science",
+            conversation_history=history,
         )
     except FileNotFoundError as exc:
         raise HTTPException(status_code=404, detail=str(exc)) from exc
@@ -1075,6 +1089,7 @@ def ask_science_advisor(request: AdvisorRequest) -> dict:
 @app.post("/advisor/handbook/ask")
 def ask_handbook_advisor(request: HandbookAdvisorRequest) -> dict:
     try:
+        history = [t.model_dump() for t in request.conversation_history] if request.conversation_history else None
         return _answer_handbook_advisor(
             query=request.query,
             top_k=request.top_k,
@@ -1082,11 +1097,42 @@ def ask_handbook_advisor(request: HandbookAdvisorRequest) -> dict:
             model_profile=request.model_profile,
             student_context=request.student_context,
             faculty_slug=request.faculty_slug,
+            conversation_history=history,
         )
     except FileNotFoundError as exc:
         raise HTTPException(status_code=404, detail=str(exc)) from exc
     except Exception as exc:
         raise HTTPException(status_code=500, detail=str(exc)) from exc
+
+
+@app.post("/advisor/handbook/ask-stream")
+async def ask_handbook_advisor_stream(request: HandbookAdvisorRequest) -> StreamingResponse:
+    history = [t.model_dump() for t in request.conversation_history] if request.conversation_history else None
+
+    def _generate() -> Iterator[str]:
+        try:
+            yield from science_advisor.answer_stream(
+                query=request.query,
+                run_id=request.run_id,
+                top_k=request.top_k,
+                model_profile=request.model_profile,
+                student_context=request.student_context,
+                faculty_slug=request.faculty_slug or "science",
+                conversation_history=history,
+            )
+        except FileNotFoundError as exc:
+            yield f"data: {json.dumps({'type': 'error', 'message': str(exc)})}\n\n"
+        except Exception as exc:
+            yield f"data: {json.dumps({'type': 'error', 'message': str(exc)})}\n\n"
+
+    return StreamingResponse(
+        _generate(),
+        media_type="text/event-stream",
+        headers={
+            "Cache-Control": "no-cache",
+            "X-Accel-Buffering": "no",
+        },
+    )
 
 
 @app.post("/advisor/science/ask-upload")
