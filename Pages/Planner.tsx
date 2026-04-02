@@ -2701,9 +2701,8 @@ export default function Planner({
               onPress={() => void handleDownloadPdf("table")}
               disabled={isGeneratingPdf}
             >
-              <Text style={styles.downloadOptionIcon}>📋</Text>
               <View style={styles.downloadOptionBody}>
-                <Text style={styles.downloadOptionTitle}>Year Table</Text>
+                <Text style={styles.downloadOptionTitle}>Academic Plan</Text>
                 <Text style={styles.downloadOptionDesc}>
                   Courses organised by year and semester with credits and status
                 </Text>
@@ -2715,9 +2714,10 @@ export default function Planner({
               onPress={() => void handleDownloadPdf("timetable")}
               disabled={isGeneratingPdf}
             >
-              <Text style={styles.downloadOptionIcon}>🗓</Text>
               <View style={styles.downloadOptionBody}>
-                <Text style={styles.downloadOptionTitle}>Weekly Timetable</Text>
+                <Text style={styles.downloadOptionTitle}>
+                  Academic Timetable
+                </Text>
                 <Text style={styles.downloadOptionDesc}>
                   Period grid per semester — shows lecture slots and detects
                   clashes
@@ -3866,10 +3866,6 @@ const styles = StyleSheet.create({
   downloadOptionPrimary: {
     borderColor: "#BFDBFE",
     backgroundColor: "#EFF6FF",
-  },
-  downloadOptionIcon: {
-    fontSize: 24,
-    marginTop: 2,
   },
   downloadOptionBody: {
     flex: 1,
