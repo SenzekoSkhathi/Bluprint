@@ -189,9 +189,10 @@ function canScheduleCourse(
   semesterName: string,
   satisfiedCodes: Set<string>,
 ): boolean {
+  const normalizedSemester = normalizeCourseSemester(course.semester);
   const offeredInTerm =
-    course.semester === semesterName ||
-    (course.semester === "FY" && semesterName === "Semester 1");
+    normalizedSemester === semesterName ||
+    (normalizedSemester === "FY" && semesterName === "Semester 1");
   if (!offeredInTerm) return false;
 
   if (hasCreditExclusionConflict(course.code, satisfiedCodes)) return false;
@@ -206,7 +207,49 @@ function canScheduleCourse(
 }
 
 function isWholeYearCourse(course: CourseCatalogEntry): boolean {
-  return course.semester === "FY" || /[HW]$/i.test(course.code);
+  return (
+    normalizeCourseSemester(course.semester) === "FY" ||
+    /[HW]$/i.test(course.code)
+  );
+}
+
+function normalizeCourseSemester(raw: string): string {
+  const value = (raw ?? "").trim().toLowerCase();
+
+  if (
+    value === "fy" ||
+    value === "full year" ||
+    value === "whole year" ||
+    value === "year course" ||
+    value === "h" ||
+    value === "w" ||
+    value.includes("first or second") ||
+    value.includes("f/s")
+  ) {
+    return "FY";
+  }
+
+  if (
+    value === "s1" ||
+    value === "sem 1" ||
+    value === "semester 1" ||
+    value.startsWith("first semester") ||
+    /semester\s*1/.test(value)
+  ) {
+    return "Semester 1";
+  }
+
+  if (
+    value === "s2" ||
+    value === "sem 2" ||
+    value === "semester 2" ||
+    value.startsWith("second semester") ||
+    /semester\s*2/.test(value)
+  ) {
+    return "Semester 2";
+  }
+
+  return raw;
 }
 
 function parseYearNumber(value: string): number {

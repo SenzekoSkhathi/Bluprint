@@ -249,4 +249,51 @@ describe("generateAutoGraduationPlans", () => {
 
     expect(containsWholeYearElective).toBe(false);
   });
+
+  it("schedules courses with S1/S2 semester labels", () => {
+    const catalog: CourseCatalogEntry[] = [
+      makeCourse("REQ1001", "S1", 15),
+      makeCourse("REQ1002", "S2", 15),
+      makeCourse("ELC1001", "S1", 15),
+      makeCourse("ELC1002", "S2", 15),
+    ];
+
+    const majorCombinations: MajorCombination[] = [
+      {
+        id: "TEST-S1S2",
+        major: "Computer Science",
+        year: 1,
+        requiredCourseCodes: ["REQ1001", "REQ1002"],
+        suggestedElectiveCodes: ["ELC1001", "ELC1002"],
+      },
+    ];
+
+    const plans = generateAutoGraduationPlans({
+      catalog,
+      requirements: {
+        id: "test-degree-s1s2",
+        name: "Test Degree S1S2",
+        targetCredits: 60,
+        minimumYearlyCredits: 60,
+        coreCourseCodes: [],
+      },
+      completedCourses: [],
+      inProgressCourses: [],
+      plannedCourses: [],
+      majorCombinations,
+      studentCombinationIds: ["Computer Science"],
+    });
+
+    const hasTerms = plans.some((plan) => plan.terms.length > 0);
+    const containsRequired = plans.some((plan) =>
+      plan.terms.some((term) =>
+        term.courses.some(
+          (course) => course.code === "REQ1001" || course.code === "REQ1002",
+        ),
+      ),
+    );
+
+    expect(hasTerms).toBe(true);
+    expect(containsRequired).toBe(true);
+  });
 });
