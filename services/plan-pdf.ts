@@ -626,15 +626,26 @@ export async function downloadPlanPdf(
     // This is far more reliable than html2canvas-based libraries: the browser
     // fully renders CSS (including @page size/margins) so the output matches
     // the pdf-preview.html sandbox exactly.
-    const printWindow = window.open("", "_blank");
-    if (!printWindow) return;
 
-    // Inject auto-print script so the dialog fires once the page has rendered.
-    const titledHtml = html.replace(
-      "</body>",
-      `<script>window.onload = function() { window.focus(); window.print(); };<\/script></body>`,
-    ).replace("<head>", `<head><title>${filename}</title>`);
-    printWindow.document.documentElement.innerHTML = titledHtml;
+    // Create a Blob from the HTML with an auto-print script
+    const titledHtml = html
+      .replace(
+        "</body>",
+        `<script>window.onload = function() { window.focus(); window.print(); };<\/script></body>`,
+      )
+      .replace("<head>", `<head><title>${filename}</title>`);
+
+    const blob = new Blob([titledHtml], { type: "text/html" });
+    const blobUrl = URL.createObjectURL(blob);
+
+    const printWindow = window.open(blobUrl, "_blank");
+    if (!printWindow) {
+      URL.revokeObjectURL(blobUrl);
+      return;
+    }
+
+    // Clean up the blob URL after a short delay to ensure the window has opened
+    setTimeout(() => URL.revokeObjectURL(blobUrl), 1000);
     return;
   }
 
