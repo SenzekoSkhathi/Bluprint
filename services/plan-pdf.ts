@@ -629,17 +629,12 @@ export async function downloadPlanPdf(
     const printWindow = window.open("", "_blank");
     if (!printWindow) return;
 
+    // Inject auto-print script so the dialog fires once the page has rendered.
     const titledHtml = html.replace(
-      "<head>",
-      `<head><title>${filename}</title>`,
-    );
+      "</body>",
+      `<script>window.onload = function() { window.focus(); window.print(); };<\/script></body>`,
+    ).replace("<head>", `<head><title>${filename}</title>`);
     printWindow.document.documentElement.innerHTML = titledHtml;
-
-    // Wait for fonts and images, then trigger print.
-    printWindow.addEventListener("load", () => {
-      printWindow.focus();
-      printWindow.print();
-    });
     return;
   }
 
