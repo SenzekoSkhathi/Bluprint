@@ -8,9 +8,11 @@
     "scheme": "bluprint",
     "userInterfaceStyle": "automatic",
     "ios": {
+      "bundleIdentifier": "com.bluprint.app",
       "supportsTablet": true
     },
     "android": {
+      "package": "com.bluprint.app",
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/images/android-icon-foreground.png",

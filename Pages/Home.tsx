@@ -4,7 +4,7 @@ import ProgressBar from "@/components/progress-bar";
 import { theme } from "@/constants/theme";
 import { useIsMobile } from "@/hooks/use-is-mobile";
 import React, { useEffect, useState } from "react";
-import { FlatList, StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 
 interface HomeProps {
   onNavigate?: (page: string) => void;
@@ -151,6 +151,12 @@ const Home = ({
     onNavigate?.(page);
   };
 
+  const columns = isMobile ? 2 : 4;
+  const tileRows = Array.from(
+    { length: Math.ceil(tiles.length / columns) },
+    (_, index) => tiles.slice(index * columns, index * columns + columns),
+  );
+
   return (
     <MainLayout>
       {/* Top Section with Baby Blue Background */}
@@ -158,16 +164,27 @@ const Home = ({
         {/* Header Section */}
         <View style={[styles.header, isMobile && styles.headerMobile]}>
           <View style={[styles.headerTop, isMobile && styles.headerTopMobile]}>
-            <View style={[styles.headerLeft, isMobile && styles.headerLeftMobile]}>
-              <Text style={[styles.date, isMobile && styles.dateMobile]}>{formatDate()}</Text>
-              <Text style={[styles.greeting, isMobile && styles.greetingMobile]}>
+            <View
+              style={[styles.headerLeft, isMobile && styles.headerLeftMobile]}
+            >
+              <Text style={[styles.date, isMobile && styles.dateMobile]}>
+                {formatDate()}
+              </Text>
+              <Text
+                style={[styles.greeting, isMobile && styles.greetingMobile]}
+              >
                 {getGreeting()},{" "}
                 <Text style={styles.name}>{studentData.firstName}</Text>
               </Text>
             </View>
             <View style={styles.avatarContainer}>
               <View style={[styles.avatar, isMobile && styles.avatarMobile]}>
-                <Text style={[styles.avatarText, isMobile && styles.avatarTextMobile]}>
+                <Text
+                  style={[
+                    styles.avatarText,
+                    isMobile && styles.avatarTextMobile,
+                  ]}
+                >
                   {studentData.firstName.charAt(0)}
                 </Text>
               </View>
@@ -176,7 +193,12 @@ const Home = ({
           </View>
 
           {/* Student Info */}
-          <View style={[styles.infoContainer, isMobile && styles.infoContainerMobile]}>
+          <View
+            style={[
+              styles.infoContainer,
+              isMobile && styles.infoContainerMobile,
+            ]}
+          >
             <Text
               style={[styles.infoText, isMobile && styles.infoTextMobile]}
               numberOfLines={1}
@@ -184,8 +206,14 @@ const Home = ({
             >
               {studentData.degree}
             </Text>
-            <View style={[styles.infoCompact, isMobile && styles.infoCompactMobile]}>
-              <Text style={[styles.infoLabel, isMobile && styles.infoLabelMobile]}>{studentData.year}</Text>
+            <View
+              style={[styles.infoCompact, isMobile && styles.infoCompactMobile]}
+            >
+              <Text
+                style={[styles.infoLabel, isMobile && styles.infoLabelMobile]}
+              >
+                {studentData.year}
+              </Text>
               <View style={styles.infoDot} />
               <Text
                 style={[styles.infoLabel, isMobile && styles.infoLabelMobile]}
@@ -199,7 +227,12 @@ const Home = ({
         </View>
 
         {/* Progress Section */}
-        <View style={[styles.progressSection, isMobile && styles.progressSectionMobile]}>
+        <View
+          style={[
+            styles.progressSection,
+            isMobile && styles.progressSectionMobile,
+          ]}
+        >
           <ProgressBar
             currentCredits={studentData.currentCredits}
             totalCredits={studentData.totalCredits}
@@ -209,42 +242,67 @@ const Home = ({
       </View>
 
       {/* Section Label */}
-      <View style={[styles.sectionHeader, isMobile && styles.sectionHeaderMobile]}>
-        <Text style={[styles.sectionTitle, isMobile && styles.sectionTitleMobile]}>Quick Access</Text>
-        <Text style={[styles.sectionSubtitle, isMobile && styles.sectionSubtitleMobile]}>Navigate your academic tools</Text>
+      <View
+        style={[styles.sectionHeader, isMobile && styles.sectionHeaderMobile]}
+      >
+        <Text
+          style={[styles.sectionTitle, isMobile && styles.sectionTitleMobile]}
+        >
+          Quick Access
+        </Text>
+        <Text
+          style={[
+            styles.sectionSubtitle,
+            isMobile && styles.sectionSubtitleMobile,
+          ]}
+        >
+          Navigate your academic tools
+        </Text>
       </View>
 
       {/* Tile Grid */}
-      <FlatList
-        data={tiles}
-        keyExtractor={(item) => item.id}
-        numColumns={isMobile ? 2 : 4}
-        columnWrapperStyle={
-          isMobile
-            ? styles.columnWrapperMobile
-            : styles.columnWrapperWeb
-        }
-        scrollEnabled={false}
-        renderItem={({ item: tile }) => (
+      <View>
+        {tileRows.map((row, rowIndex) => (
           <View
+            key={`row-${rowIndex}`}
             style={
-              isMobile
-                ? styles.tileWrapperMobile
-                : styles.tileWrapperWeb
+              isMobile ? styles.columnWrapperMobile : styles.columnWrapperWeb
             }
           >
-            <NavigationTile
-              title={tile.title}
-              icon={tile.icon}
-              color={tile.color}
-              iconTextColor={tile.iconTextColor}
-              iconBackgroundColor={tile.iconBackgroundColor}
-              onClick={() => handleTileClick(tile.page)}
-              isActive={activePage === tile.page}
-            />
+            {row.map((tile) => (
+              <View
+                key={tile.id}
+                style={
+                  isMobile ? styles.tileWrapperMobile : styles.tileWrapperWeb
+                }
+              >
+                <NavigationTile
+                  title={tile.title}
+                  icon={tile.icon}
+                  color={tile.color}
+                  iconTextColor={tile.iconTextColor}
+                  iconBackgroundColor={tile.iconBackgroundColor}
+                  onClick={() => handleTileClick(tile.page)}
+                  isActive={activePage === tile.page}
+                />
+              </View>
+            ))}
+            {row.length < columns &&
+              Array.from({ length: columns - row.length }).map(
+                (_, emptyIndex) => (
+                  <View
+                    key={`empty-${rowIndex}-${emptyIndex}`}
+                    style={
+                      isMobile
+                        ? styles.tileWrapperMobile
+                        : styles.tileWrapperWeb
+                    }
+                  />
+                ),
+              )}
           </View>
-        )}
-      />
+        ))}
+      </View>
     </MainLayout>
   );
 };

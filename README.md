@@ -52,6 +52,171 @@ To learn more about developing your project with Expo, look at the following res
 - [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
 - [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
 
+## Build installable apps with EAS
+
+This repo now includes [eas.json](eas.json) with `development`, `preview`, and `production` profiles.
+
+### One-time setup
+
+1. Log in to Expo account:
+
+   ```bash
+   npx eas-cli login
+   ```
+
+2. Configure project on Expo (creates and links project id when needed):
+
+   ```bash
+   npx eas-cli project:init
+   ```
+
+3. Verify app identifiers in [app.json](app.json):
+   - iOS bundle id: `com.bluprint.app`
+   - Android package: `com.bluprint.app`
+
+   If these are already used in your developer accounts, change them before production release.
+
+### Build commands
+
+- Android internal APK (easy sideload/install):
+
+  ```bash
+  npx eas-cli build --platform android --profile preview
+  ```
+
+- Android Play Store AAB:
+
+  ```bash
+  npx eas-cli build --platform android --profile production
+  ```
+
+- iOS build (for TestFlight/App Store):
+
+  ```bash
+  npx eas-cli build --platform ios --profile production
+  ```
+
+### npm script shortcuts
+
+- Login to Expo:
+
+  ```bash
+  npm run eas:login
+  ```
+
+- Link/init this project on Expo:
+
+  ```bash
+  npm run eas:init
+  ```
+
+- Android development client APK:
+
+  ```bash
+  npm run build:android:dev
+  ```
+
+- Android preview APK:
+
+  ```bash
+  npm run build:android:preview
+  ```
+
+- Android production AAB:
+
+  ```bash
+  npm run build:android:prod
+  ```
+
+- iOS production build:
+
+  ```bash
+  npm run build:ios:prod
+  ```
+
+### Submit commands
+
+- Submit Android production build to Play Console:
+
+  ```bash
+  npx eas-cli submit --platform android --profile production
+  ```
+
+- Submit iOS production build to App Store Connect:
+
+  ```bash
+  npx eas-cli submit --platform ios --profile production
+  ```
+
+### First Android preview build (step-by-step)
+
+1. Ensure dependencies are installed:
+
+   ```bash
+   npm install
+   ```
+
+2. Log in to Expo and initialize project:
+
+   ```bash
+   npm run eas:login
+   npm run eas:init
+   ```
+
+3. Start the first installable Android preview build:
+
+   ```bash
+   npm run build:android:preview
+   ```
+
+4. In the interactive prompts:
+   - Let EAS generate a new Android keystore if asked (recommended for first build).
+   - Confirm profile `preview` and platform `android`.
+
+5. After build completes, open the build URL shown by EAS and download the APK to your phone.
+
+6. Install APK on Android:
+   - Allow installation from unknown sources for your browser/file manager if prompted.
+   - Open the APK and install.
+
+7. For later Play Store release, run:
+
+   ```bash
+   npm run build:android:prod
+   ```
+
+### Store readiness checklist
+
+- App identity
+  - Verify `name`, `slug`, `version` in `app.json`.
+  - Confirm unique ids: iOS `bundleIdentifier`, Android `package`.
+
+- Branding assets
+  - 1024x1024 app icon with no transparency issues.
+  - Android adaptive icon foreground/background tested on light and dark launchers.
+  - Splash image and background color validated on device.
+
+- Build and signing
+  - EAS project linked and credentials generated.
+  - Android preview APK installs on at least one physical device.
+  - Android production AAB builds successfully.
+  - iOS production build completes and uploads to App Store Connect/TestFlight.
+
+- Product quality
+  - No crash on cold start.
+  - Login, planner save, progress, and key flows tested on physical devices.
+  - Offline/poor-network behavior verified for critical screens.
+
+- Compliance and metadata
+  - Privacy policy URL published and accessible.
+  - Permissions descriptions are accurate and minimal.
+  - App screenshots, descriptions, and support contact prepared for stores.
+
+- Release controls
+  - Confirm backend production URL and environment variables.
+  - Version bump plan set for each release.
+  - Rollback/hotfix plan documented.
+
 ## Join the community
 
 Join our community of developers creating universal apps.
