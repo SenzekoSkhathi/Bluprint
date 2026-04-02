@@ -391,6 +391,7 @@ export function generateAutoGraduationPlans(
     const termPlans: AutoPlannedTerm[] = [];
     const satisfiedCodes = new Set(existingCompletedCodes);
     const remainingCoreCodes = new Set(unresolvedCoreCodes);
+    let underloadedRequiredTerms = 0;
     // Collect suggested electives from the student's combinations for
     // real course filling (avoids generic ELECTIVE-BLOCK placeholders).
     const availableElectiveCodes = collectSuggestedElectives(
@@ -537,12 +538,9 @@ export function generateAutoGraduationPlans(
       });
 
       if (selectedCredits < MIN_CREDITS_PER_TERM) {
-        // If this term cannot legally reach minimum load, skip it and try next term.
-        provisionalElectiveCodes.forEach((code) => {
-          satisfiedCodes.delete(code);
-        });
-        loopTermIndex += 1;
-        continue;
+        // Keep required-course terms visible even when a same-semester top-up
+        // is unavailable; otherwise plans can appear empty.
+        underloadedRequiredTerms += 1;
       }
 
       provisionalElectiveCodes.forEach((code) => {
@@ -745,6 +743,12 @@ export function generateAutoGraduationPlans(
       `Planner is capped at Year 4 (Semester 2) with a minimum ${MIN_CREDITS_PER_TERM} credits per generated term.`,
       `Projected credits after plan: ${projectedTotalCredits}/${input.requirements.targetCredits}.`,
     ];
+
+    if (underloadedRequiredTerms > 0) {
+      rationale.push(
+        `${underloadedRequiredTerms} required-course term${underloadedRequiredTerms === 1 ? "" : "s"} are below ${MIN_CREDITS_PER_TERM} credits because no valid same-semester elective top-up was available.`,
+      );
+    }
 
     const score = scorePlan({
       objective: profile.objective,
