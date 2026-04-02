@@ -247,15 +247,41 @@ export function generateAutoGraduationPlans(
   // Collect required courses from the student's major combinations.
   // studentCombinationIds holds major names (e.g. "Computer Science"), so
   // match by combination.major rather than combination.id.
+  //
+  // For each (major, year) group there may be multiple variants (A/B/C). Pick
+  // the single variant whose required courses best overlap with what the student
+  // has already completed — this prevents merging ALL variants and incorrectly
+  // treating every alternative course as required.
   const majorCoreCodes = new Set<string>(input.requirements.coreCourseCodes);
   if (input.majorCombinations && input.studentCombinationIds) {
     const registeredMajorNames = new Set(
       input.studentCombinationIds.map((n) => n.trim().toLowerCase()),
     );
+
+    // Group matching combinations by (major, year)
+    const groupedCombos = new Map<string, typeof input.majorCombinations>();
     input.majorCombinations.forEach((combo) => {
-      if (registeredMajorNames.has(combo.major.trim().toLowerCase())) {
-        combo.requiredCourseCodes.forEach((code) => majorCoreCodes.add(code));
-      }
+      if (!registeredMajorNames.has(combo.major.trim().toLowerCase())) return;
+      const key = `${combo.major.trim().toLowerCase()}|${combo.year}`;
+      if (!groupedCombos.has(key)) groupedCombos.set(key, []);
+      groupedCombos.get(key)!.push(combo);
+    });
+
+    // For each group pick the best-matching variant — prefer the one that
+    // leaves the fewest unresolved required courses for this student.
+    groupedCombos.forEach((variants) => {
+      const best = [...variants].sort((a, b) => {
+        const aUnresolved = a.requiredCourseCodes.filter(
+          (c) => !isSatisfied(c, existingCompletedCodes),
+        ).length;
+        const bUnresolved = b.requiredCourseCodes.filter(
+          (c) => !isSatisfied(c, existingCompletedCodes),
+        ).length;
+        if (aUnresolved !== bUnresolved) return aUnresolved - bUnresolved;
+        // Tie-break: fewer total required codes = leaner combo
+        return a.requiredCourseCodes.length - b.requiredCourseCodes.length;
+      })[0];
+      best.requiredCourseCodes.forEach((code) => majorCoreCodes.add(code));
     });
   }
 
