@@ -624,18 +624,30 @@ export async function downloadPlanPdf(
   if (Platform.OS === "web") {
     // On web, generate a real downloadable PDF file so the browser can use
     // the requested filename directly.
-    const parser = new DOMParser();
-    const parsed = parser.parseFromString(html, "text/html");
-    const content = document.createElement("div");
-    content.style.position = "fixed";
-    content.style.left = "-10000px";
-    content.style.top = "0";
-    content.style.width = "1120px";
-    content.style.background = "white";
-    content.innerHTML = parsed.body.innerHTML;
-    document.body.appendChild(content);
+    const iframe = document.createElement("iframe");
+    iframe.style.position = "fixed";
+    iframe.style.left = "-10000px";
+    iframe.style.top = "0";
+    iframe.style.width = "1200px";
+    iframe.style.height = "1600px";
+    iframe.style.opacity = "0";
+    iframe.setAttribute("aria-hidden", "true");
+    iframe.srcdoc = html.replace("<head>", `<head><title>${filename}</title>`);
+    document.body.appendChild(iframe);
+
+    const waitForIframeLoad = () =>
+      new Promise<void>((resolve) => {
+        iframe.addEventListener("load", () => resolve(), { once: true });
+      });
 
     try {
+      await waitForIframeLoad();
+
+      const iframeDocument = iframe.contentDocument;
+      if (iframeDocument?.fonts?.ready) {
+        await iframeDocument.fonts.ready;
+      }
+
       const html2pdfModule = await import("html2pdf.js");
       const html2pdf =
         (html2pdfModule as { default?: any }).default ?? html2pdfModule;
@@ -657,10 +669,10 @@ export async function downloadPlanPdf(
           },
           pagebreak: { mode: ["css", "legacy"] },
         })
-        .from(content)
+        .from(iframe.contentDocument?.body ?? iframe)
         .save();
     } finally {
-      content.remove();
+      iframe.remove();
     }
     return;
   }
