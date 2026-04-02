@@ -21,7 +21,8 @@ export default function Root({ children }: PropsWithChildren) {
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="apple-mobile-web-app-title" content="Bluprint" />
-        <link rel="apple-touch-icon" href="/icon-180.png" />
+        <link rel="icon" href="/Bluprint%20favicon.png" />
+        <link rel="apple-touch-icon" href="/Bluprint%20favicon.png" />
 
         <script
           dangerouslySetInnerHTML={{
