@@ -262,8 +262,15 @@ function buildTableHtml(data: PlanPdfData, logoSrc: string): string {
 <meta charset="utf-8"/>
 <style>
   @page { size: A4 portrait; margin: 14mm 14mm 20mm 14mm; }
+  html {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    font-synthesis: none;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: geometricPrecision;
+  }
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: Arial, Helvetica, sans-serif; font-size: 9px; font-weight: 400;
+  body { font-family: "Segoe UI", Arial, Helvetica, sans-serif; font-size: 9px; font-weight: 400;
          color: #1a1a2e; -webkit-font-smoothing: antialiased; }
 
   /* ── Header ── */
@@ -272,13 +279,13 @@ function buildTableHtml(data: PlanPdfData, logoSrc: string): string {
   .header-left { display: flex; align-items: center; gap: 6px; min-width: 80px; }
   .logo { width: 38px; height: 38px; object-fit: contain; }
   .logo-placeholder { width: 38px; height: 38px; background: #2563EB; color: white;
-                      font-size: 20px; font-weight: 700; display: flex;
+                      font-size: 20px; font-weight: 600; display: flex;
                       align-items: center; justify-content: center; border-radius: 6px; }
-  .header-brand .brand-name { font-size: 13px; font-weight: 700; color: #1E3A5F; }
+  .header-brand .brand-name { font-size: 13px; font-weight: 600; color: #1E3A5F; }
   .header-brand .brand-sub  { font-size: 7px; font-weight: 400; color: #64748B; }
   .header-center { flex: 1; }
-  .doc-title    { font-size: 11px; font-weight: 700; color: #2563EB; margin-bottom: 2px; }
-  .student-name { font-size: 14px; font-weight: 700; color: #1E3A5F; margin-bottom: 3px; }
+  .doc-title    { font-size: 11px; font-weight: 600; color: #2563EB; margin-bottom: 2px; }
+  .student-name { font-size: 14px; font-weight: 600; color: #1E3A5F; margin-bottom: 3px; }
   .meta-row     { font-size: 7.5px; font-weight: 400; color: #475569; margin-bottom: 2px; }
   .meta-row b   { font-weight: 600; }
   .meta-sep     { margin: 0 5px; color: #CBD5E1; }
@@ -291,7 +298,7 @@ function buildTableHtml(data: PlanPdfData, logoSrc: string): string {
   .year-header   { display: flex; align-items: center; gap: 8px; margin-bottom: 6px;
                    background: #EFF6FF; padding: 4px 8px; border-radius: 5px;
                    border-left: 4px solid #2563EB; }
-  .year-title    { font-size: 11px; font-weight: 700; color: #1E3A5F; }
+  .year-title    { font-size: 11px; font-weight: 600; color: #1E3A5F; }
   .year-badge    { font-size: 8px; color: #2563EB; font-weight: 600; }
   .year-credits  { margin-left: auto; font-size: 8px; font-weight: 400; color: #64748B; }
   .sem-block     { margin-bottom: 6px; margin-left: 8px; }
@@ -309,7 +316,7 @@ function buildTableHtml(data: PlanPdfData, logoSrc: string): string {
   .status-cell   { font-size: 7.5px; font-weight: 400; text-align: center; }
   .total-label   { text-align: right; font-weight: 600; font-size: 8px;
                    background: #F8FAFC; color: #1E3A5F; padding-right: 8px; }
-  .total-val     { font-weight: 700; color: #1E3A5F; background: #EFF6FF; }
+  .total-val     { font-weight: 600; color: #1E3A5F; background: #EFF6FF; }
 
   /* ── Footer ── */
   .footer { position: fixed; bottom: 0; left: 0; right: 0; height: 16px;
@@ -479,8 +486,15 @@ function buildTimetableHtml(data: PlanPdfData, logoSrc: string): string {
 <meta charset="utf-8"/>
 <style>
   @page { size: A4 landscape; margin: 10mm 12mm 18mm 12mm; }
+  html {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    font-synthesis: none;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: geometricPrecision;
+  }
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: Arial, Helvetica, sans-serif; font-size: 8px; color: #1a1a2e; }
+  body { font-family: "Segoe UI", Arial, Helvetica, sans-serif; font-size: 8px; color: #1a1a2e; }
 
   /* ── Header ── */
   .header { display: flex; align-items: flex-start; gap: 8px; padding-bottom: 6px;
@@ -488,13 +502,13 @@ function buildTimetableHtml(data: PlanPdfData, logoSrc: string): string {
   .header-left { display: flex; align-items: center; gap: 5px; min-width: 75px; }
   .logo { width: 32px; height: 32px; object-fit: contain; }
   .logo-placeholder { width: 32px; height: 32px; background: #2563EB; color: white;
-                      font-size: 16px; font-weight: bold; display: flex;
+                      font-size: 16px; font-weight: 600; display: flex;
                       align-items: center; justify-content: center; border-radius: 5px; }
-  .header-brand .brand-name { font-size: 11px; font-weight: 800; color: #1E3A5F; }
+  .header-brand .brand-name { font-size: 11px; font-weight: 600; color: #1E3A5F; }
   .header-brand .brand-sub  { font-size: 6.5px; color: #64748B; }
   .header-center { flex: 1; }
-  .doc-title    { font-size: 10px; font-weight: 700; color: #2563EB; margin-bottom: 1px; }
-  .student-name { font-size: 12px; font-weight: 800; color: #1E3A5F; margin-bottom: 2px; }
+  .doc-title    { font-size: 10px; font-weight: 600; color: #2563EB; margin-bottom: 1px; }
+  .student-name { font-size: 12px; font-weight: 600; color: #1E3A5F; margin-bottom: 2px; }
   .meta-row     { font-size: 7px; color: #475569; margin-bottom: 1px; }
   .meta-sep     { margin: 0 4px; color: #CBD5E1; }
   .header-right { text-align: right; min-width: 65px; }
@@ -506,12 +520,12 @@ function buildTimetableHtml(data: PlanPdfData, logoSrc: string): string {
   .year-header  { display: flex; align-items: center; gap: 7px; margin-bottom: 4px;
                   background: #EFF6FF; padding: 3px 7px; border-radius: 4px;
                   border-left: 3px solid #2563EB; }
-  .year-title   { font-size: 10px; font-weight: 800; color: #1E3A5F; }
+  .year-title   { font-size: 10px; font-weight: 600; color: #1E3A5F; }
   .year-badge   { font-size: 7.5px; color: #2563EB; font-weight: 600; }
   .year-credits { margin-left: auto; font-size: 7px; color: #64748B; }
   .sems-row     { display: flex; gap: 8px; }
   .sem-tt-block { flex: 1; min-width: 0; }
-  .sem-tt-heading { font-size: 8px; font-weight: 700; color: #3B82F6; margin-bottom: 2px; }
+  .sem-tt-heading { font-size: 8px; font-weight: 600; color: #3B82F6; margin-bottom: 2px; }
   .empty-sem    { font-size: 7.5px; color: #94A3B8; font-style: italic; padding: 4px; }
 
   /* ── Timetable grid ── */
@@ -522,14 +536,14 @@ function buildTimetableHtml(data: PlanPdfData, logoSrc: string): string {
                   text-align: center; font-size: 7px; }
   .day-header   { background: #2563EB; color: #fff; padding: 2px 3px;
                   text-align: center; font-size: 7px; }
-  .period-num   { text-align: center; font-weight: 700; color: #64748B; font-size: 7px;
+  .period-num   { text-align: center; font-weight: 600; color: #64748B; font-size: 7px;
                   background: #F8FAFC; border: 1px solid #E2E8F0; padding: 2px; }
   .period-time  { text-align: center; color: #94A3B8; font-size: 6.5px;
                   background: #F8FAFC; border: 1px solid #E2E8F0; padding: 2px; }
   .empty-cell   { border: 1px solid #F1F5F9; height: 18px; }
   .course-cell  { border: 1px solid #E2E8F0; padding: 1px 2px; vertical-align: middle; }
   .clash-cell   { border: 2px solid #DC2626; padding: 1px 2px; background: #FEF2F2; }
-  .course-chip  { border-radius: 3px; padding: 1px 3px; font-size: 6.5px; font-weight: 700;
+  .course-chip  { border-radius: 3px; padding: 1px 3px; font-size: 6.5px; font-weight: 600;
                   white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
                   margin-bottom: 1px; }
 
@@ -537,7 +551,7 @@ function buildTimetableHtml(data: PlanPdfData, logoSrc: string): string {
   .unscheduled  { margin-top: 3px; font-size: 7px; display: flex; flex-wrap: wrap;
                   align-items: center; gap: 2px; }
   .unsched-label{ color: #64748B; font-style: italic; }
-  .unsched-chip { border-radius: 3px; padding: 1px 4px; font-size: 6.5px; font-weight: 600; }
+  .unsched-chip { border-radius: 3px; padding: 1px 4px; font-size: 6.5px; font-weight: 500; }
   .clash-note   { font-size: 6.5px; color: #DC2626; font-weight: 600; margin-bottom: 2px; }
 
   /* ── Footer & stamp ── */
