@@ -1940,19 +1940,31 @@ export default function Planner({
     const getLectureTimes = (code: string): string | null =>
       catalogMap.get(code)?.lecture_times ?? null;
 
-    // Collect all courses into a year→semester structure
+    // H/W suffixed course codes run the full year — route them to a separate
+    // Full Year section rather than Semester 1 or 2.
+    const isFullYear = (code: string) =>
+      /[HW]\d*$/i.test(code.trim());
+
+    // Collect all courses into a year→semester/fullYear structure
     type MutableSem = { label: "Semester 1" | "Semester 2"; courses: PdfCourse[] };
-    type MutableYear = { sems: Map<number, MutableSem> };
+    type MutableYear = { sems: Map<number, MutableSem>; fullYear: PdfCourse[] };
     const yearMap = new Map<number, MutableYear>();
 
     const getOrAddYear = (n: number): MutableYear => {
-      if (!yearMap.has(n)) yearMap.set(n, { sems: new Map() });
+      if (!yearMap.has(n)) yearMap.set(n, { sems: new Map(), fullYear: [] });
       return yearMap.get(n)!;
     };
     const getOrAddSem = (yr: MutableYear, s: 1 | 2): MutableSem => {
       if (!yr.sems.has(s))
         yr.sems.set(s, { label: `Semester ${s}`, courses: [] });
       return yr.sems.get(s)!;
+    };
+    const addCourse = (yr: MutableYear, s: 1 | 2, course: PdfCourse) => {
+      if (isFullYear(course.code)) {
+        yr.fullYear.push(course);
+      } else {
+        getOrAddSem(yr, s).courses.push(course);
+      }
     };
 
     // Completed courses — semester format "Year X - Sem Y"
@@ -1962,7 +1974,7 @@ export default function Planner({
       if (!ym || !sm) return;
       const y = parseInt(ym[1], 10);
       const s = (parseInt(sm[1], 10) as 1 | 2);
-      getOrAddSem(getOrAddYear(y), s).courses.push({
+      addCourse(getOrAddYear(y), s, {
         code: c.code,
         name: c.title,
         credits: c.credits,
@@ -1978,7 +1990,7 @@ export default function Planner({
       if (!ym || !sm) return;
       const y = parseInt(ym[1], 10);
       const s = (parseInt(sm[1], 10) as 1 | 2);
-      getOrAddSem(getOrAddYear(y), s).courses.push({
+      addCourse(getOrAddYear(y), s, {
         code: c.code,
         name: c.title,
         credits: c.credits,
@@ -1991,7 +2003,7 @@ export default function Planner({
     courses.forEach((c) => {
       const y = getYearNumber(c.year);
       const s = (getSemesterNumber(c.semester) as 1 | 2);
-      getOrAddSem(getOrAddYear(y), s).courses.push({
+      addCourse(getOrAddYear(y), s, {
         code: c.code,
         name: c.name,
         credits: c.credits,
@@ -2008,16 +2020,18 @@ export default function Planner({
         const sem = entry.sems.get(s);
         return sem ?? { label: `Semester ${s}`, courses: [] };
       });
-      const totalCredits = semesters.reduce(
-        (sum, sem) => sum + sem.courses.reduce((ss, c) => ss + c.credits, 0),
-        0,
-      );
+      const totalCredits =
+        semesters.reduce(
+          (sum, sem) => sum + sem.courses.reduce((ss, c) => ss + c.credits, 0),
+          0,
+        ) + entry.fullYear.reduce((ss, c) => ss + c.credits, 0);
       return {
         yearNumber: y,
         calendarYear,
         isCurrent: y === yearNum,
         isPast: y < yearNum,
         semesters,
+        fullYearCourses: entry.fullYear,
         totalCredits,
       };
     });
@@ -2028,6 +2042,7 @@ export default function Planner({
       studentName,
       studentNumber: studentNumber ?? "—",
       degreeName,
+      majors: registeredMajors,
       academicLevel: yearNum,
       currentCalendarYear: calYear,
       years: pdfYears,

@@ -1,0 +1,754 @@
+<!doctype html>
+<!--
+  ╔══════════════════════════════════════════════════════════════╗
+  ║  BLUPRINT — PDF DESIGN SANDBOX                               ║
+  ║                                                              ║
+  ║  Edit this file freely in any editor or browser DevTools.    ║
+  ║  When you're happy, copy your CSS/HTML changes back into:    ║
+  ║  services/plan-pdf.ts → buildTableHtml() / buildHeader() /   ║
+  ║  buildFooter() / statusColor()                               ║
+  ║                                                              ║
+  ║  Open in browser:  just double-click this file               ║
+  ║  Live reload:      open with VS Code Live Server extension    ║
+  ╚══════════════════════════════════════════════════════════════╝
+-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Bluprint PDF Preview</title>
+    <style>
+      /* ── Page simulation ───────────────────────────────────────────────────────
+     In the real PDF these @page rules apply. Here we simulate an A4 page
+     using a centred white card so you see exactly how the PDF will look.     */
+      body {
+        background: #e5e7eb;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 32px 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        gap: 0;
+      }
+      .a4-page {
+        background: white;
+        width: 794px; /* A4 at 96dpi */
+        min-height: 1123px;
+        padding: 53px 53px 72px 53px; /* matches @page 14mm margins */
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
+        position: relative;
+        font-size: 9px;
+        color: #1a1a2e;
+        box-sizing: border-box;
+      }
+
+      /* ── EDIT BELOW THIS LINE ──────────────────────────────────────────────── */
+
+      /* ── Header ── */
+      .header {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        padding-bottom: 8px;
+        border-bottom: 2.5px solid #2563eb;
+        margin-bottom: 12px;
+      }
+      .header-left {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        min-width: 80px;
+      }
+      .logo {
+        width: 38px;
+        height: 38px;
+        object-fit: contain;
+      }
+      .logo-placeholder {
+        width: 38px;
+        height: 38px;
+        background: #2563eb;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 6px;
+      }
+      .header-brand .brand-name {
+        font-size: 13px;
+        font-weight: 700;
+        color: #1e3a5f;
+      }
+      .header-brand .brand-sub {
+        font-size: 7px;
+        font-weight: 400;
+        color: #64748b;
+      }
+      .header-center {
+        flex: 1;
+      }
+      .doc-title {
+        font-size: 11px;
+        font-weight: 700;
+        color: #2563eb;
+        margin-bottom: 2px;
+      }
+      .student-name {
+        font-size: 14px;
+        font-weight: 700;
+        color: #1e3a5f;
+        margin-bottom: 3px;
+      }
+      .meta-row {
+        font-size: 7.5px;
+        font-weight: 400;
+        color: #475569;
+        margin-bottom: 2px;
+      }
+      .meta-row b {
+        font-weight: 600;
+      }
+      .meta-sep {
+        margin: 0 5px;
+        color: #cbd5e1;
+      }
+      .header-right {
+        text-align: right;
+        min-width: 70px;
+      }
+      .doc-date {
+        font-size: 8px;
+        font-weight: 600;
+        color: #1e3a5f;
+      }
+      .doc-label {
+        font-size: 7px;
+        color: #94a3b8;
+      }
+
+      /* ── Year sections ── */
+      .year-section {
+        margin-bottom: 10px;
+      }
+      .year-header {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 6px;
+        background: #eff6ff;
+        padding: 4px 8px;
+        border-radius: 5px;
+        border-left: 4px solid #2563eb;
+      }
+      .year-title {
+        font-size: 11px;
+        font-weight: 700;
+        color: #1e3a5f;
+      }
+      .year-badge {
+        font-size: 8px;
+        color: #2563eb;
+        font-weight: 600;
+      }
+      .year-credits {
+        margin-left: auto;
+        font-size: 8px;
+        font-weight: 400;
+        color: #64748b;
+      }
+      .sem-block {
+        margin-bottom: 6px;
+        margin-left: 8px;
+      }
+      .sem-heading {
+        font-size: 9px;
+        font-weight: 600;
+        color: #3b82f6;
+        margin-bottom: 3px;
+      }
+
+      /* ── Table ── */
+      .plan-table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      .plan-table th {
+        background: #1e3a5f;
+        color: #fff;
+        padding: 3px 6px;
+        text-align: left;
+        font-size: 8px;
+      }
+      .plan-table td {
+        border: 1px solid #e2e8f0;
+        padding: 3px 6px;
+        vertical-align: middle;
+        font-weight: 400;
+      }
+      .code-cell {
+        font-weight: 600;
+        font-size: 8px;
+        white-space: nowrap;
+      }
+      .name-cell {
+        font-size: 8px;
+        font-weight: 400;
+      }
+      .center-cell {
+        text-align: center;
+        font-size: 8px;
+        font-weight: 400;
+      }
+      .status-cell {
+        font-size: 7.5px;
+        font-weight: 600;
+        text-align: center;
+      }
+      .total-label {
+        text-align: right;
+        font-weight: 600;
+        font-size: 8px;
+        background: #f8fafc;
+        color: #1e3a5f;
+        padding-right: 8px;
+      }
+      .total-val {
+        font-weight: 700;
+        color: #1e3a5f;
+        background: #eff6ff;
+      }
+
+      /* ── Footer ── */
+      .footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 22px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 6.5px;
+        font-weight: 400;
+        color: #94a3b8;
+        border-top: 1px solid #e2e8f0;
+        padding: 0 53px;
+        background: white;
+      }
+
+      /* ── STOP EDITING HERE ─────────────────────────────────────────────────── */
+
+      /* sandbox-only helper: toolbar above the page */
+      .toolbar {
+        width: 794px;
+        background: #1e3a5f;
+        color: white;
+        padding: 8px 16px;
+        font-family: monospace;
+        font-size: 12px;
+        border-radius: 6px 6px 0 0;
+        display: flex;
+        gap: 16px;
+        align-items: center;
+      }
+      .toolbar b {
+        color: #93c5fd;
+      }
+      .toolbar a {
+        color: #fcd34d;
+        text-decoration: none;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="toolbar">
+      <span>🎨 <b>PDF Design Sandbox</b></span>
+      <span
+        >Edit CSS between the marked lines above · Save → refresh to
+        preview</span
+      >
+      <span style="margin-left: auto"
+        >Copy changes → <b>services/plan-pdf.ts</b> → buildTableHtml()</span
+      >
+    </div>
+
+    <div class="a4-page">
+      <!-- ── HEADER ── -->
+      <div class="header">
+        <div class="header-left">
+          <!-- Replace the B placeholder with an <img> once you have the logo path -->
+          <div class="logo-placeholder">B</div>
+          <div class="header-brand">
+            <div class="brand-name">Bluprint</div>
+            <div class="brand-sub">Academic Planner</div>
+          </div>
+        </div>
+        <div class="header-center">
+          <div class="doc-title">Academic Plan</div>
+          <div class="student-name">Thabo Nkosi</div>
+          <div class="meta-row">
+            <span><b>Student No:</b> NKITHA013</span>
+            <span class="meta-sep">|</span>
+            <span><b>Degree:</b> BSc</span>
+            <span class="meta-sep">|</span>
+            <span><b>Level:</b> Year 2 (2026)</span>
+            <span class="meta-sep">|</span>
+            <span><b>Min Duration:</b> 3 years</span>
+          </div>
+          <div class="meta-row">
+            <span><b>Credits:</b> 288 / 360 accumulated</span>
+            <span class="meta-sep">|</span>
+            <span><b>Majors:</b> Applied Mathematics, Computer Science</span>
+          </div>
+        </div>
+        <div class="header-right">
+          <div class="doc-date">01 April 2026</div>
+          <div class="doc-label">Downloaded</div>
+        </div>
+      </div>
+
+      <!-- ── YEAR 1 ── -->
+      <div class="year-section">
+        <div class="year-header">
+          <span class="year-title">Year 1</span>
+          <span class="year-badge">2025 — Past</span>
+          <span class="year-credits">144 credits</span>
+        </div>
+
+        <div class="sem-block">
+          <div class="sem-heading">Semester 1</div>
+          <table class="plan-table">
+            <thead>
+              <tr>
+                <th style="width: 15%">Code</th>
+                <th>Course Name</th>
+                <th style="width: 8%">Credits</th>
+                <th style="width: 14%">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td
+                  class="code-cell"
+                  style="color: #15803d; background: #dcfce7"
+                >
+                  MAM1031F
+                </td>
+                <td class="name-cell">Mathematics 1031F</td>
+                <td class="center-cell">18</td>
+                <td
+                  class="status-cell"
+                  style="color: #15803d; background: #dcfce7"
+                >
+                  Completed
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="code-cell"
+                  style="color: #15803d; background: #dcfce7"
+                >
+                  CSC1015F
+                </td>
+                <td class="name-cell">Computer Science 1015F</td>
+                <td class="center-cell">18</td>
+                <td
+                  class="status-cell"
+                  style="color: #15803d; background: #dcfce7"
+                >
+                  Completed
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="code-cell"
+                  style="color: #15803d; background: #dcfce7"
+                >
+                  PHY1031F
+                </td>
+                <td class="name-cell">General Physics A</td>
+                <td class="center-cell">18</td>
+                <td
+                  class="status-cell"
+                  style="color: #15803d; background: #dcfce7"
+                >
+                  Completed
+                </td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="2" class="total-label">Semester Total</td>
+                <td class="center-cell total-val">54</td>
+                <td></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+
+        <div class="sem-block">
+          <div class="sem-heading">Semester 2</div>
+          <table class="plan-table">
+            <thead>
+              <tr>
+                <th style="width: 15%">Code</th>
+                <th>Course Name</th>
+                <th style="width: 8%">Credits</th>
+                <th style="width: 14%">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td
+                  class="code-cell"
+                  style="color: #15803d; background: #dcfce7"
+                >
+                  STA1000S
+                </td>
+                <td class="name-cell">Introductory Statistics</td>
+                <td class="center-cell">18</td>
+                <td
+                  class="status-cell"
+                  style="color: #15803d; background: #dcfce7"
+                >
+                  Completed
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="code-cell"
+                  style="color: #15803d; background: #dcfce7"
+                >
+                  MAM1032S
+                </td>
+                <td class="name-cell">Mathematics 1032S</td>
+                <td class="center-cell">18</td>
+                <td
+                  class="status-cell"
+                  style="color: #15803d; background: #dcfce7"
+                >
+                  Completed
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="code-cell"
+                  style="color: #15803d; background: #dcfce7"
+                >
+                  PHY1032S
+                </td>
+                <td class="name-cell">General Physics B</td>
+                <td class="center-cell">18</td>
+                <td
+                  class="status-cell"
+                  style="color: #15803d; background: #dcfce7"
+                >
+                  Completed
+                </td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="2" class="total-label">Semester Total</td>
+                <td class="center-cell total-val">54</td>
+                <td></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+
+        <!-- Full Year courses for Year 1 (H/W suffix) -->
+        <div class="sem-block">
+          <div class="sem-heading">Full Year</div>
+          <table class="plan-table">
+            <thead>
+              <tr>
+                <th style="width: 15%">Code</th>
+                <th>Course Name</th>
+                <th style="width: 8%">Credits</th>
+                <th style="width: 14%">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="code-cell" style="color: #15803d; background: #dcfce7">MAM1043H</td>
+                <td class="name-cell">Modelling &amp; Applied Computing</td>
+                <td class="center-cell">18</td>
+                <td class="status-cell" style="color: #15803d; background: #dcfce7">Completed</td>
+              </tr>
+              <tr>
+                <td class="code-cell" style="color: #15803d; background: #dcfce7">MAM1044H</td>
+                <td class="name-cell">Dynamics</td>
+                <td class="center-cell">18</td>
+                <td class="status-cell" style="color: #15803d; background: #dcfce7">Completed</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="2" class="total-label">Full Year Total</td>
+                <td class="center-cell total-val">36</td>
+                <td></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+
+      <!-- ── YEAR 2 ── -->
+      <div class="year-section">
+        <div class="year-header">
+          <span class="year-title">Year 2</span>
+          <span class="year-badge">2026 — Current</span>
+          <span class="year-credits">144 credits</span>
+        </div>
+
+        <div class="sem-block">
+          <div class="sem-heading">Semester 1</div>
+          <table class="plan-table">
+            <thead>
+              <tr>
+                <th style="width: 15%">Code</th>
+                <th>Course Name</th>
+                <th style="width: 8%">Credits</th>
+                <th style="width: 14%">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td
+                  class="code-cell"
+                  style="color: #1d4ed8; background: #dbeafe"
+                >
+                  MAM2010F
+                </td>
+                <td class="name-cell">Advanced Calculus (2AC)</td>
+                <td class="center-cell">12</td>
+                <td
+                  class="status-cell"
+                  style="color: #1d4ed8; background: #dbeafe"
+                >
+                  In Progress
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="code-cell"
+                  style="color: #1d4ed8; background: #dbeafe"
+                >
+                  MAM2011F
+                </td>
+                <td class="name-cell">Linear Algebra (2LA)</td>
+                <td class="center-cell">12</td>
+                <td
+                  class="status-cell"
+                  style="color: #1d4ed8; background: #dbeafe"
+                >
+                  In Progress
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="code-cell"
+                  style="color: #1d4ed8; background: #dbeafe"
+                >
+                  STA2004F
+                </td>
+                <td class="name-cell">Statistical Theory and Inference</td>
+                <td class="center-cell">24</td>
+                <td
+                  class="status-cell"
+                  style="color: #1d4ed8; background: #dbeafe"
+                >
+                  In Progress
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="code-cell"
+                  style="color: #1d4ed8; background: #dbeafe"
+                >
+                  MAM2040F
+                </td>
+                <td class="name-cell">Ordinary Differential Equations 2(OO)</td>
+                <td class="center-cell">12</td>
+                <td
+                  class="status-cell"
+                  style="color: #1d4ed8; background: #dbeafe"
+                >
+                  In Progress
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="code-cell"
+                  style="color: #1d4ed8; background: #dbeafe"
+                >
+                  MAM2041F
+                </td>
+                <td class="name-cell">Numerical Analysis (2NA)</td>
+                <td class="center-cell">12</td>
+                <td
+                  class="status-cell"
+                  style="color: #1d4ed8; background: #dbeafe"
+                >
+                  In Progress
+                </td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="2" class="total-label">Semester Total</td>
+                <td class="center-cell total-val">72</td>
+                <td></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+
+        <div class="sem-block">
+          <div class="sem-heading">Semester 2</div>
+          <table class="plan-table">
+            <thead>
+              <tr>
+                <th style="width: 15%">Code</th>
+                <th>Course Name</th>
+                <th style="width: 8%">Credits</th>
+                <th style="width: 14%">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td
+                  class="code-cell"
+                  style="color: #1d4ed8; background: #dbeafe"
+                >
+                  STA2005S
+                </td>
+                <td class="name-cell">Linear Models</td>
+                <td class="center-cell">24</td>
+                <td
+                  class="status-cell"
+                  style="color: #1d4ed8; background: #dbeafe"
+                >
+                  In Progress
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="code-cell"
+                  style="color: #1d4ed8; background: #dbeafe"
+                >
+                  MAM2042S
+                </td>
+                <td class="name-cell">Non-linear Dynamics (2ND)</td>
+                <td class="center-cell">12</td>
+                <td
+                  class="status-cell"
+                  style="color: #1d4ed8; background: #dbeafe"
+                >
+                  In Progress
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="code-cell"
+                  style="color: #1d4ed8; background: #dbeafe"
+                >
+                  MAM2043S
+                </td>
+                <td class="name-cell">Boundary-Value Problems (2BP)</td>
+                <td class="center-cell">12</td>
+                <td
+                  class="status-cell"
+                  style="color: #1d4ed8; background: #dbeafe"
+                >
+                  In Progress
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="code-cell"
+                  style="color: #1d4ed8; background: #dbeafe"
+                >
+                  MAM2012S
+                </td>
+                <td class="name-cell">Differential Equations (2DE)</td>
+                <td class="center-cell">12</td>
+                <td
+                  class="status-cell"
+                  style="color: #1d4ed8; background: #dbeafe"
+                >
+                  In Progress
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="code-cell"
+                  style="color: #1d4ed8; background: #dbeafe"
+                >
+                  MAM2014S
+                </td>
+                <td class="name-cell">Real Analysis (2RA)</td>
+                <td class="center-cell">12</td>
+                <td
+                  class="status-cell"
+                  style="color: #1d4ed8; background: #dbeafe"
+                >
+                  In Progress
+                </td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="2" class="total-label">Semester Total</td>
+                <td class="center-cell total-val">72</td>
+                <td></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+
+        <!-- Full Year courses for Year 2 (H/W suffix) -->
+        <div class="sem-block">
+          <div class="sem-heading">Full Year</div>
+          <table class="plan-table">
+            <thead>
+              <tr>
+                <th style="width: 15%">Code</th>
+                <th>Course Name</th>
+                <th style="width: 8%">Credits</th>
+                <th style="width: 14%">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="code-cell" style="color: #1d4ed8; background: #dbeafe">MAM1000W</td>
+                <td class="name-cell">Mathematics 1000W (Full Year)</td>
+                <td class="center-cell">36</td>
+                <td class="status-cell" style="color: #1d4ed8; background: #dbeafe">In Progress</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="2" class="total-label">Full Year Total</td>
+                <td class="center-cell total-val">36</td>
+                <td></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+
+      <!-- ── FOOTER ── -->
+      <div class="footer">
+        <span>Lumen AI (Pty) Ltd &nbsp;|&nbsp; Reg No. 2026/056944/07</span>
+        <span>For planning purposes only — not official academic advice</span>
+        <span>Generated by Bluprint &nbsp;|&nbsp; 01 April 2026</span>
+      </div>
+    </div>
+    <!-- end .a4-page -->
+  </body>
+</html>
