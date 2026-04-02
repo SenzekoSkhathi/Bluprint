@@ -8,18 +8,18 @@
  * Uses expo-print → expo-sharing to save/share the generated PDF.
  */
 
+import {
+  FULL_DAYS,
+  parseLectureTimes,
+  SHORT_DAYS,
+  UCT_PERIOD_TIMES,
+} from "@/services/lecture-times-parser";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { Asset } from "expo-asset";
 import * as FileSystem from "expo-file-system";
 import * as Print from "expo-print";
 import * as Sharing from "expo-sharing";
 import { Platform } from "react-native";
-import {
-  parseLectureTimes,
-  UCT_PERIOD_TIMES,
-  FULL_DAYS,
-  SHORT_DAYS,
-} from "@/services/lecture-times-parser";
 
 // ─── UCT period definitions (re-exported alias for HTML templates) ──────────
 
@@ -200,7 +200,11 @@ function courseTableRows(courses: PdfCourse[]): string {
     .join("");
 }
 
-function courseTable(heading: string, courses: PdfCourse[], totalLabel: string): string {
+function courseTable(
+  heading: string,
+  courses: PdfCourse[],
+  totalLabel: string,
+): string {
   const credits = courses.reduce((s, c) => s + c.credits, 0);
   return `
   <div class="sem-block">
@@ -354,7 +358,10 @@ function buildTimetableGrid(courses: PdfCourse[]): TimetableGrid {
 
   // Also add courses that had some slots but might not have been in unscheduled
   courses.forEach((c) => {
-    if (!scheduledCodes.has(c.code) && !unscheduled.find((u) => u.code === c.code)) {
+    if (
+      !scheduledCodes.has(c.code) &&
+      !unscheduled.find((u) => u.code === c.code)
+    ) {
       unscheduled.push(c);
     }
   });
@@ -366,10 +373,7 @@ function buildTimetableGrid(courses: PdfCourse[]): TimetableGrid {
   return { slots, usedPeriods: finalPeriods, unscheduled };
 }
 
-function renderTimetableGrid(
-  courses: PdfCourse[],
-  semLabel: string,
-): string {
+function renderTimetableGrid(courses: PdfCourse[], semLabel: string): string {
   const { slots, usedPeriods, unscheduled } = buildTimetableGrid(courses);
 
   // If no courses at all
@@ -379,9 +383,7 @@ function renderTimetableGrid(
   }
 
   const periodsToShow =
-    usedPeriods.length > 0
-      ? usedPeriods
-      : ([1, 2, 3, 4, 5, 6] as number[]);
+    usedPeriods.length > 0 ? usedPeriods : ([1, 2, 3, 4, 5, 6] as number[]);
 
   const headerCells = SHORT_DAYS.map(
     (d) => `<th class="day-header">${d}</th>`,
@@ -392,8 +394,7 @@ function renderTimetableGrid(
       const dayMap = slots.get(p) ?? new Map<number, PdfCourse[]>();
       const dayCells = FULL_DAYS.map((_, dayIdx) => {
         const cellCourses = dayMap.get(dayIdx) ?? [];
-        if (cellCourses.length === 0)
-          return `<td class="empty-cell"></td>`;
+        if (cellCourses.length === 0) return `<td class="empty-cell"></td>`;
 
         const isClash = cellCourses.length > 1;
         const cellContent = cellCourses
@@ -428,7 +429,9 @@ function renderTimetableGrid(
       : "";
 
   const clashNote = periodsToShow.some((p) =>
-    Array.from((slots.get(p) ?? new Map()).values()).some((cs) => cs.length > 1),
+    Array.from((slots.get(p) ?? new Map()).values()).some(
+      (cs) => cs.length > 1,
+    ),
   )
     ? `<div class="clash-note">⚠ Clash detected — cells highlighted in red</div>`
     : "";
@@ -558,12 +561,35 @@ function buildTimetableHtml(data: PlanPdfData, logoSrc: string): string {
 
 // ─── Download counter ──────────────────────────────────────────────────────
 
-const DOWNLOAD_COUNT_KEY = "bluprint_pdf_download_count";
+function normalizeCounterScope(value: string): string {
+  return (
+    value
+      .trim()
+      .toUpperCase()
+      .replace(/[^A-Z0-9_-]/g, "") || "ANON"
+  );
+}
 
-async function nextDownloadNumber(): Promise<number> {
-  const raw = await AsyncStorage.getItem(DOWNLOAD_COUNT_KEY);
+function getDownloadCounterKey(
+  type: PdfDocType,
+  studentNumber: string,
+): string {
+  const scopedStudent = normalizeCounterScope(studentNumber);
+  return `bluprint_pdf_download_count:${scopedStudent}:${type}`;
+}
+
+async function nextDownloadNumber(
+  type: PdfDocType,
+  studentNumber: string,
+): Promise<number> {
+  const raw = await AsyncStorage.getItem(
+    getDownloadCounterKey(type, studentNumber),
+  );
   const next = (parseInt(raw ?? "0", 10) || 0) + 1;
-  await AsyncStorage.setItem(DOWNLOAD_COUNT_KEY, String(next));
+  await AsyncStorage.setItem(
+    getDownloadCounterKey(type, studentNumber),
+    String(next),
+  );
   return next;
 }
 
@@ -580,32 +606,61 @@ export async function downloadPlanPdf(
   type: PdfDocType,
   data: PlanPdfData,
 ): Promise<void> {
+  const studentScope = data.studentNumber?.trim() || "ANON";
   const [logoSrc, downloadNumber] = await Promise.all([
     loadLogoBase64(),
-    nextDownloadNumber(),
+    nextDownloadNumber(type, studentScope),
   ]);
 
-  const filename = `AcademicPlan-${downloadNumber}`;
+  const filename =
+    type === "table"
+      ? `AcademicPlan-${downloadNumber}`
+      : `AcademicTimetable-${downloadNumber}`;
   const html =
     type === "table"
       ? buildTableHtml(data, logoSrc)
       : buildTimetableHtml(data, logoSrc);
 
   if (Platform.OS === "web") {
-    // On web, expo-print falls back to window.print() which captures the
-    // current screen. Instead, open the HTML in a new tab and let the browser
-    // print/save it as PDF — this also gives the student a preview first.
-    const blob = new Blob([html], { type: "text/html;charset=utf-8" });
-    const url = URL.createObjectURL(blob);
-    const win = window.open(url, "_blank");
-    if (win) {
-      win.addEventListener("load", () => {
-        win.document.title = filename;
-        win.focus();
-        win.print();
-      });
-      // Clean up the object URL after a delay
-      setTimeout(() => URL.revokeObjectURL(url), 60_000);
+    // On web, generate a real downloadable PDF file so the browser can use
+    // the requested filename directly.
+    const parser = new DOMParser();
+    const parsed = parser.parseFromString(html, "text/html");
+    const content = document.createElement("div");
+    content.style.position = "fixed";
+    content.style.left = "-10000px";
+    content.style.top = "0";
+    content.style.width = "1120px";
+    content.style.background = "white";
+    content.innerHTML = parsed.body.innerHTML;
+    document.body.appendChild(content);
+
+    try {
+      const html2pdfModule = await import("html2pdf.js");
+      const html2pdf =
+        (html2pdfModule as { default?: any }).default ?? html2pdfModule;
+
+      await html2pdf()
+        .set({
+          filename: `${filename}.pdf`,
+          margin: 0,
+          image: { type: "jpeg", quality: 0.98 },
+          html2canvas: {
+            scale: 2,
+            useCORS: true,
+            backgroundColor: "#ffffff",
+          },
+          jsPDF: {
+            unit: "pt",
+            format: "a4",
+            orientation: type === "table" ? "portrait" : "landscape",
+          },
+          pagebreak: { mode: ["css", "legacy"] },
+        })
+        .from(content)
+        .save();
+    } finally {
+      content.remove();
     }
     return;
   }
