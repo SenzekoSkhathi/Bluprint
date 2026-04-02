@@ -14,15 +14,10 @@ const MainLayout = ({ children }: MainLayoutProps) => {
     <View style={styles.container}>
       <ScrollView
         style={styles.scrollView}
-        contentContainerStyle={styles.scrollContent}
+        contentContainerStyle={isMobile ? styles.scrollContentMobile : styles.scrollContent}
         scrollIndicatorInsets={{ right: 1 }}
       >
-        <View
-          style={[
-            styles.content,
-            isMobile && styles.contentMobile,
-          ]}
-        >
+        <View style={isMobile ? styles.contentMobile : styles.content}>
           {children}
         </View>
       </ScrollView>
@@ -41,6 +36,10 @@ const styles = StyleSheet.create({
   scrollContent: {
     flexGrow: 1,
   },
+  scrollContentMobile: {
+    flexGrow: 1,
+    paddingBottom: 32,
+  },
   content: {
     flex: 1,
     width: "100%",
@@ -50,9 +49,7 @@ const styles = StyleSheet.create({
     paddingVertical: 40,
   },
   contentMobile: {
-    maxWidth: "100%",
-    paddingHorizontal: 0,
-    paddingVertical: 0,
+    width: "100%",
   },
 });
 
