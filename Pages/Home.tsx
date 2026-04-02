@@ -493,24 +493,22 @@ const styles = StyleSheet.create({
     fontSize: 11,
   },
   columnWrapperWeb: {
-    gap: 12,
+    flexDirection: "row",
+    gap: 16,
     paddingHorizontal: 32,
-    marginBottom: 24,
+    marginBottom: 16,
   },
   columnWrapperMobile: {
-    gap: 8,
-    paddingHorizontal: 12,
-    marginBottom: 8,
+    flexDirection: "row",
+    gap: 10,
+    paddingHorizontal: 16,
+    marginBottom: 10,
   },
   tileWrapperWeb: {
-    width: "25%",
-    paddingHorizontal: 12,
-    marginBottom: 24,
+    flex: 1,
   },
   tileWrapperMobile: {
-    width: "50%",
-    paddingHorizontal: 4,
-    marginBottom: 8,
+    flex: 1,
   },
 });
 
