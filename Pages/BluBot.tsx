@@ -2266,6 +2266,7 @@ export default function BluBot({
             }}
             multiline
             editable
+            underlineColorAndroid="transparent"
             onFocus={() => {
               setIsModelMenuOpen(false);
             }}
@@ -3372,7 +3373,7 @@ const styles = StyleSheet.create({
     backgroundColor: theme.colors.white,
     borderWidth: 1,
     borderColor: theme.colors.grayLight,
-    width: "100%",
+    alignSelf: "stretch",
     gap: theme.spacing.sm,
   },
   inputWrapperWeb: {
@@ -3386,37 +3387,39 @@ const styles = StyleSheet.create({
     }),
   },
   inputWrapperMobileFloating: {
-    marginHorizontal: theme.spacing.sm,
+    marginHorizontal: theme.spacing.md,
     marginTop: theme.spacing.sm,
     marginBottom: theme.spacing.sm,
-    borderRadius: 28,
-    width: "100%",
+    borderRadius: 24,
+    borderWidth: 1.5,
+    borderColor: theme.colors.grayDark,
     paddingHorizontal: theme.spacing.md,
-    paddingVertical: theme.spacing.md,
+    paddingVertical: theme.spacing.sm,
     ...Platform.select({
       default: {
-        shadowColor: "#000",
+        shadowColor: theme.colors.deepBlue,
         shadowOffset: { width: 0, height: 4 },
-        shadowOpacity: 0.1,
-        shadowRadius: 12,
+        shadowOpacity: 0.08,
+        shadowRadius: 16,
         elevation: 6,
       },
     }),
   },
   inputWrapperMobileAnchored: {
-    marginHorizontal: theme.spacing.sm,
+    marginHorizontal: theme.spacing.md,
     marginTop: theme.spacing.sm,
     marginBottom: theme.spacing.sm,
-    borderRadius: 28,
-    borderBottomWidth: 1,
+    borderRadius: 24,
+    borderWidth: 1.5,
+    borderColor: theme.colors.accentBlue,
     paddingHorizontal: theme.spacing.md,
-    paddingVertical: theme.spacing.md,
+    paddingVertical: theme.spacing.sm,
     ...Platform.select({
       default: {
-        shadowColor: "#000",
+        shadowColor: theme.colors.deepBlue,
         shadowOffset: { width: 0, height: -2 },
-        shadowOpacity: 0.05,
-        shadowRadius: 8,
+        shadowOpacity: 0.06,
+        shadowRadius: 12,
         elevation: 4,
       },
     }),
@@ -3432,10 +3435,8 @@ const styles = StyleSheet.create({
     }),
   },
   bottomInputContainer: {
-    borderTopWidth: 1,
-    borderTopColor: theme.colors.grayLight,
-    backgroundColor: theme.colors.white,
-    paddingBottom: 0,
+    backgroundColor: theme.colors.background,
+    paddingBottom: theme.spacing.xs,
   },
   bottomInputContainerDesktop: {
     borderTopWidth: 0,
@@ -3520,6 +3521,7 @@ const styles = StyleSheet.create({
     fontSize: theme.fontSize.md,
     color: theme.colors.textPrimary,
     lineHeight: 20,
+    outlineStyle: "none" as any,
   },
   inputDesktop: {
     minHeight: 48,

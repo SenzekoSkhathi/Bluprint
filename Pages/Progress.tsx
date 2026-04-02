@@ -860,11 +860,13 @@ export default function Progress() {
         <View style={styles.pageHeaderRow}>
           <View style={styles.pageHeaderLeft}>
             <Text style={[styles.title, !isMobile && styles.titleDesktop]}>Academic progress</Text>
-            <Text style={styles.subtitle}>
-              {loggedInUser
-                ? `${loggedInUser.degree} · Year ${loggedInUser.year}`
-                : "Your full academic journey at a glance."}
-            </Text>
+            {!isMobile && (
+              <Text style={styles.subtitle}>
+                {loggedInUser
+                  ? `${loggedInUser.degree} · Year ${loggedInUser.year}`
+                  : "Your full academic journey at a glance."}
+              </Text>
+            )}
             {loggedInUser?.majors.length ? (
               <Text style={styles.headerMeta}>
                 {loggedInUser.majors.join(" · ")}

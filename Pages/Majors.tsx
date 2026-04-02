@@ -114,9 +114,11 @@ export default function Majors({ onMajorSelect }: MajorsProps) {
     <MainLayout>
       <View style={styles.header}>
         <Text style={[styles.title, !isMobile && styles.titleDesktop]}>Majors</Text>
-        <Text style={styles.subtitle}>
-          {FACULTY_LABELS[selectedFaculty]} Faculty — available majors and programmes.
-        </Text>
+        {!isMobile && (
+          <Text style={styles.subtitle}>
+            {FACULTY_LABELS[selectedFaculty]} Faculty — available majors and programmes.
+          </Text>
+        )}
       </View>
 
       <View style={styles.sectionCard}>

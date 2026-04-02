@@ -485,9 +485,11 @@ export default function Advisor() {
       {/* Page header */}
       <View style={styles.pageHeader}>
         <Text style={[styles.title, !isMobile && styles.titleDesktop]}>Student advisors</Text>
-        <Text style={styles.subtitle}>
-          Book a meeting with a Science Faculty advisor for academic guidance.
-        </Text>
+        {!isMobile && (
+          <Text style={styles.subtitle}>
+            Book a meeting with a Science Faculty advisor for academic guidance.
+          </Text>
+        )}
       </View>
 
       {/* Info banner */}

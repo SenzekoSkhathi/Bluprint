@@ -8,6 +8,7 @@ import {
 import type { HandbookCategory } from "@/types/handbook";
 import { Feather } from "@expo/vector-icons";
 import React, { useState } from "react";
+import { useIsMobile } from "@/hooks/use-is-mobile";
 import { ActivityIndicator, Linking, Pressable, StyleSheet, Text, View } from "react-native";
 
 const handbookCategories: HandbookCategory[] =
@@ -44,6 +45,7 @@ function formatFileSize(bytes: number): string {
 }
 
 export default function Handbooks() {
+  const isMobile = useIsMobile();
   const [expandedCategory, setExpandedCategory] = useState<string | null>(
     "general",
   );
@@ -95,9 +97,11 @@ export default function Handbooks() {
       <View style={styles.container}>
         <View style={styles.header}>
           <Text style={styles.title}>Handbooks</Text>
-          <Text style={styles.subtitle}>
-            Access institutional handbooks and guides
-          </Text>
+          {!isMobile && (
+            <Text style={styles.subtitle}>
+              Access institutional handbooks and guides
+            </Text>
+          )}
         </View>
 
         {handbookCategories.map((category) => {

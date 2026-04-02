@@ -162,9 +162,11 @@ export default function MajorsDetails({
           </Pressable>
         ) : null}
         <Text style={[styles.title, !isMobile && styles.titleDesktop]}>Major Details</Text>
-        <Text style={styles.subtitle}>
-          Notes and required courses for the selected major.
-        </Text>
+        {!isMobile && (
+          <Text style={styles.subtitle}>
+            Notes and required courses for the selected major.
+          </Text>
+        )}
       </View>
 
       {isLoading ? (

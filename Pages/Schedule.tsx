@@ -609,9 +609,11 @@ export default function Schedule({ studentNumber }: ScheduleProps) {
       {/* Page header */}
       <View style={styles.pageHeader}>
         <Text style={[styles.title, !isMobile && styles.titleDesktop]}>Schedule</Text>
-        <Text style={styles.subtitle}>
-          Your classes, tutorials, and tasks — all in one place.
-        </Text>
+        {!isMobile && (
+          <Text style={styles.subtitle}>
+            Your classes, tutorials, and tasks — all in one place.
+          </Text>
+        )}
       </View>
 
       {/* Sync bar */}

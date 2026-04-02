@@ -2597,9 +2597,11 @@ export default function Planner({
         <View style={styles.pageHeaderRow}>
           <View style={styles.pageHeaderLeft}>
             <Text style={[styles.title, !isMobile && styles.titleDesktop]}>Academic planner</Text>
-            <Text style={styles.subtitle}>
-              Design and validate your degree year by year.
-            </Text>
+            {!isMobile && (
+              <Text style={styles.subtitle}>
+                Design and validate your degree year by year.
+              </Text>
+            )}
           </View>
           <View style={styles.headerBtns}>
             <Pressable

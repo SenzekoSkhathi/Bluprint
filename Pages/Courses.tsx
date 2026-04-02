@@ -396,9 +396,11 @@ export default function Courses({ onCourseSelect }: CoursesProps) {
     <MainLayout>
       <View style={styles.header}>
         <Text style={[styles.title, !isMobile && styles.titleDesktop]}>Courses</Text>
-        <Text style={styles.subtitle}>
-          {FACULTY_LABELS[selectedFaculty]} Faculty — handbook course catalogue.
-        </Text>
+        {!isMobile && (
+          <Text style={styles.subtitle}>
+            {FACULTY_LABELS[selectedFaculty]} Faculty — handbook course catalogue.
+          </Text>
+        )}
         {!isLoading && loadCompleteness ? (
           <Text style={styles.dataStatus}>
             {`${loadCompleteness.totalCourses} courses | Postgrad: ${loadCompleteness.postgradCourses}`}

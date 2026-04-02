@@ -333,9 +333,11 @@ export default function Timetable({ studentNumber }: TimetableProps) {
       {/* Page header */}
       <View style={styles.pageHeader}>
         <Text style={[styles.title, !isMobile && styles.titleDesktop]}>Exam timetable</Text>
-        <Text style={styles.subtitle}>
-          Your upcoming exams with live countdowns, venues, and times.
-        </Text>
+        {!isMobile && (
+          <Text style={styles.subtitle}>
+            Your upcoming exams with live countdowns, venues, and times.
+          </Text>
+        )}
       </View>
 
       {/* ── Stat row ── */}

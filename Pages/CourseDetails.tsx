@@ -70,9 +70,11 @@ export default function CourseDetails({ course, onBack }: CourseDetailsProps) {
       <MainLayout>
         <View style={styles.header}>
           <Text style={[styles.title, !isMobile && styles.titleDesktop]}>Course Not Found</Text>
-          <Text style={styles.subtitle}>
-            The requested course could not be found.
-          </Text>
+          {!isMobile && (
+            <Text style={styles.subtitle}>
+              The requested course could not be found.
+            </Text>
+          )}
         </View>
         {onBack && (
           <Pressable onPress={onBack} style={styles.backButton}>
@@ -92,9 +94,11 @@ export default function CourseDetails({ course, onBack }: CourseDetailsProps) {
           </Pressable>
         )}
         <Text style={[styles.title, !isMobile && styles.titleDesktop]}>Course Details</Text>
-        <Text style={styles.subtitle}>
-          Complete information about this course offering.
-        </Text>
+        {!isMobile && (
+          <Text style={styles.subtitle}>
+            Complete information about this course offering.
+          </Text>
+        )}
       </View>
 
       <ScrollView style={styles.scrollContainer}>
