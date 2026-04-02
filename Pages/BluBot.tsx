@@ -2226,7 +2226,7 @@ export default function BluBot({
         >
           <MaterialIcons
             name="add"
-            size={isCentered ? 24 : 20}
+            size={isCentered ? 24 : !isWeb ? 16 : 20}
             color={theme.colors.deepBlue}
           />
         </TouchableOpacity>
@@ -2347,7 +2347,7 @@ export default function BluBot({
         >
           <MaterialIcons
             name="send"
-            size={isCentered ? 24 : 20}
+            size={isCentered ? 24 : !isWeb ? 16 : 20}
             color={isSendDisabled ? theme.colors.textMuted : theme.colors.white}
           />
         </TouchableOpacity>
@@ -3514,10 +3514,10 @@ const styles = StyleSheet.create({
   input: {
     flex: 1,
     maxHeight: 120,
-    minHeight: 56,
-    paddingHorizontal: theme.spacing.md,
-    paddingTop: Platform.OS === "ios" ? 14 : 12,
-    paddingBottom: Platform.OS === "ios" ? 14 : 12,
+    minHeight: 40,
+    paddingHorizontal: theme.spacing.sm,
+    paddingTop: Platform.OS === "ios" ? 10 : 8,
+    paddingBottom: Platform.OS === "ios" ? 10 : 8,
     fontSize: theme.fontSize.md,
     color: theme.colors.textPrimary,
     lineHeight: 20,
@@ -3573,12 +3573,11 @@ const styles = StyleSheet.create({
     backgroundColor: theme.colors.white,
     borderWidth: 1,
     borderColor: theme.colors.grayLight,
-    borderRadius: 24,
+    borderRadius: 20,
     justifyContent: "center",
     alignItems: "center",
-    height: 56,
-    minWidth: 56,
-    marginBottom: 4,
+    height: 40,
+    minWidth: 40,
   },
   uploadButtonDesktop: {
     height: 48,
@@ -3592,13 +3591,12 @@ const styles = StyleSheet.create({
   },
   sendButton: {
     backgroundColor: theme.colors.deepBlue,
-    borderRadius: 24,
+    borderRadius: 20,
     justifyContent: "center",
     alignItems: "center",
-    paddingHorizontal: theme.spacing.lg,
-    height: 56,
-    minWidth: 56,
-    marginBottom: 4,
+    paddingHorizontal: theme.spacing.md,
+    height: 40,
+    minWidth: 40,
     ...Platform.select({
       web: {},
       default: {
