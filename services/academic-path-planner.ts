@@ -30,6 +30,16 @@ interface ObjectiveProfile {
   preferredMinTermCredits: number;
 }
 
+const MAX_UNDERGRAD_TERM_INDEX = 8; // Year 4 - Semester 2
+const MIN_CREDITS_PER_TERM = 30;
+
+// Courses in the same group are treated as credit-equivalent. Planning more
+// than one from the same group can lead to "no additional degree credit".
+const CREDIT_EXCLUSION_GROUPS: string[][] = [
+  ["CSC1015F", "CSC1010H"],
+  ["MAM1000W", "MAM1005H", "MAM1006H"],
+];
+
 const OBJECTIVE_PROFILES: ObjectiveProfile[] = [
   {
     objective: "fastest",
@@ -161,6 +171,42 @@ function collectPreferredDepartments(
   }
 
   return preferred;
+}
+
+function hasCreditExclusionConflict(
+  code: string,
+  scheduledOrSatisfiedCodes: Set<string>,
+): boolean {
+  const group = CREDIT_EXCLUSION_GROUPS.find((g) => g.includes(code));
+  if (!group) return false;
+  return group.some(
+    (other) => other !== code && scheduledOrSatisfiedCodes.has(other),
+  );
+}
+
+function canScheduleCourse(
+  course: CourseCatalogEntry,
+  semesterName: string,
+  satisfiedCodes: Set<string>,
+): boolean {
+  const offeredInTerm =
+    course.semester === semesterName ||
+    (course.semester === "FY" && semesterName === "Semester 1");
+  if (!offeredInTerm) return false;
+
+  if (hasCreditExclusionConflict(course.code, satisfiedCodes)) return false;
+
+  const prereqs = parseCourseCodes(course.prerequisites);
+  if (prereqs.length === 0) return true;
+
+  const unsatisfied = prereqs.filter(
+    (p) => !isSatisfied(p, satisfiedCodes),
+  ).length;
+  return unsatisfied <= Math.floor(prereqs.length / 2);
+}
+
+function isWholeYearCourse(course: CourseCatalogEntry): boolean {
+  return course.semester === "FY" || /[HW]$/i.test(course.code);
 }
 
 function parseYearNumber(value: string): number {
@@ -345,36 +391,65 @@ export function generateAutoGraduationPlans(
     const termPlans: AutoPlannedTerm[] = [];
     const satisfiedCodes = new Set(existingCompletedCodes);
     const remainingCoreCodes = new Set(unresolvedCoreCodes);
+    // Collect suggested electives from the student's combinations for
+    // real course filling (avoids generic ELECTIVE-BLOCK placeholders).
+    const availableElectiveCodes = collectSuggestedElectives(
+      input,
+      satisfiedCodes,
+    );
     let loopTermIndex = startTermIndex;
+
+    const getElectiveCandidates = (
+      semesterName: string,
+      usedCodesThisTerm: Set<string>,
+    ): CourseCatalogEntry[] => {
+      const suggestedCandidates = Array.from(availableElectiveCodes)
+        .map((code) => catalogByCode.get(code))
+        .filter((course): course is CourseCatalogEntry => Boolean(course))
+        .filter((course) => !isWholeYearCourse(course))
+        .filter((c) => !usedCodesThisTerm.has(c.code))
+        .filter((c) => canScheduleCourse(c, semesterName, satisfiedCodes))
+        .sort((a, b) => b.credits - a.credits);
+
+      const fallbackCandidates = undergradCatalog
+        .filter((course) => !isSatisfied(course.code, satisfiedCodes))
+        .filter((course) => !majorCoreCodes.has(course.code))
+        .filter((course) => !usedCodesThisTerm.has(course.code))
+        .filter((course) => course.credits > 0)
+        .filter((course) => !isWholeYearCourse(course))
+        .filter((course) =>
+          canScheduleCourse(course, semesterName, satisfiedCodes),
+        )
+        .sort((a, b) => {
+          const aPreferred = preferredDepartments.has(a.department) ? 1 : 0;
+          const bPreferred = preferredDepartments.has(b.department) ? 1 : 0;
+          if (aPreferred !== bPreferred) return bPreferred - aPreferred;
+          return b.credits - a.credits;
+        });
+
+      return suggestedCandidates.length > 0
+        ? suggestedCandidates
+        : fallbackCandidates;
+    };
 
     while (
       remainingCoreCodes.size > 0 &&
       termPlans.length < 12 &&
-      loopTermIndex <= 24
+      loopTermIndex <= MAX_UNDERGRAD_TERM_INDEX
     ) {
       const semesterName = semesterNameFromTermIndex(loopTermIndex);
       const termLabel = toTermLabel(loopTermIndex);
+      const minTermCredits = Math.max(
+        MIN_CREDITS_PER_TERM,
+        profile.preferredMinTermCredits,
+      );
 
       const eligibleCourses = Array.from(remainingCoreCodes)
         .map((code) => catalogByCode.get(code))
         .filter((course): course is CourseCatalogEntry => Boolean(course))
-        // "FY" (W/H suffix) courses run all year — place them in Semester 1 of their year.
-        .filter(
-          (course) =>
-            course.semester === semesterName ||
-            (course.semester === "FY" && semesterName === "Semester 1"),
+        .filter((course) =>
+          canScheduleCourse(course, semesterName, satisfiedCodes),
         )
-        .filter((course) => {
-          const prereqs = parseCourseCodes(course.prerequisites);
-          if (prereqs.length === 0) return true;
-          // Prerequisites text may contain OR alternatives (inflating the parsed code
-          // list). Allow the course if at most half the extracted codes are unsatisfied
-          // so that students who completed one valid alternative still qualify.
-          const unsatisfied = prereqs.filter(
-            (p) => !isSatisfied(p, satisfiedCodes),
-          ).length;
-          return unsatisfied <= Math.floor(prereqs.length / 2);
-        })
         .sort((a, b) => {
           // 1. Higher unlock score first — prioritise foundational courses
           //    that unblock the most future required courses.
@@ -398,10 +473,13 @@ export function generateAutoGraduationPlans(
 
       const selected: AutoPlannedCourse[] = [];
       let selectedCredits = 0;
+      const usedCodesThisTerm = new Set<string>();
+      const provisionalElectiveCodes = new Set<string>();
       eligibleCourses.forEach((course) => {
+        if (usedCodesThisTerm.has(course.code)) return;
         const wouldBeCredits = selectedCredits + course.credits;
         if (
-          selectedCredits < profile.preferredMinTermCredits ||
+          selectedCredits < minTermCredits ||
           wouldBeCredits <= profile.termCreditTarget
         ) {
           selected.push(
@@ -411,6 +489,7 @@ export function generateAutoGraduationPlans(
             ),
           );
           selectedCredits += course.credits;
+          usedCodesThisTerm.add(course.code);
         }
       });
 
@@ -423,11 +502,51 @@ export function generateAutoGraduationPlans(
           ),
         );
         selectedCredits += fallbackCourse.credits;
+        usedCodesThisTerm.add(fallbackCourse.code);
+      }
+
+      // Required courses stay top priority; then fill remaining load to satisfy
+      // the minimum semester-credit rule using valid electives.
+      if (selectedCredits < MIN_CREDITS_PER_TERM) {
+        const topUpCandidates = getElectiveCandidates(
+          semesterName,
+          usedCodesThisTerm,
+        );
+
+        topUpCandidates.forEach((course) => {
+          if (selectedCredits >= MIN_CREDITS_PER_TERM) return;
+          if (usedCodesThisTerm.has(course.code)) return;
+          if (hasCreditExclusionConflict(course.code, satisfiedCodes)) return;
+
+          selected.push(
+            toAutoCourse(
+              course,
+              `Elective selected to reach minimum ${MIN_CREDITS_PER_TERM} credits for ${semesterName}.`,
+            ),
+          );
+          selectedCredits += course.credits;
+          usedCodesThisTerm.add(course.code);
+          satisfiedCodes.add(course.code);
+          provisionalElectiveCodes.add(course.code);
+        });
       }
 
       selected.forEach((entry) => {
         satisfiedCodes.add(entry.code);
         remainingCoreCodes.delete(entry.code);
+      });
+
+      if (selectedCredits < MIN_CREDITS_PER_TERM) {
+        // If this term cannot legally reach minimum load, skip it and try next term.
+        provisionalElectiveCodes.forEach((code) => {
+          satisfiedCodes.delete(code);
+        });
+        loopTermIndex += 1;
+        continue;
+      }
+
+      provisionalElectiveCodes.forEach((code) => {
+        availableElectiveCodes.delete(code);
       });
 
       termPlans.push({
@@ -452,73 +571,25 @@ export function generateAutoGraduationPlans(
       input.requirements.targetCredits - projectedTotalCredits,
     );
 
-    // Collect suggested electives from the student's combinations for
-    // real course filling (avoids generic ELECTIVE-BLOCK placeholders).
-    const availableElectiveCodes = collectSuggestedElectives(
-      input,
-      satisfiedCodes,
-    );
-
     let electiveLoopTermIndex = startTermIndex + termPlans.length;
     while (
       electiveShortfall > 0 &&
       termPlans.length < 12 &&
-      electiveLoopTermIndex <= 24
+      electiveLoopTermIndex <= MAX_UNDERGRAD_TERM_INDEX
     ) {
       const termIndex = electiveLoopTermIndex;
       const semesterName = semesterNameFromTermIndex(termIndex);
       const termLabel = toTermLabel(termIndex);
+      const minTermCredits = Math.max(
+        MIN_CREDITS_PER_TERM,
+        profile.preferredMinTermCredits,
+      );
+      const usedCodesThisTerm = new Set<string>();
 
-      // Find real electives available this semester with prerequisites met
-      const suggestedCandidates = Array.from(availableElectiveCodes)
-        .map((code) => catalogByCode.get(code))
-        .filter((course): course is CourseCatalogEntry => Boolean(course))
-        // FY courses are eligible in Semester 1 (they start then and run all year).
-        .filter(
-          (c) =>
-            c.semester === semesterName ||
-            (c.semester === "FY" && semesterName === "Semester 1"),
-        )
-        .filter((c) => {
-          const prereqs = parseCourseCodes(c.prerequisites);
-          if (prereqs.length === 0) return true;
-          const unsatisfied = prereqs.filter(
-            (p) => !isSatisfied(p, satisfiedCodes),
-          ).length;
-          return unsatisfied <= Math.floor(prereqs.length / 2);
-        })
-        .sort((a, b) => b.credits - a.credits);
-
-      // If combination-defined electives are sparse, backfill from real catalog
-      // courses that fit the student's likely pathway (same departments first).
-      const fallbackCandidates = undergradCatalog
-        .filter((course) => !isSatisfied(course.code, satisfiedCodes))
-        .filter((course) => !majorCoreCodes.has(course.code))
-        .filter((course) => course.credits > 0)
-        .filter(
-          (course) =>
-            course.semester === semesterName ||
-            (course.semester === "FY" && semesterName === "Semester 1"),
-        )
-        .filter((course) => {
-          const prereqs = parseCourseCodes(course.prerequisites);
-          if (prereqs.length === 0) return true;
-          const unsatisfied = prereqs.filter(
-            (p) => !isSatisfied(p, satisfiedCodes),
-          ).length;
-          return unsatisfied <= Math.floor(prereqs.length / 2);
-        })
-        .sort((a, b) => {
-          const aPreferred = preferredDepartments.has(a.department) ? 1 : 0;
-          const bPreferred = preferredDepartments.has(b.department) ? 1 : 0;
-          if (aPreferred !== bPreferred) return bPreferred - aPreferred;
-          return b.credits - a.credits;
-        });
-
-      const electiveCandidates =
-        suggestedCandidates.length > 0
-          ? suggestedCandidates
-          : fallbackCandidates;
+      const electiveCandidates = getElectiveCandidates(
+        semesterName,
+        usedCodesThisTerm,
+      );
 
       if (electiveCandidates.length === 0) {
         electiveLoopTermIndex += 1;
@@ -527,12 +598,16 @@ export function generateAutoGraduationPlans(
 
       const selected: AutoPlannedCourse[] = [];
       let selectedCredits = 0;
-      const usingFallbackCandidates = suggestedCandidates.length === 0;
+      const provisionalElectiveCodes = new Set<string>();
+      const usingFallbackCandidates =
+        availableElectiveCodes.size === 0 ||
+        electiveCandidates.every((c) => !availableElectiveCodes.has(c.code));
 
       electiveCandidates.forEach((course) => {
+        if (usedCodesThisTerm.has(course.code)) return;
         const wouldBe = selectedCredits + course.credits;
         if (
-          selectedCredits < profile.preferredMinTermCredits ||
+          selectedCredits < minTermCredits ||
           wouldBe <= Math.min(profile.termCreditTarget, electiveShortfall)
         ) {
           selected.push(
@@ -544,8 +619,11 @@ export function generateAutoGraduationPlans(
             ),
           );
           selectedCredits += course.credits;
+          usedCodesThisTerm.add(course.code);
           satisfiedCodes.add(course.code);
-          availableElectiveCodes.delete(course.code);
+          if (availableElectiveCodes.has(course.code)) {
+            provisionalElectiveCodes.add(course.code);
+          }
         }
       });
 
@@ -563,9 +641,24 @@ export function generateAutoGraduationPlans(
           ),
         );
         selectedCredits = smallest.credits;
+        usedCodesThisTerm.add(smallest.code);
         satisfiedCodes.add(smallest.code);
-        availableElectiveCodes.delete(smallest.code);
+        if (availableElectiveCodes.has(smallest.code)) {
+          provisionalElectiveCodes.add(smallest.code);
+        }
       }
+
+      if (selectedCredits < MIN_CREDITS_PER_TERM) {
+        selected.forEach((entry) => {
+          satisfiedCodes.delete(entry.code);
+        });
+        electiveLoopTermIndex += 1;
+        continue;
+      }
+
+      provisionalElectiveCodes.forEach((code) => {
+        availableElectiveCodes.delete(code);
+      });
 
       termPlans.push({
         termIndex,
@@ -613,6 +706,7 @@ export function generateAutoGraduationPlans(
             if (seenElectives.has(code)) return;
             const entry = catalogByCode.get(code);
             if (!entry) return;
+            if (isWholeYearCourse(entry)) return;
             seenElectives.add(code);
             electiveSuggestions.push({
               code,
@@ -648,6 +742,7 @@ export function generateAutoGraduationPlans(
     const rationale = [
       `${profile.title} targets around ${profile.termCreditTarget} credits per term.`,
       `${unresolvedCoreCount} unresolved core courses remain after planning.`,
+      `Planner is capped at Year 4 (Semester 2) with a minimum ${MIN_CREDITS_PER_TERM} credits per generated term.`,
       `Projected credits after plan: ${projectedTotalCredits}/${input.requirements.targetCredits}.`,
     ];
 
