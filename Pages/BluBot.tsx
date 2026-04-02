@@ -1,5 +1,6 @@
 import { getPrimaryFacultySlug } from "@/constants/faculty";
 import { buildGuidanceTrustMessage } from "@/hooks/use-logged-in-user";
+import { useIsMobile } from "@/hooks/use-is-mobile";
 import {
   askHandbookAdvisor,
   askHandbookAdvisorStream,
@@ -1173,7 +1174,8 @@ export default function BluBot({
   userContext,
   validationSummary,
 }: BluBotProps) {
-  const isWeb = Platform.OS === "web";
+  const isMobile = useIsMobile();
+  const isWeb = !isMobile;
 
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [chatSearchQuery, setChatSearchQuery] = useState("");
@@ -1626,7 +1628,7 @@ export default function BluBot({
 
   const handleCopyMessage = async (text: string, messageId: string) => {
     try {
-      if (Platform.OS === "web") {
+      if (isWeb) {
         await navigator.clipboard.writeText(text);
       } else {
         await Clipboard.setStringAsync(text);
@@ -2085,7 +2087,9 @@ export default function BluBot({
           )}
           <Pressable
             style={
-              isUserMessage ? styles.userMessageColumn : styles.botMessageColumn
+              isUserMessage
+                ? [styles.userMessageColumn, isWeb && styles.userMessageColumnDesktop]
+                : [styles.botMessageColumn, isWeb && styles.botMessageColumnDesktop]
             }
             onHoverIn={() => setHoveredMessageId(item.id)}
             onHoverOut={() => setHoveredMessageId(null)}
@@ -2098,7 +2102,7 @@ export default function BluBot({
               style={
                 isUserMessage
                   ? [styles.messageBubble, styles.userMessageBubble]
-                  : styles.botMessagePlain
+                  : [styles.botMessagePlain, isWeb && styles.botMessagePlainDesktop]
               }
             >
               {renderFormattedMessageContent(
@@ -2188,7 +2192,7 @@ export default function BluBot({
   const renderGreeting = () => (
     <View style={styles.greetingContent}>
       <View style={styles.greetingHeader}>
-        <Text style={styles.greetingTitle}>
+        <Text style={[styles.greetingTitle, isWeb && styles.greetingTitleDesktop]}>
           How can I help you today {firstName}?
         </Text>
       </View>
@@ -2213,7 +2217,7 @@ export default function BluBot({
     return (
       <View style={wrapperStyles}>
         <TouchableOpacity
-          style={[styles.uploadButton, isCentered && styles.uploadButtonLarge]}
+          style={[styles.uploadButton, isWeb && styles.uploadButtonDesktop, isCentered && styles.uploadButtonLarge]}
           onPress={() => {
             setIsModelMenuOpen(false);
             void handlePickUpload();
@@ -2253,7 +2257,7 @@ export default function BluBot({
             </View>
           )}
           <TextInput
-            style={[styles.input, isCentered && styles.inputLarge]}
+            style={[styles.input, isWeb && styles.inputDesktop, isCentered && styles.inputLarge]}
             placeholder="Talk to BluBot"
             placeholderTextColor={theme.colors.textMuted}
             value={inputValue}
@@ -2329,6 +2333,7 @@ export default function BluBot({
         <TouchableOpacity
           style={[
             styles.sendButton,
+            isWeb && styles.sendButtonDesktop,
             isCentered && styles.sendButtonLarge,
             isSendDisabled && styles.sendButtonDisabled,
           ]}
@@ -2350,7 +2355,7 @@ export default function BluBot({
   };
 
   const renderSidebar = () => (
-    <View style={styles.sidebarPanel}>
+    <View style={[styles.sidebarPanel, isWeb && styles.sidebarPanelDesktop]}>
       <TouchableOpacity
         style={styles.sidebarPrimaryAction}
         onPress={handleNewChat}
@@ -2373,14 +2378,14 @@ export default function BluBot({
           />
           <Text style={styles.sidebarSectionLabel}>Search Chat</Text>
         </View>
-        <View style={styles.sidebarSearchInputShell}>
+        <View style={[styles.sidebarSearchInputShell, isWeb && styles.sidebarSearchInputShellDesktop]}>
           <MaterialIcons
             name="manage-search"
             size={18}
             color={theme.colors.textMuted}
           />
           <TextInput
-            style={styles.sidebarSearchInput}
+            style={[styles.sidebarSearchInput, isWeb && styles.sidebarSearchInputDesktop]}
             placeholder="Find a recent conversation"
             placeholderTextColor={theme.colors.textMuted}
             value={chatSearchQuery}
@@ -2424,7 +2429,7 @@ export default function BluBot({
                   <View style={styles.recentChatCardHeader}>
                     {isRenaming ? (
                       <TextInput
-                        style={styles.recentChatRenameInput}
+                        style={[styles.recentChatRenameInput, isWeb && styles.recentChatRenameInputDesktop]}
                         value={renameDraft}
                         onChangeText={setRenameDraft}
                         autoFocus
@@ -2536,7 +2541,7 @@ export default function BluBot({
             color={theme.colors.deepBlue}
           />
         </TouchableOpacity>
-        <View style={styles.headerContent}>
+        <View style={[styles.headerContent, isWeb && styles.headerContentDesktop]}>
           <Text style={styles.headerTitle}>BluBot</Text>
         </View>
       </View>
@@ -2552,9 +2557,9 @@ export default function BluBot({
         {isSidebarOpen && renderSidebar()}
 
         <View style={styles.mainContentShell}>
-          <View style={styles.webConstrainer}>
+          <View style={[styles.webConstrainer, isWeb && styles.webConstrainerDesktop]}>
             {isWeb && messages.length === 0 ? (
-              <View style={styles.emptyStateContainer}>
+              <View style={[styles.emptyStateContainer, isWeb && styles.emptyStateContainerDesktop]}>
                 {renderGreeting()}
 
                 {renderInputBar(true)}
@@ -2611,7 +2616,7 @@ export default function BluBot({
                   </View>
                 )}
 
-                <View style={styles.bottomInputContainer}>
+                <View style={[styles.bottomInputContainer, isWeb && styles.bottomInputContainerDesktop]}>
                   {renderInputBar(false)}
                 </View>
               </KeyboardAvoidingView>
@@ -2631,9 +2636,12 @@ const styles = StyleSheet.create({
   webConstrainer: {
     flex: 1,
     width: "100%",
-    maxWidth: Platform.OS === "web" ? 900 : "100%",
+    maxWidth: "100%",
     alignSelf: "center",
     backgroundColor: theme.colors.background,
+  },
+  webConstrainerDesktop: {
+    maxWidth: 900,
   },
   keyboardAvoidingView: {
     flex: 1,
@@ -2669,10 +2677,13 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "center",
     alignItems: "center",
-    maxWidth: Platform.OS === "web" ? 900 : "100%",
+    maxWidth: "100%",
     width: "100%",
     alignSelf: "center",
     minHeight: 40,
+  },
+  headerContentDesktop: {
+    maxWidth: 900,
   },
   headerMenuButton: {
     position: "absolute",
@@ -2703,7 +2714,7 @@ const styles = StyleSheet.create({
     top: 0,
     bottom: 0,
     left: 0,
-    width: Platform.OS === "web" ? 320 : 286,
+    width: 286,
     backgroundColor: theme.colors.white,
     borderRightWidth: 1,
     borderRightColor: theme.colors.gray,
@@ -2723,6 +2734,9 @@ const styles = StyleSheet.create({
         elevation: 8,
       },
     }),
+  },
+  sidebarPanelDesktop: {
+    width: 320,
   },
   sidebarPrimaryAction: {
     flexDirection: "row",
@@ -2761,19 +2775,20 @@ const styles = StyleSheet.create({
     backgroundColor: theme.colors.grayLight,
     borderRadius: theme.borderRadius.md,
     paddingHorizontal: theme.spacing.md,
-    paddingVertical: Platform.OS === "web" ? 10 : 8,
+    paddingVertical: 8,
     borderWidth: 1,
     borderColor: theme.colors.gray,
+  },
+  sidebarSearchInputShellDesktop: {
+    paddingVertical: 10,
   },
   sidebarSearchInput: {
     flex: 1,
     fontSize: theme.fontSize.sm,
     color: theme.colors.textPrimary,
-    ...(Platform.OS === "web"
-      ? {
-          outlineStyle: "none" as any,
-        }
-      : {}),
+  },
+  sidebarSearchInputDesktop: {
+    outlineStyle: "none" as any,
   },
   sidebarRecentSection: {
     flex: 1,
@@ -2843,12 +2858,11 @@ const styles = StyleSheet.create({
     borderColor: theme.colors.grayDark,
     borderRadius: theme.borderRadius.sm,
     paddingHorizontal: theme.spacing.sm,
-    paddingVertical: Platform.OS === "web" ? 5 : 4,
-    ...(Platform.OS === "web"
-      ? {
-          outlineStyle: "none" as any,
-        }
-      : {}),
+    paddingVertical: 4,
+  },
+  recentChatRenameInputDesktop: {
+    paddingVertical: 5,
+    outlineStyle: "none" as any,
   },
   recentChatTitle: {
     flex: 1,
@@ -2928,8 +2942,11 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     paddingHorizontal: theme.spacing.lg,
-    paddingBottom: Platform.OS === "web" ? theme.spacing.xl : 0,
+    paddingBottom: 0,
     width: "100%",
+  },
+  emptyStateContainerDesktop: {
+    paddingBottom: theme.spacing.xl,
   },
   emptyStateScrollContent: {
     flexGrow: 1,
@@ -2971,17 +2988,23 @@ const styles = StyleSheet.create({
     }),
   },
   greetingTitle: {
-    fontSize: Platform.OS === "web" ? 18 : 16,
+    fontSize: 16,
     fontWeight: "400",
     color: theme.colors.textPrimary,
     marginBottom: theme.spacing.sm,
     textAlign: "center",
   },
+  greetingTitleDesktop: {
+    fontSize: 18,
+  },
   greetingSubtitle: {
-    fontSize: Platform.OS === "web" ? 20 : 18,
+    fontSize: 18,
     color: theme.colors.textLight,
     textAlign: "center",
     maxWidth: 400,
+  },
+  greetingSubtitleDesktop: {
+    fontSize: 20,
   },
   suggestedPromptsContainer: {
     width: "100%",
@@ -3174,9 +3197,12 @@ const styles = StyleSheet.create({
     }),
   },
   botMessagePlain: {
-    maxWidth: Platform.OS === "web" ? "80%" : "88%",
+    maxWidth: "88%",
     paddingVertical: theme.spacing.xs,
     position: "relative",
+  },
+  botMessagePlainDesktop: {
+    maxWidth: "80%",
   },
   messageText: {
     fontSize: theme.fontSize.md,
@@ -3313,11 +3339,17 @@ const styles = StyleSheet.create({
     fontWeight: "700",
   },
   userMessageColumn: {
-    maxWidth: Platform.OS === "web" ? "70%" : "75%",
+    maxWidth: "75%",
+  },
+  userMessageColumnDesktop: {
+    maxWidth: "70%",
   },
   botMessageColumn: {
     alignItems: "flex-start",
-    maxWidth: Platform.OS === "web" ? "80%" : "88%",
+    maxWidth: "88%",
+  },
+  botMessageColumnDesktop: {
+    maxWidth: "80%",
   },
   messageActionBar: {
     flexDirection: "row",
@@ -3400,17 +3432,15 @@ const styles = StyleSheet.create({
     }),
   },
   bottomInputContainer: {
-    borderTopWidth: Platform.OS === "web" ? 0 : 1,
+    borderTopWidth: 1,
     borderTopColor: theme.colors.grayLight,
-    ...(Platform.OS === "web"
-      ? {
-          padding: theme.spacing.lg,
-          backgroundColor: "transparent",
-        }
-      : {
-          backgroundColor: theme.colors.white,
-          paddingBottom: 0,
-        }),
+    backgroundColor: theme.colors.white,
+    paddingBottom: 0,
+  },
+  bottomInputContainerDesktop: {
+    borderTopWidth: 0,
+    padding: theme.spacing.lg,
+    backgroundColor: "transparent",
   },
   inputContainer: {
     flex: 1,
@@ -3483,18 +3513,17 @@ const styles = StyleSheet.create({
   input: {
     flex: 1,
     maxHeight: 120,
-    minHeight: Platform.OS === "web" ? 48 : 56,
+    minHeight: 56,
     paddingHorizontal: theme.spacing.md,
     paddingTop: Platform.OS === "ios" ? 14 : 12,
     paddingBottom: Platform.OS === "ios" ? 14 : 12,
     fontSize: theme.fontSize.md,
     color: theme.colors.textPrimary,
     lineHeight: 20,
-    ...(Platform.OS === "web"
-      ? {
-          outlineStyle: "none" as any,
-        }
-      : {}),
+  },
+  inputDesktop: {
+    minHeight: 48,
+    outlineStyle: "none" as any,
   },
   inputLarge: {
     fontSize: theme.fontSize.lg,
@@ -3545,9 +3574,13 @@ const styles = StyleSheet.create({
     borderRadius: 24,
     justifyContent: "center",
     alignItems: "center",
-    height: Platform.OS === "web" ? 48 : 56,
-    minWidth: Platform.OS === "web" ? 48 : 56,
+    height: 56,
+    minWidth: 56,
     marginBottom: 4,
+  },
+  uploadButtonDesktop: {
+    height: 48,
+    minWidth: 48,
   },
   uploadButtonLarge: {
     height: 56,
@@ -3561,8 +3594,8 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     paddingHorizontal: theme.spacing.lg,
-    height: Platform.OS === "web" ? 48 : 56,
-    minWidth: Platform.OS === "web" ? 48 : 56,
+    height: 56,
+    minWidth: 56,
     marginBottom: 4,
     ...Platform.select({
       web: {},
@@ -3574,6 +3607,10 @@ const styles = StyleSheet.create({
         elevation: 4,
       },
     }),
+  },
+  sendButtonDesktop: {
+    height: 48,
+    minWidth: 48,
   },
   sendButtonLarge: {
     height: 56,

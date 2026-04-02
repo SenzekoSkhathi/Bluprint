@@ -5,10 +5,10 @@ import {
   getScienceAdvisors,
   type ScienceAdvisorEntry,
 } from "@/services/backend-api";
+import { useIsMobile } from "@/hooks/use-is-mobile";
 import React, { useEffect, useMemo, useState } from "react";
 import {
   Modal,
-  Platform,
   Pressable,
   ScrollView,
   StyleSheet,
@@ -103,6 +103,7 @@ const WEEKDAYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
 // ─── Component ────────────────────────────────────────────────────────────────
 export default function Advisor() {
+  const isMobile = useIsMobile();
   const [advisors, setAdvisors] = useState<ScienceAdvisorEntry[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -184,16 +185,16 @@ export default function Advisor() {
         key={`${advisor.email}-${index}`}
         style={[styles.advisorCard, isSenior && styles.advisorCardSenior]}
       >
-        <View style={styles.cardMain}>
+        <View style={[styles.cardMain, !isMobile && styles.cardMainDesktop]}>
           {/* Avatar */}
-          <View style={styles.avatar}>
-            <Text style={styles.avatarText}>{getInitials(advisor.name)}</Text>
+          <View style={[styles.avatar, !isMobile && styles.avatarDesktop]}>
+            <Text style={[styles.avatarText, !isMobile && styles.avatarTextDesktop]}>{getInitials(advisor.name)}</Text>
           </View>
 
           {/* Info */}
           <View style={styles.advisorInfo}>
             <View style={styles.advisorTop}>
-              <Text style={styles.advisorName} numberOfLines={1}>
+              <Text style={[styles.advisorName, !isMobile && styles.advisorNameDesktop]} numberOfLines={1}>
                 {advisor.name}
               </Text>
               <View
@@ -218,23 +219,23 @@ export default function Advisor() {
             <Text style={styles.advisorArea}>{advisor.area}</Text>
 
             <View style={styles.metaGroup}>
-              <Text style={styles.metaText}>📍 {advisor.room}</Text>
-              <Text style={styles.metaText}>✉ {advisor.email}</Text>
+              <Text style={[styles.metaText, !isMobile && styles.metaTextDesktop]}>📍 {advisor.room}</Text>
+              <Text style={[styles.metaText, !isMobile && styles.metaTextDesktop]}>✉ {advisor.email}</Text>
             </View>
 
             {advisor.note ? (
-              <Text style={styles.advisorNote}>{advisor.note}</Text>
+              <Text style={[styles.advisorNote, !isMobile && styles.advisorNoteDesktop]}>{advisor.note}</Text>
             ) : null}
           </View>
         </View>
 
         {/* Book button */}
-        <View style={styles.cardFooter}>
+        <View style={[styles.cardFooter, !isMobile && styles.cardFooterDesktop]}>
           <Pressable
             onPress={() => openBooking(advisor)}
-            style={styles.bookBtn}
+            style={[styles.bookBtn, !isMobile && styles.bookBtnDesktop]}
           >
-            <Text style={styles.bookBtnText}>Book meeting</Text>
+            <Text style={[styles.bookBtnText, !isMobile && styles.bookBtnTextDesktop]}>Book meeting</Text>
           </Pressable>
         </View>
       </View>
@@ -252,9 +253,9 @@ export default function Advisor() {
         onRequestClose={closeBooking}
       >
         <TouchableWithoutFeedback onPress={closeBooking}>
-          <View style={styles.sheetBackdrop}>
+          <View style={[styles.sheetBackdrop, !isMobile && styles.sheetBackdropDesktop]}>
             <TouchableWithoutFeedback>
-              <View style={styles.sheet}>
+              <View style={[styles.sheet, !isMobile && styles.sheetDesktop]}>
                 {/* Handle */}
                 <View style={styles.sheetHandle} />
 
@@ -334,7 +335,7 @@ export default function Advisor() {
                                     styles.typePillLabelActive,
                                 ]}
                               >
-                                {Platform.OS === "web"
+                                {!isMobile
                                   ? MEETING_TYPE_LABELS[type]
                                   : type === "in-person"
                                     ? "In person"
@@ -407,6 +408,7 @@ export default function Advisor() {
                                 }
                                 style={[
                                   styles.timeSlot,
+                                  !isMobile && styles.timeSlotDesktop,
                                   isActive && styles.timeSlotActive,
                                   isBooked && styles.timeSlotBooked,
                                 ]}
@@ -482,7 +484,7 @@ export default function Advisor() {
     <MainLayout>
       {/* Page header */}
       <View style={styles.pageHeader}>
-        <Text style={styles.title}>Student advisors</Text>
+        <Text style={[styles.title, !isMobile && styles.titleDesktop]}>Student advisors</Text>
         <Text style={styles.subtitle}>
           Book a meeting with a Science Faculty advisor for academic guidance.
         </Text>
@@ -514,9 +516,9 @@ export default function Advisor() {
               const isActive = selectedArea === area;
               // Shorten long names on mobile
               const label =
-                Platform.OS !== "web" && area === "Computer Science"
+                isMobile && area === "Computer Science"
                   ? "CS"
-                  : Platform.OS !== "web" && area === "Mathematics"
+                  : isMobile && area === "Mathematics"
                     ? "Maths"
                     : area;
               return (
@@ -525,12 +527,14 @@ export default function Advisor() {
                   onPress={() => setSelectedArea(area)}
                   style={[
                     styles.filterPill,
+                    !isMobile && styles.filterPillDesktop,
                     isActive && styles.filterPillActive,
                   ]}
                 >
                   <Text
                     style={[
                       styles.filterPillText,
+                      !isMobile && styles.filterPillTextDesktop,
                       isActive && styles.filterPillTextActive,
                     ]}
                   >
@@ -567,10 +571,13 @@ const styles = StyleSheet.create({
     marginBottom: theme.spacing.md,
   },
   title: {
-    fontSize: Platform.OS === "web" ? theme.fontSize.xxl : theme.fontSize.xl,
+    fontSize: theme.fontSize.xl,
     fontWeight: "700",
     color: theme.colors.textPrimary,
     marginBottom: 3,
+  },
+  titleDesktop: {
+    fontSize: theme.fontSize.xxl,
   },
   subtitle: {
     fontSize: theme.fontSize.sm,
@@ -626,22 +633,29 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   filterPill: {
-    height: Platform.OS === "web" ? 36 : 34,
-    paddingHorizontal: Platform.OS === "web" ? 16 : 12,
+    height: 34,
+    paddingHorizontal: 12,
     borderRadius: 99,
     borderWidth: 1,
     borderColor: theme.colors.gray,
     backgroundColor: theme.colors.card,
     justifyContent: "center",
   },
+  filterPillDesktop: {
+    height: 36,
+    paddingHorizontal: 16,
+  },
   filterPillActive: {
     backgroundColor: "#E6F1FB",
     borderColor: "#B5D4F4",
   },
   filterPillText: {
-    fontSize: Platform.OS === "web" ? 13 : 12,
+    fontSize: 12,
     fontWeight: "600",
     color: theme.colors.textSecondary,
+  },
+  filterPillTextDesktop: {
+    fontSize: 13,
   },
   filterPillTextActive: {
     color: "#0C447C",
@@ -667,22 +681,33 @@ const styles = StyleSheet.create({
   cardMain: {
     flexDirection: "row",
     alignItems: "flex-start",
-    gap: Platform.OS === "web" ? 14 : 10,
-    padding: Platform.OS === "web" ? 16 : 12,
+    gap: 10,
+    padding: 12,
+  },
+  cardMainDesktop: {
+    gap: 14,
+    padding: 16,
   },
   avatar: {
-    width: Platform.OS === "web" ? 44 : 40,
-    height: Platform.OS === "web" ? 44 : 40,
+    width: 40,
+    height: 40,
     borderRadius: 99,
     backgroundColor: "#E6F1FB",
     alignItems: "center",
     justifyContent: "center",
     flexShrink: 0,
   },
+  avatarDesktop: {
+    width: 44,
+    height: 44,
+  },
   avatarText: {
-    fontSize: Platform.OS === "web" ? 14 : 13,
+    fontSize: 13,
     fontWeight: "500",
     color: "#0C447C",
+  },
+  avatarTextDesktop: {
+    fontSize: 14,
   },
   advisorInfo: {
     flex: 1,
@@ -697,9 +722,12 @@ const styles = StyleSheet.create({
   },
   advisorName: {
     flex: 1,
-    fontSize: Platform.OS === "web" ? 14 : 13,
+    fontSize: 13,
     fontWeight: "500",
     color: theme.colors.textPrimary,
+  },
+  advisorNameDesktop: {
+    fontSize: 14,
   },
   tierBadge: {
     paddingVertical: 2,
@@ -733,49 +761,76 @@ const styles = StyleSheet.create({
     marginTop: 2,
   },
   metaText: {
-    fontSize: Platform.OS === "web" ? 12 : 11,
+    fontSize: 11,
     color: theme.colors.textSecondary,
   },
+  metaTextDesktop: {
+    fontSize: 12,
+  },
   advisorNote: {
-    fontSize: Platform.OS === "web" ? 12 : 10,
+    fontSize: 10,
     color: theme.colors.textLight,
     fontStyle: "italic",
     marginTop: 3,
   },
+  advisorNoteDesktop: {
+    fontSize: 12,
+  },
   cardFooter: {
-    paddingHorizontal: Platform.OS === "web" ? 16 : 12,
-    paddingBottom: Platform.OS === "web" ? 14 : 10,
+    paddingHorizontal: 12,
+    paddingBottom: 10,
     alignItems: "flex-end",
   },
+  cardFooterDesktop: {
+    paddingHorizontal: 16,
+    paddingBottom: 14,
+  },
   bookBtn: {
-    paddingVertical: Platform.OS === "web" ? 8 : 6,
-    paddingHorizontal: Platform.OS === "web" ? 18 : 14,
+    paddingVertical: 6,
+    paddingHorizontal: 14,
     borderRadius: theme.borderRadius.md,
     borderWidth: 1,
     borderColor: "#B5D4F4",
     backgroundColor: "#E6F1FB",
   },
+  bookBtnDesktop: {
+    paddingVertical: 8,
+    paddingHorizontal: 18,
+  },
   bookBtnText: {
-    fontSize: Platform.OS === "web" ? 13 : 12,
+    fontSize: 12,
     fontWeight: "600",
     color: "#0C447C",
+  },
+  bookBtnTextDesktop: {
+    fontSize: 13,
   },
 
   // ── Booking sheet / modal ─────────────────────────────────────────────────
   sheetBackdrop: {
     flex: 1,
     backgroundColor: "rgba(0,0,0,0.35)",
-    justifyContent: Platform.OS === "web" ? "center" : "flex-end",
-    alignItems: Platform.OS === "web" ? "center" : "stretch",
+    justifyContent: "flex-end",
+    alignItems: "stretch",
+  },
+  sheetBackdropDesktop: {
+    justifyContent: "center",
+    alignItems: "center",
   },
   sheet: {
     backgroundColor: theme.colors.white,
-    borderRadius: Platform.OS === "web" ? theme.borderRadius.lg : 20,
+    borderRadius: 20,
     paddingHorizontal: theme.spacing.md,
     paddingTop: 12,
-    paddingBottom: Platform.OS === "web" ? 24 : 32,
-    maxHeight: Platform.OS === "web" ? "90%" : "88%",
-    width: Platform.OS === "web" ? 480 : "100%",
+    paddingBottom: 32,
+    maxHeight: "88%",
+    width: "100%",
+  },
+  sheetDesktop: {
+    borderRadius: theme.borderRadius.lg,
+    paddingBottom: 24,
+    maxHeight: "90%",
+    width: 480,
   },
   sheetHandle: {
     width: 36,
@@ -922,7 +977,6 @@ const styles = StyleSheet.create({
   },
   timeSlot: {
     width: "30%",
-    flex: Platform.OS === "web" ? 0 : undefined,
     paddingVertical: 9,
     paddingHorizontal: 4,
     borderRadius: theme.borderRadius.md,
@@ -930,7 +984,10 @@ const styles = StyleSheet.create({
     borderColor: theme.colors.glassBorder,
     backgroundColor: theme.colors.grayLight,
     alignItems: "center",
-    minWidth: Platform.OS === "web" ? 80 : undefined,
+  },
+  timeSlotDesktop: {
+    flex: 0,
+    minWidth: 80,
   },
   timeSlotActive: {
     backgroundColor: "#E6F1FB",

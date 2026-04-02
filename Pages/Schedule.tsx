@@ -1,5 +1,6 @@
 import MainLayout from "@/components/main-layout";
 import { theme } from "@/constants/theme";
+import { useIsMobile } from "@/hooks/use-is-mobile";
 import { academicRepository } from "@/services/academic-repository";
 import {
   getStudentSchedule,
@@ -14,7 +15,6 @@ import type {
 import { MaterialIcons } from "@expo/vector-icons";
 import React, { useMemo, useState } from "react";
 import {
-  Platform,
   Pressable,
   ScrollView,
   StyleSheet,
@@ -171,6 +171,7 @@ interface ScheduleProps {
 }
 
 export default function Schedule({ studentNumber }: ScheduleProps) {
+  const isMobile = useIsMobile();
   const [viewMode, setViewMode] = useState<ViewMode>("Daily");
   const [selectedDate, setSelectedDate] = useState(new Date());
   const [selectedDayFilter, setSelectedDayFilter] = useState<string>(
@@ -607,7 +608,7 @@ export default function Schedule({ studentNumber }: ScheduleProps) {
     <MainLayout>
       {/* Page header */}
       <View style={styles.pageHeader}>
-        <Text style={styles.title}>Schedule</Text>
+        <Text style={[styles.title, !isMobile && styles.titleDesktop]}>Schedule</Text>
         <Text style={styles.subtitle}>
           Your classes, tutorials, and tasks — all in one place.
         </Text>
@@ -913,13 +914,13 @@ export default function Schedule({ studentNumber }: ScheduleProps) {
                 })}
               </ScrollView>
 
-              <View style={styles.formTimeRow}>
+              <View style={[styles.formTimeRow, !isMobile && styles.formTimeRowDesktop]}>
                 <TextInput
                   value={sessionStartTime}
                   onChangeText={setSessionStartTime}
                   placeholder="09:00"
                   placeholderTextColor={theme.colors.textMuted}
-                  style={[styles.formInput, styles.formTimeInput]}
+                  style={[styles.formInput, styles.formTimeInput, !isMobile && styles.formTimeInputDesktop]}
                 />
                 <Text style={styles.formTimeSep}>–</Text>
                 <TextInput
@@ -927,7 +928,7 @@ export default function Schedule({ studentNumber }: ScheduleProps) {
                   onChangeText={setSessionEndTime}
                   placeholder="10:00"
                   placeholderTextColor={theme.colors.textMuted}
-                  style={[styles.formInput, styles.formTimeInput]}
+                  style={[styles.formInput, styles.formTimeInput, !isMobile && styles.formTimeInputDesktop]}
                 />
                 <TextInput
                   value={sessionLocation}
@@ -1008,7 +1009,7 @@ export default function Schedule({ studentNumber }: ScheduleProps) {
               return (
                 <View
                   key={dayGroup.day}
-                  style={[styles.weekCol, isToday && styles.weekColToday]}
+                  style={[styles.weekCol, !isMobile && styles.weekColDesktop, isToday && styles.weekColToday]}
                 >
                   <View style={styles.weekColHead}>
                     <Text style={styles.weekColDay}>
@@ -1126,7 +1127,7 @@ export default function Schedule({ studentNumber }: ScheduleProps) {
               );
             })}
           </ScrollView>
-          <View style={styles.formTimeRow}>
+          <View style={[styles.formTimeRow, !isMobile && styles.formTimeRowDesktop]}>
             <TextInput
               value={todoDueDate}
               onChangeText={setTodoDueDate}
@@ -1139,7 +1140,7 @@ export default function Schedule({ studentNumber }: ScheduleProps) {
               onChangeText={setTodoDueTime}
               placeholder="HH:MM"
               placeholderTextColor={theme.colors.textMuted}
-              style={[styles.formInput, styles.formTimeInput]}
+              style={[styles.formInput, styles.formTimeInput, !isMobile && styles.formTimeInputDesktop]}
             />
           </View>
           <View style={styles.formActions}>
@@ -1256,10 +1257,13 @@ const styles = StyleSheet.create({
     marginBottom: theme.spacing.md,
   },
   title: {
-    fontSize: Platform.OS === "web" ? theme.fontSize.xxl : theme.fontSize.xl,
+    fontSize: theme.fontSize.xl,
     fontWeight: "700",
     color: theme.colors.textPrimary,
     marginBottom: 4,
+  },
+  titleDesktop: {
+    fontSize: theme.fontSize.xxl,
   },
   subtitle: {
     fontSize: theme.fontSize.sm,
@@ -1572,11 +1576,17 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     gap: theme.spacing.sm,
     alignItems: "center",
-    flexWrap: Platform.OS === "web" ? "nowrap" : "wrap",
+    flexWrap: "wrap",
+  },
+  formTimeRowDesktop: {
+    flexWrap: "nowrap",
   },
   formTimeInput: {
-    width: Platform.OS === "web" ? 90 : "auto",
+    width: "auto",
     flexShrink: 0,
+  },
+  formTimeInputDesktop: {
+    width: 90,
   },
   formTimeSep: {
     fontSize: theme.fontSize.sm,
@@ -1727,12 +1737,15 @@ const styles = StyleSheet.create({
     paddingRight: theme.spacing.sm,
   },
   weekCol: {
-    width: Platform.OS === "web" ? 140 : 90,
+    width: 90,
     borderWidth: 1,
     borderColor: theme.colors.gray,
     borderRadius: theme.borderRadius.md,
     overflow: "hidden",
     backgroundColor: theme.colors.card,
+  },
+  weekColDesktop: {
+    width: 140,
   },
   weekColToday: {
     borderColor: theme.colors.deepBlue,

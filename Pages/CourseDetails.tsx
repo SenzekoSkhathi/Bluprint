@@ -1,8 +1,8 @@
 import MainLayout from "@/components/main-layout";
 import { theme } from "@/constants/theme";
+import { useIsMobile } from "@/hooks/use-is-mobile";
 import React from "react";
 import {
-    Platform,
     Pressable,
     ScrollView,
     StyleSheet,
@@ -64,11 +64,12 @@ function renderOutlineWithBoldLabels(outlineText: string) {
 }
 
 export default function CourseDetails({ course, onBack }: CourseDetailsProps) {
+  const isMobile = useIsMobile();
   if (!course) {
     return (
       <MainLayout>
         <View style={styles.header}>
-          <Text style={styles.title}>Course Not Found</Text>
+          <Text style={[styles.title, !isMobile && styles.titleDesktop]}>Course Not Found</Text>
           <Text style={styles.subtitle}>
             The requested course could not be found.
           </Text>
@@ -90,7 +91,7 @@ export default function CourseDetails({ course, onBack }: CourseDetailsProps) {
             <Text style={styles.backText}>← Back to Courses</Text>
           </Pressable>
         )}
-        <Text style={styles.title}>Course Details</Text>
+        <Text style={[styles.title, !isMobile && styles.titleDesktop]}>Course Details</Text>
         <Text style={styles.subtitle}>
           Complete information about this course offering.
         </Text>
@@ -200,10 +201,13 @@ const styles = StyleSheet.create({
     marginBottom: theme.spacing.md,
   },
   title: {
-    fontSize: Platform.OS === "web" ? theme.fontSize.xxl : theme.fontSize.xl,
+    fontSize: theme.fontSize.xl,
     fontWeight: "800",
     color: theme.colors.textPrimary,
     marginBottom: theme.spacing.xs,
+  },
+  titleDesktop: {
+    fontSize: theme.fontSize.xxl,
   },
   subtitle: {
     fontSize: theme.fontSize.md,

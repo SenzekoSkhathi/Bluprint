@@ -2,6 +2,7 @@
 import MainLayout from "@/components/main-layout";
 import { getPrimaryFacultySlug } from "@/constants/faculty";
 import { theme } from "@/constants/theme";
+import { useIsMobile } from "@/hooks/use-is-mobile";
 import { useLoggedInUser } from "@/hooks/use-logged-in-user";
 import { academicRepository } from "@/services/academic-repository";
 import { getHandbookCourses, getScienceCourses } from "@/services/backend-api";
@@ -14,7 +15,6 @@ import type {
 import { useRouter } from "expo-router";
 import React, { useEffect, useMemo, useState } from "react";
 import {
-    Platform,
     Pressable,
     ScrollView,
     StyleSheet,
@@ -103,6 +103,7 @@ function CreditRing({
   size?: number;
   strokeWidth?: number;
 }) {
+  const isMobile = useIsMobile();
   const r = (size - strokeWidth) / 2;
   const cx = size / 2;
   const cy = size / 2;
@@ -187,7 +188,7 @@ function CreditRing({
         )}
       </svg>
       <View style={styles.ringCenter}>
-        <Text style={styles.ringPct}>{pct}%</Text>
+        <Text style={[styles.ringPct, !isMobile && styles.ringPctDesktop]}>{pct}%</Text>
         <Text style={styles.ringLabel}>complete</Text>
       </View>
     </View>
@@ -196,6 +197,7 @@ function CreditRing({
 
 // ─── Component ────────────────────────────────────────────────────────────────
 export default function Progress() {
+  const isMobile = useIsMobile();
   const activeFacultySlug = getPrimaryFacultySlug();
   const router = useRouter();
   const [activeTab, setActiveTab] = useState<CourseTab>("completed");
@@ -857,7 +859,7 @@ export default function Progress() {
       <View style={styles.pageHeader}>
         <View style={styles.pageHeaderRow}>
           <View style={styles.pageHeaderLeft}>
-            <Text style={styles.title}>Academic progress</Text>
+            <Text style={[styles.title, !isMobile && styles.titleDesktop]}>Academic progress</Text>
             <Text style={styles.subtitle}>
               {loggedInUser
                 ? `${loggedInUser.degree} · Year ${loggedInUser.year}`
@@ -889,7 +891,7 @@ export default function Progress() {
       <View style={styles.hero}>
         {/* Credit ring — SVG via react-native-svg on native, inline svg on web */}
         <View style={styles.ringWrap}>
-          {Platform.OS === "web" ? (
+          {!isMobile ? (
             /* web: inline svg */
             <View style={{ width: 120, height: 120, position: "relative" }}>
               <svg
@@ -947,7 +949,7 @@ export default function Progress() {
                 />
               </svg>
               <View style={styles.ringCenter}>
-                <Text style={styles.ringPct}>
+                <Text style={[styles.ringPct, !isMobile && styles.ringPctDesktop]}>
                   {Math.min(
                     100,
                     Math.round(
@@ -966,7 +968,7 @@ export default function Progress() {
           ) : (
             /* native: simple progress arc approximation */
             <View style={styles.ringNativeFallback}>
-              <Text style={styles.ringPct}>
+              <Text style={[styles.ringPct, !isMobile && styles.ringPctDesktop]}>
                 {Math.min(
                   100,
                   Math.round(
@@ -1051,7 +1053,7 @@ export default function Progress() {
             sub: `of ${nqf7Required} cr`,
           },
         ].map((stat) => (
-          <View key={stat.label} style={styles.statCard}>
+          <View key={stat.label} style={[styles.statCard, !isMobile && styles.statCardDesktop]}>
             <Text style={styles.statLabel}>{stat.label}</Text>
             <Text style={styles.statValue}>{stat.value}</Text>
             <Text style={styles.statSub}>{stat.sub}</Text>
@@ -1257,9 +1259,12 @@ const styles = StyleSheet.create({
     gap: 3,
   },
   title: {
-    fontSize: Platform.OS === "web" ? theme.fontSize.xxl : theme.fontSize.xl,
+    fontSize: theme.fontSize.xl,
     fontWeight: "700",
     color: theme.colors.textPrimary,
+  },
+  titleDesktop: {
+    fontSize: theme.fontSize.xxl,
   },
   subtitle: {
     fontSize: theme.fontSize.sm,
@@ -1325,9 +1330,12 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   ringPct: {
-    fontSize: Platform.OS === "web" ? 20 : 16,
+    fontSize: 16,
     fontWeight: "500",
     color: theme.colors.textPrimary,
+  },
+  ringPctDesktop: {
+    fontSize: 20,
   },
   ringLabel: {
     fontSize: 9,
@@ -1395,8 +1403,12 @@ const styles = StyleSheet.create({
     backgroundColor: theme.colors.card,
     borderRadius: theme.borderRadius.md,
     padding: 12,
-    flex: Platform.OS === "web" ? 0.22 : 0.46,
-    minWidth: Platform.OS === "web" ? 0 : "45%",
+    flex: 0.46,
+    minWidth: "45%",
+  },
+  statCardDesktop: {
+    flex: 0.22,
+    minWidth: 0,
   },
   statLabel: {
     fontSize: 11,

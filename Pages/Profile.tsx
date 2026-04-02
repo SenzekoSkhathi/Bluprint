@@ -1,10 +1,10 @@
 // ...existing code...
 import MainLayout from "@/components/main-layout";
 import { theme } from "@/constants/theme";
+import { useIsMobile } from "@/hooks/use-is-mobile";
 import { updateStudentProfile } from "@/services/backend-api";
 import React, { useEffect, useState } from "react";
 import {
-  Platform,
   Pressable,
   ScrollView,
   StyleSheet,
@@ -106,6 +106,7 @@ function getInitials(firstName: string, lastName: string): string {
 
 // ─── Component ────────────────────────────────────────────────────────────────
 export default function Profile({ onLogout, loggedInUser }: ProfileProps) {
+  const isMobile = useIsMobile();
   const [isEditing, setIsEditing] = useState(false);
   const [isSaving, setIsSaving] = useState(false);
   const [saveError, setSaveError] = useState<string | null>(null);
@@ -223,7 +224,7 @@ export default function Profile({ onLogout, loggedInUser }: ProfileProps) {
     const value = String(displayProfile[field]);
     return (
       <View key={field} style={styles.fieldRow}>
-        <Text style={styles.fieldLabel}>{label}</Text>
+        <Text style={[styles.fieldLabel, !isMobile && styles.fieldLabelDesktop]}>{label}</Text>
         {isEditing && editable ? (
           <TextInput
             style={styles.fieldInput}
@@ -264,7 +265,7 @@ export default function Profile({ onLogout, loggedInUser }: ProfileProps) {
       {/* ── Top nav with Edit / Save in the header row ── */}
       <View style={styles.pageHeader}>
         <View style={styles.pageHeaderLeft}>
-          <Text style={styles.title}>Profile</Text>
+          <Text style={[styles.title, !isMobile && styles.titleDesktop]}>Profile</Text>
         </View>
         <View style={styles.pageHeaderRight}>
           {isEditing ? (
@@ -306,20 +307,20 @@ export default function Profile({ onLogout, loggedInUser }: ProfileProps) {
       ) : null}
 
       {/* ── Identity card ── */}
-      <View style={styles.idCard}>
+      <View style={[styles.idCard, !isMobile && styles.idCardDesktop]}>
         {/* Avatar */}
-        <View style={styles.avatar}>
-          <Text style={styles.avatarText}>
+        <View style={[styles.avatar, !isMobile && styles.avatarDesktop]}>
+          <Text style={[styles.avatarText, !isMobile && styles.avatarTextDesktop]}>
             {getInitials(displayProfile.firstName, displayProfile.lastName)}
           </Text>
         </View>
 
         {/* Name + tags */}
-        <View style={styles.idBody}>
-          <Text style={styles.idName}>
+        <View style={[styles.idBody, !isMobile && styles.idBodyDesktop]}>
+          <Text style={[styles.idName, !isMobile && styles.idNameDesktop]}>
             {displayProfile.firstName} {displayProfile.lastName}
           </Text>
-          <Text style={styles.idNumber}>{profile.studentId} · myuct.ac.za</Text>
+          <Text style={[styles.idNumber, !isMobile && styles.idNumberDesktop]}>{profile.studentId} · myuct.ac.za</Text>
           <ScrollView
             horizontal
             showsHorizontalScrollIndicator={false}
@@ -349,23 +350,23 @@ export default function Profile({ onLogout, loggedInUser }: ProfileProps) {
       {/* ── Quick stats ── */}
       <View style={styles.statGrid}>
         <View style={styles.statCard}>
-          <Text style={styles.statValue}>{profile.gpa.toFixed(1)}</Text>
+          <Text style={[styles.statValue, !isMobile && styles.statValueDesktop]}>{profile.gpa.toFixed(1)}</Text>
           <Text style={styles.statLabel}>GPA / 100</Text>
         </View>
         <View style={styles.statCard}>
-          <Text style={styles.statValue}>
-            {Platform.OS === "web"
+          <Text style={[styles.statValue, !isMobile && styles.statValueDesktop]}>
+            {!isMobile
               ? profile.year
               : `Y${profile.year.replace(/\D/g, "")}`}
           </Text>
           <Text style={styles.statLabel}>
-            {Platform.OS === "web" ? "Current year" : "Year"}
+            {!isMobile ? "Current year" : "Year"}
           </Text>
         </View>
         <View style={styles.statCard}>
-          <Text style={styles.statValue}>{progressPercent}%</Text>
+          <Text style={[styles.statValue, !isMobile && styles.statValueDesktop]}>{progressPercent}%</Text>
           <Text style={styles.statLabel}>
-            {Platform.OS === "web" ? "Completed" : "Done"}
+            {!isMobile ? "Completed" : "Done"}
           </Text>
         </View>
       </View>
@@ -402,7 +403,7 @@ export default function Profile({ onLogout, loggedInUser }: ProfileProps) {
       </View>
 
       {/* Cancel button below personal info on mobile — full width, easy tap target */}
-      {isEditing && Platform.OS !== "web" ? (
+      {isEditing && isMobile ? (
         <Pressable onPress={handleCancel} style={styles.cancelBarBtn}>
           <Text style={styles.cancelBarText}>Cancel editing</Text>
         </Pressable>
@@ -454,9 +455,12 @@ const styles = StyleSheet.create({
     gap: 6,
   },
   title: {
-    fontSize: Platform.OS === "web" ? theme.fontSize.xxl : theme.fontSize.xl,
+    fontSize: theme.fontSize.xl,
     fontWeight: "700",
     color: theme.colors.textPrimary,
+  },
+  titleDesktop: {
+    fontSize: theme.fontSize.xxl,
   },
 
   // Header buttons
@@ -539,40 +543,63 @@ const styles = StyleSheet.create({
     borderRadius: theme.borderRadius.lg,
     padding: theme.spacing.md,
     marginBottom: theme.spacing.md,
-    alignItems: Platform.OS === "web" ? "flex-start" : "center",
-    flexDirection: Platform.OS === "web" ? "row" : "column",
-    gap: Platform.OS === "web" ? 16 : 10,
+    alignItems: "center",
+    flexDirection: "column",
+    gap: 10,
+  },
+  idCardDesktop: {
+    alignItems: "flex-start",
+    flexDirection: "row",
+    gap: 16,
   },
   avatar: {
-    width: Platform.OS === "web" ? 64 : 60,
-    height: Platform.OS === "web" ? 64 : 60,
+    width: 60,
+    height: 60,
     borderRadius: 99,
     backgroundColor: "#185FA5",
     alignItems: "center",
     justifyContent: "center",
     flexShrink: 0,
   },
+  avatarDesktop: {
+    width: 64,
+    height: 64,
+  },
   avatarText: {
-    fontSize: Platform.OS === "web" ? 22 : 20,
+    fontSize: 20,
     fontWeight: "500",
     color: "#fff",
   },
+  avatarTextDesktop: {
+    fontSize: 22,
+  },
   idBody: {
-    flex: Platform.OS === "web" ? 1 : undefined,
-    alignItems: Platform.OS === "web" ? "flex-start" : "center",
+    flex: undefined,
+    alignItems: "center",
     gap: 4,
     minWidth: 0,
   },
+  idBodyDesktop: {
+    flex: 1,
+    alignItems: "flex-start",
+  },
   idName: {
-    fontSize: Platform.OS === "web" ? 18 : 16,
+    fontSize: 16,
     fontWeight: "500",
     color: theme.colors.textPrimary,
-    textAlign: Platform.OS === "web" ? "left" : "center",
+    textAlign: "center",
+  },
+  idNameDesktop: {
+    fontSize: 18,
+    textAlign: "left",
   },
   idNumber: {
     fontSize: 12,
     color: theme.colors.textSecondary,
-    textAlign: Platform.OS === "web" ? "left" : "center",
+    textAlign: "center",
+  },
+  idNumberDesktop: {
+    textAlign: "left",
   },
   idTagsRow: {
     gap: 5,
@@ -625,9 +652,12 @@ const styles = StyleSheet.create({
     gap: 2,
   },
   statValue: {
-    fontSize: Platform.OS === "web" ? 20 : 18,
+    fontSize: 18,
     fontWeight: "500",
     color: theme.colors.textPrimary,
+  },
+  statValueDesktop: {
+    fontSize: 20,
   },
   statLabel: {
     fontSize: 11,
@@ -711,8 +741,11 @@ const styles = StyleSheet.create({
   fieldLabel: {
     fontSize: 12,
     color: theme.colors.textSecondary,
-    width: Platform.OS === "web" ? 150 : 106,
+    width: 106,
     flexShrink: 0,
+  },
+  fieldLabelDesktop: {
+    width: 150,
   },
   fieldValue: {
     fontSize: 13,

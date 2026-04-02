@@ -1,10 +1,10 @@
 // ...existing code...
 import MainLayout from "@/components/main-layout";
 import { theme } from "@/constants/theme";
+import { useIsMobile } from "@/hooks/use-is-mobile";
 import { getStudentSchedule } from "@/services/backend-api";
 import React, { useMemo, useState } from "react";
 import {
-  Platform,
   Pressable,
   ScrollView,
   StyleSheet,
@@ -123,13 +123,22 @@ function DetailChip({
   label,
   value,
   fullWidth = false,
+  isDesktop = false,
 }: {
   label: string;
   value: string;
   fullWidth?: boolean;
+  isDesktop?: boolean;
 }) {
   return (
-    <View style={[styles.detailChip, fullWidth && styles.detailChipFull]}>
+    <View
+      style={[
+        styles.detailChip,
+        isDesktop && styles.detailChipDesktop,
+        fullWidth && styles.detailChipFull,
+        fullWidth && isDesktop && styles.detailChipFullDesktop,
+      ]}
+    >
       <Text style={styles.chipLabel}>{label}</Text>
       <Text style={styles.chipValue} numberOfLines={fullWidth ? 1 : 2}>
         {value}
@@ -144,6 +153,7 @@ interface TimetableProps {
 }
 
 export default function Timetable({ studentNumber }: TimetableProps) {
+  const isMobile = useIsMobile();
   const [currentTime, setCurrentTime] = useState(new Date());
   const [exams, setExams] = useState<ExamSession[]>([]);
   const [isLoadingExams, setIsLoadingExams] = useState(false);
@@ -322,7 +332,7 @@ export default function Timetable({ studentNumber }: TimetableProps) {
     <MainLayout>
       {/* Page header */}
       <View style={styles.pageHeader}>
-        <Text style={styles.title}>Exam timetable</Text>
+        <Text style={[styles.title, !isMobile && styles.titleDesktop]}>Exam timetable</Text>
         <Text style={styles.subtitle}>
           Your upcoming exams with live countdowns, venues, and times.
         </Text>
@@ -332,11 +342,11 @@ export default function Timetable({ studentNumber }: TimetableProps) {
       <View style={styles.statRow}>
         <View style={styles.statCard}>
           <Text style={styles.statLabel}>Total exams</Text>
-          <Text style={styles.statValue}>{exams.length}</Text>
+          <Text style={[styles.statValue, !isMobile && styles.statValueDesktop]}>{exams.length}</Text>
         </View>
         <View style={styles.statCard}>
           <Text style={styles.statLabel}>Upcoming</Text>
-          <Text style={styles.statValue}>{upcomingCount}</Text>
+          <Text style={[styles.statValue, !isMobile && styles.statValueDesktop]}>{upcomingCount}</Text>
         </View>
         <View style={styles.statCard}>
           <Text style={styles.statLabel}>Next exam</Text>
@@ -460,12 +470,12 @@ export default function Timetable({ studentNumber }: TimetableProps) {
                       ]}
                     />
 
-                    <View style={styles.examBody}>
+                    <View style={[styles.examBody, !isMobile && styles.examBodyDesktop]}>
                       {/* Top row: course + countdown */}
                       <View style={styles.examTop}>
                         <View style={styles.examTitleWrap}>
                           <Text style={styles.examCode}>{exam.courseCode}</Text>
-                          <Text style={styles.examName}>{exam.courseName}</Text>
+                          <Text style={[styles.examName, !isMobile && styles.examNameDesktop]}>{exam.courseName}</Text>
                         </View>
 
                         <View style={styles.examRight}>
@@ -489,6 +499,7 @@ export default function Timetable({ studentNumber }: TimetableProps) {
                           <Text
                             style={[
                               styles.countdownNum,
+                              !isMobile && styles.countdownNumDesktop,
                               { color: STATUS_COUNTDOWN_TEXT[status] },
                             ]}
                           >
@@ -503,22 +514,26 @@ export default function Timetable({ studentNumber }: TimetableProps) {
                         <DetailChip
                           label="Date"
                           value={formatDateShort(exam.date)}
+                          isDesktop={!isMobile}
                         />
                         <DetailChip
                           label="Time"
                           value={`${exam.startTime} – ${exam.endTime}`}
+                          isDesktop={!isMobile}
                         />
                         <DetailChip
                           label="Duration"
                           value={`${exam.duration} min`}
+                          isDesktop={!isMobile}
                         />
                         {exam.paper ? (
-                          <DetailChip label="Paper" value={exam.paper} />
+                          <DetailChip label="Paper" value={exam.paper} isDesktop={!isMobile} />
                         ) : null}
                         <DetailChip
                           label="Venue"
                           value={exam.location}
                           fullWidth
+                          isDesktop={!isMobile}
                         />
                       </View>
                     </View>
@@ -540,10 +555,13 @@ const styles = StyleSheet.create({
     marginBottom: theme.spacing.md,
   },
   title: {
-    fontSize: Platform.OS === "web" ? theme.fontSize.xxl : theme.fontSize.xl,
+    fontSize: theme.fontSize.xl,
     fontWeight: "700",
     color: theme.colors.textPrimary,
     marginBottom: 3,
+  },
+  titleDesktop: {
+    fontSize: theme.fontSize.xxl,
   },
   subtitle: {
     fontSize: theme.fontSize.sm,
@@ -569,9 +587,12 @@ const styles = StyleSheet.create({
     color: theme.colors.textSecondary,
   },
   statValue: {
-    fontSize: Platform.OS === "web" ? 22 : 20,
+    fontSize: 20,
     fontWeight: "500",
     color: theme.colors.textPrimary,
+  },
+  statValueDesktop: {
+    fontSize: 22,
   },
   statValueSmall: {
     fontSize: 13,
@@ -674,9 +695,12 @@ const styles = StyleSheet.create({
   },
   examBody: {
     flex: 1,
-    padding: Platform.OS === "web" ? 16 : 12,
+    padding: 12,
     gap: 10,
     minWidth: 0,
+  },
+  examBodyDesktop: {
+    padding: 16,
   },
 
   // Top section
@@ -697,10 +721,13 @@ const styles = StyleSheet.create({
     color: theme.colors.textSecondary,
   },
   examName: {
-    fontSize: Platform.OS === "web" ? 15 : 13,
+    fontSize: 13,
     fontWeight: "500",
     color: theme.colors.textPrimary,
     lineHeight: 20,
+  },
+  examNameDesktop: {
+    fontSize: 15,
   },
   examRight: {
     flexShrink: 0,
@@ -717,10 +744,14 @@ const styles = StyleSheet.create({
     fontWeight: "600",
   },
   countdownNum: {
-    fontSize: Platform.OS === "web" ? 20 : 17,
+    fontSize: 17,
     fontWeight: "500",
-    lineHeight: Platform.OS === "web" ? 24 : 20,
+    lineHeight: 20,
     fontVariant: ["tabular-nums"],
+  },
+  countdownNumDesktop: {
+    fontSize: 20,
+    lineHeight: 24,
   },
   countdownLabel: {
     fontSize: 9,
@@ -740,16 +771,26 @@ const styles = StyleSheet.create({
   detailChip: {
     backgroundColor: theme.colors.grayLight,
     borderRadius: theme.borderRadius.md,
-    padding: Platform.OS === "web" ? 8 : 6,
-    paddingHorizontal: Platform.OS === "web" ? 10 : 8,
-    minWidth: Platform.OS === "web" ? 90 : 0,
-    flex: Platform.OS === "web" ? 0 : 1,
+    padding: 6,
+    paddingHorizontal: 8,
+    minWidth: 0,
+    flex: 1,
     gap: 1,
   },
+  detailChipDesktop: {
+    padding: 8,
+    paddingHorizontal: 10,
+    minWidth: 90,
+    flex: 0,
+  },
   detailChipFull: {
-    flex: Platform.OS === "web" ? 1 : undefined,
-    width: Platform.OS === "web" ? undefined : "100%",
-    flexBasis: Platform.OS === "web" ? undefined : "100%",
+    width: "100%",
+    flexBasis: "100%",
+  },
+  detailChipFullDesktop: {
+    flex: 1,
+    width: undefined,
+    flexBasis: undefined,
   },
   chipLabel: {
     fontSize: 10,

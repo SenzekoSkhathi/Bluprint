@@ -17,9 +17,9 @@ import {
     getScienceCourses,
     type ScienceCourseCatalogEntry,
 } from "@/services/backend-api";
+import { useIsMobile } from "@/hooks/use-is-mobile";
 import React, { useMemo, useState } from "react";
 import {
-    Platform,
     Pressable,
     ScrollView,
     StyleSheet,
@@ -221,6 +221,7 @@ function repairCourseTitles(
 }
 
 export default function Courses({ onCourseSelect }: CoursesProps) {
+  const isMobile = useIsMobile();
   const [selectedFaculty, setSelectedFaculty] = useState<FacultySlug>(
     getPrimaryFacultySlug(),
   );
@@ -394,7 +395,7 @@ export default function Courses({ onCourseSelect }: CoursesProps) {
   return (
     <MainLayout>
       <View style={styles.header}>
-        <Text style={styles.title}>Courses</Text>
+        <Text style={[styles.title, !isMobile && styles.titleDesktop]}>Courses</Text>
         <Text style={styles.subtitle}>
           {FACULTY_LABELS[selectedFaculty]} Faculty — handbook course catalogue.
         </Text>
@@ -467,7 +468,7 @@ export default function Courses({ onCourseSelect }: CoursesProps) {
       <View style={styles.sectionCard}>
         <Text style={styles.sectionTitle}>{activeGroup} Courses</Text>
         <ScrollView
-          style={styles.courseList}
+          style={[styles.courseList, !isMobile && styles.courseListDesktop]}
           contentContainerStyle={styles.courseListContent}
         >
           {!isLoading && visibleCourses.length === 0 ? (
@@ -500,10 +501,13 @@ const styles = StyleSheet.create({
     marginBottom: theme.spacing.md,
   },
   title: {
-    fontSize: Platform.OS === "web" ? theme.fontSize.xxl : theme.fontSize.xl,
+    fontSize: theme.fontSize.xl,
     fontWeight: "800",
     color: theme.colors.textPrimary,
     marginBottom: theme.spacing.xs,
+  },
+  titleDesktop: {
+    fontSize: theme.fontSize.xxl,
   },
   subtitle: {
     fontSize: theme.fontSize.md,
@@ -564,7 +568,10 @@ const styles = StyleSheet.create({
     color: theme.colors.white,
   },
   courseList: {
-    maxHeight: Platform.OS === "web" ? 600 : undefined,
+    maxHeight: undefined,
+  },
+  courseListDesktop: {
+    maxHeight: 600,
   },
   courseListContent: {
     gap: theme.spacing.sm,

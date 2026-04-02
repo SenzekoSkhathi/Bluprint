@@ -4,6 +4,7 @@ import {
     getPrimaryFacultySlug,
 } from "@/constants/faculty";
 import { theme } from "@/constants/theme";
+import { useIsMobile } from "@/hooks/use-is-mobile";
 import { buildGuidanceTrustMessage } from "@/hooks/use-logged-in-user";
 import { generateAutoGraduationPlans } from "@/services/academic-path-planner";
 import { academicRepository } from "@/services/academic-repository";
@@ -19,7 +20,6 @@ import type {
 } from "@/types/academic";
 import React, { useEffect, useMemo, useState } from "react";
 import {
-    Platform,
     Pressable,
     ScrollView,
     StyleSheet,
@@ -371,6 +371,7 @@ export default function Planner({
   inProgressCourses: inProgressCoursesProp = [],
   plannedCourses: plannedCoursesProp = [],
 }: PlannerProps) {
+  const isMobile = useIsMobile();
   const primaryFacultySlug = getPrimaryFacultySlug();
   const router = useRouter();
   const detectedYear = getDetectedYear(currentYearNumber);
@@ -2595,7 +2596,7 @@ export default function Planner({
       <View style={styles.pageHeader}>
         <View style={styles.pageHeaderRow}>
           <View style={styles.pageHeaderLeft}>
-            <Text style={styles.title}>Academic planner</Text>
+            <Text style={[styles.title, !isMobile && styles.titleDesktop]}>Academic planner</Text>
             <Text style={styles.subtitle}>
               Design and validate your degree year by year.
             </Text>
@@ -2975,7 +2976,7 @@ export default function Planner({
       </ScrollView>
 
       {/* ── Semester grid ── */}
-      <View style={styles.semGrid}>
+      <View style={[styles.semGrid, !isMobile && styles.semGridDesktop]}>
         {(["Semester 1", "Semester 2"] as const).map((sem) => {
           // Whole-year courses (H/W) are rendered below the grid, not inside a column
           const semCourses = yearCourses.filter(
@@ -3755,10 +3756,13 @@ const styles = StyleSheet.create({
   },
 
   title: {
-    fontSize: Platform.OS === "web" ? theme.fontSize.xxl : theme.fontSize.xl,
+    fontSize: theme.fontSize.xl,
     fontWeight: "700",
     color: theme.colors.textPrimary,
     marginBottom: 4,
+  },
+  titleDesktop: {
+    fontSize: theme.fontSize.xxl,
   },
   subtitle: {
     fontSize: theme.fontSize.sm,
@@ -4189,9 +4193,12 @@ const styles = StyleSheet.create({
 
   // ── Semester grid ─────────────────────────────────────────────────────────
   semGrid: {
-    flexDirection: Platform.OS === "web" ? "row" : "column",
+    flexDirection: "column",
     gap: theme.spacing.sm,
     marginBottom: theme.spacing.sm,
+  },
+  semGridDesktop: {
+    flexDirection: "row",
   },
   wholeYearRow: {
     backgroundColor: theme.colors.card,

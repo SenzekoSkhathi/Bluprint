@@ -11,9 +11,9 @@ import {
     type ScienceMajorEntry,
     type ScienceMajorYear,
 } from "@/services/backend-api";
+import { useIsMobile } from "@/hooks/use-is-mobile";
 import React, { useEffect, useState } from "react";
 import {
-    Platform,
     Pressable,
     ScrollView,
     StyleSheet,
@@ -96,6 +96,7 @@ export default function MajorsDetails({
   facultySlug,
   onBack,
 }: MajorsDetailsProps) {
+  const isMobile = useIsMobile();
   const activeFacultySlug = facultySlug ?? getPrimaryFacultySlug();
   const [major, setMajor] = useState<ScienceMajorEntry | null>(null);
   const [isLoading, setIsLoading] = useState(true);
@@ -160,7 +161,7 @@ export default function MajorsDetails({
             <Text style={styles.backText}>Back to Majors</Text>
           </Pressable>
         ) : null}
-        <Text style={styles.title}>Major Details</Text>
+        <Text style={[styles.title, !isMobile && styles.titleDesktop]}>Major Details</Text>
         <Text style={styles.subtitle}>
           Notes and required courses for the selected major.
         </Text>
@@ -211,10 +212,13 @@ const styles = StyleSheet.create({
     marginBottom: theme.spacing.md,
   },
   title: {
-    fontSize: Platform.OS === "web" ? theme.fontSize.xxl : theme.fontSize.xl,
+    fontSize: theme.fontSize.xl,
     fontWeight: "800",
     color: theme.colors.textPrimary,
     marginBottom: theme.spacing.xs,
+  },
+  titleDesktop: {
+    fontSize: theme.fontSize.xxl,
   },
   subtitle: {
     color: theme.colors.textLight,
