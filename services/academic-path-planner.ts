@@ -230,8 +230,13 @@ function scorePlan(plan: {
 export function generateAutoGraduationPlans(
   input: AutoPlannerInput,
 ): AutoGraduationPlan[] {
+  // Exclude postgraduate courses (NQF 8+) — undergrad plans never schedule Honours/Masters courses.
+  const undergradCatalog = input.catalog.filter(
+    (course) => !course.nqf_level || course.nqf_level <= 7,
+  );
+
   const catalogByCode = new Map(
-    input.catalog.map((course) => [course.code, course]),
+    undergradCatalog.map((course) => [course.code, course]),
   );
 
   const existingCompletedCodes = new Set(
@@ -556,7 +561,12 @@ export function generateAutoGraduationPlans(
       });
     });
 
-    const unresolvedCoreCount = remainingCoreCodes.size;
+    // Only count codes that actually exist in the catalog — codes absent from the
+    // catalog (e.g. MAM1000W offered as a full-year alternative not in this dataset)
+    // are not schedulable and should not inflate the "unresolved" warning count.
+    const unresolvedCoreCount = Array.from(remainingCoreCodes).filter(
+      (code) => catalogByCode.has(code),
+    ).length;
     const projectedCompletionTerm =
       termPlans.length > 0
         ? termPlans[termPlans.length - 1].termLabel

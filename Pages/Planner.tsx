@@ -163,19 +163,20 @@ function normalizeSemesterLabel(raw: string): string {
     s.includes("f/s")
   ) return "FY";
 
-  // First Semester
+  // First Semester — also handles "First Semester (F suffix)" etc.
   if (s.startsWith("first semester") || s === "semester 1" || /semester\s*1/.test(s)) return "Semester 1";
 
-  // Second Semester
+  // Second Semester — also handles "Second Semester (S suffix)" etc.
   if (s.startsWith("second semester") || s === "semester 2" || /semester\s*2/.test(s)) return "Semester 2";
 
-  // Full year / half year
+  // Full year / half year / whole year
   if (
     s === "fy" ||
     s.startsWith("full year") ||
     s.startsWith("year course") ||
     s.startsWith("second half") ||
-    s.startsWith("preliminary block")
+    s.startsWith("preliminary block") ||
+    /\bwhole year\b/.test(s)
   ) return "FY";
 
   return raw;
@@ -2521,10 +2522,29 @@ export default function Planner({
       scienceMajorsCatalog,
       catalogCodes,
     );
+    const staticCombinations = academicRepository.getMajorCombinations();
+    // When live combinations exist but their suggestedElectiveCodes are empty
+    // (the JSON has no choose_one_of/two_of/three_of entries), backfill electives
+    // from the static fallback for matching (major, year) groups so the planner
+    // can suggest real courses instead of ELECTIVE-BLOCK placeholders.
+    const staticByKey = new Map<string, string[]>(
+      staticCombinations.map((c) => [
+        `${c.major.trim().toLowerCase()}|${c.year}`,
+        c.suggestedElectiveCodes,
+      ]),
+    );
+    const enrichedLiveCombinations = liveCombinations.map((combo) => {
+      if (combo.suggestedElectiveCodes.length > 0) return combo;
+      const key = `${combo.major.trim().toLowerCase()}|${combo.year}`;
+      const fallbackElectives = staticByKey.get(key) ?? [];
+      return fallbackElectives.length > 0
+        ? { ...combo, suggestedElectiveCodes: fallbackElectives }
+        : combo;
+    });
     const majorCombinationsToUse =
-      liveCombinations.length > 0
-        ? liveCombinations
-        : academicRepository.getMajorCombinations();
+      enrichedLiveCombinations.length > 0
+        ? enrichedLiveCombinations
+        : staticCombinations;
     const plans = generateAutoGraduationPlans({
       catalog,
       requirements: degreeRequirements,
