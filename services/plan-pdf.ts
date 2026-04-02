@@ -622,61 +622,24 @@ export async function downloadPlanPdf(
       : buildTimetableHtml(data, logoSrc);
 
   if (Platform.OS === "web") {
-    // On web, generate a real downloadable PDF file so the browser can use
-    // the requested filename directly.
-    const iframe = document.createElement("iframe");
-    iframe.style.position = "fixed";
-    iframe.style.left = "-10000px";
-    iframe.style.top = "0";
-    // A4 portrait at 96 dpi = 794 × 1123 px. Use portrait width so html2pdf
-    // captures at the correct column width; height is oversized to fit all pages.
-    iframe.style.width = type === "table" ? "794px" : "1123px";
-    iframe.style.height = "3000px";
-    iframe.style.opacity = "0";
-    iframe.setAttribute("aria-hidden", "true");
-    iframe.srcdoc = html.replace("<head>", `<head><title>${filename}</title>`);
-    document.body.appendChild(iframe);
+    // Open the HTML in a new window and use the browser's native print dialog.
+    // This is far more reliable than html2canvas-based libraries: the browser
+    // fully renders CSS (including @page size/margins) so the output matches
+    // the pdf-preview.html sandbox exactly.
+    const printWindow = window.open("", "_blank");
+    if (!printWindow) return;
 
-    const waitForIframeLoad = () =>
-      new Promise<void>((resolve) => {
-        iframe.addEventListener("load", () => resolve(), { once: true });
-      });
+    const titledHtml = html.replace(
+      "<head>",
+      `<head><title>${filename}</title>`,
+    );
+    printWindow.document.documentElement.innerHTML = titledHtml;
 
-    try {
-      await waitForIframeLoad();
-
-      const iframeDocument = iframe.contentDocument;
-      if (iframeDocument?.fonts?.ready) {
-        await iframeDocument.fonts.ready;
-      }
-
-      const html2pdfModule = await import("html2pdf.js");
-      const html2pdf =
-        (html2pdfModule as { default?: any }).default ?? html2pdfModule;
-
-      await html2pdf()
-        .set({
-          filename: `${filename}.pdf`,
-          // [top, right, bottom, left] in mm — mirrors the @page margins in the HTML
-          margin: type === "table" ? [14, 14, 20, 14] : [10, 12, 18, 12],
-          image: { type: "jpeg", quality: 0.98 },
-          html2canvas: {
-            scale: 2,
-            useCORS: true,
-            backgroundColor: "#ffffff",
-          },
-          jsPDF: {
-            unit: "mm",
-            format: "a4",
-            orientation: type === "table" ? "portrait" : "landscape",
-          },
-          pagebreak: { mode: ["css", "legacy"] },
-        })
-        .from(iframe.contentDocument?.body ?? iframe)
-        .save();
-    } finally {
-      iframe.remove();
-    }
+    // Wait for fonts and images, then trigger print.
+    printWindow.addEventListener("load", () => {
+      printWindow.focus();
+      printWindow.print();
+    });
     return;
   }
 
