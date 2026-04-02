@@ -61,7 +61,7 @@ describe("generateAutoGraduationPlans", () => {
     expect(comp2001Term!).toBeLessThan(comp3002Term!);
   });
 
-  it("adds elective credit blocks when core courses alone cannot reach target", () => {
+  it("uses real courses instead of elective placeholder blocks", () => {
     const plans = generateAutoGraduationPlans({
       catalog: courseCatalog,
       requirements: defaultDegreeRequirements,
@@ -76,6 +76,6 @@ describe("generateAutoGraduationPlans", () => {
       ),
     );
 
-    expect(hasElectiveBlock).toBe(true);
+    expect(hasElectiveBlock).toBe(false);
   });
 });
