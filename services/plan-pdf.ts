@@ -628,8 +628,10 @@ export async function downloadPlanPdf(
     iframe.style.position = "fixed";
     iframe.style.left = "-10000px";
     iframe.style.top = "0";
-    iframe.style.width = "1200px";
-    iframe.style.height = "1600px";
+    // A4 portrait at 96 dpi = 794 × 1123 px. Use portrait width so html2pdf
+    // captures at the correct column width; height is oversized to fit all pages.
+    iframe.style.width = type === "table" ? "794px" : "1123px";
+    iframe.style.height = "3000px";
     iframe.style.opacity = "0";
     iframe.setAttribute("aria-hidden", "true");
     iframe.srcdoc = html.replace("<head>", `<head><title>${filename}</title>`);
@@ -655,7 +657,8 @@ export async function downloadPlanPdf(
       await html2pdf()
         .set({
           filename: `${filename}.pdf`,
-          margin: 0,
+          // [top, right, bottom, left] in mm — mirrors the @page margins in the HTML
+          margin: type === "table" ? [14, 14, 20, 14] : [10, 12, 18, 12],
           image: { type: "jpeg", quality: 0.98 },
           html2canvas: {
             scale: 2,
@@ -663,7 +666,7 @@ export async function downloadPlanPdf(
             backgroundColor: "#ffffff",
           },
           jsPDF: {
-            unit: "pt",
+            unit: "mm",
             format: "a4",
             orientation: type === "table" ? "portrait" : "landscape",
           },
