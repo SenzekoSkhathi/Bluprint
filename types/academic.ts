@@ -141,11 +141,11 @@ export interface AcademicValidationReport {
 }
 
 export interface MajorCombination {
-  id: string;                        // e.g. "CSC05-Y1-A"
-  major: string;                     // e.g. "Computer Science"
-  year: number;                      // 1, 2, 3, or 4
-  requiredCourseCodes: string[];     // must complete all of these
-  suggestedElectiveCodes: string[];  // optional courses recommended for this stream
+  id: string; // e.g. "CSC05-Y1-A"
+  major: string; // e.g. "Computer Science"
+  year: number; // 1, 2, 3, or 4
+  requiredCourseCodes: string[]; // must complete all of these
+  suggestedElectiveCodes: string[]; // optional courses recommended for this stream
 }
 
 export interface ElectiveSuggestion {
@@ -166,11 +166,14 @@ export interface YearPlan {
 
 export type PlanningObjective = "fastest" | "balanced" | "light";
 
+export type AutoPlannedCourseKind = "required" | "elective";
+
 export interface AutoPlannedCourse {
   code: string;
   title: string;
   credits: number;
   reason: string;
+  kind: AutoPlannedCourseKind;
 }
 
 export interface AutoPlannedTerm {

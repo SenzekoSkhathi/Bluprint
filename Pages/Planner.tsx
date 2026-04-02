@@ -50,23 +50,23 @@ import {
     validateSciencePlanAgainstRules,
 } from "@/services/backend-api";
 import {
+    downloadPlanPdf,
+    type PdfCourse,
+    type PdfDocType,
+    type PdfSemester,
+    type PdfYear,
+    type PlanPdfData,
+} from "@/services/plan-pdf";
+import {
     getIssueActionHint,
     getIssueActionTarget,
 } from "@/services/remediation-actions";
-import { useRouter } from "expo-router";
 import {
-  type PdfDocType,
-  type PlanPdfData,
-  type PdfCourse,
-  type PdfYear,
-  type PdfSemester,
-  downloadPlanPdf,
-} from "@/services/plan-pdf";
-import {
-  computeCourseRisks,
-  computeDpRequirements,
-  type RiskLevel,
+    computeCourseRisks,
+    computeDpRequirements,
+    type RiskLevel,
 } from "@/services/risk-engine";
+import { useRouter } from "expo-router";
 
 const TARGET_DEPARTMENTS = [
   "Archaeology",
@@ -161,13 +161,24 @@ function normalizeSemesterLabel(raw: string): string {
     s.includes("first or second") ||
     s.includes("first semester, second semester") ||
     s.includes("f/s")
-  ) return "FY";
+  )
+    return "FY";
 
   // First Semester — also handles "First Semester (F suffix)" etc.
-  if (s.startsWith("first semester") || s === "semester 1" || /semester\s*1/.test(s)) return "Semester 1";
+  if (
+    s.startsWith("first semester") ||
+    s === "semester 1" ||
+    /semester\s*1/.test(s)
+  )
+    return "Semester 1";
 
   // Second Semester — also handles "Second Semester (S suffix)" etc.
-  if (s.startsWith("second semester") || s === "semester 2" || /semester\s*2/.test(s)) return "Semester 2";
+  if (
+    s.startsWith("second semester") ||
+    s === "semester 2" ||
+    /semester\s*2/.test(s)
+  )
+    return "Semester 2";
 
   // Full year / half year / whole year
   if (
@@ -177,7 +188,8 @@ function normalizeSemesterLabel(raw: string): string {
     s.startsWith("second half") ||
     s.startsWith("preliminary block") ||
     /\bwhole year\b/.test(s)
-  ) return "FY";
+  )
+    return "FY";
 
   return raw;
 }
@@ -217,9 +229,7 @@ function isCodeSatisfied(code: string, known: Set<string>): boolean {
     if (xm && xm[2].includes("X")) {
       const digitPattern = xm[2].replace(/X/g, "[0-9]");
       const suffixes = xm[3].split("/");
-      const re = new RegExp(
-        `^${xm[1]}${digitPattern}(${suffixes.join("|")})$`,
-      );
+      const re = new RegExp(`^${xm[1]}${digitPattern}(${suffixes.join("|")})$`);
       for (const k of known) {
         if (re.test(k)) return true;
       }
@@ -273,9 +283,7 @@ function resolveCodeAgainstCatalog(
     if (xm && xm[2].includes("X")) {
       const digitPattern = xm[2].replace(/X/g, "[0-9]");
       const suffixes = xm[3].split("/");
-      const re = new RegExp(
-        `^${xm[1]}${digitPattern}(${suffixes.join("|")})$`,
-      );
+      const re = new RegExp(`^${xm[1]}${digitPattern}(${suffixes.join("|")})$`);
       const matches = Array.from(catalogCodes).filter((k) => re.test(k));
       if (matches.length > 0) return matches;
     }
@@ -1548,71 +1556,65 @@ export default function Planner({
   // so their issues are suppressed.
   const yearValidationIssues = useMemo(
     () =>
-      (validationReport?.issues ?? [])
-        .filter((issue) => {
-          if (issue.relatedCourseCode) {
-            return plannedCourseCodes.has(issue.relatedCourseCode);
-          }
-          // Term-level issues (e.g. load) only surface for non-past terms
-          if (issue.relatedTerm) {
-            const [termYear, termSem] = issue.relatedTerm.split(" - ");
-            return termYear && termSem
-              ? !isPastTerm(termYear.trim(), termSem.trim())
-              : false;
-          }
-          return false;
-        }),
+      (validationReport?.issues ?? []).filter((issue) => {
+        if (issue.relatedCourseCode) {
+          return plannedCourseCodes.has(issue.relatedCourseCode);
+        }
+        // Term-level issues (e.g. load) only surface for non-past terms
+        if (issue.relatedTerm) {
+          const [termYear, termSem] = issue.relatedTerm.split(" - ");
+          return termYear && termSem
+            ? !isPastTerm(termYear.trim(), termSem.trim())
+            : false;
+        }
+        return false;
+      }),
     [validationReport, plannedCourseCodes],
   );
 
   const yearHandbookRuleIssues = useMemo(
     () =>
-      (handbookRuleValidation?.issues ?? [])
-        .filter((issue) => {
-          // Degree-level issues have their own dedicated section — exclude here
-          // to avoid double-display (which would make visible count > banner count).
-          if (
-            issue.category === "major-requirement" ||
-            issue.category === "graduation"
-          ) {
-            return false;
-          }
-          // Suppress issues for advisor-approved (fixed) courses
-          if (
-            issue.relatedCourseCode &&
-            fixedCourseCodes.has(issue.relatedCourseCode)
-          ) {
-            return false;
-          }
-          if (
-            issue.relatedCourseCode &&
-            !plannedCourseCodes.has(issue.relatedCourseCode)
-          ) {
-            return false;
-          }
-          if (issue.relatedTerm) {
-            const [termYear, termSem] = issue.relatedTerm.split(" - ");
-            if (
-              termYear &&
-              termSem &&
-              isPastTerm(termYear.trim(), termSem.trim())
-            ) {
-              return false;
-            }
-            // Show issues from ALL years — not just selectedYear. This keeps
-            // the displayed list consistent with the global banner count.
-            return true;
-          }
-          // Issues with a planned course code but no term — show them
-          if (issue.relatedCourseCode) return true;
-          // Generic issues with no scope — exclude (nothing to show them against)
+      (handbookRuleValidation?.issues ?? []).filter((issue) => {
+        // Degree-level issues have their own dedicated section — exclude here
+        // to avoid double-display (which would make visible count > banner count).
+        if (
+          issue.category === "major-requirement" ||
+          issue.category === "graduation"
+        ) {
           return false;
-        }),
-    [
-      handbookRuleValidation,
-      plannedCourseCodes,
-      fixedCourseCodes,
-    ],
+        }
+        // Suppress issues for advisor-approved (fixed) courses
+        if (
+          issue.relatedCourseCode &&
+          fixedCourseCodes.has(issue.relatedCourseCode)
+        ) {
+          return false;
+        }
+        if (
+          issue.relatedCourseCode &&
+          !plannedCourseCodes.has(issue.relatedCourseCode)
+        ) {
+          return false;
+        }
+        if (issue.relatedTerm) {
+          const [termYear, termSem] = issue.relatedTerm.split(" - ");
+          if (
+            termYear &&
+            termSem &&
+            isPastTerm(termYear.trim(), termSem.trim())
+          ) {
+            return false;
+          }
+          // Show issues from ALL years — not just selectedYear. This keeps
+          // the displayed list consistent with the global banner count.
+          return true;
+        }
+        // Issues with a planned course code but no term — show them
+        if (issue.relatedCourseCode) return true;
+        // Generic issues with no scope — exclude (nothing to show them against)
+        return false;
+      }),
+    [handbookRuleValidation, plannedCourseCodes, fixedCourseCodes],
   );
 
   // Degree-level issues (major requirements + graduation credits) shown in a
@@ -1874,7 +1876,12 @@ export default function Planner({
       }
       return a.severity === "blocker" ? -1 : 1;
     });
-  }, [handbookSaveIssues, plannedCourseCodes, fixedCourseCodes, validationReport]);
+  }, [
+    handbookSaveIssues,
+    plannedCourseCodes,
+    fixedCourseCodes,
+    validationReport,
+  ]);
 
   const plannerTrustMessage = useMemo(
     () =>
@@ -1942,11 +1949,13 @@ export default function Planner({
 
     // H/W suffixed course codes run the full year — route them to a separate
     // Full Year section rather than Semester 1 or 2.
-    const isFullYear = (code: string) =>
-      /[HW]\d*$/i.test(code.trim());
+    const isFullYear = (code: string) => /[HW]\d*$/i.test(code.trim());
 
     // Collect all courses into a year→semester/fullYear structure
-    type MutableSem = { label: "Semester 1" | "Semester 2"; courses: PdfCourse[] };
+    type MutableSem = {
+      label: "Semester 1" | "Semester 2";
+      courses: PdfCourse[];
+    };
     type MutableYear = { sems: Map<number, MutableSem>; fullYear: PdfCourse[] };
     const yearMap = new Map<number, MutableYear>();
 
@@ -1973,7 +1982,7 @@ export default function Planner({
       const sm = c.semester.match(/Sem(?:ester)?\s*(\d+)/i);
       if (!ym || !sm) return;
       const y = parseInt(ym[1], 10);
-      const s = (parseInt(sm[1], 10) as 1 | 2);
+      const s = parseInt(sm[1], 10) as 1 | 2;
       addCourse(getOrAddYear(y), s, {
         code: c.code,
         name: c.title,
@@ -1989,7 +1998,7 @@ export default function Planner({
       const sm = c.semester.match(/Sem(?:ester)?\s*(\d+)/i);
       if (!ym || !sm) return;
       const y = parseInt(ym[1], 10);
-      const s = (parseInt(sm[1], 10) as 1 | 2);
+      const s = parseInt(sm[1], 10) as 1 | 2;
       addCourse(getOrAddYear(y), s, {
         code: c.code,
         name: c.title,
@@ -2002,7 +2011,7 @@ export default function Planner({
     // User-planned courses from the planner grid
     courses.forEach((c) => {
       const y = getYearNumber(c.year);
-      const s = (getSemesterNumber(c.semester) as 1 | 2);
+      const s = getSemesterNumber(c.semester) as 1 | 2;
       addCourse(getOrAddYear(y), s, {
         code: c.code,
         name: c.name,
@@ -2105,7 +2114,9 @@ export default function Planner({
       return;
     }
     if (isCurrentTerm(selectedYear, selectedSemester)) {
-      setAddError("Current-semester courses are already tracked as in progress.");
+      setAddError(
+        "Current-semester courses are already tracked as in progress.",
+      );
       return;
     }
     if (!canAddCourseToTerm(selectedCourse, selectedYear, selectedSemester)) {
@@ -2532,7 +2543,9 @@ export default function Planner({
       return;
     }
     setIsGeneratingPlan(true);
-    const catalogCodes = new Set(catalog.map((c) => c.code.trim().toUpperCase()));
+    const catalogCodes = new Set(
+      catalog.map((c) => c.code.trim().toUpperCase()),
+    );
     const liveCombinations = buildLiveMajorCombinations(
       scienceMajorsCatalog,
       catalogCodes,
@@ -2642,9 +2655,30 @@ export default function Planner({
                     {term.termLabel} — {term.totalCredits} cr
                   </Text>
                   {term.courses.map((c) => (
-                    <Text key={c.code} style={styles.autoPlanTermCourse}>
-                      {c.code} {c.title}
-                    </Text>
+                    <View key={c.code} style={styles.autoPlanCourseRow}>
+                      <Text style={styles.autoPlanTermCourse}>
+                        {c.code} {c.title}
+                      </Text>
+                      <View
+                        style={[
+                          styles.autoPlanCourseBadge,
+                          c.kind === "required"
+                            ? styles.autoPlanCourseBadgeRequired
+                            : styles.autoPlanCourseBadgeElective,
+                        ]}
+                      >
+                        <Text
+                          style={[
+                            styles.autoPlanCourseBadgeText,
+                            c.kind === "required"
+                              ? styles.autoPlanCourseBadgeTextRequired
+                              : styles.autoPlanCourseBadgeTextElective,
+                          ]}
+                        >
+                          {c.kind === "required" ? "Required" : "Elective"}
+                        </Text>
+                      </View>
+                    </View>
                   ))}
                 </View>
               ))}
@@ -2685,7 +2719,8 @@ export default function Planner({
               <View style={styles.downloadOptionBody}>
                 <Text style={styles.downloadOptionTitle}>Weekly Timetable</Text>
                 <Text style={styles.downloadOptionDesc}>
-                  Period grid per semester — shows lecture slots and detects clashes
+                  Period grid per semester — shows lecture slots and detects
+                  clashes
                 </Text>
               </View>
             </Pressable>
@@ -2748,9 +2783,14 @@ export default function Planner({
             }
             style={[
               styles.saveBtnBase,
-              studentNumber && saveBtnVariant === "blocked" && styles.saveBtnBlocked,
-              studentNumber && saveBtnVariant === "ready" && styles.saveBtnReady,
-              (!studentNumber || saveBtnVariant === "idle") && styles.saveBtnIdle,
+              studentNumber &&
+                saveBtnVariant === "blocked" &&
+                styles.saveBtnBlocked,
+              studentNumber &&
+                saveBtnVariant === "ready" &&
+                styles.saveBtnReady,
+              (!studentNumber || saveBtnVariant === "idle") &&
+                styles.saveBtnIdle,
               (!studentNumber ||
                 isSavingPlan ||
                 isHandbookValidationLoading ||
@@ -2761,8 +2801,12 @@ export default function Planner({
             <Text
               style={[
                 styles.saveBtnText,
-                studentNumber && saveBtnVariant === "blocked" && styles.saveBtnBlockedText,
-                studentNumber && saveBtnVariant === "ready" && styles.saveBtnReadyText,
+                studentNumber &&
+                  saveBtnVariant === "blocked" &&
+                  styles.saveBtnBlockedText,
+                studentNumber &&
+                  saveBtnVariant === "ready" &&
+                  styles.saveBtnReadyText,
               ]}
             >
               {!studentNumber ? "Log in to save" : saveBtnLabel}
@@ -2786,17 +2830,19 @@ export default function Planner({
           </Text>
         </View>
       )}
-      {!isHandbookValidationLoading && totalBlockerCount === 0 && totalWarningCount > 0 && (
-        <View style={[styles.issueBanner, styles.issueBannerWarn]}>
-          <View style={[styles.issueDot, styles.issueDotWarn]} />
-          <Text style={[styles.issueBannerText, styles.issueBannerWarnText]}>
-            <Text style={styles.issueBannerBold}>
-              {totalWarningCount} warning{totalWarningCount === 1 ? "" : "s"}
-            </Text>{" "}
-            — review before saving.
-          </Text>
-        </View>
-      )}
+      {!isHandbookValidationLoading &&
+        totalBlockerCount === 0 &&
+        totalWarningCount > 0 && (
+          <View style={[styles.issueBanner, styles.issueBannerWarn]}>
+            <View style={[styles.issueDot, styles.issueDotWarn]} />
+            <Text style={[styles.issueBannerText, styles.issueBannerWarnText]}>
+              <Text style={styles.issueBannerBold}>
+                {totalWarningCount} warning{totalWarningCount === 1 ? "" : "s"}
+              </Text>{" "}
+              — review before saving.
+            </Text>
+          </View>
+        )}
       {!isHandbookValidationLoading &&
         totalBlockerCount === 0 &&
         totalWarningCount === 0 &&
@@ -2985,24 +3031,26 @@ export default function Planner({
                           {course.name}
                         </Text>
                         {/* Risk badge — only shown on planned courses with risk */}
-                        {riskLevel !== "none" && course.status === "Planned" && (
-                          <View
-                            style={[
-                              styles.riskBadge,
-                              riskLevel === "high" && styles.riskBadgeHigh,
-                              riskLevel === "medium" && styles.riskBadgeMedium,
-                              riskLevel === "low" && styles.riskBadgeLow,
-                            ]}
-                          >
-                            <Text style={styles.riskBadgeText}>
-                              {riskLevel === "high"
-                                ? "⚠ High risk"
-                                : riskLevel === "medium"
-                                  ? "⚠ At risk"
-                                  : "· Review prereqs"}
-                            </Text>
-                          </View>
-                        )}
+                        {riskLevel !== "none" &&
+                          course.status === "Planned" && (
+                            <View
+                              style={[
+                                styles.riskBadge,
+                                riskLevel === "high" && styles.riskBadgeHigh,
+                                riskLevel === "medium" &&
+                                  styles.riskBadgeMedium,
+                                riskLevel === "low" && styles.riskBadgeLow,
+                              ]}
+                            >
+                              <Text style={styles.riskBadgeText}>
+                                {riskLevel === "high"
+                                  ? "⚠ High risk"
+                                  : riskLevel === "medium"
+                                    ? "⚠ At risk"
+                                    : "· Review prereqs"}
+                              </Text>
+                            </View>
+                          )}
                         {/* DP requirement badge */}
                         {dp && course.status === "Planned" && (
                           <View style={styles.dpBadge}>
@@ -3399,9 +3447,7 @@ export default function Planner({
       {hasPlannerInputs &&
       (yearValidationIssues.length > 0 || yearHandbookRuleIssues.length > 0) ? (
         <View style={styles.issuesSection}>
-          <Text style={styles.issuesSectionTitle}>
-            Issues
-          </Text>
+          <Text style={styles.issuesSectionTitle}>Issues</Text>
 
           {yearValidationIssues.map((issue) => (
             <View
@@ -3676,6 +3722,36 @@ const styles = StyleSheet.create({
     fontSize: 11,
     color: theme.colors.textSecondary,
     paddingLeft: 8,
+    flex: 1,
+  },
+  autoPlanCourseRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 6,
+  },
+  autoPlanCourseBadge: {
+    borderRadius: 999,
+    borderWidth: 1,
+    paddingHorizontal: 7,
+    paddingVertical: 2,
+  },
+  autoPlanCourseBadgeRequired: {
+    backgroundColor: "#E8F0FE",
+    borderColor: "#B3CCF6",
+  },
+  autoPlanCourseBadgeElective: {
+    backgroundColor: "#EEF7EE",
+    borderColor: "#B6DCB8",
+  },
+  autoPlanCourseBadgeText: {
+    fontSize: 10,
+    fontWeight: "700",
+  },
+  autoPlanCourseBadgeTextRequired: {
+    color: theme.colors.deepBlue,
+  },
+  autoPlanCourseBadgeTextElective: {
+    color: "#2C6E2E",
   },
 
   title: {

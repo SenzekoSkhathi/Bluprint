@@ -1,6 +1,7 @@
 import type {
     AutoGraduationPlan,
     AutoPlannedCourse,
+    AutoPlannedCourseKind,
     AutoPlannedTerm,
     CompletedCourseRecord,
     CourseCatalogEntry,
@@ -28,6 +29,7 @@ interface ObjectiveProfile {
   title: string;
   termCreditTarget: number;
   preferredMinTermCredits: number;
+  electiveOvershootAllowance: number;
 }
 
 const MAX_UNDERGRAD_TERM_INDEX = 8; // Year 4 - Semester 2
@@ -46,18 +48,21 @@ const OBJECTIVE_PROFILES: ObjectiveProfile[] = [
     title: "Fastest Graduation",
     termCreditTarget: 60,
     preferredMinTermCredits: 45,
+    electiveOvershootAllowance: 12,
   },
   {
     objective: "balanced",
     title: "Balanced Workload",
     termCreditTarget: 45,
     preferredMinTermCredits: 30,
+    electiveOvershootAllowance: 6,
   },
   {
     objective: "light",
     title: "Light Workload",
     termCreditTarget: 30,
     preferredMinTermCredits: 15,
+    electiveOvershootAllowance: 0,
   },
 ];
 
@@ -306,12 +311,14 @@ function getNextStartingTermIndex(input: AutoPlannerInput): number {
 function toAutoCourse(
   course: CourseCatalogEntry,
   reason: string,
+  kind: AutoPlannedCourseKind,
 ): AutoPlannedCourse {
   return {
     code: course.code,
     title: course.title,
     credits: course.credits,
     reason,
+    kind,
   };
 }
 
@@ -483,10 +490,7 @@ export function generateAutoGraduationPlans(
     ) {
       const semesterName = semesterNameFromTermIndex(loopTermIndex);
       const termLabel = toTermLabel(loopTermIndex);
-      const minTermCredits = Math.max(
-        MIN_CREDITS_PER_TERM,
-        profile.preferredMinTermCredits,
-      );
+      const minTermCredits = MIN_CREDITS_PER_TERM;
 
       const eligibleCourses = Array.from(remainingCoreCodes)
         .map((code) => catalogByCode.get(code))
@@ -530,6 +534,7 @@ export function generateAutoGraduationPlans(
             toAutoCourse(
               course,
               "Matches semester offering and satisfies prerequisites.",
+              "required",
             ),
           );
           selectedCredits += course.credits;
@@ -543,6 +548,7 @@ export function generateAutoGraduationPlans(
           toAutoCourse(
             fallbackCourse,
             "Added as next available core requirement for this semester.",
+            "required",
           ),
         );
         selectedCredits += fallbackCourse.credits;
@@ -566,6 +572,42 @@ export function generateAutoGraduationPlans(
             toAutoCourse(
               course,
               `Elective selected to reach minimum ${MIN_CREDITS_PER_TERM} credits for ${semesterName}.`,
+              "elective",
+            ),
+          );
+          selectedCredits += course.credits;
+          usedCodesThisTerm.add(course.code);
+          satisfiedCodes.add(course.code);
+          provisionalElectiveCodes.add(course.code);
+        });
+      }
+
+      // Once required courses satisfy minimum load, objective profiles diverge by
+      // how much elective load they add in the same term.
+      if (
+        selectedCredits >= MIN_CREDITS_PER_TERM &&
+        selectedCredits < profile.termCreditTarget
+      ) {
+        const enrichmentCandidates = getElectiveCandidates(
+          semesterName,
+          usedCodesThisTerm,
+        );
+        const upperCreditBound =
+          profile.termCreditTarget + profile.electiveOvershootAllowance;
+
+        enrichmentCandidates.forEach((course) => {
+          if (selectedCredits >= profile.termCreditTarget) return;
+          if (usedCodesThisTerm.has(course.code)) return;
+          if (hasCreditExclusionConflict(course.code, satisfiedCodes)) return;
+
+          const wouldBe = selectedCredits + course.credits;
+          if (wouldBe > upperCreditBound) return;
+
+          selected.push(
+            toAutoCourse(
+              course,
+              `${profile.title} enrichment elective to align with ${profile.termCreditTarget}-credit objective.`,
+              "elective",
             ),
           );
           selectedCredits += course.credits;
@@ -621,10 +663,7 @@ export function generateAutoGraduationPlans(
       const termIndex = electiveLoopTermIndex;
       const semesterName = semesterNameFromTermIndex(termIndex);
       const termLabel = toTermLabel(termIndex);
-      const minTermCredits = Math.max(
-        MIN_CREDITS_PER_TERM,
-        profile.preferredMinTermCredits,
-      );
+      const minTermCredits = MIN_CREDITS_PER_TERM;
       const usedCodesThisTerm = new Set<string>();
 
       const electiveCandidates = getElectiveCandidates(
@@ -640,6 +679,12 @@ export function generateAutoGraduationPlans(
       const selected: AutoPlannedCourse[] = [];
       let selectedCredits = 0;
       const provisionalElectiveCodes = new Set<string>();
+      const objectiveTermTarget = Math.min(
+        profile.termCreditTarget,
+        electiveShortfall,
+      );
+      const objectiveCreditUpperBound =
+        objectiveTermTarget + profile.electiveOvershootAllowance;
       const usingFallbackCandidates =
         availableElectiveCodes.size === 0 ||
         electiveCandidates.every((c) => !availableElectiveCodes.has(c.code));
@@ -649,7 +694,7 @@ export function generateAutoGraduationPlans(
         const wouldBe = selectedCredits + course.credits;
         if (
           selectedCredits < minTermCredits ||
-          wouldBe <= Math.min(profile.termCreditTarget, electiveShortfall)
+          wouldBe <= objectiveCreditUpperBound
         ) {
           selected.push(
             toAutoCourse(
@@ -657,6 +702,7 @@ export function generateAutoGraduationPlans(
               usingFallbackCandidates
                 ? `Pathway elective candidate from ${course.department} — available ${semesterName} with prerequisites satisfied.`
                 : `Suggested elective — available ${semesterName} with prerequisites satisfied.`,
+              "elective",
             ),
           );
           selectedCredits += course.credits;
@@ -679,6 +725,7 @@ export function generateAutoGraduationPlans(
             usingFallbackCandidates
               ? `Pathway elective candidate from ${smallest.department} — fits ${semesterName}.`
               : `Suggested elective — fits ${semesterName}.`,
+            "elective",
           ),
         );
         selectedCredits = smallest.credits;

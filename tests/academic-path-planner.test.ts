@@ -296,4 +296,87 @@ describe("generateAutoGraduationPlans", () => {
     expect(hasTerms).toBe(true);
     expect(containsRequired).toBe(true);
   });
+
+  it("creates differentiated objective paths by workload", () => {
+    const catalog: CourseCatalogEntry[] = [
+      // Required major courses
+      makeCourse("CSC3002F", "Semester 1", 18),
+      makeCourse("CSC3003S", "Semester 2", 18),
+      // Semester 1 electives
+      makeCourse("ELC3011F", "Semester 1", 15),
+      makeCourse("ELC3012F", "Semester 1", 15),
+      makeCourse("ELC3013F", "Semester 1", 15),
+      makeCourse("ELC3014F", "Semester 1", 15),
+      // Semester 2 electives
+      makeCourse("ELC3021S", "Semester 2", 15),
+      makeCourse("ELC3022S", "Semester 2", 15),
+      makeCourse("ELC3023S", "Semester 2", 15),
+      makeCourse("ELC3024S", "Semester 2", 15),
+    ];
+
+    const majorCombinations: MajorCombination[] = [
+      {
+        id: "CSC-Y3",
+        major: "Computer Science",
+        year: 3,
+        requiredCourseCodes: ["CSC3002F", "CSC3003S"],
+        suggestedElectiveCodes: [
+          "ELC3011F",
+          "ELC3012F",
+          "ELC3013F",
+          "ELC3014F",
+          "ELC3021S",
+          "ELC3022S",
+          "ELC3023S",
+          "ELC3024S",
+        ],
+      },
+    ];
+
+    const plans = generateAutoGraduationPlans({
+      catalog,
+      requirements: {
+        id: "test-degree-objectives",
+        name: "Test Degree Objectives",
+        targetCredits: 180,
+        minimumYearlyCredits: 90,
+        coreCourseCodes: [],
+      },
+      completedCourses: [
+        {
+          id: "done-a",
+          code: "CSC2001F",
+          title: "CSC2001F",
+          credits: 18,
+          grade: "A",
+          gpa: 4,
+          semester: "Year 2 - Semester 1",
+        },
+      ],
+      inProgressCourses: [],
+      plannedCourses: [],
+      majorCombinations,
+      studentCombinationIds: ["Computer Science"],
+    });
+
+    const fastest = plans.find((p) => p.objective === "fastest");
+    const balanced = plans.find((p) => p.objective === "balanced");
+    const light = plans.find((p) => p.objective === "light");
+
+    expect(fastest).toBeDefined();
+    expect(balanced).toBeDefined();
+    expect(light).toBeDefined();
+
+    expect(fastest!.estimatedTerms).toBeLessThanOrEqual(
+      balanced!.estimatedTerms,
+    );
+    expect(balanced!.estimatedTerms).toBeLessThanOrEqual(light!.estimatedTerms);
+
+    const allObjectivesContainRequired = [fastest!, balanced!, light!].every(
+      (plan) =>
+        plan.terms.some((t) => t.courses.some((c) => c.code === "CSC3002F")) &&
+        plan.terms.some((t) => t.courses.some((c) => c.code === "CSC3003S")),
+    );
+    expect(allObjectivesContainRequired).toBe(true);
+  });
 });
