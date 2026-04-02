@@ -2,8 +2,9 @@ import MainLayout from "@/components/main-layout";
 import NavigationTile from "@/components/navigation-tile";
 import ProgressBar from "@/components/progress-bar";
 import { theme } from "@/constants/theme";
+import { useIsMobile } from "@/hooks/use-is-mobile";
 import React, { useEffect, useState } from "react";
-import { FlatList, Platform, StyleSheet, Text, View } from "react-native";
+import { FlatList, StyleSheet, Text, View } from "react-native";
 
 interface HomeProps {
   onNavigate?: (page: string) => void;
@@ -22,6 +23,7 @@ const Home = ({
   currentCredits = 0,
   totalCredits = 360,
 }: HomeProps) => {
+  const isMobile = useIsMobile();
   const [activePage, setActivePage] = useState<string | null>(null);
   const [currentTime, setCurrentTime] = useState(new Date());
 
@@ -152,20 +154,20 @@ const Home = ({
   return (
     <MainLayout>
       {/* Top Section with Baby Blue Background */}
-      <View style={styles.topSection}>
+      <View style={[styles.topSection, isMobile && styles.topSectionMobile]}>
         {/* Header Section */}
-        <View style={styles.header}>
-          <View style={styles.headerTop}>
-            <View style={styles.headerLeft}>
-              <Text style={styles.date}>{formatDate()}</Text>
-              <Text style={styles.greeting}>
+        <View style={[styles.header, isMobile && styles.headerMobile]}>
+          <View style={[styles.headerTop, isMobile && styles.headerTopMobile]}>
+            <View style={[styles.headerLeft, isMobile && styles.headerLeftMobile]}>
+              <Text style={[styles.date, isMobile && styles.dateMobile]}>{formatDate()}</Text>
+              <Text style={[styles.greeting, isMobile && styles.greetingMobile]}>
                 {getGreeting()},{" "}
                 <Text style={styles.name}>{studentData.firstName}</Text>
               </Text>
             </View>
             <View style={styles.avatarContainer}>
-              <View style={styles.avatar}>
-                <Text style={styles.avatarText}>
+              <View style={[styles.avatar, isMobile && styles.avatarMobile]}>
+                <Text style={[styles.avatarText, isMobile && styles.avatarTextMobile]}>
                   {studentData.firstName.charAt(0)}
                 </Text>
               </View>
@@ -174,19 +176,19 @@ const Home = ({
           </View>
 
           {/* Student Info */}
-          <View style={styles.infoContainer}>
+          <View style={[styles.infoContainer, isMobile && styles.infoContainerMobile]}>
             <Text
-              style={styles.infoText}
+              style={[styles.infoText, isMobile && styles.infoTextMobile]}
               numberOfLines={1}
               ellipsizeMode="tail"
             >
               {studentData.degree}
             </Text>
-            <View style={styles.infoCompact}>
-              <Text style={styles.infoLabel}>{studentData.year}</Text>
+            <View style={[styles.infoCompact, isMobile && styles.infoCompactMobile]}>
+              <Text style={[styles.infoLabel, isMobile && styles.infoLabelMobile]}>{studentData.year}</Text>
               <View style={styles.infoDot} />
               <Text
-                style={styles.infoLabel}
+                style={[styles.infoLabel, isMobile && styles.infoLabelMobile]}
                 numberOfLines={1}
                 ellipsizeMode="tail"
               >
@@ -197,7 +199,7 @@ const Home = ({
         </View>
 
         {/* Progress Section */}
-        <View style={styles.progressSection}>
+        <View style={[styles.progressSection, isMobile && styles.progressSectionMobile]}>
           <ProgressBar
             currentCredits={studentData.currentCredits}
             totalCredits={studentData.totalCredits}
@@ -207,28 +209,28 @@ const Home = ({
       </View>
 
       {/* Section Label */}
-      <View style={styles.sectionHeader}>
-        <Text style={styles.sectionTitle}>Quick Access</Text>
-        <Text style={styles.sectionSubtitle}>Navigate your academic tools</Text>
+      <View style={[styles.sectionHeader, isMobile && styles.sectionHeaderMobile]}>
+        <Text style={[styles.sectionTitle, isMobile && styles.sectionTitleMobile]}>Quick Access</Text>
+        <Text style={[styles.sectionSubtitle, isMobile && styles.sectionSubtitleMobile]}>Navigate your academic tools</Text>
       </View>
 
       {/* Tile Grid */}
       <FlatList
         data={tiles}
         keyExtractor={(item) => item.id}
-        numColumns={Platform.OS === "web" ? 4 : 2}
+        numColumns={isMobile ? 2 : 4}
         columnWrapperStyle={
-          Platform.OS === "web"
-            ? styles.columnWrapperWeb
-            : styles.columnWrapperMobile
+          isMobile
+            ? styles.columnWrapperMobile
+            : styles.columnWrapperWeb
         }
         scrollEnabled={false}
         renderItem={({ item: tile }) => (
           <View
             style={
-              Platform.OS === "web"
-                ? styles.tileWrapperWeb
-                : styles.tileWrapperMobile
+              isMobile
+                ? styles.tileWrapperMobile
+                : styles.tileWrapperWeb
             }
           >
             <NavigationTile
@@ -248,46 +250,70 @@ const Home = ({
 };
 
 const styles = StyleSheet.create({
+  // --- desktop defaults ---
   topSection: {
     marginBottom: 0,
-    paddingTop: Platform.OS === "web" ? theme.spacing.xl : theme.spacing.md,
-    paddingHorizontal:
-      Platform.OS === "web" ? theme.spacing.xl : theme.spacing.md,
-    paddingBottom: Platform.OS === "web" ? theme.spacing.lg : theme.spacing.md,
+    paddingTop: theme.spacing.xl,
+    paddingHorizontal: theme.spacing.xl,
+    paddingBottom: theme.spacing.lg,
     backgroundColor: theme.colors.babyBlue,
     borderBottomLeftRadius: theme.borderRadius.xxl,
     borderBottomRightRadius: theme.borderRadius.xxl,
   },
+  topSectionMobile: {
+    paddingTop: theme.spacing.md,
+    paddingHorizontal: theme.spacing.md,
+    paddingBottom: theme.spacing.md,
+  },
   header: {
-    marginBottom: Platform.OS === "web" ? theme.spacing.lg : theme.spacing.sm,
+    marginBottom: theme.spacing.lg,
+  },
+  headerMobile: {
+    marginBottom: theme.spacing.sm,
   },
   headerTop: {
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "flex-start",
-    gap: Platform.OS === "web" ? theme.spacing.lg : theme.spacing.sm,
-    marginBottom: Platform.OS === "web" ? 0 : 4,
+    gap: theme.spacing.lg,
+    marginBottom: 0,
+  },
+  headerTopMobile: {
+    gap: theme.spacing.sm,
+    marginBottom: 4,
   },
   headerLeft: {
     flex: 1,
-    paddingRight: Platform.OS === "web" ? 0 : 8,
+    paddingRight: 0,
+  },
+  headerLeftMobile: {
+    paddingRight: 8,
   },
   date: {
-    fontSize: Platform.OS === "web" ? theme.fontSize.sm : 10,
+    fontSize: theme.fontSize.sm,
     color: theme.colors.textMuted,
     fontWeight: "600",
-    marginBottom: Platform.OS === "web" ? 12 : 4,
+    marginBottom: 12,
     letterSpacing: 0.5,
     textTransform: "uppercase",
   },
+  dateMobile: {
+    fontSize: 10,
+    marginBottom: 4,
+  },
   greeting: {
-    fontSize: Platform.OS === "web" ? theme.fontSize.hero : 22,
+    fontSize: theme.fontSize.hero,
     color: theme.colors.textPrimary,
     fontWeight: "800",
-    marginBottom: Platform.OS === "web" ? 12 : 0,
+    marginBottom: 12,
     letterSpacing: -0.5,
-    lineHeight: Platform.OS === "web" ? 48 : 32,
+    lineHeight: 48,
     flexWrap: "wrap",
+  },
+  greetingMobile: {
+    fontSize: 22,
+    marginBottom: 0,
+    lineHeight: 32,
   },
   name: {
     color: theme.colors.blue,
@@ -297,18 +323,26 @@ const styles = StyleSheet.create({
     position: "relative",
   },
   avatar: {
-    width: Platform.OS === "web" ? 64 : 48,
-    height: Platform.OS === "web" ? 64 : 48,
-    borderRadius: Platform.OS === "web" ? 20 : 14,
+    width: 64,
+    height: 64,
+    borderRadius: 20,
     backgroundColor: theme.colors.blue,
     justifyContent: "center",
     alignItems: "center",
     flexShrink: 0,
   },
+  avatarMobile: {
+    width: 48,
+    height: 48,
+    borderRadius: 14,
+  },
   avatarText: {
     color: theme.colors.white,
-    fontSize: Platform.OS === "web" ? theme.fontSize.xl : theme.fontSize.lg,
+    fontSize: theme.fontSize.xl,
     fontWeight: "700",
+  },
+  avatarTextMobile: {
+    fontSize: theme.fontSize.lg,
   },
   statusDot: {
     position: "absolute",
@@ -322,25 +356,39 @@ const styles = StyleSheet.create({
     borderColor: theme.colors.babyBlue,
   },
   infoContainer: {
-    marginTop: Platform.OS === "web" ? 16 : 4,
-    gap: Platform.OS === "web" ? 6 : 4,
+    marginTop: 16,
+    gap: 6,
+  },
+  infoContainerMobile: {
+    marginTop: 4,
+    gap: 4,
   },
   infoText: {
-    fontSize: Platform.OS === "web" ? theme.fontSize.sm : 11,
+    fontSize: theme.fontSize.sm,
     color: theme.colors.textPrimary,
     fontWeight: "600",
-    lineHeight: Platform.OS === "web" ? 18 : 16,
+    lineHeight: 18,
+  },
+  infoTextMobile: {
+    fontSize: 11,
+    lineHeight: 16,
   },
   infoCompact: {
     flexDirection: "row",
     alignItems: "center",
-    gap: Platform.OS === "web" ? 10 : 8,
+    gap: 10,
     flexWrap: "wrap",
   },
+  infoCompactMobile: {
+    gap: 8,
+  },
   infoLabel: {
-    fontSize: Platform.OS === "web" ? theme.fontSize.xs : 10,
+    fontSize: theme.fontSize.xs,
     color: theme.colors.textMuted,
     fontWeight: "500",
+  },
+  infoLabelMobile: {
+    fontSize: 10,
   },
   infoDot: {
     width: 3,
@@ -351,26 +399,40 @@ const styles = StyleSheet.create({
   },
   progressSection: {
     marginBottom: 0,
-    marginTop: Platform.OS === "web" ? 0 : 12,
+    marginTop: 0,
+  },
+  progressSectionMobile: {
+    marginTop: 12,
   },
   sectionHeader: {
-    marginBottom: Platform.OS === "web" ? theme.spacing.lg : theme.spacing.sm,
+    marginBottom: theme.spacing.lg,
     marginTop: 0,
-    paddingTop: Platform.OS === "web" ? theme.spacing.xl : theme.spacing.md,
-    paddingHorizontal:
-      Platform.OS === "web" ? theme.spacing.xl : theme.spacing.md,
+    paddingTop: theme.spacing.xl,
+    paddingHorizontal: theme.spacing.xl,
+  },
+  sectionHeaderMobile: {
+    marginBottom: theme.spacing.sm,
+    paddingTop: theme.spacing.md,
+    paddingHorizontal: theme.spacing.md,
   },
   sectionTitle: {
-    fontSize: Platform.OS === "web" ? theme.fontSize.xl : theme.fontSize.md,
+    fontSize: theme.fontSize.xl,
     fontWeight: "700",
     color: theme.colors.textPrimary,
-    marginBottom: Platform.OS === "web" ? 4 : 2,
+    marginBottom: 4,
     letterSpacing: -0.5,
   },
+  sectionTitleMobile: {
+    fontSize: theme.fontSize.md,
+    marginBottom: 2,
+  },
   sectionSubtitle: {
-    fontSize: Platform.OS === "web" ? theme.fontSize.sm : 11,
+    fontSize: theme.fontSize.sm,
     color: theme.colors.textMuted,
     fontWeight: "500",
+  },
+  sectionSubtitleMobile: {
+    fontSize: 11,
   },
   columnWrapperWeb: {
     gap: 12,
