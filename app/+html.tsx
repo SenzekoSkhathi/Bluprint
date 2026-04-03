@@ -27,11 +27,24 @@ export default function Root({ children }: PropsWithChildren) {
         <script
           dangerouslySetInnerHTML={{
             __html: `
-              if ('serviceWorker' in navigator) {
-                window.addEventListener('load', function() {
-                  navigator.serviceWorker.register('/sw.js');
+              (function () {
+                if (!('serviceWorker' in navigator)) return;
+
+                const host = window.location.hostname;
+                const isLocalhost = host === 'localhost' || host === '127.0.0.1' || host === '::1';
+                if (isLocalhost) return;
+
+                window.addEventListener('load', function () {
+                  fetch('/sw.js', { method: 'HEAD' })
+                    .then(function (response) {
+                      if (!response.ok) return;
+                      return navigator.serviceWorker.register('/sw.js');
+                    })
+                    .catch(function () {
+                      // Ignore registration failures to avoid blocking app startup.
+                    });
                 });
-              }
+              })();
             `,
           }}
         />

@@ -559,9 +559,26 @@ class StudentScheduleUpdateRequest(BaseModel):
 
 
 STUDENT_NUMBER_PATTERN = re.compile(r"^[A-Z]{6}\d{3}$")
-MAX_UPLOAD_BYTES = 5 * 1024 * 1024
+MAX_UPLOAD_BYTES = 10 * 1024 * 1024  # 10 MB to accommodate images
 TEXT_PREVIEW_LIMIT = 3000
 PDF_PAGE_LIMIT = 10
+DOCX_MIME = "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+XLSX_MIME = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+PPTX_MIME = "application/vnd.openxmlformats-officedocument.presentationml.presentation"
+DOC_MIME  = "application/msword"
+XLS_MIME  = "application/vnd.ms-excel"
+PPT_MIME  = "application/vnd.ms-powerpoint"
+
+IMAGE_MIME_TYPES = {
+    "image/jpeg",
+    "image/jpg",
+    "image/png",
+    "image/gif",
+    "image/webp",
+    "image/heic",
+    "image/heif",
+}
+IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".gif", ".webp", ".heic", ".heif"}
 TEXT_FILE_EXTENSIONS = {
     ".txt",
     ".md",
@@ -680,6 +697,127 @@ def _is_text_upload(filename: str, content_type: str | None) -> bool:
     }
 
 
+def _is_image_upload(filename: str, content_type: str | None) -> bool:
+    extension = Path(filename).suffix.lower()
+    if extension in IMAGE_EXTENSIONS:
+        return True
+    return content_type in IMAGE_MIME_TYPES
+
+
+def _is_docx_upload(filename: str, content_type: str | None) -> bool:
+    ext = Path(filename).suffix.lower()
+    return ext in {".docx", ".doc"} or content_type in {DOCX_MIME, DOC_MIME}
+
+
+def _is_xlsx_upload(filename: str, content_type: str | None) -> bool:
+    ext = Path(filename).suffix.lower()
+    return ext in {".xlsx", ".xls"} or content_type in {XLSX_MIME, XLS_MIME}
+
+
+def _is_pptx_upload(filename: str, content_type: str | None) -> bool:
+    ext = Path(filename).suffix.lower()
+    return ext in {".pptx", ".ppt"} or content_type in {PPTX_MIME, PPT_MIME}
+
+
+def _extract_docx_text(data: bytes) -> str:
+    try:
+        from docx import Document  # python-docx
+        doc = Document(BytesIO(data))
+        paragraphs = [p.text for p in doc.paragraphs if p.text.strip()]
+        merged = "\n".join(paragraphs)
+        preview = merged[:TEXT_PREVIEW_LIMIT]
+        if len(merged) > TEXT_PREVIEW_LIMIT:
+            preview += "\n[truncated]"
+        return preview
+    except Exception:
+        return ""
+
+
+def _extract_xlsx_text(data: bytes) -> str:
+    try:
+        import openpyxl
+        wb = openpyxl.load_workbook(BytesIO(data), read_only=True, data_only=True)
+        lines: list[str] = []
+        for sheet in wb.worksheets:
+            lines.append(f"[Sheet: {sheet.title}]")
+            for row in sheet.iter_rows(values_only=True):
+                cells = [str(c) if c is not None else "" for c in row]
+                if any(c.strip() for c in cells):
+                    lines.append("\t".join(cells))
+            if len("\n".join(lines)) > TEXT_PREVIEW_LIMIT:
+                break
+        merged = "\n".join(lines)
+        preview = merged[:TEXT_PREVIEW_LIMIT]
+        if len(merged) > TEXT_PREVIEW_LIMIT:
+            preview += "\n[truncated]"
+        return preview
+    except Exception:
+        return ""
+
+
+def _extract_pptx_text(data: bytes) -> str:
+    try:
+        from pptx import Presentation  # python-pptx
+        prs = Presentation(BytesIO(data))
+        lines: list[str] = []
+        for i, slide in enumerate(prs.slides, start=1):
+            slide_lines: list[str] = []
+            for shape in slide.shapes:
+                if shape.has_text_frame:
+                    for para in shape.text_frame.paragraphs:
+                        text = "".join(run.text for run in para.runs).strip()
+                        if text:
+                            slide_lines.append(text)
+            if slide_lines:
+                lines.append(f"[Slide {i}]")
+                lines.extend(slide_lines)
+            if len("\n".join(lines)) > TEXT_PREVIEW_LIMIT:
+                break
+        merged = "\n".join(lines)
+        preview = merged[:TEXT_PREVIEW_LIMIT]
+        if len(merged) > TEXT_PREVIEW_LIMIT:
+            preview += "\n[truncated]"
+        return preview
+    except Exception:
+        return ""
+
+
+def _describe_image_with_gemini(data: bytes, content_type: str, filename: str) -> str:
+    """Use Gemini vision to describe an uploaded image and extract any text."""
+    from google.genai import types as genai_types
+
+    # Normalize HEIC/HEIF to jpeg for Gemini (it doesn't support those natively)
+    effective_mime = content_type if content_type in {
+        "image/jpeg", "image/png", "image/gif", "image/webp"
+    } else "image/jpeg"
+
+    try:
+        client = genai.Client(api_key=settings.gemini_api_key)
+        response = client.models.generate_content(
+            model=settings.gemini_fast_model,
+            contents=[
+                genai_types.Part.from_bytes(data=data, mime_type=effective_mime),
+                (
+                    "You are an assistant helping a university student. "
+                    "Analyse this image and do two things:\n"
+                    "1. Describe what you see clearly and concisely.\n"
+                    "2. If the image contains any text (e.g. a timetable, letter, "
+                    "results slip, assignment, screenshot, or document), transcribe "
+                    "all readable text verbatim.\n"
+                    "Return your response in plain text with no markdown headers."
+                ),
+            ],
+            config={
+                "temperature": 0.2,
+                "max_output_tokens": 1500,
+                "thinking_config": {"thinking_budget": 0},
+            },
+        )
+        return response.text.strip()
+    except Exception as exc:
+        return f"[Image could not be analysed: {exc}]"
+
+
 def _build_upload_context(
     *,
     filename: str,
@@ -698,6 +836,23 @@ def _build_upload_context(
             pdf_preview = _extract_pdf_preview(data)
             if pdf_preview:
                 return f"{summary}\n\nPDF text preview:\n{pdf_preview}"
+        if _is_image_upload(filename, content_type):
+            effective_mime = content_type or "image/jpeg"
+            description = _describe_image_with_gemini(data, effective_mime, filename)
+            if description:
+                return f"{summary}\n\nImage analysis:\n{description}"
+        if _is_docx_upload(filename, content_type):
+            text = _extract_docx_text(data)
+            if text:
+                return f"{summary}\n\nDocument text:\n{text}"
+        if _is_xlsx_upload(filename, content_type):
+            text = _extract_xlsx_text(data)
+            if text:
+                return f"{summary}\n\nSpreadsheet contents:\n{text}"
+        if _is_pptx_upload(filename, content_type):
+            text = _extract_pptx_text(data)
+            if text:
+                return f"{summary}\n\nPresentation text:\n{text}"
         return summary
 
     decoded = data.decode("utf-8", errors="ignore").strip()
@@ -1149,18 +1304,17 @@ async def ask_science_advisor_with_upload(
     model_profile: Literal["fast", "thinking"] | None = Form(default=None),
     student_context_json: str | None = Form(default=None),
     faculty_slug: str = Form(default="science"),
-    file: UploadFile = File(...),
+    files: list[UploadFile] = File(...),
 ) -> dict:
     import json as _json
 
     normalized_query = query.strip()
-    if not normalized_query and not file.filename:
+    if not normalized_query and not files:
         raise HTTPException(status_code=400, detail="Query or file is required")
 
     if top_k < 1 or top_k > 20:
         raise HTTPException(status_code=422, detail="top_k must be between 1 and 20")
 
-    # Parse student context if provided
     student_context: dict | None = None
     if student_context_json:
         try:
@@ -1169,19 +1323,24 @@ async def ask_science_advisor_with_upload(
         except Exception:
             student_context = None
 
-    upload_bytes = await file.read()
-    if len(upload_bytes) > MAX_UPLOAD_BYTES:
-        raise HTTPException(
-            status_code=413,
-            detail=f"File exceeds {MAX_UPLOAD_BYTES // (1024 * 1024)}MB limit",
+    upload_context_parts: list[str] = []
+    for file in files:
+        upload_bytes = await file.read()
+        if len(upload_bytes) > MAX_UPLOAD_BYTES:
+            raise HTTPException(
+                status_code=413,
+                detail=f"File '{file.filename}' exceeds {MAX_UPLOAD_BYTES // (1024 * 1024)}MB limit",
+            )
+        ctx = _build_upload_context(
+            filename=file.filename or "upload",
+            content_type=file.content_type,
+            size_bytes=len(upload_bytes),
+            data=upload_bytes,
         )
+        if ctx:
+            upload_context_parts.append(ctx)
 
-    upload_context = _build_upload_context(
-        filename=file.filename or "upload",
-        content_type=file.content_type,
-        size_bytes=len(upload_bytes),
-        data=upload_bytes,
-    )
+    upload_context = "\n\n---\n\n".join(upload_context_parts)
 
     advisor_query_parts = [normalized_query, upload_context]
     advisor_query = "\n\n".join(
@@ -1211,7 +1370,7 @@ async def ask_handbook_advisor_with_upload(
     model_profile: Literal["fast", "thinking"] | None = Form(default=None),
     student_context_json: str | None = Form(default=None),
     faculty_slug: str = Form(default="science"),
-    file: UploadFile = File(...),
+    files: list[UploadFile] = File(...),
 ) -> dict:
     return await ask_science_advisor_with_upload(
         query=query,
@@ -1220,7 +1379,7 @@ async def ask_handbook_advisor_with_upload(
         model_profile=model_profile,
         student_context_json=student_context_json,
         faculty_slug=faculty_slug,
-        file=file,
+        files=files,
     )
 
 

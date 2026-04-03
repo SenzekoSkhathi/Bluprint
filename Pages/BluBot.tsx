@@ -1,8 +1,7 @@
 import { getPrimaryFacultySlug } from "@/constants/faculty";
-import { buildGuidanceTrustMessage } from "@/hooks/use-logged-in-user";
 import { useIsMobile } from "@/hooks/use-is-mobile";
+import { buildGuidanceTrustMessage } from "@/hooks/use-logged-in-user";
 import {
-  askHandbookAdvisor,
   askHandbookAdvisorStream,
   askHandbookAdvisorWithUpload,
   deleteHandbookAdvisorChatThread,
@@ -19,12 +18,14 @@ import { MaterialIcons } from "@expo/vector-icons";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import * as Clipboard from "expo-clipboard";
 import * as DocumentPicker from "expo-document-picker";
+import * as FileSystem from "expo-file-system/legacy";
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import {
   Alert,
   Animated,
   Easing,
   FlatList,
+  Image,
   Keyboard,
   KeyboardAvoidingView,
   Linking,
@@ -78,7 +79,12 @@ interface BluBotValidationSummary {
   projectedCredits: number;
   creditShortfall: number;
   /** Top blockers — passed so BluBot is aware of plan issues without re-running validation */
-  topIssues: Array<{ severity: string; category: string; title: string; message: string }>;
+  topIssues: Array<{
+    severity: string;
+    category: string;
+    title: string;
+    message: string;
+  }>;
 }
 
 interface BluBotProps {
@@ -1055,7 +1061,9 @@ function buildAdvisorContext(
     if (validationSummary.topIssues.length > 0) {
       lines.push("- Active issues:");
       validationSummary.topIssues.slice(0, 5).forEach((issue) => {
-        lines.push(`  [${issue.severity}/${issue.category}] ${issue.title}: ${issue.message}`);
+        lines.push(
+          `  [${issue.severity}/${issue.category}] ${issue.title}: ${issue.message}`,
+        );
       });
     }
   }
@@ -1206,8 +1214,10 @@ export default function BluBot({
   const [selectedModelProfile, setSelectedModelProfile] =
     useState<ScienceAdvisorModelProfile>("fast");
   const [isModelMenuOpen, setIsModelMenuOpen] = useState(false);
-  const [selectedUpload, setSelectedUpload] =
-    useState<DocumentPicker.DocumentPickerAsset | null>(null);
+  const [isAttachMenuOpen, setIsAttachMenuOpen] = useState(false);
+  const [selectedUploads, setSelectedUploads] = useState<
+    DocumentPicker.DocumentPickerAsset[]
+  >([]);
 
   const flatListRef = useRef<FlatList<Message>>(null);
   const currentThreadIdRef = useRef(currentThreadId);
@@ -1514,7 +1524,12 @@ export default function BluBot({
     };
 
     void persistChats();
-  }, [currentThreadId, hasRestoredChats, recentChats, userContext?.studentNumber]);
+  }, [
+    currentThreadId,
+    hasRestoredChats,
+    recentChats,
+    userContext?.studentNumber,
+  ]);
 
   useEffect(() => {
     if (!hasRestoredChats) {
@@ -1666,7 +1681,7 @@ export default function BluBot({
     setCurrentThreadId(createChatId());
     setMessages([]);
     setInputValue("");
-    setSelectedUpload(null);
+    setSelectedUploads([]);
     setCopiedMessageId(null);
     setHoveredMessageId(null);
     setActiveMessageId(null);
@@ -1774,7 +1789,7 @@ export default function BluBot({
     setCurrentThreadId(thread.id);
     setMessages(thread.messages.map((message) => ({ ...message })));
     setInputValue("");
-    setSelectedUpload(null);
+    setSelectedUploads([]);
     setCopiedMessageId(null);
     setHoveredMessageId(null);
     setActiveMessageId(null);
@@ -1784,31 +1799,188 @@ export default function BluBot({
     setIsSidebarOpen(false);
   };
 
+  const IMAGE_MIME_PREFIXES = ["image/"];
+  const isImageUpload = (mimeType?: string) =>
+    !!mimeType && IMAGE_MIME_PREFIXES.some((p) => mimeType.startsWith(p));
+
+  const getFileTypeStyle = (
+    name?: string,
+    mimeType?: string,
+  ): { color: string; icon: string } => {
+    const ext = (name?.split(".").pop() ?? "").toLowerCase();
+    const mime = mimeType ?? "";
+    if (
+      mime.startsWith("image/") ||
+      ["jpg", "jpeg", "png", "gif", "webp", "heic", "heif"].includes(ext)
+    )
+      return { color: "#8B5CF6", icon: "image" };
+    if (ext === "pdf" || mime === "application/pdf")
+      return { color: "#EF4444", icon: "picture-as-pdf" };
+    if (
+      ["doc", "docx"].includes(ext) ||
+      mime.includes("wordprocessingml") ||
+      mime === "application/msword"
+    )
+      return { color: "#2563EB", icon: "description" };
+    if (
+      ["xls", "xlsx"].includes(ext) ||
+      mime.includes("spreadsheetml") ||
+      mime === "application/vnd.ms-excel"
+    )
+      return { color: "#16A34A", icon: "table-chart" };
+    if (
+      ["ppt", "pptx"].includes(ext) ||
+      mime.includes("presentationml") ||
+      mime === "application/vnd.ms-powerpoint"
+    )
+      return { color: "#EA580C", icon: "slideshow" };
+    if (["csv"].includes(ext) || mime === "text/csv")
+      return { color: "#0891B2", icon: "grid-on" };
+    if (["zip", "rar", "7z", "tar", "gz"].includes(ext))
+      return { color: "#78716C", icon: "folder-zip" };
+    if (["txt", "md", "log"].includes(ext) || mime.startsWith("text/"))
+      return { color: "#6B7280", icon: "article" };
+    if (["json", "xml", "yaml", "yml"].includes(ext))
+      return { color: "#D97706", icon: "data-object" };
+    if (["py", "js", "ts", "tsx", "jsx"].includes(ext))
+      return { color: "#7C3AED", icon: "code" };
+    return { color: theme.colors.deepBlue, icon: "insert-drive-file" };
+  };
+
+  const MAX_UPLOADS = 5;
+
   const handlePickUpload = async (): Promise<void> => {
+    if (selectedUploads.length >= MAX_UPLOADS) {
+      Alert.alert(
+        "Limit reached",
+        `You can attach up to ${MAX_UPLOADS} files per message.`,
+      );
+      return;
+    }
     try {
       const result = await DocumentPicker.getDocumentAsync({
         copyToCacheDirectory: true,
-        multiple: false,
+        multiple: true,
         type: "*/*",
       });
-
-      if (result.canceled || result.assets.length === 0) {
-        return;
-      }
-
-      setSelectedUpload(result.assets[0]);
+      if (result.canceled || result.assets.length === 0) return;
+      setSelectedUploads((prev) => {
+        const slots = MAX_UPLOADS - prev.length;
+        return [...prev, ...result.assets.slice(0, slots)];
+      });
     } catch (error) {
       console.error("Upload selection failed:", error);
       Alert.alert("Upload", "Couldn't select a file. Please try again.");
     }
   };
 
+  const handlePickImage = async (): Promise<void> => {
+    if (selectedUploads.length >= MAX_UPLOADS) {
+      Alert.alert(
+        "Limit reached",
+        `You can attach up to ${MAX_UPLOADS} files per message.`,
+      );
+      return;
+    }
+    try {
+      const result = await DocumentPicker.getDocumentAsync({
+        copyToCacheDirectory: true,
+        multiple: true,
+        type: "image/*",
+      });
+      if (result.canceled || result.assets.length === 0) return;
+      setSelectedUploads((prev) => {
+        const slots = MAX_UPLOADS - prev.length;
+        return [...prev, ...result.assets.slice(0, slots)];
+      });
+    } catch (error) {
+      console.error("Image selection failed:", error);
+      Alert.alert("Upload", "Couldn't select an image. Please try again.");
+    }
+  };
+
+  // Web: document-level paste listener — captures Ctrl+V / Cmd+V anywhere on the page
+  useEffect(() => {
+    if (!isWeb) return;
+    const onPaste = (event: ClipboardEvent) => {
+      const items = event.clipboardData?.items;
+      if (!items) return;
+      for (const item of Array.from(items)) {
+        if (!item.type.startsWith("image/")) continue;
+        const file = item.getAsFile();
+        if (!file) continue;
+        event.preventDefault();
+        const uri = URL.createObjectURL(file);
+        const asset = {
+          uri,
+          name: `pasted-image-${Date.now()}.png`,
+          mimeType: item.type,
+          size: file.size,
+          file,
+        } as DocumentPicker.DocumentPickerAsset;
+        setSelectedUploads((prev) => {
+          if (prev.length >= MAX_UPLOADS) return prev;
+          return [...prev, asset];
+        });
+        break; // one image per paste event
+      }
+    };
+    document.addEventListener("paste", onPaste);
+    return () => document.removeEventListener("paste", onPaste);
+  }, [isWeb]);
+
+  // Native: read image from clipboard and write to a temp file
+  const handleNativePasteImage = async (): Promise<void> => {
+    try {
+      const hasImage = await Clipboard.hasImageAsync();
+      if (!hasImage) {
+        Alert.alert("No image", "No image found in your clipboard.");
+        return;
+      }
+      if (selectedUploads.length >= MAX_UPLOADS) {
+        Alert.alert(
+          "Limit reached",
+          `You can attach up to ${MAX_UPLOADS} files per message.`,
+        );
+        return;
+      }
+      const result = await Clipboard.getImageAsync({ format: "png" });
+      if (!result?.data) {
+        Alert.alert("Paste failed", "Couldn't read the image from clipboard.");
+        return;
+      }
+      // result.data is a full data URI: "data:image/png;base64,<payload>"
+      // Strip the prefix to get raw base64 before writing to disk.
+      const base64 = result.data.includes(",")
+        ? result.data.split(",")[1]
+        : result.data;
+      const cacheDir = FileSystem.cacheDirectory ?? "file:///tmp/";
+      const fileName = `pasted-${Date.now()}.png`;
+      const tempUri = `${cacheDir}${fileName}`;
+      await FileSystem.writeAsStringAsync(tempUri, base64, {
+        encoding: "base64",
+      });
+      const asset = {
+        uri: tempUri,
+        name: fileName,
+        mimeType: "image/png",
+        size: 0,
+      } as DocumentPicker.DocumentPickerAsset;
+      setSelectedUploads((prev) => [...prev, asset]);
+    } catch (err) {
+      console.error("Native paste failed:", err);
+      Alert.alert(
+        "Paste failed",
+        "Couldn't paste the image. Please try again.",
+      );
+    }
+  };
+
   const handleSendMessage = async (promptOverride?: string): Promise<void> => {
     const targetThreadId = currentThreadId;
     const trimmedInput = (promptOverride ?? inputValue).trim();
-    const pendingUpload = selectedUpload;
-    const uploadName = pendingUpload?.name?.trim() || "attachment";
-    const hasUpload = Boolean(pendingUpload);
+    const pendingUploads = selectedUploads;
+    const hasUpload = pendingUploads.length > 0;
     const mirrorsGreeting = userStartsWithGreeting(trimmedInput);
     const responseTone = detectResponseTone(trimmedInput);
 
@@ -1816,8 +1988,15 @@ export default function BluBot({
       return;
     }
 
+    const isImageAttachment =
+      hasUpload && pendingUploads.every((u) => isImageUpload(u.mimeType));
+    const attachmentLabels = pendingUploads.map((u) =>
+      isImageUpload(u.mimeType)
+        ? `[Image: ${u.name?.trim() || "image"}]`
+        : `[Attachment: ${u.name?.trim() || "file"}]`,
+    );
     const userFacingText = hasUpload
-      ? [trimmedInput, `[Attachment: ${uploadName}]`]
+      ? [trimmedInput, ...attachmentLabels]
           .filter((line) => line.length > 0)
           .join("\n")
       : trimmedInput;
@@ -1831,7 +2010,7 @@ export default function BluBot({
 
     appendMessageToThread(targetThreadId, userMessage);
     setInputValue("");
-    setSelectedUpload(null);
+    setSelectedUploads([]);
 
     const persona: BluBotPersona = hasUpload
       ? "professional"
@@ -1855,7 +2034,9 @@ export default function BluBot({
     const userPromptForAdvisor =
       trimmedInput.length > 0
         ? trimmedInput
-        : "Please analyze the uploaded attachment in context.";
+        : isImageAttachment
+          ? `Please analyse ${pendingUploads.length > 1 ? "these images" : "this image"} and tell me what you see.`
+          : `Please analyse ${pendingUploads.length > 1 ? "these uploaded files" : "the uploaded file"} in context.`;
 
     const professionalPersonaInstruction = `Persona: You are BluBot in warm, human academic-advisor mode. Speak naturally and helpfully. Get straight to the answer. Do not explain who you are, do not restate the user's question, and do not use stiff assistant phrases. Do not greet the user unless they greet first. Keep the tone friendly, clear, and engaging. Give practical next steps when useful. If confidence is low, say so plainly and suggest checking with a student advisor. Never cut your response off before finishing — complete every point fully. ${buildToneInstruction(responseTone)}`;
     const advisorTopK = selectedModelProfile === "fast" ? 3 : 8;
@@ -1873,12 +2054,14 @@ export default function BluBot({
       .filter((m) => m.sender === "user" || m.sender === "bot")
       .slice(-11, -1) // last 10 before the current message
       .map((m) => ({
-        role: (m.sender === "user" ? "user" : "assistant") as "user" | "assistant",
+        role: (m.sender === "user" ? "user" : "assistant") as
+          | "user"
+          | "assistant",
         text: m.text,
       }));
 
     try {
-      if (pendingUpload) {
+      if (pendingUploads.length > 0) {
         // File uploads don't support streaming — fall back to one-shot request.
         const advisorReply = await askHandbookAdvisorWithUpload({
           query: contextualQuery,
@@ -1886,12 +2069,12 @@ export default function BluBot({
           model_profile: selectedModelProfile,
           student_context: studentContextPayload,
           faculty_slug: primaryFacultySlug,
-          attachment: {
-            uri: pendingUpload.uri,
-            name: pendingUpload.name,
-            mimeType: pendingUpload.mimeType,
-            file: pendingUpload.file,
-          },
+          attachments: pendingUploads.map((u) => ({
+            uri: u.uri,
+            name: u.name,
+            mimeType: u.mimeType,
+            file: u.file,
+          })),
         });
 
         setConnectionMode("online");
@@ -1902,7 +2085,10 @@ export default function BluBot({
           id: pendingBotMessageId,
           text: polishAdvisorReply(
             addAdvisorEscalationIfNeeded(
-              formatAdvisorResponse(advisorReply.answer, advisorReply.citations),
+              formatAdvisorResponse(
+                advisorReply.answer,
+                advisorReply.citations,
+              ),
             ),
             firstName,
             responseTone,
@@ -1941,7 +2127,8 @@ export default function BluBot({
               });
             },
             onDone(meta) {
-              streamedCitations = (meta.citations ?? []) as ScienceAdvisorCitation[];
+              streamedCitations = (meta.citations ??
+                []) as ScienceAdvisorCitation[];
               setStreamStatus("");
               resolve();
             },
@@ -1960,7 +2147,8 @@ export default function BluBot({
               model_profile: selectedModelProfile,
               student_context: studentContextPayload,
               faculty_slug: primaryFacultySlug,
-              conversation_history: recentHistory.length > 0 ? recentHistory : undefined,
+              conversation_history:
+                recentHistory.length > 0 ? recentHistory : undefined,
             },
             callbacks,
           );
@@ -2038,7 +2226,7 @@ export default function BluBot({
     if (isWeb) {
       if (e.nativeEvent.key === "Enter" && !e.nativeEvent.shiftKey) {
         e.preventDefault();
-        if (inputValue.trim().length > 0 || selectedUpload) {
+        if (inputValue.trim().length > 0 || selectedUploads) {
           void handleSendMessage();
         }
       }
@@ -2088,8 +2276,14 @@ export default function BluBot({
           <Pressable
             style={
               isUserMessage
-                ? [styles.userMessageColumn, isWeb && styles.userMessageColumnDesktop]
-                : [styles.botMessageColumn, isWeb && styles.botMessageColumnDesktop]
+                ? [
+                    styles.userMessageColumn,
+                    isWeb && styles.userMessageColumnDesktop,
+                  ]
+                : [
+                    styles.botMessageColumn,
+                    isWeb && styles.botMessageColumnDesktop,
+                  ]
             }
             onHoverIn={() => setHoveredMessageId(item.id)}
             onHoverOut={() => setHoveredMessageId(null)}
@@ -2102,7 +2296,10 @@ export default function BluBot({
               style={
                 isUserMessage
                   ? [styles.messageBubble, styles.userMessageBubble]
-                  : [styles.botMessagePlain, isWeb && styles.botMessagePlainDesktop]
+                  : [
+                      styles.botMessagePlain,
+                      isWeb && styles.botMessagePlainDesktop,
+                    ]
               }
             >
               {renderFormattedMessageContent(
@@ -2192,7 +2389,9 @@ export default function BluBot({
   const renderGreeting = () => (
     <View style={styles.greetingContent}>
       <View style={styles.greetingHeader}>
-        <Text style={[styles.greetingTitle, isWeb && styles.greetingTitleDesktop]}>
+        <Text
+          style={[styles.greetingTitle, isWeb && styles.greetingTitleDesktop]}
+        >
           How can I help you today {firstName}?
         </Text>
       </View>
@@ -2200,7 +2399,8 @@ export default function BluBot({
   );
 
   const renderInputBar = (isCentered: boolean = false) => {
-    const isSendDisabled = inputValue.trim().length === 0 && !selectedUpload;
+    const isSendDisabled =
+      inputValue.trim().length === 0 && selectedUploads.length === 0;
     const selectedModelOption =
       BLUBOT_MODEL_OPTIONS.find(
         (option) => option.id === selectedModelProfile,
@@ -2214,50 +2414,148 @@ export default function BluBot({
       isCentered && styles.inputWrapperCentered,
     ];
 
+    const iconSize = isCentered ? 24 : !isWeb ? 16 : 20;
+    const btnStyle = [
+      styles.uploadButton,
+      isWeb && styles.uploadButtonDesktop,
+      isCentered && styles.uploadButtonLarge,
+    ];
+
     return (
       <View style={wrapperStyles}>
-        <TouchableOpacity
-          style={[styles.uploadButton, isWeb && styles.uploadButtonDesktop, isCentered && styles.uploadButtonLarge]}
-          onPress={() => {
-            setIsModelMenuOpen(false);
-            void handlePickUpload();
-          }}
-          activeOpacity={0.7}
-        >
-          <MaterialIcons
-            name="add"
-            size={isCentered ? 24 : !isWeb ? 16 : 20}
-            color={theme.colors.deepBlue}
-          />
-        </TouchableOpacity>
-        <View style={styles.inputContainer}>
-          {selectedUpload && (
-            <View style={styles.uploadChip}>
-              <MaterialIcons
-                name="attach-file"
-                size={14}
-                color={theme.colors.deepBlue}
-              />
-              <Text style={styles.uploadChipText} numberOfLines={1}>
-                {selectedUpload.name}
-              </Text>
+        <View style={styles.attachMenuWrap}>
+          <TouchableOpacity
+            style={btnStyle}
+            onPress={() => {
+              setIsModelMenuOpen(false);
+              setIsAttachMenuOpen((prev) => !prev);
+            }}
+            activeOpacity={0.7}
+          >
+            <MaterialIcons
+              name="attach-file"
+              size={iconSize}
+              color={theme.colors.deepBlue}
+            />
+          </TouchableOpacity>
+          {isAttachMenuOpen && (
+            <View style={styles.attachMenuPopover}>
               <TouchableOpacity
+                style={styles.attachMenuOption}
                 onPress={() => {
-                  setSelectedUpload(null);
+                  setIsAttachMenuOpen(false);
+                  void handlePickUpload();
                 }}
-                hitSlop={{ top: 8, right: 8, bottom: 8, left: 8 }}
-                accessibilityLabel="Remove selected upload"
+                activeOpacity={0.8}
               >
                 <MaterialIcons
-                  name="close"
-                  size={14}
-                  color={theme.colors.textMuted}
+                  name="insert-drive-file"
+                  size={16}
+                  color={theme.colors.deepBlue}
                 />
+                <Text style={styles.attachMenuOptionText}>Attach file</Text>
               </TouchableOpacity>
+              <View style={styles.attachMenuDivider} />
+              <TouchableOpacity
+                style={styles.attachMenuOption}
+                onPress={() => {
+                  setIsAttachMenuOpen(false);
+                  void handlePickImage();
+                }}
+                activeOpacity={0.8}
+              >
+                <MaterialIcons
+                  name="image"
+                  size={16}
+                  color={theme.colors.deepBlue}
+                />
+                <Text style={styles.attachMenuOptionText}>Attach image</Text>
+              </TouchableOpacity>
+              {!isWeb && (
+                <>
+                  <View style={styles.attachMenuDivider} />
+                  <TouchableOpacity
+                    style={styles.attachMenuOption}
+                    onPress={() => {
+                      setIsAttachMenuOpen(false);
+                      void handleNativePasteImage();
+                    }}
+                    activeOpacity={0.8}
+                  >
+                    <MaterialIcons
+                      name="content-paste"
+                      size={16}
+                      color={theme.colors.deepBlue}
+                    />
+                    <Text style={styles.attachMenuOptionText}>Paste image</Text>
+                  </TouchableOpacity>
+                </>
+              )}
+            </View>
+          )}
+        </View>
+        <View style={styles.inputContainer}>
+          {selectedUploads.length > 0 && (
+            <View style={styles.uploadChipRow}>
+              {selectedUploads.map((upload, index) => {
+                const { color, icon } = getFileTypeStyle(
+                  upload.name,
+                  upload.mimeType,
+                );
+                return (
+                  <View
+                    key={`${upload.uri}-${index}`}
+                    style={[styles.uploadChip, { borderColor: color + "33" }]}
+                  >
+                    {isImageUpload(upload.mimeType) ? (
+                      <Image
+                        source={{ uri: upload.uri }}
+                        style={styles.uploadChipThumbnail}
+                        resizeMode="cover"
+                      />
+                    ) : (
+                      <View
+                        style={[
+                          styles.uploadChipIconWrap,
+                          { backgroundColor: color + "18" },
+                        ]}
+                      >
+                        <MaterialIcons
+                          name={icon as any}
+                          size={13}
+                          color={color}
+                        />
+                      </View>
+                    )}
+                    <Text style={styles.uploadChipText} numberOfLines={1}>
+                      {upload.name}
+                    </Text>
+                    <TouchableOpacity
+                      onPress={() => {
+                        setSelectedUploads((prev) =>
+                          prev.filter((_, i) => i !== index),
+                        );
+                      }}
+                      hitSlop={{ top: 8, right: 8, bottom: 8, left: 8 }}
+                      accessibilityLabel="Remove attachment"
+                    >
+                      <MaterialIcons
+                        name="close"
+                        size={14}
+                        color={theme.colors.textMuted}
+                      />
+                    </TouchableOpacity>
+                  </View>
+                );
+              })}
             </View>
           )}
           <TextInput
-            style={[styles.input, isWeb && styles.inputDesktop, isCentered && styles.inputLarge]}
+            style={[
+              styles.input,
+              isWeb && styles.inputDesktop,
+              isCentered && styles.inputLarge,
+            ]}
             placeholder="Talk to BluBot"
             placeholderTextColor={theme.colors.textMuted}
             value={inputValue}
@@ -2269,6 +2567,7 @@ export default function BluBot({
             underlineColorAndroid="transparent"
             onFocus={() => {
               setIsModelMenuOpen(false);
+              setIsAttachMenuOpen(false);
             }}
             onKeyPress={handleKeyPress}
           />
@@ -2277,6 +2576,7 @@ export default function BluBot({
           <TouchableOpacity
             style={styles.modelDropdownTrigger}
             onPress={() => {
+              setIsAttachMenuOpen(false);
               setIsModelMenuOpen((prev) => !prev);
             }}
             activeOpacity={0.8}
@@ -2379,14 +2679,22 @@ export default function BluBot({
           />
           <Text style={styles.sidebarSectionLabel}>Search Chat</Text>
         </View>
-        <View style={[styles.sidebarSearchInputShell, isWeb && styles.sidebarSearchInputShellDesktop]}>
+        <View
+          style={[
+            styles.sidebarSearchInputShell,
+            isWeb && styles.sidebarSearchInputShellDesktop,
+          ]}
+        >
           <MaterialIcons
             name="manage-search"
             size={18}
             color={theme.colors.textMuted}
           />
           <TextInput
-            style={[styles.sidebarSearchInput, isWeb && styles.sidebarSearchInputDesktop]}
+            style={[
+              styles.sidebarSearchInput,
+              isWeb && styles.sidebarSearchInputDesktop,
+            ]}
             placeholder="Find a recent conversation"
             placeholderTextColor={theme.colors.textMuted}
             value={chatSearchQuery}
@@ -2430,7 +2738,10 @@ export default function BluBot({
                   <View style={styles.recentChatCardHeader}>
                     {isRenaming ? (
                       <TextInput
-                        style={[styles.recentChatRenameInput, isWeb && styles.recentChatRenameInputDesktop]}
+                        style={[
+                          styles.recentChatRenameInput,
+                          isWeb && styles.recentChatRenameInputDesktop,
+                        ]}
                         value={renameDraft}
                         onChangeText={setRenameDraft}
                         autoFocus
@@ -2542,7 +2853,9 @@ export default function BluBot({
             color={theme.colors.deepBlue}
           />
         </TouchableOpacity>
-        <View style={[styles.headerContent, isWeb && styles.headerContentDesktop]}>
+        <View
+          style={[styles.headerContent, isWeb && styles.headerContentDesktop]}
+        >
           <Text style={styles.headerTitle}>BluBot</Text>
         </View>
       </View>
@@ -2558,9 +2871,19 @@ export default function BluBot({
         {isSidebarOpen && renderSidebar()}
 
         <View style={styles.mainContentShell}>
-          <View style={[styles.webConstrainer, isWeb && styles.webConstrainerDesktop]}>
+          <View
+            style={[
+              styles.webConstrainer,
+              isWeb && styles.webConstrainerDesktop,
+            ]}
+          >
             {isWeb && messages.length === 0 ? (
-              <View style={[styles.emptyStateContainer, isWeb && styles.emptyStateContainerDesktop]}>
+              <View
+                style={[
+                  styles.emptyStateContainer,
+                  isWeb && styles.emptyStateContainerDesktop,
+                ]}
+              >
                 {renderGreeting()}
 
                 {renderInputBar(true)}
@@ -2617,7 +2940,12 @@ export default function BluBot({
                   </View>
                 )}
 
-                <View style={[styles.bottomInputContainer, isWeb && styles.bottomInputContainerDesktop]}>
+                <View
+                  style={[
+                    styles.bottomInputContainer,
+                    isWeb && styles.bottomInputContainerDesktop,
+                  ]}
+                >
                   {renderInputBar(false)}
                 </View>
               </KeyboardAvoidingView>
@@ -3550,6 +3878,13 @@ const styles = StyleSheet.create({
   characterCountWarning: {
     color: "#F44336",
   },
+  uploadChipRow: {
+    flexDirection: "row",
+    flexWrap: "wrap",
+    gap: theme.spacing.xs,
+    paddingTop: theme.spacing.xs,
+    paddingHorizontal: theme.spacing.sm,
+  },
   uploadChip: {
     flexDirection: "row",
     alignItems: "center",
@@ -3568,6 +3903,63 @@ const styles = StyleSheet.create({
     fontSize: theme.fontSize.xs,
     color: theme.colors.textPrimary,
     maxWidth: 220,
+  },
+  uploadChipIconWrap: {
+    width: 24,
+    height: 24,
+    borderRadius: 4,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  uploadChipThumbnail: {
+    width: 28,
+    height: 28,
+    borderRadius: 4,
+    backgroundColor: theme.colors.grayLight,
+  },
+  attachMenuWrap: {
+    position: "relative",
+    zIndex: 4,
+  },
+  attachMenuPopover: {
+    position: "absolute",
+    bottom: 48,
+    left: 0,
+    backgroundColor: theme.colors.white,
+    borderRadius: theme.borderRadius.md,
+    borderWidth: 1,
+    borderColor: theme.colors.gray,
+    paddingVertical: theme.spacing.xs,
+    minWidth: 160,
+    ...Platform.select({
+      web: {
+        boxShadow: "0px 8px 24px rgba(0,0,0,0.12)",
+      },
+      default: {
+        shadowColor: "#000",
+        shadowOffset: { width: 0, height: 4 },
+        shadowOpacity: 0.12,
+        shadowRadius: 12,
+        elevation: 8,
+      },
+    }),
+  },
+  attachMenuOption: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: theme.spacing.sm,
+    paddingHorizontal: theme.spacing.md,
+    paddingVertical: theme.spacing.sm,
+  },
+  attachMenuOptionText: {
+    fontSize: theme.fontSize.sm,
+    color: theme.colors.textPrimary,
+    fontWeight: "600",
+  },
+  attachMenuDivider: {
+    height: 1,
+    backgroundColor: theme.colors.gray,
+    marginVertical: 2,
   },
   uploadButton: {
     backgroundColor: theme.colors.white,

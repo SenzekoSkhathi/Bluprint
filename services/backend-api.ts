@@ -1298,13 +1298,32 @@ export async function askHandbookAdvisorStream(
   }
 }
 
+function appendAttachmentsToFormData(
+  formData: FormData,
+  attachments: UploadAttachment[],
+) {
+  for (const attachment of attachments) {
+    const fileName = attachment.name?.trim() || "upload";
+    const mimeType = attachment.mimeType?.trim() || "application/octet-stream";
+    if (attachment.file) {
+      formData.append("files", attachment.file, fileName);
+    } else {
+      formData.append("files", {
+        uri: attachment.uri,
+        name: fileName,
+        type: mimeType,
+      } as any);
+    }
+  }
+}
+
 export function askScienceAdvisorWithUpload(payload: {
   query?: string;
   top_k?: number;
   run_id?: string;
   model_profile?: ScienceAdvisorModelProfile;
   student_context?: BluBotStudentContext;
-  attachment: UploadAttachment;
+  attachments: UploadAttachment[];
 }) {
   return askHandbookAdvisorWithUpload({
     ...payload,
@@ -1335,20 +1354,7 @@ export function askScienceAdvisorWithUpload(payload: {
       );
     }
 
-    const fileName = payload.attachment.name?.trim() || "upload";
-    const mimeType =
-      payload.attachment.mimeType?.trim() || "application/octet-stream";
-    const attachmentForWeb = payload.attachment.file;
-
-    if (attachmentForWeb) {
-      formData.append("file", attachmentForWeb, fileName);
-    } else {
-      formData.append("file", {
-        uri: payload.attachment.uri,
-        name: fileName,
-        type: mimeType,
-      } as any);
-    }
+    appendAttachmentsToFormData(formData, payload.attachments);
 
     return requestMultipart<ScienceAdvisorResponse>(
       "/advisor/science/ask-upload",
@@ -1364,7 +1370,7 @@ export function askHandbookAdvisorWithUpload(payload: {
   model_profile?: ScienceAdvisorModelProfile;
   student_context?: BluBotStudentContext;
   faculty_slug?: string;
-  attachment: UploadAttachment;
+  attachments: UploadAttachment[];
 }) {
   const formData = new FormData();
 
@@ -1393,20 +1399,7 @@ export function askHandbookAdvisorWithUpload(payload: {
 
   formData.append("faculty_slug", payload.faculty_slug ?? "science");
 
-  const fileName = payload.attachment.name?.trim() || "upload";
-  const mimeType =
-    payload.attachment.mimeType?.trim() || "application/octet-stream";
-  const attachmentForWeb = payload.attachment.file;
-
-  if (attachmentForWeb) {
-    formData.append("file", attachmentForWeb, fileName);
-  } else {
-    formData.append("file", {
-      uri: payload.attachment.uri,
-      name: fileName,
-      type: mimeType,
-    } as any);
-  }
+  appendAttachmentsToFormData(formData, payload.attachments);
 
   return requestMultipart<ScienceAdvisorResponse>(
     "/advisor/handbook/ask-upload",

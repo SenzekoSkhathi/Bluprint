@@ -5,6 +5,9 @@ pydantic-settings
 boto3
 google-genai
 pypdf
+python-docx
+openpyxl
+python-pptx
 tenacity
 python-dotenv
 python-multipart
